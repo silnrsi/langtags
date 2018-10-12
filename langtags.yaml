@@ -1,0 +1,31 @@
+datafile: langtags.csv
+# css: |
+#  Cell[userClass=cldr]::item { color: "#C00000" }
+
+# diffStyle:
+#   backgroundColor: "#FFC0C0C0"
+# insertStyle:
+#   backgroundColor: "#C0C0FF"
+# deleteStyle:
+#   backgroundColor: "#E0E0E0"
+
+rules:
+-
+  eval: >
+    'CLDR' in r['confirmed']
+  foregroundColor: darkRed
+  font:
+    style: italic
+  
+
+header-translations:
+-
+  lang: Francais
+  fields:
+    Lang_Id: lingue id
+    likely_subtag: subtag likely
+    LangName: nome de lingue
+    script: scrie
+    regions: countries
+    "default region": etc.
+
