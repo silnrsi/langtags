@@ -4,7 +4,7 @@ import os, sys, csv, json
 from argparse import ArgumentParser
 import xml.etree.cElementTree as et
 import palaso.langtags as lt
-import csv, urllib, codecs
+import csv, urllib2, codecs
 
 useful_files = ['https://www.ethnologue.com/codes/LanguageIndex.tab',
                 'https://www.ethnologue.com/codes/LanguageCodes.tab',
@@ -59,6 +59,7 @@ parser.add_argument('-t','--text',action="store_true",default=False,help="Output
 args = parser.parse_args()
 
 lts = lt.LangTags(noalltags=True)
+lts.clear()
 allentries = {}
 allmacros = {}
 with open(args.infile) as csvfile :
@@ -70,13 +71,12 @@ with open(args.infile) as csvfile :
         i6 = row['ISO 639-3']
         macro = row['Macro']
         t = lt.LangTag(ls)
-        if t.script == 'Zyyy' or t.script == 'Qaax' : continue
         b = lt.LangTag(lid)
-        if b.script is None :
+        if b.script in [None, 'Zyyy', 'Qaax']:
             t.hidescript = True
         if b.region is None :
             t.hideregion = True
-        t.hideboth = b.hideboth
+        t.hideboth |= (t.hideregion and t.hidescript)
         lts.add(t)
         if repr(t) in lts:
             lts[repr(t)].iso639 = i6
@@ -85,7 +85,7 @@ with open(args.infile) as csvfile :
             s = str(t)
             m = lt.LangTag(macro)
             m.merge_equivalent(t)
-            allmacros[s] = repr(m)
+            allmacros[repr(m)] = s
 
 for l in os.listdir(args.indir) :
     if l.endswith('.xml') :
@@ -141,7 +141,7 @@ if args.text:
         alltags.write("\n".join(sorted(outstrings, key=lambda x:x.replace('*', ''))) + "\n")
 else:
     names = {}
-    #namef = urllib.urlopen("https://www.ethnologue.com/codes/LanguageIndex.tab")
+    #namef = urllib2.urlopen("https://www.ethnologue.com/codes/LanguageIndex.tab")
     namef = open("LanguageIndex.tab", "r")
     reader = csv.DictReader(namef, dialect=csv.excel_tab)
     for r in reader:
@@ -149,6 +149,7 @@ else:
             names.setdefault(r['LangID']+"-"+r['CountryID'], [[],[]])[0 if r['NameType'] == 'L' else 1].append(r['Name'])
     namef.close()
 
+    collisions = {}
     res = []
     for t in sorted(set(lts.values())):
         if t.skip:
@@ -160,24 +161,28 @@ else:
         if len(r) > 2:
             n['tags'] = r[1:-1]
         if hasattr(t, 'iso639'):
-            n['iso639'] = t.iso639
+            n['iso639-3'] = t.iso639
         elif t.base is not None and hasattr(t.base, 'iso639'):
-            n['iso639'] = t.base.iso639
+            n['iso639-3'] = t.base.iso639
         elif t.lang in lts:
             x = lts[t.lang]
             if hasattr(x, 'iso639'):
-                n['iso639'] = x.iso639
+                n['iso639-3'] = x.iso639
         hassldr = False
         for l in r:
             if find_file(l, root=args.indir) is not None:
                 hassldr = True
                 break
         n['sldr'] = hassldr
-        lname = "{}-{}".format(n.get('iso639', t.lang), t.region)
+        lname = "{}-{}".format(n.get('iso639-3', t.lang), t.region)
         if lname in names:
             n['name'] = names[lname][0][0]
             n['names'] = names[lname][1]
         res.append(n)
+        if n['tag'] in collisions:
+            print("Multiple entries for: {} = {}, {}".format(n['tag'], n['full'], collisions[n['tag']]))
+        else:
+            collisions[n['tag']] = n['full']
     with open(args.outfile, "w") as fh:
         json.dump(sorted(res, key=lambda x:x['tag']), fh, sort_keys=True, indent=4, ensure_ascii=False)
 
