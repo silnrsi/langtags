@@ -1,9 +1,14 @@
 #!/usr/bin/python
 
-import os, sys, csv
+import os, sys, csv, json
 from argparse import ArgumentParser
 import xml.etree.cElementTree as et
 import palaso.langtags as lt
+import csv, urllib, codecs
+
+useful_files = ['https://www.ethnologue.com/codes/LanguageIndex.tab',
+                'https://www.ethnologue.com/codes/LanguageCodes.tab',
+                'https://www.sil.org/iso639-3/iso-639-3.tab']
 
 def find_file(tagstr, root='.') :
     fname = tagstr.replace('-', '_') + '.xml'
@@ -50,6 +55,7 @@ parser.add_argument('infile', help='Input CSV file from Google drive')
 parser.add_argument('outfile', help='alltags.txt output file')
 parser.add_argument('-i','--indir', default='.', help='Directory containing sldr tree')
 parser.add_argument('-p','--operators',action="store_true",default=False,help="Output complex operators")
+parser.add_argument('-t','--text',action="store_true",default=False,help="Output text format")
 args = parser.parse_args()
 
 lts = lt.LangTags(noalltags=True)
@@ -59,23 +65,27 @@ with open(args.infile) as csvfile :
     reader = csv.DictReader(csvfile)
     for row in reader :
 #        if 'CLDR' in row['confirmed'] : continue
-        id = row['Lang_Id']
+        lid = row['Lang_Id']
         ls = row['likely_subtag']
+        i6 = row['ISO 639-3']
         macro = row['Macro']
         t = lt.LangTag(ls)
         if t.script == 'Zyyy' or t.script == 'Qaax' : continue
-        b = lt.LangTag(id)
+        b = lt.LangTag(lid)
         if b.script is None :
             t.hidescript = True
         if b.region is None :
             t.hideregion = True
         t.hideboth = b.hideboth
         lts.add(t)
-        allentries[id] = (t, row['regions'].split(' '))
+        if repr(t) in lts:
+            lts[repr(t)].iso639 = i6
+        allentries[lid] = (t, row['regions'].split(' '))
         if macro != "":
             s = str(t)
-            b.lang = macro
-            allmacros[s] = str(b)
+            m = lt.LangTag(macro)
+            m.merge_equivalent(t)
+            allmacros[s] = repr(m)
 
 for l in os.listdir(args.indir) :
     if l.endswith('.xml') :
@@ -92,37 +102,83 @@ for k, v in allmacros.items():
         macro = lts[v]
         base = lts[k]
     except KeyError:
-        continue
+        macro = lt.LangTag(v)
+        lts.add(macro)
+        if base.script is None:
+            macro.hidescript = True
+        if base.region is None:
+            macro.hideregion = True
+    else:
+        base.skip = True
     macro.base = base
-    base.skip = True
-    
 
-with open(args.outfile, "w") as alltags :
-    res = lts.generate_alltags()
     
-    outstrings = []
-    for line in res:
-        lineres = [[" = ", x] for x in line if x]
-        if not len(lineres):
+if args.text:
+    with open(args.outfile, "w") as alltags :
+        res = lts.generate_alltags()
+        
+        outstrings = []
+        for line in res:
+            lineres = [[" = ", x] for x in line if x]
+            if not len(lineres):
+                continue
+            lineres[0][0] = ""
+            hasstar = False
+            for l in lineres:
+                tf = find_file(l[1], root=args.indir)
+                if tf is not None:
+                    if hasstar:
+                        if args.operators:
+                            l[0] = " |= " if issimple(tf) else " <= "
+    #                    else:
+    #                        l[0] = " | "
+                    elif args.operators and hasattr(lts.get(l[1], l[1]), "parent"):
+                        x = lts[l[1]]
+                        l[1] = l[1] + (" >| " if x.parentsame else " > ") + "*" + str(x.parent)
+                    l[1] = "*" + l[1]
+                    hasstar = True
+            outstrings.append("".join(x[0] + x[1] for x in lineres))
+        alltags.write("\n".join(sorted(outstrings, key=lambda x:x.replace('*', ''))) + "\n")
+else:
+    names = {}
+    #namef = urllib.urlopen("https://www.ethnologue.com/codes/LanguageIndex.tab")
+    namef = open("LanguageIndex.tab", "r")
+    reader = csv.DictReader(namef, dialect=csv.excel_tab)
+    for r in reader:
+        if r['NameType'].startswith("L") and r['CountryID'] and not r['NameType'].endswith("P"):
+            names.setdefault(r['LangID']+"-"+r['CountryID'], [[],[]])[0 if r['NameType'] == 'L' else 1].append(r['Name'])
+    namef.close()
+
+    res = []
+    for t in sorted(set(lts.values())):
+        if t.skip:
             continue
-        lineres[0][0] = ""
-        hasstar = False
-        for l in lineres:
-            tf = find_file(l[1], root=args.indir)
-            if tf is not None:
-                if hasstar:
-                    if args.operators:
-                        l[0] = " |= " if issimple(tf) else " <= "
-#                    else:
-#                        l[0] = " | "
-                elif args.operators and hasattr(lts.get(l[1], l[1]), "parent"):
-                    x = lts[l[1]]
-                    l[1] = l[1] + (" >| " if x.parentsame else " > ") + "*" + str(x.parent)
-                l[1] = "*" + l[1]
-                hasstar = True
-        outstrings.append("".join(x[0] + x[1] for x in lineres))
-    alltags.write("\n".join(sorted(outstrings, key=lambda x:x.replace('*', ''))) + "\n")
-
-
+        r = t.allforms()
+        if not len(r[0]):
+            continue
+        n = {'tag': r[0], 'full': r[-1], 'region': t.region}
+        if len(r) > 2:
+            n['tags'] = r[1:-1]
+        if hasattr(t, 'iso639'):
+            n['iso639'] = t.iso639
+        elif t.base is not None and hasattr(t.base, 'iso639'):
+            n['iso639'] = t.base.iso639
+        elif t.lang in lts:
+            x = lts[t.lang]
+            if hasattr(x, 'iso639'):
+                n['iso639'] = x.iso639
+        hassldr = False
+        for l in r:
+            if find_file(l, root=args.indir) is not None:
+                hassldr = True
+                break
+        n['sldr'] = hassldr
+        lname = "{}-{}".format(n.get('iso639', t.lang), t.region)
+        if lname in names:
+            n['name'] = names[lname][0][0]
+            n['names'] = names[lname][1]
+        res.append(n)
+    with open(args.outfile, "w") as fh:
+        json.dump(sorted(res, key=lambda x:x['tag']), fh, sort_keys=True, indent=4, ensure_ascii=False)
 
 
