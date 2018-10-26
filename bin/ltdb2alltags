@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python2
 
 import os, sys, csv, json
 from argparse import ArgumentParser
@@ -31,6 +31,8 @@ def process_cldrentry(s, lts, allentries, root='.'):
     if s in lts:
         return
     l = lt.LangTag(s)
+    if l.variants is not None and 'posix' in l.variants:
+        return
     if l.region is not None:
         t = lt.LangTag(tag=None, lang=l.lang, script=l.script, variants=l.variants, extensions=l.extensions)
         n = None
@@ -60,7 +62,8 @@ args = parser.parse_args()
 
 lts = lt.LangTags(noalltags=True)
 deprecated = set()
-for v in lts.values():
+iananames = {}
+for k,v in lts.items():
     if getattr(v, 'deprecated', False):
         deprecated.add(v.lang)
 lts.clear()
@@ -179,10 +182,21 @@ else:
                 hassldr = True
                 break
         n['sldr'] = hassldr
+        n['names'] = []
         lname = "{}-{}".format(n.get('iso639_3', t.lang), t.region)
         if lname in names:
             n['name'] = names[lname][0][0]
-            n['names'] = names[lname][1]
+            n['names'].extend(names[lname][1])
+        for b in t.base:
+            lname = "{}-{}".format(b.lang, b.region)
+            if lname in names:
+                if 'name' in n:
+                    n['names'].append(names[lname][0][0])
+                else:
+                    n['name'] = names[lname][0][0]
+                n['names'].extend(names[lname][1])
+        if not len(n['names']):
+            del n['names']
         if getattr(t, 'deprecated', False):
             n['deprecated'] = True
         res.append(n)

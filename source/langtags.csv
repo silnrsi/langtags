@@ -8474,7 +8474,7 @@ yua,yua-Latn-MX,"Maya, Yucatec",Latn,BZ MX US,MX,,,,CAM NAM,yua,yua-Latn,CLDR,,,
 yub,yub-Zyyy-AU,Yugambal,Zyyy,AU,AU,,1,,ANZ,yub,,LE,10-Jan-2018,Extinct,,
 yuc,yuc-Latn-US,Yuchi,Latn,US,US,,1,,NAM,yuc,yuc-Qaax,LE,9-Jan-2018,,,
 yud-Hebr,yud-Hebr-IL,"Arabic, Judeo-Tripolitanian",Hebr,IL IT,IL,,,,SEU WAS,yud,yud-Hebr,,,,,
-yue,yue-Hant-HK,"Chinese, Yue",Hant,AU BN CA CN CR HK HN ID KH LA MO MY NR NZ PA PH SE SG SR TH US VN ZA,HK,,,,ANZ CAM EAS MIC NAM NEU SAF SAM SEA,yue,yue-Hant,CLDR,,,,"official usage in Hong Kong and Macau, also used elsewhere; used since mid-19th century"
+yue,yue-Hant-HK,"Chinese, Yue",Hant,AU BN CA CN CR HK HN ID KH LA MO MY NR NZ PA PH SE SG SR TH US VN ZA,HK,zh,,,ANZ CAM EAS MIC NAM NEU SAF SAM SEA,yue,yue-Hant,CLDR,,,,"official usage in Hong Kong and Macau, also used elsewhere; used since mid-19th century"
 yue-Brai,yue-Brai-HK,"Chinese, Yue",Brai,AU BN CA CN CR HK HN ID KH LA MO MY NR NZ PA PH SE SG SR TH US VN ZA,CN,,,,ANZ CAM EAS MIC NAM NEU SAF SAM SEA,yue,yue-Brai,,,,,used in Hong Kong
 yue-CN,yue-Hans-CN,"Chinese, Yue",Hans,AU BN CA CN CR HK HN ID KH LA MO MY NR NZ PA PH SE SG SR TH US VN ZA,CN,,,,ANZ CAM EAS MIC NAM NEU SAF SAM SEA,yue,yue-Hans ???,CLDR,,,,
 yue-Hans,yue-Hans-CN,"Chinese, Yue",Hans,AU BN CA CN CR HK HN ID KH LA MO MY NR NZ PA PH SE SG SR TH US VN ZA,CN,,,,ANZ CAM EAS MIC NAM NEU SAF SAM SEA,yue,???,CLDR,,,,
