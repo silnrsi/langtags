@@ -59,6 +59,10 @@ parser.add_argument('-t','--text',action="store_true",default=False,help="Output
 args = parser.parse_args()
 
 lts = lt.LangTags(noalltags=True)
+deprecated = set()
+for v in lts.values():
+    if getattr(v, 'deprecated', False):
+        deprecated.add(v.lang)
 lts.clear()
 allentries = {}
 allmacros = {}
@@ -77,6 +81,8 @@ with open(args.infile) as csvfile :
         if b.region is None :
             t.hideregion = True
         t.hideboth |= (t.hideregion and t.hidescript)
+        if t.lang in deprecated:
+            t.deprecated = True
         lts.add(t)
         if repr(t) in lts:
             lts[repr(t)].iso639 = i6
@@ -85,7 +91,7 @@ with open(args.infile) as csvfile :
             s = str(t)
             m = lt.LangTag(macro)
             m.merge_equivalent(t)
-            allmacros[repr(m)] = s
+            allmacros[s] = repr(m)
 
 for l in os.listdir(args.indir) :
     if l.endswith('.xml') :
@@ -99,8 +105,8 @@ for l in os.listdir(args.indir) :
 
 for k, v in allmacros.items():
     try:
-        macro = lts[v]
         base = lts[k]
+        macro = lts[v]
     except KeyError:
         macro = lt.LangTag(v)
         lts.add(macro)
@@ -108,9 +114,8 @@ for k, v in allmacros.items():
             macro.hidescript = True
         if base.region is None:
             macro.hideregion = True
-    else:
-        base.skip = True
-    macro.base = base
+    base.skip = True
+    macro.base.append(base)
 
     
 if args.text:
@@ -161,23 +166,25 @@ else:
         if len(r) > 2:
             n['tags'] = r[1:-1]
         if hasattr(t, 'iso639'):
-            n['iso639-3'] = t.iso639
+            n['iso639_3'] = t.iso639
         elif t.base is not None and hasattr(t.base, 'iso639'):
-            n['iso639-3'] = t.base.iso639
+            n['iso639_3'] = t.base.iso639
         elif t.lang in lts:
             x = lts[t.lang]
             if hasattr(x, 'iso639'):
-                n['iso639-3'] = x.iso639
+                n['iso639_3'] = x.iso639
         hassldr = False
         for l in r:
             if find_file(l, root=args.indir) is not None:
                 hassldr = True
                 break
         n['sldr'] = hassldr
-        lname = "{}-{}".format(n.get('iso639-3', t.lang), t.region)
+        lname = "{}-{}".format(n.get('iso639_3', t.lang), t.region)
         if lname in names:
             n['name'] = names[lname][0][0]
             n['names'] = names[lname][1]
+        if getattr(t, 'deprecated', False):
+            n['deprecated'] = True
         res.append(n)
         if n['tag'] in collisions:
             print("Multiple entries for: {} = {}, {}".format(n['tag'], n['full'], collisions[n['tag']]))
