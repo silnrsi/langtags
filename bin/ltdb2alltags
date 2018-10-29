@@ -58,6 +58,7 @@ parser.add_argument('outfile', help='alltags.txt output file')
 parser.add_argument('-i','--indir', default='.', help='Directory containing sldr tree')
 parser.add_argument('-p','--operators',action="store_true",default=False,help="Output complex operators")
 parser.add_argument('-t','--text',action="store_true",default=False,help="Output text format")
+parser.add_argument('-L','--langindex',help="Use local LanguageInfo.tab")
 args = parser.parse_args()
 
 lts = lt.LangTags(noalltags=True)
@@ -151,8 +152,12 @@ if args.text:
         alltags.write("\n".join(sorted(outstrings, key=lambda x:x.replace('*', ''))) + "\n")
 else:
     names = {}
-    #namef = urllib2.urlopen("https://www.ethnologue.com/codes/LanguageIndex.tab")
-    namef = open("LanguageIndex.tab", "r")
+    if args.langindex:
+        namef = open(args.langindex, "r")
+    else:
+        req = urllib2.Request(url="https://www.ethnologue.com/codes/LanguageIndex.tab",
+                              headers = {"User-Agent": "Mozilla"})
+        namef = urllib2.urlopen(req)
     reader = csv.DictReader(namef, dialect=csv.excel_tab)
     for r in reader:
         if r['NameType'].startswith("L") and r['CountryID'] and not r['NameType'].endswith("P"):
