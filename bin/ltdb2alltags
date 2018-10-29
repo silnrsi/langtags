@@ -66,6 +66,8 @@ iananames = {}
 for k,v in lts.items():
     if getattr(v, 'deprecated', False):
         deprecated.add(v.lang)
+    if hasattr(v, 'desc'):
+        iananames[k] = v.desc
 lts.clear()
 allentries = {}
 allmacros = {}
@@ -195,6 +197,12 @@ else:
                 else:
                     n['name'] = names[lname][0][0]
                 n['names'].extend(names[lname][1])
+        if 'name' not in n:
+            if t.lang in iananames:
+                ns = iananames[t.lang]
+                n['name'] = ns[0]
+                if len(ns) > 1 :
+                    n['names'] = ns[1:]
         if not len(n['names']):
             del n['names']
         if getattr(t, 'deprecated', False):
@@ -204,6 +212,8 @@ else:
             print("Multiple entries for: {} = {}, {}".format(n['tag'], n['full'], collisions[n['tag']]))
         else:
             collisions[n['tag']] = n['full']
+        if not 'name' in n:
+            print("Missing name entry for {} = {}".format(n['tag'], n['full']))
     with open(args.outfile, "w") as fh:
         json.dump(sorted(res, key=lambda x:x['tag']), fh, sort_keys=True, indent=4, ensure_ascii=False)
 
