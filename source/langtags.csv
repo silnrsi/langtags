@@ -4742,7 +4742,7 @@ mrq,mrq-Latn-PF,"Marquesan, North",Latn,PF US,PF,,,,NAM POL,mrq,mrq-Latn,LE,12-J
 mrr,mrr-Deva-IN,Maria,Deva,IN,IN,,,,SAS,mrr,mrr-Deva,LE,20-Mar-2018,,,
 mrs,mrs-Latn-VU,Maragus,Latn,VU,VU,,1,,MEL,mrs,,LE,10-Jan-2018,,,
 mrt-Latn,mrt-Latn-NG,Marghi Central,Latn,NG,NG,,,,WAF,mrt,mrt-Latn,,,,,
-x-wrong-mru,x-wrong-mru-Cyrl-RU,Mono (wrong),Cyrl,RU,RU,,,,,,,,,LE: Need to figure out what code was intended as mru is wrong,,
+x-mru-x-wrong,x-mru-Cyrl-RU-x-wrong,Mono (wrong),Cyrl,RU,RU,,,,,,,,,LE: Need to figure out what code was intended as mru is wrong,,
 mru,mru-Qaax-CM,Mono,Qaax,CM,CM,,1,,MAF,mru,mru-Qaax,,,,,
 mrv,mrv-Latn-PF,Mangareva,Latn,PF,PF,,,,POL,mrv,mrv-Latn,LE,12-Jan-2018,,,
 mrw-Latn,mrw-Latn-PH,Maranao,Latn,PH,PH,,,,SEA,mrw,mrw-Latn,,,,,

@@ -6,10 +6,6 @@ import xml.etree.cElementTree as et
 import palaso.langtags as lt
 import csv, urllib2, codecs
 
-useful_files = ['https://www.ethnologue.com/codes/LanguageIndex.tab',
-                'https://www.ethnologue.com/codes/LanguageCodes.tab',
-                'https://www.sil.org/iso639-3/iso-639-3.tab']
-
 def find_file(tagstr, root='.') :
     fname = tagstr.replace('-', '_') + '.xml'
     testf = os.path.join(root, fname)
@@ -110,6 +106,7 @@ with open(args.infile) as csvfile :
         if t.lang in deprecated:
             t.deprecated = True
         t.regions = row['regions'].split()
+        t.name = row['LangName']
         lts.add(t)
         if repr(t) in lts:
             lts[repr(t)].iso639 = i6
@@ -238,7 +235,12 @@ else:
                 n['name'] = ns[0]
                 if len(ns) > 1 :
                     n['names'] = ns[1:]
-        n['names'] = sorted(set(n['names']))
+        if 'name' in n:
+            n['names'] = sorted(set(n['names']) - set([n['name']]))
+        elif hasattr(t, 'name'):
+            n['name'] = t.name
+        else:
+            print("Missing name entry for {} = {}".format(n['tag'], n['full']))
         if not len(n['names']):
             del n['names']
         if getattr(t, 'deprecated', False):
@@ -252,8 +254,6 @@ else:
             print("Multiple entries for: {} = {}, {}".format(n['tag'], n['full'], collisions[n['tag']]))
         else:
             collisions[n['tag']] = n['full']
-        if not 'name' in n:
-            print("Missing name entry for {} = {}".format(n['tag'], n['full']))
     with codecs.open(args.outfile, "w", encoding="utf-8") as fh:
         # use encoding="utf8" (not "utf-8") as a hack around a bug in json: https://stackoverflow.com/a/40777484/10488020
         json.dump(sorted(res, key=lambda x:x['tag']), fh, sort_keys=True, indent=4, ensure_ascii=False, encoding="utf8")
