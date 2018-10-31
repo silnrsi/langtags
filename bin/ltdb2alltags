@@ -52,6 +52,21 @@ def process_cldrentry(s, lts, allentries, root='.'):
     lts.add(l)
     return l
 
+def addnames(n, b, alllangrefs, names, regions):
+    regionlist = set([b.region] + getattr(b, 'regions', []))
+    for reg in regionlist:
+        if reg is not None:
+            regions.add(reg)
+        lname = "{}-{}".format(getattr(b, 'iso639', b.lang), reg)
+        alllangreg.add(lname)
+        if lname in names:
+            if 'name' in n:
+                n['names'].append(names[lname][0][0])
+            else:
+                n['name'] = names[lname][0][0]
+            n['names'].extend(names[lname][1])
+
+
 parser = ArgumentParser()
 parser.add_argument('infile', help='Input CSV file from Google drive')
 parser.add_argument('outfile', help='alltags.txt output file')
@@ -172,10 +187,18 @@ else:
     collisions = {}
     res = []
     alllangreg = set()
+    allcomplexes = []
     for t in sorted(set(lts.values())):
         if t.skip:
             continue
         r = t.allforms()
+        complexrs = []
+        for rf in r:
+            tf = find_file(rf, root=args.indir)
+            if tf is not None and not issimple(tf):
+                complexrs.append(rf)
+        if len(complexrs) > 1:
+            allcomplexes.append(complexrs)
         if not len(r[0]):
             continue
         n = {'tag': r[0], 'full': r[-1], 'region': t.region}
@@ -183,8 +206,11 @@ else:
             n['tags'] = r[1:-1]
         if hasattr(t, 'iso639'):
             n['iso639_3'] = t.iso639
-        elif t.base is not None and hasattr(t.base, 'iso639'):
-            n['iso639_3'] = t.base.iso639
+        elif t.base is not None and len(t.base):
+            for b in t.base:
+                if hasattr(n, 'iso639'):
+                    n['iso639_3'] = b.iso639
+                    break
         elif t.lang in lts:
             x = lts[t.lang]
             if hasattr(x, 'iso639'):
@@ -196,24 +222,10 @@ else:
                 break
         n['sldr'] = hassldr
         n['names'] = []
-        regionlist = set([t.region] + getattr(t, 'regions', []))
-        for reg in regionlist:
-            lname = "{}-{}".format(n.get('iso639_3', t.lang), reg)
-            alllangreg.add(lname)
-            if lname in names:
-                n['name'] = names[lname][0][0]
-                n['names'].extend(names[lname][1])
+        regions = set()
+        addnames(n, t, alllangreg, names, regions)
         for b in t.base:
-            regionlist = set([b.region] + getattr(b, 'regions', []))
-            for reg in regionlist:
-                lname = "{}-{}".format(b.lang, reg)
-                alllangreg.add(lname)
-                if lname in names:
-                    if 'name' in n:
-                        n['names'].append(names[lname][0][0])
-                    else:
-                        n['name'] = names[lname][0][0]
-                    n['names'].extend(names[lname][1])
+            addnames(n, b, alllangreg, names, regions)
         if 'name' not in n:
             if t.lang in iananames:
                 ns = iananames[t.lang]
@@ -225,6 +237,10 @@ else:
             del n['names']
         if getattr(t, 'deprecated', False):
             n['deprecated'] = True
+        if t.region is not None:
+            regions.remove(t.region)
+        if len(regions):
+            n['regions'] = " ".join(sorted(regions))
         res.append(n)
         if n['tag'] in collisions:
             print("Multiple entries for: {} = {}, {}".format(n['tag'], n['full'], collisions[n['tag']]))
@@ -237,6 +253,8 @@ else:
     missing = set(names.keys()) - alllangreg
     if len(missing):
         print("Missing language regions ({}): ".format(len(missing)) + " ".join(sorted(missing)))
+    if len(allcomplexes):
+        print("Complex relations between: " + ", ".join("[" + " ".join(x) + "]" for x in allcomplexes))
 
 
 
