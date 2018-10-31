@@ -18,13 +18,18 @@ def find_file(tagstr, root='.') :
     if os.path.exists(testf) : return testf
     return None
 
-def issimple(testf):
+def issimple(testf, getname=None):
     try:
         doc = et.parse(testf)
     except:
-        return False
-    if len(doc.getroot()) > 1 : return False
-    return True
+        return (False, "")
+    if len(doc.getroot()) > 1 :
+        if getname is not None:
+            e = doc.find('./localeDisplayNames/languages/language[@type="{}"]'.format(getname))
+            if e is not None:
+                return (False, unicode(e.text))
+        return (False, "")
+    return (True, "")
 
 def process_cldrentry(s, lts, allentries, root='.'):
     s = s.replace("_", "-")
@@ -48,7 +53,7 @@ def process_cldrentry(s, lts, allentries, root='.'):
         testf = find_file(str(t), root=root)
         if testf is not None:
             l.parent = t
-            l.parentsame = issimple(find_file(s, root))
+            l.parentsame = issimple(find_file(s, root))[0]
     lts.add(l)
     return l
 
@@ -160,7 +165,7 @@ if args.text:
                 if tf is not None:
                     if hasstar:
                         if args.operators:
-                            l[0] = " |= " if issimple(tf) else " <= "
+                            l[0] = " |= " if issimple(tf)[0] else " <= "
     #                    else:
     #                        l[0] = " | "
                     elif args.operators and hasattr(lts.get(l[1], l[1]), "parent"):
@@ -193,17 +198,24 @@ else:
             continue
         r = t.allforms()
         complexrs = []
-        for rf in r:
-            tf = find_file(rf, root=args.indir)
-            if tf is not None and not issimple(tf):
-                complexrs.append(rf)
-        if len(complexrs) > 1:
-            allcomplexes.append(complexrs)
         if not len(r[0]):
             continue
         n = {'tag': r[0], 'full': r[-1], 'region': t.region}
         if len(r) > 2:
             n['tags'] = r[1:-1]
+        hassldr = False
+        for rf in r:
+            tf = find_file(rf, root=args.indir)
+            if tf is not None:
+                hassldr = True
+                (s, name) = issimple(tf, t.lang)
+                if not s:
+                    complexrs.append(rf)
+                    if name is not None and name != "":
+                        n['localname'] = name
+        if len(complexrs) > 1:
+            allcomplexes.append(complexrs)
+        n['sldr'] = hassldr
         if hasattr(t, 'iso639'):
             n['iso639_3'] = t.iso639
         elif t.base is not None and len(t.base):
@@ -215,12 +227,6 @@ else:
             x = lts[t.lang]
             if hasattr(x, 'iso639'):
                 n['iso639_3'] = x.iso639
-        hassldr = False
-        for l in r:
-            if find_file(l, root=args.indir) is not None:
-                hassldr = True
-                break
-        n['sldr'] = hassldr
         n['names'] = []
         regions = set()
         addnames(n, t, alllangreg, names, regions)
@@ -248,8 +254,9 @@ else:
             collisions[n['tag']] = n['full']
         if not 'name' in n:
             print("Missing name entry for {} = {}".format(n['tag'], n['full']))
-    with open(args.outfile, "w") as fh:
-        json.dump(sorted(res, key=lambda x:x['tag']), fh, sort_keys=True, indent=4, ensure_ascii=False)
+    with codecs.open(args.outfile, "w", encoding="utf-8") as fh:
+        # use encoding="utf8" (not "utf-8") as a hack around a bug in json: https://stackoverflow.com/a/40777484/10488020
+        json.dump(sorted(res, key=lambda x:x['tag']), fh, sort_keys=True, indent=4, ensure_ascii=False, encoding="utf8")
     missing = set(names.keys()) - alllangreg
     if len(missing):
         print("Missing language regions ({}): ".format(len(missing)) + " ".join(sorted(missing)))
