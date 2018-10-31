@@ -89,6 +89,7 @@ with open(args.infile) as csvfile :
         t.hideboth |= (t.hideregion and t.hidescript)
         if t.lang in deprecated:
             t.deprecated = True
+        t.regions = row['regions'].split()
         lts.add(t)
         if repr(t) in lts:
             lts[repr(t)].iso639 = i6
@@ -121,6 +122,10 @@ for k, v in allmacros.items():
         if base.region is None:
             macro.hideregion = True
     base.skip = True
+    if not hasattr(macro, 'regions'):
+        macro.regions = []
+    if hasattr(base, 'regions'):
+        macro.regions.extend(base.regions)
     macro.base.append(base)
 
     
@@ -166,6 +171,7 @@ else:
 
     collisions = {}
     res = []
+    alllangreg = set()
     for t in sorted(set(lts.values())):
         if t.skip:
             continue
@@ -190,24 +196,31 @@ else:
                 break
         n['sldr'] = hassldr
         n['names'] = []
-        lname = "{}-{}".format(n.get('iso639_3', t.lang), t.region)
-        if lname in names:
-            n['name'] = names[lname][0][0]
-            n['names'].extend(names[lname][1])
-        for b in t.base:
-            lname = "{}-{}".format(b.lang, b.region)
+        regionlist = set([t.region] + getattr(t, 'regions', []))
+        for reg in regionlist:
+            lname = "{}-{}".format(n.get('iso639_3', t.lang), reg)
+            alllangreg.add(lname)
             if lname in names:
-                if 'name' in n:
-                    n['names'].append(names[lname][0][0])
-                else:
-                    n['name'] = names[lname][0][0]
+                n['name'] = names[lname][0][0]
                 n['names'].extend(names[lname][1])
+        for b in t.base:
+            regionlist = set([b.region] + getattr(b, 'regions', []))
+            for reg in regionlist:
+                lname = "{}-{}".format(b.lang, reg)
+                alllangreg.add(lname)
+                if lname in names:
+                    if 'name' in n:
+                        n['names'].append(names[lname][0][0])
+                    else:
+                        n['name'] = names[lname][0][0]
+                    n['names'].extend(names[lname][1])
         if 'name' not in n:
             if t.lang in iananames:
                 ns = iananames[t.lang]
                 n['name'] = ns[0]
                 if len(ns) > 1 :
                     n['names'] = ns[1:]
+        n['names'] = sorted(set(n['names']))
         if not len(n['names']):
             del n['names']
         if getattr(t, 'deprecated', False):
@@ -221,5 +234,9 @@ else:
             print("Missing name entry for {} = {}".format(n['tag'], n['full']))
     with open(args.outfile, "w") as fh:
         json.dump(sorted(res, key=lambda x:x['tag']), fh, sort_keys=True, indent=4, ensure_ascii=False)
+    missing = set(names.keys()) - alllangreg
+    if len(missing):
+        print("Missing language regions ({}): ".format(len(missing)) + " ".join(sorted(missing)))
+
 
 

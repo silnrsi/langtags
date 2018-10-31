@@ -251,7 +251,7 @@ alj-Latn,alj-Latn-PH,Alangan,Latn,PH,PH,,,,SEA,alj,alj-Latn,,,,,
 alk,alk-Qaax-LA,Alak,Qaax,LA,LA,,1,,SEA,alk,alk-Qaax,NMC,20-Nov-2017,,,
 all-Mlym,all-Mlym-IN,Allar,Mlym,IN,IN,,,,SAS,all,all-Mlym,,,,,
 alm,alm-Latn-VU,Amblong,Latn,VU,VU,,1,,MEL,alm,,LE,10-Jan-2018,,,
-aln,aln-Latn-XK,"Albanian, Gheg",Latn,AL ME MK RO RS TR XK,"XK
+aln,aln-Latn-XK,"Albanian, Gheg",Latn,AL ME MK RO RS TR XK,"XK
 ",,,,EEU NAM SEU WAS WEU,aln,aln-Latn,CLDR,,Ethnologue has AL,,primary usage
 aln-Brai,aln-Brai-AL,"Albanian, Gheg",Brai,AL RS,AL,,,,EEU NAM SEU WAS WEU,aln,aln-Brai,,,,,
 alo,alo-Latn-ID,Larike-Wakasihu,Latn,ID,ID,,,,SEA,alo,alo-Latn,,20-Apr-2018,,,
@@ -1710,10 +1710,10 @@ ddo-Cyrl,ddo-Cyrl-RU,Dido,Cyrl,GE RU,RU,,,,EEU WAS,ddo,ddo-Cyrl,,,,,
 ddr,ddr-Latn-AU,Dhudhuroa,Latn,AU,AU,,1,,ANZ,ddr,,LE,10-Jan-2018,Extinct,,
 dds-Latn,dds-Latn-ML,"Dogon, Donno So",Latn,ML,ML,,,,WAF,dds,dds-Latn,,,,,
 ddw,ddw-Qaax-ID,Dawera-Daweloor,Qaax,ID,ID,,1,,SEA,ddw,ddw-Qaax,,,,,
-de,de-Latn-DE,"German, Standard",Latn,AE AR AT AU BA BE BG BO BR CA CH CL CY CZ DE DK EC EE FI FR HR HU IE IL IT KG KZ LI LT LU MT MZ NA NL NZ PH PL PR PT PY RO RU SE SI SK TJ UA US UY ZA,DE,,,,ANZ CAR CAS EAF EEU NAM NEU SAF SAM SEA SEU WAS WEU,deu,de,CLDR,,,,primary usage
-de-Brai,de-Brai-DE,"German, Standard",Brai,AE AR AT AU BA BE BG BO BR CA CH CL CY CZ DE DK EC EE FI FR HR HU IE IL IT KG KZ LI LT LU MT MZ NA NL NZ PH PL PR PT PY RO RU SE SI SK TJ UA US UY ZA,DE,,,,ANZ CAR CAS EAF EEU NAM NEU SAF SAM SEA SEU WAS WEU,deu,de-Brai,,,,,
-de-Latf,de-Latf-DE,"German, Standard",Latf,AE AR AT AU BA BE BG BO BR CA CH CL CY CZ DE DK EC EE FI FR HR HU IE IL IT KG KZ LI LT LU MT MZ NA NL NZ PH PL PR PT PY RO RU SE SI SK TJ UA US UY ZA,DE,,,1,ANZ CAR CAS EAF EEU NAM NEU SAF SAM SEA SEU WAS WEU,deu,de-Latf,,,,,
-de-Runr,de-Runr-DE,"German, Standard",Runr,AE AR AT AU BA BE BG BO BR CA CH CL CY CZ DE DK EC EE FI FR HR HU IE IL IT KG KZ LI LT LU MT MZ NA NL NZ PH PL PR PT PY RO RU SE SI SK TJ UA US UY ZA,DE,,,1,ANZ CAR CAS EAF EEU NAM NEU SAF SAM SEA SEU WAS WEU,deu,de-Runr,,,,,
+de,de-Latn-DE,"German, Standard",Latn,AE AR AT AU BA BE BG BO BR CA CH CL CY CZ DE DK EC EE FI FR HR HU IE IL IT KG KZ LI LT LU MT MZ NA NL NZ PH PL PR PT PY RO RU SE SI SK TJ UA US UY ZA,DE,,,,ANZ CAR CAS EAF EEU NAM NEU SAF SAM SEA SEU WAS WEU,deu,de,CLDR,,,,primary usage
+de-Brai,de-Brai-DE,"German, Standard",Brai,AE AR AT AU BA BE BG BO BR CA CH CL CY CZ DE DK EC EE FI FR HR HU IE IL IT KG KZ LI LT LU MT MZ NA NL NZ PH PL PR PT PY RO RU SE SI SK TJ UA US UY ZA,DE,,,,ANZ CAR CAS EAF EEU NAM NEU SAF SAM SEA SEU WAS WEU,deu,de-Brai,,,,,
+de-Latf,de-Latf-DE,"German, Standard",Latf,AE AR AT AU BA BE BG BO BR CA CH CL CY CZ DE DK EC EE FI FR HR HU IE IL IT KG KZ LI LT LU MT MZ NA NL NZ PH PL PR PT PY RO RU SE SI SK TJ UA US UY ZA,DE,,,1,ANZ CAR CAS EAF EEU NAM NEU SAF SAM SEA SEU WAS WEU,deu,de-Latf,,,,,
+de-Runr,de-Runr-DE,"German, Standard",Runr,AE AR AT AU BA BE BG BO BR CA CH CL CY CZ DE DK EC EE FI FR HR HU IE IL IT KG KZ LI LT LU MT MZ NA NL NZ PH PL PR PT PY RO RU SE SI SK TJ UA US UY ZA,DE,,,1,ANZ CAR CAS EAF EEU NAM NEU SAF SAM SEA SEU WAS WEU,deu,de-Runr,,,,,
 dec,dec-Latn-SD,Dagik,Latn,SD,SD,,,,NAF,dec,dec-Latn,LE,12-Jan-2018,,,
 ded,ded-Latn-PG,Dedua,Latn,PG,PG,,,,MEL,ded,ded-Latn,LE,10-Jan-2018,,,
 dee-Zyyy,dee-Zyyy-LR,Dewoin,Zyyy,LR,LR,,,,WAF,dee,,,,,,
@@ -2003,7 +2003,7 @@ ekc,ekc-Latn-AU,"Karnic, Eastern",Latn,AU,AU,,1,,ANZ,ekc,ekc-Qaax,LE,10-Jan-2018
 eke-Zyyy,eke-Zyyy-NG,Ekit,Zyyy,NG,NG,,,,WAF,eke,,,,,,
 ekg,ekg-Latn-ID,Ekari,Latn,ID,ID,,,,SEA,ekg,ekg-Latn,,20-Apr-2018,,,
 eki-Zyyy,eki-Zyyy-NG,Eki,Zyyy,NG,NG,,,,WAF,eki,,,,,,
-ekk,ekk-Latn-EE,"Estonian, Standard",Latn,CA DE EE FI KZ LV RU SE US,EE,et,,,CAS EEU NAM NEU WEU,ekk,ekk-Latn,CLDR,23-Mar-2018,via macro mapping,,
+ekk,ekk-Latn-EE,"Estonian, Standard",Latn,CA DE EE FI KZ LV RU SE US,EE,et,,,CAS EEU NAM NEU WEU,ekk,ekk-Latn,CLDR,23-Mar-2018,via macro mapping,,
 ekl-Latn,ekl-Latn-BD,Kol,Latn,BD,BD,,,,SAS,ekl,ekl-Latn,,,,,
 ekm,ekm-Latn-CM,Elip,Latn,CM,CM,,,,MAF,ekm,ekm-Latn,LE,12-Jan-2018,,,
 eko,eko-Latn-MZ,Koti,Latn,MZ,MZ,,,,EAF,eko,eko-Latn,,,,,primary usage
@@ -2013,7 +2013,7 @@ ekr-Latn,ekr-Latn-NG,Yace,Latn,NG,NG,,,,WAF,ekr,ekr-Latn,,,,,
 eky,eky-Kali-MM,"Kayah, Eastern",Kali,MM TH,MM,,,,SEA,eky,eky-Kali,CLDR,,,,
 el,el-Grek-GR,Greek,Grek,AE AL AM AU BA BE BG CA CD CY CZ DE DJ EG GB GR HU IL IT JO KG KZ LU LY MK MW MZ RO RU SE SL TR UA US,GR,,,,ANZ CAS EAF EEU MAF NAF NAM NEU SEU WAF WAS WEU,ell,el,CLDR,,,,primary usage
 el-Brai,el-Brai-GR,Greek,Brai,AE AL AM AU BA BE BG CA CD CY CZ DE DJ EG GB GR HU IL IT JO KG KZ LU LY MK MW MZ RO RU SE SL TR UA US,GR,,,,ANZ CAS EAF EEU MAF NAF NAM NEU SEU WAF WAS WEU,ell,el-Brai,,,,,
-el-Cyrl,el-Cyrl-UA,Greek,Cyrl,AE AL AM AU BA BE BG CA CD CY CZ DE DJ EG GR HU IL IT JO KG KZ LU LY MK MW MZ RO RU SE SL TR UA US,UA,,,,ANZ CAS EAF EEU MAF NAF NAM NEU SEU WAF WAS WEU,ell,el-Cyrl,,,,,used in Ukraine
+el-Cyrl,el-Cyrl-UA,Greek,Cyrl,AE AL AM AU BA BE BG CA CD CY CZ DE DJ EG GR HU IL IT JO KG KZ LU LY MK MW MZ RO RU SE SL TR UA US,UA,,,,ANZ CAS EAF EEU MAF NAF NAM NEU SEU WAF WAS WEU,ell,el-Cyrl,,,,,used in Ukraine
 ele,ele-Latn-PG,Elepi,Latn,PG,PG,,1,,MEL,ele,,LE,10-Jan-2018,,,
 elh,elh-Qaax-SD,El Hugeirat,Qaax,SD,SD,,1,,NAF,elh,elh-Qaax,,,,,
 eli,eli-Zyyy-SD,Nding,Zyyy,SD,SD,,1,,NAF,eli,eli-Qaax,LE,10-Jan-2018,Extinct,,
@@ -2072,7 +2072,7 @@ err,err-Latn-AU,Erre,Latn,AU,AU,,1,,ANZ,err,,LE,10-Jan-2018,Extinct,,
 ers-x-ersshaba,ers-Qaag-CN-x-ersshaba,Ersu,Qaag,CN,CN,,,1,EAS,ers,ers-Qaag,,,,,"limited usage, used in religious ceremonies"
 ert-Zyyy,ert-Zyyy-ID,Eritai,Zyyy,ID,ID,,,,SEA,ert,,,,,,
 erw-Zyyy,erw-Zyyy-ID,Erokwanas,Zyyy,ID,ID,,,,SEA,erw,,,,,,
-es,es-Latn-ES,Spanish,Latn,AD AR AT AU AW BE BG BO BQ BR BZ CA CH CI CL CO CR CU CW CZ DE DK DO DZ EC EH ES FI FR GI GQ GT GU HN HR IE IL IS IT JM KY LU MA MT MX NI NL NO NZ PA PE PH PL PR PT PY RO RU SE SR SV SX TR TT US UY VE VI,ES,,,,ANZ CAM CAR EEU MAF MIC NAF NAM NEU SAM SEA SEU WAF WAS WEU,spa,es,CLDR,,,,primary usage
+es,es-Latn-ES,Spanish,Latn,AD AR AT AU AW BE BG BO BQ BR BZ CA CH CI CL CO CR CU CW CZ DE DK DO DZ EC EH ES FI FR GI GQ GT GU HN HR IE IL IS IT JM KY LU MA MT MX NI NL NO NZ PA PE PH PL PR PT PY RO RU SE SR SV SX TR TT US UY VE VI,ES,,,,ANZ CAM CAR EEU MAF MIC NAF NAM NEU SAM SEA SEU WAF WAS WEU,spa,es,CLDR,,,,primary usage
 es-Brai,es-Brai-ES,Spanish,Brai,AD AR AT AU AW BE BG BO BQ BR BZ CA CH CI CL CO CR CU CW CZ DE DK DO DZ EC EH ES FI FR GI GQ GT GU HN HR IE IL IS IT JM KY LU MA MT MX NI NL NO NZ PA PE PH PL PR PT PY RO RU SE SR SV SX TR TT US UY VE VI,ES,,,,ANZ CAM CAR EEU MAF MIC NAF NAM NEU SAM SEA SEU WAF WAS WEU,spa,es-Brai,,,,,
 ese,ese-Latn-BO,Ese Ejja,Latn,BO PE,BO,,,,SAM,ese,ese-Latn,LE,9-Jan-2018,,,
 esg-Deva,esg-Deva-IN,"Gondi, Aheri",Deva,IN,IN,,,,SAS,esg,esg-Deva,,,,,
@@ -2088,7 +2088,7 @@ ess-Cyrl,ess-Cyrl-US,"Yupik, Central Siberian",Cyrl,RU US,US,,,,EEU NAM,ess,ess-
 ess-Latn,ess-Latn-US,"Yupik, Central Siberian",Latn,RU US,US,,,,EEU NAM,ess,ess-Latn,,,,,
 esu,esu-Latn-US,"Yupik, Central",Latn,US,US,,,,NAM,esu,esu-Latn,CLDR,,,,
 esy-Qabr,esy-Qabr-PH,Eskayan,Qabr,PH,PH,,,,SEA,esy,esy-Qabr,,,,,
-et,et-Latn-EE,Estonian,Latn,CA DE EE FI KZ LV RU SE US,EE,,,,NEU,est,et,CLDR,,,,primary usage
+et,et-Latn-EE,Estonian,Latn,CA DE EE FI KZ LV RU SE US,EE,,,,NEU,est,et,CLDR,,,,primary usage
 et-Brai,et-Brai-EE,Estonian,Brai,EE,EE,,,,NEU,est,et-Brai,,,,,
 etb-Zyyy,etb-Zyyy-NG,Etebi,Zyyy,NG,NG,,,,WAF,etb,,,,,,
 etc,etc-Zyyy-US,Etchemin,Zyyy,US,US,,1,,NAM,etc,,LE,10-Jan-2018,Extinct,,
@@ -2145,8 +2145,8 @@ ffi,ffi-Latn-PG,Foia Foia,Latn,PG,PG,,,,MEL,ffi,ffi-Latn,LE,10-Jan-2018,,,
 ffm,ffm-Latn-ML,"Fulfulde, Maasina",Latn,CI GH ML,ML,,,,WAF,ffm,ffm-Latn,CLDR,,,,official usage
 ffm-Arab,ffm-Arab-ML,"Fulfulde, Maasina",Arab,CI GH ML,ML,,,,WAF,ffm,ffm-Arab,,,,,
 fgr-Zyyy,fgr-Zyyy-TD,Fongoro,Zyyy,TD,TD,,,,MAF,fgr,,,,,,
-fi,fi-Latn-FI,Finnish,Latn,CA DE EE FI NO RU SE US,FI,,,,EEU NAM NEU WEU,fin,fi,CLDR,,,,primary usage
-fi-Brai,fi-Brai-FI,Finnish,Brai,CA DE EE FI NO RU SE US,FI,,,,EEU NAM NEU WEU,fin,fi-Brai,,,,,
+fi,fi-Latn-FI,Finnish,Latn,CA DE EE FI NO RU SE US,FI,,,,EEU NAM NEU WEU,fin,fi,CLDR,,,,primary usage
+fi-Brai,fi-Brai-FI,Finnish,Brai,CA DE EE FI NO RU SE US,FI,,,,EEU NAM NEU WEU,fin,fi-Brai,,,,,
 fia,fia-Arab-SD,Nobiin,Arab,EG SD,SD,,,,NAF,fia,fia-Arab,CLDR,,,,
 fia-Copt-x-oldnubin,fia-Copt-SD-x-oldnubin,Nobiin,Copt,EG SD,SD,,,,NAF,fia,fia-Copt-x-oldnubian,,,,Old Nubian variant,
 fia-Latn,fia-Latn-SD,Nobiin,Latn,EG SD,SD,,,,NAF,fia,fia-Latn,,,,,
@@ -2181,8 +2181,8 @@ for,for-Latn-PG,Fore,Latn,PG,PG,,,,MEL,for,for-Latn,LE,10-Jan-2018,,,
 fos,fos-Latn-TW,Siraya,Latn,TW,TW,,,,EAS,fos,fos-Latn,LE,12-Jan-2018,Extinct,,
 fpe,fpe-Latn-GQ,Equatorial Guinean Pidgin,Latn,GQ,GQ,,,,MAF,fpe,fpe-Latn,LE,12-Jan-2018,,,
 fqs,fqs-Latn-PG,Fas,Latn,PG,PG,,,,MEL,fqs,fqs-Latn,LE,10-Jan-2018,,,
-fr,fr-Latn-FR,French,Latn,AD AM AT AU BE BF BG BI BJ BL CA CD CF CG CH CI CM CV  DE DJ DK DM DO DZ EE EG ES FI FR GA GF GG GN GP GQ GR GW HR HT HU IE IL IN IT JE KH KM LA LB LC LT LU LV LY MA MC MD ME MF MG MK ML MQ MR MT MU NC NE NL NO NZ PF PL PM PR PT QA RE RO RS RW SC SE SI SK SN ST TD TG TN US VI VU WF YT,FR,,,,ANZ CAR EAF EEU MAF MEL NAF NAM NEU POL SAM SAS SEA SEU WAF WAS WEU,fra,fr,CLDR,,,,primary usage
-fr-Brai,fr-Brai-FR,French,Brai,AD AM AT AU BE BF BG BI BJ BL CA CD CF CG CH CI CM CV CY DE DJ DK DM DO DZ EE EG ES FI FR GA GF GG GN GP GQ GR GW HR HT HU IE IL IN IT JE KH KM LA LB LC LT LU LV LY MA MC MD ME MF MG MK ML MQ MR MT MU NC NE NL NO NZ PF PL PM PR PT QA RE RO RS RW SC SE SI SK SN ST TD TG TN US VI VU WF YT,FR,,,,ANZ CAR EAF EEU MAF MEL NAF NAM NEU POL SAM SAS SEA SEU WAF WAS WEU,fra,fr-Brai,,,,,
+fr,fr-Latn-FR,French,Latn,AD AM AT AU BE BF BG BI BJ BL CA CD CF CG CH CI CM CV  DE DJ DK DM DO DZ EE EG ES FI FR GA GF GG GN GP GQ GR GW HR HT HU IE IL IN IT JE KH KM LA LB LC LT LU LV LY MA MC MD ME MF MG MK ML MQ MR MT MU NC NE NL NO NZ PF PL PM PR PT QA RE RO RS RW SC SE SI SK SN ST TD TG TN US VI VU WF YT,FR,,,,ANZ CAR EAF EEU MAF MEL NAF NAM NEU POL SAM SAS SEA SEU WAF WAS WEU,fra,fr,CLDR,,,,primary usage
+fr-Brai,fr-Brai-FR,French,Brai,AD AM AT AU BE BF BG BI BJ BL CA CD CF CG CH CI CM CV CY DE DJ DK DM DO DZ EE EG ES FI FR GA GF GG GN GP GQ GR GW HR HT HU IE IL IN IT JE KH KM LA LB LC LT LU LV LY MA MC MD ME MF MG MK ML MQ MR MT MU NC NE NL NO NZ PF PL PM PR PT QA RE RO RS RW SC SE SI SK SN ST TD TG TN US VI VU WF YT,FR,,,,ANZ CAR EAF EEU MAF MEL NAF NAM NEU POL SAM SAS SEA SEU WAF WAS WEU,fra,fr-Brai,,,,,
 frc,frc-Latn-US,"French, Cajun",Latn,US,US,,,,NAM,frc,frc-Latn,CLDR,,,,
 frd,frd-Latn-ID,Fordata,Latn,ID,ID,,,,SEA,frd,frd-Latn,,20-Apr-2018,,,
 frk-Latn,frk-Latn-DE,Frankish,Latn,DE,DE,,,,WEU,frk,,,,Extinct,,
@@ -2607,8 +2607,8 @@ hai,hai-Latn-CA,Haida,Latn,CA,CA,,,,NAM,hai,hai-Latn,LE,9-Jan-2018,,,
 haj-Beng,haj-Beng-IN,Hajong,Beng,BD IN,IN,,,,SAS,haj,haj-Beng,,,,,used in Bangladesh and India
 haj-Latn,haj-Latn-IN,Hajong,Latn,BD IN,IN,,,,SAS,haj,haj-Latn,,,,,used in India
 hak,hak-Hans-CN,"Chinese, Hakka",Hans,CN,CN,,,,EAS,hak,,CLDR,,,,
-hak-Hant,hak-Hant-CN,"Chinese, Hakka",Hant,BN CA CN GF HK ID KH MY PA PF SG SR TH TW US,CN,,,,CAM EAS NAM NEU POL SAM SEA,hak,hak-Hant,,,,,
-hak-Latn,hak-Latn-CN,"Chinese, Hakka",Latn,BN CA CN GF HK ID KH MY PA PF SG SR TH TW US,CN,,,,CAM EAS NAM NEU POL SAM SEA,hak,hak-Latn,,,,,
+hak-Hant,hak-Hant-CN,"Chinese, Hakka",Hant,BN CA CN GF HK ID KH MY PA PF SG SR TH TW US,CN,,,,CAM EAS NAM NEU POL SAM SEA,hak,hak-Hant,,,,,
+hak-Latn,hak-Latn-CN,"Chinese, Hakka",Latn,BN CA CN GF HK ID KH MY PA PF SG SR TH TW US,CN,,,,CAM EAS NAM NEU POL SAM SEA,hak,hak-Latn,,,,,
 hal,hal-Latn-VN,Halang,Latn,LA VN,VN,,,,SEA,hal,hal-Latn,NMC,20-Nov-2017,,,
 ham,ham-Latn-PG,Hewa,Latn,PG,PG,,,,MEL,ham,ham-Latn,LE,10-Jan-2018,,,
 han,han-Latn-TZ,Hangaza,Latn,TZ,TZ,,,,EAF,han,han-Latn,LE,5-Apr-2018,,,
@@ -2633,8 +2633,8 @@ hdn,hdn-Latn-CA,"Haida, Northern",Latn,CA US,CA,hai,,,NAM,hdn,hdn-Latn,LE,9-Jan-
 hds-Zyyy,hds-Zyyy-HN,Honduras Sign Language,Zyyy,HN,HN,,1,,CAM,hds,,,,,,
 hdy-Ethi,hdy-Ethi-ET,Hadiyya,Ethi,ET,ET,,,,EAF,hdy,hdy-Ethi,,,,,used in Church literature
 hdy,hdy-Latn-ET,Hadiyya,Latn,ET,ET,,,,EAF,hdy,hdy-Latn,,,,,official usage
-he,he-Hebr-IL,Hebrew,Hebr,CA DE IL PA PS RU US,IL,,,,CAM EEU NAM NEU WAS WEU,heb,he,CLDR,,,,primary usage
-he-Brai,he-Brai-IL,Hebrew,Brai,CA DE IL PA PS RU US,IL,,,,CAM EEU NAM NEU WAS WEU,heb,he-Brai,LE,9-Jan-2018,,,
+he,he-Hebr-IL,Hebrew,Hebr,CA DE IL PA PS RU US,IL,,,,CAM EEU NAM NEU WAS WEU,heb,he,CLDR,,,,primary usage
+he-Brai,he-Brai-IL,Hebrew,Brai,CA DE IL PA PS RU US,IL,,,,CAM EEU NAM NEU WAS WEU,heb,he-Brai,LE,9-Jan-2018,,,
 hea-Bopo,hea-Bopo-CN,"Miao, Northern Qiandong",Bopo,CN,CN,hmn,,1,EAS,hea,hea-Bopo,,23-Mar-2018,,,
 hed,hed-Latn-TD,Herdé,Latn,TD,TD,,,,MAF,hed,hed-Latn,LE,12-Jan-2018,,,
 heg,heg-Latn-ID,Helong,Latn,ID,ID,,,,SEA,heg,heg-Latn,,20-Apr-2018,,,
@@ -2777,8 +2777,8 @@ hto,hto-Latn-CO,"Huitoto, Minica",Latn,CO,CO,,,,SAM,hto,hto-Latn,LE,9-Jan-2018,,
 hts,hts-Qaax-TZ,Hadza,Qaax,TZ,TZ,,1,,EAF,hts,hts-Qaax,,,,,
 htu,htu-Qaax-ID,Hitu,Qaax,ID,ID,,1,,SEA,htu,htu-Qaax,,,,,
 htx-Zyyy,htx-Zyyy,Middle Hittite,Zyyy,TR,TR,,,,WAS,htx,,,,Ancient,,
-hu,hu-Latn-HU,Hungarian,Latn,AT AU CA CZ DE FI HR HU IL MD RO RS RU SE SI SK UA US,HU,,,,ANZ EEU NAM NEU SEU WAS WEU,hun,hu,CLDR,,,,primary usage
-hu-Brai,hu-Brai-HU,Hungarian,Brai,AT AU CA CZ DE FI HR HU IL MD RO RS RU SE SI SK UA US,HU,,,,ANZ EEU NAM NEU SEU WAS WEU,hun,hu-Brai,,,,,
+hu,hu-Latn-HU,Hungarian,Latn,AT AU CA CZ DE FI HR HU IL MD RO RS RU SE SI SK UA US,HU,,,,ANZ EEU NAM NEU SEU WAS WEU,hun,hu,CLDR,,,,primary usage
+hu-Brai,hu-Brai-HU,Hungarian,Brai,AT AU CA CZ DE FI HR HU IL MD RO RS RU SE SI SK UA US,HU,,,,ANZ EEU NAM NEU SEU WAS WEU,hun,hu-Brai,,,,,
 hub,hub-Latn-PE,Wampís,Latn,PE,PE,,,,SAM,hub,hub-Latn,LE,9-Jan-2018,,,
 huc,huc-Latn-BW,‡Hua,Latn,BW,BW,,1,,SAF,huc,huc-Qaax,LE,9-Jan-2018,,,
 hud-Zyyy,hud-Zyyy-ID,Huaulu,Zyyy,ID,ID,,,,SEA,hud,,,,,,
@@ -3006,8 +3006,8 @@ iyx,iyx-Latn-CG,Yaka,Latn,CG,CG,,,1,MAF,iyx,iyx-Latn,LE,12-Jan-2018,,,
 izh,izh-Latn-RU,Ingrian,Latn,RU,RU,,,1,EEU,izh,izh-Latn,CLDR,,,,
 izr-Latn,izr-Latn-NG,Izere,Latn,NG,NG,,,,WAF,izr,izr-Latn,,,,,
 izz-Latn,izz-Latn-NG,Izii,Latn,NG,NG,,,,WAF,izz,izz-Latn,,,,,
-ja,ja-Jpan-JP,Japanese,Jpan,AE AR AS AU BR CA DE DO FI FM GU HK JP MN MP MX NZ PA PH PW PY RU SG TH TW US,JP,,,,ANZ CAM CAR EAS EEU MIC NAM NEU POL SAM SEA WAS WEU,jpn,ja,CLDR,,,,primary usage
-ja-Brai,ja-Brai-JP,Japanese,Brai,AE AR AS AU BR CA DE DO FI FM GU HK JP MN MP MX NZ PA PH PW PY RU SG TH TW US,JP,,,,ANZ CAM CAR EAS EEU MIC NAM NEU POL SAM SEA WAS WEU,jpn,ja-Brai,,,,,
+ja,ja-Jpan-JP,Japanese,Jpan,AE AR AS AU BR CA DE DO FI FM GU HK JP MN MP MX NZ PA PH PW PY RU SG TH TW US,JP,,,,ANZ CAM CAR EAS EEU MIC NAM NEU POL SAM SEA WAS WEU,jpn,ja,CLDR,,,,primary usage
+ja-Brai,ja-Brai-JP,Japanese,Brai,AE AR AS AU BR CA DE DO FI FM GU HK JP MN MP MX NZ PA PH PW PY RU SG TH TW US,JP,,,,ANZ CAM CAR EAS EEU MIC NAM NEU POL SAM SEA WAS WEU,jpn,ja-Brai,,,,,
 jaa,jaa-Latn-BR,Jamamadí,Latn,BR,BR,,,,SAM,jaa,jaa-Latn,LE,9-Jan-2018,,,
 jab-Latn,jab-Latn-NG,Hyam,Latn,NG,NG,,,,WAF,jab,jab-Latn,,,,,
 jac,jac-Latn-GT,Jakalteko,Latn,GT MX,GT,,,,CAM,jac,jac-Latn,LE,9-Jan-2018,,,
@@ -3392,7 +3392,7 @@ kip-Deva,kip-Deva-NP,"Kham, Sheshi",Deva,NP,NP,,,,SAS,kip,kip-Deva,,,,,
 kiq-Zyyy,kiq-Zyyy-ID,Kosare,Zyyy,ID,ID,,,,SEA,kiq,,,,,,
 kis,kis-Latn-PG,Kis,Latn,PG,PG,,1,,MEL,kis,,LE,10-Jan-2018,,,
 kit,kit-Latn-PG,Agob,Latn,PG,PG,,,,MEL,kit,kit-Latn,LE,10-Jan-2018,,,
-kiu,kiu-Latn-TR,"Zazaki, Northern",Latn,AT CH DE NL TR,TR,,,,NEU WAS WEU,kiu,kiu-Latn,CLDR,,,,
+kiu,kiu-Latn-TR,"Zazaki, Northern",Latn,AT CH DE NL TR,TR,,,,NEU WAS WEU,kiu,kiu-Latn,CLDR,,,,
 kiv,kiv-Qaax-TZ,Kimbu,Qaax,TZ,TZ,,1,,EAF,kiv,kiv-Qaax,,,,,
 kiw,kiw-Latn-PG,"Kiwai, Northeast",Latn,PG,PG,,,,MEL,kiw,kiw-Latn,LE,10-Jan-2018,,,
 kix-Latn,kix-Latn-IN,"Naga, Khiamniungan",Latn,IN MM,IN,,,,SAS SEA,kix,kix-Latn,,,,,
@@ -3513,9 +3513,9 @@ kmo,kmo-Latn-PG,Kwoma,Latn,PG,PG,,,,MEL,kmo,kmo-Latn,LE,10-Jan-2018,,,
 kmp,kmp-Latn-CM,Gimme,Latn,CM,CM,,,,MAF,kmp,kmp-Latn,LE,12-Jan-2018,,,
 kmq,kmq-Latn-ET,Kwama,Latn,ET,ET,,,,EAF,kmq,kmq-Latn,LE,20-Mar-2018,,,
 kmr-Armn,kmr-Armn-AZ,"Kurdish, Northern",Armn,AZ,AZ,ku,,,,kmr,kmr-Armn,,,,,used in Armenia
-kmr-Arab,kmr-Arab-TR,"Kurdish, Northern",Arab,AM AZ BE BH CA CH DE DK FI GE GR IQ IR IT KG KW KZ LB NL NO RU SE SY TM TR US,TR,ku,,,CAS EEU NAM NEU SAS SEU WAS WEU,kmr,kmr-Arab,CLDR,23-Mar-2018,via macro mapping,,"used in Iran, Iraq, Syria, and Lebanon"
-kmr-Cyrl,kmr-Cyrl-AZ,"Kurdish, Northern",Cyrl,AZ  RU,TR,ku,,,CAS EEU NAM NEU SAS SEU WAS WEU,kmr,kmr-Cyrl,St CLDR,23-Mar-2018,via macro mapping,,used in Russia and Armenia
-kmr-Latn,kmr-Latn-TR,"Kurdish, Northern",Latn,AM AZ BE BH CA CH DE DK FI GE GR IQ IR IT KG KW KZ LB NL NO RU SE SY TM TR US,TR,ku,,,CAS EEU NAM NEU SAS SEU WAS WEU,kmr,kmr-Latn,CLDR,23-Mar-2018,via macro mapping,,used in Turkey
+kmr-Arab,kmr-Arab-TR,"Kurdish, Northern",Arab,AM AZ BE BH CA CH DE DK FI GE GR IQ IR IT KG KW KZ LB NL NO RU SE SY TM TR US,TR,ku,,,CAS EEU NAM NEU SAS SEU WAS WEU,kmr,kmr-Arab,CLDR,23-Mar-2018,via macro mapping,,"used in Iran, Iraq, Syria, and Lebanon"
+kmr-Cyrl,kmr-Cyrl-AZ,"Kurdish, Northern",Cyrl,AZ  RU,TR,ku,,,CAS EEU NAM NEU SAS SEU WAS WEU,kmr,kmr-Cyrl,St CLDR,23-Mar-2018,via macro mapping,,used in Russia and Armenia
+kmr-Latn,kmr-Latn-TR,"Kurdish, Northern",Latn,AM AZ BE BH CA CH DE DK FI GE GR IQ IR IT KG KW KZ LB NL NO RU SE SY TM TR US,TR,ku,,,CAS EEU NAM NEU SAS SEU WAS WEU,kmr,kmr-Latn,CLDR,23-Mar-2018,via macro mapping,,used in Turkey
 kms,kms-Latn-PG,Kamasau,Latn,PG,PG,,,,MEL,kms,kms-Latn,LE,10-Jan-2018,,,
 kmt,kmt-Latn-ID,Kemtuik,Latn,ID,ID,,,,SEA,kmt,kmt-Latn,,20-Apr-2018,,,
 kmu,kmu-Latn-PG,Kanite,Latn,PG,PG,,,,MEL,kmu,kmu-Latn,LE,10-Jan-2018,,,
@@ -3556,8 +3556,8 @@ knw,knw-Latn-NA,Kung-Ekoka,Latn,AO BW NA ZA,NA,,,,MAF SAF,knw,knw-Latn,LE,12-Jan
 knx,knx-Latn-ID,Kendayan,Latn,ID MY,ID,,,,SEA,knx,knx-Latn,,20-Apr-2018,,,limited usage
 kny,kny-Latn-CD,Kanyok,Latn,CD,CD,,,,MAF,kny,kny-Latn,LE,12-Jan-2018,,,
 knz-Latn,knz-Latn-BF,Kalamsé,Latn,BF ML,BF,,,1,WAF,knz,knz-Latn,,,,,
-ko,ko-Kore-KR,Korean,Kore,AS AU AZ BH BN BR BY CA CN DE GU JP KG KP KR KZ LY MN MP MZ NZ PA PH PY RU SG SR TJ TM UA US UZ,KR,,,,ANZ CAM CAS EAF EAS EEU MIC NAF NAM NEU POL SAM SEA WAS WEU,kor,ko,CLDR,,,,primary usage
-ko-Brai,ko-Brai-KR,Korean,Brai,AS AU AZ BH BN BR BY CA CN DE GU JP KG KP KR KZ LY MN MP MZ NZ PA PH PY RU SG SR TJ TM UA US UZ,KR,,,,ANZ CAM CAS EAF EAS EEU MIC NAF NAM NEU POL SAM SEA WAS WEU,kor,ko-Brai,,,,,
+ko,ko-Kore-KR,Korean,Kore,AS AU AZ BH BN BR BY CA CN DE GU JP KG KP KR KZ LY MN MP MZ NZ PA PH PY RU SG SR TJ TM UA US UZ,KR,,,,ANZ CAM CAS EAF EAS EEU MIC NAF NAM NEU POL SAM SEA WAS WEU,kor,ko,CLDR,,,,primary usage
+ko-Brai,ko-Brai-KR,Korean,Brai,AS AU AZ BH BN BR BY CA CN DE GU JP KG KP KR KZ LY MN MP MZ NZ PA PH PY RU SG SR TJ TM UA US UZ,KR,,,,ANZ CAM CAS EAF EAS EEU MIC NAF NAM NEU POL SAM SEA WAS WEU,kor,ko-Brai,,,,,
 ko-Latn,ko-Latn-KR,Korean,Latn,AS AU AZ BH BN BR BY CA CN DE GU JP KG KP KR KZ LY MN MP MZ NZ PA PH PY RU SG SR TJ TM UA US UZ,KR,,,,ANZ CAM CAS EAF EAS EEU MIC NAF NAM NEU POL SAM SEA WAS WEU,kor,ko-Latn,,,,,used for maps and signs
 koa,koa-Latn-PG,Konomala,Latn,PG,PG,,1,,MEL,koa,,LE,10-Jan-2018,,,
 koc-Zyyy,koc-Zyyy-NG,Kpati,Zyyy,NG,NG,,,,WAF,koc,,,,Extinct,,
@@ -6204,7 +6204,7 @@ rmk,rmk-Latn-PG,Romkun,Latn,PG,PG,,1,,MEL,rmk,,LE,10-Jan-2018,,,
 rml-Cyrl,rml-Cyrl-BY,"Romani, Baltic",Cyrl,BY EE LT LV PL RU,BY,,,,EEU NEU,rml,rml-Cyrl,St,,,,used in Belarus and Ukraine
 rml-Latn,rml-Latn-PL,"Romani, Baltic",Latn,BY EE LT LV PL RU,PL,,,,EEU NEU,rml,rml-Latn,St,,,,"used in Latvia, Lithuania and Poland"
 rmm,rmm-Qaax-ID,Roma,Qaax,ID,ID,,1,,SEA,rmm,rmm-Qaax,,,,,
-rmn-Cyrl,rmn-Cyrl-BG,"Romani, Balkan",Cyrl,BG UA,BG,,,,EEU NEU SAS SEU WAS WEU,rmn,rmn-Cyrl,St,,,,used in Bulgaria
+rmn-Cyrl,rmn-Cyrl-BG,"Romani, Balkan",Cyrl,BG UA,BG,,,,EEU NEU SAS SEU WAS WEU,rmn,rmn-Cyrl,St,,,,used in Bulgaria
 rmn-Grek,rmn-Grek-GR,"Romani, Balkan",Grek,GR,GR,,,,EEU NEU SAS SEU WAS WEU,rmn,rmn-Grek,St,,,,used in Greece
 rmn-Latn,rmn-Latn-RS,"Romani, Balkan",Latn,MK RO RS ,RS,,,,EEU NEU SAS SEU WAS WEU,rmn,rmn-Latn,St,,,,used in Serbia
 rmo,rmo-Latn-CH,"Romani, Sinte",Latn,AT CH CZ DE FR HR IT KZ NL PL RS,DE,,,,CAS EEU SEU WEU,rmo,rmo-Latn,CLDR,,,,
@@ -6217,8 +6217,8 @@ rmu,rmu-Latn-SE,"Romani, Tavringer",Latn,SE,SE,,,,NEU,rmu,,CLDR,,,,
 rmv,rmv-Zyyy,Romanova,Zyyy,No Man's Land,??,,,,???,rmv,,,,Constructed,,
 rmw,rmw-Latn-GB,"Romani, Welsh",Latn,GB,GB,,,,NEU,rmw,rmw-Latn,St,,archaic form of Anglo-Romani still spoken in northern Wales,,
 rmx,rmx-Zyyy-VN,Romam,Zyyy,VN,VN,,,,SEA,rmx,,NMC,4-Dec-2017,,,
-rmy-Cyrl,rmy-Cyrl-BG,"Romani, Vlax",Cyrl,BG RS RU UA,BG,rom,,,CAM EEU NAM NEU SAM SEU WEU,rmy,rmy-Cyrl,St,23-Mar-2018,,,used for Kalderash dialect
-rmy-Latn,rmy-Latn-RO,"Romani, Vlax",Latn,AL AR AT BA BR CA CL CO DE ES FR GR HU IT MD MK MX NL NO PL PT RO RS SE SK,RO,rom,,,CAM EEU NAM NEU SAM SEU WEU,rmy,rmy-Latn,St,23-Mar-2018,,,
+rmy-Cyrl,rmy-Cyrl-BG,"Romani, Vlax",Cyrl,BG RS RU UA,BG,rom,,,CAM EEU NAM NEU SAM SEU WEU,rmy,rmy-Cyrl,St,23-Mar-2018,,,used for Kalderash dialect
+rmy-Latn,rmy-Latn-RO,"Romani, Vlax",Latn,AL AR AT BA BR CA CL CO DE ES FR GR HU IT MD MK MX NL NO PL PT RO RS SE SK,RO,rom,,,CAM EEU NAM NEU SAM SEU WEU,rmy,rmy-Latn,St,23-Mar-2018,,,
 rmz-Mymr,rmz-Mymr-IN,Marma,Mymr,BD IN,IN,,,,SAS,rmz,rmz-Mymr,,,,,used in India
 rn,rn-Latn-BI,Rundi,Latn,BI RW TZ,BI,,,,EAF,run,rn,CLDR,,,,primary usage
 rn-Brai,rn-Brai-BI,Rundi,Brai,BI RW TZ,BI,,,,EAF,run,rn-Brai,,,,,
@@ -6542,7 +6542,7 @@ sjt,sjt-Zyyy-RU,"Saami, Ter",Zyyy,RU,RU,,,,EEU,sjt,,,,,,
 sju,sju-Latn-SE,"Saami, Ume",Latn,NO SE,SE,,,1,NEU,sju,sju-Latn,LE,12-Jan-2018,,,
 sjw,sjw-Latn-US,Shawnee,Latn,US,US,,,,NAM,sjw,sjw-Latn,LE,9-Jan-2018,,,
 sk,sk-Latn-SK,Slovak,Latn,AT CA CZ DE HR HU RO RS RU SK UA US,SK,,,,EEU NAM NEU SEU WEU,slk,sk,CLDR,,,,primary usage
-sk-Brai,sk-Brai-SK,Slovak,Brai,AT CA CZ DE  HR HU RO RS RU SK UA US,SK,,,,EEU NAM NEU SEU WEU,slk,sk-Brai,,,,,
+sk-Brai,sk-Brai-SK,Slovak,Brai,AT CA CZ DE  HR HU RO RS RU SK UA US,SK,,,,EEU NAM NEU SEU WEU,slk,sk-Brai,,,,,
 ska,ska-Latn-US,Skagit,Latn,US,US,,1,,NAM,ska,,LE,9-Jan-2018,,,
 skb,skb-Qaax-LA,Saek,Qaax,LA TH,LA,,1,,SEA,skb,skb-Qaax,NMC,4-Dec-2017,,,
 skc,skc-Latn-PG,Ma Manda,Latn,PG,PG,,,,MEL,skc,skc-Latn,LE,10-Jan-2018,,,
@@ -6844,7 +6844,7 @@ swc,swc-Latn-CD,"Swahili, Congo",Latn,CD ZM,CD,,,,EAF MAF,swc,swc-Latn,CLDR,,,,
 swf,swf-Qaax-CD,Sere,Qaax,CD CF,CD,,1,,MAF,swf,swf-Qaax,,,,,
 swg,swg-Latn-DE,Swabian,Latn,AT DE,DE,,,,WEU,swg,swg-Latn,CLDR,,,,
 swh,swh-Latn-TZ,Swahili,Latn,AE BI CA KE MZ OM RW SA SO TZ UG US YT ZA,TZ,sw,,,EAF NAM NEU SAF WAS,swh,swh-Latn,CLDR,23-Mar-2018,via macro mapping,,
-swh-Brai,swh-Brai-TZ,Swahili,Brai,AE BI CA  KE MZ OM RW SA SO TZ UG US YT ZA,TZ,,,,EAF NAM NEU SAF WAS,swh,swh-Brai,,,,,
+swh-Brai,swh-Brai-TZ,Swahili,Brai,AE BI CA  KE MZ OM RW SA SO TZ UG US YT ZA,TZ,,,,EAF NAM NEU SAF WAS,swh,swh-Brai,,,,,
 swi-Hani,swi-Hani-CN,Sui,Hani,CN VN,CN,,,,EAS SEA,swi,swi-Hani,,,,,used by folk singers aged 40–60
 swj,swj-Latn-GA,Sira,Latn,GA,GA,,,,MAF,swj,swj-Latn,LE,12-Jan-2018,,,
 swk-Latn,swk-Latn-MW,"Sena, Malawi",Latn,MW,MW,,,,EAF,swk,swk-Latn,,,,,
@@ -6880,9 +6880,9 @@ syb-Latn,syb-Latn-PH,"Subanen, Central",Latn,PH,PH,,,,SEA,syb,syb-Latn,,,,,
 syc-Syrc,syc-Syrc-TR,Syriac,Syrc,TR,TR,,,,WAS,syc,syc-Syrc,,,Historical,,
 syi,syi-Latn-GA,Seki,Latn,GA GQ,GA,,1,,MAF,syi,syi-Qaax,LE,30-Jan-2018,,,
 syk,syk-Latn-NG,Sukur,Latn,NG,NG,,,,WAF,syk,syk-Latn,LE,15-Feb-2018,,,
-syl,syl-Beng-BD,Sylheti,Beng,BD CA  IN MY SG US,BD,,,,NAM NEU SAS SEA,syl,syl-Beng,CLDR,,,,
+syl,syl-Beng-BD,Sylheti,Beng,BD CA  IN MY SG US,BD,,,,NAM NEU SAS SEA,syl,syl-Beng,CLDR,,,,
 syl-Latn,syl-Latn-BD,Sylheti,Latn,BD CA IN MY SG US,BD,,,,NAM NEU SAS SEA,syl,syl-Latn,,,,,
-syl-Sylo,syl-Sylo-BD,Sylheti,Sylo,BD CA  IN MY SG US,BD,,,1,NAM NEU SAS SEA,syl,syl-Sylo,,,,,
+syl-Sylo,syl-Sylo-BD,Sylheti,Sylo,BD CA  IN MY SG US,BD,,,1,NAM NEU SAS SEA,syl,syl-Sylo,,,,,
 sym,sym-Zyyy-BF,"Samo, Maya",Zyyy,BF,BF,,,,WAF,sym,,,,,,
 syn-Syrc,syn-Syrc-IR,Senaya,Syrc,IR US,IR,,,,NAM SAS,syn,syn-Syrc,,,,,
 syo,syo-Latn-KH,Suoy,Latn,KH,KH,,,,SEA,syo,,NMC,9-Jan-2018,,,
@@ -7070,7 +7070,7 @@ tgx,tgx-Latn-CA,Tagish,Latn,CA,CA,,1,,NAM,tgx,,LE,9-Jan-2018,,,
 tgy,tgy-Zyyy-SS,Togoyo,Zyyy,SS,SS,,1,,EAF,tgy,tgy-Qaax,LE,10-Jan-2018,Extinct,,
 tgz,tgz-Zyyy-AU,Tagalaka,Zyyy,AU,AU,,1,,ANZ,tgz,tgz-Qaax,LE,10-Jan-2018,Extinct,,
 th,th-Thai-TH,Thai,Thai,AE AU CA DE DK FI KH SE SG TH US,TH,,,,ANZ NAM NEU SEA WAS WEU,tha,th,CLDR,,,,primary usage
-th-Brai,th-Brai-TH,Thai,Brai,AE AU CA DE DK FI  KH SE SG TH US,TH,,,,ANZ NAM NEU SEA WAS WEU,tha,th-Brai,NMC,10-Jan-2018,,,
+th-Brai,th-Brai-TH,Thai,Brai,AE AU CA DE DK FI  KH SE SG TH US,TH,,,,ANZ NAM NEU SEA WAS WEU,tha,th-Brai,NMC,10-Jan-2018,,,
 thd,thd-Latn-AU,Thayore,Latn,AU,AU,,,,ANZ,thd,thd-Latn,LE,10-Jan-2018,,,
 the-Deva,the-Deva-NP,"Tharu, Chitwania",Deva,IN NP,NP,,,,SAS,the,the-Deva,,,,,
 thf-Deva,thf-Deva-NP,Thangmi,Deva,CN IN NP,NP,,,,EAS SAS,thf,thf-Deva,,,,,
@@ -7092,7 +7092,7 @@ thw,thw-Qaax-NP,Thudam,Qaax,NP,NP,,1,,SAS,thw,thw-Qaax,,,,,
 thy,thy-Zyyy-NG,Tha,Zyyy,NG,NG,,,,WAF,thy,,,,,,
 thz-Latn,thz-Latn-NE,"Tamajeq, Tayart",Latn,NE,NE,,,,WAF,thz,thz-Latn,,,,,
 thz-Tfng,thz-Tfng-NE,"Tamajeq, Tayart",Tfng,NE,NE,,,,WAF,thz,thz-Tfng,,,,,called Shifinagh
-ti,ti-Ethi-ET,Tigrigna,Ethi,CA DE DJ ER ET  IL SE,ET,,,,EAF NAM NEU WAS WEU,tir,ti,CLDR,,,,
+ti,ti-Ethi-ET,Tigrigna,Ethi,CA DE DJ ER ET  IL SE,ET,,,,EAF NAM NEU WAS WEU,tir,ti,CLDR,,,,
 ti-ER,ti-Ethi-ER,Tigrigna,Ethi,ER,ER,,,,EAF NAM NEU WAS WEU,tir,,,24-Aug-2017,,,
 tia,tia-Zyyy-DZ,"Tamazight, Tidikelt",Zyyy,DZ,DZ,,,,NAF,tia,,,,,,
 tic,tic-Latn-SD,Tira,Latn,SD,SD,,,,NAF,tic,tic-Latn,LE,12-Jan-2018,,,
@@ -7287,7 +7287,7 @@ tqu,tqu-Latn-SB,Touo,Latn,SB,SB,,1,,MEL,tqu,,LE,10-Jan-2018,,,
 tqw,tqw-Zyyy-US,Tonkawa,Zyyy,US,US,,1,,NAM,tqw,,LE,10-Jan-2018,Extinct,,
 tr,tr-Latn-TR,Turkish,Latn,AE AL AT AU AZ BA BE BG CA CH CY DE DK FI FR GE GR HR IL IQ IR KG KZ MK NL RO RS RU SA SE TJ TR UA US UZ,TR,,,,ANZ CAS EEU NAM NEU SAS SEU WAS WEU,tur,tr,CLDR,,,,primary usage
 tr-Arab,tr-Arab-TR,Turkish,Arab,AE AL AT AU AZ BA BE BG CA CH CY DE DK FI FR GE GR HR IL IQ IR KG KZ MK NL RO RS RU SA SE TJ TR UA US UZ,TR,,,1,ANZ CAS EEU NAM NEU SAS SEU WAS WEU,tur,tr-Arab,,,,,
-tr-Brai,tr-Brai-TR,Turkish,Brai,AE AL AT AU AZ BA BE BG CA CH CY DE DK FI FR  GE GR HR IL IQ IR KG KZ MK NL RO RS RU SA SE TJ TR UA US UZ,TR,,,,ANZ CAS EEU NAM NEU SAS SEU WAS WEU,tur,tr-Brai,,,,,
+tr-Brai,tr-Brai-TR,Turkish,Brai,AE AL AT AU AZ BA BE BG CA CH CY DE DK FI FR  GE GR HR IL IQ IR KG KZ MK NL RO RS RU SA SE TJ TR UA US UZ,TR,,,,ANZ CAS EEU NAM NEU SAS SEU WAS WEU,tur,tr-Brai,,,,,
 tr-Cyrl,tr-Cyrl-BG,Turkish,Cyrl,BG,BG,,,,ANZ CAS EEU NAM NEU SAS SEU WAS WEU,tur,tr-Cyrl,St,,,,used in Bulgaria
 tr-Grek,tr-Grek-TR,Turkish,Grek,AE AL AT AU AZ BA BE BG CA CH CY DE DK FI FR GE GR HR IL IQ IR KG KZ MK NL RO RS RU SA SE TJ TR UA US UZ,TR,,,1,ANZ CAS EEU NAM NEU SAS SEU WAS WEU,tur,tr-Grek,,,,,
 tra,tra-Qaax-AF,Tirahi,Qaax,AF,AF,,1,,SAS,tra,tra-Qaax,,,,,
