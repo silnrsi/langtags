@@ -2444,7 +2444,7 @@ goe,goe-Qaax-BT,Gongduk,Qaax,BT,BT,,1,,SAS,goe,goe-Qaax,,,,,
 gof,gof-Ethi-ET,Gofa,Ethi,ET,ET,,,,EAF,gof,gof-Ethi,CLDR,,,,used in Church literature
 gof-Latn,gof-Latn-ET,Gofa,Latn,ET,ET,,,,EAF,gof,gof-Latn,,,,,official usage
 gog,gog-Latn-TZ,Gogo,Latn,TZ,TZ,,,,EAF,gog,gog-Latn,LE,5-Apr-2018,,,
-goh-Latn,goh-Latn,Old High German (ca. 750-1050),Latn,AT CH DE,DE,,,,???,goh,,,6-Dec-2017,Historical,,
+goh-Latn,goh-Latn-DE,Old High German (ca. 750-1050),Latn,AT CH DE,DE,,,,???,goh,,,6-Dec-2017,Historical,,
 goi,goi-Latn-PG,Gobasi,Latn,PG,PG,,,,MEL,goi,goi-Latn,LE,10-Jan-2018,,,
 goj,goj-Qaax-IN,Gowlan,Qaax,IN,IN,,1,,SAS,goj,goj-Qaax,,,,,
 gok-Deva,gok-Deva-IN,Gowli,Deva,IN,IN,,,,SAS,gok,gok-Deva,,,,,
@@ -3399,7 +3399,7 @@ kjb,kjb-Latn-GT,Q'anjob'al,Latn,GT MX US,GT,,,,CAM NAM,kjb,kjb-Latn,LE,9-Jan-201
 kjc,kjc-Latn-ID,"Konjo, Coastal",Latn,ID,ID,,,,SEA,kjc,kjc-Latn,,20-Apr-2018,,,
 kjd,kjd-Latn-PG,"Kiwai, Southern",Latn,PG,PG,,,,MEL,kjd,kjd-Latn,LE,10-Jan-2018,,,
 kje,kje-Latn-ID,Kisar,Latn,ID,ID,,,,SEA,kje,kje-Latn,,20-Apr-2018,,,
-kjf-Zyyy,kjf-Zyyy-AZ,Khalaj,Zyyy,AZ IR,AZ,kjg-Qaaf,,,SAS WAS,kjf,,,,,,
+kjf-Zyyy,kjf-Zyyy-AZ,Khalaj,Zyyy,AZ IR,AZ,,,,SAS WAS,kjf,,,,,,
 kjg,kjg-Laoo-LA,Khmu,Laoo,CN LA TH US VN,LA,,,,EAS NAM SEA,kjg,kjg-Laoo,"CLDR, SVW",,,,
 kjg-Latn,kjg-Latn-LA,Khmu,Latn,CN LA TH US VN,LA,,,,EAS NAM SEA,kjg,kjg-Latn,SVW,,,,
 kjg-Thai,kjg-Thai-TH,Khmu,Thai,CN LA TH US VN,TH,,,,EAS NAM SEA,kjg,,SVW,,"not sure to what extent there is a single standardized orthography here, or various attempts.",,
@@ -6101,7 +6101,7 @@ rah-Beng,rah-Beng-IN,Rabha,Beng,IN,IN,,,,SAS,rah,rah-Beng,,,,,
 rah-Latn,rah-Latn-IN,Rabha,Latn,IN,IN,,,,SAS,rah,rah-Latn,,,,,
 rai,rai-Latn-PG,Ramoaaina,Latn,PG,PG,,,,MEL,rai,rai-Latn,LE,10-Jan-2018,,,
 raj,raj-Deva-IN,Rajasthani (macrolanguage),Deva,IN,IN,,,,???,raj,,CLDR,,,,
-raj-Latn,raj-Latn,Rajasthani,Latn,IN,IN,,,,SAS,raj,raj-latn,,,,,preferred by Catholics
+raj-Latn,raj-Latn-IN,Rajasthani,Latn,IN,IN,,,,SAS,raj,raj-latn,,,,,preferred by Catholics
 rak,rak-Latn-PG,Tulu-Bohuai,Latn,PG,PG,,1,,MEL,rak,,LE,10-Jan-2018,,,
 ral,ral-Zyyy-IN,Ralte,Zyyy,IN,IN,,,,SAS,ral,,,,,,
 ram,ram-Latn-BR,Canela,Latn,BR,BR,,,,SAM,ram,ram-Latn,LE,9-Jan-2018,,,
@@ -6970,7 +6970,7 @@ tcu,tcu-Latn-MX,"Tarahumara, Southeastern",Latn,MX,MX,,1,,CAM,tcu,tcu-Qaax,LE,9-
 tcw,tcw-Latn-MX,"Totonac, Tecpatlán",Latn,MX,MX,,,,CAM,tcw,tcw-Latn,LE,9-Jan-2018,,,
 tcx-Taml,tcx-Taml-IN,Toda,Taml,IN,IN,,,,SAS,tcx,tcx-Taml,,,,,
 tcy,tcy-Knda-IN,Tulu,Knda,IN,IN,,,,SAS,tcy,tcy-Knda,CLDR,,,,
-tcy-x-Tulu,tcy-x-Tulu-IN,Tulu,Qaau,IN,IN,,,,SAS,tcy,,,,,,
+tcy-x-Tulu,tcy-Qaau-IN-x-Tulu,Tulu,Qaau,IN,IN,,,,SAS,tcy,,,,,,
 tcz-Latn,tcz-Latn-IN,"Chin, Thado",Latn,IN MM,IN,,,,SAS SEA,tcz,tcz-Latn,,,,,
 tda-Arab,tda-Arab-NE,Tagdal,Arab,NE,NE,,,,WAF,tda,tda-Arab,,,,,
 tda-Latn,tda-Latn-NE,Tagdal,Latn,NE,NE,,,,WAF,tda,tda-Latn,,,,,philosophical texts and religious verses are sometimes written in this script
