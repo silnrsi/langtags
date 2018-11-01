@@ -4,6 +4,13 @@ import unittest, os
 from xml.etree import ElementTree as et
 from palaso.langtags import LangTags, LangTag
 
+def isnotint(s):
+    try:
+        x = int(s)
+        return False
+    except ValueError:
+        return True
+
 class LikelySubtags(unittest.TestCase):
     def setUp(self):
         self.likelymap = {}
@@ -26,10 +33,16 @@ class LikelySubtags(unittest.TestCase):
             if k in self.ltags:
                 r = str(v)
                 if r not in self.ltags:
-                    #print(r + " is missing from langtags")
-                    #continue
                     self.fail(r + " is missing from langtags")
                 self.assertIs(self.ltags[k], self.ltags[r])
+
+    def test_noBadComponents(self):
+        for v in self.ltags.values():
+            if len(v.lang) > 3 and not v.lang.startswith("x-"):
+                self.fail(repr(v) + " has odd lang length")
+            if v.region is not None and len(v.region) > 2 and isnotint(v.region):
+                self.fail(repr(v) + " has bad region")
+            
 
 if __name__ == '__main__':
     unittest.main()
