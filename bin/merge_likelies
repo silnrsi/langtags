@@ -1,0 +1,36 @@
+#!/usr/bin/python2
+
+from xml.etree import ElementTree as et
+from palaso.langtags import LangTags, LangTag
+from palaso import unicsv as csv
+import argparse, codecs
+
+parser = argparse.ArgumentParser()
+parser.add_argument("infile")
+parser.add_argument("outfile")
+parser.add_argument("-l","--likely",required=True,help="likely_subtags.xml file")
+args = parser.parse_args()
+
+likelymap = {}
+doc = et.parse(args.likely)
+for e in doc.findall("./likelySubtags/likelySubtag"):
+    likelymap[e.get('from').replace("_", "-")] = e.get('to').replace("_", "-")
+
+inf = open(args.infile, "rb")
+outf = open(args.outfile, "wb")
+incv = csv.DictReader(inf)
+outcv = csv.DictWriter(outf, fieldnames=incv.fieldnames, lineterminator="\n")
+outcv.writeheader()
+for row in incv:
+    lid = row['Lang_Id']
+    ls = row['likely_subtag']
+    user = row['confirmed']
+    if lid in likelymap and ls != likelymap[lid]:
+        if user != '' and user != 'CLDR':
+            print("Conflict in {} between cldr={}, langtag={}, for {}".format(lid, likelymap[lid], ls, user))
+        if not likelymap[lid].endswith("-ZZ"):
+            row['likely_subtag'] = likelymap[lid]
+    outcv.writerow(row)
+inf.close()
+outf.close()
+
