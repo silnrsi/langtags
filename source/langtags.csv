@@ -106,7 +106,7 @@ aea,aea-Latn-AU,Areba,Latn,AU,AU,,1,,ANZ,aea,,LE,10-Jan-2018,Extinct,,
 aeb,aeb-Arab-TN,"Arabic, Tunisian Spoken",Arab,BE DE FR LY NL TN,TN,,,,NAF WEU,aeb,aeb-Arab,CLDR,,,,
 aeb-Latn,aeb-Latn-TN,"Arabic, Tunisian Spoken",Latn,BE DE FR LY NL TN,TN,,,,NAF WEU,aeb,aeb-Latn,LE,12-Jan-2018,,,informal use on social media
 aec-Arab,aec-Arab-EG,"Arabic, Sa'idi Spoken",Arab,EG,EG,,,,NAF,aec,aec-Arab,,,,,
-aed-Zyyy,aed-Zyyy-AR,Argentine Sign Language,Zyyy,AR,AR,,1,,SAM,aed,,,,,,
+aed,aed-Qaax-AR,Argentine Sign Language,Qaax,AR,AR,,1,,SAM,aed,,,,,,
 aee-Zyyy,aee-Zyyy-AF,"Pashai, Northeast",Zyyy,AF,AF,,1,,SAS,aee,aee-Qaax,,,,,
 aek,aek-Latn-NC,Haeke,Latn,NC,NC,,1,,MEL,aek,,LE,10-Jan-2018,,,
 ael-Zyyy,ael-Zyyy-CM,Ambele,Zyyy,CM,CM,,1,,MAF,ael,ael-Qaax,,,,,
