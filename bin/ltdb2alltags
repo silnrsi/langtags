@@ -182,6 +182,8 @@ else:
         namef = urllib2.urlopen(req)
     reader = csv.DictReader(namef, dialect=csv.excel_tab)
     for r in reader:
+        if r['CountryID'] == 'ET' and r['NameType'] == 'LA':     # hack fix for buggy Ethnologue data. To Be Reviewed 21/Feb/2019
+            continue
         if r['NameType'].startswith("L") and r['CountryID'] and not r['NameType'].endswith("P"):
             names.setdefault(r['LangID']+"-"+r['CountryID'], [[],[]])[0 if r['NameType'] == 'L' else 1].append(r['Name'])
     namef.close()
@@ -236,13 +238,15 @@ else:
                 if len(ns) > 1 :
                     n['names'] = ns[1:]
         if 'name' in n:
-            n['names'] = sorted(set(n['names']) - set([n['name']]))
+            n['names'] = sorted(x for x in set(n['names']) - set([n['name']]) if len(x))
         elif hasattr(t, 'name'):
             n['name'] = t.name
         else:
             print("Missing name entry for {} = {}".format(n['tag'], n['full']))
         if not len(n['names']):
             del n['names']
+        if not len(n.get('iso639_3', "fred")):
+            del n['iso639_3']
         if getattr(t, 'deprecated', False):
             n['deprecated'] = True
         if t.region is not None:

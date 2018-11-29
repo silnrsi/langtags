@@ -1,9 +1,5 @@
 # Language Tagging
 
-The short URL for this document is:
-[*https://goo.gl/LgQfGb*](https://goo.gl/LgQfGb). This document is aimed at
-those asked to help maintain the [*SIL Language Tags
-list*](https://docs.google.com/spreadsheets/d/121lH-li0w2gOMSaZ2Ac9vZ9TnFPJtldbtCvNvUrkZ0o/edit#gid=738998013).
 
 ## Overview
 
@@ -21,7 +17,7 @@ written in Latin, Thai or Myanmar scripts) and need multiple language tags
 A "likely subtags" list serves to "fill in the blanks", having entries that
 supply script and region information for each language tag, for example:
 
-|          |             |
+| lang_id  | likely_subtags |
 |----------|-------------|
 | aak      | aak-Latn-PG |
 | ahk      | ahk-Latn-MM |
@@ -256,7 +252,7 @@ be taken, so there is no danger.
 For a complex example, consider ahk, Akha. Here is how it is listed in the
 language tag list:
 
-|          |             |          |
+| lang_id  | likely_subtags | regions |
 |----------|-------------|----------|
 | ahk      | ahk-Latn-MM | CN MM TH |
 | ahk-Mymr | ahk-Mymr-MM | MM       |
