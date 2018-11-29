@@ -252,8 +252,7 @@ alk,alk-Qaax-LA,Alak,Qaax,LA,LA,,1,,SEA,alk,alk-Qaax,NMC,20-Nov-2017,,,
 all-Mlym,all-Mlym-IN,Allar,Mlym,IN,IN,,,,SAS,all,all-Mlym,,,,,
 alm,alm-Latn-VU,Amblong,Latn,VU,VU,,1,,MEL,alm,,LE,10-Jan-2018,,,
 aln-Brai,aln-Brai-AL,"Albanian, Gheg",Brai,AL RS,AL,,,,EEU NAM SEU WAS WEU,aln,aln-Brai,,,,,primary usage
-aln,aln-Latn-XK,"Albanian, Gheg",Latn,AL ME MK RO RS TR XK,"XK
-",,,,EEU NAM SEU WAS WEU,aln,aln-Latn,CLDR,,Ethnologue has AL,,
+aln,aln-Latn-XK,"Albanian, Gheg",Latn,AL ME MK RO RS TR XK,"XK",,,,EEU NAM SEU WAS WEU,aln,aln-Latn,CLDR,,Ethnologue has AL,,
 alo,alo-Latn-ID,Larike-Wakasihu,Latn,ID,ID,,,,SEA,alo,alo-Latn,,20-Apr-2018,,,
 alp,alp-Latn-ID,Alune,Latn,ID,ID,,,,SEA,alp,alp-Latn,,20-Apr-2018,,,
 alq,alq-Latn-CA,Algonquin,Latn,CA,CA,,,,NAM,alq,alq-Latn,LE,9-Jan-2018,,,
@@ -891,8 +890,7 @@ blr-Tale,blr-Tale-CN,Blang,Tale,CN MM TH,CN,,,,EAS SEA,blr,blr-Tale,,,,,"used in
 blr-Thai,blr-Thai-TH,Blang,Thai,CN MM TH,TH,,,,EAS SEA,blr,blr-Thai,,,"Check the ""Writing"" systems page of Ethnologue 4 scripts listed there, only one script listed in this doc",,
 bls-Zyyy,bls-Zyyy-ID,Balaesang,Zyyy,ID,ID,,,,SEA,bls,,,,,,
 blt-Laoo,blt-Laoo-LA,Tai Dam,Laoo,CN LA TH US VN,LA,,,,EAS NAM SEA,blt,blt-Laoo,SVW,,,,
-blt-Latn,blt-Latn-VN,Tai Dam,Latn,CN LA TH US VN,VN,,,,EAS NAM SEA,blt,blt-Latn,SVW,,"Actually many different Latin script orthographies, no standard (but many different competing standards and many people doing their own thing). But the orthography described in the Baccam et al 1989 dictionary has been in stable use for decades among a minority of users, so it should have its own variant tag. - SVW
-",,
+blt-Latn,blt-Latn-VN,Tai Dam,Latn,CN LA TH US VN,VN,,,,EAS NAM SEA,blt,blt-Latn,SVW,,"Actually many different Latin script orthographies, no standard (but many different competing standards and many people doing their own thing). But the orthography described in the Baccam et al 1989 dictionary has been in stable use for decades among a minority of users, so it should have its own variant tag. - SVW",,
 blt,blt-Tavt-VN,Tai Dam,Tavt,CN LA TH US VN,VN,,,,EAS NAM SEA,blt,blt-Tavt,CLDR,,"Although the Tavt script is highly valued by the Tai Dam people, most actually use the Latin script.  JLB 9-Jul-2018",,
 blv,blv-Latn-AO,Bolo,Latn,AO,AO,,1,,MAF,blv,blv-Qaax,,,,,
 blw-Latn,blw-Latn-PH,Balangao,Latn,PH,PH,,,,SEA,blw,blw-Latn,,,,,
@@ -1485,10 +1483,8 @@ cni,cni-Latn-PE,Asháninka,Latn,PE,PE,,,,SAM,cni,cni-Latn,LE,9-Jan-2018,,,
 cnk,cnk-Latn-MM,"Chin, Khumi",Latn,BD IN MM,MM,,,,SAS SEA,cnk,cnk-Latn,NMC,10-Jan-2018,,,
 cnl,cnl-Latn-MX,"Chinantec, Lalana",Latn,MX,MX,,,,CAM,cnl,cnl-Latn,LE,9-Jan-2018,,,
 cno,cno-Qaax-LA,Con,Qaax,LA,LA,,1,,SEA,cno,cno-Qaax,NMC,20-Nov-2017,,,
-cnr-Cyrl,cnr-Cyrl-ME,Montenegrin,Cyrl,ME,ME,,,,???,cnr,cnr-Cyrl,LE,18-Jan-2018,"https://www.xpatulator.com/cost-of-living-review/Montenegro-Podgorica_138.cfm
-Difficult to say which is predominant:  The Latin script is more likely to predominate in central and southern areas. Cyrillic is largely used in the north and more recently in the coastal areas, because of tourists from Russia. ",,
-cnr-Latn,cnr-Latn-ME,Montenegrin,Latn,ME,ME,,,,???,cnr,cnr-Latn,LE,18-Jan-2018,"https://www.xpatulator.com/cost-of-living-review/Montenegro-Podgorica_138.cfm
-Difficult to say which is predominant:  The Latin script is more likely to predominate in central and southern areas. Cyrillic is largely used in the north and more recently in the coastal areas, because of tourists from Russia. ",,
+cnr-Cyrl,cnr-Cyrl-ME,Montenegrin,Cyrl,ME,ME,,,,???,cnr,cnr-Cyrl,LE,18-Jan-2018,"https://www.xpatulator.com/cost-of-living-review/Montenegro-Podgorica_138.cfm. Difficult to say which is predominant:  The Latin script is more likely to predominate in central and southern areas. Cyrillic is largely used in the north and more recently in the coastal areas, because of tourists from Russia. ",,
+cnr-Latn,cnr-Latn-ME,Montenegrin,Latn,ME,ME,,,,???,cnr,cnr-Latn,LE,18-Jan-2018,"https://www.xpatulator.com/cost-of-living-review/Montenegro-Podgorica_138.cfm. Difficult to say which is predominant:  The Latin script is more likely to predominate in central and southern areas. Cyrillic is largely used in the north and more recently in the coastal areas, because of tourists from Russia. ",,
 cns,cns-Latn-ID,"Asmat, Central",Latn,ID,ID,,,,SEA,cns,cns-Latn,,20-Apr-2018,,,
 cnt,cnt-Latn-MX,"Chinantec, Tepetotutla",Latn,MX,MX,,,,CAM,cnt,cnt-Latn,LE,9-Jan-2018,,,
 cnu-Zyyy,cnu-Zyyy-DZ,Chenoua,Zyyy,DZ,DZ,,,,NAF,cnu,,,,,,
@@ -1528,11 +1524,9 @@ cpn,cpn-Latn-GH,Cherepon,Latn,GH,GH,,1,,WAF,cpn,cpn-Qaax,LE,12-Jan-2018,,,
 cpo,cpo-Qaax-BF,Kpeego,Qaax,BF,BF,,1,,WAF,cpo,cpo-Qaax,,,,,
 cps,cps-Latn-PH,Capiznon,Latn,PH,PH,,,,SEA,cps,,CLDR,,,,
 cpu,cpu-Latn-PE,"Ashéninka, Pichis",Latn,PE,PE,,,,SAM,cpu,cpu-Latn,LE,9-Jan-2018,,,
-cpx-Latn,cpx-Latn-CN,"Chinese, Pu-Xian",Latn,CN MY SG,CN,,,1,EAS SEA,cpx,,,,,,"once used in a newspaper; 1890–1950
-"
+cpx-Latn,cpx-Latn-CN,"Chinese, Pu-Xian",Latn,CN MY SG,CN,,,1,EAS SEA,cpx,,,,,,"once used in a newspaper; 1890–1950"
 cpy,cpy-Latn-PE,"Ashéninka, South Ucayali",Latn,PE,PE,,,,SAM,cpy,cpy-Latn,LE,9-Jan-2018,,,
-cqd-Latn,cqd-Latn-CN,"Miao, Chuanqiandian Cluster",Latn,CN,CN,,,,EAS,cqd,cqd-Latn,,,,pinyin-based,"experimental usage; 1958–1960 and from 1981
-"
+cqd-Latn,cqd-Latn-CN,"Miao, Chuanqiandian Cluster",Latn,CN,CN,,,,EAS,cqd,cqd-Latn,,,,pinyin-based,"experimental usage; 1958–1960 and from 1981"
 cr,cr-Cans-CA,Cree,Cans,CA,CA,,,,NAM,cre,cr-Cans,CLDR,,,,
 cr-Latn,cr-Latn-CA,Cree,Latn,CA,CA,,,,NAM,cre,cr-Latn,,,,,
 cra,cra-Qaax-ET,Chara,Qaax,ET,ET,,1,,EAF,cra,cra-Qaax,,,,,
@@ -1856,8 +1850,7 @@ dny,dny-Latn-BR,Dení,Latn,BR,BR,,,,SAM,dny,dny-Latn,LE,9-Jan-2018,,,
 doa,doa-Latn-PG,Dom,Latn,PG,PG,,,,MEL,doa,doa-Latn,LE,10-Jan-2018,,,
 dob,dob-Latn-PG,Dobu,Latn,PG,PG,,,,MEL,dob,dob-Latn,LE,10-Jan-2018,,,
 doc-Latn,doc-Latn-CN,"Dong, Northern",Latn,CN VN,CN,,,,EAS,doc,doc-Latn,,,,,
-doe,doe-Qaax-TZ,Doe,Qaax,TZ,TZ,,1,,EAF,doe,doe-Qaax,,,,pinyin-based,"experimental, small-scale use in education and literature; used since 1981
-"
+doe,doe-Qaax-TZ,Doe,Qaax,TZ,TZ,,1,,EAF,doe,doe-Qaax,,,,pinyin-based,"experimental, small-scale use in education and literature; used since 1981"
 dof,dof-Latn-PG,Domu,Latn,PG,PG,,1,,MEL,dof,,LE,10-Jan-2018,,,
 doh-Zyyy,doh-Zyyy-NG,Dong,Zyyy,NG,NG,,,,WAF,doh,,,,,,
 doi,doi-Arab-IN,Dogri (macrolanguage),Arab,IN,IN,,,,SAS,doi,doi-Arab,CLDR,,,,
@@ -2281,8 +2274,7 @@ gbv,gbv-Latn-CF,Gbanu,Latn,CF,CF,,1,,MAF,gbv,gbv-Latn,jb,,,,
 gbw,gbw-Latn-AU,Gabi-Gabi,Latn,AU,AU,,1,,ANZ,gbw,,LE,10-Jan-2018,,,
 gbx,gbx-Qaax-BJ,"Gbe, Eastern Xwla",Qaax,BJ,BJ,,1,,WAF,gbx,gbx-Qaax,,,,,
 gby,gby-Latn-NG,Gbari,Latn,NG,NG,,,,WAF,gby,gby-Latn,HJR,,,,
-gbz,gbz-Arab-IR,"Dari, Zoroastrian","Arab
-",IR,IR,,1,,SAS,gbz,gbz-Qaax,CLDR,,,,
+gbz,gbz-Arab-IR,"Dari, Zoroastrian","Arab",IR,IR,,1,,SAS,gbz,gbz-Qaax,CLDR,,,,
 gcc,gcc-Latn-PG,Mali,Latn,PG,PG,,,,MEL,gcc,gcc-Latn,LE,10-Jan-2018,,,
 gcd,gcd-Zyyy-AU,Ganggalida,Zyyy,AU,AU,,1,,ANZ,gcd,,LE,10-Jan-2018,Extinct,,
 gce,gce-Zyyy-US,Galice,Zyyy,US,US,,1,,NAM,gce,,LE,10-Jan-2018,Extinct,,
@@ -2478,8 +2470,7 @@ gqu,gqu-Qaax-CN,Qau,Qaax,CN,CN,,1,,EAS,gqu,gqu-Qaax,,,,,
 gra-Deva,gra-Deva-IN,"Garasia, Rajput",Deva,IN,IN,,,,SAS,gra,gra-Deva,,,,,
 gra-Gujr,gra-Gujr-IN,"Garasia, Rajput",Gujr,IN,IN,,,,SAS,gra,gra-Gujr,,,,,
 grb,grb-Latn-LR,Grebo,Latn,LR,LR,,,,WAF,grb,grb-Latn,LE,12-Jan-2018,,,
-grc,grc-Cprt-CY,"Greek, Ancient",Cprt,"CY GR
-",CY,,,,SEU,grc,grc-Cprt,CLDR,,Historical,,
+grc,grc-Cprt-CY,"Greek, Ancient",Cprt,"CY GR",CY,,,,SEU,grc,grc-Cprt,CLDR,,Historical,,
 grc-Grek,grc-Grek-GR,"Greek, Ancient",Grek,GR,GR,,,,SEU,grc,grc-Grek,,,Historical,,
 grc-Linb,grc-Linb-GR,"Greek, Ancient",Linb,GR,GR,,,,SEU,grc,grc-Linb,CLDR,,Historical,,
 grd-Zyyy,grd-Zyyy-NG,Guruntum-Mbaaru,Zyyy,NG,NG,,,,WAF,grd,,,,,,
@@ -2767,8 +2758,7 @@ hsl-Zyyy,hsl-Zyyy-NG,Hausa Sign Language,Zyyy,NG,NG,,,,WAF,hsl,,,,LE: HamNoSys,,
 hsn,hsn-Hans-CN,"Chinese, Xiang",Hans,CN US,CN,,,,EAS NAM,hsn,hsn-Hans,CLDR,,,,
 hsn-Hant,hsn-Hant-CN,"Chinese, Xiang",Hant,CN US,CN,,,,EAS NAM,hsn,hsn-Hant,,,,,
 hsn-Nshu,hsn-Nshu-CN,"Chinese, Xiang",Nshu,CN US,CN,,,,EAS NAM,hsn,hsn-Nshu,,,,,
-hss-Zyyy,hss-Zyyy-OM,Harsusi,Zyyy,OM,OM,,,,WAS,hss,,,,,,"mainly used by women; used at least since mid-19th century
-"
+hss-Zyyy,hss-Zyyy-OM,Harsusi,Zyyy,OM,OM,,,,WAS,hss,,,,,,"mainly used by women; used at least since mid-19th century"
 ht,ht-Latn-HT,Haitian Creole,Latn,BS CA DO GF GP HT KY MF PR TC US,HT,,,,CAR NAM SAM,hat,ht,CLDR,,,,
 hti-Zyyy,hti-Zyyy-ID,Hoti,Zyyy,ID,ID,,,,SEA,hti,,,,Extinct,,
 hto,hto-Latn-CO,"Huitoto, Minica",Latn,CO,CO,,,,SAM,hto,hto-Latn,LE,9-Jan-2018,,,
@@ -2985,8 +2975,7 @@ iu,iu-Cans-CA,Inuktitut,Cans,CA,CA,,,,NAM,iku,iu-Cans,CLDR,,,,
 iu-Latn,iu-Latn-CA,Inuktitut,Latn,CA,CA,,,,NAM,iku,iu-Latn,LE,9-Jan-2018,,,
 ium-Hani,ium-Hani-CN,Iu Mien,Hani,CN DK LA TH US VN,CN,,,,EAS NAM NEU SEA,ium,ium-Hani,,,,,
 ium-Laoo,ium-Laoo-LA,Iu Mien,Laoo,CN DK LA TH US VN,LA,,,,EAS NAM NEU SEA,ium,ium-Laoo,SVW,,,,"used in China, Thailand, United States, France, Canada"
-ium,ium-Latn-CN,Iu Mien,Latn,CN DK LA TH US VN,CN,,,,EAS NAM NEU SEA,ium,ium-Latn,SVW,,"Also known as ""New Roman"" or ""Unified Script"". Herb Purnell says there are two slightly different versions of this orthography being used in China vs. elsewhere. These mostly involve how to handle tone sandhi compounds, presyllables, palatal consonants, and occasional dialect differences. On the one hand, the number of affected words is somewhat large (e.g. every word with a palatal initial). On the other hand, it seems that the attitude of Iu Mien writers is quite tolerant and accepting of variation, so two separate tags may be unnecessary and even problematic. - SVW",,"used in folk domains and text messaging; dates from before Yuan dynasty
-"
+ium,ium-Latn-CN,Iu Mien,Latn,CN DK LA TH US VN,CN,,,,EAS NAM NEU SEA,ium,ium-Latn,SVW,,"Also known as ""New Roman"" or ""Unified Script"". Herb Purnell says there are two slightly different versions of this orthography being used in China vs. elsewhere. These mostly involve how to handle tone sandhi compounds, presyllables, palatal consonants, and occasional dialect differences. On the one hand, the number of affected words is somewhat large (e.g. every word with a palatal initial). On the other hand, it seems that the attitude of Iu Mien writers is quite tolerant and accepting of variation, so two separate tags may be unnecessary and even problematic. - SVW",,"used in folk domains and text messaging; dates from before Yuan dynasty"
 ium-x-1954,ium-Latn-CN-x-1954,Iu Mien,Latn,CN DK LA TH US VN,CN,,,,EAS NAM NEU SEA,ium,,SVW,,"Also known as ""Old Roman"", Bible printed in this orthography as well as ""New Roman"", which is default ium tag. Orthography situation described by Herb Purnell in various papers (1987, 2002, 2012). This probably needs a public variant, perhaps ium-or1954? - SVW",,used in Laos
 ium-Thai,ium-Thai-TH,Iu Mien,Thai,CN DK LA TH US VN,TH,,,,EAS NAM NEU SEA,ium,ium-Thai,,,"[ium] could be missing some other scripts, see the Ethnologue page for [ium]",,used in Thailand
 ivb-Latn,ivb-Latn-PH,Ibatan,Latn,PH,PH,,,,SEA,ivb,ivb-Latn,,,,,
@@ -3803,8 +3792,7 @@ kxa,kxa-Latn-PG,Kairiru,Latn,PG,PG,,,,MEL,kxa,kxa-Latn,LE,10-Jan-2018,,,
 kxb-Zyyy,kxb-Zyyy-CI,Krobu,Zyyy,CI,CI,,,,WAF,kxb,,,,,,limited usage
 kxc,kxc-Ethi-ET,Konso,Ethi,KE ET,ET,,,,EAF,kxc,kxc-Ethi,,,,,
 kxc-Latn,kxc-Latn-ET,Konso,Latn,KO ET,ET,,,,EAF,kxc,kxc-Latn,,,,,used in Church literature
-kxd-Arab,kxd-Arab-BN,Brunei,Arab,BN MY,BN,,,,SEA,kxd,kxd-Arab,,,,,"no materials developed yet; official script since  mid 1990s
-"
+kxd-Arab,kxd-Arab-BN,Brunei,Arab,BN MY,BN,,,,SEA,kxd,kxd-Arab,,,,,"no materials developed yet; official script since  mid 1990s"
 kxd-Latn,kxd-Latn-BN,Brunei,Latn,BN MY,BN,,,,SEA,kxd,kxd-Latn,,,,,
 kxf-Latn,kxf-Latn-MM,Kawyaw,Latn,MM,MM,,,,SEA,kxf,kxf-Latn,NMC,4-Dec-2017,,,
 kxf-Latn-x-manuma,kxf-Latn-MM-x-manuma,Manu and Manaw dialects,Latn,MM,MM,,,,SEA,kxf,kxf-Latn,NMC,23-Aug-2018,,,
@@ -4013,9 +4001,8 @@ lgt,lgt-Latn-PG,Pahi,Latn,PG,PG,,1,,MEL,lgt,lgt-Qaax,LE,10-Jan-2018,,,
 lgu,lgu-Latn-SB,Longgu,Latn,SB,SB,,1,,MEL,lgu,,LE,10-Jan-2018,,,
 lgz-Zyyy,lgz-Zyyy-CD,Ligenza,Zyyy,CD,CD,,,,MAF,lgz,,,,,,
 lha,lha-Qaax-VN,Laha,Qaax,VN,VN,,1,,SEA,lha,lha-Qaax,NMC,20-Nov-2017,,,
-lhh-Zyyy,lhh-Zyyy-ID,Laha,Zyyy,ID,ID,,,,SEA,lhh,,,,,,
-"lhi
-",lhi-Latn-CN,Lahu Shi,Latn,CN LA MM TH US,CN,,,,EAS NAM SEA,lhi,lhi-Latn,SVW,,,,
+lhh-Zyyy,lhh-Zyyy-ID,Laha,Zyyy,ID,ID,,,,SEA,lhh,,,,,,"lhi",
+lhi-Latn-CN,Lahu Shi,Latn,CN LA MM TH US,CN,,,,EAS NAM SEA,lhi,lhi-Latn,SVW,,,,
 lhl-Zyyy,lhl-Zyyy-IN,"Lohar, Lahul",Zyyy,IN,IN,,,,SAS,lhl,,,,,,
 lhm-Deva,lhm-Deva-NP,Lhomi,Deva,CN IN NP,NP,,,,SAS,lhm,lhm-Deva,,,,,
 lhn,lhn-Qaax-MY,Lahanan,Qaax,MY,MY,,1,,SEA,lhn,lhn-Qaax,,,,,
@@ -4596,8 +4583,7 @@ mmo,mmo-Latn-PG,"Buang, Mangga",Latn,PG,PG,,,,MEL,mmo,mmo-Latn,LE,10-Jan-2018,,,
 mmp,mmp-Latn-PG,Siawi,Latn,PG,PG,,,,MEL,mmp,mmp-Latn,LE,10-Jan-2018,,,
 mmq,mmq-Latn-PG,Aisi,Latn,PG,PG,,1,,MEL,mmq,,LE,10-Jan-2018,,,
 mmr-Latn,mmr-Latn-CN,"Miao, Western Xiangxi",Latn,CN,CN,,,,EAS,mmr,mmr-Latn,,,,,
-mmt,mmt-Latn-PG,Malalamai,Latn,PG,PG,,1,,MEL,mmt,mmt-Qaax,LE,10-Jan-2018,,pinyin-based,"experimental; 1951–1956, 1958–1969, and from 1978
-"
+mmt,mmt-Latn-PG,Malalamai,Latn,PG,PG,,1,,MEL,mmt,mmt-Qaax,LE,10-Jan-2018,,pinyin-based,"experimental; 1951–1956, 1958–1969, and from 1978"
 mmu-Latn,mmu-Latn-CM,Mmaala,Latn,CM,CM,,,,MAF,mmu,mmu-Latn,,,,,
 mmv,mmv-Latn-BR,Miriti,Latn,BR,BR,,1,,SAM,mmv,,LE,10-Jan-2018,Extinct,,
 mmw,mmw-Latn-VU,Emae,Latn,VU,VU,,1,,MEL,mmw,mmw-Qaax,LE,10-Jan-2018,,,
@@ -5295,8 +5281,7 @@ noj,noj-Latn-CO,Nonuya,Latn,CO PE,CO,,1,,SAM,noj,noj-Qaax,LE,9-Jan-2018,,,
 nok,nok-Zyyy-US,Nooksack,Zyyy,US,US,,1,,NAM,nok,,LE,10-Jan-2018,Extinct,,
 nol,nol-Zyyy-US,Nomlaki,Zyyy,US,US,,1,,NAM,nol,,LE,10-Jan-2018,Extinct,,
 nom,nom-Zyyy-PE,Nocamán,Zyyy,BR PE,PE,,1,,SAM,nom,,LE,10-Jan-2018,Extinct,,
-non,non-Runr-SE,Old Norse,"Runr
-",SE,SE,,,,???,non,,CLDR,,Historical,,
+non,non-Runr-SE,Old Norse,"Runr",SE,SE,,,,???,non,,CLDR,,Historical,,
 nop,nop-Latn-PG,Numanggang,Latn,PG,PG,,,,MEL,nop,nop-Latn,LE,10-Jan-2018,,,
 noq,noq-Zyyy-CD,Ngongo,Zyyy,CD,CD,,,,MAF,noq,,,,,,
 nos-Yiii-x-traditional,nos-Yiii-CN-x-traditional,"Nisu, Eastern",Yiii,CN,CN,,,,EAS,nos,nos-Yiii-x-traditional,,,,,
@@ -5661,8 +5646,7 @@ oyd-Latn,oyd-Latn-ET,Oyda,Latn,ET,ET,,,,EAF,oyd,oyd-Latn,,,,,
 oym,oym-Latn-BR,Wayampi,Latn,BR GF,BR,,,,SAM,oym,oym-Latn,LE,9-Jan-2018,,,
 oyy,oyy-Latn-PG,Oya'oya,Latn,PG,PG,,1,,MEL,oyy,oyy-Qaax,LE,10-Jan-2018,,,
 ozm-Latn,ozm-Latn-CM,Koonzime,Latn,CM,CM,,,,MAF,ozm,ozm-Latn,,,,,
-pa-Arab,pa-Arab-PK,"Punjabi, Eastern",Arab,AE AU BD CA FJ GB IN KE MY SG US,"PK
-",,,,ANZ EAF MEL NAM NEU SAS WAS,pan,pa-Arab ???,CLDR,,,,
+pa-Arab,pa-Arab-PK,"Punjabi, Eastern",Arab,AE AU BD CA FJ GB IN KE MY SG US,"PK",,,,ANZ EAF MEL NAM NEU SAS WAS,pan,pa-Arab ???,CLDR,,,,
 pa-PK,pa-Arab-PK,"Punjabi, Eastern",Arab,PK,PK,,,,???,pan,???,CLDR,,,,
 pa,pa-Guru-IN,"Punjabi, Eastern",Guru,AE AU BD CA FJ GB IN KE MY SG US,IN,,,,ANZ EAF MEL NAM NEU SAS WAS,pan,pa,CLDR,,,,
 pa-Khoj,pa-Khoj-IN,"Punjabi, Eastern",Khoj,AE AU BD CA FJ GB IN KE MY SG US,IN,,,,ANZ EAF MEL NAM NEU SAS WAS,pan,pa-Khoj,,,,,primary usage
@@ -5683,8 +5667,7 @@ pal-Phlp,pal-Phlp-CN,Pahlavi,Phlp,CN,CN,,,,???,pal,,CLDR,,Ancient,,
 pam-Brai,pam-Brai-PH,Pampangan,Brai,PH US,PH,,,,NAM SEA,pam,pam-Brai,,,,,in development
 pam,pam-Latn-PH,Pampangan,Latn,PH US,PH,,,,NAM SEA,pam,pam-Latn,CLDR,,,,
 pao,pao-Latn-US,"Paiute, Northern",Latn,US,US,,,,NAM,pao,pao-Latn,LE,9-Jan-2018,,,
-pap,pap-Latn-AW,Papiamentu,Latn,AW BQ CW NL PR SX US VI,"AW
-",,,,CAR NAM WEU,pap,pap-Latn,CLDR,,,,primary usage
+pap,pap-Latn-AW,Papiamentu,Latn,AW BQ CW NL PR SX US VI,"AW",,,,CAR NAM WEU,pap,pap-Latn,CLDR,,,,primary usage
 paq,paq-Qaax-TJ,Parya,Qaax,AF TJ UZ,TJ,,1,,CAS SAS,paq,paq-Qaax,,,,,
 par,par-Latn-US,Timbisha,Latn,US,US,,1,,NAM,par,,LE,9-Jan-2018,,,
 pas,pas-Zyyy-ID,Papasena,Zyyy,ID,ID,,,,SEA,pas,,,,,,
@@ -5961,8 +5944,7 @@ prw,prw-Latn-PG,Parawen,Latn,PG,PG,,1,,MEL,prw,,LE,10-Jan-2018,,,used in print
 prx-Arab,prx-Arab-IN,Purik,Arab,IN,IN,,,,SAS,prx,prx-Arab,,,,,
 prx-Tibt,prx-Tibt-IN,Purik,Tibt,IN,IN,,,1,SAS,prx,prx-Tibt,,,,,
 prz-Zyyy,prz-Zyyy-CO,Providencia Sign Language,Zyyy,CO,CO,,1,,SAM,prz,,,,,,
-ps,ps-Arab-AF,Pushto,Arab,AF PK,"AF
-",,,,SAS,pus,ps,CLDR,,,,
+ps,ps-Arab-AF,Pushto,Arab,AF PK,"AF",,,,SAS,pus,ps,CLDR,,,,
 psa,psa-Latn-ID,"Awyu, Asue",Latn,ID,ID,,,,SEA,psa,psa-Latn,,20-Apr-2018,,,
 psc,psc-Zyyy-IR,Persian Sign Language,Zyyy,IR,IR,,,,SAS,psc,,,,,,
 psd,psd-Zyyy-US,Plains Indian Sign Language,Zyyy,CA US,US,,,,NAM,psd,,,,,,
@@ -7034,10 +7016,8 @@ tfr,tfr-Latn-PA,Teribe,Latn,CR PA,PA,,,,CAM,tfr,tfr-Latn,LE,9-Jan-2018,,,
 tft,tft-Zyyy-ID,Ternate,Zyyy,ID,ID,,,,SEA,tft,,,,,,
 tg-Arab,tg-Arab-PK,Tajiki,Arab,KG TJ UZ,PK,,,,CAS EEU NAM SAS,tgk,tg-Arab,CLDR CGk,,"CGk: Although some would liek to see a revival of this script, it is very rarely used in TJ, UZ, KG.",,
 tg,tg-Cyrl-TJ,Tajiki,Cyrl,KG TJ UZ,TJ,,,,CAS EEU NAM SAS,tgk,tg-Cyrl,CLDR CGk,,,,
-tg-Hebr,tg-Hebr-UZ,Tajiki,Hebr,UZ,UZ,,,,CAS EEU NAM SAS,tgk,tg-Hebr,"CGk
-",,"CGk: This script is (or maybe was) used by the community of Jews in Bukhara, a city where Tajik is widely spoken, and which is in current-day Uzbekistan.",,
-tg-Latn,tg-Latn-TJ,Tajiki,Latn,TJ,TJ,,,,CAS EEU NAM SAS,tgk,tg-Latn,"CGk
-",,,,primary usage
+tg-Hebr,tg-Hebr-UZ,Tajiki,Hebr,UZ,UZ,,,,CAS EEU NAM SAS,tgk,tg-Hebr,"CGk",,"CGk: This script is (or maybe was) used by the community of Jews in Bukhara, a city where Tajik is widely spoken, and which is in current-day Uzbekistan.",,
+tg-Latn,tg-Latn-TJ,Tajiki,Latn,TJ,TJ,,,,CAS EEU NAM SAS,tgk,tg-Latn,"CGk",,,,primary usage
 tga,tga-Latn-KE,Sagalla,Latn,KE,KE,,,,EAF,tga,tga-Latn,LE,12-Jan-2018,,,
 tgb-Latn,tgb-Latn-MY,Tobilung,Latn,MY,MY,,,,SEA,tgb,tgb-Latn,,,,,used by Bukharan Jews in Uzbekistan
 tgc,tgc-Latn-PG,Tigak,Latn,PG,PG,,,,MEL,tgc,tgc-Latn,LE,10-Jan-2018,,,
@@ -7999,8 +7979,7 @@ xcl,xcl-Zyyy,Classical Armenian,Zyyy,??,??,,,,???,xcl,,,,Historical,,
 xcm,xcm-Zyyy,Comecrudo,Zyyy,??,??,,,,???,xcm,,,,Extinct,,
 xcn,xcn-Zyyy,Cotoname,Zyyy,??,??,,,,???,xcn,,,,Extinct,,
 xco,xco-Zyyy,Chorasmian,Zyyy,??,??,,,,???,xco,,,,Ancient,,
-xcr,xcr-Cari-TR,Carian,"Cari
-",TR,TR,,,,???,xcr,,CLDR,,Ancient,,
+xcr,xcr-Cari-TR,Carian,"Cari",TR,TR,,,,???,xcr,,CLDR,,Ancient,,
 xct,xct-Zyyy,Classical Tibetan,Zyyy,??,??,,,,???,xct,,,,Historical,,
 xcu,xcu-Zyyy,Curonian,Zyyy,??,??,,,,???,xcu,,,,Extinct,,
 xcv,xcv-Zyyy,Chuvantsy,Zyyy,??,??,,,,???,xcv,,,,Extinct,,
@@ -8078,7 +8057,7 @@ xkw,xkw-Zyyy-ID,Kembra,Zyyy,ID,ID,,,,SEA,xkw,,,,,,
 xkx,xkx-Latn-PG,Karore,Latn,PG,PG,,1,,MEL,xkx,,LE,10-Jan-2018,,,
 xky,xky-Qaax-MY,Uma' Lasan,Qaax,ID MY,MY,,1,,SEA,xky,xky-Qaax,,,,,
 xkz-Latn,xkz-Latn-BT,Kurtokha,Latn,BT,BT,,,,SAS,xkz,xkz-Latn,,,,,
-xkz-Tibt-x uchen,xkz-Tibt-BT,Kurtokha,Tibt,BT,BT,,,,SAS,xkz,xkz-Tibt-x uchen,,,,,
+xkz-Tibt-x-uchen,xkz-Tibt-BT,Kurtokha,Tibt,BT,BT,,,,SAS,xkz,xkz-Tibt-x uchen,,,,,
 xla,xla-Latn-PG,Kamula,Latn,PG,PG,,,,MEL,xla,xla-Latn,LE,10-Jan-2018,,,
 xlb,xlb-Zyyy,Loup B,Zyyy,??,??,,,,???,xlb,,,,Extinct,Uchen style,
 xlc,xlc-Lyci-TR,Lycian,Lyci,TR,TR,,,,???,xlc,,CLDR,,Ancient,,
@@ -8548,8 +8527,7 @@ zbc,zbc-Qaax-MY,"Berawan, Central",Qaax,MY,MY,,1,,SEA,zbc,zbc-Qaax,,,,,
 zbe,zbe-Qaax-MY,"Berawan, East",Qaax,MY,MY,,1,,SEA,zbe,zbe-Qaax,,,,,
 zbl,zbl-Blis-001,Blissymbols,Blis,No Man's Land,1,,,1,???,zbl,,,,Constructed,,
 zbt,zbt-Qaax-ID,Batui,Qaax,ID,ID,,1,,SEA,zbt,zbt-Qaax,,,,,
-zbw-Latn,zbw-Latn-MY,"Berawan, West",Latn,MY,MY,,,,SEA,zbw,zbw-Latn,,,,,"mainly used in non-official domains, gaining popularity; dates from Han dynasty
-"
+zbw-Latn,zbw-Latn-MY,"Berawan, West",Latn,MY,MY,,,,SEA,zbw,zbw-Latn,,,,,"mainly used in non-official domains, gaining popularity; dates from Han dynasty"
 zca,zca-Latn-MX,"Zapotec, Coatecas Altas",Latn,MX,MX,,,,CAM,zca,zca-Latn,LE,9-Jan-2018,,,
 zch-Hani,zch-Hani-CN,"Zhuang, Central Hongshuihe",Hani,CN,CN,,,,EAS,zch,zch-Hani,,,,,
 zdj,zdj-Arab-KM,"Comorian, Ngazidja",Arab,KM MG RE,KM,,,,EAF,zdj,zdj-Arab,CLDR,,,,
@@ -8692,8 +8670,7 @@ zpz,zpz-Latn-MX,"Zapotec, Texmelucan",Latn,MX,MX,,,,CAM,zpz,zpz-Latn,LE,9-Jan-20
 zqe-Hani,zqe-Hani-CN,"Zhuang, Qiubei",Hani,CN,CN,,,,EAS,zqe,zqe-Hani,,,,,
 zqe-Latn,zqe-Latn-CN,"Zhuang, Qiubei",Latn,CN,CN,,,1,EAS,zqe,zqe-Latn,,,,,
 zra,zra-Zyyy-KR,Kara (Korea),Zyyy,KR,KR,,,,???,zra,,,,Extinct,,"mainly used in non-official domains, gaining popularity; dates from Han dynasty"
-zrg-Orya,zrg-Orya-IN,Mirgan,Orya,IN,IN,,,,SAS,zrg,zrg-Orya,,,,,"experimental use in education; 1985–early 1990s
-"
+zrg-Orya,zrg-Orya-IN,Mirgan,Orya,IN,IN,,,,SAS,zrg,zrg-Orya,,,,,"experimental use in education; 1985–early 1990s"
 zrg-Telu,zrg-Telu-IN,Mirgan,Telu,IN,IN,,,,SAS,zrg,zrg-Telu,,,,,
 zrn,zrn-Latn-TD,Zerenkel,Latn,TD,TD,,,,MAF,zrn,zrn-Latn,JJB,18-Apr-2018,,,
 zro,zro-Latn-EC,Záparo,Latn,EC,EC,,1,,SAM,zro,zro-Qaax,LE,9-Jan-2018,,,
