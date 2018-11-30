@@ -1,0 +1,45 @@
+#!/usr/bin/python
+
+import argparse, urllib2, csv
+import palaso.langtags as lt
+
+parser = argparse.ArgumentParser()
+parser.add_argument("-L","--langindex",help="LanguagIndex.tab file location")
+parser.add_argument("-l","--langtags",help="langtags.csv file")
+parser.add_argument("-o","--output",help="output.csv file")
+args = parser.parse_args()
+
+names = {}
+if args.langindex:
+    namef = open(args.langindex, "r")
+else:
+    req = urllib2.Request(url="https://www.ethnologue.com/codes/LanguageIndex.tab",
+                          headers = {"User-Agent": "Mozilla"})
+    namef = urllib2.urlopen(req)
+reader = csv.DictReader(namef, dialect=csv.excel_tab)
+for r in reader:
+    if r['NameType'] == "L":
+        names.setdefault(r['LangID'], []).append(r['CountryID'])
+namef.close()
+
+outf = open(args.output, "w")
+with open(args.langtags) as csvfile :
+    reader = csv.DictReader(csvfile)
+    outcsv = csv.DictWriter(outf, fieldnames=reader.fieldnames,lineterminator="\n")
+    outcsv.writeheader()
+    for row in reader :
+        lid = row['Lang_Id']
+        ltag = lt.LangTag(lid)
+        if ltag.lang in names:
+            regions = row['regions'].split(' ')
+            rs = set(regions)
+            ns = set(names[ltag.lang])
+            extras = ns.difference(rs)
+            regions += extras
+            row['regions'] = " ".join(sorted(regions))
+        if None in row:
+            del row[None]
+        outcsv.writerow(row)
+outf.close()
+        
+
