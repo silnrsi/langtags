@@ -95,9 +95,14 @@ with open(args.infile) as csvfile :
         lid = row['Lang_Id']
         ls = row['likely_subtag']
         i6 = row['ISO 639-3']
+        d = row['deprecated']
         macro = row['Macro']
         t = lt.LangTag(ls)
         b = lt.LangTag(lid)
+        if b.lang == "000":
+            continue
+        if d != "":
+            deprecated.add(t.lang)
         if b.script in [None, 'Zyyy', 'Qaax']:
             t.hidescript = True
         if b.region is None :
