@@ -67,6 +67,30 @@ def addnames(n, b, alllangrefs, names, regions):
                 n['name'] = names[lname][0][0]
             n['names'].extend(names[lname][1])
 
+def get_regionnames():
+    res = {}
+    fname = os.path.join(os.path.dirname(lt.__file__), "sldr", "language-subtag-registry.txt")
+    with open(fname) as f :
+        currlang = None
+        mode = None
+        deprecated = False
+        for l in f.readlines() :
+            l = l.strip()
+            if l.startswith("Type: ") :
+                mode = l[6:]
+                if currlang is not None and currname is not None:
+                    res[currlang] = currname
+                currlang = None
+                currname = None
+            elif l.startswith("Subtag: ") :
+                if mode == "region":
+                    currlang = l[8:]
+            elif l.startswith("Description: "):
+                if mode == "region":
+                    currname = l[13:]
+        if currlang is not None:
+            res[currlang] = currname
+    return res
 
 parser = ArgumentParser()
 parser.add_argument('infile', help='Input CSV file from Google drive')
@@ -85,6 +109,7 @@ for k,v in lts.items():
         deprecated.add(v.lang)
     if hasattr(v, 'desc'):
         iananames[k] = v.desc
+regionnames = get_regionnames()
 lts.clear()
 allentries = {}
 allmacros = {}
@@ -205,6 +230,8 @@ else:
         if not len(r[0]):
             continue
         n = {'tag': r[0], 'full': r[-1], 'region': t.region}
+        if t.region in regionnames:
+            n['regionname'] = regionnames[t.region]
         if len(r) > 2:
             n['tags'] = r[1:-1]
         hassldr = False
@@ -236,12 +263,13 @@ else:
         addnames(n, t, alllangreg, names, regions)
         for b in t.base:
             addnames(n, b, alllangreg, names, regions)
-        if 'name' not in n:
-            if t.lang in iananames:
-                ns = iananames[t.lang]
+        if t.lang in iananames:
+            ns = iananames[t.lang]
+            if 'name' not in n:
                 n['name'] = ns[0]
                 if len(ns) > 1 :
                     n['names'] = ns[1:]
+            n['iana'] = ns if len(ns) > 1 else ns[0]
         if 'name' in n:
             n['names'] = sorted(x for x in set(n['names']) - set([n['name']]) if len(x))
         elif hasattr(t, 'name'):
