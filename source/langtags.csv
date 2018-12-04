@@ -487,7 +487,7 @@ av,av-Cyrl-RU,Avar,Cyrl,AZ GE KZ RU TR,RU,,,,,CAS EEU WAS,ava,av-Cyrl,CLDR,,
 avb,avb-Latn-PG,Avau,Latn,PG,PG,,1,,,MEL,avb,avb-Qaax,LE,10-Jan-2018,
 avd-Zyyy,avd-Zyyy-IR,Alviri-Vidari,Zyyy,IR,IR,,,,,SAS,avd,,,,
 avi-Latn,avi-Latn-CI,Avikam,Latn,CI,CI,,,,,WAF,avi,avi-Latn,,,
-avk-Latn,avk-Latn-001,Kotava,Latn,1,1,,,,,???,avk,,,,Constructed
+avk-Latn,avk-Latn-001,Kotava,Latn,001,001,,,,,???,avk,,,,Constructed
 avl-Arab,avl-Arab-EG,"Arabic, Eastern Egyptian Bedawi Spoken",Arab,EG IL JO PS SY,EG,,,,,NAF WAS,avl,avl-Arab,,,
 avm,avm-Latn-AU,Angkamuthi,Latn,AU,AU,,1,,,ANZ,avm,avm-Qaax,LE,10-Jan-2018,Extinct
 avn,avn-Latn-GH,Avatime,Latn,GH,GH,,,,,WAF,avn,avn-Latn,LE,12-Jan-2018,
@@ -2056,7 +2056,7 @@ enu-Zyyy,enu-Zyyy-CN,Enu,Zyyy,CN,CN,,,,,EAS,enu,,,,
 env-Zyyy,env-Zyyy-NG,Enwan,Zyyy,NG,NG,,,,,WAF,env,,,,
 enw-Zyyy,enw-Zyyy-NG,Enwan,Zyyy,NG,NG,,,,,WAF,enw,,,,
 enx,enx-Latn-PY,Enxet,Latn,PY,PY,,,,,SAM,enx,enx-Latn,LE,9-Jan-2018,
-eo,eo-Latn-001,Esperanto,Latn,1 PL,1,,,,,EEU,epo,eo,CLDR,,Constructed
+eo,eo-Latn-001,Esperanto,Latn,001 PL,001,,,,,EEU,epo,eo,CLDR,,Constructed
 eot-Zyyy,eot-Zyyy-CI,Beti,Zyyy,CI,CI,,,,,WAF,eot,,,,
 epi,epi-Qaax-NG,Epie,Qaax,NG,NG,,1,,,WAF,epi,epi-Qaax,,,
 era,era-Qaax-IN,Eravallan,Qaax,IN,IN,,1,,,SAS,era,era-Qaax,,,
@@ -2844,7 +2844,7 @@ idr,idr-Qaax-SS,Indri,Qaax,SS,SS,,1,,,EAF,idr,idr-Qaax,,,
 ids-Zyyy,ids-Zyyy-NG,Idesa,Zyyy,NG,NG,,,,,WAF,ids,,,,
 idt,idt-Latn-TL,Idaté,Latn,TL,TL,,,,,SEA,idt,idt-Latn,LE,12-Jan-2018,
 idu-Latn,idu-Latn-NG,Idoma,Latn,NG,NG,,,,,WAF,idu,idu-Latn,,,
-ie-Latn,ie-Latn-001,Interlingue,Latn,1,1,,,,,???,ile,,,,Constructed
+ie-Latn,ie-Latn-001,Interlingue,Latn,001,001,,,,,???,ile,,,,Constructed
 ifa-Latn,ifa-Latn-PH,"Ifugao, Amganad",Latn,PH,PH,,,,,SEA,ifa,ifa-Latn,,,
 ifb-Latn,ifb-Latn-PH,"Ifugao, Batad",Latn,PH,PH,,,,,SEA,ifb,ifb-Latn,,,
 ife,ife-Latn-TG,Ifè,Latn,BJ TG,TG,,,,,WAF,ife,ife-Latn,CLDR,,
@@ -3991,7 +3991,7 @@ lex,lex-Latn-ID,Luang,Latn,ID,ID,,,,,SEA,lex,lex-Latn,,20-Apr-2018,
 ley-Zyyy,ley-Zyyy-ID,Lemolang,Zyyy,ID,ID,,,,,SEA,ley,,,,
 lez,lez-Cyrl-RU,Lezgi,Cyrl,AZ GE KG KZ RU TM TR UA UZ,RU,,,,,CAS EEU WAS,lez,lez-Cyrl,CLDR,,
 lfa,lfa-Qaax-CM,Lefa,Qaax,CM,CM,,1,,,MAF,lfa,lfa-Qaax,,,
-lfn-Latn,lfn-Latn-001,Lingua Franca Nova,Latn,1,1,,,,,???,lfn,,,,Constructed: used in emails
+lfn-Latn,lfn-Latn-001,Lingua Franca Nova,Latn,001,001,,,,,???,lfn,,,,Constructed: used in emails
 lg,lg-Latn-UG,Ganda,Latn,UG,UG,,,,,EAF NEU,lug,lg-Latn,CLDR,,
 lga,lga-Latn-SB,Lungga,Latn,SB,SB,,,,,MEL,lga,lga-Latn,LE,10-Jan-2018,
 lgb,lgb-Latn-SB,Laghu,Latn,SB,SB,,1,,,MEL,lgb,,LE,10-Jan-2018,
@@ -8335,7 +8335,7 @@ yha,yha-Qaax-CN,"Buyang, Baha",Qaax,CN,CN,,1,,,EAS,yha,yha-Qaax,,,
 yhd-Hebr,yhd-Hebr-IL,"Arabic, Judeo-Iraqi",Hebr,IL IN IQ,IL,,,,,SAS WAS,yhd,yhd-Hebr,,,
 yhl,yhl-Qaax-CN,"Phowa, Hlepho",Qaax,CN,CN,,1,,,EAS,yhl,yhl-Qaax,,,
 yhs-Zyyy,yhs-Zyyy-AU,Yan-nhangu Sign Language,Zyyy,AU,AU,,1,,,ANZ,yhs,yhs-Qaax,,,
-yi,yi-Hebr-001,Yiddish,Hebr,1,1,,,,,WAS WEU,yid,yi,CLDR,,
+yi,yi-Hebr-001,Yiddish,Hebr,001,001,,,,,WAS WEU,yid,yi,CLDR,,
 yia,yia-Latn-AU,Yinggarda,Latn,AU,AU,,1,,,ANZ,yia,,LE,10-Jan-2018,
 yif,yif-Zyyy-CN,Ache,Zyyy,CN,CN,,,,,EAS,yif,,,,
 yig-Yiii-x-traditional,yig-Yiii-CN-x-traditional,"Nasu, Wusa",Yiii,CN,CN,,,,,EAS,yig,yig-Yiii-x-traditional,,,
