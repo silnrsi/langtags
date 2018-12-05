@@ -724,7 +724,7 @@ bfs-Hani,bfs-Hani-CN,"Bai, Southern",Hani,CN,CN,,,,,EAS,bfs,bfs-Hani,,,,
 bfs-Latn,bfs-Latn-CN,"Bai, Southern",Latn,CN,CN,,,,,EAS,bfs,bfs-Latn,,,,pinyin-based,"experimental, small-scale use in education
 bft,bft-Arab-PK,Balti,Arab,IN PK,PK,,,,,SAS,bft,bft-Aran,CLDR,,
 bft-Tibt,bft-Tibt-PK,Balti,Tibt,IN PK,PK,,,1,,SAS,bft,bft-Tibt,,,
-bft-x-BaltiA,bft-x-BaltiA-PK,Balti,Qaab,IN PK,PK,,,1,,SAS,bft,,,,
+bft-x-BaltiA,bft-Qaab-PK-x-BaltiA,Balti,Qaab,IN PK,PK,,,1,,SAS,bft,,,,
 bfu-Takr,bfu-Takr-IN,Gahri,Takr,IN,IN,,,1,,SAS,bfu,bfu-Takr,,,
 bfu-Tibt,bfu-Tibt-IN,Gahri,Tibt,IN,IN,,,,,SAS,bfu,bfu-Tibt,,,
 bfw-Orya,bfw-Orya-IN,Bondo,Orya,IN,IN,,,,,SAS,bfw,bfw-Orya,,,
@@ -2066,7 +2066,7 @@ eri,eri-Latn-PG,Ogea,Latn,PG,PG,,,,,MEL,eri,eri-Latn,LE,10-Jan-2018,
 erk,erk-Latn-VU,"Efate, South",Latn,VU,VU,,,,,MEL,erk,erk-Latn,LE,10-Jan-2018,
 ero,ero-Qaax-CN,Horpa,Qaax,CN,CN,,1,,,EAS,ero,ero-Qaax,,,
 err,err-Latn-AU,Erre,Latn,AU,AU,,1,,,ANZ,err,,LE,10-Jan-2018,Extinct
-ers-x-ErsuShaba,ers-Qaag-CN-x-ErsuShaba,Ersu,Qaag,CN,CN,,,1,,EAS,ers,ers-Qaag,,,
+ers,ers-Qaag-CN-x-ErsuShaba,Ersu,Qaag,CN,CN,,,1,,EAS,ers,ers-Qaag,,,
 ert-Zyyy,ert-Zyyy-ID,Eritai,Zyyy,ID,ID,,,,,SEA,ert,,,,,
 erw-Zyyy,erw-Zyyy-ID,Erokwanas,Zyyy,ID,ID,,,,,SEA,erw,,,,
 es,es-Latn-ES,Spanish,Latn,AD AR AT AU AW BE BG BO BQ BR BZ CA CH CI CL CO CR CU CW CZ DE DK DO DZ EC EH ES FI FR GI GQ GT GU HN HR IE IL IS IT JM KY LU MA MT MX NI NL NO NZ PA PE PH PL PR PT PY RO RU SE SR SV SX TR TT US UY VE VI,ES,,,,,ANZ CAM CAR EEU MAF MIC NAF NAM NEU SAM SEA SEU WAF WAS WEU,spa,es,CLDR,,
@@ -5873,7 +5873,7 @@ pna,pna-Qaax-MY,"Penan, Bah-Biau",Qaax,MY,MY,,1,,,SEA,pna,pna-Qaax,,,
 pnb,pnb-Arab-PK,"Punjabi, Western",Arab,AE CA GB IN LY PK US,PK,lah,,,,NAF NAM NEU SAS WAS,pnb,pnb-Arab,CLDR,23-Mar-2018,via macro mapping
 pnb-Khoj,pnb-Khoj-PK,"Punjabi, Western",Khoj,AE CA GB IN LY PK US,PK,lah,,,,NAF NAM NEU SAS WAS,pnb,pnb-Khoj,,23-Mar-2018,
 pnb-Latn,pnb-Latn-PK,"Punjabi, Western",Latn,GB IN PK,PK,lah,,,,NAF NAM NEU SAS WAS,pnb,pnb-Latn,St,23-Mar-2018,Romanised Punjabi
-pnb-x-Landa,pnb-Qaaj-PK-x-Landa,"Punjabi, Western",Qaaj,AE CA GB IN LY PK US,PK,lah,,1,,NAF NAM NEU SAS WAS,pnb,,,23-Mar-2018,
+pnb-Qaaj,pnb-Qaaj-PK-x-Landa,"Punjabi, Western",Qaaj,AE CA GB IN LY PK US,PK,lah,,1,,NAF NAM NEU SAS WAS,pnb,,,23-Mar-2018,
 pnc,pnc-Qaax-ID,Pannei,Qaax,ID,ID,,1,,,SEA,pnc,pnc-Qaax,,,
 pne-Latn,pne-Latn-MY,"Penan, Western",Latn,MY,MY,,,,,SEA,pne,pne-Latn,,,
 png-Latn,png-Latn-NG,Pangu,Latn,NG,NG,,,,,WAF,png,png-Latn,,,
@@ -6962,7 +6962,7 @@ tcu,tcu-Latn-MX,"Tarahumara, Southeastern",Latn,MX,MX,,1,,,CAM,tcu,tcu-Qaax,LE,9
 tcw,tcw-Latn-MX,"Totonac, Tecpatlán",Latn,MX,MX,,,,,CAM,tcw,tcw-Latn,LE,9-Jan-2018,
 tcx-Taml,tcx-Taml-IN,Toda,Taml,IN,IN,,,,,SAS,tcx,tcx-Taml,,,
 tcy,tcy-Knda-IN,Tulu,Knda,IN,IN,,,,,SAS,tcy,tcy-Knda,CLDR,,
-tcy-x-Tulu,tcy-Qaau-IN-x-Tulu,Tulu,Qaau,IN,IN,,,,,SAS,tcy,,,,
+tcy-Qaau,tcy-Qaau-IN-x-Tulu,Tulu,Qaau,IN,IN,,,,,SAS,tcy,,,,
 tcz-Latn,tcz-Latn-IN,"Chin, Thado",Latn,IN MM,IN,,,,,SAS SEA,tcz,tcz-Latn,,,
 tda-Arab,tda-Arab-NE,Tagdal,Arab,NE,NE,,,,,WAF,tda,tda-Arab,,,
 tda-Latn,tda-Latn-NE,Tagdal,Latn,NE,NE,,,,,WAF,tda,tda-Latn,,,
@@ -7435,7 +7435,7 @@ tye-Latn,tye-Latn-NG,Kyanga,Latn,BJ NG,NG,,,,,WAF,tye,tye-Latn,,,
 tyh,tyh-Zyyy-VN,O'du,Zyyy,LA VN,VN,,,,,SEA,tyh,,NMC,6-Dec-2017,dying language
 tyi,tyi-Latn-CG,Teke-Tsaayi,Latn,CG,CG,,,,,MAF,tyi,tyi-Latn,LE,12-Jan-2018,
 tyj-Latn,tyj-Latn-VN,Tai Yo,Latn,LA VN,VN,,,,,SEA,tyj,tyj-Latn,NMC,7-Dec-2017,
-tyj-x-taiyo,tyj-Qaaw-VN-x-taiyo,Tai Yo,Qaaw,LA VN,VN,,,1,,SEA,tyj,tyj-Qaaw???,NMC,7-Dec-2017,Tai Yo script varient for abandoned Tai Yo script
+tyj-Qaaw,tyj-Qaaw-VN-x-taiyo,Tai Yo,Qaaw,LA VN,VN,,,1,,SEA,tyj,tyj-Qaaw???,NMC,7-Dec-2017,Tai Yo script varient for abandoned Tai Yo script
 tyl,tyl-Qaax-VN,Thu Lao,Qaax,VN,VN,,1,,,SEA,tyl,tyl-Qaax,NMC,6-Dec-2017,
 tyn,tyn-Latn-ID,Kombai,Latn,ID,ID,,,,,SEA,tyn,tyn-Latn,,20-Apr-2018,
 typ,typ-Zyyy-AU,Thaypan,Zyyy,AU,AU,,1,,,ANZ,typ,,LE,10-Jan-2018,Extinct
@@ -8513,7 +8513,7 @@ zad,zad-Latn-MX,"Zapotec, Cajonos",Latn,MX US,MX,,,,,CAM NAM,zad,zad-Latn,LE,9-J
 zae,zae-Latn-MX,"Zapotec, Yareni",Latn,MX,MX,,,,,CAM,zae,zae-Latn,LE,9-Jan-2018,
 zaf,zaf-Latn-MX,"Zapotec, Ayoquesco",Latn,MX,MX,,,,,CAM,zaf,zaf-Latn,LE,9-Jan-2018,
 zag,zag-Latn-SD,Zaghawa,Latn,LY SD TD,SD,,,,,MAF NAF,zag,zag-Latn,CLDR,,
-zag-Qaaz,zag-Qaaz-SD,Zaghawa,Qaaz,LY SD TD,SD,,,,,MAF NAF,zag,zag-Qaaz ???,,,
+zag-Qaaz,zag-Qaaz-SD-x-Beria,Zaghawa,Qaaz,LY SD TD,SD,,,,,MAF NAF,zag,zag-Qaaz ???,,,
 zah,zah-Zyyy-NG,Zangwal,Zyyy,NG,NG,,,,,WAF,zah,,,,
 zai,zai-Latn-MX,"Zapotec, Isthmus",Latn,MX,MX,zap,,,,CAM,zai,zai-Latn,LE,9-Jan-2018,
 zaj,zaj-Latn-TZ,Zaramo,Latn,TZ,TZ,,,,,EAF,zaj,zaj-Latn,LE,5-Apr-2018,
