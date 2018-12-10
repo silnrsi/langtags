@@ -62,6 +62,18 @@ class Basic(unittest.TestCase):
                 self.fail("{likely_subtag} has irregular script".format(**r))
             self.assertEqual(scr, t.script, msg="{likely_subtag} script is not {script}".format(**r))
 
+    def test_variants(self):
+        ''' Test that all variants are in IANA '''
+        for r, t in self._allRows():
+            l = lt.LangTag(r['Lang_Id'])
+            if t.variants is None and l.variants is None:
+                continue
+            if sorted(t.variants) != sorted(l.variants):
+                self.fail("{Lang_Id} and {likely_subtag} have different variants".format(**r))
+            for v in t.variants:
+                if v not in self.iana.variant:
+                    self.fail("{likely_subtag} has bad variant {0}".format(v, **r))
+
     def test_csv_columns(self):
         ''' Test that everyone has the right number of columns '''
         lc = self.fieldnames[-1]
@@ -70,6 +82,20 @@ class Basic(unittest.TestCase):
                 self.fail("{Lang_Id} has too many columns".format(**r))
             elif r[lc] is None:
                 self.fail("{Lang_Id} has too few columns".format(**r))
+
+    def test_pua(self):
+        ''' Test that anything with -x- in Lang_Id has it in likely_subtag too '''
+        for r, t in self._allRows():
+            l = lt.LangTag(r['Lang_Id'])
+            if t.extensions is None and l.extensions is None:
+                continue
+            if len(t.extensions) == 1 and 'x' in t.extensions and len(t.extensions['x']) == 1:
+                continue        # allow a private script extension
+            if sorted(t.extensions.keys()) != sorted(l.extensions.keys()):
+                self.fail("{Lang_Id} and {likely_subtag} have different extension namespaces".format(**r))
+            for k, v in t.extensions.items():
+                if sorted(v) != sorted(l.extensions[k]):
+                    self.fail("{Lang_Id} and {likely_subtag} have different extensions in the {0} namespace".format(k, **r))
 
 if __name__ == "__main__":
     unittest.main()
