@@ -6,6 +6,9 @@ import palaso.langtags as lt
 from palaso.sldr.iana import Iana
 
 class Basic(unittest.TestCase):
+
+    extraScripts = ("Elym", "Nand")
+
     def setUp(self):
         self.fname = os.path.join(os.path.dirname(__file__), '../source/langtags.csv')
         with open(self.fname) as csvfile:
@@ -47,20 +50,17 @@ class Basic(unittest.TestCase):
                     self.fail("{Lang_Id} has irregular region: {0} in regions".format(s, **r))
 
     def test_script(self):
-        ''' Test script tag is appropriate and the same as the script column '''
-        for r,t in self._allRows():
-            scr = r['script']
-            if len(scr) != 4:
-                self.fail("{Lang_Id} has bad script: {script}".format(**r))
-            self.assertEqual(scr, t.script, msg="{likely_subtag} script is not {script}".format(**r))
-
-    def test_unknown_script(self):
         ''' Qaa? type scripts must have an -x- for the script name '''
         for r, t in self._allRows():
             scr = r['script']
-            if scr.startswith("Qaa") and scr != "Qaax":
-                if t is None or 'x' not in t.extensions:
+            if scr.startswith("Qaa") or scr.startswith("Qab"):
+                if scr not in ("Qaax", "Qaby", "Qabz") and (t.extensions is None or 'x' not in t.extensions):
                     self.fail("{Lang_Id} has no extension for script name".format(**r))
+            elif scr not in self.iana.script and scr not in self.extraScripts:
+                self.fail("{Lang_Id} has irregular script {script}".format(**r))
+            elif t.script not in self.iana.script and t.script not in self.extraScripts:
+                self.fail("{likely_subtag} has irregular script".format(**r))
+            self.assertEqual(scr, t.script, msg="{likely_subtag} script is not {script}".format(**r))
 
     def test_csv_columns(self):
         ''' Test that everyone has the right number of columns '''
