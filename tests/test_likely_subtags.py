@@ -12,6 +12,7 @@ def isnotint(s):
         return True
 
 class LikelySubtags(unittest.TestCase):
+    ''' Tests alltags.txt for discrepencies against likelySubtags.xml '''
     def setUp(self):
         self.likelymap = {}
         thisdir = os.path.dirname(__file__)
@@ -38,7 +39,7 @@ class LikelySubtags(unittest.TestCase):
 
     def test_noBadComponents(self):
         for v in self.ltags.values():
-            if len(v.lang) > 3 and not v.lang.startswith("x-"):
+            if len(v.lang) > 3 and "-" not in v.lang:
                 self.fail(repr(v) + " has odd lang length")
             if v.region is not None and len(v.region) > 2 and isnotint(v.region):
                 self.fail(repr(v) + " has bad region")
