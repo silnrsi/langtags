@@ -291,6 +291,9 @@ else:
             print("Multiple entries for: {} = {}, {}".format(n['tag'], n['full'], collisions[n['tag']]))
         else:
             collisions[n['tag']] = n['full']
+        for k, v in n.items():
+            if v is None:
+                print("Null entry for {} in {}".format(k, n['tag']))
     with codecs.open(args.outfile, "w", encoding="utf-8") as fh:
         # use encoding="utf8" (not "utf-8") as a hack around a bug in json: https://stackoverflow.com/a/40777484/10488020
         json.dump(sorted(res, key=lambda x:x['tag']), fh, sort_keys=True, indent=4, ensure_ascii=False, encoding="utf8")

@@ -254,7 +254,7 @@ alj-Latn,alj-Latn-PH,Alangan,Latn,PH,PH,,,,,SEA,alj,alj-Latn,,,
 alk,alk-Qaax-LA,Alak,Qaax,LA,LA,,1,,,SEA,alk,alk-Qaax,NMC,20-Nov-2017,
 all-Mlym,all-Mlym-IN,Allar,Mlym,IN,IN,,,,,SAS,all,all-Mlym,,,
 alm,alm-Latn-VU,Amblong,Latn,VU,VU,,1,,,MEL,alm,,LE,10-Jan-2018,
-aln,aln-Latn-XX,"Albanian, Gheg",Latn,AL AL ME MK ME MK RO RS RS TR XX,XX,,,,,EEU NAM SEU WAS WEU,aln,aln-Latn,CLDR,,Ethnologue has AL
+aln,aln-Latn-XK,"Albanian, Gheg",Latn,AL AL ME MK ME MK RO RS RS TR XK,XK,,,,,EEU NAM SEU WAS WEU,aln,aln-Latn,CLDR,,Ethnologue has AL
 aln-Brai,aln-Brai-AL,"Albanian, Gheg",Brai,AL ME MK RO RS TR,AL,,,,,EEU NAM SEU WAS WEU,aln,aln-Brai,,,
 alo,alo-Latn-ID,Larike-Wakasihu,Latn,ID,ID,,,,,SEA,alo,alo-Latn,,20-Apr-2018,
 alp,alp-Latn-ID,Alune,Latn,ID,ID,,,,,SEA,alp,alp-Latn,,20-Apr-2018,
@@ -1781,7 +1781,7 @@ din,din-Latn-SS,Dinka,Latn,SS,SS,,,,,EAF,din,din-Latn,LE,12-Jan-2018,
 dio-Zyyy,dio-Zyyy-NG,Dibo,Zyyy,NG,NG,,,,,WAF,dio,,,,
 dip,dip-Latn-SS,"Dinka, Northeastern",Latn,SS,SS,,,,,EAF,dip,dip-Latn,LE,12-Jan-2018,
 diq,diq-Latn-TR,"Zazaki, Southern",Latn,TR,TR,zza,,,,WAS,diq,diq-Latn,CLDR,23-Mar-2018,via macro mapping
-diq-Arab,zza-Arab-TR,Zaza,Arab,TR,TR,,,,,WAS,diq,zza-Arab,,23-Mar-2018,
+diq-Arab,diq-Arab-TR,Zaza,Arab,TR,TR,zza,,,,WAS,diq,zza-Arab,,23-Mar-2018,
 dir,dir-Latn-NG,Dirim,Latn,NG,NG,,,,,WAF,dir,dir-Latn,LE,,
 dis-Beng,dis-Beng-IN,Dimasa,Beng,IN,IN,,,,,SAS,dis,dis-Beng,,,
 dis-Latn,dis-Latn-IN,Dimasa,Latn,IN,IN,,,,,SAS,dis,dis-Latn,,,

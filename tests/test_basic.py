@@ -8,6 +8,7 @@ from palaso.sldr.iana import Iana
 class Basic(unittest.TestCase):
 
     extraScripts = ("Elym", "Nand")
+    extraLangs = ("000", "dno", "dwz")
 
     def setUp(self):
         self.fname = os.path.join(os.path.dirname(__file__), '../source/langtags.csv')
@@ -21,7 +22,7 @@ class Basic(unittest.TestCase):
     def _region_test(self, x):
         if x in self.iana.region:
             return True
-        elif x in ("XX",):
+        elif x in ("XX", "XK"):
             return True
         return False
 
@@ -31,6 +32,15 @@ class Basic(unittest.TestCase):
             if t.lang.startswith("x-"):
                 continue
             yield (r, t)
+
+    def test_lang(self):
+        ''' Tests that all lang subtags are in iana '''
+        for r, t in self._allRows():
+            l = lt.LangTag(r['Lang_Id'])
+            if l.lang != t.lang and "-" not in l.lang and "-" not in t.lang:
+                self.fail("{Lang_Id} has different lang to {likely_subtag} ({0} != {1})".format(l.lang, t.lang, **r))
+            if t.lang not in self.iana.language and "-" not in t.lang and t.lang not in self.extraLangs:
+                self.fail("{Lang_Id} lang not in IANA".format(**r))
 
     def test_region(self):
         ''' Test that region values are sensible and that they equal the default region.
