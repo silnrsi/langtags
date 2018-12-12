@@ -6242,7 +6242,7 @@ rsi,rsi-Zxxx-SB,Rennellese Sign Language,Zxxx,SB,SB,,,,,MEL,rsi,,,,Retired
 rsl,rsl-Zxxx-RU,Russian Sign Language,Zxxx,EE IL MD RU,RU,,,,,EEU NEU WAS,rsl,,,,
 rsm,rsm-Zxxx-AU,Miriwoong Sign Language,Zxxx,AU,AU,,,,,ANZ,rsm,,,,
 rtc,rtc-Qaax-MM,"Chin, Rungtu",Qaax,MM,MM,,1,,,SEA,rtc,rtc-Qaax,NMC,4-Dec-2017,
-rth,rth-Zyyy-ID,Ratahan,Zyyy,ID,ID,,,,,SEA,rth,,,,
+rth,rth-Latn-ID,Ratahan,Latn,ID,ID,,1,,,SEA,rth,,,,
 rtm,rtm-Latn-FJ,Rotuman,Latn,FJ,FJ,,,,,MEL,rtm,rtm-Latn,CLDR,,
 rts,rts-Zyyy-XX,Yurats,Zyyy,XX,XX,,,,,???,rts,,,,Extinct
 rtw,rtw-Qaax-IN,Rathawi,Qaax,IN,IN,,1,,,SAS,rtw,rtw-Qaax,,,
