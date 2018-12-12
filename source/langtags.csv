@@ -1,7 +1,6 @@
 Lang_Id,likely_subtag,LangName,script,regions,default region,Macro,unwritten,obsolete,deprecated,areas,ISO 639-3,Old_SS_Id,confirmed,Date modified,comments
 000,000-Latn-KH,Stieng in Cambodia,Latn,KH,KH,,,,,SEA,,,NMC,,Not sure which iso 639-3 code was used for writing Stieng in Cambodia. Seems to be older work done 19 60's
 000,000-Qaax-KH,Mel-Khaonh,Qaax,KH,KH,,,,,SEA,,,NMC,12-Jan-2018,applying for iso code in 2018
-000,000-Zyyy-LA,Lavi,Zyyy,LA,LA,,,,,SEA,,,NMC,12-Jan-2018,applying for iso code in 2018
 aa,aa-Latn-ET,Afar,Latn,ET ER DJ,ET,,,,,EAF,aar,aa-Latn,CLDR,,
 aa-Ethi,aa-Ethi-ET,Afar,Ethi,ET ER DJ,ET,,,,,EAF,aar,aa-Ethi,LE,10-Jan-2018,
 aaa-Zyyy,aaa-Zyyy-NG,Ghotuo,Zyyy,NG,NG,,,,,WAF,aaa,,,,
@@ -4187,6 +4186,7 @@ lsh,lsh-Qaax-IN,Lish,Qaax,IN,IN,,1,,,SAS,lsh,lsh-Qaax,,,
 lsi,lsi-Latn-MM,Lacid,Latn,CN MM,MM,,,,,EAS SEA,lsi,lsi-Latn,NMC,10-Jan-2018,
 lsl,lsl-Zxxx-LV,Latvian Sign Language,Zxxx,LV,LV,,,,,NEU,lsl,,,,
 lsm,lsm-Latn-UG,Saamia,Latn,KE UG,UG,,,,,EAF,lsm,lsm-Latn,LE,12-Jan-2018,
+lsn,lsn-Zxxx-CN,Tibetan Sign Language,Zxxx,CN,CN,,,,,EAS,lsn,,LE,12-Dec-2018,
 lso,lso-Zxxx-LA,Laos Sign Language,Zxxx,LA,LA,,,,,SEA,lso,,NMC,4-Dec-2017,
 lsp,lsp-Zxxx-PA,Panamanian Sign Language,Zxxx,PA,PA,,,,,CAM,lsp,,,,
 lsr,lsr-Latn-PG,Aruop,Latn,PG,PG,,1,,,MEL,lsr,,LE,10-Jan-2018,
@@ -4231,6 +4231,7 @@ luz,luz-Arab-IR,"Luri, Southern",Arab,IR,IR,,,,,SAS,luz,luz-Aran,CLDR,,
 lv,lv-Latn-LV,Latvian,Latn,BR BY CA DE EE IE KZ LT LV RU UA US VE,LV,,,,,NEU,lav,lv,CLDR,,
 lv-Brai,lv-Brai-LV,Latvian,Brai,LV,LV,,,,,NEU,lav,lv-Brai,,,
 lva,lva-Latn-TL,Makuva,Latn,TL,TL,,,,,SEA,lva,lva-Latn,LE,12-Jan-2018,
+lvi,lvi-Zyyy-LA,Lavi,Zyyy,LA,LA,,,,,SEA,,,NMC,12-Jan-2018,applying for iso code in 2018
 lvk,lvk-Latn-SB,Lavukaleve,Latn,SB,SB,,,,,MEL,lvk,lvk-Latn,LE,10-Jan-2018,
 lvs,lvs-Latn-LV,"Latvian, Standard",Latn,BR BY CA DE EE IE KZ LT LV RU UA US VE,LV,lv,,,,CAS EEU NAM NEU SAM WEU,lvs,lvs-Latn,CLDR,23-Mar-2018,via macro mapping
 lvu-Zyyy,lvu-Zyyy-ID,Levuka,Zyyy,ID,ID,,,,,SEA,lvu,,,,
@@ -5877,6 +5878,7 @@ pnb-Khoj,pnb-Khoj-PK,"Punjabi, Western",Khoj,AE CA GB IN LY PK US,PK,lah,,,,NAF 
 pnb-Latn,pnb-Latn-PK,"Punjabi, Western",Latn,GB IN PK,PK,lah,,,,NAF NAM NEU SAS WAS,pnb,pnb-Latn,St,23-Mar-2018,Romanised Punjabi
 pnb-Qaaj,pnb-Qaaj-PK-x-Landa,"Punjabi, Western",Qaaj,AE CA GB IN LY PK US,PK,lah,,1,,NAF NAM NEU SAS WAS,pnb,,,23-Mar-2018,
 pnc,pnc-Qaax-ID,Pannei,Qaax,ID,ID,,1,,,SEA,pnc,pnc-Qaax,,,
+pnd,pnd-Qaax-AO,Mpinda,Qaax,AO,AO,,1,,,MAF,pnd,,LE,12-Dec-2018,
 pne-Latn,pne-Latn-MY,"Penan, Western",Latn,MY,MY,,,,,SEA,pne,pne-Latn,,,
 png-Latn,png-Latn-NG,Pangu,Latn,NG,NG,,,,,WAF,png,png-Latn,,,
 pnh,pnh-Latn-CK,Penrhyn,Latn,CK,CK,,,,,POL,pnh,pnh-Latn,LE,12-Jan-2018,
@@ -7390,6 +7392,7 @@ tvs,tvs-Latn-KE,Taveta,Latn,KE,KE,,,,,EAF,tvs,tvs-Latn,LE,12-Jan-2018,
 tvt,tvt-Latn-IN,"Naga, Tutsa",Latn,IN,IN,,,,,SAS,tvt,,LE,16-Oct-2018,
 tvu-Latn,tvu-Latn-CM,Tunen,Latn,CM,CM,,,,,MAF,tvu,tvu-Latn,,,
 tvw,tvw-Latn-ID,Sedoa,Latn,ID,ID,,,,,SEA,tvw,tvw-Latn,,20-Apr-2018,
+tvx,tvx-Latn-TW,Taivoan,Latn,TW,TW,,,,,EAS,tvx,,LE,12-Dec-2018,
 tvy,tvy-Zyyy-TL,"Pidgin, Timor",Zyyy,TL,TL,,,,,SEA,tvy,,,,Extinct
 tw,tw-Latn-GH,Twi,Latn,GH,GH,ak,,,,WAF,twi,,LE CLDR,12-Jan-2018,"Ethnologue handles differently, via macro mapping"
 twa,twa-Zyyy-US,Twana,Zyyy,US,US,,1,,,NAM,twa,,LE,10-Jan-2018,Extinct
@@ -7584,6 +7587,7 @@ usk,usk-Qaax-CM,Usaghade,Qaax,CM NG,CM,,1,,,MAF WAF,usk,usk-Qaax,,,
 usp,usp-Latn-GT,Uspanteko,Latn,GT,GT,,,,,CAM,usp,usp-Latn,LE,9-Jan-2018,
 usu,usu-Latn-PG,Uya,Latn,PG,PG,,1,,,MEL,usu,,LE,10-Jan-2018,
 uta,uta-Qaax-NG,Otank,Qaax,NG,NG,,1,,,WAF,uta,uta-Qaax,,,
+uth,uth-Latn-NG,ut-Hun,Latn,NG,NG,,,,,WAF,uth,,,,
 ute,ute-Latn-US,Ute-Southern Paiute,Latn,US,US,,,,,NAM,ute,ute-Latn,LE,9-Jan-2018,
 utp,utp-Latn-SB,Amba,Latn,SB,SB,,,,,MEL,utp,utp-Latn,LE,10-Jan-2018,
 utr-Latn,utr-Latn-NG,Etulo,Latn,NG,NG,,,,,WAF,utr,utr-Latn,,,
@@ -8175,6 +8179,7 @@ xsb,xsb-Latn-PH,Sambal,Latn,PH,PH,,,,,SEA,xsb,xsb-Latn,LE,20-Mar-2018,
 xsc,xsc-Zyyy-XX,Scythian,Zyyy,IR,XX,,,,,???,xsc,,,,Ancient
 xsd,xsd-Zyyy-TR,Sidetic,Zyyy,TR,TR,,,,,???,xsd,,,,Ancient
 xse,xse-Zyyy-ID,Sempan,Zyyy,ID,ID,,,,,SEA,xse,,,,
+xsj,xsj-Latn-TZ,Subi,Latn,TZ,TZ,,1,,,EAF,xsj,,,,
 xsh,xsh-Zyyy-NG,Shamang,Zyyy,NG,NG,,,,,WAF,xsh,,,,
 xsi,xsi-Latn-PG,Sio,Latn,PG,PG,,,,,MEL,xsi,xsi-Latn,LE,10-Jan-2018,
 xsl,xsl-Latn-CA,"Slavey, South",Latn,CA,CA,den,,,,NAM,xsl,xsl-Latn,LE CLDR,9-Jan-2018,via macro mapping
