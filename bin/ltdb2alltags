@@ -14,16 +14,17 @@ def find_file(tagstr, root='.') :
     if os.path.exists(testf) : return testf
     return None
 
-def issimple(testf, getname=None):
+def issimple(testf, getnames=None):
     try:
         doc = et.parse(testf)
     except:
         return (False, "")
     if len(doc.getroot()) > 1 :
-        if getname is not None:
-            e = doc.find('./localeDisplayNames/languages/language[@type="{}"]'.format(getname))
-            if e is not None:
-                return (False, unicode(e.text))
+        if getnames is not None:
+            for getname in getnames:
+                e = doc.find('./localeDisplayNames/languages/language[@type="{}"]'.format(getname.replace("-","_")))
+                if e is not None:
+                    return (False, unicode(e.text))
         return (False, "")
     return (True, "")
 
@@ -239,7 +240,11 @@ else:
             tf = find_file(rf, root=args.indir)
             if tf is not None:
                 hassldr = True
-                (s, name) = issimple(tf, t.lang)
+                getnames = [n['full']]
+                if len(r) > 2:
+                    getnames.extend(n['tags'])
+                getnames.extend([n['tag'], t.lang])
+                (s, name) = issimple(tf, getnames=getnames)
                 if not s:
                     complexrs.append(rf)
                     if name is not None and name != "":
