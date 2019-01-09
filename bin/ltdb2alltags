@@ -183,6 +183,8 @@ if args.text:
         
         outstrings = []
         for line in res:
+            if line[0] == 'zh':
+                line[0:2] = [line[1], line[0]]
             lineres = [[" = ", x] for x in line if x]
             if not len(lineres):
                 continue
@@ -251,6 +253,11 @@ else:
                         n['localname'] = name
         if len(complexrs) > 1:
             allcomplexes.append(complexrs)
+        # A hack to resolve ICU's used of zh and industry use of zh-CN
+        # Code positioned here to use zh when hunting localname
+        if r[0] == 'zh':
+            n['tag'] = 'zh-CN'
+            n['tags'] = [x if x != 'zh-CN' else 'zh' for x in n['tags']]
         n['sldr'] = hassldr
         if hasattr(t, 'iso639'):
             n['iso639_3'] = t.iso639
