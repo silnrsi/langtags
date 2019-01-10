@@ -43,6 +43,10 @@ class LikelySubtags(unittest.TestCase):
                 self.fail(repr(v) + " has odd lang length")
             if v.region is not None and len(v.region) > 2 and isnotint(v.region):
                 self.fail(repr(v) + " has bad region")
+
+    def test_zh_CN(self):
+        lt = self.ltags['zh']
+        self.assertEqual(str(lt), 'zh-CN')
             
 
 if __name__ == '__main__':
