@@ -55,7 +55,7 @@ def process_cldrentry(s, lts, allentries, root='.'):
     return l
 
 def addnames(n, b, alllangrefs, names, regions):
-    regionlist = set([b.region] + getattr(b, 'regions', []))
+    regionlist = [b.region] + sorted(list(set(r for r in getattr(b, 'regions', []) if r != b.region)))
     for reg in regionlist:
         if reg is not None:
             regions.add(reg)
