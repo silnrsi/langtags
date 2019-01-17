@@ -6356,6 +6356,7 @@ sci,sci-Latn-LK,Sri Lankan Creole Malay,Latn,LK,LK,,,,,SAS,sci,sci-Latn,LE,12-Ja
 sck,sck-Deva-IN,Sadri,Deva,IN NP,IN,,,,,SAS,sck,sck-Deva,CLDR,,
 sck-Beng,sck-Beng-IN,Sadri,Beng,IN NP,IN,,,,,SAS,sck,sck-Beng,,,
 scl,scl-Arab-PK,Shina,Arab,IN PK,PK,,,,,SAS,scl,scl-Arab,,,
+scl-IN,scl-Arab-IN,Shina,Arab,IN,IN,,,,,SAS,,,,,
 scn,scn-Latn-IT,Sicilian,Latn,IT,IT,,,,,SEU,scn,scn-Latn,CLDR,,
 sco,sco-Latn-GB,Scots,Latn,GB IE,GB,,,,,NEU,sco,sco-Latn,CLDR,,
 scp-Deva,scp-Deva-NP,Helambu Sherpa,Deva,NP,NP,,,,,SAS,scp,scp-Deva,,,
