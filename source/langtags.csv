@@ -1,6 +1,5 @@
 Lang_Id,likely_subtag,LangName,script,regions,default region,Macro,unwritten,obsolete,deprecated,areas,ISO 639-3,Old_SS_Id,confirmed,Date modified,comments
 000,000-Latn-KH,Stieng in Cambodia,Latn,KH,KH,,,,,SEA,,,NMC,,Not sure which iso 639-3 code was used for writing Stieng in Cambodia. Seems to be older work done 19 60's
-000,000-Qaax-KH,Mel-Khaonh,Qaax,KH,KH,,,,,SEA,,,NMC,12-Jan-2018,applying for iso code in 2018
 aa,aa-Latn-ET,Afar,Latn,ET ER DJ,ET,,,,,EAF,aar,aa-Latn,CLDR,,
 aa-Ethi,aa-Ethi-ET,Afar,Ethi,ET ER DJ,ET,,,,,EAF,aar,aa-Ethi,LE,10-Jan-2018,
 aaa-Zyyy,aaa-Zyyy-NG,Ghotuo,Zyyy,NG,NG,,,,,WAF,aaa,,,,
@@ -1348,6 +1347,8 @@ cds,cds-Zxxx-TD,Chadian Sign Language,Zxxx,TD,TD,,,,,MAF,cds,,,,
 cdy,cdy-Qaax-CN,Chadong,Qaax,CN,CN,,1,,,EAS,cdy,cdy-Qaax,,,
 cdz-Beng,cdz-Beng-IN,Koda,Beng,BD IN,IN,,,,,SAS,cdz,cdz-Beng,,,
 ce,ce-Cyrl-RU,Chechen,Cyrl,DE GE JO KG KZ RU SY TR UZ,RU,,,,,CAS EEU WAS WEU,che,ce-Cyrl,CLDR,,
+ce-Arab,ce-Arab-RU,Chechen,Arab,DE GE JO KG KZ RU SY TR UZ,RU,,,1,,CAS EEU WAS WEU,che,,LE,25-Jan-2019,
+ce-Latn,ce-Latn-RU,Chechen,Latn,DE GE JO KG KZ RU SY TR UZ,RU,,,1,,CAS EEU WAS WEU,che,,LE,25-Jan-2019,
 cea,cea-Zyyy-US,"Chehalis, Lower",Zyyy,US,US,,1,,,NAM,cea,,LE,10-Jan-2018,Extinct
 ceb,ceb-Latn-PH,Cebuano,Latn,PH US,PH,,,,,NAM SEA,ceb,ceb-Latn,CLDR,,
 ceb-Brai,ceb-Brai-PH,Cebuano,Brai,PH US,PH,,,,,NAM SEA,ceb,ceb-Brai,,,
@@ -1364,6 +1365,7 @@ cek-x-rengcaa,cek-Latn-MM-x-rengcaa,"Chin, Eastern Khumi Rengcaa dialect",Latn,M
 cek-x-taaw,cek-Latn-MM-x-taaw,"Chin, Eastern Khumi Rengcaa dialect Ta-aw alphabet",Latn,MM,MM,,,,,SEA,cek,,NMC,9/11/2018,
 cen-Latn,cen-Latn-NG,Cen,Latn,NG,NG,,,,,WAF,cen,cen-Latn,,,
 cet-Zyyy,cet-Zyyy-NG,Centúúm,Zyyy,NG,NG,,,,,WAF,cet,,,,
+cey-Qaax,cey-Qaax-MY,"Chin, Ekai",Qaax,MY,MY,,,,,SEA,cey,,LE,28-Jan-2019,
 cfa-Latn,cfa-Latn-NG,Dikaka,Latn,NG,NG,,,,,WAF,cfa,cfa-Latn,,,
 cfd-Zyyy,cfd-Zyyy-NG,Cara,Zyyy,NG,NG,,,,,WAF,cfd,,,,
 cfg-Zyyy,cfg-Zyyy-NG,Como Karim,Zyyy,NG,NG,,,,,WAF,cfg,,,,
@@ -5401,7 +5403,7 @@ nun,nun-Latn-MM,Anong,Latn,CN MM,MM,,,,,EAS SEA,nun,nun-Latn,NMC,10-Jan-2018,
 nuo,nuo-Qaax-VN,Nguôn,Qaax,LA VN,VN,,1,,,SEA,nuo,nuo-Qaax,NMC,4-Dec-2017,
 nup-Latn,nup-Latn-NG,Nupe-Nupe-Tako,Latn,NG,NG,,,,,WAF,nup,nup-Latn,,,
 nuq,nuq-Latn-PG,Nukumanu,Latn,PG,PG,,,,,MEL,nuq,nuq-Latn,LE,10-Jan-2018,
-nur,nur-Latn-PG,Nukeria,Latn,PG,PG,,1,,,MEL,nur,,LE,10-Jan-2018,
+nur,nur-Latn-PG,Nukeria,Latn,PG,PG,,,,,MEL,nur,,LE,28-Jan-2019,
 nus,nus-Latn-SS,Nuer,Latn,ET SS,SS,,,,,EAF,nus,nus-Latn,CLDR,,
 nut,nut-Latn-VN,Nung,Latn,CA LA US VN,VN,,,,,NAM SEA,nut,nut-Latn,NMC,10-Jan-2018,"I've heard of a ""Nung Fahn Sling"" (Nung Phan Slinh) written in a non-Roman script, probably some type of Chinese character system. But I can't find any information on this, so I can't be sure it's nut and not a different related language. I also can't say for sure how much Latin script is used to write Nung, and therefore which script should be default. But for now we can treat the default as nut-Latn-VN, unless we learn otherwise. - SVW"
 nuu,nuu-Zyyy-CD,Ngbundu,Zyyy,CD,CD,,,,,MAF,nuu,,,,
@@ -7107,10 +7109,12 @@ tiz,tiz-Qaax-CN,Tai Hongjin,Qaax,CN,CN,,1,,,EAS,tiz,tiz-Qaax,,,
 tja,tja-Qaax-LR,Tajuasohn,Qaax,LR,LR,,1,,,WAF,tja,tja-Qaax,,,
 tjg,tjg-Zyyy-ID,Tunjung,Zyyy,ID,ID,,,,,SEA,tjg,,,,
 tji,tji-Zyyy-CN,"Tujia, Northern",Zyyy,CN,CN,,,,,EAS,tji,,,,
+tjj,tjj-Latn-AU,"Tjungundji",Latn,AU,AU,,,,,ANZ,tjj,,LE,28-Jan-2019,
 tjl-Mymr,tjl-Mymr-MM,Tai Laing,Mymr,MM,MM,,,,,SEA,tjl,tjl-Mymr,NMC,4-Dec-2017,
 tjm,tjm-Zyyy-XX,Timucua,Zyyy,XX,XX,,,,,???,tjm,,,,Extinct
 tjn,tjn-Zyyy-CI,Tonjon,Zyyy,CI,CI,,,,,WAF,tjn,,,,Extinct
 tjo,tjo-Zyyy-DZ,"Tamazight, Temacine",Zyyy,DZ,DZ,,,,,NAF,tjo,,,,
+tjp,tjp-Latn-AU,"Tjupany",Latn,AU,AU,,1,,,ANZ,tjp,,LE,28-Jan-2019,
 tjs,tjs-Zyyy-CN,"Tujia, Southern",Zyyy,CN,CN,,,,,EAS,tjs,,,,
 tju,tju-Zyyy-AU,Tjurruru,Zyyy,AU,AU,,1,,,ANZ,tju,,LE,10-Jan-2018,Extinct
 tjw,tjw-Latn-AU,Djabwurrung,Latn,AU,AU,,1,,,ANZ,tjw,tjw-Qaax,LE,10-Jan-2018,
@@ -7820,6 +7824,7 @@ wka,wka-Zyyy-TZ,Kw'adza,Zyyy,TZ,TZ,,1,,,EAF,wka,wka-Qaax,LE,10-Jan-2018,Extinct
 wkb,wkb-Qaax-IN,Kumbaran,Qaax,IN,IN,,1,,,SAS,wkb,wkb-Qaax,,,
 wkd,wkd-Zyyy-ID,Mo,Zyyy,ID,ID,,,,,SEA,wkd,,,,
 wkl,wkl-Qaax-IN,Kalanadi,Qaax,IN,IN,,1,,,SAS,wkl,wkl-Qaax,,,
+wkr,wkr-Latn-AU,Keerray-Woorroong,Latn,AU,AU,,1,,,ANZ,wkr,,LE,28-Jan-2019,
 wku,wku-Qaax-IN,Kunduvadi,Qaax,IN,IN,,1,,,SAS,wku,wku-Qaax,,,
 wkw,wkw-Zyyy-AU,Wakawaka,Zyyy,AU,AU,,1,,,ANZ,wkw,,LE,10-Jan-2018,Extinct
 wky,wky-Zyyy-AU,Wangkayutyuru,Zyyy,AU,AU,,1,,,ANZ,wky,wky-Qaax,LE,10-Jan-2018,Extinct
