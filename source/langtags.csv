@@ -3918,7 +3918,7 @@ lax-Latn,lax-Latn-IN,Tiwa,Latn,IN,IN,,,,,SAS,lax,lax-Latn,,,
 lay-Zyyy,lay-Zyyy-CN,"Bai, Lama",Zyyy,CN,CN,,,,,EAS,lay,,,,
 laz,laz-Zyyy-PG,Aribwatsa,Zyyy,PG,PG,,1,,,MEL,laz,,LE,10-Jan-2018,Extinct
 lb,lb-Latn-LU,Luxembourgish,Latn,BE DE FR LU US,LU,,,,,NAM WEU,ltz,lb,CLDR,,
-lba-Zyyy,lba-Zyyy-IN,Lui,Zyyy,IN,IN,,,,,SAS,lba,,,,Extinct
+lba-Zyyy,lba-Zyyy-IN,Lui,Zyyy,IN,IN,,,,1,SAS,lba,,,,Retired with 2018 ISO 639-3 change requests
 lbb,lbb-Latn-PG,Label,Latn,PG,PG,,,,,MEL,lbb,lbb-Latn,LE,10-Jan-2018,
 lbc-Lisu,lbc-Lisu-CN,Lakkia,Lisu,CN,CN,,,1,,EAS,lbc,lbc-Lisu,LE,11-Dec-2017,I'm leaving the script tag because the use for Lisu was in the 1912 and 1936 range. I don't believe it is used today so I suspect sometime another script will rise to the top of usage.
 lbe,lbe-Cyrl-RU,Lak,Cyrl,AZ KG KZ RU TJ TM UA UZ,RU,,,,,CAS EEU WAS,lbe,lbe-Cyrl,CLDR,,
@@ -4084,7 +4084,7 @@ llk,llk-Zyyy-MY,Lelak,Zyyy,MY,MY,,1,,,SEA,llk,llk-Qaax,LE,10-Jan-2018,Extinct
 lll,lll-Latn-PG,Lilau,Latn,PG,PG,,1,,,MEL,lll,,LE,10-Jan-2018,
 llm-Zyyy,llm-Zyyy-ID,Lasalimu,Zyyy,ID,ID,,,,,SEA,llm,,,,
 lln,lln-Latn-TD,Lele,Latn,TD,TD,,,,,MAF,lln,lln-Latn,LE,12-Jan-2018,
-llo,llo-Zyyy-LA,Khlor,Zyyy,LA,LA,,,,,SEA,llo,,NMC,20-Nov-2017,It's very likely that this language will retire and become a part of Kriang [ngt] in the future
+llo,llo-Zyyy-LA,Khlor,Zyyy,LA,LA,,,,1,SEA,llo,,NMC,20-Nov-2017,Retired with 2018 ISO 639-3 change requests (It's very likely that this language will retire and become a part of Kriang [ngt] in the future)
 llp,llp-Latn-VU,"Efate, North",Latn,VU,VU,,,,,MEL,llp,llp-Latn,LE,10-Jan-2018,
 llq-Zyyy,llq-Zyyy-ID,Lolak,Zyyy,ID,ID,,,,,SEA,llq,,,,
 lls,lls-Zxxx-LT,Lithuanian Sign Language,Zxxx,LT,LT,,,,,NEU,lls,,,,
@@ -4912,7 +4912,7 @@ mye,mye-Latn-GA,Myene,Latn,GA,GA,,,,,MAF,mye,mye-Latn,LE,12-Jan-2018,
 myf-Latn,myf-Latn-ET,Bambassi,Latn,ET,ET,,,,,EAF,myf,myf-Latn,,,
 myg,myg-Qaax-CM,Manta,Qaax,CM,CM,,1,,,MAF,myg,myg-Qaax,,,
 myh,myh-Latn-US,Makah,Latn,US,US,,1,,,NAM,myh,,LE,9-Jan-2018,
-myi-Zyyy,myi-Zyyy-IN,Mina,Zyyy,IN,IN,,,,,SAS,myi,,,,
+myi-Zyyy,myi-Zyyy-IN,Mina,Zyyy,IN,IN,,,,1,SAS,myi,,,,Retired with 2018 ISO 639-3 change requests
 myj,myj-Qaax-SS,Mangayat,Qaax,SS,SS,,1,,,EAF,myj,myj-Qaax,,,
 myk-Latn,myk-Latn-ML,"Sénoufo, Mamara",Latn,ML,ML,,,,,WAF,myk,myk-Latn,,,
 myl,myl-Latn-ID,Moma,Latn,ID,ID,,,,,SEA,myl,myl-Latn,,20-Apr-2018,
