@@ -3918,7 +3918,7 @@ lax-Latn,lax-Latn-IN,Tiwa,Latn,IN,IN,,,,,SAS,lax,lax-Latn,,,
 lay-Zyyy,lay-Zyyy-CN,"Bai, Lama",Zyyy,CN,CN,,,,,EAS,lay,,,,
 laz,laz-Zyyy-PG,Aribwatsa,Zyyy,PG,PG,,1,,,MEL,laz,,LE,10-Jan-2018,Extinct
 lb,lb-Latn-LU,Luxembourgish,Latn,BE DE FR LU US,LU,,,,,NAM WEU,ltz,lb,CLDR,,
-lba-Zyyy,lba-Zyyy-IN,Lui,Zyyy,IN,IN,,,,,SAS,lba,,,,Extinct
+lba-Zyyy,lba-Zyyy-IN,Lui,Zyyy,IN,IN,,,,1,SAS,lba,,,,Retired in ISO 639-3 2018
 lbb,lbb-Latn-PG,Label,Latn,PG,PG,,,,,MEL,lbb,lbb-Latn,LE,10-Jan-2018,
 lbc-Lisu,lbc-Lisu-CN,Lakkia,Lisu,CN,CN,,,1,,EAS,lbc,lbc-Lisu,LE,11-Dec-2017,I'm leaving the script tag because the use for Lisu was in the 1912 and 1936 range. I don't believe it is used today so I suspect sometime another script will rise to the top of usage.
 lbe,lbe-Cyrl-RU,Lak,Cyrl,AZ KG KZ RU TJ TM UA UZ,RU,,,,,CAS EEU WAS,lbe,lbe-Cyrl,CLDR,,
