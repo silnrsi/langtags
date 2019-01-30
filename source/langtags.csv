@@ -4234,7 +4234,7 @@ luz,luz-Arab-IR,"Luri, Southern",Arab,IR,IR,,,,,SAS,luz,luz-Aran,CLDR,,
 lv,lv-Latn-LV,Latvian,Latn,BR BY CA DE EE IE KZ LT LV RU UA US VE,LV,,,,,NEU,lav,lv,CLDR,,
 lv-Brai,lv-Brai-LV,Latvian,Brai,LV,LV,,,,,NEU,lav,lv-Brai,,,
 lva,lva-Latn-TL,Makuva,Latn,TL,TL,,,,,SEA,lva,lva-Latn,LE,12-Jan-2018,
-lvi,lvi-Zyyy-LA,Lavi,Zyyy,LA,LA,,,,,SEA,,,NMC,12-Jan-2018,applying for iso code in 2018
+lvi,lvi-Zyyy-LA,Lavi,Zyyy,LA,LA,,,,,SEA,lvi,,NMC,12-Jan-2018,applying for iso code in 2018
 lvk,lvk-Latn-SB,Lavukaleve,Latn,SB,SB,,,,,MEL,lvk,lvk-Latn,LE,10-Jan-2018,
 lvs,lvs-Latn-LV,"Latvian, Standard",Latn,BR BY CA DE EE IE KZ LT LV RU UA US VE,LV,lv,,,,CAS EEU NAM NEU SAM WEU,lvs,lvs-Latn,CLDR,23-Mar-2018,via macro mapping
 lvu-Zyyy,lvu-Zyyy-ID,Levuka,Zyyy,ID,ID,,,,,SEA,lvu,,,,
@@ -6439,7 +6439,7 @@ sgg,sgg-Zxxx-CH,Swiss-German Sign Language,Zxxx,CH LI,CH,,,,,WEU,sgg,,,,
 sgh-Arab,sgh-Arab-AF,Shughni,Arab,AF TJ,AF,,,,,CAS SAS,sgh,sgh-Arab,,,
 sgh-Cyrl,sgh-Cyrl-TJ,Shughni,Cyrl,AF TJ,TJ,,,,,CAS SAS,sgh,sgh-Cyrl,,,
 sgh-Latn,sgh-Latn-TJ,Shughni,Latn,AF TJ,TJ,,,,,CAS SAS,sgh,sgh-Latn,,,
-sgi,sgi-Zyyy-CM,Suga,Zyyy,CM,CM,,,,,MAF,sgi,,,,
+sgi,sgi-Latn-CM,Suga,Latn,CM,CM,,,,,MAF,sgi,,LE,30-Jan-2019,info from Ethnologue
 sgj,sgj-Deva-IN,Surgujia,Deva,IN,IN,,,,,SAS,sgj,sgj-Deva,LE,14-Feb-2018,
 sgk,sgk-Qaax-CN,Sangkong,Qaax,CN,CN,,1,,,EAS,sgk,sgk-Qaax,,,
 sgm,sgm-Zyyy-KE,Singa,Zyyy,KE,KE,,,,,EAF,sgm,,,,Extinct
@@ -6894,6 +6894,7 @@ szs,szs-Latn-SB,Solomon Islands Sign Language,Latn,SB,SB,,1,,,MEL,szs,,LE,30-Oct
 szs-Zxxx,szs-Zxxx-SB,Solomon Islands Sign Language,Zxxx,SB,SB,,,,,MEL,szs,,LE,30-Oct-2018,
 szv-Latn,szv-Latn-CM,Isu,Latn,CM,CM,,,,,MAF,szv,szv-Latn,,,
 szw,szw-Latn-ID,Sawai,Latn,ID,ID,,,,,SEA,szw,szw-Latn,,20-Apr-2018,
+szy,szy-Zyyy-TW,Sakizaya,Zyyy,TW,TW,,,,,EAS,szy,,LE,30-Jan-2019,
 ta,ta-Taml-IN,Tamil,Taml,AE AU BH BZ CA DE DK FJ GB IN LK MU MY NL QA RE SG TH US ZA,IN,,,,,ANZ CAM EAF MEL NAM NEU SAF SAS SEA WAS WEU,tam,ta,CLDR,,
 ta-Brai,ta-Brai-IN,Tamil,Brai,AE AU BH BZ CA DE DK FJ GB IN LK MU MY NL QA RE SG TH US ZA,IN,,,,,ANZ CAM EAF MEL NAM NEU SAF SAS SEA WAS WEU,tam,ta-Brai,,,
 taa,taa-Latn-US,"Tanana, Lower",Latn,US,US,,,,,NAM,taa,,LE,23-Oct-2018,
@@ -7109,12 +7110,12 @@ tiz,tiz-Qaax-CN,Tai Hongjin,Qaax,CN,CN,,1,,,EAS,tiz,tiz-Qaax,,,
 tja,tja-Qaax-LR,Tajuasohn,Qaax,LR,LR,,1,,,WAF,tja,tja-Qaax,,,
 tjg,tjg-Zyyy-ID,Tunjung,Zyyy,ID,ID,,,,,SEA,tjg,,,,
 tji,tji-Zyyy-CN,"Tujia, Northern",Zyyy,CN,CN,,,,,EAS,tji,,,,
-tjj,tjj-Latn-AU,"Tjungundji",Latn,AU,AU,,,,,ANZ,tjj,,LE,28-Jan-2019,
+tjj,tjj-Latn-AU,Tjungundji,Latn,AU,AU,,,,,ANZ,tjj,,LE,28-Jan-2019,
 tjl-Mymr,tjl-Mymr-MM,Tai Laing,Mymr,MM,MM,,,,,SEA,tjl,tjl-Mymr,NMC,4-Dec-2017,
 tjm,tjm-Zyyy-XX,Timucua,Zyyy,XX,XX,,,,,???,tjm,,,,Extinct
 tjn,tjn-Zyyy-CI,Tonjon,Zyyy,CI,CI,,,,,WAF,tjn,,,,Extinct
 tjo,tjo-Zyyy-DZ,"Tamazight, Temacine",Zyyy,DZ,DZ,,,,,NAF,tjo,,,,
-tjp,tjp-Latn-AU,"Tjupany",Latn,AU,AU,,1,,,ANZ,tjp,,LE,28-Jan-2019,
+tjp,tjp-Latn-AU,Tjupany,Latn,AU,AU,,1,,,ANZ,tjp,,LE,28-Jan-2019,
 tjs,tjs-Zyyy-CN,"Tujia, Southern",Zyyy,CN,CN,,,,,EAS,tjs,,,,
 tju,tju-Zyyy-AU,Tjurruru,Zyyy,AU,AU,,1,,,ANZ,tju,,LE,10-Jan-2018,Extinct
 tjw,tjw-Latn-AU,Djabwurrung,Latn,AU,AU,,1,,,ANZ,tjw,tjw-Qaax,LE,10-Jan-2018,
@@ -7591,6 +7592,7 @@ usi-Beng,usi-Beng-BD,Usoi,Beng,BD,BD,,,,,SAS,usi,usi-Beng,,,
 usi-Latn,usi-Latn-BD,Usoi,Latn,BD,BD,,,,,SAS,usi,usi-Latn,,,
 usk,usk-Qaax-CM,Usaghade,Qaax,CM NG,CM,,1,,,MAF WAF,usk,usk-Qaax,,,
 usp,usp-Latn-GT,Uspanteko,Latn,GT,GT,,,,,CAM,usp,usp-Latn,LE,9-Jan-2018,
+uss,uss-Latn-NG,ut-Hun,Latn,NG,NG,,1,,,WAF,uss,,LE,30-Jan-2019,
 usu,usu-Latn-PG,Uya,Latn,PG,PG,,1,,,MEL,usu,,LE,10-Jan-2018,
 uta,uta-Qaax-NG,Otank,Qaax,NG,NG,,1,,,WAF,uta,uta-Qaax,,,
 uth,uth-Latn-NG,ut-Hun,Latn,NG,NG,,,,,WAF,uth,,,,
