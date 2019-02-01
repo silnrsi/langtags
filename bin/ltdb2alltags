@@ -1,6 +1,6 @@
 #!/usr/bin/python2
 
-import os, sys, csv, json
+import os, sys, csv, json, re
 from argparse import ArgumentParser
 import xml.etree.cElementTree as et
 import palaso.langtags as lt
@@ -103,11 +103,11 @@ parser.add_argument('-L','--langindex',help="Use local LanguageInfo.tab")
 args = parser.parse_args()
 
 lts = lt.LangTags(noalltags=True)
-deprecated = set()
+deprecated = {}
 iananames = {}
 for k,v in lts.items():
     if getattr(v, 'deprecated', False):
-        deprecated.add(v.lang)
+        deprecated[v.lang] = "1"
     if hasattr(v, 'desc'):
         iananames[k] = v.desc
 regionnames = get_regionnames()
@@ -122,20 +122,22 @@ with open(args.infile) as csvfile :
         ls = row['likely_subtag']
         i6 = row['ISO 639-3']
         d = row['deprecated']
+        rod = row['ROD']
+        variants = row['variants']
         macro = row['Macro']
         t = lt.LangTag(ls)
         b = lt.LangTag(lid)
         if b.lang == "000":
             continue
         if d != "":
-            deprecated.add(t.lang)
+            deprecated[t.lang] = d
         if b.script in [None, 'Zyyy', 'Qaax']:
             t.hidescript = True
         if b.region is None :
             t.hideregion = True
         t.hideboth |= (t.hideregion and t.hidescript)
         if t.lang in deprecated:
-            t.deprecated = True
+            t.deprecated = deprecated[t.lang]
         t.regions = row['regions'].split()
         t.name = row['LangName']
         lts.add(t)
@@ -147,6 +149,9 @@ with open(args.infile) as csvfile :
             m = lt.LangTag(macro)
             m.merge_equivalent(t)
             allmacros[s] = repr(m)
+        t.nofonipa = not t.hidescript and t.script != 'Latn'
+        t.extra_variants = variants
+        t.rod = rod
 
 for l in os.listdir(args.indir) :
     if l.endswith('.xml') :
@@ -225,6 +230,9 @@ else:
     res = []
     alllangreg = set()
     allcomplexes = []
+    # special record for passing standard variants
+    res.append({'tag': '_globalvar', 'variants': ['simple']})
+    res.append({'tag': "_phonvar", 'variants': ['alalc97', 'fonipa', 'fonkirsh', 'fonnapa', 'fonupa', 'fonxsamp']})
     for t in sorted(set(lts.values())):
         if t.skip:
             continue
@@ -294,10 +302,21 @@ else:
             del n['iso639_3']
         if getattr(t, 'deprecated', False):
             n['deprecated'] = True
+            if t.deprecated in lts:
+                if 'tags' not in n:
+                    n['tags'] = []
+                n['tags'].extend(list(lts[t.deprecated].allforms()))
         if t.region is not None:
             regions.remove(t.region)
         if len(regions):
-            n['regions'] = " ".join(sorted(regions))
+            n['regions'] = sorted(regions)
+#            n['regions'] = " ".join(sorted(regions))
+        if getattr(t, 'nofonipa', False):
+            n['nophonvars'] = True
+        if getattr(t, 'extra_variants', ""):
+            n['variants'] = t.extra_variants.split()
+        if getattr(t, 'rod', ""):
+            n['rod'] = t.rod
         res.append(n)
         if n['tag'] in collisions:
             print("Multiple entries for: {} = {}, {}".format(n['tag'], n['full'], collisions[n['tag']]))
@@ -306,9 +325,13 @@ else:
         for k, v in n.items():
             if v is None:
                 print("Null entry for {} in {}".format(k, n['tag']))
+    def mergelines(m):
+        return "[" + " ".join(x.strip() for x in m.group(1).split("\n")) + "]"
+    output = json.dumps(sorted(res, key=lambda x:x['tag']), sort_keys=True, indent=4, ensure_ascii=False, encoding="utf8")
+    output = "[" + re.sub(r'\[([^\]]+)\]', mergelines, output[1:-1]) + "]\n"
     with codecs.open(args.outfile, "w", encoding="utf-8") as fh:
         # use encoding="utf8" (not "utf-8") as a hack around a bug in json: https://stackoverflow.com/a/40777484/10488020
-        json.dump(sorted(res, key=lambda x:x['tag']), fh, sort_keys=True, indent=4, ensure_ascii=False, encoding="utf8")
+        fh.write(output)
     missing = set(names.keys()) - alllangreg
     if len(missing):
         print("Missing language regions ({}): ".format(len(missing)) + " ".join(sorted(missing)))

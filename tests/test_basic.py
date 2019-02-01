@@ -46,13 +46,7 @@ class Basic(unittest.TestCase):
         ''' Test that region values are sensible and that they equal the default region.
             Unknown regions do not have to be specified. '''
         for r,t in self._allRows():
-            reg = r['default region']
-            if len(reg) < 2 or len(reg) > 3:
-                self.fail("{Lang_Id} has bad default region: {default region}".format(**r))
-            if t.region is not None or (reg != '001' and reg != 'XX'):
-                self.assertEqual(reg, t.region, msg="{likely_subtag} region is not {default region}".format(**r))
-            if not self._region_test(reg):
-                self.fail("{Lang_Id} has irregular default region: {default region}".format(**r))
+            reg = t.region
             if not self._region_test(t.region):
                 self.fail("{likely_subtag} has irregular region".format(**r))
             for s in r['regions'].split():
@@ -62,15 +56,14 @@ class Basic(unittest.TestCase):
     def test_script(self):
         ''' Qaa? type scripts must have an -x- for the script name '''
         for r, t in self._allRows():
-            scr = r['script']
+            scr = t.script
             if scr.startswith("Qaa") or scr.startswith("Qab"):
                 if scr not in ("Qaax", "Qaby", "Qabz") and (t.extensions is None or 'x' not in t.extensions):
                     self.fail("{Lang_Id} has no extension for script name".format(**r))
             elif scr not in self.iana.script and scr not in self.extraScripts:
-                self.fail("{Lang_Id} has irregular script {script}".format(**r))
+                self.fail("{Lang_Id} has irregular script {}".format(scr, **r))
             elif t.script not in self.iana.script and t.script not in self.extraScripts:
                 self.fail("{likely_subtag} has irregular script".format(**r))
-            self.assertEqual(scr, t.script, msg="{likely_subtag} script is not {script}".format(**r))
 
     def test_variants(self):
         ''' Test that all variants are in IANA '''

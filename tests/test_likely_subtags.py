@@ -16,7 +16,7 @@ class LikelySubtags(unittest.TestCase):
     def setUp(self):
         self.likelymap = {}
         thisdir = os.path.dirname(__file__)
-        self.ltags = LangTags(alltags=os.path.join(thisdir, '..', 'results', 'alltags.txt'))
+        self.ltags = LangTags(alltags=os.path.join(thisdir, '..', 'results', 'langtags.txt'))
         doc = et.parse(os.path.join(thisdir, "likelySubtags.xml"))
         for e in doc.findall("./likelySubtags/likelySubtag"):
             tolt = LangTag(e.get('to').replace("_", "-"))
