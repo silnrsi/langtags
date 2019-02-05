@@ -1,0 +1,32 @@
+#!/usr/bin/python3
+
+import argparse, csv
+from palaso.langtags import LangTag
+
+parser = argparse.ArgumentParser()
+parser.add_argument("infile", help="Input langtags csv")
+parser.add_argument("-o","--output",required=True,help="Ouptut csv")
+parser.add_argument("-r","--rods",required=True,help="ROD csv file")
+args = parser.parse_args()
+
+rods = {}
+with open(args.rods, "r") as inf:
+    rdr = csv.DictReader(inf)
+    for r in rdr:
+        if r['language_code'] not in rods:
+            rods[r['language_code']] = {}
+        l = rods[r['language_code']]
+        if r['country_code'] not in l:
+            l[r['country_code']] = []
+        l[r['country_code']].append(r['dialect_code'])
+
+with open(args.infile, "r") as inf, open(args.output, "w") as outf:
+    rdr = csv.DictReader(inf)
+    outr = csv.DictWriter(outf, rdr.fieldnames)
+    outr.writeheader()
+    for r in rdr:
+        t = LangTag(r['likely_subtag'])
+        if t.lang in rods and t.region in rods[t.lang]:
+            r['RODs'] = " ".join(rods[t.lang][t.region])
+        outr.writerow(r)
+
