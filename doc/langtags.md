@@ -21,8 +21,15 @@ Langtags.json consists of an array of objects. Each object corresponds to an equ
 - **names** Other alternative names for this language coming from the Ethnologue names list, including alternate names and names and alternate names from other regions.
 - **localname** If present, this gives the name of the language in the orthography specified by this set.
 - **sldr** True if there is a file in the SLDR for at least one of the tags in this set.
+- **nophonvars** If present and true indicates that this tag may not take a phonetic alphabet variant. This occurs if the tag has a hidden script which is not Latn.
 
 There are two specially named (via the **tag** field) objects that occur at the start of the list:
 
 - **_globalvar** The **variants** field lists variants that may occur with any language tag.
 - **_phonvar** The **variants** field lists variants that may occur with any language tag for the **Latn** script, whether implicit or explicitly stated. Notice that for some languages there is no entry for a Latin script form of the language. For example `th-Latn` does not occur in the list of tags anywhere. But `th-fonipa` is a valid tag, whereas `th-Thai-fonipa` is not.
+
+Some invariants:
+
+- A language tag will never occur in more than one place in the fields **tag** **full** or **tags**, except if it occurs in both the **tag** and **full** fields of a record. It will never occur in more than one field.
+- All plural fields store their results as arrays.
+- Empty fields may not be stored in the record. Exceptions to this are

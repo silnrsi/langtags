@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-import unittest, os
+import unittest, os, re
 from xml.etree import ElementTree as et
 from palaso.langtags import LangTags, LangTag
 
@@ -11,12 +11,14 @@ def isnotint(s):
     except ValueError:
         return True
 
+langtagtxt = os.path.join(os.path.dirname(__file__), '..', 'results', 'langtags.txt')
+
 class LikelySubtags(unittest.TestCase):
     ''' Tests alltags.txt for discrepencies against likelySubtags.xml '''
     def setUp(self):
         self.likelymap = {}
         thisdir = os.path.dirname(__file__)
-        self.ltags = LangTags(alltags=os.path.join(thisdir, '..', 'results', 'langtags.txt'))
+        self.ltags = LangTags(alltags=langtagtxt)
         doc = et.parse(os.path.join(thisdir, "likelySubtags.xml"))
         for e in doc.findall("./likelySubtags/likelySubtag"):
             tolt = LangTag(e.get('to').replace("_", "-"))
@@ -47,6 +49,15 @@ class LikelySubtags(unittest.TestCase):
     def test_zh_CN(self):
         lt = self.ltags['zh']
         self.assertEqual(str(lt), 'zh-CN')
+
+    def test_noDuplicates(self):
+        found = {}
+        with open(langtagtxt) as inf:
+            for i, l in enumerate(inf.readlines()):
+                for t in (x.replace("*", "") for x in re.split(r'\s*=\s*', l.strip())):
+                    if t in found and found[t] != i + 1:
+                        self.fail("Duplicate of {} found at lines {} and {}".format(t, found[t], i+1))
+                    found[t] = i + 1
             
 
 if __name__ == '__main__':

@@ -300,12 +300,6 @@ else:
             del n['names']
         if not len(n.get('iso639_3', "fred")):
             del n['iso639_3']
-        if getattr(t, 'deprecated', False):
-            n['deprecated'] = True
-            if t.deprecated in lts:
-                if 'tags' not in n:
-                    n['tags'] = []
-                n['tags'].extend(list(lts[t.deprecated].allforms()))
         if t.region is not None:
             regions.remove(t.region)
         if len(regions):

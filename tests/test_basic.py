@@ -8,7 +8,8 @@ from palaso.sldr.iana import Iana
 class Basic(unittest.TestCase):
 
     extraScripts = []
-    extraLangs = ("000", "lsn", "lsv", "lvi", "pnd", "tvx", "uth", "xsj")
+    extraLangs = ("000", "cey", "lsn", "lsv", "lvi", "pnd", "szy", "tjj",
+                  "tjp", "tvx", "uss", "uth", "wkr", "xsj")
 
     def setUp(self):
         self.fname = os.path.join(os.path.dirname(__file__), '../source/langtags.csv')

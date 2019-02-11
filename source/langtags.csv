@@ -5428,7 +5428,7 @@ nwi,nwi-Latn-VU,"Tanna, Southwest",VU,,,04485 04491 04571 17201,,,,,MEL,nwi,LE,1
 nwm,nwm-Qaax-SS,Nyamusa-Molo,SS,,,,,1,,,EAF,nwm,,,
 nwo,nwo-Zyyy-AU,Nauo,AU,,,,,1,,,ANZ,nwo,LE,10-Jan-2018,Extinct
 nwr,nwr-Latn-PG,Nawaru,PG,,,,,1,,,MEL,nwr,LE,10-Jan-2018,
-nwx,nwx-Zyyy-NP,Middle Newar,NP,,,,,,,,???,nwx,,,Historical
+nwx,nwx-Deva-NP,Middle Newar,NP,,,,,,,,???,nwx,,,Historical
 nwy,nwy-Zyyy-US,Nottoway-Meherrin,US,,,,,1,,,NAM,nwy,LE,10-Jan-2018,Extinct
 nxa,nxa-Latn-TL,Nauete,TL,,,,,,,,SEA,nxa,LE,12-Jan-2018,
 nxd,nxd-Latn-CD,Ngando,CD,,,,,,,,MAF,nxd,LE,12-Jan-2018,
@@ -7595,7 +7595,7 @@ usi-Beng,usi-Beng-BD,Usoi,BD,,,03255,,,,,SAS,usi,,,
 usi-Latn,usi-Latn-BD,Usoi,BD,,,03255,,,,,SAS,usi,,,
 usk,usk-Qaax-CM,Usaghade,CM NG,,,,,1,,,MAF WAF,usk,,,
 usp,usp-Latn-GT,Uspanteko,GT,,,,,,,,CAM,usp,LE,9-Jan-2018,
-uss,uss-Latn-NG,ut-Hun,NG,,,,1,,,WAF,uss,LE,30-Jan-2019,,
+uss,uss-Latn-NG,ut-Hun,NG,,,,,1,,,WAF,uss,LE,30-Jan-2019,
 usu,usu-Latn-PG,Uya,PG,,,,,1,,,MEL,usu,LE,10-Jan-2018,
 uta,uta-Qaax-NG,Otank,NG,,,,,1,,,WAF,uta,,,
 uth,uth-Latn-NG,ut-Hun,NG,,,,,,,,WAF,uth,,,
@@ -8320,7 +8320,7 @@ ybo,ybo-Latn-PG,Yabong,PG,,,,,,,,MEL,ybo,LE,10-Jan-2018,
 ybx,ybx-Latn-PG,Yawiyo,PG,,,,,1,,,MEL,ybx,LE,10-Jan-2018,
 yby,yby-Latn-PG,Yaweyuha,PG,,,,,,,,MEL,yby,LE,10-Jan-2018,
 ych,ych-Zyyy-CN,Chesu,CN,,,,,,,,EAS,ych,,,
-ycl,ycl-Qaax-CN,Lolopo,CN,,,06194 06224 18554 22291,,1,,,EAS,ycl,,,
+ycl,ycl-Latn-CN,Lolopo,CN,,,06194 06224 18554 22291,,1,,,EAS,ycl,,,
 ycn,ycn-Latn-CO,Yucuna,CO,,,,,,,,SAM,ycn,LE,9-Jan-2018,
 ycp,ycp-Zyyy-LA,Chepya,LA,,,,,,,,SEA,ycp,NMC,20-Nov-2017,
 yda,yda-Zyyy-AU,Yanda,AU,,,,,1,,,ANZ,yda,LE,10-Jan-2018,Extinct

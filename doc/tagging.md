@@ -17,7 +17,7 @@ written in Latin, Thai or Myanmar scripts) and need multiple language tags
 A "likely subtags" list serves to "fill in the blanks", having entries that
 supply script and region information for each language tag, for example:
 
-| lang_id  | likely_subtags |
+| lang\_id  | likely\_subtags |
 |----------|-------------|
 | aak      | aak-Latn-PG |
 | ahk      | ahk-Latn-MM |
@@ -153,7 +153,7 @@ Therefore, it would be helpful if there were some list that specified the
 default script and region for any given tag. The CLDR is managing one and calls
 the default information the likely subtags for a given tag. SIL is keeping such
 a list for the many language tags that it interacts with,
-[*here*](https://goo.gl/tI4waT).
+[*here*](https://github.com/silnrsi/langtags).
 
 ## Managing the Language Tags list
 
@@ -252,7 +252,7 @@ be taken, so there is no danger.
 For a complex example, consider ahk, Akha. Here is how it is listed in the
 language tag list:
 
-| lang_id  | likely_subtags | regions |
+| lang\_id  | likely\_subtags | regions |
 |----------|-------------|----------|
 | ahk      | ahk-Latn-MM | CN MM TH |
 | ahk-Mymr | ahk-Mymr-MM | MM       |
@@ -525,6 +525,21 @@ stabilize so that the resulting tags will last. We do not want to have the
 meaning of a tag to change, otherwise previously tagged data needs to be
 retagged.
 
+### Macro languages
+
+Some language tags are best not used and alternative used instead. This is
+indicated by specifying the basic tag to use instead, in the `macro` field.
+This replacement may occur for different reasons, but the default is because
+this language is the default language for a macro language group and the
+macro language should be used instead.
+
+### Deprecation
+
+If a tag has to be withdrawn or changes significantly then the tag is not deleted
+but it marked as deprecated and the `macro` field used to indicate which tag is to
+be used instead. This way a system can now how to handle a withdrawn tag later.
+In effect a deprecated tag is a special case of a macro language type tag.
+
 ### Procedure
 
 Having walked through all the issues involved in tagging, this section gives an
@@ -551,7 +566,7 @@ overview procedure for reviewing a row in the spreadsheet.
 The SLDR, in addition to keeping the language tags database (eventually), also
 has other files that help with language tag processing.
 
-### Alltags.txt
+### langtags.txt
 
 This file consists of a set of language tags equivalence sets, one per line. A
 language tag equivalence set consists of all the tags that are considered
