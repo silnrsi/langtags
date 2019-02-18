@@ -1,5 +1,5 @@
 Lang_Id,likely_subtag,LangName,regions,variants,ROD,RODs,Macro,unwritten,obsolete,deprecated,areas,ISO 639-3,confirmed,Date modified,comments
-000,000-Latn-KH,Stieng in Cambodia,KH,,,,,,,,SEA,,NMC,,Not sure which iso 639-3 code was used for writing Stieng in Cambodia. Seems to be older work done 19 60's
+sti-KH,sti-Latn-KH,Stieng in Cambodia,KH,,,,,,,,SEA,,NMC,,Not sure which iso 639-3 code was used for writing Stieng in Cambodia. Seems to be older work done 19 60's
 aa,aa-Latn-ET,Afar,ET ER DJ,,,,,,,,EAF,aar,CLDR,,
 aa-Ethi,aa-Ethi-ET,Afar,ET ER DJ,,,,,,,,EAF,aar,LE,10-Jan-2018,
 aaa-Zyyy,aaa-Zyyy-NG,Ghotuo,NG,,,,,,,,WAF,aaa,,,
@@ -6915,7 +6915,7 @@ szs,szs-Latn-SB,Solomon Islands Sign Language,SB,,,,,1,,,MEL,szs,LE,30-Oct-2018,
 szs-Zxxx,szs-Zxxx-SB,Solomon Islands Sign Language,SB,,,,,,,,MEL,szs,LE,30-Oct-2018,
 szv-Latn,szv-Latn-CM,Isu,CM,,,,,,,,MAF,szv,,,
 szw,szw-Latn-ID,Sawai,ID,,,,,,,,SEA,szw,,20-Apr-2018,
-szy,szy-Zyyy-TW,Sakizaya,TW,,,,,,EAS,szy,LE,30-Jan-2019,,,
+szy,szy-Latn-TW,Sakizaya,TW,,,,,,EAS,szy,LE,18-Feb-2019,,,
 ta,ta-Taml-IN,Tamil,AE AU BH BZ CA DE DK FJ GB IN LK MU MY NL QA RE SG TH US ZA,,,,,,,,ANZ CAM EAF MEL NAM NEU SAF SAS SEA WAS WEU,tam,CLDR,,
 ta-Brai,ta-Brai-IN,Tamil,AE AU BH BZ CA DE DK FJ GB IN LK MU MY NL QA RE SG TH US ZA,,,,,,,,ANZ CAM EAF MEL NAM NEU SAF SAS SEA WAS WEU,tam,,,
 taa,taa-Latn-US,"Tanana, Lower",US,,,,,,,,NAM,taa,LE,23-Oct-2018,
