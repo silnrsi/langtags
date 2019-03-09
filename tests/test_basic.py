@@ -10,6 +10,7 @@ class Basic(unittest.TestCase):
     extraScripts = []
     extraLangs = ("000", "cey", "lsn", "lsv", "lvi", "pnd", "szy", "tjj",
                   "tjp", "tvx", "uss", "uth", "wkr", "xsj")
+    bannedchars = range(33, 45) + [47] + range(58, 63) + [94, 96]
 
     def setUp(self):
         self.fname = os.path.join(os.path.dirname(__file__), '../source/langtags.csv')
@@ -100,6 +101,14 @@ class Basic(unittest.TestCase):
             for k, v in t.extensions.items():
                 if sorted(v) != sorted(l.extensions[k]):
                     self.fail("{Lang_Id} and {likely_subtag} have different extensions in the {0} namespace".format(k, **r))
+
+    def test_ascii(self):
+        ''' Test that all tags are pure ascii '''
+        for r, t in self._allRows():
+            for cid in ('Lang_Id', 'likely_subtag', 'regions', 'ISO 639-3', 'Macro', 'variants'):
+                s = [ord(x) for x in r[cid]]
+                if any(not (32 <= x < 123) or x in self.bannedchars for x in s):
+                    self.fail("{Lang_Id} has non ASCII in column {0} value {1}".format(cid, r[cid], **r))
 
 if __name__ == "__main__":
     unittest.main()
