@@ -220,7 +220,7 @@ else:
         namef = urllib2.urlopen(req)
     reader = csv.DictReader(namef, dialect=csv.excel_tab)
     for r in reader:
-        if r['CountryID'] == 'ET' and r['NameType'] == 'LA':     # hack fix for buggy Ethnologue data. To Be Reviewed 21/Feb/2019
+        if r['CountryID'] == 'ET' and r['NameType'] == 'LA':     # hack fix for buggy Ethnologue data. To Be Reviewed 21/Feb/2019, 2020
             continue
         if r['NameType'].startswith("L") and r['CountryID'] and not r['NameType'].endswith("P"):
             names.setdefault(r['LangID']+"-"+r['CountryID'], [[],[]])[0 if r['NameType'] == 'L' else 1].append(r['Name'])
