@@ -5,12 +5,17 @@ import csv, unittest
 import palaso.langtags as lt
 from palaso.sldr.iana import Iana
 
+bannedchars = range(33, 45) + [47] + range(58, 63) + [94, 96]
+def nonascii(s):
+    cs = [ord(x) for x in s]
+    if any(not (32 <= x < 123) or x in bannedchars for x in cs):
+        return True
+
 class Basic(unittest.TestCase):
 
     extraScripts = []
     extraLangs = ("000", "cey", "lsn", "lsv", "lvi", "pnd", "szy", "tjj",
                   "tjp", "tvx", "uss", "uth", "wkr", "xsj")
-    bannedchars = range(33, 45) + [47] + range(58, 63) + [94, 96]
 
     def setUp(self):
         self.fname = os.path.join(os.path.dirname(__file__), '../source/langtags.csv')
@@ -106,9 +111,17 @@ class Basic(unittest.TestCase):
         ''' Test that all tags are pure ascii '''
         for r, t in self._allRows():
             for cid in ('Lang_Id', 'likely_subtag', 'regions', 'ISO 639-3', 'Macro', 'variants'):
-                s = [ord(x) for x in r[cid]]
-                if any(not (32 <= x < 123) or x in self.bannedchars for x in s):
+                if nonascii(r[cid]):
                     self.fail("{Lang_Id} has non ASCII in column {0} value {1}".format(cid, r[cid], **r))
+
+    def test_iso639(self):
+        ''' Test that the iso639 column is either empty or 3 lower ascii chars. '''
+        k = 'ISO 639-3'
+        for r, t in self._allRows():
+            if r[k] == '':
+                continue
+            if len(r[k]) != 3 or r[k].lower() != r[k] or any(not (96 < ord(x) < 123) for x in r[k]):
+                self.fail("{Lang_Id} has faulty ISO639 code of {ISO 639-3}".format(**r))
 
 if __name__ == "__main__":
     unittest.main()
