@@ -123,5 +123,13 @@ class Basic(unittest.TestCase):
             if len(r[k]) != 3 or r[k].lower() != r[k] or any(not (96 < ord(x) < 123) for x in r[k]):
                 self.fail("{Lang_Id} has faulty ISO639 code of {ISO 639-3}".format(**r))
 
+    def test_deprecated(self):
+        for r, t in self._allRows():
+            l = lt.LangTag(r['Lang_Id'])
+            inf = self.iana.language.get(l.lang, {})
+            if 'Deprecated' in inf:
+                if r['deprecated'] == '':
+                    self.fail("{Lang_Id} was deprecated: {} in IANA but not in the database".format(inf['Deprecated'], **r))
+
 if __name__ == "__main__":
     unittest.main()
