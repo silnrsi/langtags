@@ -1,6 +1,6 @@
 #!/usr/bin/python2
 
-import os, sys, csv, json, re
+import os, sys, csv, json, re, datetime
 from argparse import ArgumentParser
 import xml.etree.cElementTree as et
 import palaso.langtags as lt
@@ -91,6 +91,7 @@ def get_regionnames():
                     currname = l[13:]
         if currlang is not None:
             res[currlang] = currname
+    res['TW'] = 'China-Taiwan'  # A tricky political choice
     return res
 
 parser = ArgumentParser()
@@ -233,6 +234,7 @@ else:
     # special record for passing standard variants
     res.append({'tag': '_globalvar', 'variants': ['simple']})
     res.append({'tag': "_phonvar", 'variants': ['alalc97', 'fonipa', 'fonkirsh', 'fonnapa', 'fonupa', 'fonxsamp']})
+    res.append({'tag': "_version", 'api': '1.0.0', 'date': str(datetime.date.today())})
     for t in sorted(set(lts.values())):
         if t.skip:
             continue

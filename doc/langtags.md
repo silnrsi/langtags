@@ -6,6 +6,8 @@ Langtags.txt contains a sequence of equivalence sets. Each set consists of a lis
 
 ## langtags.json
 
+Current API version 1.0.0.
+
 Langtags.json consists of an array of objects. Each object corresponds to an equivalence set. The fields in that object are defined as:
 
 - **tag** The canonical tag for this set.
@@ -23,10 +25,11 @@ Langtags.json consists of an array of objects. Each object corresponds to an equ
 - **sldr** True if there is a file in the SLDR for at least one of the tags in this set.
 - **nophonvars** If present and true indicates that this tag may not take a phonetic alphabet variant. This occurs if the tag has a hidden script which is not Latn.
 
-There are two specially named (via the **tag** field) objects that occur at the start of the list. All special tags start with `_`:
+There are three specially named (via the **tag** field) objects that occur at the start of the list. All special tags start with `_`:
 
 - **_globalvar** The **variants** field lists variants that may occur with any language tag.
 - **_phonvar** The **variants** field lists variants that may occur with any language tag for the **Latn** script, whether implicit or explicitly stated. Notice that for some languages there is no entry for a Latin script form of the language. For example `th-Latn` does not occur in the list of tags anywhere. But `th-fonipa` is a valid tag, whereas `th-Thai-fonipa` is not.
+- **_version** The **api** field contains a semantic version string "x.y.z" where x is a major version not backwardly structurally compatible, y is a minor version involving removing fields and z is minimal change that simply adds fields or extra header records (special tags of the form \_tag.)
 
 Some invariants:
 
