@@ -46,8 +46,12 @@ The \_phonvar header record contains a variants field list that may be applied t
 
 Thus a complete list of equivalence sets for bg-Cyrl-GB (with only one of the variants from \_phonvar used) would be:
 
-- bg, bg-BG, bg-Cyrl, bg-Cyrl-BG 
-- bg-ivanchov, bg-BG-ivanchov, bg-Cyrl-ivanchov, bg-Cyrl-BG-ivanchov 
+- bg, bg-BG, bg-Cyrl, bg-Cyrl-BG
+- bg-ivanchov, bg-BG-ivanchov, bg-Cyrl-ivanchov, bg-Cyrl-BG-ivanchov
 - bg-fonipa, bg-BG-fonipa, bg-Latn-fonipa, bg-Latn-BG-fonipa 
-- bg-ivanchov-fonipa, bg-BG-ivanchov-fonipa, bg-Latn-ivanchov-fonipa, bg-Latn-BG-ivanchov-fonipa
+- bg-fonipa-ivanchov, bg-BG-fonipa-ivanchov, bg-Latn-fonipa-ivanchov, bg-Latn-BG-fonipa-ivanchov
+- bg-simple, bg-BG-simple, bg-Cyrl-simple, bg-Cyrl-BG-simple
+- bg-ivanchov-simple, bg-BG-ivanchov-simple, bg-Cyrl-ivanchov-simple, bg-Cyrl-BG-ivanchov-simple
+- bg-fonipa-simple, bg-BG-fonipa-simple, bg-Latn-fonipa-simple, bg-Latn-BG-fonipa-simple
+- bg-fonipa-ivanchov-simple, bg-BG-fonipa-ivanchov-simple, bg-Latn-fonipa-ivanchov-simple, bg-Latn-BG-fonipa-ivanchov-simple
 
