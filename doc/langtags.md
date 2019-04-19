@@ -37,3 +37,17 @@ Some invariants:
 - All plural fields store their results as arrays.
 - Empty fields are not be stored in the record.
 - The **tag** and the **full** fields are not stable and may change between versions of the data file. But they will always appear somewhere in the equivalence set. In effect the equivalence set is stable in terms of once something is in it, it is not removed (unless there is an actual fault).
+
+A discussion of the **variants** field:
+
+The variants field lists different variants that may occur with the tags in the equivalence set. As such, a tag with a variant is in a different equivalence set. Thus bg, bg-BG, bg-Cyrl, bg-Cyrl-BG forms one set and bg-ivanchov, bg-BG-ivanchov, bg-Cyrl-ivanchov, bg-Cyrl-BG-ivanchov forms another. The header record \_globalvar contains a variants field that should be appended to the variants field of every equivalence set. Thankfully this list is short and it may not make semantic sense to use it. Not all languages have a simplified form, but in theory they might.
+
+The \_phonvar header record contains a variants field list that may be applied to any equivalence set, but it implies Latn script even if used with a non-Latin script language. For examle from our bg-Cyrl-BG example, we also have an equivalence set of bg-fonipa, bg-BG-fonipa, bg-Latn-fonipa, bg-Latn-BG-fonipa. Only one of the list of variants in the \_phonvar variants list may occur in a tag, at most.
+
+Thus a complete list of equivalence sets for bg-Cyrl-GB (with only one of the variants from \_phonvar used) would be:
+
+- bg, bg-BG, bg-Cyrl, bg-Cyrl-BG 
+- bg-ivanchov, bg-BG-ivanchov, bg-Cyrl-ivanchov, bg-Cyrl-BG-ivanchov 
+- bg-fonipa, bg-BG-fonipa, bg-Latn-fonipa, bg-Latn-BG-fonipa 
+- bg-ivanchov-fonipa, bg-BG-ivanchov-fonipa, bg-Latn-ivanchov-fonipa, bg-Latn-BG-ivanchov-fonipa
+
