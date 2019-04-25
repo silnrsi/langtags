@@ -41,6 +41,8 @@ class LikelySubtags(unittest.TestCase):
 
     def test_noBadComponents(self):
         for v in self.ltags.values():
+            if v.lang is None:
+                self.fail(repr(v) + " has no language")
             if len(v.lang) > 3 and "-" not in v.lang:
                 self.fail(repr(v) + " has odd lang length")
             if v.region is not None and len(v.region) > 2 and isnotint(v.region):

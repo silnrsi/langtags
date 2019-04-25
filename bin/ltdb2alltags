@@ -132,6 +132,8 @@ with open(args.infile) as csvfile :
             continue
         if d != "":
             deprecated[t.lang] = d
+            if (4 > len(d) > 1 or "-" in d) and macro == "":
+                macro = d
         if b.script in [None, 'Zyyy', 'Qaax']:
             t.hidescript = True
         if b.region is None :
