@@ -1,5 +1,5 @@
 Lang_Id,likely_subtag,LangName,regions,variants,ROD,RODs,Macro,unwritten,obsolete,deprecated,areas,ISO 639-3,confirmed,Date modified,comments
-sti-KH,sti-Latn-KH,Stieng in Cambodia,KH,,,,,,,,SEA,,NMC,,Not sure which iso 639-3 code was used for writing Stieng in Cambodia. Seems to be older work done 19 60's
+sti-KH,sti-Latn-KH,Stieng in Cambodia,KH,,,,,,,,SEA,sti,NMC,,Not sure which iso 639-3 code was used for writing Stieng in Cambodia. Seems to be older work done 19 60's
 aa,aa-Latn-ET,Afar,ET ER DJ,,,,,,,,EAF,aar,CLDR,,
 aa-Ethi,aa-Ethi-ET,Afar,ET ER DJ,,,,,,,,EAF,aar,LE,10-Jan-2018,
 aaa-Zyyy,aaa-Zyyy-NG,Ghotuo,NG,,,,,,,,WAF,aaa,,,
@@ -7182,7 +7182,7 @@ thu,thu-Latn-SS,Thuri,SS,,,,,,,,EAF,thu,LE,12-Jan-2018,
 thv-Arab,thv-Arab-DZ,"Tamahaq, Tahaggart",DZ LY NE,,,,,,,,NAF WAF,thv,,,
 thv-Tfng,thv-Tfng-DZ,"Tamahaq, Tahaggart",DZ LY NE,,,,,,,,NAF WAF,thv,,,
 thw,thw-Qaax-NP,Thudam,NP,,,,,1,,,SAS,thw,,,
-thx,thx-Zyyy-LA,The,LA,,,,oyb,,,oyb,SEA,oyb,NMC,4-Dec-2017,
+thx,thx-Zyyy-LA,The,LA,,,,oyb,,,oyb,SEA,thx,NMC,4-Dec-2017,
 thy,thy-Zyyy-NG,Tha,NG,,,,,,,,WAF,thy,,,
 thz-Latn,thz-Latn-NE,"Tamajeq, Tayart",NE,,,01793 03477,,,,,WAF,thz,,,
 thz-Tfng,thz-Tfng-NE,"Tamajeq, Tayart",NE,,,01793 03477,,,,,WAF,thz,,,
