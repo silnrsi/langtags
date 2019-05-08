@@ -1,0 +1,60 @@
+#!/usr/bin/python
+
+import argparse, os
+import json
+
+def sldr_file(tagstr, root='.') :
+    fname = tagstr.replace('-', '_') + '.xml'
+    testf = os.path.join(root, fname)
+    if os.path.exists(testf) : return True
+    testf = os.path.join(root, fname[0], fname)
+    if os.path.exists(testf) : return True
+    return False
+
+parser = argparse.ArgumentParser()
+parser.add_argument("infile", help="Input langtags.json")
+parser.add_argument("outfile", help="Output langtags.txt")
+parser.add_argument("-s","--sldr", help="Path to sldr directory")
+parser.add_argument("-r","--regions",action="store_true",help="Include all regional variants")
+#parser.add_argument("-v","--variants",default="none",help="Variants to include: [none], some, all")
+args = parser.parse_args()
+
+with open(args.infile, "r") as inf:
+    dat = json.load(inf)
+
+ltags = {}
+for job in dat:
+    if job['tag'].startswith("_"):
+        continue
+    ltags[job['tag']] = job
+    ltags[job['full']] = job
+    if 'tags' in job:
+        for t in job['tags']:
+            ltags[t] = job
+
+with open(args.outfile, "w") as outf:
+    for job in dat:
+        if job['tag'].startswith("_"):
+            continue
+        res = []
+        res.append(job['tag'])
+        if 'tags' in job:
+            res.extend(job['tags'])
+        if args.regions and 'regions' in job and "-"+job['region'] not in job['tag']:
+            templates = []
+            for t in res + [job['full']]:
+                if t.endswith("-"+job['region']):
+                    templates.append(t[:-3]+"-{}")
+                    continue
+                i = t.find("-"+job['region']+"-")
+                if i > 0:
+                    templates.append(t[:i]+"-{}"+t[i+3:])
+            for r in job['regions']:
+                for t in templates:
+                    l = t.format(r)
+                    if l not in ltags:
+                        res.append(l)
+        res.append(job['full'])
+        if args.sldr:
+            res = ["*"+r if sldr_file(r, root=args.sldr) else r for r in res]
+        outf.write(" = ".join(res) + "\n")

@@ -12,8 +12,8 @@ build : ${RESULTS}/${NAME}.json ${RESULTS}/${NAME}.txt # ${RESULTS}/${NAME}_inhe
 ${RESULTS}/${NAME}.json : source/langtags.csv ${LTDB}
 	-${LTDB} -i $(SLDR) $< $@
 
-${RESULTS}/${NAME}.txt : source/langtags.csv ${LTDB}
-	-${LTDB} -i ${SLDR} -t $< $@
+${RESULTS}/${NAME}.txt : ${RESULTS}/${NAME}.json
+	-bin/jsonlangtagstotxt -s ${SLDR} $< $@
 
 #${RESULTS}/${NAME}_inherited.txt : source/langtags.csv ${LTDB}
 #	-${LTDB} -i ${SLDR} -t -p $< $@

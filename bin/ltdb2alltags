@@ -99,7 +99,6 @@ parser.add_argument('infile', help='Input CSV file from Google drive')
 parser.add_argument('outfile', help='alltags.txt output file')
 parser.add_argument('-i','--indir', default='.', help='Directory containing sldr tree')
 parser.add_argument('-p','--operators',action="store_true",default=False,help="Output complex operators")
-parser.add_argument('-t','--text',action="store_true",default=False,help="Output text format")
 parser.add_argument('-L','--langindex',help="Use local LanguageInfo.tab")
 args = parser.parse_args()
 
@@ -185,156 +184,128 @@ for k, v in allmacros.items():
     macro.base.append(base)
 
     
-if args.text:
-    with open(args.outfile, "w") as alltags :
-        res = lts.generate_alltags()
-        
-        outstrings = []
-        for line in res:
-            if line[0] == 'zh':
-                line[0:2] = [line[1], line[0]]
-            lineres = [[" = ", x] for x in line if x]
-            if not len(lineres):
-                continue
-            lineres[0][0] = ""
-            hasstar = False
-            for l in lineres:
-                tf = find_file(l[1], root=args.indir)
-                if tf is not None:
-                    if hasstar:
-                        if args.operators:
-                            l[0] = " |= " if issimple(tf)[0] else " <= "
-    #                    else:
-    #                        l[0] = " | "
-                    elif args.operators and hasattr(lts.get(l[1], l[1]), "parent"):
-                        x = lts[l[1]]
-                        l[1] = l[1] + (" >| " if x.parentsame else " > ") + "*" + str(x.parent)
-                    l[1] = "*" + l[1]
-                    hasstar = True
-            outstrings.append("".join(x[0] + x[1] for x in lineres))
-        alltags.write("\n".join(sorted(outstrings, key=lambda x:x.replace('*', ''))) + "\n")
+names = {}
+if args.langindex:
+    namef = open(args.langindex, "r")
 else:
-    names = {}
-    if args.langindex:
-        namef = open(args.langindex, "r")
-    else:
-        req = urllib2.Request(url="https://www.ethnologue.com/codes/LanguageIndex.tab",
-                              headers = {"User-Agent": "Mozilla"})
-        namef = urllib2.urlopen(req)
-    reader = csv.DictReader(namef, dialect=csv.excel_tab)
-    for r in reader:
-        if r['CountryID'] == 'ET' and r['NameType'] == 'LA':     # hack fix for buggy Ethnologue data. To Be Reviewed 21/Feb/2019, 2020
-            continue
-        if r['NameType'].startswith("L") and r['CountryID'] and not r['NameType'].endswith("P"):
-            names.setdefault(r['LangID']+"-"+r['CountryID'], [[],[]])[0 if r['NameType'] == 'L' else 1].append(r['Name'])
-    namef.close()
+    req = urllib2.Request(url="https://www.ethnologue.com/codes/LanguageIndex.tab",
+                          headers = {"User-Agent": "Mozilla"})
+    namef = urllib2.urlopen(req)
+reader = csv.DictReader(namef, dialect=csv.excel_tab)
+for r in reader:
+    if r['CountryID'] == 'ET' and r['NameType'] == 'LA':     # hack fix for buggy Ethnologue data. To Be Reviewed 21/Feb/2019, 2020
+        continue
+    if r['NameType'].startswith("L") and r['CountryID'] and not r['NameType'].endswith("P"):
+        names.setdefault(r['LangID']+"-"+r['CountryID'], [[],[]])[0 if r['NameType'] == 'L' else 1].append(r['Name'])
+namef.close()
 
-    collisions = {}
-    res = []
-    alllangreg = set()
-    allcomplexes = []
-    # special record for passing standard variants
-    res.append({'tag': '_globalvar', 'variants': ['simple']})
-    res.append({'tag': "_phonvar", 'variants': ['alalc97', 'fonipa', 'fonkirsh', 'fonnapa', 'fonupa', 'fonxsamp']})
-    res.append({'tag': "_version", 'api': '1.0.0', 'date': str(datetime.date.today())})
-    for t in sorted(set(lts.values())):
-        if t.skip:
-            continue
-        r = t.allforms()
-        complexrs = []
-        if not len(r[0]):
-            continue
-        n = {'tag': r[0], 'full': r[-1], 'region': t.region}
-        if t.region in regionnames:
-            n['regionname'] = regionnames[t.region]
-        if len(r) > 2:
-            n['tags'] = r[1:-1]
-        hassldr = False
-        for rf in r:
-            tf = find_file(rf, root=args.indir)
-            if tf is not None:
-                hassldr = True
-                getnames = [n['full']]
-                if len(r) > 2:
-                    getnames.extend(n['tags'])
-                getnames.extend([n['tag'], t.lang])
-                (s, name) = issimple(tf, getnames=getnames)
-                if not s:
-                    complexrs.append(rf)
-                    if name is not None and name != "":
-                        n['localname'] = name
-        if len(complexrs) > 1:
-            allcomplexes.append(complexrs)
-        # A hack to resolve ICU's used of zh and industry use of zh-CN
-        # Code positioned here to use zh when hunting localname
-        if r[0] == 'zh':
-            n['tag'] = 'zh-CN'
-            n['tags'] = [x if x != 'zh-CN' else 'zh' for x in n['tags']]
-        n['sldr'] = hassldr
-        if hasattr(t, 'iso639'):
-            n['iso639_3'] = t.iso639
-        elif t.base is not None and len(t.base):
-            for b in t.base:
-                if hasattr(n, 'iso639'):
-                    n['iso639_3'] = b.iso639
-                    break
-        elif t.lang in lts:
-            x = lts[t.lang]
-            if hasattr(x, 'iso639'):
-                n['iso639_3'] = x.iso639
-        n['names'] = []
-        regions = set()
-        addnames(n, t, alllangreg, names, regions)
+collisions = {}
+res = []
+alllangreg = set()
+allcomplexes = []
+# special record for passing standard variants
+res.append({'tag': '_globalvar', 'variants': ['simple']})
+res.append({'tag': "_phonvar", 'variants': ['alalc97', 'fonipa', 'fonkirsh', 'fonnapa', 'fonupa', 'fonxsamp']})
+res.append({'tag': "_version", 'api': '1.0.0', 'date': str(datetime.date.today())})
+for t in sorted(set(lts.values())):
+    if t.skip:
+        continue
+    r = t.allforms()
+    complexrs = []
+    if not len(r[0]):
+        continue
+    n = {'tag': r[0], 'full': r[-1], 'region': t.region}
+    if t.region in regionnames:
+        n['regionname'] = regionnames[t.region]
+    if len(r) > 2:
+        n['tags'] = r[1:-1]
+    hassldr = False
+    for rf in r:
+        tf = find_file(rf, root=args.indir)
+        if tf is not None:
+            hassldr = True
+            getnames = [n['full']]
+            if len(r) > 2:
+                getnames.extend(n['tags'])
+            getnames.extend([n['tag'], t.lang])
+            (s, name) = issimple(tf, getnames=getnames)
+            if not s:
+                complexrs.append(rf)
+                if name is not None and name != "":
+                    n['localname'] = name
+    if len(complexrs) > 1:
+        allcomplexes.append(complexrs)
+    # A hack to resolve ICU's used of zh and industry use of zh-CN
+    # Code positioned here to use zh when hunting localname
+    if r[0] == 'zh':
+        n['tag'] = 'zh-CN'
+        n['tags'] = [x if x != 'zh-CN' else 'zh' for x in n['tags']]
+    n['sldr'] = hassldr
+    if hasattr(t, 'iso639'):
+        n['iso639_3'] = t.iso639
+    elif t.base is not None and len(t.base):
         for b in t.base:
-            addnames(n, b, alllangreg, names, regions)
-        if t.lang in iananames:
-            ns = iananames[t.lang]
-            if 'name' not in n:
-                n['name'] = ns[0]
-                if len(ns) > 1 :
-                    n['names'] = ns[1:]
-            n['iana'] = ns if len(ns) > 1 else ns[0]
-        if 'name' in n:
-            n['names'] = sorted(x for x in set(n['names']) - set([n['name']]) if len(x))
-        elif hasattr(t, 'name'):
-            n['name'] = t.name
-        else:
-            print("Missing name entry for {} = {}".format(n['tag'], n['full']))
-        if not len(n['names']):
-            del n['names']
-        if not len(n.get('iso639_3', "fred")):
-            del n['iso639_3']
-        if t.region is not None:
-            regions.remove(t.region)
-        if len(regions):
-            n['regions'] = sorted(regions)
+            if hasattr(n, 'iso639'):
+                n['iso639_3'] = b.iso639
+                break
+    elif t.lang in lts:
+        x = lts[t.lang]
+        if hasattr(x, 'iso639'):
+            n['iso639_3'] = x.iso639
+    n['names'] = []
+    regions = set()
+    addnames(n, t, alllangreg, names, regions)
+    for b in t.base:
+        addnames(n, b, alllangreg, names, regions)
+    if t.lang in iananames:
+        ns = iananames[t.lang]
+        if 'name' not in n:
+            n['name'] = ns[0]
+            if len(ns) > 1 :
+                n['names'] = ns[1:]
+        n['iana'] = ns if len(ns) > 1 else ns[0]
+    if 'name' in n:
+        n['names'] = sorted(x for x in set(n['names']) - set([n['name']]) if len(x))
+    elif hasattr(t, 'name'):
+        n['name'] = t.name
+    else:
+        print("Missing name entry for {} = {}".format(n['tag'], n['full']))
+    if not len(n['names']):
+        del n['names']
+    if not len(n.get('iso639_3', "fred")):
+        del n['iso639_3']
+    if t.region is not None:
+        regions.remove(t.region)
+    testtag = re.sub('-[A-Z]{2}(?:-|$)', '-{}', n['full'])
+    regions = [r for r in regions if testtag.format(r) not in lts]
+    if len(regions):
+        n['regions'] = sorted(regions)
 #            n['regions'] = " ".join(sorted(regions))
-        if getattr(t, 'nofonipa', False):
-            n['nophonvars'] = True
-        if getattr(t, 'extra_variants', ""):
-            n['variants'] = t.extra_variants.split()
-        if getattr(t, 'rod', ""):
-            n['rod'] = t.rod
-        res.append(n)
-        if n['tag'] in collisions:
-            print("Multiple entries for: {} = {}, {}".format(n['tag'], n['full'], collisions[n['tag']]))
-        else:
-            collisions[n['tag']] = n['full']
-        for k, v in n.items():
-            if v is None:
-                print("Null entry for {} in {}".format(k, n['tag']))
-    def mergelines(m):
-        return "[" + " ".join(x.strip() for x in m.group(1).split("\n")) + "]"
-    output = json.dumps(sorted(res, key=lambda x:x['tag']), sort_keys=True, indent=4, ensure_ascii=False, encoding="utf8")
-    output = "[" + re.sub(r'\[([^\]]+)\]', mergelines, output[1:-1]) + "]\n"
-    with codecs.open(args.outfile, "w", encoding="utf-8") as fh:
-        # use encoding="utf8" (not "utf-8") as a hack around a bug in json: https://stackoverflow.com/a/40777484/10488020
-        fh.write(output)
-    missing = set(names.keys()) - alllangreg
-    if len(missing):
-        print("Missing language regions ({}): ".format(len(missing)) + " ".join(sorted(missing)))
-    if len(allcomplexes):
-        print("Complex relations between: " + ", ".join("[" + " ".join(x) + "]" for x in allcomplexes))
+    if getattr(t, 'nofonipa', False):
+        n['nophonvars'] = True
+    if getattr(t, 'extra_variants', ""):
+        n['variants'] = t.extra_variants.split()
+    if getattr(t, 'rod', ""):
+        n['rod'] = t.rod
+    res.append(n)
+    if n['tag'] in collisions:
+        print("Multiple entries for: {} = {}, {}".format(n['tag'], n['full'], collisions[n['tag']]))
+    else:
+        collisions[n['tag']] = n['full']
+    for k, v in n.items():
+        if v is None:
+            print("Null entry for {} in {}".format(k, n['tag']))
 
+def mergelines(m):
+    return "[" + " ".join(x.strip() for x in m.group(1).split("\n")) + "]"
 
-
+output = json.dumps(sorted(res, key=lambda x:x['tag']), sort_keys=True, indent=4, ensure_ascii=False, encoding="utf8")
+output = "[" + re.sub(r'\[([^\]]+)\]', mergelines, output[1:-1]) + "]\n"
+with codecs.open(args.outfile, "w", encoding="utf-8") as fh:
+    # use encoding="utf8" (not "utf-8") as a hack around a bug in json: https://stackoverflow.com/a/40777484/10488020
+    fh.write(output)
+missing = set(names.keys()) - alllangreg
+if len(missing):
+    print("Missing language regions ({}): ".format(len(missing)) + " ".join(sorted(missing)))
+if len(allcomplexes):
+    print("Complex relations between: " + ", ".join("[" + " ".join(x) + "]" for x in allcomplexes))
