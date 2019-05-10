@@ -25,24 +25,28 @@ Langtags.json consists of an array of objects. Each object corresponds to an equ
 - **sldr** True if there is a file in the SLDR for at least one of the tags in this set.
 - **nophonvars** If present and true indicates that this tag may not take a phonetic alphabet variant. This occurs if the tag has a hidden script which is not Latn.
 
+### Special tags
+
 There are three specially named (via the **tag** field) objects that occur at the start of the list. All special tags start with `_`:
 
 - **_globalvar** The **variants** field lists variants that may occur with any language tag.
 - **_phonvar** The **variants** field lists variants that may occur with any language tag for the **Latn** script, whether implicit or explicitly stated. Notice that for some languages there is no entry for a Latin script form of the language. For example `th-Latn` does not occur in the list of tags anywhere. But `th-fonipa` is a valid tag, whereas `th-Thai-fonipa` is not.
 - **_version** The **api** field contains a semantic version string "x.y.z" where x is a major version not backwardly structurally compatible, y is a minor version involving removing fields and z is minimal change that simply adds fields or extra header records (special tags of the form \_tag.)
 
-Some invariants:
+### File invariants
 
-- A language tag will never occur in more than one place in the fields **tag** **full** or **tags**, except if it occurs in both the **tag** and **full** fields of a record. It will never occur in more than one field.
+- A language tag will never occur in more than one place in the fields **tag** **full** or **tags**, except if it occurs in both the **tag** and **full** fields of a record.
 - All plural fields store their results as arrays.
-- Empty fields are not be stored in the record.
+- Empty fields are not stored in the record.
 - The **tag** and the **full** fields are not stable and may change between versions of the data file. But they will always appear somewhere in the equivalence set. In effect the equivalence set is stable in terms of once something is in it, it is not removed (unless there is an actual fault).
 
-A discussion of the **variants** field:
+### Variants field
 
 The variants field lists different variants that may occur with the tags in the equivalence set. As such, a tag with a variant is in a different equivalence set. Thus bg, bg-BG, bg-Cyrl, bg-Cyrl-BG forms one set and bg-ivanchov, bg-BG-ivanchov, bg-Cyrl-ivanchov, bg-Cyrl-BG-ivanchov forms another. The header record \_globalvar contains a variants field that should be appended to the variants field of every equivalence set. Thankfully this list is short and it may not make semantic sense to use it. Not all languages have a simplified form, but in theory they might. See [IANA simple variant](https://www.iana.org/assignments/lang-subtags-templates/simple.txt) for more details.
 
 The \_phonvar header record contains a variants field list that may be applied to any equivalence set, but it implies Latn script even if used with a non-Latin script language. For examle from our bg-Cyrl-BG example, we also have an equivalence set of bg-fonipa, bg-BG-fonipa, bg-Latn-fonipa, bg-Latn-BG-fonipa. Only one of the list of variants in the \_phonvar variants list may occur in a tag, at most.
+
+The **variants** field itself does not chain. Thus if there is more than one variant in the field then there is not a further variant that is a sequence of them both. For example be-Cyrl-BY has a **variants** field containing 1959acad and tarask. So there could be `be-1959acad` and `be-tarask` but not `be-1959acad-tarask`. If such a thing were allowed, then the variants list would include an entry 1959acad-tarask. For an example see ja-Latn with `hepburn` and `hepburm-heploc`.
 
 Thus a complete list of equivalence sets for bg-Cyrl-GB (with only one of the variants from \_phonvar used) would be:
 
@@ -54,4 +58,3 @@ Thus a complete list of equivalence sets for bg-Cyrl-GB (with only one of the va
 - bg-ivanchov-simple, bg-BG-ivanchov-simple, bg-Cyrl-ivanchov-simple, bg-Cyrl-BG-ivanchov-simple
 - bg-fonipa-simple, bg-BG-fonipa-simple, bg-Latn-fonipa-simple, bg-Latn-BG-fonipa-simple
 - bg-fonipa-ivanchov-simple, bg-BG-fonipa-ivanchov-simple, bg-Latn-fonipa-ivanchov-simple, bg-Latn-BG-fonipa-ivanchov-simple
-
