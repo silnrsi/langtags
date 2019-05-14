@@ -1,5 +1,4 @@
 Lang_Id,likely_subtag,LangName,regions,variants,ROD,RODs,Macro,unwritten,obsolete,deprecated,areas,ISO 639-3,confirmed,Date modified,comments
-sti-KH,sti-Latn-KH,Stieng in Cambodia,KH,,,,,,,,SEA,sti,NMC,,Not sure which iso 639-3 code was used for writing Stieng in Cambodia. Seems to be older work done 19 60's
 aa,aa-Latn-ET,Afar,ET ER DJ,,,,,,,,EAF,aar,CLDR,,
 aa-Ethi,aa-Ethi-ET,Afar,ET ER DJ,,,,,,,,EAF,aar,LE,10-Jan-2018,
 aaa,aaa-Latn-NG,Ghotuo,NG,,,,,,,,WAF,aaa,,,
@@ -3948,7 +3947,7 @@ kzj,kzj-Latn-MY,Coastal Kadazan,MY,,,,dtp,,,dtp,SEA,dtp,CLDR,,
 kzk,kzk-Zyyy-SB,Kazukuru,SB,,,,,1,,,MEL,kzk,LE,10-Jan-2018,Extinct
 kzl,kzl-Qaax-ID,Kayeli,ID,,,,,1,,,SEA,kzl,,,
 kzm-Zyyy,kzm-Zyyy-ID,Kais,ID,,,01728,,,,,SEA,kzm,,,
-kzn,kzn-Qaax-MW,Kokola,MW MZ,,,,,1,,,EAF,kzn,,,
+kzn,kzn-Latn-MW,Kokola,MW MZ,,,,,,,,EAF,kzn,,,
 kzo,kzo-Latn-GA,Kaningi,GA,,,,,1,,,MAF,kzo,LE,30-Jan-2018,
 kzp-Zyyy,kzp-Zyyy-ID,Kaidipang,ID,,,,,,,,SEA,kzp,,,
 kzq,kzq-Qaax-NP,Kaike,NP,,,,,1,,,SAS,kzq,,,
@@ -5030,7 +5029,7 @@ mzn,mzn-Arab-IR,Mazandarani,IR,,,,,,,,SAS,mzn,CLDR,,Aran
 mzo,mzo-Latn-BR,Matipuhy,BR,,,,,1,,,SAM,mzo,LE,10-Jan-2018,Extinct
 mzp,mzp-Latn-BO,Movima,BO,,,,,,,,SAM,mzp,LE,9-Jan-2018,
 mzq,mzq-Latn-ID,Mori Atas,ID,,,00707 14282,,,,,SEA,mzq,,20-Apr-2018,
-mzr,mzr-Latn-BR,Marúbo,BR,,,,,1,,,SAM,mzr,LE,9-Jan-2018,
+mzr,mzr-Latn-BR,Marúbo,BR,,,,,,,,SAM,mzr,LE,,
 mzs-Zyyy,mzs-Zyyy-MO,Macanese,HK MO,,,,,,,,EAS,mzs,,,
 mzt,mzt-Qaax-MY,Mintil,MY,,,,,1,,,SEA,mzt,,,
 mzu,mzu-Latn-PG,Inapang,PG,,,,,,,,MEL,mzu,LE,10-Jan-2018,
@@ -5611,6 +5610,7 @@ ojg,ojg-Latn-CA,"Ojibwa, Eastern",CA,,,,oj,,,,NAM,ojg,LE,9-Jan-2018,
 ojg-Cans,ojg-Cans-CA,"Ojibwa, Eastern",CA,,,,oj,,1,,NAM,ojg,,,
 ojp,ojp-Zyyy-JP,Old Japanese,JP,,,,,,,,???,ojp,,,Historical
 ojs,ojs-Cans-CA,"Ojibwa, Severn",CA,,,,,,,,NAM,ojs,LE,9-Jan-2018,
+ojs-Latn,ojs-Latn-CA,"Ojibwa, Severn",CA,,,,,,,,NAM,ojs,LE,,
 ojv,ojv-Latn-SB,Ontong Java,SB,,,,,,,,MEL,ojv,LE,10-Jan-2018,
 ojw,ojw-Latn-CA,"Ojibwa, Western",CA,,,,,,,,NAM,ojw,LE,9-Jan-2018,
 ojw-Cans,ojw-Cans-CA,"Ojibwa, Western",CA,,,,,,1,,NAM,ojw,,,
@@ -6872,6 +6872,7 @@ stf,stf-Latn-PG,Seta,PG,,,,,1,,,MEL,stf,LE,10-Jan-2018,
 stg,stg-Zyyy-VN,Trieng,VN,,,,,,,,SEA,stg,NMC,4-Dec-2017,
 sth,sth-Latn-IE,Shelta,GB IE US,,,,,1,,,NAM NEU,sth,St,,"LE: Why is there a ""1"" in unwritten?"
 sti,sti-Latn-VN,"Stieng, Bulo",KH VN,,,,,,,,SEA,sti,NMC,4-Dec-2017,
+sti-KH,sti-Latn-KH,Stieng in Cambodia,KH,,,,,,,,SEA,sti,NMC,,Not sure which iso 639-3 code was used for writing Stieng in Cambodia. Seems to be older work done 19 60's
 stj,stj-Zyyy-BF,"Samo, Matya",BF ML,,,,,,,,WAF,stj,,,
 stk,stk-Latn-PG,Arammba,PG,,,,,,,,MEL,stk,LE,10-Jan-2018,
 stl,stl-Latn-NL,Stellingwerfs,NL,,,,,,,,WEU,stl,LE,11-Dec-2018,
