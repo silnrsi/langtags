@@ -4077,6 +4077,7 @@ lew,lew-Latn-ID,"Kaili, Ledo",ID,,,11330 11332 11335 11336,,,,,SEA,lew,,20-Apr-2
 lex,lex-Latn-ID,Luang,ID,,,,,,,,SEA,lex,,20-Apr-2018,
 ley-Zyyy,ley-Zyyy-ID,Lemolang,ID,,,,,,,,SEA,ley,,,
 lez,lez-Cyrl-RU,Lezgi,AZ GE KG KZ RU TM TR UA UZ,,,12916,,,,,CAS EEU WAS,lez,CLDR,,
+lez-Aghb,lez-Aghb-AZ,Lezgi,AZ,,,,,,,,CAS EEU WAS,lez,CLDR Supplemental,,
 lfa,lfa-Qaax-CM,Lefa,CM,,,,,1,,,MAF,lfa,,,
 lfn-Latn,lfn-Latn-001,Lingua Franca Nova,001,,,,,,,,001,lfn,,,Constructed: used in emails
 lfn-Cyrl,lfn-Cyrl-001,Lingua Franca Nova,001,,,,,,,,001,lfn,CLDR Supplemental,,
