@@ -13,7 +13,7 @@ ${RESULTS}/${NAME}.json : source/langtags.csv ${LTDB}
 	-${LTDB} -i $(SLDR) $< $@
 
 ${RESULTS}/${NAME}.txt : ${RESULTS}/${NAME}.json
-	-bin/jsonlangtagstotxt -s ${SLDR} $< $@
+	-bin/jsonlangtagstotxt -r -s ${SLDR} $< $@
 
 #${RESULTS}/${NAME}_inherited.txt : source/langtags.csv ${LTDB}
 #	-${LTDB} -i ${SLDR} -t -p $< $@

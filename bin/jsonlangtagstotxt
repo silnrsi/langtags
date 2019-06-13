@@ -54,7 +54,8 @@ with open(args.outfile, "w") as outf:
                     l = t.format(r)
                     if l not in ltags:
                         res.append(l)
-        res.append(job['full'])
+        if len(res) > 1 or job['full'] != job['tag']:
+            res.append(job['full'])
         if args.sldr:
             res = ["*"+r if sldr_file(r, root=args.sldr) else r for r in res]
         outf.write(" = ".join(res) + "\n")
