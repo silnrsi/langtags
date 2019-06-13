@@ -2394,7 +2394,8 @@ gge,gge-Latn-AU,Guragone,AU,,,,,1,,,ANZ,gge,LE,10-Jan-2018,
 ggg-Arab,ggg-Arab-PK,Gurgula,PK,,,,,,,,SAS,ggg,,,
 ggk,ggk-Zyyy-AU,Kungarakany,AU,,,,,1,,,ANZ,ggk,LE,10-Jan-2018,Extinct
 ggl,ggl-Latn-PG,Ganglau,PG,,,,,1,,,MEL,ggl,LE,10-Jan-2018,
-ggn,ggn-Deva-NP,Eastern Gurung,NP,,,,gvr,,,gvr,???,ggn,CLDR,,LE: retired
+ggn,ggn-Deva-NP,Eastern Gurung,NP,,,,gvr,,,gvr,SAS,ggn,CLDR,,LE: retired
+ggn-Latn,ggn-Latn-IN,Eastern Gurung,IN,,,,gvr,,,gvr,SAS,ggn,CLDR Supplemental,,
 ggo,ggo-Telu-IN,"Gondi, Southern",IN,,,,wsg,,,wsg,SAS,wsg,,,
 ggr,ggr-Zyyy-AU,Aghu-Tharnggala,AU,,,,gtu,1,,gtu,ANZ,gtu,LE,10-Jan-2018,Extinct
 ggt,ggt-Latn-PG,Gitua,PG,,,,,1,,,MEL,ggt,LE,10-Jan-2018,
@@ -2609,6 +2610,7 @@ gvn,gvn-Latn-AU,Kuku-Yalanji,AU,,,,,,,,ANZ,gvn,LE,10-Jan-2018,
 gvo,gvo-Latn-BR,Gavião do Jiparaná,BR,,,10063,,,,,SAM,gvo,LE,9-Jan-2018,
 gvp,gvp-Latn-BR,"Gavião, Pará",BR,,,,,1,,,SAM,gvp,LE,9-Jan-2018,
 gvr,gvr-Deva-NP,Gurung,BT IN NP,,,02284 02521 04091 04159,,,,,SAS,gvr,CLDR,,
+gvr-Latn,gvr-Latn-IN,Gurung,IN,,,,,,,,SAS,gvr,,,based on ggn in CLDR Supplemental
 gvs,gvs-Latn-PG,Gumawana,PG,,,,,,,,MEL,gvs,LE,10-Jan-2018,
 gvy,gvy-Zyyy-AU,Guyani,AU,,,,,1,,,ANZ,gvy,LE,10-Jan-2018,Extinct
 gwa,gwa-Qaax-CI,Mbato,CI,,,,,1,,,WAF,gwa,,,
@@ -4475,7 +4477,7 @@ meu,meu-Latn-PG,Motu,PG,,,,,,,,MEL,meu,LE,10-Jan-2018,
 mev,mev-Latn-LR,Mano,GN LR,,,,,,,,WAF,mev,LE,12-Jan-2018,
 mew-Zyyy,mew-Zyyy-NG,Maaka,NG,,,,,,,,WAF,mew,,,
 mey-Arab,mey-Arab-MR,Hassaniyya,DZ EH LY MA ML MR NE SN,,,06424,,,,,NAF WAF,mey,,,
-mey-Latn,mey-Latn-MR,Hassaniyya,DZ EH LY MA ML MR NE SN,,,06424,,,,,NAF WAF,mey,,,
+mey,mey-Latn-MR,Hassaniyya,DZ EH LY MA ML MR NE SN,,,06424,,,,,NAF WAF,mey,CLDR Supplemental,,Going with CLDR altho LE disagrees on default
 mez,mez-Latn-US,Menominee,US,,,,,,,,NAM,mez,LE,9-Jan-2018,
 mfa,mfa-Arab-TH,"Malay, Pattani",TH,,,,,,,,SEA,mfa,CLDR,,
 mfa-Thai,mfa-Thai-TH,"Malay, Pattani",TH,,,,,,,,SEA,mfa,NMC,4-Dec-2017,
