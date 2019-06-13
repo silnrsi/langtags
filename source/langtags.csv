@@ -2187,8 +2187,6 @@ fer,fer-Qaax-SS,Feroge,SS,,,,,1,,,EAF,fer,,,
 ff,ff-Latn-SN,Fulah,BJ CM GN ML NE NG SN TD,,,,,,,,MAF WAF,ful,CLDR,,
 ff-Adlm,ff-Adlm-GN,Fulah,BJ CM GN ML NE NG SN TD,,,,,,,,MAF WAF,ful,CLDR,,
 ff-Arab,ff-Arab-SN,Fulah,BJ CM GN ML NE NG SN TD,,,,,,,,MAF WAF,ful,LE,12-Jan-2018,
-ff-Arab,ff-Arab-SN,Pulaar,GM GN GW ML MR SN,,,,,,,,WAF,ful,,23-Mar-2018,via macro mapping (from fuc)
-ff-Latn,ff-Latn-SN,Pulaar,GM GN GW ML MR SN,,,,,,,,WAF,ful,,23-Mar-2018,via macro mapping (from fuc)
 ffi,ffi-Latn-PG,Foia Foia,PG,,,,,,,,MEL,ffi,LE,10-Jan-2018,
 ffm,ffm-Latn-ML,"Fulfulde, Maasina",CI GH ML,,,09928 09929,,,,,WAF,ffm,CLDR,,
 ffm-Arab,ffm-Arab-ML,"Fulfulde, Maasina",CI GH ML,,,09928 09929,,,,,WAF,ffm,,,
@@ -2231,7 +2229,7 @@ fpe,fpe-Latn-GQ,Equatorial Guinean Pidgin,GQ,,,,,,,,MAF,fpe,LE,12-Jan-2018,
 fqs,fqs-Latn-PG,Fas,PG,,,01231,,,,,MEL,fqs,LE,10-Jan-2018,
 fr,fr-Latn-FR,French,AD AM AT AU BE BF BG BI BJ BL CA CD CF CG CH CI CM CV DE DJ DK DM DO DZ EE EG ES FI FR GA GF GG GN GP GQ GR GW HR HT HU IE IL IN IT JE KH KM LA LB LC LT LU LV LY MA MC MD ME MF MG MK ML MQ MR MT MU NC NE NL NO NZ PF PL PM PR PT QA RE RO RS RW SC SE SI SK SN ST SY TD TG TN US VI VU WF YT,1694acad,,,,,,,ANZ CAR EAF EEU MAF MEL NAF NAM NEU POL SAM SAS SEA SEU WAF WAS WEU,fra,CLDR,,
 fr-Brai,fr-Brai-FR,French,AD AM AT AU BE BF BG BI BJ BL CA CD CF CG CH CI CM CV CY DE DJ DK DM DO DZ EE EG ES FI FR GA GF GG GN GP GQ GR GW HR HT HU IE IL IN IT JE KH KM LA LB LC LT LU LV LY MA MC MD ME MF MG MK ML MQ MR MT MU NC NE NL NO NZ PF PL PM PR PT QA RE RO RS RW SC SE SI SK SN ST TD TG TN US VI VU WF YT,,,,,,,,ANZ CAR EAF EEU MAF MEL NAF NAM NEU POL SAM SAS SEA SEU WAF WAS WEU,fra,,,
-fr-Dupl,fr-Dupl-FR,French,AD AM AT AU BE BF BG BI BJ BL CA CD CF CG CH CI CM CV CY DE DJ DK DM DO DZ EE EG ES FI FR GA GF GG GN GP GQ GR GW HR HT HU IE IL IN IT JE KH KM LA LB LC LT LU LV LY MA MC MD ME MF MG MK ML MQ MR MT MU NC NE NL NO NZ PF PL PM PR PT QA RE RO RS RW SC SE SI SK SN ST TD TG TN US VI VU WF YT,,,,,,,,ANZ CAR EAF EEU MAF MEL NAF NAM NEU POL SAM SAS SEA SEU WAF WAS WEU,fra,CLDR Supplemental,,
+fr-Dupl,fr-Dupl-FR,French,AD AM AT AU BE BF BG BI BJ BL CA CD CF CG CH CI CM CV CY DE DJ DK DM DO DZ EE EG ES FI FR GA GB GF GG GN GP GQ GR GW HR HT HU IE IL IN IT JE KH KM LA LB LC LT LU LV LY MA MC MD ME MF MG MK ML MQ MR MT MU NC NE NL NO NZ PF PL PM PR PT QA RE RO RS RW SC SE SI SK SN ST TD TF TG TN US VI VU WF YT,,,,,,,,ANZ CAR EAF EEU MAF MEL NAF NAM NEU POL SAM SAS SEA SEU WAF WAS WEU,fra,CLDR Supplemental,,
 frc,frc-Latn-US,"French, Cajun",US,,,,,,,,NAM,frc,CLDR,,
 frd,frd-Latn-ID,Fordata,ID,,,09858 09861,,,,,SEA,frd,,20-Apr-2018,
 frk,frk-Latn-DE,Frankish,DE,,,,,,,,WEU,frk,,,Extinct
@@ -2248,7 +2246,7 @@ fss,fss-Zxxx-FI,Finland-Swedish Sign Language,AX FI,,,,,,,,NEU,fss,,,
 fub,fub-Arab-CM,"Fulfulde, Adamawa",CM NG SD SS TD US,,,04059 09912 09917 09919,,,,,EAF MAF NAF NAM WAF,fub,CLDR,,
 fub-Latn,fub-Latn-CM,"Fulfulde, Adamawa",CM NG SD SS TD US,,,04059 09912 09917 09919,,,,,EAF MAF NAF NAM WAF,fub,,,
 fuc-Arab,fuc-Arab-SN,Pulaar,GM GN GW ML MR SN,,,00327 01877,ff,,,,WAF,fuc,,23-Mar-2018,
-fuc-Latn,fuc-Latn-SN,Pulaar,GM GN GW ML MR SN,,,00327 01877,ff,,,,WAF,fuc,,23-Mar-2018,
+fuc,fuc-Latn-SN,Pulaar,GM GN GW ML MR SN,,,00327 01877,ff,,,,WAF,fuc,,23-Mar-2018,
 fud,fud-Latn-WF,"Futuna, East",NC WF,,,,,,,,MEL POL,fud,CLDR,,
 fue-Latn,fue-Latn-BJ,"Fulfulde, Borgu",BJ NG TG,,,,,,,,WAF,fue,,,
 fuf,fuf-Latn-GN,Pular,GM GN GW ML SL SN,,,09951,,,,,WAF,fuf,CLDR,,
@@ -2708,7 +2706,7 @@ hhy,hhy-Latn-PG,Hoyahoya,PG,,,,,,,,MEL,hhy,LE,10-Jan-2018,
 hi,hi-Deva-IN,Hindi,AE AU BD BT BZ CA DE DJ FI GB GQ GY IN KE LK MU NP NZ PH PR RU SG SX TH US YE ZA ZM,,,,,,,,ANZ CAM CAR EAF EEU MAF NAM NEU SAF SAM SAS SEA WAS WEU,hin,CLDR,,
 hi-Brai,hi-Brai-IN,Hindi,AE AU BD BT BZ CA DE DJ FI GB GQ GY IN KE LK MU NP NZ PH PR RU SG SX TH US YE ZA ZM,,,,,,,,ANZ CAM CAR EAF EEU MAF NAM NEU SAF SAM SAS SEA WAS WEU,hin,,,
 hi-Newa,hi-Newa-IN,Hindi,AE AU BD BT BZ CA DE DJ FI GB GQ GY IN KE LK MU NP NZ PH PR RU SG SX TH US YE ZA ZM,,,,,,,,ANZ CAM CAR EAF EEU MAF NAM NEU SAF SAM SAS SEA WAS WEU,hin,,,
-hi-Mahj,hi-Mahj-IN,Hindi,AE AU BD BT BZ CA DE DJ FI GB GQ GY IN KE LK MU NP NZ PH PR RU SG SX TH US YE ZA ZM,,,,,,,,ANZ CAM CAR EAF EEU MAF NAM NEU SAF SAM SAS SEA WAS WEU,hin,CLDR Supplemental,,
+hi-Mahj,hi-Mahj-IN,Hindi,AE AU BD BT BZ CA DE DJ FI FJ GB GQ GY IN KE LK MU NP NZ PH PR RU SG SX TH US YE ZA ZM,,,,,,,,ANZ CAM CAR EAF EEU MAF NAM NEU SAF SAM SAS SEA WAS WEU,hin,CLDR Supplemental,,
 hia,hia-Latn-NG,Lamang,NG,,,01767,,,,,WAF,hia,,,
 hib,hib-Zyyy-PE,Hibito,PE,,,,,1,,,SAM,hib,LE,10-Jan-2018,Extinct
 hid,hid-Latn-US,Hidatsa,US,,,,,1,,,NAM,hid,LE,9-Jan-2018,
@@ -4077,7 +4075,7 @@ lew,lew-Latn-ID,"Kaili, Ledo",ID,,,11330 11332 11335 11336,,,,,SEA,lew,,20-Apr-2
 lex,lex-Latn-ID,Luang,ID,,,,,,,,SEA,lex,,20-Apr-2018,
 ley-Zyyy,ley-Zyyy-ID,Lemolang,ID,,,,,,,,SEA,ley,,,
 lez,lez-Cyrl-RU,Lezgi,AZ GE KG KZ RU TM TR UA UZ,,,12916,,,,,CAS EEU WAS,lez,CLDR,,
-lez-Aghb,lez-Aghb-AZ,Lezgi,AZ,,,,,,,,CAS EEU WAS,lez,CLDR Supplemental,,
+lez-Aghb,lez-Aghb-AZ,Lezgi,AZ RU,,,,,,,,CAS EEU WAS,lez,CLDR Supplemental,,
 lfa,lfa-Qaax-CM,Lefa,CM,,,,,1,,,MAF,lfa,,,
 lfn-Latn,lfn-Latn-001,Lingua Franca Nova,001,,,,,,,,001,lfn,,,Constructed: used in emails
 lfn-Cyrl,lfn-Cyrl-001,Lingua Franca Nova,001,,,,,,,,001,lfn,CLDR Supplemental,,
@@ -6810,8 +6808,8 @@ spv-Orya,spv-Orya-IN,Sambalpuri,IN,,,,,,,,SAS,spv,,,
 spx,spx-Zyyy-XX,South Picene,XX,,,,,,,,???,spx,,,
 spy,spy-Latn-KE,Sabaot,KE,,,,kln,,,,EAF,spy,LE CLDR,12-Jan-2018,via macro mapping
 sq,sq-Latn-AL,Albanian,AL GR IT MK MN RS XK,,,,,,,,SEU,sqi,CLDR,,also Kosovo
-sq-Brai,sq-Brai-AL,Albanian,AL ,,,,,,,,SEU,sqi,St,,
-sq-Elba,sq-Elba-AL,Albanian,AL,,,,,,,,SEU,sqi,CLDR Supplemental,,comes from als-Elsa-AL
+sq-Brai,sq-Brai-AL,Albanian,AL,,,,,,,,SEU,sqi,St,,
+sq-Elba,sq-Elba-AL,Albanian,AL MK RS,,,,,,,,SEU,sqi,CLDR Supplemental,,comes from als-Elsa-AL
 sq-Grek,sq-Grek-GR,Albanian,GR,,,,,,,,SEU,sqi,,,comes from als-Grk-GR
 sqa,sqa-Qaax-NG,Shama-Sambuga,NG,,,,,1,,,WAF,sqa,,,
 sqh,sqh-Zyyy-NG,Shau,NG,,,,,,,,WAF,sqh,,,

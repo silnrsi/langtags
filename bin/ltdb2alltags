@@ -35,23 +35,26 @@ def process_cldrentry(s, lts, allentries, root='.'):
     l = lt.LangTag(s)
     if l.variants is not None and 'posix' in l.variants:
         return
+    l.parentsame = False
     if l.region is not None:
         t = lt.LangTag(tag=None, lang=l.lang, script=l.script, variants=l.variants, extensions=l.extensions)
         n = None
-        if t in lts:
-            n = lts[t]
+        if str(t) in lts:
+            n = lts[str(t)]
         elif str(t) in allentries:
             if str(l.region) in allentries[str(t)][1]:
                 n = allentries[str(t)][0]
         if n is not None:
             if l.script is None:
                 l.script = n.script
+            if n.hidescript and l.lang+"-"+l.region not in lts:
                 l.hidescript = True
         testf = find_file(str(t), root=root)
         if testf is not None:
             l.parent = t
             l.parentsame = issimple(find_file(s, root))[0]
-    lts.add(l)
+    if not l.parentsame:
+        lts.add(l)
     return l
 
 def addnames(n, b, alllangrefs, names, regions):
