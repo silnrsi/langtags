@@ -2411,7 +2411,7 @@ ghn,ghn-Latn-SB,Ghanongga,SB,,,,,1,,,MEL,ghn,LE,10-Jan-2018,
 gho-Zyyy,gho-Zyyy-MA,Ghomara,MA,,,,,,,,NAF,gho,,,Extinct
 ghr,ghr-Qaax-PK,Ghera,PK,,,,,1,,,SAS,ghr,,,
 ghs,ghs-Latn-PG,Guhu-Samane,PG,,,02494 20965,,,,,MEL,ghs,LE,10-Jan-2018,
-ght,ght-Qaax-NP,Kuke,NP,,,,,1,,,SAS,ght,,,
+ght,ght-Tibt-NP,Kuke,NP,,,,,1,,,SAS,ght,,,
 gia,gia-Latn-AU,Kitja,AU,,,,,,1,,ANZ,gia,LE,10-Jan-2018,
 gib-Zyyy,gib-Zyyy-NG,Gibanawa,NG,,,,,,,,WAF,gib,,,
 gic,gic-Latn-ZA,Gail,ZA,,,,,1,,,SAF,gic,LE,9-Jan-2018,
@@ -8157,7 +8157,7 @@ xcm,xcm-Zyyy-XX,Comecrudo,XX,,,,,,,,???,xcm,,,Extinct
 xcn,xcn-Zyyy-XX,Cotoname,XX,,,,,,,,???,xcn,,,Extinct
 xco,xco-Zyyy-XX,Chorasmian,XX,,,,,,,,???,xco,,,Ancient
 xcr,xcr-Cari-TR,Carian,TR,,,,,,,,???,xcr,CLDR,,Ancient
-xct,xct-Zyyy-XX,Classical Tibetan,XX,,,,,,,,???,xct,,,Historical
+xct,xct-Tibt-XX,Classical Tibetan,XX,,,,,,,,???,xct,,,Historical
 xcu,xcu-Zyyy-XX,Curonian,XX,,,,,,,,???,xcu,,,Extinct
 xcv,xcv-Zyyy-XX,Chuvantsy,XX,,,,,,,,???,xcv,,,Extinct
 xcw,xcw-Zyyy-XX,Coahuilteco,XX,,,,,,,,???,xcw,,,Extinct
