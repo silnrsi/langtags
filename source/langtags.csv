@@ -2110,7 +2110,7 @@ enw,enw-Latn-NG,Enwan,NG,,,,,1,,,WAF,enw,,,
 enx,enx-Latn-PY,Enxet,PY,,,01897,,,,,SAM,enx,LE,9-Jan-2018,
 eo,eo-Latn-001,Esperanto,001 PL,hsistemo xsistemo,,,,,,,EEU,epo,CLDR,,Constructed
 eot,eot-Latn-CI,Beti,CI,,,,,1,,,WAF,eot,,,
-epi,epi-Latn-NG,Epie,NG,,,,,1,,,WAF,epi,,,
+epi,epi-Latn-NG,Epie,NG,,,,,,,,WAF,epi,,,
 era,era-Zyyy-IN,Eravallan,IN,,,,,1,,,SAS,era,,,
 erg,erg-Latn-VU,Sie,VU,,,,,,,,MEL,erg,LE,10-Jan-2018,
 erh,erh-Latn-NG,Eruwa,NG,,,,,1,,,WAF,erh,,,
