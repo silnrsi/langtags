@@ -40,7 +40,7 @@ with open(args.outfile, "w") as outf:
         res.append(job['tag'])
         if 'tags' in job:
             res.extend(job['tags'])
-        if args.regions and 'regions' in job and "-"+job['region'] not in job['tag']:
+        if False and args.regions and 'regions' in job and "-"+job['region'] not in job['tag']:
             templates = []
             for t in res + [job['full']]:
                 if t.endswith("-"+job['region']):

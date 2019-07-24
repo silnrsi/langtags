@@ -1,4 +1,4 @@
-SLDR = "../sldr/sldr"
+SLDR = "../sldr/flat"
 RESULTS = results
 LTDB = bin/ltdb2alltags
 NAME = langtags

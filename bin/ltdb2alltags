@@ -145,14 +145,17 @@ with open(args.infile) as csvfile :
             t.deprecated = deprecated[t.lang]
         t.regions = row['regions'].split()
         t.name = row['LangName']
-        lts.add(t)
+        t = lts.add(t)
         if repr(t) in lts:
             lts[repr(t)].iso639 = i6
         allentries[lid] = (t, row['regions'].split(' '))
         if macro != "":
             s = str(t)
             m = lt.LangTag(macro)
-            m.merge_equivalent(t)
+            if macro in t.allforms():
+                t.primary = macro
+            else:
+                m.merge_equivalent(t)
             allmacros[s] = repr(m)
         t.nofonipa = not t.hidescript and t.script != 'Latn'
         t.extra_variants = variants
@@ -179,7 +182,8 @@ for k, v in allmacros.items():
             macro.hidescript = True
         if base.region is None:
             macro.hideregion = True
-    base.skip = True
+    if base != macro:
+        base.skip = True
     if not hasattr(macro, 'regions'):
         macro.regions = []
     if hasattr(base, 'regions'):
@@ -206,22 +210,41 @@ collisions = {}
 res = []
 alllangreg = set()
 allcomplexes = []
+allscripts = {}
+allregions = {}
+
+for t in set(lts.values()):
+    x = lt.LangTag(lang=t.lang, region=t.region, variants=t.variants, extensions=t.extensions)
+    allregions.setdefault(str(x), set()).add(t)
+    x = lt.LangTag(lang=t.lang, script=t.script, variants=t.variants, extensions=t.extensions)
+    allscripts.setdefault(str(x), set()).add(t)
+
 # special record for passing standard variants
 res.append({'tag': '_globalvar', 'variants': ['simple']})
 res.append({'tag': "_phonvar", 'variants': ['alalc97', 'fonipa', 'fonkirsh', 'fonnapa', 'fonupa', 'fonxsamp']})
-res.append({'tag': "_version", 'api': '1.0.0', 'date': str(datetime.date.today())})
+res.append({'tag': "_version", 'api': '1.0.1', 'date': str(datetime.date.today())})
 for t in sorted(set(lts.values())):
     if t.skip:
         continue
-    r = t.allforms()
     complexrs = []
+    r = t.allforms()
     if not len(r[0]):
         continue
-    n = {'tag': r[0], 'full': r[-1], 'region': t.region}
+    if hasattr(t, 'primary'):
+        r = [t.primary] + [x for x in r if x != t.primary]
+    if t.hideregion and not t.hidescript:
+        x = lt.LangTag(lang=t.lang, region=t.region, variants=t.variants, extensions=t.extensions)
+        if len(allregions.get(str(x), [])) < 2:
+            r.insert(1, str(x))
+    elif t.hidescript and not t.hideregion:
+        x = lt.LangTag(lang=t.lang, script=t.script, variants=t.variants, extensions=t.extensions)
+        if len(allscripts.get(str(x), [])) < 2:
+            r.insert(1, str(x))
+    n = {'tag': r[0], 'full': r[-1], 'script': t.script, 'region': t.region}
     if t.region in regionnames:
         n['regionname'] = regionnames[t.region]
     if len(r) > 2:
-        n['tags'] = r[1:-1]
+        n['tags'] = sorted(set(r[1:-1]))
     hassldr = False
     for rf in r:
         tf = find_file(rf, root=args.indir)

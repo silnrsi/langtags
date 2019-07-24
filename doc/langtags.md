@@ -6,7 +6,7 @@ Langtags.txt contains a sequence of equivalence sets. Each set consists of a lis
 
 ## langtags.json
 
-Current API version 1.0.0.
+Current API version 1.0.1. Unless otherwise stated all fields were add at v1.0.0.
 
 Langtags.json consists of an array of objects. Each object corresponds to an equivalence set. The fields in that object are defined as:
 
@@ -24,6 +24,7 @@ Langtags.json consists of an array of objects. Each object corresponds to an equ
 - **localname** If present, this gives the name of the language in the orthography specified by this set.
 - **sldr** True if there is a file in the SLDR for at least one of the tags in this set.
 - **nophonvars** If present and true indicates that this tag may not take a phonetic alphabet variant. This occurs if the tag has a hidden script which is not Latn.
+- **script** Specifies the script component of the full tag, for this set. \[Added 1.0.1\]
 
 ### Special tags
 
