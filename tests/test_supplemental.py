@@ -2,7 +2,7 @@
 
 import unittest, os, re, json
 from xml.etree import ElementTree as et
-from palaso.langtags import LangTags, LangTag
+from palaso.sldr.langtags_full import LangTags, LangTag
 from itertools import product
 
 langtagjson = os.path.join(os.path.dirname(__file__), '..', 'results', 'langtags.json')

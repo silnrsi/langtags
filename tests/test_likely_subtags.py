@@ -2,7 +2,7 @@
 
 import unittest, os, re
 from xml.etree import ElementTree as et
-from palaso.langtags import LangTags, LangTag
+from palaso.sldr.langtags_full import LangTags, LangTag
 
 def isnotint(s):
     try:
