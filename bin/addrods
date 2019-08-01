@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 import argparse, csv
-from palaso.langtags import LangTag
+from palaso.sldr.langtags_full import LangTag
 
 parser = argparse.ArgumentParser()
 parser.add_argument("infile", help="Input langtags csv")

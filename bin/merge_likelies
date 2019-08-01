@@ -1,7 +1,7 @@
 #!/usr/bin/python2
 
 from xml.etree import ElementTree as et
-from palaso.langtags import LangTags, LangTag
+from palaso.sldr.langtags_full import LangTags, LangTag
 from palaso import unicsv as csv
 import argparse, codecs
 

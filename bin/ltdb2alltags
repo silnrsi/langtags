@@ -3,7 +3,7 @@
 import os, sys, csv, json, re, datetime
 from argparse import ArgumentParser
 import xml.etree.cElementTree as et
-import palaso.langtags as lt
+import palaso.sldr.langtags_full as lt
 import csv, urllib2, codecs
 
 def find_file(tagstr, root='.') :
