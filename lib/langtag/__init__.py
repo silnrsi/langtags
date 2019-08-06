@@ -279,7 +279,18 @@ class TagSet:
     def matched(self, l):
         '''Returns whether this tagset is matched by l, given l may be less
             specified than this tagset.'''
-        return self.full.matched(l)
+        if self.full.matched(l):
+            return True
+        for s in getattr(self, 'tags', []):
+            t = langtag(s)
+            if t.matched(l):
+                return True
+        return False
+
+    def match639(self, l):
+        if l.lang == getattr(self, 'iso639_3', ""):
+            t = l._replace(lang=self.tag.lang)
+            return self.matched(t)
 
     def allTags(self):
         '''Returns a list of all the LangTags in this set. Not necessarily every

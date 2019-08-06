@@ -1,0 +1,41 @@
+#!/usr/bin/python3
+
+import argparse
+from langtag import LangTags, langtag
+
+try:
+    unicode
+except NameError:
+    unicode = str
+
+parser = argparse.ArgumentParser()
+parser.add_argument('names',nargs='*',help='name to look up')
+parser.add_argument('-t','--tag',help='Specifies tag to use')
+parser.add_argument('-v','--verbose',action='store_true',help='Specifies tag to use')
+parser.add_argument('--langtags',help='langtags.json to use')
+args = parser.parse_args()
+
+lts = LangTags(fname=args.langtags)
+if args.tag is not None:
+    args.tag = langtag(args.tag)
+alltags = set()
+name = " ".join(args.names)
+for t in lts.values():
+    if args.tag is not None:
+        if t.matched(args.tag) or t.match639(args.tag):
+            alltags.add(t)
+        continue
+    if name in getattr(t, 'name', "").lower() or \
+            any(name in x.lower() for x in getattr(t, 'names', [])):
+        alltags.add(t)
+if not len(alltags) and args.tag is not None:
+    try:
+        alltags.add(lts[str(args.tag)])
+    except KeyError:
+        pass
+if args.verbose:
+    formatstr = u"{tag!s} = {full!s} {tags!s}, {name!s}, {names!s}"
+else:
+    formatstr = u"{tag!s} = {full!s}\t {name!s}"
+    
+print(u"\n".join(formatstr.format(**(t.asdict(format=unicode, tags="", names=""))) for t in sorted(alltags)))

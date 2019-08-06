@@ -14,6 +14,7 @@ setuptools.setup(
     url = "https://github.com/silnrsi/langtags",
     packages = ["langtag"],
     package_dir = {'': 'lib'},
+    scripts = ['bin/langtag'],
     license = 'MIT',
     classifiers = [
         "Programming Language :: Python :: 2.7",
