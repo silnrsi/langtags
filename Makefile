@@ -1,5 +1,5 @@
 SLDR = "../sldr/flat"
-RESULTS = results
+RESULTS = pub
 LTDB = bin/ltdb2alltags
 NAME = langtags
 
@@ -19,4 +19,4 @@ ${RESULTS}/${NAME}.txt : ${RESULTS}/${NAME}.json
 #	-${LTDB} -i ${SLDR} -t -p $< $@
 
 test : build
-	pytest
+	python -m unittest discover -s tests

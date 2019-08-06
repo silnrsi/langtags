@@ -73,7 +73,7 @@ def addnames(n, b, alllangrefs, names, regions):
 
 def get_regionnames():
     res = {}
-    fname = os.path.join(os.path.dirname(lt.__file__), "sldr", "language-subtag-registry.txt")
+    fname = os.path.join(os.path.dirname(lt.__file__), "language-subtag-registry.txt")
     with open(fname) as f :
         currlang = None
         mode = None

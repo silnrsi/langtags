@@ -1,11 +1,12 @@
 #!/usr/bin/python
+# -*- encoding: utf-8
 
 import unittest, os, re, json
 from xml.etree import ElementTree as et
 from palaso.sldr.langtags_full import LangTags, LangTag
 from itertools import product
 
-langtagjson = os.path.join(os.path.dirname(__file__), '..', 'results', 'langtags.json')
+langtagjson = os.path.join(os.path.dirname(__file__), '..', 'pub', 'langtags.json')
 
 exceptions = set(["aii-Cyrl"])
 
@@ -49,4 +50,15 @@ class Supplemental(unittest.TestCase):
                         failures.append(t)
         if len(failures):
             self.fail("Missing tags from supplemental Data" + str(failures))
+
+    def test_names(self):
+        for r in self.data:
+            if r['tag'].startswith("_"):
+                continue
+            if 'names' in r:
+                if any(x == u'↑↑↑' for x in r['names']):
+                    self.fail("Inherited names item in " + str(r['tag']))
+            if 'name' in r:
+                if r['name'] == u'↑↑↑':
+                    self.fail("Inherited name in " + str(['tag']))
 

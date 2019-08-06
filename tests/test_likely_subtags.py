@@ -11,7 +11,7 @@ def isnotint(s):
     except ValueError:
         return True
 
-langtagtxt = os.path.join(os.path.dirname(__file__), '..', 'results', 'langtags.txt')
+langtagtxt = os.path.join(os.path.dirname(__file__), '..', 'pub', 'langtags.txt')
 
 class LikelySubtags(unittest.TestCase):
     ''' Tests alltags.txt for discrepencies against likelySubtags.xml '''
