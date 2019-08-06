@@ -1,4 +1,4 @@
-# Alltags
+# LangTags
 
 ## langtags.txt
 
