@@ -4,9 +4,11 @@
 
 Langtags.txt contains a sequence of equivalence sets. Each set consists of a list of language tags separated by `=`. The first tag on the line is the canonical tag and the last tag on the line is the maximal tag. In addition, a tag is prefixed with `*` if there is an entry in the SLDR for that particular tag.
 
+The preferred download location for this file is <https://ldml.api.sil.org/langtags.txt>
+
 ## langtags.json
 
-Current API version 1.0.1. Unless otherwise stated all fields were add at v1.0.0.
+Current API version 1.0.1. Unless otherwise stated all fields were add at v1.0.0. The preferred download location for this file is <https://ldml.api.sil.org/langtags.json>
 
 Langtags.json consists of an array of objects. Each object corresponds to an equivalence set. The fields in that object are defined as:
 
