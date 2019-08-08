@@ -145,6 +145,8 @@ def langtag(s):
 class LangTags(with_metaclass(_Singleton)):
     '''Collection of TagSets'''
 
+    matchRegions = False
+
     def __init__(self, fname=None, useurl=None, cachedprefix=""):
         '''fname is an optional langtags.json file'''
         self._tags = {}
@@ -195,7 +197,7 @@ class LangTags(with_metaclass(_Singleton)):
 
     def __getitem__(self, s):
         '''Looks up a langtag string returning a TagSet or raising KeyError. As in
-            aLangTags[s].'''
+            aLangTags[s]. Handle .variants and if self.matchResults, .regions.'''
         if s in self._tags:
             return self._tags[s]
         l = langtag(s)
@@ -213,14 +215,13 @@ class LangTags(with_metaclass(_Singleton)):
                     res = self._getwithvars(l, pvar + gvar)
                     if res is not None:
                         return res
-        if l.region is not None:
+        if self.matchRegions and l.region is not None:
             lr = l._replace(region = None)
             res = self[str(lr)]
             if res is not None:
                 if l.region in res.regions:
                     return res
         raise KeyError(s)
-
 
 class TagSet:
     '''Represents tag set from the json file with same attributes as fields
@@ -288,6 +289,7 @@ class TagSet:
         return False
 
     def match639(self, l):
+        '''Test this langtag against the iso639_3 field for language'''
         if l.lang == getattr(self, 'iso639_3', ""):
             t = l._replace(lang=self.tag.lang)
             return self.matched(t)
@@ -313,5 +315,10 @@ class TagSet:
 
 if __name__ == "__main__":
     lts = LangTags()
-    print(lts['en-Latn-fonipa-simple'])
-    print(lts['aal-NG'])
+    for t in ('en-Latn-fonipa-simple', 'aal-NG'):
+        lts.matchRegions = False
+        try:
+            print("Simply, {} = {}".format(t, lts[t]))
+        except KeyError:
+            lts.matchRegions = True
+            print("With regions, {} = {}".format(t, lts[t]))

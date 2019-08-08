@@ -16,7 +16,7 @@ Langtags.json consists of an array of objects. Each object corresponds to an equ
 - **full** The full tag for this set
 - **tags** A list of other tags that are equivalent
 - **variants** A list of variant tag components that may occur with tags in this set. A tag with a variant is not equivalent to other tags in this set. But a tag in this set with a variant is considered equivalent to another tag in this set with the same variant.
-- **iso639_3** The ISO639-3 code for the language of the tags in this set.
+- **iso639_3** The ISO639-3 code for the language of the **tag** in this set.
 - **region** Region code, from the full tag, for this set.
 - **regions** Other regions that may be used with these tags. A tag from this set with one of the extra regions is not equivalent to other tags in this set, unless they have the same region component.
 - **regionname** The English name for this region taken from the IANA registry.
