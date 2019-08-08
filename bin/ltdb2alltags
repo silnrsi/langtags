@@ -14,19 +14,24 @@ def find_file(tagstr, root='.') :
     if os.path.exists(testf) : return testf
     return None
 
-def issimple(testf, getnames=None):
+def getlocalename(testf, getnames):
     try:
         doc = et.parse(testf)
     except:
-        return (False, "")
+        return None
     if len(doc.getroot()) > 1 :
-        if getnames is not None:
-            for getname in getnames:
-                e = doc.find('./localeDisplayNames/languages/language[@type="{}"]'.format(getname.replace("-","_")))
-                if e is not None:
-                    return (False, unicode(e.text))
-        return (False, "")
-    return (True, "")
+        for getname in getnames:
+            e = doc.find('./localeDisplayNames/languages/language[@type="{}"]'.format(getname.replace("-","_")))
+            if e is not None:
+                return unicode(e.text)
+    return None
+
+def issimple(testf):
+    try:
+        doc = et.parse(testf)
+    except:
+        return False
+    return len(doc.getroot()) < 2
 
 def process_cldrentry(s, lts, allentries, root='.'):
     s = s.replace("_", "-")
@@ -52,7 +57,7 @@ def process_cldrentry(s, lts, allentries, root='.'):
         testf = find_file(str(t), root=root)
         if testf is not None:
             l.parent = t
-            l.parentsame = issimple(find_file(s, root))[0]
+            l.parentsame = issimple(find_file(s, root))
     if not l.parentsame:
         lts.add(l)
     return l
@@ -100,7 +105,8 @@ def get_regionnames():
 parser = ArgumentParser()
 parser.add_argument('infile', help='Input CSV file from Google drive')
 parser.add_argument('outfile', help='alltags.txt output file')
-parser.add_argument('-i','--indir', default='.', help='Directory containing sldr tree')
+parser.add_argument('-f','--flatdir', default='.', help='Directory containing full sldr tree, for language names')
+parser.add_argument('-i','--indir', default='.', help='Directory containing sldr tree with inheritance')
 parser.add_argument('-p','--operators',action="store_true",default=False,help="Output complex operators")
 parser.add_argument('-L','--langindex',help="Use local LanguageInfo.tab")
 args = parser.parse_args()
@@ -144,7 +150,7 @@ with open(args.infile) as csvfile :
         if t.lang in deprecated:
             t.deprecated = deprecated[t.lang]
         t.regions = row['regions'].split()
-        t.name = row['LangName']
+        t.name = [row['LangName']]
         t = lts.add(t)
         if repr(t) in lts:
             lts[repr(t)].iso639 = i6
@@ -192,6 +198,7 @@ for k, v in allmacros.items():
 
     
 names = {}
+prejoratives = {}
 if args.langindex:
     namef = open(args.langindex, "r")
 else:
@@ -201,15 +208,16 @@ else:
 reader = csv.DictReader(namef, dialect=csv.excel_tab)
 for r in reader:
     if r['CountryID'] == 'ET' and r['NameType'] == 'LA':     # hack fix for buggy Ethnologue data. To Be Reviewed 21/Feb/2019, 2020
-        continue
-    if r['NameType'].startswith("L") and r['CountryID'] and not r['NameType'].endswith("P"):
+        prejoratives.setdefault(r['LangID']+"-"+r['CountryID'], []).append(r['Name'].lower())
+    elif r['NameType'].startswith("L") and r['CountryID'] and not r['NameType'].endswith("P"):
         names.setdefault(r['LangID']+"-"+r['CountryID'], [[],[]])[0 if r['NameType'] == 'L' else 1].append(r['Name'])
+    elif r['NameType'] == 'LP' and r['CountryID']:
+        prejoratives.setdefault(r['LangID']+"-"+r['CountryID'], []).append(r['Name'].lower())
 namef.close()
 
 collisions = {}
 res = []
 alllangreg = set()
-allcomplexes = []
 allscripts = {}
 allregions = {}
 
@@ -226,7 +234,6 @@ res.append({'tag': "_version", 'api': '1.0.1', 'date': str(datetime.date.today()
 for t in sorted(set(lts.values())):
     if t.skip:
         continue
-    complexrs = []
     r = t.allforms()
     if not len(r[0]):
         continue
@@ -247,20 +254,16 @@ for t in sorted(set(lts.values())):
         n['tags'] = sorted(set(r[1:-1]))
     hassldr = False
     for rf in r:
-        tf = find_file(rf, root=args.indir)
+        tf = find_file(rf, root=args.flatdir)
         if tf is not None:
             hassldr = True
             getnames = [n['full']]
             if len(r) > 2:
                 getnames.extend(n['tags'])
             getnames.extend([n['tag'], t.lang])
-            (s, name) = issimple(tf, getnames=getnames)
-            if not s:
-                complexrs.append(rf)
-                if name is not None and name != "":
-                    n['localname'] = name
-    if len(complexrs) > 1:
-        allcomplexes.append(complexrs)
+            name = getlocalename(tf, getnames)
+            if name is not None and name != "":
+                n['localname'] = name
     # A hack to resolve ICU's used of zh and industry use of zh-CN
     # Code positioned here to use zh when hunting localname
     if r[0] == 'zh':
@@ -284,16 +287,19 @@ for t in sorted(set(lts.values())):
     for b in t.base:
         addnames(n, b, alllangreg, names, regions)
     if t.lang in iananames:
-        ns = iananames[t.lang]
-        if 'name' not in n:
-            n['name'] = ns[0]
-            if len(ns) > 1 :
-                n['names'] = ns[1:]
-        n['iana'] = ns if len(ns) > 1 else ns[0]
+        extlang = "-".join([t.lang] + t._extensions())
+        ns = iananames.get(extlang, getattr(t, 'name', iananames[t.lang]))[:]
+        if len(ns):
+            n['iana'] = ns if len(ns) > 1 else ns[0]
+            if 'name' not in n:
+                n['name'] = ns.pop(0)
+            if len(ns) > 0 :
+                n['names'].extend(ns)
     if 'name' in n:
         n['names'] = sorted(x for x in set(n['names']) - set([n['name']]) if len(x))
+        n['names'] = [x for x in n['names'] if x.lower() not in prejoratives.get(n.get('iso639_3', t.lang)+"-"+t.region, [])]
     elif hasattr(t, 'name'):
-        n['name'] = t.name
+        n['name'] = t.name[0]
     else:
         print("Missing name entry for {} = {}".format(n['tag'], n['full']))
     if not len(n['names']):
@@ -333,5 +339,3 @@ with codecs.open(args.outfile, "w", encoding="utf-8") as fh:
 missing = set(names.keys()) - alllangreg
 if len(missing):
     print("Missing language regions ({}): ".format(len(missing)) + " ".join(sorted(missing)))
-if len(allcomplexes):
-    print("Complex relations between: " + ", ".join("[" + " ".join(x) + "]" for x in allcomplexes))

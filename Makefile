@@ -1,4 +1,5 @@
-SLDR = "../sldr/flat"
+SLDR = "../sldr/sldr"
+FLATDIR = "../sldr/flat"
 RESULTS = pub
 LTDB = bin/ltdb2alltags
 NAME = langtags
@@ -10,7 +11,7 @@ all : test
 build : ${RESULTS}/${NAME}.json ${RESULTS}/${NAME}.txt # ${RESULTS}/${NAME}_inherited.txt
 
 ${RESULTS}/${NAME}.json : source/langtags.csv ${LTDB}
-	-${LTDB} -i $(SLDR) $< $@
+	-${LTDB} -i $(SLDR) -f $(FLATDIR) $< $@
 
 ${RESULTS}/${NAME}.txt : ${RESULTS}/${NAME}.json
 	-bin/jsonlangtagstotxt -r -s ${SLDR} $< $@
