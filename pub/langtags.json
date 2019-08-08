@@ -106601,6 +106601,19 @@
         "tags": [ "wtw-ID", "wtw-Latn" ]
     }, 
     {
+        "full": "wtw-Bugi-ID", 
+        "iana": "Wotu", 
+        "iso639_3": "wtw", 
+        "name": "Wotu", 
+        "names": [ "Wadu" ], 
+        "nophonvars": true, 
+        "region": "ID", 
+        "regionname": "Indonesia", 
+        "script": "Bugi", 
+        "sldr": false, 
+        "tag": "wtw-Bugi"
+    }, 
+    {
         "full": "wua-Latn-AU", 
         "iana": "Wikngenchera", 
         "iso639_3": "wua", 

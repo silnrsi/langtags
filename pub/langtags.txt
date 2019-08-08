@@ -8127,6 +8127,7 @@ wti-Latn = wti-ET = wti-Latn-ET
 wtk = wtk-Latn = wtk-PG = wtk-Latn-PG
 wtm = wtm-Deva = wtm-IN = wtm-Deva-IN
 wtw = wtw-ID = wtw-Latn = wtw-Latn-ID
+wtw-Bugi = wtw-Bugi-ID
 wua = wua-AU = wua-Latn = wua-Latn-AU
 wub = wub-AU = wub-Latn = wub-Latn-AU
 wud = wud-Latn = wud-TG = wud-Latn-TG
