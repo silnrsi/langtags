@@ -247,6 +247,9 @@ class TagSet:
     def __hash__(self):
         return hash(self.tag) + hash(self.full)
 
+    def __cmp__(self, other):
+        return cmp(str(self), str(other))
+
     def asdict(self, format=None, **kw):
         '''Returns all data properties as a dict. Set format to process each element.
             Other kw values are used to initialise the dictionary with default values

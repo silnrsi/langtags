@@ -203,7 +203,7 @@ ail,ail-Latn-PG,Aimele,PG,,,,,1,,,MEL,ail,LE,10-Jan-2018,
 aim,aim-Latn-IN,Aimol,IN,,,,,,,,SAS,aim,,,
 ain-Kana,ain-Kana-JP,Ainu,JP,,,,,,,,EAS,ain,,,
 ain-Latn,ain-Latn-JP,Ainu,JP,,,,,,,,EAS,ain,,,
-aio-Mymr,aio-Mymr-IN,Aiton,IN,,,,,,,,SAS,aio,,,
+aio,aio-Mymr-IN,Aiton,IN,,,,,,,,SAS,aio,,,
 aip,aip-Latn-ID,Burumakok,ID,,,,,1,,,SEA,aip,,,NMC 40 speakers nearly extinct
 aiq,aiq-Arab-AF,Aimaq,AF IR TJ,,,,,1,,,CAS SAS,aiq,,,
 air,air-Latn-ID,Airoran,ID,,,,,1,,,SEA,air,,,
@@ -5893,7 +5893,7 @@ pha,pha-Zyyy-CN,Pa-Hng,CN VN,,,,,1,,,EAS SEA,pha,,,
 phd,phd-Zyyy-IN,Phudagi,IN,,,,,,,,SAS,phd,,,
 phg,phg-Latn-VN,Phuong,VN,,,,,1,,,SEA,phg,NMC,4-Dec-2017,
 phh,phh-Latn-VN,Phula,CN VN,,,,,1,,,EAS SEA,phh,NMC,10-Jan-2018,
-phk-Mymr,phk-Mymr-IN,Phake,IN,,,,,,,,SAS,phk,,,
+phk,phk-Mymr-IN,Phake,IN,,,,,,,,SAS,phk,,,
 phl,phl-Arab-PK,Palula,PK,,,15624,,,,,SAS,phl,,,
 phm,phm-Latn-MZ,Phimbi,MZ,,,,,,,,EAF,phm,,,
 phn,phn-Phnx-LB,Phoenician,LB,,,,,,,,???,phn,CLDR,,Ancient
@@ -8792,8 +8792,8 @@ zkn,zkn-Zyyy-MM,Kanan,MM,,,,,1,,,SEA,zkn,NMC,20-Nov-2017,
 zko,zko-Cyrl-RU,Kott,RU,,,,,1,,,EEU,zko,,,Extinct
 zkp,zkp-Latn-BR,"Kaingáng, São Paulo",BR,,,,,1,,,SAM,zkp,LE,10-Jan-2018,Extinct
 zkr,zkr-Zyyy-CN,Zakhring,CN IN,,,,,,,,EAS SAS,zkr,,,
-zkt-Kitl-CN,zkt-Kitl-CN,Kitan,CN MN,,,,,,,,???,zkt,,,
-zkt-Kits-CN,zkt-Kits-CN,Kitan,CN MN,,,,,,,,???,zkt,,,Extinct
+zkt-Kitl,zkt-Kitl-CN,Kitan,CN MN,,,,,,,,???,zkt,,,
+zkt-Kits,zkt-Kits-CN,Kitan,CN MN,,,,,,,,???,zkt,,,Extinct
 zku,zku-Latn-AU,Kaurna,AU,,,,,1,,,ANZ,zku,LE,10-Jan-2018,Extinct
 zkv,zkv-Zyyy-LV,Krevinian,LV,,,,,,,,NEU,zkv,,,Extinct
 zkz,zkz-Cyrl-RU,Khazar,RU,,,,,1,,,EEU,zkz,,,Extinct

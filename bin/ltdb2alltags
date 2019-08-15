@@ -264,6 +264,18 @@ for t in sorted(set(lts.values())):
             name = getlocalename(tf, getnames)
             if name is not None and name != "":
                 n['localname'] = name
+
+    n['primary'] = True
+    if "-" in n['tag']:
+        stripx = n['tag'].find("-x-")
+        s = n['tag'][:stripx] if stripx >=0 else n['tag']
+        finald = s.rfind("-")
+        if finald >= 0:
+            test = s[:finald]
+            testl = lts.get(test, None)
+            if testl is not None and testl != t:
+                n['primary'] = False
+
     # A hack to resolve ICU's used of zh and industry use of zh-CN
     # Code positioned here to use zh when hunting localname
     if r[0] == 'zh':

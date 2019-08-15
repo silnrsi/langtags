@@ -8438,7 +8438,7 @@ xup = xup-US = xup-Zyyy = xup-Zyyy-US
 xur = xur-TR = xur-Zyyy = xur-Zyyy-TR
 xut = xut-AU = xut-Latn = xut-Latn-AU
 xuu = xuu-Latn = xuu-NA = xuu-Latn-NA
-xve-Ital-IT
+xve-Ital = xve-IT = xve-Ital-IT
 xvi = xvi-AF = xvi-Arab = xvi-Arab-AF
 xvn = xvn-ES = xvn-Latn = xvn-Latn-ES
 xvo = xvo-IT = xvo-Latn = xvo-Latn-IT
@@ -8816,8 +8816,8 @@ zkn = zkn-MM = zkn-Zyyy = zkn-Zyyy-MM
 zko = zko-Cyrl = zko-RU = zko-Cyrl-RU
 zkp = zkp-BR = zkp-Latn = zkp-Latn-BR
 zkr = zkr-CN = zkr-Zyyy = zkr-Zyyy-CN
-zkt-Kitl-CN
-zkt-Kits-CN
+zkt-Kitl = zkt-Kitl-CN
+zkt-Kits = zkt-Kits-CN
 zku = zku-AU = zku-Latn = zku-Latn-AU
 zkv = zkv-LV = zkv-Zyyy = zkv-Zyyy-LV
 zkz = zkz-Cyrl = zkz-RU = zkz-Cyrl-RU
