@@ -265,8 +265,8 @@ for t in sorted(set(lts.values())):
             if name is not None and name != "":
                 n['localname'] = name
 
-    n['primary'] = True
-    if "-" in n['tag']:
+    # n['primary'] = True
+    if False and "-" in n['tag']:
         stripx = n['tag'].find("-x-")
         s = n['tag'][:stripx] if stripx >=0 else n['tag']
         finald = s.rfind("-")
