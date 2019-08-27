@@ -2012,6 +2012,7 @@ dux,dux-Latn-ML,Duungooma,ML,,,,,,,,WAF,dux,LE,14-Sep-2018,
 duy,duy-Latn-PH,"Agta, Dicamay",PH,,,,,1,,,SEA,duy,LE,10-Jan-2018,Extinct
 duz,duz-Latn-CM,Duli-Gey,CM,,,,,1,,,MAF,duz,LE,10-Jan-2018,Extinct
 dv,dv-Thaa-MV,Maldivian,IN MV,,,,,,,,SAS,div,CLDR,,
+dv-Diak,dv-Diak-MV,Maldivian,IN MV,,,,,,1,,SAS,div,,,
 dva,dva-Latn-PG,Duau,PG,,,02180 02185 20941,,,,,MEL,dva,LE,10-Jan-2018,
 dwa,dwa-Latn-NG,Diri,NG,,,,,1,,,WAF,dwa,,,
 dwl,dwl-Latn-ML,"Dogon, Ben Tey",ML,,,,dbt,1,,dwl,WAF,dbt,,,
@@ -3613,9 +3614,10 @@ kmo,kmo-Latn-PG,Kwoma,PG,,,12632,,,,,MEL,kmo,LE,10-Jan-2018,
 kmp,kmp-Latn-CM,Gimme,CM,,,,,,,,MAF,kmp,LE,12-Jan-2018,
 kmq,kmq-Latn-ET,Kwama,ET,,,00313,,,,,EAF,kmq,LE,20-Mar-2018,
 kmr-Arab,kmr-Arab-TR,"Kurdish, Northern",AM AZ BE BH CA CH DE DK FI GE GE GR IQ IR IT KG KW KZ LB NL NO RU SE SY TM TR US,,,,ku,,,,CAS EEU NAM NEU SAS SEU WAS WEU,kmr,CLDR,23-Mar-2018,via macro mapping
-kmr-Armn,kmr-Armn-AZ,"Kurdish, Northern",AM AZ GE IQ IR LB SY TM TR,,,,ku,,,,,kmr,,,
+kmr-Armn,kmr-Armn-AZ,"Kurdish, Northern",AM AZ GE IQ IR LB SY TM TR,,,,ku,,,,CAS EEU NAM NEU SAS SEU WAS WEU,kmr,,,
 kmr-Cyrl,kmr-Cyrl-AZ,"Kurdish, Northern",AM AZ AZ  GE IQ IR LB RU SY TM TR,,,,ku,,,,CAS EEU NAM NEU SAS SEU WAS WEU,kmr,St CLDR,23-Mar-2018,via macro mapping
 kmr-Latn,kmr-Latn-TR,"Kurdish, Northern",AM AZ BE BH CA CH DE DK FI GE GE GR IQ IR IT KG KW KZ LB NL NO RU SE SY TM TR US,,,,ku,,,,CAS EEU NAM NEU SAS SEU WAS WEU,kmr,CLDR,23-Mar-2018,via macro mapping
+kmr-Yezi,kmr-Yezi-GE,"Kurdish, Northern",AM AZ BE BH CA CH DE DK FI GE GE GR IQ IR IT KG KW KZ LB NL NO RU SE SY TM TR US,,,,ku,,,,CAS EEU NAM NEU SAS SEU WAS WEU,kmr,,,
 kms,kms-Latn-PG,Kamasau,PG,,,,,,,,MEL,kms,LE,10-Jan-2018,
 kmt,kmt-Latn-ID,Kemtuik,ID,,,,,,,,SEA,kmt,,20-Apr-2018,
 kmu,kmu-Latn-PG,Kanite,PG,,,,,,,,MEL,kmu,LE,10-Jan-2018,
@@ -8206,7 +8208,8 @@ xch,xch-Zyyy-XX,Chemakum,XX,,,,,,,,???,xch,,,Extinct
 xcl,xcl-Zyyy-XX,Classical Armenian,XX,,,,,,,,???,xcl,,,Historical
 xcm,xcm-Zyyy-XX,Comecrudo,XX,,,,,,,,???,xcm,,,Extinct
 xcn,xcn-Zyyy-XX,Cotoname,XX,,,,,,,,???,xcn,,,Extinct
-xco,xco-Zyyy-XX,Chorasmian,XX,,,,,,,,???,xco,,,Ancient
+xco-Chrs,xco-Chrs-XX,Chorasmian,XX,,,,,,,,???,xco,,,Ancient
+xco,xco-Arab-XX,Chorasmian,XX,,,,,,,,???,xco,,,
 xcr,xcr-Cari-TR,Carian,TR,,,,,,,,WAS,xcr,CLDR,,Ancient
 xct,xct-Tibt-XX,Classical Tibetan,XX,,,,,,,,???,xct,,,Historical
 xcu,xcu-Zyyy-XX,Curonian,XX,,,,,,,,???,xcu,,,Extinct
