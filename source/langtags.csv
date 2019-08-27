@@ -2839,8 +2839,8 @@ hr,hr-Latn-HR,Croatian,AT AU BA CA CL CZ DE DK HR HU ME RO RS SI SK US,,,,,,,,AN
 hr-Brai,hr-Brai-HR,Croatian,AT AU BA CA CL CZ DE DK HR HU ME RO RS SI SK US,,,,,,,,ANZ EEU NAM NEU SAM SEU WEU,hrv,,,
 hra,hra-Latn-IN,Hrangkhol,IN,,,00887 10697,,,,,SAS,hra,,,
 hrc,hrc-Latn-PG,Niwer Mil,PG,,,,,,,,MEL,hrc,LE,10-Jan-2018,
-hre,hre-Latn-VN,Hre,VN,,,,,,,hre-x-1968,SEA,hre,PN SVW,,
-hre-x-1968,hre-Latn-VN-x-1968,Hre,VN,,,03328,,,,,SEA,hre,PN SVW,,"Two different orthographies (possibly more) in use. NT is printed in this orthography, including revisions made in 1968, but some Hre leaders reject changes and use 1960 system. Default should be 1968 since this has tacit government support."
+hre,hre-Latn-VN,Hre,VN,,,,,,,,SEA,hre,PN SVW,,
+hre-x-1968,hre-Latn-VN-x-1968,Hre,VN,,,03328,,,,hre,SEA,hre,PN SVW,,"Two different orthographies (possibly more) in use. NT is printed in this orthography, including revisions made in 1968, but some Hre leaders reject changes and use 1960 system. Default should be 1968 since this has tacit government support."
 hre-x-1960,hre-Latn-VN-x-1960,Hre,VN,,,03328,,,,,SEA,hre,SVW,,
 hrk,hrk-Latn-ID,Haruku,ID,,,,,1,,,SEA,hrk,,,
 hrm,hrm-Zyyy-CN,"Miao, Horned",CN,,,06245,,1,,,EAS,hrm,,,

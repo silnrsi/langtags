@@ -2929,8 +2929,8 @@ hps = hps-US = hps-Zxxx = hps-Zxxx-US
 hr-Brai = hr-Brai-HR
 hra = hra-IN = hra-Latn = hra-Latn-IN
 hrc = hrc-Latn = hrc-PG = hrc-Latn-PG
+hre = hre-Latn = hre-Latn-VN-x-1968 = hre-Latn-x-1968 = hre-VN = hre-VN-x-1968 = hre-x-1968 = hre-Latn-VN
 hre-x-1960 = hre-Latn-x-1960 = hre-VN-x-1960 = hre-Latn-VN-x-1960
-hre-x-1968 = hre = hre-Latn = hre-Latn-VN = hre-Latn-x-1968 = hre-VN = hre-VN-x-1968 = hre-Latn-VN-x-1968
 hrk = hrk-ID = hrk-Latn = hrk-Latn-ID
 hrm = hrm-CN = hrm-Zyyy = hrm-Zyyy-CN
 hro = hro-Latn = hro-VN = hro-Latn-VN

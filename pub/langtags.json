@@ -9,7 +9,7 @@
     }, 
     {
         "api": "1.0.1", 
-        "date": "2019-08-16", 
+        "date": "2019-08-27", 
         "tag": "_version"
     }, 
     {
@@ -38316,6 +38316,19 @@
         "tags": [ "hrc-Latn", "hrc-PG" ]
     }, 
     {
+        "full": "hre-Latn-VN", 
+        "iana": "Hre", 
+        "iso639_3": "hre", 
+        "name": "Hre", 
+        "names": [ "Cham-Re", "Chom", "Davach", "Davak", "Dá Vách", "Hrey", "Hrê", "Moi", "Moi Da Vach", "Moi Luy", "Tachom" ], 
+        "region": "VN", 
+        "regionname": "Viet Nam", 
+        "script": "Latn", 
+        "sldr": false, 
+        "tag": "hre", 
+        "tags": [ "hre-Latn", "hre-Latn-VN-x-1968", "hre-Latn-x-1968", "hre-VN", "hre-VN-x-1968", "hre-x-1968" ]
+    }, 
+    {
         "full": "hre-Latn-VN-x-1960", 
         "iana": "Hre", 
         "iso639_3": "hre", 
@@ -38327,19 +38340,6 @@
         "sldr": false, 
         "tag": "hre-x-1960", 
         "tags": [ "hre-Latn-x-1960", "hre-VN-x-1960" ]
-    }, 
-    {
-        "full": "hre-Latn-VN-x-1968", 
-        "iana": "Hre", 
-        "iso639_3": "hre", 
-        "name": "Hre", 
-        "names": [ "Cham-Re", "Chom", "Davach", "Davak", "Dá Vách", "Hrey", "Hrê", "Moi", "Moi Da Vach", "Moi Luy", "Tachom" ], 
-        "region": "VN", 
-        "regionname": "Viet Nam", 
-        "script": "Latn", 
-        "sldr": false, 
-        "tag": "hre-x-1968", 
-        "tags": [ "hre", "hre-Latn", "hre-Latn-VN", "hre-Latn-x-1968", "hre-VN", "hre-VN-x-1968" ]
     }, 
     {
         "full": "hrk-Latn-ID", 
