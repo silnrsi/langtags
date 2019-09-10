@@ -1,10 +1,49 @@
-#!/usr/bin/python2
+#!/usr/bin/python3
 
 import os, sys, csv, json, re, datetime
 from argparse import ArgumentParser
-import xml.etree.cElementTree as et
+import xml.etree.ElementTree as et
 import palaso.sldr.langtags_full as lt
-import csv, urllib2, codecs
+import csv, codecs
+import urllib.request as urllib2
+from palaso.unicode.ucd import UCD
+from collections import namedtuple
+
+try: unicode
+except NameError:
+    unicode = str
+
+Autonym = namedtuple('Autonym', ['langtag', 'name', 'roman'])
+ucds = UCD()
+
+def read_autonyms(filename):
+    res = {}
+    with open(filename) as inf:
+        rdr = csv.reader(inf)
+        next(rdr)
+        for row in rdr:
+            lang = row[0]
+            name = row[2]
+            if len(row) > 4:
+                roman = row[4]
+            # handle missing comma after T
+            elif len(row) > 3 and row[3].startswith("T"):
+                roman = row[3][1:]
+            else:
+                roman = ""
+            script = script_analyze(name)
+            lt = "{}-{}".format(lang, script)
+            a = Autonym(lt, name, roman)
+            res.setdefault(lt, []).append(a)
+    return res
+
+def script_analyze(s):
+    res = {}
+    for c in s:
+        sc = ucds.get(ord(c), 'scx')
+        if not sc.startswith('Z'):
+            res[sc] = res.setdefault(sc, 0) + 1
+    return sorted(res.keys(), key=lambda x:-res[x])[0]
 
 def find_file(tagstr, root='.') :
     fname = tagstr.replace('-', '_') + '.xml'
@@ -109,6 +148,7 @@ parser.add_argument('-f','--flatdir', default='.', help='Directory containing fu
 parser.add_argument('-i','--indir', default='.', help='Directory containing sldr tree with inheritance')
 parser.add_argument('-p','--operators',action="store_true",default=False,help="Output complex operators")
 parser.add_argument('-L','--langindex',help="Use local LanguageInfo.tab")
+parser.add_argument('-a','--autonyms',help="CSV of Autonyms from Ethnologue")
 args = parser.parse_args()
 
 lts = lt.LangTags(noalltags=True)
@@ -227,10 +267,15 @@ for t in set(lts.values()):
     x = lt.LangTag(lang=t.lang, script=t.script, variants=t.variants, extensions=t.extensions)
     allscripts.setdefault(str(x), set()).add(t)
 
+if args.autonyms:
+    autonyms = read_autonyms(args.autonyms)
+else:
+    autonyms = {}
+
 # special record for passing standard variants
 res.append({'tag': '_globalvar', 'variants': ['simple']})
 res.append({'tag': "_phonvar", 'variants': ['alalc97', 'fonipa', 'fonkirsh', 'fonnapa', 'fonupa', 'fonxsamp']})
-res.append({'tag': "_version", 'api': '1.0.1', 'date': str(datetime.date.today())})
+res.append({'tag': "_version", 'api': '1.1.0', 'date': str(datetime.date.today())})
 for t in sorted(set(lts.values())):
     if t.skip:
         continue
@@ -253,6 +298,12 @@ for t in sorted(set(lts.values())):
     if len(r) > 2:
         n['tags'] = sorted(set(r[1:-1]))
     hassldr = False
+    auto = autonyms.get("{}-{}".format(t.lang, t.script), None)
+    if auto is not None:
+        n['localnames'] = [a.name for a in auto]
+        n['latnnames'] = [a.roman for a in auto]
+        if not any(n['latnnames']):
+            del n['latnnames']
     for rf in r:
         tf = find_file(rf, root=args.flatdir)
         if tf is not None:
@@ -343,7 +394,7 @@ for t in sorted(set(lts.values())):
 def mergelines(m):
     return "[" + " ".join(x.strip() for x in m.group(1).split("\n")) + "]"
 
-output = json.dumps(sorted(res, key=lambda x:x['tag']), sort_keys=True, indent=4, ensure_ascii=False, encoding="utf8")
+output = json.dumps(sorted(res, key=lambda x:x['tag']), sort_keys=True, indent=4, ensure_ascii=False)
 output = "[" + re.sub(r'\[([^\]]+)\]', mergelines, output[1:-1]) + "]\n"
 with codecs.open(args.outfile, "w", encoding="utf-8") as fh:
     # use encoding="utf8" (not "utf-8") as a hack around a bug in json: https://stackoverflow.com/a/40777484/10488020

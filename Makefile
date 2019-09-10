@@ -10,8 +10,8 @@ all : test
 
 build : ${RESULTS}/${NAME}.json ${RESULTS}/${NAME}.txt # ${RESULTS}/${NAME}_inherited.txt
 
-${RESULTS}/${NAME}.json : source/langtags.csv ${LTDB}
-	-${LTDB} -i $(SLDR) -f $(FLATDIR) $< $@
+${RESULTS}/${NAME}.json : source/langtags.csv source/autonyms.csv source/langindex.tab ${LTDB}
+	-${LTDB} -i $(SLDR) -f $(FLATDIR) -L source/langindex.tab -a source/autonyms.csv $< $@
 
 ${RESULTS}/${NAME}.txt : ${RESULTS}/${NAME}.json
 	-bin/jsonlangtagstotxt -r -s ${SLDR} $< $@

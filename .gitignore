@@ -1,0 +1,8 @@
+*.pyc
+temp.*
+temp/
+*~
+.cache/
+*.egg-info/
+build/
+*.sw?
