@@ -4112,7 +4112,7 @@ lex,lex-Latn-ID,Luang,ID,,,,,,,,SEA,lex,,20-Apr-2018,
 ley,ley-Latn-ID,Lemolang,ID,,,,,1,,,SEA,ley,,,
 lez,lez-Cyrl-RU,Lezgi,AZ GE KG KZ RU TM TR UA UZ,,,12916,,,,,CAS EEU WAS,lez,CLDR,,
 lez-Aghb,lez-Aghb-AZ,Lezgi,AZ RU,,,,,,,,CAS EEU WAS,lez,CLDR Supplemental,,
-lfa,lfa-Latn-CM,Lefa,CM,,,,,1,,,MAF,lfa,,,
+lfa,lfa-Latn-CM,Lefa,CM,,,,,,,,MAF,lfa,,,
 lfn,lfn-Latn-001,Lingua Franca Nova,001,,,,,,,,001,lfn,,,Constructed: used in emails
 lfn-Cyrl,lfn-Cyrl-001,Lingua Franca Nova,001,,,,,,,,001,lfn,CLDR Supplemental,,
 lg,lg-Latn-UG,Ganda,UG,,,,,,,,EAF NEU,lug,CLDR,,
