@@ -1987,6 +1987,7 @@ dux = dux-Latn = dux-ML = dux-Latn-ML
 duy = duy-Latn = duy-PH = duy-Latn-PH
 duz = duz-CM = duz-Latn = guv = guv-CM = guv-Latn = guv-Latn-CM = duz-Latn-CM
 *dv = dv-MV = dv-Thaa = dv-Thaa-MV
+dv-Diak = dv-Diak-MV
 dva = *dva-Latn = dva-PG = dva-Latn-PG
 dwa = dwa-Latn = dwa-NG = dwa-Latn-NG
 dwr = dwr-ET = *dwr-Latn = dwr-Latn-ET
@@ -3902,6 +3903,7 @@ ku-Armn = kmr-Armn = kmr-Armn-AZ = ku-Armn-AZ
 ku-Cyrl = ku-Cyrl-IQ
 ku-Cyrl-AZ = kmr-Cyrl = kmr-Cyrl-AZ = ku-Cyrl-AZ
 ku-LB = ku-Arab-LB
+ku-Yezi-GE = kmr-Yezi = kmr-Yezi-GE = ku-Yezi-GE
 kub = *kub-Latn = kub-NG = kub-Latn-NG
 kuc = kuc-ID = kuc-Latn = kuc-Latn-ID
 kud = *kud-Latn = kud-PG = kud-Latn-PG
@@ -4906,6 +4908,7 @@ mqu = mqu-Latn = mqu-SS = mqu-Latn-SS
 mqv = mqv-Latn = mqv-PG = mqv-Latn-PG
 mqw = mqw-Latn = mqw-PG = mqw-Latn-PG
 mqx = mqx-ID = mqx-Latn = mqx-Latn-ID
+mqx-Bugi = mqx-Bugi-ID
 mqy = mqy-ID = mqy-Latn = mqy-Latn-ID
 mqz = mqz-Latn = mqz-PG = mqz-Latn-PG
 *mr = mr-Deva = *mr-IN = mr-Deva-IN
@@ -5946,6 +5949,7 @@ pdn = pdn-ID = pdn-Latn = pdn-Latn-ID
 pdo = pdo-ID = pdo-Latn = pdo-Latn-ID
 pdt = pdt-CA = pdt-Latn = pdt-Latn-CA
 pdu = pdu-Latn = pdu-MM = pdu-Latn-MM
+pdu-Mymr = pdu-Mymr-MM
 pea = pea-ID = pea-Latn = pea-Latn-ID
 peb = peb-US = peb-Zyyy = peb-Zyyy-US
 ped = *ped-Latn = ped-PG = ped-Latn-PG
@@ -8251,7 +8255,8 @@ xch = cmk = cmk-XX = cmk-Zyyy = cmk-Zyyy-XX = xch-XX = xch-Zyyy = xch-Zyyy-XX
 xcl = xcl-XX = xcl-Zyyy = xcl-Zyyy-XX
 xcm = xcm-XX = xcm-Zyyy = xcm-Zyyy-XX
 xcn = xcn-XX = xcn-Zyyy = xcn-Zyyy-XX
-xco = xco-XX = xco-Zyyy = xco-Zyyy-XX
+xco = xco-Arab = xco-XX = xco-Arab-XX
+xco-Chrs = xco-Chrs-XX
 xcr = xcr-Cari = xcr-TR = xcr-Cari-TR
 xct = xct-Tibt = xct-XX = xct-Tibt-XX
 xcu = xcu-XX = xcu-Zyyy = xcu-Zyyy-XX

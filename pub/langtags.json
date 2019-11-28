@@ -9,7 +9,7 @@
     },
     {
         "api": "1.1.0",
-        "date": "2019-09-10",
+        "date": "2019-10-10",
         "tag": "_version"
     },
     {
@@ -4479,7 +4479,7 @@
     },
     {
         "full": "ant-Latn-AU",
-        "iana": "Antakarinya",
+        "iana": [ "Antakarinya", "Antikarinya" ],
         "iso639_3": "ant",
         "name": "Antikarinya",
         "names": [ "Andagarinya", "Antakarinya", "Antakirinya" ],
@@ -8857,7 +8857,7 @@
     },
     {
         "full": "bck-Latn-AU",
-        "iana": "Bunaba",
+        "iana": "Bunuba",
         "iso639_3": "bck",
         "name": "Bunuba",
         "names": [ "Bunaba", "Punapa", "Punuba" ],
@@ -13303,7 +13303,9 @@
     {
         "full": "bo-Latn-CN",
         "iana": "Tibetan",
-        "name": "Tibetan",
+        "iso639_3": "bod",
+        "name": "Tibetan, Central",
+        "names": [ "Bhotia", "Lhasa Tibetan", "Phoke", "Tibetan", "Wei", "Weizang", "Zang" ],
         "region": "CN",
         "regionname": "China",
         "script": "Latn",
@@ -14690,7 +14692,9 @@
     {
         "full": "brv-Thai-TH-x-khongchiem",
         "iana": "Bru Khong Chiem",
-        "name": "Bru Khong Chiem",
+        "iso639_3": "brv",
+        "name": "Bru, Western",
+        "names": [ "Baru", "Bru", "Bru Khong Chiem", "Bruu", "B’ru" ],
         "nophonvars": true,
         "region": "TH",
         "regionname": "Thailand",
@@ -15207,6 +15211,7 @@
     {
         "full": "btb-Latn-CM",
         "iana": "Beti (Cameroon)",
+        "iso639_3": "btb",
         "name": "Beti (Cameroon)",
         "region": "CM",
         "regionname": "Cameroon",
@@ -16994,7 +16999,7 @@
     },
     {
         "full": "bym-Latn-AU",
-        "iana": "Bidyara",
+        "iana": "Bidjara",
         "iso639_3": "bym",
         "name": "Bidjara",
         "names": [ "Bidyara", "Bithara", "Bitjara" ],
@@ -18854,9 +18859,10 @@
     },
     {
         "full": "cey-Latn-MM",
+        "iana": "Ekai Chin",
         "iso639_3": "cey",
         "name": "Chin, Ekai",
-        "names": [ "Ekai", "Lawktu" ],
+        "names": [ "Ekai", "Ekai Chin", "Lawktu" ],
         "region": "MM",
         "regionname": "Myanmar",
         "script": "Latn",
@@ -22752,7 +22758,8 @@
         "script": "Latn",
         "sldr": true,
         "tag": "da",
-        "tags": [ "da-DK", "da-Latn" ]
+        "tags": [ "da-DK", "da-Latn" ],
+        "variants": [ "bornholm" ]
     },
     {
         "full": "da-Brai-DK",
@@ -24444,7 +24451,7 @@
     },
     {
         "full": "dif-Latn-AU",
-        "iana": "Dieri",
+        "iana": [ "Dieri", "Diyari" ],
         "iso639_3": "dif",
         "localnames": [ "Dieri" ],
         "name": "Dieri",
@@ -24747,10 +24754,10 @@
     },
     {
         "full": "djd-Latn-AU",
-        "iana": "Djamindjung",
+        "iana": [ "Djamindjung", "Ngaliwurru" ],
         "iso639_3": "djd",
         "name": "Djamindjung",
-        "names": [ "Jaminjung" ],
+        "names": [ "Jaminjung", "Ngaliwurru" ],
         "region": "AU",
         "regionname": "Australia",
         "script": "Latn",
@@ -24888,7 +24895,7 @@
     },
     {
         "full": "djn-Latn-AU",
-        "iana": "Djauan",
+        "iana": [ "Jawoyn", "Djauan" ],
         "iso639_3": "djn",
         "name": "Djauan",
         "names": [ "Adowen", "Djawan", "Jawan", "Jawony", "Jawoyn", "Kumertuo" ],
@@ -26719,6 +26726,20 @@
         "tags": [ "dv-MV", "dv-Thaa" ]
     },
     {
+        "full": "dv-Diak-MV",
+        "iana": [ "Dhivehi", "Divehi", "Maldivian" ],
+        "iso639_3": "div",
+        "name": "Maldivian",
+        "names": [ "Dhivehi", "Dhivehi Bas", "Divehi", "Divehli", "Mahl", "Mali", "Malikh", "Malki" ],
+        "nophonvars": true,
+        "region": "MV",
+        "regionname": "Maldives",
+        "regions": [ "IN" ],
+        "script": "Diak",
+        "sldr": false,
+        "tag": "dv-Diak"
+    },
+    {
         "full": "dva-Latn-PG",
         "iana": "Duau",
         "iso639_3": "dva",
@@ -26919,7 +26940,7 @@
     },
     {
         "full": "dyn-Latn-AU",
-        "iana": "Dyangadi",
+        "iana": [ "Dyangadi", "Dhanggatti" ],
         "iso639_3": "dyn",
         "name": "Dyangadi",
         "names": [ "Boorkutti", "Burgadi", "Dainggati", "Dangadi", "Dangati", "Danggadi", "Danggetti", "Dhanggati", "Dhanggatti", "Djan-Gadi", "Ghangatty", "Tangetti", "Thangatti", "Thangatty" ],
@@ -27007,7 +27028,7 @@
     },
     {
         "full": "dyy-Latn-AU",
-        "iana": "Dyaabugay",
+        "iana": [ "Djabugay", "Dyaabugay" ],
         "iso639_3": "dyy",
         "name": "Djabugay",
         "names": [ "Bulum-Bulum", "Check-Cull", "Chewlie", "Djabugai", "Dyaabugay", "Dyabugay", "Hileman", "Kikonjunkulu", "Kodgotto", "Koko-Tjumbundji", "Kokonyungalo", "Ngarlkajie", "Orlow", "Tjabakai-Thandji", "Tjabogaijanji", "Tjankir", "Tjankun", "Tjapukai", "Tjapunkandji", "Tjunbundji" ],
@@ -28120,8 +28141,10 @@
     {
         "full": "en-Latn-CA",
         "iana": "English",
+        "iso639_3": "eng",
         "localname": "Canadian English",
         "name": "English",
+        "names": [ "Anglais" ],
         "region": "CA",
         "regionname": "Canada",
         "script": "Latn",
@@ -32829,7 +32852,7 @@
     },
     {
         "full": "gbd-Latn-AU",
-        "iana": "Karadjeri",
+        "iana": "Karajarri",
         "iso639_3": "gbd",
         "name": "Karajarri",
         "names": [ "Garadjari", "Garadjiri", "Garadyari", "Gard’are", "Guradjara", "Karadjeri", "Karrajarri" ],
@@ -33852,7 +33875,7 @@
     },
     {
         "full": "gge-Latn-AU",
-        "iana": "Guragone",
+        "iana": "Gurr-goni",
         "iso639_3": "gge",
         "name": "Gurr-goni",
         "names": [ "Gorogone", "Gun-Guragone", "Gunagoragone", "Gungorogone", "Guragone", "Gurrogone", "Gutjertabia" ],
@@ -34085,7 +34108,7 @@
     },
     {
         "full": "gia-Latn-AU",
-        "iana": "Kitja",
+        "iana": "Kija",
         "iso639_3": "gia",
         "name": "Kija",
         "names": [ "Gidja", "Kidja", "Kitja" ],
@@ -36262,7 +36285,7 @@
     },
     {
         "full": "gue-Latn-AU",
-        "iana": "Gurinji",
+        "iana": "Gurindji",
         "iso639_3": "gue",
         "name": "Gurindji",
         "names": [ "Gurinji", "Wurlayi" ],
@@ -43015,7 +43038,7 @@
     },
     {
         "full": "jay-Latn-AU",
-        "iana": "Yan-nhangu",
+        "iana": [ "Yan-nhangu", "Nhangu" ],
         "iso639_3": "jay",
         "name": "Yan-nhangu",
         "names": [ "Gokulu mana dhanguny’ bulthun", "Jarnango", "Nangu", "Nhangu", "Yanangu" ],
@@ -43579,7 +43602,7 @@
     },
     {
         "full": "jig-Latn-AU",
-        "iana": "Djingili",
+        "iana": [ "Jingulu", "Djingili" ],
         "iso639_3": "jig",
         "name": "Jingulu",
         "names": [ "Chingalee", "Chunguloo", "Djingila", "Djingili", "Djingulu", "Jingali", "Jingili", "Lee", "Tchingalee", "Tjingili", "Tjingilu" ],
@@ -48686,7 +48709,7 @@
     },
     {
         "full": "kkp-Latn-AU",
-        "iana": "Gugubera",
+        "iana": [ "Gugubera", "Koko-Bera" ],
         "iso639_3": "kkp",
         "name": "Koko-Bera",
         "names": [ "Berang", "Gugubera", "Kok Kaber", "Kok-Kaper", "Koko Pera", "Kukubera", "Paperyn" ],
@@ -48802,7 +48825,7 @@
     },
     {
         "full": "kky-Latn-AU",
-        "iana": "Guguyimidjir",
+        "iana": [ "Guugu Yimidhirr", "Guguyimidjir" ],
         "iso639_3": "kky",
         "name": "Guugu Yimidhirr",
         "names": [ "Gugu Yimijir", "Gugu-Yimidhirr", "Guguyimidjir", "Guugu Yimithirr", "Koko Imudji", "Kukuyimidir" ],
@@ -51830,7 +51853,7 @@
     },
     {
         "full": "ktd-Latn-AU",
-        "iana": "Kokata",
+        "iana": [ "Kokata", "Kukatha" ],
         "iso639_3": "ktd",
         "name": "Kokata",
         "names": [ "Gugada", "Kokatha", "Kokitta", "Koocatho", "Koogurda", "Kugurda", "Kukata", "Kukatha", "Madutara", "Maduwonga", "Wanggamadu", "Wongamardu" ],
@@ -52211,6 +52234,19 @@
         "script": "Arab",
         "sldr": false,
         "tag": "ku-LB"
+    },
+    {
+        "full": "ku-Yezi-GE",
+        "iana": "Kurdish",
+        "name": "Kurdish, Northern",
+        "names": [ "Badinani", "Badînî", "Bahdini", "Behdînî", "Eastern Kurmanji", "Kermancî", "Khorasani", "Khorasani Kurmanji", "Kirmanciya Jori", "Kirmancî", "Kordi", "Kordi Kormanji", "Kurdi", "Kurdish", "Kurdish Kurmanji", "Kurdiya jorîn", "Kurdmancî", "Kurdî", "Kurdî-Kurmancî", "Kurmancî", "Kurmanji", "Kurmanji Kurdish", "Kurmanjî", "Red Kurmanji" ],
+        "region": "GE",
+        "regionname": "Georgia",
+        "regions": [ "AM", "AZ", "BE", "BH", "CA", "CH", "DE", "DK", "FI", "GR", "IQ", "IR", "IT", "KG", "KW", "KZ", "LB", "NL", "NO", "RU", "SE", "SY", "TM", "TR", "US" ],
+        "script": "Yezi",
+        "sldr": false,
+        "tag": "ku-Yezi-GE",
+        "tags": [ "kmr-Yezi", "kmr-Yezi-GE" ]
     },
     {
         "full": "kub-Latn-NG",
@@ -55067,7 +55103,7 @@
     },
     {
         "full": "lbn-Laoo-LA",
-        "iana": "Lamet",
+        "iana": "Rmeet",
         "iso639_3": "lbn",
         "name": "Rmeet",
         "names": [ "Kha Lamet", "Khamed", "Khamet", "Lamed", "Lamet", "Lemet" ],
@@ -55081,7 +55117,7 @@
     },
     {
         "full": "lbn-Latn-LA",
-        "iana": "Lamet",
+        "iana": "Rmeet",
         "iso639_3": "lbn",
         "localnames": [ "Rmeet" ],
         "name": "Rmeet",
@@ -55216,7 +55252,7 @@
     },
     {
         "full": "lby-Latn-AU",
-        "iana": "Lamu-Lamu",
+        "iana": [ "Lamalama", "Lamu-Lamu" ],
         "iso639_3": "lby",
         "name": "Lamalama",
         "names": [ "Lama-Lama", "Lamu-Lamu", "Lamulamul", "Mba Rumbathama" ],
@@ -58591,6 +58627,7 @@
     },
     {
         "full": "lsn-Zxxx-CN",
+        "iana": "Tibetan Sign Language",
         "iso639_3": "lsn",
         "name": "Tibetan Sign Language",
         "names": [ "TSL", "TibSL", "bod kyi lag brda", "bökyi lagda" ],
@@ -58667,6 +58704,7 @@
     },
     {
         "full": "lsv-Zxxx-PE",
+        "iana": "Sivia Sign Language",
         "iso639_3": "lsv",
         "name": "Sivia Sign Language",
         "names": [ "LSSiv", "Lengua de señas de Sivia" ],
@@ -59212,6 +59250,7 @@
     },
     {
         "full": "lvi-Zyyy-LA",
+        "iana": "Lavi",
         "iso639_3": "lvi",
         "name": "Lavi",
         "names": [ "Lavy", "Lawi", "Salwoeng", "Saveung", "Swoeng" ],
@@ -61018,7 +61057,7 @@
     },
     {
         "full": "mec-Latn-AU",
-        "iana": "Mara",
+        "iana": "Marra",
         "iso639_3": "mec",
         "name": "Marra",
         "names": [ "Leelalwarra", "Leelawarra", "Maarra", "Mala", "Mara" ],
@@ -61209,7 +61248,7 @@
     },
     {
         "full": "mep-Latn-AU",
-        "iana": "Miriwung",
+        "iana": "Miriwoong",
         "iso639_3": "mep",
         "name": "Miriwoong",
         "names": [ "Merong", "Miriwun", "Miriwung", "Mirung" ],
@@ -61621,7 +61660,7 @@
     },
     {
         "full": "mfr-Latn-AU",
-        "iana": "Marithiel",
+        "iana": "Marrithiyel",
         "iso639_3": "mfr",
         "name": "Marrithiyel",
         "names": [ "Berringen", "Maridhiel", "Maridhiyel", "Maridjiel", "Marithiel", "Marithiyel" ],
@@ -63208,7 +63247,7 @@
         "name": "Macedonian",
         "names": [ "Macedonian Slavic", "Slavic" ],
         "region": "MK",
-        "regionname": "The Former Yugoslav Republic of Macedonia",
+        "regionname": "North Macedonia",
         "regions": [ "AL", "AU", "BG", "CA", "DE", "GR", "HR", "ME", "RS", "SI", "US" ],
         "script": "Cyrl",
         "sldr": true,
@@ -63223,7 +63262,7 @@
         "names": [ "Macedonian Slavic" ],
         "nophonvars": true,
         "region": "MK",
-        "regionname": "The Former Yugoslav Republic of Macedonia",
+        "regionname": "North Macedonia",
         "script": "Brai",
         "sldr": false,
         "tag": "mk-Brai"
@@ -65050,7 +65089,7 @@
     },
     {
         "full": "mpb-Latn-AU",
-        "iana": "Mullukmulluk",
+        "iana": [ "Malak Malak", "Mullukmulluk" ],
         "iso639_3": "mpb",
         "name": "Malak Malak",
         "names": [ "Malagmalag", "Malak-Malak", "Malakmalak", "Mullikmullik", "Mulluk-Mulluk", "Mullukmulluk", "Ngolak-Wonga", "Ngolokwangga", "Ngulukwongga", "Nguluwongga" ],
@@ -65063,7 +65102,7 @@
     },
     {
         "full": "mpc-Latn-AU",
-        "iana": "Mangarayi",
+        "iana": "Mangarrayi",
         "iso639_3": "mpc",
         "name": "Mangarrayi",
         "names": [ "Mangarai", "Mangarayi", "Manggarai", "Mungarai", "Mungerry", "Ngarrabadji" ],
@@ -65156,11 +65195,11 @@
     },
     {
         "full": "mpj-Latn-AU",
-        "iana": "Martu Wangka",
+        "iana": [ "Martu Wangka", "Wangkajunga" ],
         "iso639_3": "mpj",
         "localnames": [ "Martu Wangka" ],
         "name": "Martu Wangka",
-        "names": [ "Jigalong", "Mardo", "Mardujara", "Martuwangka", "Targoodi", "Targudi" ],
+        "names": [ "Jigalong", "Mardo", "Mardujara", "Martuwangka", "Targoodi", "Targudi", "Wangkajunga" ],
         "region": "AU",
         "regionname": "Australia",
         "script": "Latn",
@@ -65678,6 +65717,19 @@
         "sldr": false,
         "tag": "mqx",
         "tags": [ "mqx-ID", "mqx-Latn" ]
+    },
+    {
+        "full": "mqx-Bugi-ID",
+        "iana": "Mamuju",
+        "iso639_3": "mqx",
+        "name": "Mamuju",
+        "names": [ "Mamoedjoe", "Mamoedjoesch", "Mamudju", "Udai" ],
+        "nophonvars": true,
+        "region": "ID",
+        "regionname": "Indonesia",
+        "script": "Bugi",
+        "sldr": false,
+        "tag": "mqx-Bugi"
     },
     {
         "full": "mqy-Latn-ID",
@@ -69309,7 +69361,7 @@
     },
     {
         "full": "nay-Latn-AU",
-        "iana": "Narrinyeri",
+        "iana": "Ngarrindjeri",
         "iso639_3": "nay",
         "localnames": [ "Ngarrindjeri" ],
         "name": "Ngarrindjeri",
@@ -69457,7 +69509,7 @@
     },
     {
         "full": "nbj-Latn-AU",
-        "iana": "Ngarinman",
+        "iana": "Ngarinyman",
         "iso639_3": "nbj",
         "name": "Ngarinyman",
         "names": [ "Airiman", "Hainman", "Ngaiman", "Ngarinman", "Ngrarmun" ],
@@ -69549,7 +69601,7 @@
     },
     {
         "full": "nbr-Latn-NG",
-        "iana": "Numana-Nunku-Gbantu-Numbu",
+        "iana": "Numana",
         "iso639_3": "nbr",
         "name": "Numana",
         "names": [ "Arak", "Inmwen", "Nimana", "Numana-Nunku-Gbantu-Numbu" ],
@@ -69797,7 +69849,7 @@
     },
     {
         "full": "nck-Latn-AU",
-        "iana": "Nakara",
+        "iana": "Na-kara",
         "iso639_3": "nck",
         "name": "Na-kara",
         "names": [ "Kokori", "Nagara", "Nakara", "Nakarra", "Nakkara" ],
@@ -70901,10 +70953,10 @@
     },
     {
         "full": "ngh-Latn-ZA",
-        "iana": "Nǀu",
+        "iana": "Nǁng",
         "iso639_3": "ngh",
         "name": "N||ng",
-        "names": [ "Nghuki", "Ng’uki", "N|huuki", "N|u", "N|uu", "N|uuki", "Nǀu", "‡Khomani" ],
+        "names": [ "Nghuki", "Ng’uki", "N|huuki", "N|u", "N|uu", "N|uuki", "Nǁng", "‡Khomani" ],
         "region": "ZA",
         "regionname": "South Africa",
         "script": "Latn",
@@ -71537,7 +71589,7 @@
     },
     {
         "full": "nig-Latn-AU",
-        "iana": "Ngalakan",
+        "iana": "Ngalakgan",
         "iso639_3": "nig",
         "name": "Ngalakgan",
         "names": [ "Hongalla", "Ngalakan", "Ngalangan" ],
@@ -75683,7 +75735,7 @@
     },
     {
         "full": "nyh-Latn-AU",
-        "iana": "Nyigina",
+        "iana": "Nyikina",
         "iso639_3": "nyh",
         "name": "Nyikina",
         "names": [ "Njigina", "Njikena", "Nyakina", "Nyigina", "Nyigini" ],
@@ -75831,7 +75883,7 @@
     },
     {
         "full": "nys-Latn-AU",
-        "iana": "Nyunga",
+        "iana": "Nyungar",
         "iso639_3": "nys",
         "name": "Nyungar",
         "names": [ "Njunga", "Njungar", "Noongar", "Nyunga", "Wudjari" ],
@@ -79484,6 +79536,20 @@
         "tags": [ "pdu-Latn", "pdu-MM" ]
     },
     {
+        "full": "pdu-Mymr-MM",
+        "iana": "Kayan",
+        "iso639_3": "pdu",
+        "name": "Kayan",
+        "names": [ "Ka-Yun", "Kayang", "Lahwi" ],
+        "nophonvars": true,
+        "region": "MM",
+        "regionname": "Myanmar",
+        "regions": [ "TH" ],
+        "script": "Mymr",
+        "sldr": false,
+        "tag": "pdu-Mymr"
+    },
+    {
         "full": "pea-Latn-ID",
         "iana": "Peranakan Indonesian",
         "iso639_3": "pea",
@@ -81287,6 +81353,7 @@
     },
     {
         "full": "pnd-Latn-AO",
+        "iana": "Mpinda",
         "iso639_3": "pnd",
         "name": "Mpinda",
         "region": "AO",
@@ -81550,7 +81617,7 @@
     },
     {
         "full": "pnw-Latn-AU",
-        "iana": "Panytyima",
+        "iana": [ "Banyjima", "Panytyima" ],
         "iso639_3": "pnw",
         "name": "Banyjima",
         "names": [ "Bandjima", "Banjima", "Pandjima", "Panjima", "Panjtjima", "Panyima", "Panyjima", "Panytyima" ],
@@ -82806,7 +82873,7 @@
     },
     {
         "full": "pti-Latn-AU",
-        "iana": "Pintiini",
+        "iana": [ "Pindiini", "Wangkatha" ],
         "iso639_3": "pti",
         "name": "Pintiini",
         "names": [ "Nyanganyatjara", "Pindiini", "Wangada", "Wanggaji", "Wangkatha", "Wonga", "Wongai-I", "Wonggaii" ],
@@ -84823,7 +84890,9 @@
     {
         "full": "rej-Latn-ID",
         "iana": "Rejang",
+        "iso639_3": "rej",
         "name": "Rejang",
+        "names": [ "Djang", "Jang", "Redjang" ],
         "region": "ID",
         "regionname": "Indonesia",
         "script": "Latn",
@@ -85171,7 +85240,7 @@
     },
     {
         "full": "ril-Latn-MM",
-        "iana": "Riang (Myanmar)",
+        "iana": [ "Riang Lang", "Riang (Myanmar)" ],
         "iso639_3": "ril",
         "localnames": [ "Riang Lang" ],
         "name": "Riang Lang",
@@ -85224,7 +85293,7 @@
     },
     {
         "full": "rit-Latn-AU",
-        "iana": "Ritarungo",
+        "iana": "Ritharrngu",
         "iso639_3": "rit",
         "name": "Ritharrngu",
         "names": [ "Ridarngo", "Ridarngu", "Ridharrngu", "Ritarnugu", "Ritarungo", "Ritharngu", "Wagelak", "Wawilag", "Yakuy" ],
@@ -85416,7 +85485,7 @@
     },
     {
         "full": "rmb-Latn-AU",
-        "iana": "Rembarunga",
+        "iana": "Rembarrnga",
         "iso639_3": "rmb",
         "name": "Rembarrnga",
         "names": [ "Kaltuy", "Rainbargo", "Rembarnga", "Rembarranga", "Rembarrunga", "Rembarunga" ],
@@ -86789,7 +86858,7 @@
     },
     {
         "full": "rxw-Latn-AU",
-        "iana": "Karuwali",
+        "iana": [ "Karuwali", "Garuwali" ],
         "iso639_3": "rxw",
         "name": "Karuwali",
         "names": [ "Gara-wali", "Garuwali", "Goore", "Karawalla", "Karorinje", "Kuriwalu", "Kurrawulla", "Midhaga", "Mithaka" ],
@@ -87914,9 +87983,11 @@
     {
         "full": "scl-Arab-IN",
         "iana": "Shina",
+        "iso639_3": "scl",
         "latnnames": [ "Shina" ],
         "localnames": [ "شینا" ],
         "name": "Shina",
+        "names": [ "Shinaki", "Sina" ],
         "region": "IN",
         "regionname": "India",
         "script": "Arab",
@@ -89464,7 +89535,9 @@
     {
         "full": "shn-Tale-MM-x-taimauold",
         "iana": "Tai Mau",
-        "name": "Tai Mau",
+        "iso639_3": "shn",
+        "name": "Shan",
+        "names": [ "Burmese Shan", "Dehong", "Great Thai", "Sam", "Sha", "Shan Bama", "Shan Gyi", "Tai Long", "Tai Luang", "Tai Mau", "Tai Shan", "Tai Yai", "Tai Yay", "Tai-Lon", "Thai Yai", "Thai Yay" ],
         "nophonvars": true,
         "region": "MM",
         "regionname": "Myanmar",
@@ -91677,7 +91750,7 @@
     },
     {
         "full": "snz-Latn-PG",
-        "iana": "Sinsauru",
+        "iana": "Kou",
         "iso639_3": "snz",
         "localnames": [ "Kou" ],
         "name": "Kou",
@@ -92416,7 +92489,7 @@
         "localname": "shqip",
         "name": "Albanian",
         "region": "MK",
-        "regionname": "The Former Yugoslav Republic of Macedonia",
+        "regionname": "North Macedonia",
         "script": "Latn",
         "sldr": true,
         "tag": "sq-MK"
@@ -95291,6 +95364,7 @@
     },
     {
         "full": "szy-Latn-TW",
+        "iana": "Sakizaya",
         "iso639_3": "szy",
         "localnames": [ "Sakizaya" ],
         "name": "Sakizaya",
@@ -95837,7 +95911,7 @@
     },
     {
         "full": "tbh-Latn-AU",
-        "iana": "Thurawal",
+        "iana": [ "Dharawal", "Thurawal" ],
         "iso639_3": "tbh",
         "name": "Dharawal",
         "names": [ "Dharawaal", "Thurawal", "Turrubul" ],
@@ -96315,7 +96389,7 @@
     },
     {
         "full": "tcs-Latn-AU",
-        "iana": "Torres Strait Creole",
+        "iana": [ "Torres Strait Creole", "Yumplatok" ],
         "iso639_3": "tcs",
         "localnames": [ "Yumplatok" ],
         "name": "Torres Strait Creole",
@@ -97646,7 +97720,7 @@
     },
     {
         "full": "thd-Latn-AU",
-        "iana": "Thayore",
+        "iana": [ "Kuuk Thaayorre", "Thayore" ],
         "iso639_3": "thd",
         "name": "Kuuk Thayorre",
         "names": [ "Behran", "Gugudayor", "Kuktayor", "Kukudayore", "Kuuk Thaayoore", "Kuuk Thaayorre", "Taior", "Thaayore", "Thaayorre", "Thayore", "Thayorre" ],
@@ -98057,7 +98131,9 @@
     {
         "full": "tig-Latn-SD",
         "iana": "Tigre",
-        "name": "Tigre",
+        "iso639_3": "tig",
+        "name": "Tigré",
+        "names": [ "Tigre" ],
         "region": "SD",
         "regionname": "Sudan",
         "regions": [ "ER" ],
@@ -98341,6 +98417,7 @@
     },
     {
         "full": "tjj-Latn-AU",
+        "iana": "Tjungundji",
         "iso639_3": "tjj",
         "name": "Tjungundji",
         "names": [ "Yangathimri" ],
@@ -98402,6 +98479,7 @@
     },
     {
         "full": "tjp-Latn-AU",
+        "iana": "Tjupany",
         "iso639_3": "tjp",
         "name": "Tjupany",
         "names": [ "Tjupan" ],
@@ -102235,6 +102313,7 @@
     },
     {
         "full": "tvx-Latn-TW",
+        "iana": "Taivoan",
         "iso639_3": "tvx",
         "localnames": [ "Taivoan" ],
         "name": "Taivoan",
@@ -103929,7 +104008,7 @@
     },
     {
         "full": "ulk-Latn-AU",
-        "iana": "Meriam",
+        "iana": "Meriam Mir",
         "iso639_3": "ulk",
         "name": "Meriam Mir",
         "names": [ "East Torres", "Mer", "Meriam", "Meryam Mir", "Mir", "Miriam", "Miriam-Mir" ],
@@ -104804,6 +104883,7 @@
     },
     {
         "full": "uss-Latn-NG",
+        "iana": "us-Saare",
         "iso639_3": "uss",
         "name": "us-Saare",
         "names": [ "Western Duka", "Western Dukawa", "es-Saare", "əs-Saare" ],
@@ -104855,6 +104935,7 @@
     },
     {
         "full": "uth-Latn-NG",
+        "iana": "ut-Hun",
         "iso639_3": "uth",
         "localnames": [ "it-Hun" ],
         "name": "ut-Hun",
@@ -106696,7 +106777,7 @@
     },
     {
         "full": "waq-Latn-AU",
-        "iana": "Wageman",
+        "iana": "Wagiman",
         "iso639_3": "waq",
         "name": "Wagiman",
         "names": [ "Wagaman", "Wageman", "Wagoman", "Wakiman", "Wogeman" ],
@@ -107065,7 +107146,7 @@
     },
     {
         "full": "wbt-Latn-AU",
-        "iana": "Wanman",
+        "iana": "Warnman",
         "iso639_3": "wbt",
         "name": "Warnman",
         "names": [ "Nanidjara", "Nyaani", "Wanman" ],
@@ -107432,7 +107513,7 @@
     },
     {
         "full": "wgg-Latn-AU",
-        "iana": "Wangganguru",
+        "iana": [ "Wangkangurru", "Wangganguru" ],
         "iso639_3": "wgg",
         "name": "Wangkangurru",
         "names": [ "Ongkonguru", "Rangwa", "Wangganguru", "Wangka-Jutjuru", "Wangka-Yutjurru", "Wangkadjera", "Wangkanguru", "Wonggongaru", "Wongkanguru", "Wongkongaru", "Wongonooroo", "Wonkagnurra", "Wonkaoora", "Wonkaooroo", "Wonkongaru", "Wonkongnuru", "Wonkonguru", "Wychinga" ],
@@ -107602,7 +107683,7 @@
     },
     {
         "full": "wig-Latn-AU",
-        "iana": "Wik-Ngathana",
+        "iana": "Wik Ngathan",
         "iso639_3": "wig",
         "name": "Wik Ngathan",
         "names": [ "Wik-Ngathana" ],
@@ -107838,6 +107919,7 @@
     },
     {
         "full": "wkr-Latn-AU",
+        "iana": "Keerray-Woorroong",
         "iso639_3": "wkr",
         "name": "Keerray-Woorroong",
         "region": "AU",
@@ -108476,7 +108558,7 @@
     },
     {
         "full": "wny-Latn-AU",
-        "iana": "Wanyi",
+        "iana": [ "Wanyi", "Waanyi" ],
         "iso639_3": "wny",
         "name": "Waanyi",
         "names": [ "Waangyee", "Wainyi", "Wanee", "Wanji", "Wanyee", "Wanyi", "Wonyee" ],
@@ -108519,7 +108601,7 @@
     },
     {
         "full": "woa-Latn-AU",
-        "iana": "Tyaraity",
+        "iana": [ "Kuwema", "Tyaraity" ],
         "iso639_3": "woa",
         "name": "Kuwema",
         "names": [ "Daktjerat", "Djeradj", "Djerag", "Djeraidy", "Dyeraidy", "Tjerait", "Tyaraity", "Tyeraity" ],
@@ -108779,7 +108861,7 @@
     },
     {
         "full": "wrb-Latn-AU",
-        "iana": "Warluwara",
+        "iana": [ "Waluwarra", "Warluwara" ],
         "iso639_3": "wrb",
         "name": "Waluwarra",
         "names": [ "Kapula", "Maula", "Mauula", "Mawula", "Parnkarra", "Walookera", "Walugera", "Waluwara", "Warluwara", "Warluwarra", "Wollegara", "Yunnalinka" ],
@@ -108804,7 +108886,7 @@
     },
     {
         "full": "wrg-Latn-AU",
-        "iana": "Warungu",
+        "iana": [ "Warungu", "Gudjal" ],
         "iso639_3": "wrg",
         "name": "Warungu",
         "names": [ "Gudjal", "Gudjala", "Warrongo", "Warrungu" ],
@@ -108817,7 +108899,7 @@
     },
     {
         "full": "wrh-Latn-AU",
-        "iana": "Wiradhuri",
+        "iana": "Wiradjuri",
         "iso639_3": "wrh",
         "name": "Wiradjuri",
         "names": [ "Berrembeel", "Warandgeri", "Werogery", "Wiiratheri", "Wira-Athoree", "Wiradhuri", "Wiradhurri", "Wiraduri", "Wiraidyuri", "Wirajeree", "Wirashuri", "Wiratheri", "Wirracharee", "Wirrai’yarrai", "Wooragurie", "Wordjerg" ],
@@ -110061,7 +110143,7 @@
     },
     {
         "full": "xby-Latn-AU",
-        "iana": "Batyala",
+        "iana": [ "Batjala", "Batyala" ],
         "iso639_3": "xby",
         "name": "Batjala",
         "names": [ "Badjela", "Badtala", "Badtjala", "Badyala", "Batyala", "Bidhala", "Butchulla", "Dulingbara", "Gnoolongbara", "Koolaburra", "Ngulungbara", "Olungbura", "Patyala", "Thoorgine" ],
@@ -110162,15 +110244,26 @@
         "tags": [ "xcn-XX", "xcn-Zyyy" ]
     },
     {
-        "full": "xco-Zyyy-XX",
+        "full": "xco-Arab-XX",
         "iana": "Chorasmian",
         "iso639_3": "xco",
         "name": "Chorasmian",
         "region": "XX",
-        "script": "Zyyy",
+        "script": "Arab",
         "sldr": false,
         "tag": "xco",
-        "tags": [ "xco-XX", "xco-Zyyy" ]
+        "tags": [ "xco-Arab", "xco-XX" ]
+    },
+    {
+        "full": "xco-Chrs-XX",
+        "iana": "Chorasmian",
+        "iso639_3": "xco",
+        "name": "Chorasmian",
+        "nophonvars": true,
+        "region": "XX",
+        "script": "Chrs",
+        "sldr": false,
+        "tag": "xco-Chrs"
     },
     {
         "full": "xcr-Cari-TR",
@@ -111416,7 +111509,7 @@
     },
     {
         "full": "xmh-Latn-AU",
-        "iana": "Kuku-Muminh",
+        "iana": "Kugu-Muminh",
         "iso639_3": "xmh",
         "name": "Kugu-Muminh",
         "names": [ "Kugu", "Kuku-Muminh", "Wik Muminh", "Wik-Mumin" ],
@@ -114738,7 +114831,7 @@
     },
     {
         "full": "yin-Zyyy-MM",
-        "iana": "Yinchia",
+        "iana": [ "Riang Lai", "Yinchia" ],
         "iso639_3": "yin",
         "name": "Riang Lai",
         "names": [ "Ban Roi", "Liang Sek", "Ranei", "Red Riang", "Riang Saek", "Riang Sak", "Striped Karen", "Yang", "Yang Lai", "Yin Kya", "Yinchia", "Yinja" ],
@@ -118475,7 +118568,7 @@
     },
     {
         "full": "zml-Latn-AU",
-        "iana": "Madngele",
+        "iana": "Matngala",
         "iso639_3": "zml",
         "name": "Matngala",
         "names": [ "Maangella", "Madngela", "Madngele", "Mandella", "Matngele", "Muttangulla", "Warat" ],
@@ -118488,7 +118581,7 @@
     },
     {
         "full": "zmm-Latn-AU",
-        "iana": "Marimanindji",
+        "iana": [ "Marimanindji", "Marramaninyshi" ],
         "iso639_3": "zmm",
         "name": "Marimanindji",
         "names": [ "Maramanandji", "Maramanindji", "Maramarandji", "Marimanindu", "Marramaninjsji", "Marramaninyshi", "Murinmanindji" ],

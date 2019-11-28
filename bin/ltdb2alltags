@@ -40,9 +40,9 @@ def read_autonyms(filename):
 def script_analyze(s):
     res = {}
     for c in s:
-        sc = ucds.get(ord(c), 'scx')
-        if not sc.startswith('Z'):
-            res[sc] = res.setdefault(sc, 0) + 1
+        for sc in ucds.get(ord(c), 'scx').split():
+            if not sc.startswith('Z'):
+                res[sc] = res.setdefault(sc, 0) + 1
     return sorted(res.keys(), key=lambda x:-res[x])[0]
 
 def find_file(tagstr, root='.') :
