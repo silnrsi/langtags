@@ -56,7 +56,7 @@ class CachedFile:
         self.srcdir = srcdir
         udir = site.getuserbase()
         self.prefix = prefix if prefix is not None else "python-cachingurl"
-        upath = os.path.join(udir, prefix)
+        upath = os.path.join(udir, self.prefix)
         if not os.path.exists(upath):
             os.makedirs(upath)
         self.cname = os.path.join(upath, filename)

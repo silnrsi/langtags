@@ -9,7 +9,7 @@
     },
     {
         "api": "1.1.0",
-        "date": "2019-10-10",
+        "date": "2019-11-28",
         "tag": "_version"
     },
     {
@@ -20140,34 +20140,6 @@
         "sldr": false,
         "tag": "clk",
         "tags": [ "clk-IN", "clk-Latn" ]
-    },
-    {
-        "full": "clk-Deva-IN",
-        "iana": "Idu-Mishmi",
-        "iso639_3": "clk",
-        "name": "Idu-Mishmi",
-        "names": [ "Ida", "Idu", "Midhi", "Nedu", "Yidu Luoba" ],
-        "nophonvars": true,
-        "region": "IN",
-        "regionname": "India",
-        "script": "Deva",
-        "sldr": false,
-        "tag": "clk-Deva"
-    },
-    {
-        "full": "clk-Tibt-CN",
-        "iana": "Idu-Mishmi",
-        "iso639_3": "clk",
-        "name": "Luoba, Yidu",
-        "names": [ "Ida", "Idu", "Idu Lhoba", "Idu Mishmi", "Idu-Mishmi", "Lho-Pa", "Lhoba", "Midhi", "Nedu", "Yidu", "Yidu Luoba" ],
-        "nophonvars": true,
-        "region": "CN",
-        "regionname": "China",
-        "regions": [ "IN" ],
-        "script": "Tibt",
-        "sldr": false,
-        "tag": "clk-Tibt",
-        "tags": [ "clk-CN" ]
     },
     {
         "full": "cll-Latn-GH",
@@ -59100,18 +59072,19 @@
         "tags": [ "lus-IN", "lus-Latn" ]
     },
     {
-        "full": "lus-Beng-IN",
+        "full": "lus-Beng-BD",
         "iana": "Lushai",
         "iso639_3": "lus",
         "name": "Mizo",
         "names": [ "Chin, Mizo", "Duhlian Twang", "Dulien", "Haulngo", "Hualngo", "Ka-Lin-Kaw", "Le", "Lei", "Lukhai", "Lusago", "Lusai", "Lusei", "Lushai", "Lushai-Mizo", "Lushay", "Lushei", "Mizo ṭawng", "Sailau", "Whelngo" ],
         "nophonvars": true,
-        "region": "IN",
-        "regionname": "India",
-        "regions": [ "BD", "MM" ],
+        "region": "BD",
+        "regionname": "Bangladesh",
+        "regions": [ "IN", "MM" ],
         "script": "Beng",
         "sldr": false,
-        "tag": "lus-Beng"
+        "tag": "lus-Beng",
+        "tags": [ "lus-BD" ]
     },
     {
         "full": "lus-Brai-IN",
@@ -94152,6 +94125,18 @@
         "tags": [ "sut-Latn", "sut-NI" ]
     },
     {
+        "full": "suv-Latn-IN",
+        "iana": "Puroik",
+        "iso639_3": "suv",
+        "name": "Puroik",
+        "region": "IN",
+        "regionname": "India",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "suv",
+        "tags": [ "suv-IN", "suv-Latn" ]
+    },
+    {
         "full": "suv-Beng-IN",
         "iana": "Puroik",
         "iso639_3": "suv",
@@ -94174,17 +94159,6 @@
         "script": "Deva",
         "sldr": false,
         "tag": "suv-Deva"
-    },
-    {
-        "full": "suv-Latn-IN",
-        "iana": "Puroik",
-        "iso639_3": "suv",
-        "name": "Puroik",
-        "region": "IN",
-        "regionname": "India",
-        "script": "Latn",
-        "sldr": false,
-        "tag": "suv-Latn"
     },
     {
         "full": "suw-Latn-TZ",
@@ -106395,6 +106369,19 @@
         "sldr": false,
         "tag": "vot",
         "tags": [ "vot-Latn", "vot-RU" ]
+    },
+    {
+        "full": "vot-Cyrl-RU",
+        "iana": "Votic",
+        "iso639_3": "vot",
+        "name": "Vod",
+        "names": [ "Vodian", "Vote", "Votian", "Votic", "Votish" ],
+        "nophonvars": true,
+        "region": "RU",
+        "regionname": "Russian Federation",
+        "script": "Cyrl",
+        "sldr": false,
+        "tag": "vot-Cyrl"
     },
     {
         "full": "vra-Latn-VU",

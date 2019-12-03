@@ -1497,8 +1497,6 @@ clh = clh-Arab = clh-PK = clh-Arab-PK
 cli = cli-GH = cli-Latn = cli-Latn-GH
 clj = clj-Latn = clj-MM = clj-Latn-MM
 clk = clk-IN = clk-Latn = clk-Latn-IN
-clk-Deva = clk-Deva-IN
-clk-Tibt = clk-CN = clk-Tibt-CN
 cll = cll-GH = cll-Latn = cll-Latn-GH
 clm = clm-Latn = clm-US = clm-Latn-US
 clo = clo-Latn = clo-MX = clo-Latn-MX
@@ -4417,7 +4415,7 @@ lup = lup-GA = lup-Latn = lup-Latn-GA
 luq = luq-CU = luq-Latn = luq-Latn-CU
 lur = lur-ID = lur-Latn = lur-Latn-ID
 lus = lus-IN = lus-Latn = lus-Latn-IN
-lus-Beng = lus-Beng-IN
+lus-Beng = lus-BD = lus-Beng-BD
 lus-Brai = lus-Brai-IN
 lut = lut-Latn = lut-US = lut-Latn-US
 luu = luu-NP = luu-Zyyy = luu-Zyyy-NP
@@ -7043,9 +7041,9 @@ sur = *sur-Latn = sur-NG = sur-Latn-NG
 sus = sus-GN = *sus-Latn = sus-Latn-GN
 *sus-Arab = sus-Arab-GN
 sut = sut-Latn = sut-NI = sut-Latn-NI
+suv = suv-IN = suv-Latn = suv-Latn-IN
 suv-Beng = suv-Beng-IN
 suv-Deva = suv-Deva-IN
-suv-Latn = suv-Latn-IN
 suw = suw-Latn = suw-TZ = suw-Latn-TZ
 sux = sux-XX = sux-Zyyy = sux-Zyyy-XX
 suy = suy-BR = suy-Latn = suy-Latn-BR
@@ -7960,6 +7958,7 @@ vnp = vnp-Latn = vnp-VU = vnp-Latn-VU
 *vo = *vo-001 = vo-Latn = vo-Latn-001
 vor = vor-Latn = vor-NG = vor-Latn-NG
 vot = vot-Latn = vot-RU = vot-Latn-RU
+vot-Cyrl = vot-Cyrl-RU
 vra = vra-Latn = vra-VU = vra-Latn-VU
 vro = vro-EE = vro-Latn = vro-Latn-EE
 vrs = vrs-Latn = vrs-SB = vrs-Latn-SB
