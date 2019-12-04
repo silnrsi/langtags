@@ -35,6 +35,7 @@ l = langtag('en-Latn')
 import json, os, site
 from six import with_metaclass
 from collections import namedtuple
+
 try:
     from cachingurl import CachedFile
 except ModuleNotFoundError:
@@ -157,17 +158,32 @@ class _LangTags(with_metaclass(_Singleton)):
         self._tags = {}
         self._info = {}
         if fname is None:
-            for srcdir in [os.path.join(os.path.dirname(__file__)),
-                            os.path.join(os.path.dirname(__file__), '..', '..', 'pub')]:
-                if os.path.exists(os.path.join(srcdir, 'langtags.json')):
-                    break
+            inf = None
+            try:
+                import pkg_resources
+                inf = pkg_resources.resource_stream("langtag", "langtags.json")
+            except ImportError:
+                pass
+            except pkg_resources.ResolutionError:
+                pass
+            except FileNotFoundError:
+                pass
+            if inf is None:
+                for srcdir in [os.path.join(os.path.dirname(__file__)),
+                               os.path.join(os.path.dirname(__file__), '..', '..', 'pub')]:
+                    if os.path.exists(os.path.join(srcdir, 'langtags.json')):
+                        break
+                else:
+                    raise IOError("Cannot find langtags.json")
+                self._cachedltags = CachedFile('langtags.json', url=useurl, 
+                        srcdir = srcdir, prefix=cachedprefix or "langtag-LangTags")
+                fname = self._cachedltags.get_latest()
+                inf = open(fname, "r")
+            if inf is not None:
+                data = json.load(inf, object_hook=self.addSet)
+                inf.close()
             else:
-                raise IOError("Cannot find langtags.json")
-            self._cachedltags = CachedFile('langtags.json', url=useurl, 
-                    srcdir = srcdir, prefix=cachedprefix or "langtag-LangTags")
-            fname = self._cachedltags.get_latest()
-        with open(fname, "r") as inf:
-            data = json.load(inf, object_hook=self.addSet)
+                raise IOError("Unable to load langtags.json")
 
     def addSet(self, d):
         '''Adds a TagSet to this collection'''
