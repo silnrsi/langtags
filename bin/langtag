@@ -8,10 +8,19 @@ try:
 except NameError:
     unicode = str
 
+def prettyformat(d):
+    res = {}
+    for k, v in d.items():
+        if isinstance(v, list):
+            res[k] = ", ".join(v)
+        else:
+            res[k] = v
+    return res
+
 parser = argparse.ArgumentParser()
 parser.add_argument('names',nargs='*',help='name to look up')
 parser.add_argument('-t','--tag',help='Specifies tag to use')
-parser.add_argument('-v','--verbose',action='store_true',help='Specifies tag to use')
+parser.add_argument('-v','--verbose',action='store_true',help='Output more information')
 parser.add_argument('--langtags',help='langtags.json to use')
 args = parser.parse_args()
 
@@ -34,8 +43,9 @@ if not len(alltags) and args.tag is not None:
     except KeyError:
         pass
 if args.verbose:
-    formatstr = u"{tag!s} = {full!s} {tags!s}, {name!s}, {names!s}"
+    formatstr = u"Tags: {tag!s} = {full!s}, {tags!s}. Names: {name!s}, {names!s}"
 else:
     formatstr = u"{tag!s} = {full!s}\t {name!s}"
     
-print(u"\n".join(formatstr.format(**(t.asdict(format=unicode, tags="", names=""))) for t in sorted(alltags, key=lambda x:str(x))))
+print(u"\n".join(formatstr.format(**(prettyformat(t.asdict(format=unicode, tags="", names=""))))
+        for t in sorted(alltags, key=lambda x:str(x))))
