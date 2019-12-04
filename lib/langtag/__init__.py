@@ -143,7 +143,7 @@ def langtag(s):
                     (extensions if len(extensions) else None))
 
 
-class _LangTags(with_metaclass(_Singleton)):
+class LangTags(with_metaclass(_Singleton)):
     ''' Collection of TagSets searchable from a language tag string.
 
         Attributes:

@@ -38,4 +38,4 @@ if args.verbose:
 else:
     formatstr = u"{tag!s} = {full!s}\t {name!s}"
     
-print(u"\n".join(formatstr.format(**(t.asdict(format=unicode, tags="", names=""))) for t in sorted(alltags)))
+print(u"\n".join(formatstr.format(**(t.asdict(format=unicode, tags="", names=""))) for t in sorted(alltags, key=lambda x:str(x))))

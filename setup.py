@@ -34,6 +34,7 @@ setup(
     packages = ["langtag"],
     package_dir = {'': 'lib'},
     package_data = {'langtag' : ['../../pub/langtags.json']},
+    scripts = ['bin/langtag'],
     license = 'MIT',
     classifiers = [
         "Programming Language :: Python :: 2.7",
