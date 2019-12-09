@@ -238,7 +238,7 @@ for k, v in allmacros.items():
 
     
 names = {}
-prejoratives = {}
+pejoratives = {}
 if args.langindex:
     namef = open(args.langindex, "r")
 else:
@@ -248,11 +248,11 @@ else:
 reader = csv.DictReader(namef, dialect=csv.excel_tab)
 for r in reader:
     if r['CountryID'] == 'ET' and r['NameType'] == 'LA':     # hack fix for buggy Ethnologue data. To Be Reviewed 21/Feb/2019, 2020
-        prejoratives.setdefault(r['LangID']+"-"+r['CountryID'], []).append(r['Name'].lower())
+        pejoratives.setdefault(r['LangID']+"-"+r['CountryID'], []).append(r['Name'].lower())
     elif r['NameType'].startswith("L") and r['CountryID'] and not r['NameType'].endswith("P"):
         names.setdefault(r['LangID']+"-"+r['CountryID'], [[],[]])[0 if r['NameType'] == 'L' else 1].append(r['Name'])
     elif r['NameType'] == 'LP' and r['CountryID']:
-        prejoratives.setdefault(r['LangID']+"-"+r['CountryID'], []).append(r['Name'].lower())
+        pejoratives.setdefault(r['LangID']+"-"+r['CountryID'], []).append(r['Name'].lower())
 namef.close()
 
 collisions = {}
@@ -298,24 +298,6 @@ for t in sorted(set(lts.values())):
     if len(r) > 2:
         n['tags'] = sorted(set(r[1:-1]))
     hassldr = False
-    auto = autonyms.get("{}-{}".format(t.lang, t.script), None)
-    if auto is not None:
-        n['localnames'] = [a.name for a in auto]
-        n['latnnames'] = [a.roman for a in auto]
-        if not any(n['latnnames']):
-            del n['latnnames']
-    for rf in r:
-        tf = find_file(rf, root=args.flatdir)
-        if tf is not None:
-            hassldr = True
-            getnames = [n['full']]
-            if len(r) > 2:
-                getnames.extend(n['tags'])
-            getnames.extend([n['tag'], t.lang])
-            name = getlocalename(tf, getnames)
-            if name is not None and name != "":
-                n['localname'] = name
-
     # n['primary'] = True
     if False and "-" in n['tag']:
         stripx = n['tag'].find("-x-")
@@ -344,6 +326,34 @@ for t in sorted(set(lts.values())):
         x = lts[t.lang]
         if hasattr(x, 'iso639'):
             n['iso639_3'] = x.iso639
+    auto = set()
+    for l in r:
+        x = lt.LangTag(l)
+        if not x.script:
+            continue
+        s = "{}-{}".format(x.lang, x.script)
+        if s in autonyms:
+            auto.update(autonyms[s])
+        if 'iso639_3' in n:
+            s = "{}-{}".format(n['iso639_3'], x.script)
+            if s in autonyms:
+                auto.update(autonyms[s])
+    if len(auto):
+        n['localnames'] = [a.name for a in auto]
+        n['latnnames'] = [a.roman for a in auto]
+        if not any(n['latnnames']):
+            del n['latnnames']
+    for rf in r:
+        tf = find_file(rf, root=args.flatdir)
+        if tf is not None:
+            hassldr = True
+            getnames = [n['full']]
+            if len(r) > 2:
+                getnames.extend(n['tags'])
+            getnames.extend([n['tag'], t.lang])
+            name = getlocalename(tf, getnames)
+            if name is not None and name != "":
+                n['localname'] = name
     n['names'] = []
     regions = set()
     addnames(n, t, alllangreg, names, regions)
@@ -360,7 +370,7 @@ for t in sorted(set(lts.values())):
                 n['names'].extend(ns)
     if 'name' in n:
         n['names'] = sorted(x for x in set(n['names']) - set([n['name']]) if len(x))
-        n['names'] = [x for x in n['names'] if x.lower() not in prejoratives.get(n.get('iso639_3', t.lang)+"-"+t.region, [])]
+        n['names'] = [x for x in n['names'] if x.lower() not in pejoratives.get(n.get('iso639_3', t.lang)+"-"+t.region, [])]
     elif hasattr(t, 'name'):
         n['name'] = t.name[0]
     else:
@@ -402,3 +412,4 @@ with codecs.open(args.outfile, "w", encoding="utf-8") as fh:
 missing = set(names.keys()) - alllangreg
 if len(missing):
     print("Missing language regions ({}): ".format(len(missing)) + " ".join(sorted(missing)))
+

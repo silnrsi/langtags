@@ -2,7 +2,7 @@
 
 import os, re
 import csv, unittest
-import palaso.langtags as lt
+from langtag import langtag
 from palaso.sldr.iana import Iana
 
 bannedchars = range(33, 45) + [47] + range(58, 63) + [94, 96]
@@ -35,7 +35,7 @@ class Basic(unittest.TestCase):
 
     def _allRows(self):
         for r in self.rows:
-            t = lt.LangTag(r['likely_subtag'])
+            t = langtag(r['likely_subtag'])
             if t.lang.startswith("x-"):
                 continue
             yield (r, t)
@@ -43,7 +43,7 @@ class Basic(unittest.TestCase):
     def test_lang(self):
         ''' Tests that all lang subtags are in iana '''
         for r, t in self._allRows():
-            l = lt.LangTag(r['Lang_Id'])
+            l = langtag(r['Lang_Id'])
             if l.lang != t.lang and "-" not in l.lang and "-" not in t.lang:
                 self.fail("{Lang_Id} has different lang to {likely_subtag} ({0} != {1})".format(l.lang, t.lang, **r))
             if t.lang not in self.iana.language and "-" not in t.lang and t.lang not in self.extraLangs:
@@ -75,12 +75,12 @@ class Basic(unittest.TestCase):
     def test_variants(self):
         ''' Test that all variants are in IANA '''
         for r, t in self._allRows():
-            l = lt.LangTag(r['Lang_Id'])
-            if t.variants is None and l.variants is None:
+            l = langtag(r['Lang_Id'])
+            if t.vars is None and l.vars is None:
                 continue
-            if sorted(t.variants) != sorted(l.variants):
+            if sorted(t.vars) != sorted(l.vars):
                 self.fail("{Lang_Id} and {likely_subtag} have different variants".format(**r))
-            for v in t.variants:
+            for v in t.vars:
                 if v not in self.iana.variant:
                     self.fail("{likely_subtag} has bad variant {0}".format(v, **r))
 
@@ -96,15 +96,15 @@ class Basic(unittest.TestCase):
     def test_pua(self):
         ''' Test that anything with -x- in Lang_Id has it in likely_subtag too '''
         for r, t in self._allRows():
-            l = lt.LangTag(r['Lang_Id'])
-            if t.extensions is None and l.extensions is None:
+            l = langtag(r['Lang_Id'])
+            if t.ns is None and l.ns is None:
                 continue
-            if len(t.extensions) == 1 and 'x' in t.extensions and len(t.extensions['x']) == 1:
+            if len(t.ns) == 1 and 'x' in t.ns and len(t.ns['x']) == 1:
                 continue        # allow a private script extension
-            if sorted(t.extensions.keys()) != sorted(l.extensions.keys()):
+            if sorted(t.ns.keys()) != sorted(l.extensions.keys()):
                 self.fail("{Lang_Id} and {likely_subtag} have different extension namespaces".format(**r))
-            for k, v in t.extensions.items():
-                if sorted(v) != sorted(l.extensions[k]):
+            for k, v in t.ns.items():
+                if sorted(v) != sorted(l.ns[k]):
                     self.fail("{Lang_Id} and {likely_subtag} have different extensions in the {0} namespace".format(k, **r))
 
     def test_ascii(self):
@@ -125,7 +125,7 @@ class Basic(unittest.TestCase):
 
     def test_deprecated(self):
         for r, t in self._allRows():
-            l = lt.LangTag(r['Lang_Id'])
+            l = langtag(r['Lang_Id'])
             inf = self.iana.language.get(l.lang, {})
             if 'Deprecated' in inf:
                 if r['deprecated'] == '':

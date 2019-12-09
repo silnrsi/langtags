@@ -1501,7 +1501,7 @@ cle,cle-Latn-MX,"Chinantec, Lealao",MX,,,,,,,,CAM,cle,LE,9-Jan-2018,
 clh,clh-Arab-PK,Chilisso,PK,,,,,1,,,SAS,clh,,,
 cli,cli-Latn-GH,Chakali,GH,,,,,1,,,WAF,cli,LE,12-Jan-2018,
 clj,clj-Latn-MM,"Chin, Laitu",MM,,,,,,,,SEA,clj,NMC,4-Dec-2017,
-clk,clk-Latn-IN,Idu-Mishmi,IN,,,,,,,,EAS SAS,clk,,,
+clk,clk-Latn-IN,Idu-Mishmi,CN IN,,,,,,,,EAS SAS,clk,,,
 cll,cll-Latn-GH,Chala,GH,,,,,1,,,WAF,cll,LE,12-Jan-2018,
 clm,clm-Latn-US,Clallam,US,,,,,1,,,NAM,clm,LE,9-Jan-2018,
 clo,clo-Latn-MX,"Chontal, Lowland Oaxaca",MX,,,,,,,,CAM,clo,LE,9-Jan-2018,
@@ -7733,6 +7733,7 @@ uma,uma-Latn-US,Umatilla,US,,,,,1,,,NAM,uma,LE,9-Jan-2018,
 umb,umb-Latn-AO,Umbundu,AO,,,,,,,,MAF,umb,CLDR,,
 umc,umc-Zyyy-XX,Marrucinian,XX,,,,,,,,???,umc,,,Ancient
 umd,umd-Latn-AU,Umbindhamu,AU,,,,,1,,,ANZ,umd,LE,10-Jan-2018,Extinct
+umg,umg-Qaax-AU,Morrobalama,AU,,,,,,,,ANZ,umg,MH,9-Dec-2019,Extinct
 umi,umi-Latn-MY,Ukit,MY,,,,,1,,,SEA,umi,,,
 umm,umm-Latn-NG,Umon,NG,,,,,,,,WAF,umm,,,
 umn,umn-Latn-MM,"Naga, Makyan",MM,,,,,,,,SEA,umn,NMC,6-Dec-2017,

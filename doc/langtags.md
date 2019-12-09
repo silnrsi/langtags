@@ -4,11 +4,11 @@
 
 Langtags.txt contains a sequence of equivalence sets. Each set consists of a list of language tags separated by `=`. The first tag on the line is the canonical tag and the last tag on the line is the maximal tag. In addition, a tag is prefixed with `*` if there is an entry in the SLDR for that particular tag.
 
-The preferred download location for this file is <https://ldml.api.sil.org/langtags.txt>
+The preferred download location for the text data file is <https://ldml.api.sil.org/langtags.txt>
 
 ## langtags.json
 
-Current API version 1.1.0 Unless otherwise stated all fields were add at v1.0.0. The preferred download location for this file is <https://ldml.api.sil.org/langtags.json>
+Current API version 1.1.0 Unless otherwise stated all fields were add at v1.0.0. The preferred download location for the json data file is <https://ldml.api.sil.org/langtags.json>
 
 Langtags.json consists of an array of objects. Each object corresponds to an equivalence set. The fields in that object are defined as:
 
@@ -53,6 +53,7 @@ There are three specially named (via the **tag** field) objects that occur at th
 - All plural fields store their results as arrays.
 - Empty fields are not stored in the record.
 - The **tag** and the **full** fields are not stable and may change between versions of the data file. But they will always appear somewhere in the equivalence set. In effect the equivalence set is stable in terms of once something is in it, it is not removed (unless there is an actual fault).
+- A tagset may have an empy **localname** while still having a non empty **localnames**. Likewise the same name may occur as both **localname** and in **localnames**.
 
 ### Variants field
 

@@ -193,7 +193,7 @@ class LangTags(with_metaclass(_Singleton)):
         elif t != "":
             s = TagSet(**d)
             for l in s.allTags():
-                self._tags[str(l)] = s
+                self._tags[str(l).lower()] = s
 
     def values(self):
         '''Return a list of all the tagsets in this LangTags'''
@@ -216,8 +216,10 @@ class LangTags(with_metaclass(_Singleton)):
     def get(self, s, default=None):
         '''Looks up a langtag string returning a TagSet or returns default [None].'''
         if s in self._tags:
-            return self._tags[s]
+            return self._tags[str(s).lower()]
         l = langtag(s)
+        if l.lang is None:
+            return default
         if l.vars is not None:
             gvar = self._info.get('globalvar', {}).get('variants', [])
             res = self._getwithvars(l, gvar)
@@ -257,7 +259,7 @@ def lookup(lt, fname=None, matchRegions=False, **kw):
                             to a TagSet if the region is in the list of extra
                             regions in the TagSet. Default, false, is to only
                             match against the explicit tags in the tagset.'''
-    lts = _LangTags(fname=fname, **kw)
+    lts = LangTags(fname=fname, **kw)
     if matchRegions:
         lts.matchRegions = matchRegions
     return lts[str(lt)]
@@ -289,7 +291,7 @@ class TagSet:
 
     def __str__(self):
         '''Returns tag as a str'''
-        return str(self.tag or self.full)
+        return str(self._full())
 
     def __repr__(self):
         return str(self.__class__.__name__)+"(" + ", ".join('{}="{}"'.format(k, " ".join(str(x) for x in v) if isinstance(v, list) else v) for k, v in self.asdict().items()) + ")"
@@ -331,6 +333,14 @@ class TagSet:
         '''Returns the iso639-3 of the language for the tagset, whether or not
             specified in the json file.'''
         return getattr(self, "_iso639_3", self.lang)
+
+    def asSldr(self):
+        ''' Returns what an SLDR filename would be for this langtag. Working around
+            Microsoft filename problems.'''
+        res = str(self.tag).replace("-", "_")
+        if res in ('aux', 'com', 'con', 'nul', 'prn'):
+            res += "_" + self.full.script.title()
+        return res + ".xml"
 
     def __cmp__(self, other):
         return cmp(str(self), str(other))
@@ -386,9 +396,12 @@ class TagSet:
         '''Returns a list of all the LangTags in this set, as LangTag objects.
             Not necessarily every tag that matches is included. But all the
             tags excluding those with regions in the .regions list of extra
-            regions matched by this TagSet.'''
+            regions matched by this TagSet. This includes ISO639-3 equivalents.'''
         res = [self.tag, self.full]
         res.extend(self.tags)
+        i639 = getattr(self, '_iso639_3', self.tag.lang)
+        if i639 != self.tag.lang:
+            res.extend([l._replace(lang=i639) for l in res])
         return res
 
     def _make_variant(self, vs):
