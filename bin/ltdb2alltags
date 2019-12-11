@@ -279,6 +279,9 @@ res.append({'tag': "_version", 'api': '1.1.0', 'date': str(datetime.date.today()
 for t in sorted(set(lts.values())):
     if t.skip:
         continue
+    if t.region is None:
+        print("Missing Region for {}".format(str(t)))
+        continue
     r = t.allforms()
     if not len(r[0]):
         continue
@@ -339,8 +342,9 @@ for t in sorted(set(lts.values())):
             if s in autonyms:
                 auto.update(autonyms[s])
     if len(auto):
-        n['localnames'] = [a.name for a in auto]
-        n['latnnames'] = [a.roman for a in auto]
+        lauto = sorted(auto)
+        n['localnames'] = [a.name for a in lauto]
+        n['latnnames'] = [a.roman for a in lauto]
         if not any(n['latnnames']):
             del n['latnnames']
     for rf in r:

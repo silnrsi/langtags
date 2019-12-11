@@ -77,8 +77,10 @@ class CachedFile:
 
     def get_latest(self):
         ctime = self._get_ctime()
-        if self.url is not None:
-            get_newurl(self.url, ctime, self.cname)
+        if self.url and get_newurl(self.url, ctime, self.cname):
+            pass
+        elif self.srcdir and os.path.getmtime(os.path.join(self.srcdir, self.filename)) > ctime:
+            shutil.copy2(os.path.join(self.srcdir, self.filename), self.cname)
         return self.cname
 
 if __name__ == '__main__':
