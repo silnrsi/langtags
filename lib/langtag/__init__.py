@@ -213,10 +213,11 @@ class LangTags(with_metaclass(_Singleton)):
                 return tsv
         return None
 
-    def get(self, s, default=None):
+    def get(self, ltname, default=None):
         '''Looks up a langtag string returning a TagSet or returns default [None].'''
+        s = str(ltname).lower()
         if s in self._tags:
-            return self._tags[str(s).lower()]
+            return self._tags[s]
         l = langtag(s)
         if l.lang is None:
             return default
