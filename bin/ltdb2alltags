@@ -8,6 +8,7 @@ import csv, codecs
 import urllib.request as urllib2
 from palaso.unicode.ucd import UCD
 from collections import namedtuple
+from multiprocessing import Pool
 
 try: unicode
 except NameError:
@@ -101,19 +102,21 @@ def process_cldrentry(s, lts, allentries, root='.'):
         lts.add(l)
     return l
 
-def addnames(n, b, alllangrefs, names, regions):
+def addnames(n, b, names, regions):
+    alllrefs = set()
     regionlist = [b.region] + sorted(list(set(r for r in getattr(b, 'regions', []) if r != b.region)))
     for reg in regionlist:
         if reg is not None:
             regions.add(reg)
         lname = "{}-{}".format(getattr(b, 'iso639', b.lang), reg)
-        alllangreg.add(lname)
+        alllrefs.add(lname)
         if lname in names:
             if 'name' in n:
                 n['names'].append(names[lname][0][0])
             else:
                 n['name'] = names[lname][0][0]
             n['names'].extend(names[lname][1])
+    return alllrefs
 
 def get_regionnames():
     res = {}
@@ -149,6 +152,8 @@ parser.add_argument('-i','--indir', default='.', help='Directory containing sldr
 parser.add_argument('-p','--operators',action="store_true",default=False,help="Output complex operators")
 parser.add_argument('-L','--langindex',help="Use local LanguageInfo.tab")
 parser.add_argument('-a','--autonyms',help="CSV of Autonyms from Ethnologue")
+parser.add_argument('-q','--quiet',action='store_false',default=True,help='Be noisy')
+parser.add_argument('-j','--jobs',type=int,default=0,help='Number of parallel jobs to run, 0 = number of processors')
 args = parser.parse_args()
 
 lts = lt.LangTags(noalltags=True)
@@ -163,6 +168,8 @@ regionnames = get_regionnames()
 lts.clear()
 allentries = {}
 allmacros = {}
+if not args.quiet:
+    print("Reading CSV")
 with open(args.infile) as csvfile :
     reader = csv.DictReader(csvfile)
     for row in reader :
@@ -187,6 +194,10 @@ with open(args.infile) as csvfile :
         if b.region is None :
             t.hideregion = True
         t.hideboth |= (t.hideregion and t.hidescript)
+        if b.variants is None and t.variants is not None:
+            t.hidevariants = t.variants[:]
+        if b.extensions is None and t.extensions is not None:
+            t.hideextensions = {k: v[:] for k, v in t.extensions.items()}
         if t.lang in deprecated:
             t.deprecated = deprecated[t.lang]
         t.regions = row['regions'].split()
@@ -207,6 +218,8 @@ with open(args.infile) as csvfile :
         t.extra_variants = variants
         t.rod = rod
 
+if not args.quiet:
+    print("Reading sldr")
 for l in os.listdir(args.indir) :
     if l.endswith('.xml') :
         if 1 < len(l.split('_', 1)[0]) < 4 :
@@ -272,19 +285,15 @@ if args.autonyms:
 else:
     autonyms = {}
 
-# special record for passing standard variants
-res.append({'tag': '_globalvar', 'variants': ['simple']})
-res.append({'tag': "_phonvar", 'variants': ['alalc97', 'fonipa', 'fonkirsh', 'fonnapa', 'fonupa', 'fonxsamp']})
-res.append({'tag': "_version", 'api': '1.1.0', 'date': str(datetime.date.today())})
-for t in sorted(set(lts.values())):
+def make_record(t):
     if t.skip:
-        continue
+        return None
     if t.region is None:
         print("Missing Region for {}".format(str(t)))
-        continue
+        return None
     r = t.allforms()
     if not len(r[0]):
-        continue
+        return None
     if hasattr(t, 'primary'):
         r = [t.primary] + [x for x in r if x != t.primary]
     if t.hideregion and not t.hidescript:
@@ -360,9 +369,9 @@ for t in sorted(set(lts.values())):
                 n['localname'] = name
     n['names'] = []
     regions = set()
-    addnames(n, t, alllangreg, names, regions)
+    alllrefs = addnames(n, t, names, regions)
     for b in t.base:
-        addnames(n, b, alllangreg, names, regions)
+        alllrefs.update(addnames(n, b, names, regions))
     if t.lang in iananames:
         extlang = "-".join([t.lang] + t._extensions())
         ns = iananames.get(extlang, getattr(t, 'name', iananames[t.lang]))[:]
@@ -396,7 +405,6 @@ for t in sorted(set(lts.values())):
         n['variants'] = t.extra_variants.split()
     if getattr(t, 'rod', ""):
         n['rod'] = t.rod
-    res.append(n)
     if n['tag'] in collisions:
         print("Multiple entries for: {} = {}, {}".format(n['tag'], n['full'], collisions[n['tag']]))
     else:
@@ -404,10 +412,33 @@ for t in sorted(set(lts.values())):
     for k, v in n.items():
         if v is None:
             print("Null entry for {} in {}".format(k, n['tag']))
+    return n, alllrefs
+
+if not args.quiet:
+    print("Making records")
+# special record for passing standard variants
+res.append({'tag': '_globalvar', 'variants': ['simple']})
+res.append({'tag': "_phonvar", 'variants': ['alalc97', 'fonipa', 'fonkirsh', 'fonnapa', 'fonupa', 'fonxsamp']})
+res.append({'tag': "_version", 'api': '1.1.0', 'date': str(datetime.date.today())})
+if args.jobs == 1:
+    for t in sorted(set(lts.values())):
+        r = make_record(t)
+        if r is not None:
+            res.append(r[0])
+            alllangreg.update(r[1])
+else:
+    pool = Pool(processes=args.jobs) if args.jobs else Pool()
+    tempres = pool.imap_unordered(make_record, sorted(set(lts.values())))
+    for r in sorted(tempres, key=lambda t:t[0]['full'] if t is not None else ""):
+        if r is not None:
+            res.append(r[0])
+            alllangreg.update(r[1])
 
 def mergelines(m):
     return "[" + " ".join(x.strip() for x in m.group(1).split("\n")) + "]"
 
+if not args.quiet:
+    print("Output results")
 output = json.dumps(sorted(res, key=lambda x:x['tag']), sort_keys=True, indent=4, ensure_ascii=False)
 output = "[" + re.sub(r'\[([^\]]+)\]', mergelines, output[1:-1]) + "]\n"
 with codecs.open(args.outfile, "w", encoding="utf-8") as fh:

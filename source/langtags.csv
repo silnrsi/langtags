@@ -1806,7 +1806,7 @@ dgh,dgh-Latn-NG,Dghwede,NG,,,04427,,,,,WAF,dgh,,,
 dgi,dgi-Latn-BF,"Dagara, Northern",BF,,,02252 05009 20799,,,,,WAF,dgi,,,
 dgk,dgk-Latn-CF,Dagba,CF TD,,,,,,,,MAF,dgk,jb,,
 dgl-Arab,dgl-Arab-SD,Andaandi,SD,,,,,,,,NAF,dgl,,,
-dgl-Copt,dgl-Copt-SD,Andaandi,SD,,,,,,,,NAF,dgl,,,x-oldnubian
+dgl-Copt,dgl-Copt-SD-x-oldnubian,Andaandi,SD,,,,,,,,NAF,dgl,,,
 dgl-Latn,dgl-Latn-SD,Andaandi,SD,,,,,,,,NAF,dgl,,,
 dgn,dgn-Latn-AU,Dagoman,AU,,,,,1,,,ANZ,dgn,LE,10-Jan-2018,Extinct
 dgo,dgo-Arab-IN,Dogri,IN,,,,doi,,1,,SAS,dgo,CLDR,23-Mar-2018,via macro mapping
@@ -2225,7 +2225,7 @@ fgr,fgr-Latn-TD,Fongoro,TD,,,,,1,,,MAF,fgr,,,
 fi,fi-Latn-FI,Finnish,AX CA DE EE FI NO RU SE US,,,,,,,,EEU NAM NEU WEU,fin,CLDR,,
 fi-Brai,fi-Brai-FI,Finnish,CA DE EE FI NO RU SE US,,,,,,,,EEU NAM NEU WEU,fin,,,
 fia,fia-Arab-SD,Nobiin,EG SD,,,15030,,,,,NAF,fia,CLDR,,
-fia-Copt,fia-Copt-SD,Nobiin,EG SD,,,15030,,,,,NAF,fia,,,x-oldnubian
+fia-Copt,fia-Copt-SD-x-oldnubian,Nobiin,EG SD,,,15030,,,,,NAF,fia,,,
 fia-Latn,fia-Latn-SD,Nobiin,EG SD,,,15030,,,,,NAF,fia,,,
 fie,fie-Latn-NG,Fyer,NG,,,,,1,,,WAF,fie,,,
 fil,fil-Latn-PH,Filipino,PH,,,,,,,,SEA,fil,CLDR,,
@@ -3291,7 +3291,7 @@ kbb,kbb-Latn-BR,Kaxuiâna,BR,,,,,1,,,SAM,kbb,LE,10-Jan-2018,Extinct
 kbc,kbc-Latn-BR,Kadiwéu,BR,,,,,,,,SAM,kbc,LE,9-Jan-2018,
 kbd,kbd-Cyrl-RU,Kabardian,DE JO RU SY TR US,,,,,,,,EEU NAM WAS WEU,kbd,CLDR,,
 kbe,kbe-Latn-AU,Kanju,AU,,,03598,,1,,,ANZ,kbe,LE,10-Jan-2018,
-kbg-Tibt,kbg-Tibt-IN,Khamba,IN,,,,,,,,SAS,kbg,,,x-hingna
+kbg-Tibt,kbg-Tibt-IN-x-hingna,Khamba,IN,,,,,,,,SAS,kbg,,,
 kbh,kbh-Latn-CO,Camsá,CO,,,,,,,,SAM,kbh,LE,9-Jan-2018,
 kbi,kbi-Latn-ID,Kaptiau,ID,,,,,1,,,SEA,kbi,,,
 kbj,kbj-Latn-CD,Kari,CD,,,01211 03184,,1,,,MAF,kbj,,,
@@ -3542,7 +3542,7 @@ kju,kju-Latn-US,Kashaya,US,,,,,1,,,NAM,kju,LE,9-Jan-2018,
 kjv,kjv-Latn-001,Kaikavian Literary Language,AT HR HU SI,,,,,,,,EEU SEU WEU,kjv,,,Historical
 kjx,kjx-Latn-PG,Ramopa,PG,,,,,,,,MEL,kjx,LE,10-Jan-2018,
 kjy,kjy-Latn-PG,Erave,PG,,,,,,,,MEL,kjy,LE,10-Jan-2018,
-kjz-Tibt,kjz-Tibt-BT,Bumthangkha,BT,,,,,,,,SAS,kjz,,,x-uchen
+kjz-Tibt,kjz-Tibt-BT-x-uchen,Bumthangkha,BT,,,,,,,,SAS,kjz,,,
 kk,kk-Cyrl-KZ,Kazakh,CN DE IR KG KZ MN RU TJ TM TR UA US UZ,,,,,,,,CAS EAS EEU NAM SAS WAS WEU,kaz,CLDR,,
 kk-AF,kk-Arab-AF,Kazakh,AF,,,,,,,,???,kaz,CLDR,,
 kk-Arab,kk-Arab-CN,Kazakh,CN DE IR KG KZ MN RU TJ TM TR UA US UZ,,,,,,,,CAS EAS EEU NAM SAS WAS WEU,kaz,CLDR,,
@@ -4978,7 +4978,7 @@ muz-Latn,muz-Latn-ET,Mursi,ET,,,,,,,,EAF,muz,,,
 mva,mva-Latn-PG,Manam,PG,,,,,,,,MEL,mva,LE,10-Jan-2018,
 mvb,mvb-Zyyy-US,Mattole,US,,,,,1,,,NAM,mvb,LE,10-Jan-2018,Extinct
 mvd,mvd-Latn-ID,Mamboru,ID,,,,,1,,,SEA,mvd,,,
-mve-Arab,mve-Arab-PK,Marwari,PK,,,13794 13795 13796 20548 20750 20751,,,,,SAS,mve,,,x-Sindhi
+mve-Arab,mve-Arab-PK-x-Sindhi,Marwari,PK,,,13794 13795 13796 20548 20750 20751,,,,,SAS,mve,,,
 mve-Arab-x-Urdu,mve-Arab-PK-x-Urdu,Marwari,PK,,,13794 13795 13796 20548 20750 20751,,,,,SAS,mve,,,
 mvf,mvf-Mong-CN,"Mongolian, Peripheral",CN MN,,,04947 06221 06222 06223,,,,,EAS,mvf,,,
 mvf-Phag,mvf-Phag-CN,"Mongolian, Peripheral",CN MN,,,04947 06221 06222 06223,,,1,,EAS,mvf,,,
@@ -8292,7 +8292,7 @@ xkb,xkb-Latn-BJ,"Nago, Northern",BJ TG,,,,,1,,,WAF,xkb,,,
 xkc,xkc-Zyyy-IR,Kho'ini,IR,,,,,,,,SAS,xkc,,,
 xkd,xkd-Latn-ID,"Kayan, Mendalam",ID,,,,,,,,SEA,xkd,,20-Apr-2018,
 xke,xke-Latn-ID,Kereho,ID,,,,,1,,,SEA,xke,,,
-xkf-Tibt,xkf-Tibt-BT,Khengkha,BT,,,,,,,,SAS,xkf,,,x-uchen
+xkf-Tibt,xkf-Tibt-BT-x-uchen,Khengkha,BT,,,,,,,,SAS,xkf,,,
 xkg,xkg-Latn-ML,Kagoro,ML,,,,,1,,,WAF,xkg,,,
 xkh,xkh-Latn-BR,Karahawyana,BR GY SR,,,,waw,,,waw,SAM,waw,LE,9-Jan-2018,
 xki,xki-Zxxx-KE,Kenyan Sign Language,KE,,,,,,,,EAF,xki,,,
@@ -8366,7 +8366,7 @@ xnt,xnt-Zyyy-US,Narragansett,US,,,,,1,,,NAM,xnt,LE,10-Jan-2018,Extinct
 xnu,xnu-Latn-AU,Nukunul,AU,,,,,1,,,ANZ,xnu,LE,10-Jan-2018,Extinct
 xny,xny-Latn-AU,Nyiyaparli,AU,,,,,1,,,ANZ,xny,LE,10-Jan-2018,
 xnz-Arab,xnz-Arab-EG,Mattokki,EG,,,,,,,,NAF,xnz,,,
-xnz-Copt,xnz-Copt-EG,Mattokki,EG,,,,,,,,NAF,xnz,,,-x-oldnubian
+xnz-Copt,xnz-Copt-EG-x-oldnubian,Mattokki,EG,,,,,,,,NAF,xnz,,,
 xnz-Latn,xnz-Latn-EG,Mattokki,EG,,,,,,,,NAF,xnz,,,
 xoc,xoc-Latn-NG,O'chi'chi',NG,,,,,1,,,WAF,xoc,LE,10-Jan-2018,Extinct
 xod,xod-Latn-ID,Kokoda,ID,,,01733,,1,,,SEA,xod,,,
