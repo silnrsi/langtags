@@ -6270,7 +6270,10 @@ qxs,qxs-Zyyy-CN,"Qiang, Southern",CN,,,04835 06075,,,,,EAS,qxs,,,
 qxt,qxt-Latn-PE,"Quechua, Santa Ana de Tusi Pasco",PE,,,,,1,,,SAM,qxt,LE,9-Jan-2018,
 qxu,qxu-Latn-PE,"Quechua, Arequipa-La Unión",PE,,,,,,,,SAM,qxu,LE,9-Jan-2018,
 qxw,qxw-Latn-PE,"Quechua, Jauja Wanca",PE,,,,,1,,,SAM,qxw,LE,9-Jan-2018,
-qya,qya-Zyyy-001,Quenya,001,,,,,,,,???,qya,,,Constructed
+qya-Teng,qya-Teng-001,Quenya,001,,,,,,,,???,qya,,,Constructed
+qya,qya-Latn-001,Quenya,001,,,,,,,,???,qya,,,
+qya-Sara,qya-Sara-001,Quenya,001,,,,,,,,???,qya,,,
+qya-Cirt,qya-Cirt-001,Quenya,001,,,,,,,,???,qya,,,
 qyp,qyp-Zyyy-US,Quiripi,US,,,,,1,,,NAM,qyp,LE,10-Jan-2018,Extinct
 raa,raa-Deva-NP,Dungmali,NP,,,,,,,,SAS,raa,,,
 rab,rab-Deva-NP,Chamling,IN NP,,,,,,,,SAS,rab,,,
@@ -7355,7 +7358,8 @@ tlc,tlc-Latn-MX,"Totonac, Yecuatla",MX,,,,,1,,,CAM,tlc,LE,9-Jan-2018,
 tld,tld-Latn-ID,Talaud,ID,,,,,,,,SEA,tld,,20-Apr-2018,
 tlf,tlf-Latn-PG,Telefol,PG,,,,,,,,MEL,tlf,LE,10-Jan-2018,
 tlg,tlg-Latn-ID,Tofanma,ID,,,,,1,,,SEA,tlg,,,
-tlh,tlh-Zyyy-001,Klingon,001,,,,,,,,???,tlh,,,Constructed
+tlh,tlh-Piqd-001,Klingon,001,,,,,,,,???,tlh,,,Constructed
+tlh-Latn,tlh-Latn-001,Klingon,001,,,,,,,,???,tlh,,,
 tli-Cyrl,tli-Cyrl-US,Tlingit,CA US,,,,,,,,NAM,tli,,,
 tli,tli-Latn-US,Tlingit,CA US,,,,,,,,NAM,tli,,,
 tlj,tlj-Latn-UG,Talinga-Bwisi,CD UG,,,,,,,,EAF MAF,tlj,LE,12-Jan-2018,
