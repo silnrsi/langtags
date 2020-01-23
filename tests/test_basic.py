@@ -5,7 +5,7 @@ import csv, unittest
 from langtag import langtag
 from palaso.sldr.iana import Iana
 
-bannedchars = range(33, 45) + [47] + range(58, 63) + [94, 96]
+bannedchars = list(range(33, 45)) + [47] + list(range(58, 63)) + [94, 96]
 def nonascii(s):
     cs = [ord(x) for x in s]
     if any(not (32 <= x < 123) or x in bannedchars for x in cs):

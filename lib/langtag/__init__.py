@@ -41,6 +41,11 @@ try:
 except ModuleNotFoundError:
     from .cachingurl import CachedFile
 
+try:
+    FileNotFoundError
+except NameError:
+    FileNotFoundError = IOError
+
 class _Singleton(type):
     '''Manage singletons by fname parameter'''
     _instances = {}
@@ -153,9 +158,10 @@ class LangTags(with_metaclass(_Singleton)):
 
     matchRegions = False
 
-    def __init__(self, fname=None, useurl=None, cachedprefix=""):
+    def __init__(self, fname=None, useurl=None, cachedprefix="", **kw):
         '''fname is an optional langtags.json file'''
         self._tags = {}
+        self._iso639s = {}
         self._info = {}
         if fname is None:
             inf = None
@@ -163,8 +169,6 @@ class LangTags(with_metaclass(_Singleton)):
                 import pkg_resources
                 inf = pkg_resources.resource_stream("langtag", "langtags.json")
             except ImportError:
-                pass
-            except pkg_resources.ResolutionError:
                 pass
             except FileNotFoundError:
                 pass
@@ -194,50 +198,63 @@ class LangTags(with_metaclass(_Singleton)):
             s = TagSet(**d)
             for l in s.allTags():
                 self._tags[str(l).lower()] = s
+            if 'iso639_3' in d:
+                for l in s.allTags():
+                    ll = l._replace(lang=d['iso639_3'])
+                    self._iso639s[str(ll).lower()] = s
 
     def values(self):
         '''Return a list of all the tagsets in this LangTags'''
         return self._tags.values()
 
-    def _getwithvars(self, l, vs):
+    def _getwithvars(self, l, vs, use639=False):
         '''Given a langtag and list of variants, create a new tagset corresponding
             to the variant list if not already covered by this tagset'''
         t = [v for v in l.vars if v not in vs]
         if len(t) != len(vs):
             lv = l._replace(vars=t)
             res = self._tags.get(str(lv), None)
+            from639 = False
+            if use639 and res is None:
+                res = self._iso639s.get(str(lv), None)
+                from639 = True
             if res is not None:
                 tsv = res._make_variant([v for v in l.vars if v in vs])
                 for l in tsv.allTags():
-                    self._tags[l] = tsv
+                    if from639:
+                        self._iso639s[l] = tsv
+                    else:
+                        self._tags[l] = tsv
                 return tsv
         return None
 
-    def get(self, ltname, default=None):
+    def get(self, ltname, default=None, use639=False, **kw):
         '''Looks up a langtag string returning a TagSet or returns default [None].'''
         s = str(ltname).lower()
         if s in self._tags:
             return self._tags[s]
+        if use639 and s in self._iso639s:
+            return self._iso639s[s]
         l = langtag(s)
         if l.lang is None:
             return default
         if l.vars is not None:
             gvar = self._info.get('globalvar', {}).get('variants', [])
-            res = self._getwithvars(l, gvar)
+            res = self._getwithvars(l, gvar, use639=use639)
             if res is not None:
                 return res
             if l.script is None or l.script == "Latn":
                 pvar = self._info.get('phonvar', {}).get('variants', [])
-                res = self._getwithvars(l, pvar)
+                res = self._getwithvars(l, pvar, use639=use639)
                 if res is not None:
                     return res
                 if pvar and gvar:
-                    res = self._getwithvars(l, pvar + gvar)
+                    res = self._getwithvars(l, pvar + gvar, use639=use639)
                     if res is not None:
                         return res
         if self.matchRegions and l.region is not None:
             lr = l._replace(region = None)
-            res = self[str(lr)]
+            res = self.get(str(lr), None, use639=use639)
             if res is not None:
                 if l.region in res.regions:
                     return res
@@ -252,18 +269,21 @@ class LangTags(with_metaclass(_Singleton)):
 
 def lookup(lt, fname=None, matchRegions=False, **kw):
     ''' Looks up a language tag by name in a language tags database. Returns a
-        TagSet() containing the given language tag. Raises a KeyError if a
-        TagSet cannot be found.
+        TagSet() containing the given language tag.
         Parameters:
             fname:          A specific language tags json databse to load
             matchRegions:   If True, lookup will match a language tag with a region
                             to a TagSet if the region is in the list of extra
                             regions in the TagSet. Default, false, is to only
-                            match against the explicit tags in the tagset.'''
+                            match against the explicit tags in the tagset.
+            default         Default value to return, if None raise KeyError on fail
+            use639          If True, also match against iso639-3 codes not in BCP47.'''
     lts = LangTags(fname=fname, **kw)
-    if matchRegions:
-        lts.matchRegions = matchRegions
-    return lts[str(lt)]
+    lts.matchRegions = matchRegions
+    res = lts.get(str(lt), **kw)
+    if res is None:
+        raise KeyError(lt)
+    return res
 
 
 class TagSet:

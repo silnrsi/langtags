@@ -6319,7 +6319,10 @@ qxs = qxs-CN = qxs-Zyyy = qxs-Zyyy-CN
 qxt = qxt-Latn = qxt-PE = qxt-Latn-PE
 qxu = qxu-Latn = qxu-PE = qxu-Latn-PE
 qxw = qxw-Latn = qxw-PE = qxw-Latn-PE
-qya = qya-001 = qya-Zyyy = qya-Zyyy-001
+qya = qya-001 = qya-Latn = qya-Latn-001
+qya-Cirt = qya-Cirt-001
+qya-Sara = qya-Sara-001
+qya-Teng = qya-Teng-001
 qyp = qyp-US = qyp-Zyyy = qyp-Zyyy-US
 raa = raa-Deva = raa-NP = raa-Deva-NP
 rab = rab-Deva = rab-NP = rab-Deva-NP
@@ -7416,7 +7419,8 @@ tlc = tlc-Latn = tlc-MX = tlc-Latn-MX
 tld = tld-ID = tld-Latn = tld-Latn-ID
 *tlf = tlf-Latn = tlf-PG = tlf-Latn-PG
 tlg = tlg-ID = tlg-Latn = tlg-Latn-ID
-tlh = tlh-001 = tlh-Zyyy = tlh-Zyyy-001
+tlh = tlh-001 = tlh-Piqd = tlh-Piqd-001
+tlh-Latn = tlh-Latn-001
 tli = tli-Latn = tli-US = tli-Latn-US
 tli-Cyrl = tli-Cyrl-US
 *tlj = tlj-Latn = tlj-UG = tlj-Latn-UG

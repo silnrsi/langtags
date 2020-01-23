@@ -9,7 +9,7 @@
     },
     {
         "api": "1.1.0",
-        "date": "2019-12-12",
+        "date": "2020-01-23",
         "tag": "_version"
     },
     {
@@ -1580,6 +1580,7 @@
         "full": "aeb-Latn-TN",
         "iana": "Tunisian Arabic",
         "iso639_3": "aeb",
+        "localname": "Arabic, Tunisian Spoken",
         "localnames": [ "Derja" ],
         "name": "Arabic, Tunisian Spoken",
         "names": [ "Derja", "Tunisian", "Tunisian Arabic", "Tunisian Darija" ],
@@ -26896,6 +26897,7 @@
         "full": "dwr-Ethi-ET",
         "iana": "Dawro",
         "iso639_3": "dwr",
+        "localname": "Dawro",
         "name": "Dawro",
         "nophonvars": true,
         "region": "ET",
@@ -31041,7 +31043,7 @@
         "names": [ "Fulah", "Fulani", "Fulbe Jeeri", "Fulfulde Pulaar", "Fulfulde-Pulaar", "Haalpulaar", "Peuhl", "Peul", "Peulh", "Pulaar Fulfulde", "Pël" ],
         "region": "SN",
         "regionname": "Senegal",
-        "regions": [ "BJ", "CM", "GW", "ML", "NE", "TD" ],
+        "regions": [ "BF", "BJ", "CM", "GW", "ML", "NE", "TD" ],
         "script": "Latn",
         "sldr": false,
         "tag": "ff",
@@ -32386,6 +32388,7 @@
         "full": "fuf-Arab-GN",
         "iana": "Pular",
         "iso639_3": "fuf",
+        "localname": "Pular",
         "name": "Pular",
         "names": [ "Foula Fouta", "Fouta Djallon", "Fouta Dyalon", "Fula", "Fulbe", "Fulfulde Jalon", "Fullo Fuuta", "Futa", "Futa Fula", "Futa Jallon", "Fuuta Jalon", "Jalon", "Poular" ],
         "nophonvars": true,
@@ -41507,7 +41510,6 @@
         "full": "ik-Latn-US",
         "iana": "Inupiaq",
         "iso639_3": "ipk",
-        "localname": "Inupiatun, Northwest Alaska",
         "name": "Inupiatun, Northwest Alaska",
         "names": [ "Eskimo", "Inupiaq", "Inupiatun", "Northwest Alaska Inupiat", "Seward Peninsula Inupiaq" ],
         "region": "US",
@@ -52604,6 +52606,7 @@
     {
         "full": "ku-Arab-TR",
         "iana": "Kurdish",
+        "localname": "kurdî",
         "name": "Kurdish, Northern",
         "names": [ "Badinani", "Badînî", "Bahdini", "Behdînî", "Eastern Kurmanji", "Kermancî", "Khorasani", "Khorasani Kurmanji", "Kirmanciya Jori", "Kirmancî", "Kordi", "Kordi Kormanji", "Kurdi", "Kurdish", "Kurdish Kurmanji", "Kurdiya jorîn", "Kurdmancî", "Kurdî", "Kurdî-Kurmancî", "Kurmancî", "Kurmanji", "Kurmanji Kurdish", "Kurmanjî", "Red Kurmanji" ],
         "region": "TR",
@@ -64806,6 +64809,7 @@
         "full": "mn-Mong-CN",
         "iana": "Mongolian",
         "iso639_3": "mon",
+        "localname": "монгол",
         "name": "Mongolian",
         "region": "CN",
         "regionname": "China",
@@ -75635,7 +75639,7 @@
         "names": [ "Naadh", "Naath" ],
         "region": "SS",
         "regionname": "South Sudan",
-        "regions": [ "ET" ],
+        "regions": [ "ET", "SD" ],
         "script": "Latn",
         "sldr": false,
         "tag": "nus",
@@ -84820,16 +84824,52 @@
         "tags": [ "qxw-Latn", "qxw-PE" ]
     },
     {
-        "full": "qya-Zyyy-001",
+        "full": "qya-Latn-001",
         "iana": "Quenya",
         "iso639_3": "qya",
         "name": "Quenya",
         "region": "001",
         "regionname": "World",
-        "script": "Zyyy",
+        "script": "Latn",
         "sldr": false,
         "tag": "qya",
-        "tags": [ "qya-001", "qya-Zyyy" ]
+        "tags": [ "qya-001", "qya-Latn" ]
+    },
+    {
+        "full": "qya-Cirt-001",
+        "iana": "Quenya",
+        "iso639_3": "qya",
+        "name": "Quenya",
+        "nophonvars": true,
+        "region": "001",
+        "regionname": "World",
+        "script": "Cirt",
+        "sldr": false,
+        "tag": "qya-Cirt"
+    },
+    {
+        "full": "qya-Sara-001",
+        "iana": "Quenya",
+        "iso639_3": "qya",
+        "name": "Quenya",
+        "nophonvars": true,
+        "region": "001",
+        "regionname": "World",
+        "script": "Sara",
+        "sldr": false,
+        "tag": "qya-Sara"
+    },
+    {
+        "full": "qya-Teng-001",
+        "iana": "Quenya",
+        "iso639_3": "qya",
+        "name": "Quenya",
+        "nophonvars": true,
+        "region": "001",
+        "regionname": "World",
+        "script": "Teng",
+        "sldr": false,
+        "tag": "qya-Teng"
     },
     {
         "full": "qyp-Zyyy-US",
@@ -99578,17 +99618,29 @@
         "tags": [ "tlg-ID", "tlg-Latn" ]
     },
     {
-        "full": "tlh-Zyyy-001",
+        "full": "tlh-Piqd-001",
         "iana": [ "tlhIngan Hol" ],
         "iso639_3": "tlh",
         "name": "Klingon",
         "names": [ "tlhIngan Hol" ],
         "region": "001",
         "regionname": "World",
-        "script": "Zyyy",
+        "script": "Piqd",
         "sldr": false,
         "tag": "tlh",
-        "tags": [ "tlh-001", "tlh-Zyyy" ]
+        "tags": [ "tlh-001", "tlh-Piqd" ]
+    },
+    {
+        "full": "tlh-Latn-001",
+        "iana": [ "tlhIngan Hol" ],
+        "iso639_3": "tlh",
+        "name": "Klingon",
+        "names": [ "tlhIngan Hol" ],
+        "region": "001",
+        "regionname": "World",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "tlh-Latn"
     },
     {
         "full": "tli-Latn-US",
@@ -107385,6 +107437,7 @@
         "full": "wal-Latn-ET",
         "iana": [ "Wolaytta", "Wolaitta" ],
         "iso639_3": "wal",
+        "localname": "ወላይታቱ",
         "localnames": [ "Wolaytta" ],
         "name": "Wolaytta",
         "region": "ET",
