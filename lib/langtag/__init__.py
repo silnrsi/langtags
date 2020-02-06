@@ -35,6 +35,7 @@ l = langtag('en-Latn')
 import json, os, site
 from six import with_metaclass
 from collections import namedtuple
+from copy import deepcopy
 
 try:
     from cachingurl import CachedFile
@@ -213,10 +214,10 @@ class LangTags(with_metaclass(_Singleton)):
         t = [v for v in l.vars if v not in vs]
         if len(t) != len(vs):
             lv = l._replace(vars=t)
-            res = self._tags.get(str(lv), None)
+            res = self._tags.get(str(lv).lower(), None)
             from639 = False
             if use639 and res is None:
-                res = self._iso639s.get(str(lv), None)
+                res = self._iso639s.get(str(lv).lower(), None)
                 from639 = True
             if res is not None:
                 tsv = res._make_variant([v for v in l.vars if v in vs])
@@ -245,13 +246,17 @@ class LangTags(with_metaclass(_Singleton)):
                 return res
             if l.script is None or l.script == "Latn":
                 pvar = self._info.get('phonvar', {}).get('variants', [])
-                res = self._getwithvars(l, pvar, use639=use639)
-                if res is not None:
-                    return res
-                if pvar and gvar:
-                    res = self._getwithvars(l, pvar + gvar, use639=use639)
+                for a in (pvar, pvar + gvar):
+                    if l.script != "Latn":
+                        res = self._getwithvars(l._replace(script="Latn"), a, use639=use639)
+                        if res is not None:
+                            return res
+                    res = self._getwithvars(l, a, use639=use639)
                     if res is not None:
-                        return res
+                        if l.script != "Latn":
+                            return res.newFull(res.full._replace(script="Latn"))
+                        else:
+                            return res
         if self.matchRegions and l.region is not None:
             lr = l._replace(region = None)
             res = self.get(str(lr), None, use639=use639)
@@ -267,24 +272,34 @@ class LangTags(with_metaclass(_Singleton)):
             raise KeyError(s)
         return res
 
-def lookup(lt, fname=None, matchRegions=False, **kw):
+def lookup(lt, default=None, fname=None, matchRegions=True, **kw):
     ''' Looks up a language tag by name in a language tags database. Returns a
         TagSet() containing the given language tag.
         Parameters:
+            default         Default value to return, if None raise KeyError on fail
             fname:          A specific language tags json databse to load
             matchRegions:   If True, lookup will match a language tag with a region
                             to a TagSet if the region is in the list of extra
                             regions in the TagSet. Default, false, is to only
                             match against the explicit tags in the tagset.
-            default         Default value to return, if None raise KeyError on fail
             use639          If True, also match against iso639-3 codes not in BCP47.'''
     lts = LangTags(fname=fname, **kw)
     lts.matchRegions = matchRegions
-    res = lts.get(str(lt), **kw)
+    res = lts.get(str(lt), default=default, **kw)
     if res is None:
         raise KeyError(lt)
     return res
 
+def tagsets(sort='tag', fname=None, **kw):
+    ''' Return a list of all the tagsets in the database.
+        Parameters:
+            sort    Sorts by the given attribute falling back to fulltag.
+                    Can be set to False or None or empty to return unsorted.
+            fname   A specific language tags json database to load '''
+    lts = LangTags(fname=fname, **kw)
+    if sort is None or sort is False or sort == '':
+        return list(set(lts.tags.values()))
+    return sorted(set(lts.tags.values()), key=lambda x:getattr(x, sort, x.fulltag))
 
 class TagSet:
     ''' Represents tag set from the json file with same attributes as fields
@@ -435,9 +450,40 @@ class TagSet:
         d['tags'] = [t._replace(vars=sorted((t.vars or []) + vs)) for t in d['tags']]
         return TagSet(**d)
 
+    def newFull(self, newfull):
+        '''Returns a new tagset but with a different fulltag'''
+        d = dict([(k, getattr(self, k, None)) for k in self._allkeys])
+        if self.script is not None and newfull.script is not None:
+            d['script'] = newfull.script
+        d['full'] = LangTag(lang = newfull.lang or self.full.lang,
+                        script = newfull.script or self.full.script,
+                        region = newfull.region or self.full.region,
+                        vars = newfull.vars,
+                        ns = newfull.ns) 
+        d['tag'] = LangTag(lang = newfull.lang,
+                        script = (newfull.script or self.tag.script) if self.tag.script is not None else None,
+                        region = (newfull.region or self.tag.region) if self.tag.region is not None else None,
+                        vars = newfull.vars,
+                        ns = newfull.ns)
+        d['tags'] = [LangTag(lang = t.lang,
+                            script = (newfull.script or t.script) if t.script is not None else None,
+                            region = (newfull.region or t.region) if t.region is not None else None,
+                            vars = newfull.vars,
+                            ns = newfull.ns) for t in d['tags']]
+        if newfull.script is not None and self.script is not None and newfull.script != self.script:
+            if newfull.script == "Latn" and 'latnnames' in d:
+                d['localnames'] = d['latnnames']
+                del d['latnnames']
+            elif 'localnames' in d:
+                del d['localnames']
+            del d['names']
+            del d['name']
+            del d['localname']
+        return TagSet(**d)
+        
 
 if __name__ == "__main__":
-    for t in ('en-Latn-fonipa-simple', 'aal-NG'):
+    for t in ('en-Latn-fonipa-simple', 'aal-NG', 'bal-fonipa', 'th-fonipa'):
         try:
             print("Simply, {} = {}".format(t, lookup(t)))
         except KeyError:
