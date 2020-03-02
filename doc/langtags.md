@@ -8,7 +8,7 @@ The preferred download location for the text data file is <https://ldml.api.sil.
 
 ## langtags.json
 
-Current API version 1.1.0 Unless otherwise stated all fields were add at v1.0.0. The preferred download location for the json data file is <https://ldml.api.sil.org/langtags.json>
+Current API version 1.1.1 Unless otherwise stated all fields were add at v1.0.0. The preferred download location for the json data file is <https://ldml.api.sil.org/langtags.json>
 
 Langtags.json consists of an array of objects. Each object corresponds to an equivalence set. The fields in that object are defined as:
 
@@ -29,6 +29,8 @@ Langtags.json consists of an array of objects. Each object corresponds to an equ
 - **script** Specifies the script component of the full tag, for this set. Conforms to ISO 15924. \[Added 1.0.1\]
 - **localnames** Specifies a list of local names (autonyms), coming from the Ethnologue. \[Added 1.1.0\]
 - **latnnames** Specifies a list of romanised autonyms in direct correspondance to the localnames list. \[Added 1.1.0\]
+- **suppress** If present and true indicates that the IANA language tag registry has the suppress script set for this language. \[Added 1.1.1\]
+- **windows** Windows requires a strict BCP-47 interpretation and requires a script tag unless the suppress script from the IANA registry is the same as the script. This field is always present and may be the same as the **tag** field or one of the values in the **tags** list. \[Added 1.1.1\]
 
 ### Special tags
 
@@ -45,7 +47,7 @@ There are three specially named (via the **tag** field) objects that occur at th
 #### _version
 
 - **api** Contains a semantic version string "x.y.z" where x is a major version not backwardly structurally compatible, y is a minor version involving removing fields and z is minimal change that simply adds fields or extra header records (special tags of the form \_tag.)
-- **date** Contains a date in the form year-month-date with each component a number.
+- **date** Contains the date of the file creation in the form year-month-date with each component a number.
 
 ### File invariants
 

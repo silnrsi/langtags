@@ -159,11 +159,14 @@ args = parser.parse_args()
 lts = lt.LangTags(noalltags=True)
 deprecated = {}
 iananames = {}
+suppress = {}
 for k,v in lts.items():
     if getattr(v, 'deprecated', False):
         deprecated[v.lang] = "1"
     if hasattr(v, 'desc'):
         iananames[k] = v.desc
+    if getattr(v, 'suppress', False):
+        suppress[k] = v.script
 regionnames = get_regionnames()
 lts.clear()
 allentries = {}
@@ -305,6 +308,14 @@ def make_record(t):
         if len(allscripts.get(str(x), [])) < 2:
             r.insert(1, str(x))
     n = {'tag': r[0], 'full': r[-1], 'script': t.script, 'region': t.region}
+    n['windows'] = r[0]
+    if suppress.get(t.lang, '') == t.script:
+        n['suppress'] = True
+    elif t.hidescript:
+        temp = lt.LangTag(str(r[0]))
+        temp.hidescript = False
+        temp.script = t.script
+        n['windows'] = str(temp)
     if t.region in regionnames:
         n['regionname'] = regionnames[t.region]
     if len(r) > 2:
@@ -419,7 +430,7 @@ if not args.quiet:
 # special record for passing standard variants
 res.append({'tag': '_globalvar', 'variants': ['simple']})
 res.append({'tag': "_phonvar", 'variants': ['alalc97', 'fonipa', 'fonkirsh', 'fonnapa', 'fonupa', 'fonxsamp']})
-res.append({'tag': "_version", 'api': '1.1.0', 'date': str(datetime.date.today())})
+res.append({'tag': "_version", 'api': '1.1.1', 'date': str(datetime.date.today())})
 if args.jobs == 1:
     for t in sorted(set(lts.values())):
         r = make_record(t)

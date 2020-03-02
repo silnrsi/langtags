@@ -399,7 +399,6 @@ aqt = aqt-Latn = aqt-PY = aqt-Latn-PY
 aqz = aqz-BR = aqz-Latn = aqz-Latn-BR
 *ar = ar-Arab = *ar-EG = ar-Arab-EG
 *ar-AE = ar-Arab-AE
-*ar-BH = ar-Arab-BH
 ar-Brai = arb-Brai = arb-Brai-SA = ar-Brai-SA
 *ar-DJ = ar-Arab-DJ
 *ar-DZ = ar-Arab-DZ
@@ -409,22 +408,17 @@ ar-Brai = arb-Brai = arb-Brai-SA = ar-Brai-SA
 *ar-IQ = ar-Arab-IQ
 *ar-JO = ar-Arab-JO
 *ar-KM = ar-Arab-KM
-*ar-KW = ar-Arab-KW
 *ar-LB = ar-Arab-LB
 *ar-LY = ar-Arab-LY
 *ar-MA = ar-Arab-MA
 *ar-MR = ar-Arab-MR
-*ar-OM = ar-Arab-OM
 *ar-PS = ar-Arab-PS
-*ar-QA = ar-Arab-QA
 *ar-SA = arb = arb-Arab = arb-Arab-SA = arb-SA = ar-Arab-SA
-*ar-SD = ar-Arab-SD
 *ar-SO = ar-Arab-SO
 *ar-SS = ar-Arab-SS
 *ar-SY = ar-Arab-SY
 ar-Syrc = ar-Syrc-SA
 *ar-TN = ar-Arab-TN
-*ar-YE = ar-Arab-YE
 arc = arc-Armi = arc-IR = arc-Armi-IR
 arc-Nbat = arc-JO = arc-Nbat-JO
 arc-Palm = arc-SY = arc-Palm-SY
@@ -1588,7 +1582,7 @@ crh-Arab = crh-UZ = crh-Arab-UZ
 crh-Latn = crh-Latn-UA
 cri = cri-Latn = cri-ST = cri-Latn-ST
 *crj = crj-CA = crj-Cans = crj-Cans-CA
-crj-Latn = crj-Latn-CA
+*crj-Latn = crj-Latn-CA
 crk = crk-CA = crk-Cans = crk-Cans-CA
 crk-Latn = crk-Latn-CA
 *crl = crl-CA = crl-Cans = crl-Cans-CA
@@ -5189,7 +5183,8 @@ nam = nam-AU = nam-Latn = nam-Latn-AU
 nan = nan-CN = nan-Hans = nan-Hans-CN
 nan-Bopo = nan-Bopo-TW
 nan-Kana = nan-Kana-TW
-nan-Latn = nan-Latn-CN
+nan-Latn = nan-Latn-TW
+nan-Latn-x-transpoj = nan-TW-x-transpoj = nan-Latn-TW-x-transpoj
 nao = nao-NP = nao-Zyyy = nao-Zyyy-NP
 nap = nap-IT = nap-Latn = nap-Latn-IT
 *naq = naq-Latn = *naq-NA = naq-Latn-NA
