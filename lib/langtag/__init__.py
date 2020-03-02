@@ -164,6 +164,7 @@ class LangTags(with_metaclass(_Singleton)):
         self._tags = {}
         self._iso639s = {}
         self._info = {}
+        self._regions = {}      # collect region names from json
         if fname is None:
             inf = None
             try:
@@ -203,10 +204,17 @@ class LangTags(with_metaclass(_Singleton)):
                 for l in s.allTags():
                     ll = l._replace(lang=d['iso639_3'])
                     self._iso639s[str(ll).lower()] = s
+        r = d.get('region', '')
+        rn = d.get('regionname', '')
+        if r != '' and rn != '':
+            self._regions[r] = rn
 
     def values(self):
         '''Return a list of all the tagsets in this LangTags'''
         return self._tags.values()
+
+    def region(self, reg):
+        return self._regions.get(reg, "")
 
     def _getwithvars(self, l, vs, use639=False):
         '''Given a langtag and list of variants, create a new tagset corresponding

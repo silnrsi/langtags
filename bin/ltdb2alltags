@@ -326,7 +326,6 @@ def make_record(t):
     if r[0] == 'zh':
         n['tag'] = 'zh-CN'
         n['tags'] = [x if x != 'zh-CN' else 'zh' for x in n['tags']]
-    n['sldr'] = hassldr
     if hasattr(t, 'iso639'):
         n['iso639_3'] = t.iso639
     elif t.base is not None and len(t.base):
@@ -367,6 +366,7 @@ def make_record(t):
             name = getlocalename(tf, getnames)
             if name is not None and name != "":
                 n['localname'] = name
+    n['sldr'] = hassldr
     n['names'] = []
     regions = set()
     alllrefs = addnames(n, t, names, regions)

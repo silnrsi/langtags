@@ -39,7 +39,7 @@ abh = abh-Arab = abh-TJ = abh-Arab-TJ
 abj = abj-IN = abj-Zyyy = abj-Zyyy-IN
 abl = abl-ID = abl-Rjng = abl-Rjng-ID
 abm = abm-Latn = abm-NG = abm-Latn-NG
-abn = abn-Latn = abn-NG = abn-Latn-NG
+*abn = abn-Latn = abn-NG = abn-Latn-NG
 abo = abo-Latn = abo-NG = abo-Latn-NG
 abp = abp-Latn = abp-PH = abp-Latn-PH
 abq-Cyrl = abq = abq-RU = abq-Cyrl-RU
@@ -91,7 +91,7 @@ adg = adg-AU = adg-Latn = adg-Latn-AU
 adh = adh-Latn = adh-UG = adh-Latn-UG
 adi = adi-IN = adi-Latn = adi-Latn-IN
 adi-Tibt = adi-CN = adi-Tibt-CN
-adj = adj-CI = *adj-Latn = adj-Latn-CI
+*adj = adj-CI = *adj-Latn = adj-Latn-CI
 adl = adl-IN = adl-Latn = adl-Latn-IN
 adn = adn-ID = adn-Latn = adn-Latn-ID
 ado = ado-Latn = ado-PG = ado-Latn-PG
@@ -353,7 +353,7 @@ aoj-x-filifita = aoj-Latn-x-filifita = aoj-PG-x-filifita = aoj-Latn-PG-x-filifit
 aok = aok-Latn = aok-NC = aok-Latn-NC
 aol = aol-ID = aol-Latn = aol-Latn-ID
 *aom = aom-Latn = aom-PG = aom-Latn-PG
-aon = aon-Latn = aon-PG = aon-Latn-PG
+*aon = aon-Latn = aon-PG = aon-Latn-PG
 aor = aor-Latn = aor-VU = aor-Latn-VU
 aos = aos-ID = aos-Latn = aos-Latn-ID
 aot = aot-IN = aot-Zyyy = aot-Zyyy-IN
@@ -534,6 +534,7 @@ avo = avo-BR = avo-Latn = avo-Latn-BR
 avs = avs-Latn = avs-PE = avs-Latn-PE
 *avt = avt-Latn = avt-PG = avt-Latn-PG
 *avu = avu-Latn = avu-SS = avu-Latn-SS
+avu-SD = *avu-Latn-SD
 avv = avv-BR = avv-Latn = avv-Latn-BR
 awa = awa-Deva = awa-IN = awa-Deva-IN
 *awb = awb-Latn = awb-PG = awb-Latn-PG
@@ -568,7 +569,7 @@ ayc = ayc-Latn = ayc-PE = ayc-Latn-PE
 ayd = ayd-AU = ayd-Latn = ayd-Latn-AU
 aye = aye-Latn = aye-NG = aye-Latn-NG
 ayg = ayg-Latn = ayg-TG = ayg-Latn-TG
-ayh = ayh-Arab = ayh-YE = ayh-Arab-YE
+*ayh = ayh-Arab = ayh-YE = ayh-Arab-YE
 ayi = ayi-Latn = ayi-NG = ayi-Latn-NG
 ayk = ayk-Latn = ayk-NG = ayk-Latn-NG
 ayl = ayl-Arab = ayl-LY = ayl-Arab-LY
@@ -580,7 +581,7 @@ ays = ays-Latn = ays-PH = ays-Latn-PH
 ayt = ayt-Latn = ayt-PH = ayt-Latn-PH
 ayu = ayu-Latn = ayu-NG = ayu-Latn-NG
 ayy = ayy-Latn = ayy-PH = ayy-Latn-PH
-ayz = ayz-ID = ayz-Latn = ayz-Latn-ID
+*ayz = ayz-ID = ayz-Latn = ayz-Latn-ID
 *az = az-AZ = *az-Latn = azj = azj-AZ = azj-Latn = azj-Latn-AZ = *az-Latn-AZ
 az-Brai = azj-Brai = azj-Brai-IR = az-Brai-IR
 *az-Cyrl-AZ
@@ -689,9 +690,9 @@ bdm = bdm-Latn = bdm-TD = bdm-Latn-TD
 bdn = bdn-CM = bdn-Latn = bdn-Latn-CM
 bdo = bdo-Latn = bdo-TD = bdo-Latn-TD
 bdp = bdp-Latn = bdp-TZ = bdp-Latn-TZ
-bdq = bdq-Latn = bdq-VN = bdq-Latn-VN
+*bdq = bdq-Latn = bdq-VN = bdq-Latn-VN
 bdr = bdr-Latn = bdr-MY = bdr-Latn-MY
-bds = bds-Latn = bds-TZ = bds-Latn-TZ
+*bds = bds-Latn = bds-TZ = bds-Latn-TZ
 bdt = bdt-CF = bdt-Latn = bdt-Latn-CF
 bdu = bdu-CM = bdu-Latn = bdu-Latn-CM
 bdv = bdv-IN = bdv-Orya = bdv-Orya-IN
@@ -859,7 +860,7 @@ bjj = bjj-Deva = bjj-IN = bjj-Deva-IN
 bjk = bjk-Latn = bjk-PG = bjk-Latn-PG
 bjl = bjl-Latn = bjl-PG = bjl-Latn-PG
 bjm = bjm-IQ = bjm-Zyyy = bjm-Zyyy-IQ
-bjn = bjn-ID = bjn-Latn = bjn-Latn-ID
+*bjn = bjn-ID = bjn-Latn = bjn-Latn-ID
 bjn-Arab = bjn-Arab-ID
 *bjo = bjo-CF = bjo-Latn = bjo-Latn-CF
 *bjp = bjp-Latn = bjp-PG = bjp-Latn-PG
@@ -879,7 +880,7 @@ bka = bka-Latn = bka-NG = bka-Latn-NG
 bkf = bkf-CD = bkf-Latn = bkf-Latn-CD
 bkg = bkg-CF = bkg-Latn = bkg-Latn-CF
 bkh = bkh-CM = bkh-Latn = bkh-Latn-CM
-bki = bki-Latn = bki-VU = bki-Latn-VU
+*bki = bki-Latn = bki-VU = bki-Latn-VU
 bkj = bkj-CF = bkj-Latn = bkj-Latn-CF
 bkk-x-baltia = bkk-IN-x-baltia = bkk-Zzzz-x-baltia = bkk-Zzzz-IN-x-baltia
 bkl = bkl-ID = bkl-Latn = bkl-Latn-ID
@@ -946,14 +947,14 @@ bmj = bmj-Deva = bmj-NP = bmj-Deva-NP
 bml = bml-CD = bml-Latn = bml-Latn-CD
 bmm = bmm-Latn = bmm-MG = bmm-Latn-MG
 bmn = bmn-Latn = bmn-PG = bmn-Latn-PG
-bmo = bmo-CM = bmo-Latn = bmo-Latn-CM
+*bmo = bmo-CM = bmo-Latn = bmo-Latn-CM
 bmp = bmp-Latn = bmp-PG = bmp-Latn-PG
 *bmq = bmq-Latn = bmq-ML = bmq-Latn-ML
 *bmr = bmr-CO = bmr-Latn = bmr-Latn-CO
 bms = bms-Latn = bms-NE = bms-Latn-NE
 bmt = bmt-CN = bmt-Zyyy = bmt-Zyyy-CN
 *bmu = bmu-Latn = bmu-PG = bmu-Latn-PG
-bmv = bmv-CM = bmv-Latn = bmv-Latn-CM
+*bmv = bmv-CM = bmv-Latn = bmv-Latn-CM
 bmw = bmw-CG = bmw-Latn = bmw-Latn-CG
 bmx = bmx-Latn = bmx-PG = bmx-Latn-PG
 bmz = bmz-Latn = bmz-PG = bmz-Latn-PG
@@ -974,7 +975,7 @@ bnk = bnk-Latn = bnk-VU = bnk-Latn-VU
 bnl = bnl-SO = bnl-Zyyy = bnl-Zyyy-SO
 *bnm = bnm-GQ = bnm-Latn = bnm-Latn-GQ
 bnn = bnn-Latn = bnn-TW = bnn-Latn-TW
-bno = bno-Latn = bno-PH = bno-Latn-PH
+*bno = bno-Latn = bno-PH = bno-Latn-PH
 *bnp = bnp-Latn = bnp-PG = bnp-Latn-PG
 bnq = bnq-ID = bnq-Latn = bnq-Latn-ID
 bnr = bnr-Latn = bnr-VU = bnr-Latn-VU
@@ -1228,7 +1229,7 @@ bwq = bwq-BF = bwq-Latn = bwq-Latn-BF
 *bwr = bwr-Latn = bwr-NG = bwr-Latn-NG
 bws = bws-CD = bws-Latn = bws-Latn-CD
 bwt = bwt-CM = bwt-Latn = bwt-Latn-CM
-bwu = bwu-GH = bwu-Latn = bwu-Latn-GH
+*bwu = bwu-GH = bwu-Latn = bwu-Latn-GH
 bww = bww-CD = bww-Latn = bww-Latn-CD
 bwx = bwx-CN = bwx-Latn = bwx-Latn-CN
 bwy = bwy-BF = bwy-Latn = bwy-Latn-BF
@@ -1323,7 +1324,7 @@ cah = cah-Latn = cah-PE = cah-Latn-PE
 caj = caj-AR = caj-Latn = caj-Latn-AR
 *cak = cak-GT = cak-Latn = cak-Latn-GT
 cal = cal-Latn = cal-MP = cal-Latn-MP
-cam = cam-Latn = cam-NC = cam-Latn-NC
+*cam = cam-Latn = cam-NC = cam-Latn-NC
 *can = can-Latn = can-PG = can-Latn-PG
 *cao = cao-BO = cao-Latn = cao-Latn-BO
 *cap = cap-BO = cap-Latn = cap-Latn-BO
@@ -1404,7 +1405,7 @@ cek-x-lemi = cek-Latn-x-lemi = cek-MM-x-lemi = cek-Latn-MM-x-lemi
 cek-x-likhy = cek-Latn-x-likhy = cek-MM-x-likhy = cek-Latn-MM-x-likhy
 cek-x-rengcaa = cek-Latn-x-rengcaa = cek-MM-x-rengcaa = cek-Latn-MM-x-rengcaa
 cek-x-taaw = cek-Latn-x-taaw = cek-MM-x-taaw = cek-Latn-MM-x-taaw
-cen = cen-Latn = cen-NG = cen-Latn-NG
+*cen = cen-Latn = cen-NG = cen-Latn-NG
 cet = cet-Latn = cet-NG = cet-Latn-NG
 cey = cey-Latn = cey-MM = cey-Latn-MM
 *cfa = cfa-Latn = cfa-NG = cfa-Latn-NG
@@ -1515,8 +1516,9 @@ cmg-Soyo = cmg-MN = cmg-Soyo-MN
 cmi = cmi-CO = cmi-Latn = cmi-Latn-CO
 cml = cml-ID = cml-Latn = cml-Latn-ID
 cmm = cmm-US = cmm-Zyyy = cmm-Zyyy-US
-*cmo-Khmr = cmo-KH = cmo-Khmr-KH
+*cmo-Khmr = cmo-Khmr-KH
 *cmo-Latn = cmo-VN = cmo-Latn-VN
+*cmo-Latn-KH
 cmr = cka = cka-Latn = cka-Latn-MM = cka-MM = cmr-Latn = cmr-MM = cmr-Latn-MM
 cms = cms-IT = cms-Latn = cms-Latn-IT
 cmt = cmt-Latn = cmt-ZA = cmt-Latn-ZA
@@ -1556,7 +1558,7 @@ cop-Arab = cop-Arab-EG
 cop-Grek = cop-Grek-EG
 coq = coq-US = coq-Zyyy = coq-Zyyy-US
 *cot = cot-Latn = cot-PE = cot-Latn-PE
-cou = cou-Latn = cou-SN = cou-Latn-SN
+*cou = cou-Latn = cou-SN = cou-Latn-SN
 cov = cov-CN = cov-Zyyy = cov-Zyyy-CN
 cow = cow-US = cow-Zyyy = cow-Zyyy-US
 cox = cox-Latn = cox-PE = cox-Latn-PE
@@ -1585,11 +1587,11 @@ crh = crh-Cyrl = crh-UA = crh-Cyrl-UA
 crh-Arab = crh-UZ = crh-Arab-UZ
 crh-Latn = crh-Latn-UA
 cri = cri-Latn = cri-ST = cri-Latn-ST
-crj = crj-CA = crj-Cans = crj-Cans-CA
+*crj = crj-CA = crj-Cans = crj-Cans-CA
 crj-Latn = crj-Latn-CA
 crk = crk-CA = crk-Cans = crk-Cans-CA
 crk-Latn = crk-Latn-CA
-crl = crl-CA = crl-Cans = crl-Cans-CA
+*crl = crl-CA = crl-Cans = crl-Cans-CA
 crl-Latn = crl-Latn-CA
 crm = crm-CA = crm-Cans = crm-Cans-CA
 *crn = crn-Latn = crn-MX = crn-Latn-MX
@@ -1847,7 +1849,7 @@ djd = djd-AU = djd-Latn = djd-Latn-AU
 *dje-Arab = dje-Arab-NE
 dje-Brai = dje-Brai-NE
 djf = djf-AU = djf-Latn = djf-Latn-AU
-dji = dji-AU = dji-Latn = dji-Latn-AU
+*dji = dji-AU = dji-Latn = dji-Latn-AU
 djj = djj-AU = djj-Latn = djj-Latn-AU
 *djk = djk-Latn = djk-SR = djk-Latn-SR
 djk-Afak = djk-Afak-SR
@@ -1889,7 +1891,7 @@ dne = dne-Latn = dne-TZ = dne-Latn-TZ
 dng = dng-Cyrl = dng-KG = dng-Cyrl-KG
 dni = dni-ID = dni-Latn = dni-Latn-ID
 *dnj = dnj-CI = dnj-Latn = dnj-Latn-CI
-dnj-LR = daf = daf-LR = daf-Latn = daf-Latn-LR = dnj-Latn-LR
+*dnj-LR = daf = daf-LR = daf-Latn = daf-Latn-LR = dnj-Latn-LR
 dnk = dnk-ID = dnk-Latn = dnk-Latn-ID
 dnn = dnn-BF = dnn-Latn = dnn-Latn-BF
 dno = dno-CD = dno-Latn = dno-Latn-CD
@@ -1940,7 +1942,7 @@ dru = dru-Latn = dru-TW = dru-Latn-TW
 dry = dry-Deva = dry-NP = dry-Deva-NP
 *dsb = *dsb-DE = dsb-Latn = dsb-Latn-DE
 dse = dse-NL = dse-Zxxx = dse-Zxxx-NL
-dsh = dsh-KE = dsh-Latn = dsh-Latn-KE
+*dsh = dsh-KE = dsh-Latn = dsh-Latn-KE
 dsi = dsi-Latn = dsi-TD = dsi-Latn-TD
 dsl = dsl-DK = dsl-Zxxx = dsl-Zxxx-DK
 dsn = dsn-ID = dsn-Latn = dsn-Latn-ID
@@ -1998,7 +2000,7 @@ dwa = dwa-Latn = dwa-NG = dwa-Latn-NG
 dws = dws-001 = dws-Zyyy = dws-Zyyy-001
 dwu = dwu-AU = dwu-Latn = dwu-Latn-AU
 *dww = dww-Latn = dww-PG = dww-Latn-PG
-dwy = duj = duj-AU = duj-Latn = duj-Latn-AU = dwy-AU = dwy-Latn = dwy-Latn-AU
+*dwy = duj = duj-AU = duj-Latn = duj-Latn-AU = dwy-AU = dwy-Latn = dwy-Latn-AU
 dwz = dwz-Deva = dwz-NP = dwz-Deva-NP
 dya = dya-BF = dya-Latn = dya-Latn-BF
 dyb = dyb-AU = dyb-Latn = dyb-Latn-AU
@@ -2045,6 +2047,7 @@ eit = eit-Latn = eit-PG = eit-Latn-PG
 eiv = eiv-Latn = eiv-PG = eiv-Latn-PG
 eja = eja-GW = eja-Latn = eja-Latn-GW
 *eka = eka-Latn = eka-NG = eka-Latn-NG
+*eka-Latn-NG-x-ekajuk
 ekc = ekc-AU = ekc-Latn = ekc-Latn-AU
 eke = eke-Latn = eke-NG = eke-Latn-NG
 ekg = ekg-ID = ekg-Latn = ekg-Latn-ID
@@ -2386,7 +2389,7 @@ fr-Dupl = fr-Dupl-FR
 *fr-TN = fr-Latn-TN
 *fr-VU = fr-Latn-VU
 frc = frc-Latn = frc-US = frc-Latn-US
-frd = frd-ID = frd-Latn = frd-Latn-ID
+*frd = frd-ID = frd-Latn = frd-Latn-ID
 frk = frk-DE = frk-Latn = frk-Latn-DE
 frm = frm-FR = frm-Latn = frm-Latn-FR
 fro = fro-FR = fro-Latn = fro-Latn-FR
@@ -2615,13 +2618,13 @@ gml = gml-DE = gml-Latf = gml-Latf-DE
 *gmm = gmm-CM = gmm-Latn = gmm-Latn-CM
 gmn = gmn-CM = gmn-Latn = gmn-Latn-CM
 gmu = gmu-Latn = gmu-PG = gmu-Latn-PG
-gmv = gmv-ET = *gmv-Ethi = gmv-Ethi-ET
+*gmv = gmv-ET = *gmv-Ethi = gmv-Ethi-ET
 *gmv-Latn = gmv-Latn-ET
 gmx = gmx-Latn = gmx-TZ = gmx-Latn-TZ
 gmy = gmy-GR = gmy-Zyyy = gmy-Zyyy-GR
 gmz = gmz-Latn = gmz-NG = gmz-Latn-NG
 gn = gn-Latn = gn-PY = gug = gug-Latn = gug-Latn-PY = gug-PY = gn-Latn-PY
-gna = gna-BF = gna-Latn = gna-Latn-BF
+*gna = gna-BF = gna-Latn = gna-Latn-BF
 gnb = gnb-IN = gnb-Latn = gnb-Latn-IN
 gnc = gnc-ES = gnc-Latn = gnc-Latn-ES
 *gnd = gnd-CM = gnd-Latn = gnd-Latn-CM
@@ -2723,7 +2726,7 @@ gua = gua-Latn = gua-NG = gua-Latn-NG
 *gub = gub-BR = gub-Latn = gub-Latn-BR
 *guc = guc-CO = guc-Latn = guc-Latn-CO
 *gud = gud-CI = gud-Latn = gud-Latn-CI
-gue = gue-AU = gue-Latn = gue-Latn-AU
+*gue = gue-AU = gue-Latn = gue-Latn-AU
 guf = guf-AU = guf-Latn = guf-Latn-AU
 *guh = guh-CO = guh-Latn = guh-Latn-CO
 *gui = gui-BO = gui-Latn = gui-Latn-BO
@@ -2768,7 +2771,7 @@ gwg = gwg-Latn = gwg-NG = gwg-Latn-NG
 gwj = gwj-BW = gwj-Latn = gwj-Latn-BW
 gwm = gwm-AU = gwm-Latn = gwm-Latn-AU
 gwn = gwn-Latn = gwn-NG = gwn-Latn-NG
-gwr = gwr-Latn = gwr-UG = gwr-Latn-UG
+*gwr = gwr-Latn = gwr-UG = gwr-Latn-UG
 *gwt = gwt-AF = gwt-Arab = gwt-Arab-AF
 gwu = gwu-AU = gwu-Latn = gwu-Latn-AU
 gww = gww-AU = gww-Latn = gww-Latn-AU
@@ -3030,7 +3033,7 @@ ibd = ibd-AU = ibd-Latn = ibd-Latn-AU
 ibe = ibe-Latn = ibe-NG = ibe-Latn-NG
 ibg = ibg-Latn = ibg-PH = ibg-Latn-PH
 ibh = ibh-Latn = ibh-VN = ibh-Latn-VN
-ibl = ibl-Latn = ibl-PH = ibl-Latn-PH
+*ibl = ibl-Latn = ibl-PH = ibl-Latn-PH
 ibm = ibm-Latn = ibm-NG = ibm-Latn-NG
 ibn = ibn-Latn = ibn-NG = ibn-Latn-NG
 ibr = ibr-Latn = ibr-NG = ibr-Latn-NG
@@ -3055,11 +3058,11 @@ idt = idt-Latn = idt-TL = idt-Latn-TL
 *idu = idu-Latn = idu-NG = idu-Latn-NG
 ie = ie-001 = ie-Latn = ie-Latn-001
 *ifa = ifa-Latn = ifa-PH = ifa-Latn-PH
-ifb = ifb-Latn = ifb-PH = ifb-Latn-PH
+*ifb = ifb-Latn = ifb-PH = ifb-Latn-PH
 *ife = ife-Latn = ife-TG = ife-Latn-TG
 *ife-BJ = ife-Latn-BJ
 iff = iff-Latn = iff-VU = iff-Latn-VU
-ifk = ifk-Latn = ifk-PH = ifk-Latn-PH
+*ifk = ifk-Latn = ifk-PH = ifk-Latn-PH
 ifm = ifm-CG = ifm-Latn = ifm-Latn-CG
 *ifu = ifu-Latn = ifu-PH = ifu-Latn-PH
 *ify = ify-Latn = ify-PH = ify-Latn-PH
@@ -3085,7 +3088,7 @@ ije = ije-Latn = ije-NG = ije-Latn-NG
 *ijj = ijj-BJ = ijj-Latn = ijj-Latn-BJ
 ijn = ijn-Latn = ijn-NG = ijn-Latn-NG
 ijs = ijs-Latn = ijs-NG = ijs-Latn-NG
-ik = esk = esk-Latn = esk-Latn-US = esk-US = ik-Latn = ik-US = ik-Latn-US
+*ik = esk = esk-Latn = esk-Latn-US = esk-US = ik-Latn = ik-US = ik-Latn-US
 ike-Latn = ike-US = ike-Latn-US
 iki = iki-Latn = iki-NG = iki-Latn-NG
 *ikk = ikk-Latn = ikk-NG = ikk-Latn-NG
@@ -3223,7 +3226,7 @@ jak = jak-Latn = jak-MY = jak-Latn-MY
 jal = hrr = hrr-ID = hrr-Latn = hrr-Latn-ID = jal-ID = jal-Latn = jal-Latn-ID
 jam = jam-JM = jam-Latn = jam-Latn-JM
 jan = jan-AU = jan-Latn = jan-Latn-AU
-jao = jao-AU = jao-Latn = jao-Latn-AU
+*jao = jao-AU = jao-Latn = jao-Latn-AU
 jaq = jaq-ID = jaq-Latn = jaq-Latn-ID
 jas = jas-Latn = jas-NC = jas-Latn-NC
 jat = jat-AF = jat-Arab = jat-Arab-AF
@@ -3393,7 +3396,7 @@ kbk = kbk-Latn = kbk-PG = kbk-Latn-PG
 kbl = kbl-Latn = kbl-TD = kbl-Latn-TD
 *kbm = kbm-Latn = kbm-PG = kbm-Latn-PG
 kbn = kbn-CF = kbn-Latn = kbn-Latn-CF
-kbo = kbo-Latn = kbo-SS = kbo-Latn-SS
+*kbo = kbo-Latn = kbo-SS = kbo-Latn-SS
 kbp = *kbp-Latn = kbp-TG = kbp-Latn-TG
 kbp-Brai = kbp-Brai-TG
 *kbq = kbq-Latn = kbq-PG = kbq-Latn-PG
@@ -3485,11 +3488,11 @@ kev = kev-IN = kev-Zyyy = kev-Zyyy-IN
 *kew = kew-Latn = kew-PG = kew-Latn-PG
 kex = kex-Deva = kex-IN = kex-Deva-IN
 kex-Gujr = kex-Gujr-IN
-key = key-IN = key-Telu = key-Telu-IN
+*key = key-IN = key-Telu = key-Telu-IN
 *kez = kez-Latn = kez-NG = kez-Latn-NG
-kfa = kfa-IN = kfa-Knda = kfa-Knda-IN
+*kfa = kfa-IN = kfa-Knda = kfa-Knda-IN
 kfb = kfb-Deva = kfb-IN = kfb-Deva-IN
-kfc = kfc-IN = kfc-Telu = kfc-Telu-IN
+*kfc = kfc-IN = kfc-Telu = kfc-Telu-IN
 kfd = kfd-IN = kfd-Zyyy = kfd-Zyyy-IN
 kfe = kfe-IN = kfe-Taml = kfe-Taml-IN
 kff-Deva = kff-Deva-IN
@@ -3646,6 +3649,7 @@ kkg = kkg-Latn = kkg-PH = kkg-Latn-PH
 kkh = kkh-Lana = kkh-MM = kkh-Lana-MM
 kki = kki-Latn = kki-TZ = kki-Latn-TZ
 *kkj = *kkj-CM = *kkj-Latn = kkj-Latn-CM
+kkj-TD = *kkj-Latn-TD
 kkk = kkk-Latn = kkk-SB = kkk-Latn-SB
 kkl = kkl-ID = kkl-Latn = kkl-Latn-ID
 kkm = kkm-Latn = kkm-NG = kkm-Latn-NG
@@ -3691,7 +3695,7 @@ klw = klw-ID = klw-Latn = klw-Latn-ID
 kly = kly-ID = kly-Latn = kly-Latn-ID
 klz = klz-ID = klz-Latn = klz-Latn-ID
 *km = *km-KH = km-Khmr = km-Khmr-KH
-kma = kma-GH = kma-Latn = kma-Latn-GH
+*kma = kma-GH = kma-Latn = kma-Latn-GH
 kmb = kmb-AO = kmb-Latn = kmb-Latn-AO
 kmc = kmc-CN = kmc-Latn = kmc-Latn-CN
 kmc-Hani = kmc-Hani-CN
@@ -3721,7 +3725,7 @@ kmz = kmz-Arab = kmz-IR = kmz-Arab-IR
 kn-Brai = kn-Brai-IN
 kn-Nand = kn-Nand-IN
 kna = kna-Latn = kna-NG = kna-Latn-NG
-knb = knb-Latn = knb-PH = knb-Latn-PH
+*knb = knb-Latn = knb-PH = knb-Latn-PH
 knd = knd-ID = knd-Latn = knd-Latn-ID
 *kne = kne-Latn = kne-PH = kne-Latn-PH
 *knf = knf-GW = knf-Latn = knf-Latn-GW
@@ -3846,7 +3850,7 @@ krt = krt-Latn = krt-NE = krt-Latn-NE
 kru = kru-Deva = kru-IN = kru-Deva-IN
 krv = krv-KH = krv-Khmr = krv-Khmr-KH
 krw = krw-LR = krw-Latn = krw-Latn-LR
-krx = krx-Latn = krx-SN = krx-Latn-SN
+*krx = krx-Latn = krx-SN = krx-Latn-SN
 kry = kry-AZ = kry-Latn = kry-Latn-AZ
 krz = krz-ID = krz-Latn = krz-Latn-ID
 *ks = *ks-Arab = *ks-IN = *ks-Arab-IN
@@ -4031,7 +4035,7 @@ kxy = kxy-Latn = kxy-VN = kxy-Latn-VN
 *ky-CN = ky-Arab = ky-Arab-CN
 ky-TR = ky-Latn = ky-Latn-TR
 kya = kya-Latn = kya-TZ = kya-Latn-TZ
-kyb = kyb-Latn = kyb-PH = kyb-Latn-PH
+*kyb = kyb-Latn = kyb-PH = kyb-Latn-PH
 kyc = kyc-Latn = kyc-PG = kyc-Latn-PG
 kyd = kyd-ID = kyd-Latn = kyd-Latn-ID
 *kye = kye-GH = kye-Latn = kye-Latn-GH
@@ -4147,7 +4151,7 @@ lcf = lcf-ID = lcf-Latn = lcf-Latn-ID
 lch = lch-AO = lch-Latn = lch-Latn-AO
 lcl = lcl-ID = lcl-Latn = lcl-Latn-ID
 *lcm = lcm-Latn = lcm-PG = lcm-Latn-PG
-lcp = lcp-CN = lcp-Thai = lcp-Thai-CN
+*lcp = lcp-CN = lcp-Thai = lcp-Thai-CN
 lcq = lcq-ID = lcq-Latn = ppr = ppr-ID = ppr-Latn = ppr-Latn-ID = lcq-Latn-ID
 lcs = lcs-ID = lcs-Latn = lcs-Latn-ID
 lda = lda-CI = lda-Latn = lda-Latn-CI
@@ -4169,7 +4173,7 @@ leb = leb-Latn = leb-ZM = leb-Latn-ZM
 lec = lec-BO = lec-Latn = lec-Latn-BO
 *led = led-CD = led-Latn = led-Latn-CD
 *lee = lee-BF = lee-Latn = lee-Latn-BF
-lef = lef-GH = lef-Latn = lef-Latn-GH
+*lef = lef-GH = lef-Latn = lef-Latn-GH
 leh = leh-Latn = leh-ZM = leh-Latn-ZM
 lei = lei-Latn = lei-PG = lei-Latn-PG
 lej = lej-CD = lej-Latn = lej-Latn-CD
@@ -4186,7 +4190,7 @@ ler = ler-Latn = ler-PG = ler-Latn-PG
 let = let-Latn = let-PG = let-Latn-PG
 *leu = leu-Latn = leu-PG = leu-Latn-PG
 lev = lev-ID = lev-Latn = lev-Latn-ID
-lew = lew-ID = lew-Latn = lew-Latn-ID
+*lew = lew-ID = lew-Latn = lew-Latn-ID
 *lex = lex-ID = lex-Latn = lex-Latn-ID
 ley = ley-ID = ley-Latn = ley-Latn-ID
 lez = lez-Cyrl = lez-RU = lez-Cyrl-RU
@@ -4232,7 +4236,7 @@ lie = lie-CD = lie-Latn = lie-Latn-CD
 *lig = lig-GH = lig-Latn = lig-Latn-GH
 *lih = lih-Latn = lih-PG = lih-Latn-PG
 lij = lij-IT = lij-Latn = lij-Latn-IT
-lik = lik-CD = lik-Latn = lik-Latn-CD
+*lik = lik-CD = lik-Latn = lik-Latn-CD
 lil = lil-CA = lil-Latn = lil-Latn-CA
 lil-Dupl = lil-Dupl-CA
 lio = lio-ID = lio-Latn = lio-Latn-ID
@@ -4379,7 +4383,7 @@ lrk = lrk-Arab = lrk-PK = lrk-Arab-PK
 lrl = lrl-Arab = lrl-IR = lrl-Arab-IR
 lrm = lrm-KE = lrm-Latn = lrm-Latn-KE
 lrn = lrn-ID = lrn-Latn = lrn-Latn-ID
-lro = lro-Latn = lro-SD = lro-Latn-SD
+*lro = lro-Latn = lro-SD = lro-Latn-SD
 lrr = lrr-NP = lrr-Zyyy = yma = yma-NP = yma-Zyyy = yma-Zyyy-NP = lrr-Zyyy-NP
 lrt = lrt-ID = lrt-Latn = lrt-Latn-ID
 lrv = lrv-Latn = lrv-VU = lrv-Latn-VU
@@ -4412,7 +4416,7 @@ lts = lts-KE = lts-Latn = lts-Latn-KE
 ltu = ltu-ID = ltu-Latn = ltu-Latn-ID
 *lu = *lu-CD = lu-Latn = lu-Latn-CD
 lua = lua-CD = lua-Latn = lua-Latn-CD
-luc = luc-Latn = luc-UG = luc-Latn-UG
+*luc = luc-Latn = luc-UG = luc-Latn-UG
 lud = lud-Latn = lud-RU = lud-Latn-RU
 lue = lue-Latn = lue-ZM = lue-Latn-ZM
 luf = luf-Latn = luf-PG = luf-Latn-PG
@@ -4448,6 +4452,7 @@ lwh = lwh-Latn = lwh-VN = lwh-Latn-VN
 lwl = lwl-TH = lwl-Thai = lwl-Thai-TH
 lwm = lwm-CN = lwm-Thai = lwm-Thai-CN
 *lwo = lwo-Latn = lwo-SS = lwo-Latn-SS
+lwo-ZA = *lwo-Latn-ZA
 lws = lws-MW = lws-Zxxx = lws-Zxxx-MW
 lwt = lwt-ID = lwt-Latn = lwt-Latn-ID
 lwu = lwu-CN = lwu-Zyyy = lwu-Zyyy-CN
@@ -4479,7 +4484,7 @@ mak-Maka = mak-Maka-ID
 *man = man-GM = man-Latn = mnk = mnk-GM = mnk-Latn = mnk-Latn-GM = myq = myq-GM = myq-Latn = myq-Latn-GM = man-Latn-GM
 *man-Arab = emk-Arab = emk-Arab-GN = mnk-Arab = mnk-Arab-GN = man-Arab-GN
 man-GN = emk-Nkoo = emk-Nkoo-GN = man-Nkoo = man-Nkoo-GN
-man-Latn-GN = emk-Latn = emk-Latn-GN = man-Latn-GN
+*man-Latn-GN = emk-Latn = emk-Latn-GN = *man-Latn-GN
 *maq = maq-Latn = maq-MX = maq-Latn-MX
 *mas = *mas-KE = mas-Latn = mas-Latn-KE
 *mas-TZ = mas-Latn-TZ
@@ -4536,6 +4541,7 @@ mcn = mcn-Latn = mcn-TD = mcn-Latn-TD
 mcs = mcs-CM = mcs-Latn = mcs-Latn-CM
 mct = mct-CM = mct-Latn = mct-Latn-CM
 *mcu = mcu-CM = mcu-Latn = mcu-Latn-CM
+*mcu-Laoo-CM
 mcv = mcv-Latn = mcv-PG = mcv-Latn-PG
 mcw = mcw-Latn = mcw-TD = mcw-Latn-TD
 mcx = mcx-CF = mcx-Latn = mcx-Latn-CF
@@ -4605,7 +4611,7 @@ mfd = mfd-CM = mfd-Latn = mfd-Latn-CM
 *mfe = mfe-Latn = *mfe-MU = mfe-Latn-MU
 mff = mff-CM = mff-Latn = mff-Latn-CM
 mfg = mfg-Arab = mfg-GN = mfg-Arab-GN
-mfh = mfh-CM = mfh-Latn = mfh-Latn-CM
+*mfh = mfh-CM = mfh-Latn = mfh-Latn-CM
 mfi = mfi-Arab = mfi-CM = mfi-Arab-CM
 *mfi-Latn = mfi-Latn-CM
 mfj = mfj-CM = mfj-Latn = mfj-Latn-CM
@@ -4692,8 +4698,8 @@ mid = mid-IQ = mid-Mand = mid-Mand-IQ
 mii = mii-Latn = mii-MX = mii-Latn-MX
 mij = mij-CM = mij-Latn = mij-Latn-CM
 mik = mik-Latn = mik-US = mik-Latn-US
-mil = mil-Latn = mil-MX = mil-Latn-MX
-mim = mim-Latn = mim-MX = mim-Latn-MX
+*mil = mil-Latn = mil-MX = mil-Latn-MX
+*mim = mim-Latn = mim-MX = mim-Latn-MX
 min = min-ID = min-Latn = min-Latn-ID
 min-Arab = min-Arab-ID
 *mio = mio-Latn = mio-MX = mio-Latn-MX
@@ -4869,7 +4875,7 @@ mov = mov-Latn = mov-US = mov-Latn-US
 mow = mow-CG = mow-Latn = mow-Latn-CG
 *mox = mox-Latn = mox-PG = mox-Latn-PG
 moy = moy-ET = moy-Latn = moy-Latn-ET
-moz = moz-Latn = moz-TD = moz-Latn-TD
+*moz = moz-Latn = moz-TD = moz-Latn-TD
 mpa = mpa-Latn = mpa-TZ = mpa-Latn-TZ
 mpb = mpb-AU = mpb-Latn = mpb-Latn-AU
 mpc = mpc-AU = mpc-Latn = mpc-Latn-AU
@@ -4944,7 +4950,7 @@ mro = mro-BD = mro-Mroo = mro-Mroo-BD
 mro-Latn = mro-Latn-BD
 mrp = mrp-Latn = mrp-VU = mrp-Latn-VU
 mrq = mrq-Latn = mrq-PF = mrq-Latn-PF
-mrr = mrr-Deva = mrr-IN = mrr-Deva-IN
+*mrr = mrr-Deva = mrr-IN = mrr-Deva-IN
 mrs = mrs-Latn = mrs-VU = mrs-Latn-VU
 mrt = mrt-Latn = mrt-NG = mrt-Latn-NG
 mru = mru-CM = mru-Latn = mru-Latn-CM
@@ -5160,7 +5166,7 @@ mzl = mzl-Latn = mzl-MX = mzl-Latn-MX
 mzo = mzo-BR = mzo-Latn = mzo-Latn-BR
 *mzp = mzp-BO = mzp-Latn = mzp-Latn-BO
 mzq = mzq-ID = mzq-Latn = mzq-Latn-ID
-mzr = mzr-BR = mzr-Latn = mzr-Latn-BR
+*mzr = mzr-BR = mzr-Latn = mzr-Latn-BR
 mzs = mzs-MO = mzs-Zyyy = mzs-Zyyy-MO
 mzt = mzt-Latn = mzt-MY = mzt-Latn-MY
 mzu = mzu-Latn = mzu-PG = mzu-Latn-PG
@@ -5234,7 +5240,7 @@ nck = nck-AU = nck-Latn = nck-Latn-AU
 ncm = ncm-Latn = ncm-PG = ncm-Latn-PG
 ncn = ncn-Latn = ncn-PG = ncn-Latn-PG
 *nco = nco-Latn = nco-PG = nco-Latn-PG
-ncq = ncq-LA = ncq-Laoo = ncq-Laoo-LA
+*ncq = ncq-LA = ncq-Laoo = ncq-Laoo-LA
 ncq-Thai = ncq-Thai-LA
 ncr = ncr-CM = ncr-Latn = ncr-Latn-CM
 ncs = ncs-NI = ncs-Zxxx = ncs-Zxxx-NI
@@ -5616,7 +5622,7 @@ nuf = nuf-CN = nuf-Latn = nuf-Latn-CN
 nug = nug-AU = nug-Latn = nug-Latn-AU
 nuh = nuh-Latn = nuh-NG = nuh-Latn-NG
 *nui = nui-GQ = nui-Latn = nui-Latn-GQ
-nuj = nuj-Latn = nuj-UG = nuj-Latn-UG
+*nuj = nuj-Latn = nuj-UG = nuj-Latn-UG
 nuk = nuk-CA = nuk-Latn = nuk-Latn-CA
 nul = nul-ID = nul-Latn = nul-Latn-ID
 num = num-Latn = num-TO = num-Latn-TO
@@ -5655,7 +5661,7 @@ nxe = nxe-ID = nxe-Latn = nxe-Latn-ID
 nxg = nxg-ID = nxg-Latn = nxg-Latn-ID
 nxi = nxi-Latn = nxi-TZ = nxi-Latn-TZ
 nxk = nxk-MM = nxk-Zyyy = nxk-Zyyy-MM
-nxl = nxl-ID = nxl-Latn = nxl-Latn-ID
+*nxl = nxl-ID = nxl-Latn = nxl-Latn-ID
 nxm = nxm-XX = nxm-Zyyy = nxm-Zyyy-XX
 nxn = nxn-AU = nxn-Latn = nxn-Latn-AU
 nxo = nxo-GA = nxo-Latn = nxo-Latn-GA
@@ -5671,7 +5677,7 @@ nyb = nyb-GH = nyb-Latn = nyb-Latn-GH
 nyc = nyc-CD = nyc-Latn = nyc-Latn-CD
 nyd = nyd-KE = nyd-Latn = nyd-Latn-KE
 nye = nye-AO = nye-Latn = nye-Latn-AO
-nyf = nyf-KE = nyf-Latn = nyf-Latn-KE
+*nyf = nyf-KE = nyf-Latn = nyf-Latn-KE
 nyg = nyg-CD = nyg-Latn = nyg-Latn-CD
 nyh = nyh-AU = nyh-Latn = nyh-Latn-AU
 nyi = nyi-Latn = nyi-SD = nyi-Latn-SD
@@ -5686,12 +5692,12 @@ nyq = nyq-Arab = nyq-IR = nyq-Arab-IR
 nyr = nyr-Latn = nyr-MW = nyr-Latn-MW
 nys = nys-AU = nys-Latn = nys-Latn-AU
 nyt = nyt-AU = nyt-Latn = nyt-Latn-AU
-nyu = nyu-Latn = nyu-MZ = nyu-Latn-MZ
+*nyu = nyu-Latn = nyu-MZ = nyu-Latn-MZ
 nyv = nyv-AU = nyv-Latn = nyv-Latn-AU
 nyw = nyw-TH = nyw-Zyyy = nyw-Zyyy-TH
 nyx = nyx-AU = nyx-Latn = nyx-Latn-AU
-nyy = nyy-Latn = nyy-TZ = nyy-Latn-TZ
-nza = nza-CM = nza-Latn = nza-Latn-CM
+*nyy = nyy-Latn = nyy-TZ = nyy-Latn-TZ
+*nza = nza-CM = nza-Latn = nza-Latn-CM
 nzb = nzb-GA = nzb-Latn = nzb-Latn-GA
 nzd = nzd-CD = nzd-Latn = nzd-Latn-CD
 nzi = nzi-GH = nzi-Latn = nzi-Latn-GH
@@ -5721,7 +5727,7 @@ ocu = ocu-Latn = ocu-MX = ocu-Latn-MX
 oda = oda-Latn = oda-NG = oda-Latn-NG
 odk = odk-Arab = odk-PK = odk-Arab-PK
 odt = odt-Latn = odt-NL = odt-Latn-NL
-odu = odu-Latn = odu-NG = odu-Latn-NG
+*odu = odu-Latn = odu-NG = odu-Latn-NG
 ofo = ofo-US = ofo-Zyyy = ofo-Zyyy-US
 ofs = ofs-NL = ofs-Zyyy = ofs-Zyyy-NL
 ofu = ofu-Latn = ofu-NG = ofu-Latn-NG
@@ -5777,7 +5783,7 @@ olt = olt-LT = olt-Latn = olt-Latn-LT
 olu = olu-AO = olu-Latn = olu-Latn-AO
 *om = gaz = gaz-ET = gaz-Latn = gaz-Latn-ET = *om-ET = om-Latn = om-Latn-ET
 om-Arab = om-Arab-ET
-om-Ethi = gaz-Ethi = gaz-Ethi-ET = om-Ethi-ET
+*om-Ethi = gaz-Ethi = gaz-Ethi-ET = om-Ethi-ET
 *om-KE = om-Latn-KE
 oma = oma-Latn = oma-US = oma-Latn-US
 omb = omb-Latn = omb-VU = omb-Latn-VU
@@ -5892,7 +5898,7 @@ pa-PK = *pa-Arab = *pa-Arab-PK
 *pab = pab-BR = pab-Latn = pab-Latn-BR
 pac = pac-Latn = pac-VN = pac-Latn-VN
 pac-Laoo-x-diacado = pac-LA-x-diacado = pac-Laoo-LA-x-diacado
-pac-x-diacado = pac-Latn-x-diacado = pac-VN-x-diacado = pac-Latn-VN-x-diacado
+*pac-x-diacado = pac-Latn-x-diacado = pac-VN-x-diacado = pac-Latn-VN-x-diacado
 *pad = pad-BR = pad-Latn = pad-Latn-BR
 pae = pae-CD = pae-Latn = pae-Latn-CD
 paf = paf-BR = paf-Latn = paf-Latn-BR
@@ -6039,7 +6045,7 @@ piy = piy-Latn = piy-NG = piy-Latn-NG
 piz = piz-Latn = piz-NC = piz-Latn-NC
 pjt = pjt-AU = pjt-Latn = pjt-Latn-AU
 pka = pka-Brah = pka-IN = pka-Brah-IN
-pkb = pkb-KE = pkb-Latn = pkb-Latn-KE
+*pkb = pkb-KE = pkb-Latn = pkb-Latn-KE
 pkc = pkc-KR = pkc-Zyyy = pkc-Zyyy-KR
 pkg = pkg-Latn = pkg-PG = pkg-Latn-PG
 pkh-Deva = pkh-Deva-BD
@@ -6120,7 +6126,7 @@ pnu = pnu-CN = pnu-Zyyy = pnu-Zyyy-CN
 pnv = pnv-AU = pnv-Latn = pnv-Latn-AU
 pnw = pnw-AU = pnw-Latn = pnw-Latn-AU
 pnx = pnx-LA = pnx-Zyyy = pnx-Zyyy-LA
-pny = pny-CM = pny-Latn = pny-Latn-CM
+*pny = pny-CM = pny-Latn = pny-Latn-CM
 pnz = pnz-CF = pnz-Latn = pnz-Latn-CF
 poc = poc-GT = poc-Latn = poc-Latn-GT
 *poe = poe-Latn = poe-MX = poe-Latn-MX
@@ -6340,7 +6346,7 @@ ral = ral-IN = ral-Zyyy = ral-Zyyy-IN
 ram = ram-BR = ram-Latn = ram-Latn-BR
 ran = ran-ID = ran-Latn = ran-Latn-ID
 *rao = rao-Latn = rao-PG = rao-Latn-PG
-rap = rap-CL = rap-Latn = rap-Latn-CL
+*rap = rap-CL = rap-Latn = rap-Latn-CL
 raq = lii = lii-NP = lii-Zyyy = lii-Zyyy-NP = raq-NP = raq-Zyyy = raq-Zyyy-NP
 rar = rar-CK = rar-Latn = rar-Latn-CK
 ras = ras-SD = ras-Zyyy = tie = tie-SD = tie-Zyyy = tie-Zyyy-SD = ras-Zyyy-SD
@@ -6456,7 +6462,7 @@ rod = rod-Latn = rod-NG = rod-Latn-NG
 roe = roe-Latn = roe-PG = roe-Latn-PG
 *rof = rof-Latn = *rof-TZ = rof-Latn-TZ
 rog = rog-Latn = rog-VN = rog-Latn-VN
-rol = rol-Latn = rol-PH = rol-Latn-PH
+*rol = rol-Latn = rol-PH = rol-Latn-PH
 rom = rmy-Latn = rmy-Latn-RO = rom-Latn = rom-RO = rom-Latn-RO
 rom-Cyrl = rom-Cyrl-RO
 rom-Cyrl-BG = rmy-Cyrl = rmy-Cyrl-BG = rom-Cyrl-BG
@@ -6548,7 +6554,7 @@ sat-Deva = sat-NP = sat-Deva-NP
 sat-Olck = sat-Olck-IN
 sat-Orya = sat-Orya-IN
 sau = sau-ID = sau-Latn = sau-Latn-ID
-sav = sav-Latn = sav-SN = sav-Latn-SN
+*sav = sav-Latn = sav-SN = sav-Latn-SN
 *sav-Arab = sav-Arab-SN
 saw = saw-ID = saw-Latn = saw-Latn-ID
 sax = sax-Latn = sax-VU = sax-Latn-VU
@@ -6602,7 +6608,7 @@ scp = scp-Deva = scp-NP = scp-Deva-NP
 scq = scq-KH = scq-Zyyy = scq-Zyyy-KH
 scs = scs-CA = scs-Latn = scs-Latn-CA
 scs-Cans = scs-Cans-CA
-sct = kgd = kgd-LA = kgd-Laoo = kgd-Laoo-LA = sct-LA = sct-Laoo = sct-Laoo-LA
+*sct = kgd = kgd-LA = kgd-Laoo = kgd-Laoo-LA = sct-LA = sct-Laoo = sct-Laoo-LA
 scu = scu-IN = scu-Zyyy = scu-Zyyy-IN
 scv = scv-Latn = scv-NG = scv-Latn-NG
 scw = scw-Latn = scw-NG = scw-Latn-NG
@@ -6813,7 +6819,7 @@ slh = slh-Latn = slh-US = slh-Latn-US
 sli = sli-Latn = sli-PL = sli-Latn-PL
 slj = slj-BR = slj-Latn = slj-Latn-BR
 *sll = sll-Latn = sll-PG = sll-Latn-PG
-slm = slm-Latn = slm-PH = slm-Latn-PH
+*slm = slm-Latn = slm-PH = slm-Latn-PH
 sln = sln-US = sln-Zyyy = sln-Zyyy-US
 slp = slp-ID = slp-Latn = slp-Latn-ID
 slq = slq-IR = slq-Zyyy = slq-Zyyy-IR
@@ -6835,7 +6841,7 @@ smg = smg-Latn = smg-PG = smg-Latn-PG
 smh = smh-CN = smh-Yiii = smh-Yiii-CN
 smj = smj-Latn = smj-SE = smj-Latn-SE
 *smk = smk-Latn = smk-PH = smk-Latn-PH
-sml = sml-Latn = sml-PH = sml-Latn-PH
+*sml = sml-Latn = sml-PH = sml-Latn-PH
 smm = smm-NP = smm-Zyyy = smm-Zyyy-NP
 *smn = *smn-FI = smn-Latn = smn-Latn-FI
 smp = smp-IL = smp-Samr = smp-Samr-IL
@@ -7065,7 +7071,7 @@ suv-Deva = suv-Deva-IN
 suw = suw-Latn = suw-TZ = suw-Latn-TZ
 sux = sux-XX = sux-Zyyy = sux-Zyyy-XX
 suy = suy-BR = suy-Latn = suy-Latn-BR
-suz = *suz-Deva = suz-NP = suz-Deva-NP
+*suz = *suz-Deva = suz-NP = suz-Deva-NP
 *sv = sv-Latn = *sv-SE = sv-Latn-SE
 sv-Brai = sv-Brai-SE
 *sv-FI = sv-Latn-FI
@@ -7127,8 +7133,8 @@ sya = sya-ID = sya-Latn = sya-Latn-ID
 syc = syc-Syrc = syc-TR = syc-Syrc-TR
 syi = syi-GA = syi-Latn = syi-Latn-GA
 syk = syk-Latn = syk-NG = syk-Latn-NG
-syl = syl-BD = syl-Beng = syl-Beng-BD
-syl-Latn = syl-Latn-BD
+*syl = syl-BD = syl-Beng = syl-Beng-BD
+*syl-Latn = syl-Latn-BD
 *syl-Sylo = syl-Sylo-BD
 sym = sym-BF = sym-Latn = sym-Latn-BF
 syn = syn-IR = syn-Syrc = syn-Syrc-IR
@@ -7194,7 +7200,7 @@ tbe = tbe-Latn = tbe-SB = tbe-Latn-SB
 tbh = tbh-AU = tbh-Latn = tbh-Latn-AU
 tbi = tbi-Latn = tbi-SD = tbi-Latn-SD
 tbj = tbj-Latn = tbj-PG = tbj-Latn-PG
-tbk = tbk-PH = tbk-Tagb = tbk-Tagb-PH
+*tbk = tbk-PH = tbk-Tagb = tbk-Tagb-PH
 *tbk-Latn = tbk-Latn-PH
 *tbl = tbl-Latn = tbl-PH = tbl-Latn-PH
 tbm = tbm-CD = tbm-Latn = tbm-Latn-CD
@@ -7206,7 +7212,7 @@ tbs = tbs-Latn = tbs-PG = tbs-Latn-PG
 tbt = tbt-CD = tbt-Latn = tbt-Latn-CD
 tbu = tbu-Latn = tbu-MX = tbu-Latn-MX
 tbv = tbv-Latn = tbv-PG = tbv-Latn-PG
-tbw = tbw-Latn = tbw-PH = tbw-Latn-PH
+*tbw = tbw-Latn = tbw-PH = tbw-Latn-PH
 tbw-Tagb = tbw-Tagb-PH
 tbx = tbx-Latn = tbx-PG = tbx-Latn-PG
 tby = tby-ID = tby-Latn = tby-Latn-ID
@@ -7289,7 +7295,7 @@ tev = tev-ID = tev-Latn = tev-Latn-ID
 *tew = tew-Latn = tew-US = tew-Latn-US
 tew-x-sanjuan = tew-Latn-x-sanjuan = tew-US-x-sanjuan = tew-Latn-US-x-sanjuan
 tew-x-santaclara = tew-Latn-x-santaclara = tew-US-x-santaclara = tew-Latn-US-x-santaclara
-tex = tex-Latn = tex-SS = tex-Latn-SS
+*tex = tex-Latn = tex-SS = tex-Latn-SS
 tey = tey-Latn = tey-SD = tey-Latn-SD
 tez-Latn = tez-Latn-NE
 tez-Tfng = tez-Tfng-NE
@@ -7331,7 +7337,7 @@ the = the-Deva = the-NP = the-Deva-NP
 thf = thf-Deva = thf-NP = thf-Deva-NP
 thh = thh-Latn = thh-MX = thh-Latn-MX
 thi = thi-LA = thi-Zyyy = thi-Zyyy-LA
-thk = thk-KE = thk-Latn = thk-Latn-KE
+*thk = thk-KE = thk-Latn = thk-Latn-KE
 thl = thl-Deva = thl-NP = thl-Deva-NP
 thm = thm-TH = thm-Zyyy = thm-Zyyy-TH
 thn = thn-IN = thn-Zyyy = thn-Zyyy-IN
@@ -7344,6 +7350,7 @@ tht = tht-CA = tht-Latn = tht-Latn-CA
 thu = thu-Latn = thu-SS = thu-Latn-SS
 thv-Arab = thv-Arab-DZ
 thv-Latn = thv-Latn-DZ
+*thv-Latn-DZ-x-ahaggar
 thv-Tfng = thv-Tfng-DZ
 thw = thw-NP = thw-Zyyy = thw-Zyyy-NP
 thy = thy-Latn = thy-NG = thy-Latn-NG
@@ -7389,6 +7396,7 @@ tju = tju-AU = tju-Latn = tju-Latn-AU
 tjw = tjw-AU = tjw-Latn = tjw-Latn-AU
 *tk = tk-Latn = *tk-TM = tk-Latn-TM
 *tk-Arab = tk-AF = tk-Arab-AF
+*tk-Arab-IR
 tk-Cyrl = tk-Cyrl-TM
 tka = tka-BR = tka-Latn = tka-Latn-BR
 tkb = tkb-Deva = tkb-IN = tkb-Deva-IN
@@ -7424,6 +7432,7 @@ tlh-Latn = tlh-Latn-001
 tli = tli-Latn = tli-US = tli-Latn-US
 tli-Cyrl = tli-Cyrl-US
 *tlj = tlj-Latn = tlj-UG = tlj-Latn-UG
+tlj-GH = *tlj-Latn-GH
 tlk = tlk-ID = tlk-Latn = tlk-Latn-ID
 tll = tll-CD = tll-Latn = tll-Latn-CD
 tlm = tlm-Latn = tlm-VU = tlm-Latn-VU
@@ -7570,7 +7579,7 @@ trn = trn-BO = trn-Latn = trn-Latn-BO
 tro = tro-IN = tro-Latn = tro-Latn-IN
 trp-Beng = trp-Beng-IN
 trp-Latn = trp-Latn-IN
-trq = trq-Latn = trq-MX = trq-Latn-MX
+*trq = trq-Latn = trq-MX = trq-Latn-MX
 trr = trr-Latn = trr-PE = trr-Latn-PE
 trs = trs-Latn = trs-MX = trs-Latn-MX
 trt = trt-ID = trt-Latn = trt-Latn-ID
@@ -7757,7 +7766,7 @@ uby = uby-TR = uby-Zyyy = uby-Zyyy-TR
 uda = uda-Latn = uda-NG = uda-Latn-NG
 ude = ude-Cyrl = ude-RU = ude-Cyrl-RU
 udg = udg-IN = udg-Mlym = udg-Mlym-IN
-udi = udi-AZ = udi-Cyrl = udi-Cyrl-AZ
+*udi = udi-AZ = udi-Cyrl = udi-Cyrl-AZ
 udj = udj-ID = udj-Latn = udj-Latn-ID
 udl = udl-CM = udl-Latn = udl-Latn-CM
 udm = udm-Cyrl = udm-RU = udm-Cyrl-RU
@@ -7857,7 +7866,7 @@ uru = uru-BR = uru-Latn = uru-Latn-BR
 urv = urv-Latn = urv-PG = urv-Latn-PG
 *urw = urw-Latn = urw-PG = urw-Latn-PG
 urx = urx-Latn = urx-PG = urx-Latn-PG
-ury = ury-ID = ury-Latn = ury-Latn-ID
+*ury = ury-ID = ury-Latn = ury-Latn-ID
 urz = urz-BR = urz-Latn = urz-Latn-BR
 *usa = usa-Latn = usa-PG = usa-Latn-PG
 ush = ush-Arab = ush-PK = ush-Arab-PK
@@ -7869,7 +7878,7 @@ uss = uss-Latn = uss-NG = uss-Latn-NG
 usu = usu-Latn = usu-PG = usu-Latn-PG
 uta = uta-Latn = uta-NG = uta-Latn-NG
 ute = ute-Latn = ute-US = ute-Latn-US
-uth = dud = dud-Latn = dud-Latn-NG = dud-NG = uth-Latn = uth-NG = uth-Latn-NG
+*uth = dud = dud-Latn = dud-Latn-NG = dud-NG = uth-Latn = uth-NG = uth-Latn-NG
 utp = utp-Latn = utp-SB = utp-Latn-SB
 *utr = utr-Latn = utr-NG = utr-Latn-NG
 utu = utu-Latn = utu-PG = utu-Latn-PG
@@ -8024,7 +8033,7 @@ wbb = wbb-ID = wbb-Latn = wbb-Latn-ID
 wbe = wbe-ID = wbe-Latn = wbe-Latn-ID
 wbf = wbf-BF = wbf-Latn = wbf-Latn-BF
 wbh = wbh-Latn = wbh-TZ = wbh-Latn-TZ
-wbi = wbi-Latn = wbi-TZ = wbi-Latn-TZ
+*wbi = wbi-Latn = wbi-TZ = wbi-Latn-TZ
 wbj = wbj-Latn = wbj-TZ = wbj-Latn-TZ
 wbk = wbk-AF = wbk-Arab = wbk-Arab-AF
 wbl = wbl-Latn = wbl-PK = wbl-Latn-PK
@@ -8126,7 +8135,7 @@ wmn = wmn-Latn = wmn-NC = wmn-Latn-NC
 *wmo = wmo-Latn = wmo-PG = wmo-Latn-PG
 wms = wms-ID = wms-Latn = wms-Latn-ID
 *wmt = wmt-AU = wmt-Latn = wmt-Latn-AU
-wmw = *wmw-Latn = wmw-MZ = wmw-Latn-MZ
+*wmw = *wmw-Latn = wmw-MZ = wmw-Latn-MZ
 wmw-Arab = wmw-Arab-MZ
 wmx = wmx-Latn = wmx-PG = wmx-Latn-PG
 wnb = wnb-Latn = wnb-PG = wnb-Latn-PG
@@ -8186,7 +8195,7 @@ wrx = wrx-ID = wrx-Latn = wrx-Latn-ID
 wry = wry-IN = wry-Zyyy = wry-Zyyy-IN
 wrz = wrz-AU = wrz-Latn = wrz-Latn-AU
 wsa = wsa-ID = wsa-Latn = wsa-Latn-ID
-wsg = ggo = ggo-IN = ggo-Telu = ggo-Telu-IN = wsg-IN = wsg-Telu = wsg-Telu-IN
+*wsg = ggo = ggo-IN = ggo-Telu = ggo-Telu-IN = wsg-IN = wsg-Telu = wsg-Telu-IN
 wsg-Deva = wsg-Deva-IN
 wsg-Gong = wsg-Gong-IN
 wsg-Gonm = wsg-Gonm-IN
@@ -8630,7 +8639,7 @@ yif = yif-CN = yif-Zyyy = yif-Zyyy-CN
 yig = yig-CN = yig-Yiii = yig-Yiii-CN
 yih = yih-DE = yih-Hebr = yih-Hebr-DE
 yii = yii-AU = yii-Latn = yii-Latn-AU
-yij = yij-AU = yij-Latn = yij-Latn-AU
+*yij = yij-AU = yij-Latn = yij-Latn-AU
 yik = yik-CN = yik-Zyyy = yik-Zyyy-CN
 yil = yil-AU = yil-Latn = yil-Latn-AU
 yim = yim-IN = yim-Latn = yim-Latn-IN
@@ -8644,7 +8653,7 @@ yiu = yiu-CN = yiu-Zyyy = yiu-Zyyy-CN
 yiv = yiv-CN = yiv-Zyyy = yiv-Zyyy-CN
 yix = yix-CN = yix-Zyyy = yix-Zyyy-CN
 yiz = yiz-CN = yiz-Zyyy = yiz-Zyyy-CN
-yka = *yka-Latn = yka-PH = yka-Latn-PH
+*yka = *yka-Latn = yka-PH = yka-Latn-PH
 yka-Arab = yka-Arab-PH
 ykg = ykg-Cyrl = ykg-RU = ykg-Cyrl-RU
 yki = yki-ID = yki-Latn = yki-Latn-ID
@@ -8839,7 +8848,7 @@ zeg = zeg-Latn = zeg-PG = zeg-Latn-PG
 zeh = zeh-CN = zeh-Hani = zeh-Hani-CN
 zen = zen-MR = zen-Tfng = zen-Tfng-MR
 zen-Arab = zen-Arab-MR
-zga = zga-Latn = zga-TZ = zga-Latn-TZ
+*zga = zga-Latn = zga-TZ = zga-Latn-TZ
 zgb = zgb-CN = zgb-Hani = zgb-Hani-CN
 *zgh = *zgh-MA = zgh-Tfng = zgh-Tfng-MA
 zgm = zgm-CN = zgm-Hani = zgm-Hani-CN
@@ -8953,7 +8962,7 @@ zpb = zpb-Latn = zpb-MX = zpb-Latn-MX
 zpd = zpd-Latn = zpd-MX = zpd-Latn-MX
 zpe = zpe-Latn = zpe-MX = zpe-Latn-MX
 zpf = zpf-Latn = zpf-MX = zpf-Latn-MX
-zpg = zpg-Latn = zpg-MX = zpg-Latn-MX
+*zpg = zpg-Latn = zpg-MX = zpg-Latn-MX
 zph = zph-Latn = zph-MX = zph-Latn-MX
 *zpi = zpi-Latn = zpi-MX = zpi-Latn-MX
 zpj = zpj-Latn = zpj-MX = zpj-Latn-MX

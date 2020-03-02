@@ -21,6 +21,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument('names',nargs='*',help='name to look up')
 parser.add_argument('-t','--tag',help='Specifies tag to use')
 parser.add_argument('-v','--verbose',action='store_true',help='Output more information')
+parser.add_argument('-r','--region',help="Give full name of given region")
 parser.add_argument('--langtags',help='langtags.json to use')
 args = parser.parse_args()
 
@@ -34,8 +35,8 @@ for t in lts.values():
         if t.matched(args.tag) or t.match639(args.tag):
             alltags.add(t)
         continue
-    if name in getattr(t, 'name', "").lower() or \
-            any(name in x.lower() for x in getattr(t, 'names', [])):
+    if name != "" and (name in getattr(t, 'name', "").lower() or \
+            any(name in x.lower() for x in getattr(t, 'names', []))):
         alltags.add(t)
 if not len(alltags) and args.tag is not None:
     try:
@@ -43,9 +44,12 @@ if not len(alltags) and args.tag is not None:
     except KeyError:
         pass
 if args.verbose:
-    formatstr = u"Tags: {tag!s} = {full!s}, {tags!s}. Names: {name!s}, {names!s}"
+    formatstr = u"Tags: {tag!s} = {full!s}, {tags!s}. Region: {regionname!s}. Names: {name!s}, {names!s}"
 else:
     formatstr = u"{tag!s} = {full!s}\t {name!s}"
     
 print(u"\n".join(formatstr.format(**(prettyformat(t.asdict(format=unicode, tags="", names=""))))
         for t in sorted(alltags, key=lambda x:str(x))))
+
+if args.region:
+    print("Region: {} is {}".format(args.region, lts.region(args.region.upper())))
