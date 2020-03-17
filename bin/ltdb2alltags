@@ -297,6 +297,8 @@ def make_record(t):
     r = t.allforms()
     if not len(r[0]):
         return None
+    if r[0][0] == "q" and r[0][1] in "abcdefghijklmnopqrst":
+        return None
     if hasattr(t, 'primary'):
         r = [t.primary] + [x for x in r if x != t.primary]
     if t.hideregion and not t.hidescript:
