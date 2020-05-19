@@ -2578,7 +2578,7 @@ grc-Grek,grc-Grek-GR,"Greek, Ancient",GR,,,,,,,,SEU,grc,,,Historical
 grc-Linb,grc-Linb-GR,"Greek, Ancient",GR,,,,,,,,SEU,grc,CLDR,,Historical
 grd,grd-Latn-NG,Guruntum-Mbaaru,NG,,,,,1,,,WAF,grd,,,
 grg,grg-Latn-PG,Madi,PG,,,,,,,,MEL,grg,LE,10-Jan-2018,
-grh,grh-Latn-NG,Gbiri-Niragu,NG,,,02569,,1,,,WAF,grh,,,
+grh,grh-Latn-NG,Gbiri-Niragu,NG,,,02569,,,,,WAF,grh,,,
 gri,gri-Latn-SB,Ghari,SB,,,03676,,,,,MEL,gri,LE,10-Jan-2018,
 grj,grj-Latn-LR,"Grebo, Southern",CI LR,,,01605 06457 10341,,1,,,WAF,grj,,,
 grm,grm-Latn-MY,Kota Marudu Talantang,MY,,,,,1,,,SEA,grm,,,
@@ -5628,7 +5628,7 @@ nyo,nyo-Latn-UG,Nyoro,UG,,,,,,,,EAF,nyo,LE,12-Jan-2018,
 nyp,nyp-Latn-UG,Nyang'i,UG,,,,,1,,,EAF,nyp,LE,10-Jan-2018,Extinct
 nyq,nyq-Arab-IR,Nayini,IR,,,,,,,,SAS,nyq,,,
 nyr,nyr-Latn-MW,"Nyiha, Malawi",MW,,,,,,,,EAF,nyr,,,
-nys,nys-Latn-AU,Nyunga,AU,,,,,1,,,ANZ,nys,LE,10-Jan-2018,
+nys,nys-Latn-AU,Nyunga,AU,,,,,,,,ANZ,nys,LE,10-Jan-2018,
 nyt,nyt-Latn-AU,Nyawaygi,AU,,,,,1,,,ANZ,nyt,LE,10-Jan-2018,Extinct
 nyu,nyu-Latn-MZ,Nyungwe,MZ,,,,,,,,EAF,nyu,,,
 nyv,nyv-Latn-AU,Nyulnyul,AU,,,,,1,,,ANZ,nyv,LE,10-Jan-2018,Extinct
@@ -8651,7 +8651,7 @@ yml,yml-Latn-PG,Iamalele,PG,,,02182 20957,,,,,MEL,yml,LE,10-Jan-2018,
 ymm,ymm-Latn-SO,Maay,ET KE SO US,,,,,,,,EAF NAM,ymm,LE,12-Jan-2018,
 ymn,ymn-Latn-ID,Sunum,ID,,,01153,,,,,SEA,ymn,,20-Apr-2018,
 ymo,ymo-Latn-PG,Yangum Mon,PG,,,,,1,,,MEL,ymo,LE,10-Jan-2018,
-ymp,ymp-Latn-PG,Yamap,PG,,,,,1,,,MEL,ymp,LE,10-Jan-2018,
+ymp,ymp-Latn-PG,Yamap,PG,,,,,,,,MEL,ymp,LE,10-Jan-2018,
 ymq,ymq-Zyyy-CN,"Muji, Qila",CN,,,,,1,,,EAS,ymq,,,
 ymr,ymr-Zyyy-IN,Malasar,IN,,,,,1,,,SAS,ymr,,,
 yms,yms-Zyyy-TR,Mysian,TR,,,,,,,,WAS,yms,,,Ancient
