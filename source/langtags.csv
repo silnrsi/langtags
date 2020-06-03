@@ -2606,7 +2606,7 @@ gsp,gsp-Latn-PG,Wasembo,PG,,,,,1,,,MEL,gsp,LE,10-Jan-2018,
 gss,gss-Zxxx-GR,Greek Sign Language,GR,,,,,,,,SEU,gss,,,
 gsw,gsw-Latn-CH,"German, Swiss",AT CH DE FR LI,,,06878 06882 06883 06886,,,,,WEU,gsw,CLDR,,
 gta,gta-Latn-BR,Guató,BR,,,,,1,,,SAM,gta,LE,9-Jan-2018,
-gti,gti-Latn-CD,Gbati-ri,CD,,,,gti,1,,gti,MAF,nyc,,,
+gti,gti-Latn-CD,Gbati-ri,CD,,,,gti,1,,nyc,MAF,nyc,,,
 gtu,gtu-Latn-AU,Aghu-Tharnggala,AU,,,,,1,,,ANZ,gtu,LE,10-Jan-2018,Extinct
 gu,gu-Gujr-IN,Gujarati,AU BD BH BW CA FJ GB IN KE LK MU MW NZ PK SG TZ US ZM ZW,,,,,,,,ANZ EAF MEL NAM NEU SAF SAS SEA WAS,guj,CLDR,,
 gu-Brai,gu-Brai-IN,Gujarati,AU BD BH BW CA FJ GB IN KE LK MU MW NZ PK SG TZ US ZM ZW,,,,,,,,ANZ EAF MEL NAM NEU SAF SAS SEA WAS,guj,,,
@@ -6029,7 +6029,7 @@ ply,ply-Zyyy-CN,Bolyu,CN,,,,,1,,,EAS,ply,,,
 plz,plz-Latn-MY,"Murut, Paluan",MY,,,,,1,,,SEA,plz,,,
 pma,pma-Latn-VU,Paama,VU,,,04477,,,,,MEL,pma,LE,10-Jan-2018,
 pmb,pmb-Latn-CD,Pambia,CD,,,,,1,,,MAF,pmb,,,
-pmc,pmc-Latn-ID,Palumata,ID,,,,pmc,1,,pmc,SEA,huw,LE,10-Jan-2018,Extinct
+pmc,pmc-Latn-ID,Palumata,ID,,,,pmc,1,,huw,SEA,huw,LE,10-Jan-2018,Extinct
 pmd,pmd-Latn-AU,Pallanganmiddang,AU,,,,,1,,,ANZ,pmd,LE,10-Jan-2018,Extinct
 pme,pme-Latn-NC,Pwaamei,NC,,,,,1,,,MEL,pme,LE,10-Jan-2018,
 pmf,pmf-Latn-ID,Pamona,ID,,,03805,,,,,SEA,pmf,,20-Apr-2018,
@@ -6633,7 +6633,7 @@ sgj,sgj-Deva-IN,Surgujia,IN,,,,,,,,SAS,sgj,LE,14-Feb-2018,
 sgk,sgk-Zyyy-CN,Sangkong,CN,,,,,1,,,EAS,sgk,,,
 sgl,sgl-Arab-AF,Sanglechi-Ishkashimi,AF,,,,sgy,1,,sgy,SAS,sgy,,,
 sgm,sgm-Latn-KE,Singa,KE,,,,,1,,,EAF,sgm,,,Extinct
-sgn-my,sgn-my-Zxxx-MM,Myanmar Sign Language,MM,,,,,,,,SEA,sgn,NMC,7-Dec-2017,May be three languages!
+sgn-MM,sgn-Zxxx-MM,Myanmar Sign Language,MM,,,,,,,,SEA,sgn,NMC,7-Dec-2017,May be three languages! Need variants
 sgp,sgp-Latn-IN,Singpho,IN,,,,,,,,SAS,sgp,,,
 sgr,sgr-Arab-IR,Sangisari,IR,,,,,,,,SAS,sgr,,,
 sgs,sgs-Latn-LT,Samogitian,LT,,,,,,,,NEU,sgs,CLDR,,
@@ -7415,7 +7415,7 @@ tnb,tnb-Latn-CO,"Tunebo, Western",CO,,,,,1,,,SAM,tnb,LE,9-Jan-2018,
 tnc,tnc-Latn-CO,Tanimuca-Retuarã,CO,,,04330,,,,,SAM,tnc,LE,9-Jan-2018,
 tnd,tnd-Latn-CO,"Tunebo, Angosturas",CO,,,,,1,,,SAM,tnd,LE,9-Jan-2018,
 tne,tne-Latn-PH,Tinoc Kallahan,PH,,,,kak,,,kak,SEA,kak,,,
-tnf,tnf-Arab-AF,Tangshewi,AF AU IR PK,,,03379 03394,,,,,ANZ SAS,prs,,,
+tnf,tnf-Arab-AF,Tangshewi,AF AU IR PK,,,03379 03394,prs,,,prs,ANZ SAS,prs,,,
 tng,tng-Latn-TD,Tobanga,TD,,,,,,,,MAF,tng,JJB,18-Apr-2018,
 tnh,tnh-Latn-PG,Maiani,PG,,,,,,,,MEL,tnh,LE,10-Jan-2018,
 tni,tni-Latn-ID,Tandia,ID,,,,,1,,,SEA,tni,,,
@@ -8282,7 +8282,7 @@ xhr,xhr-Zyyy-XX,Hernican,XX,,,,,,,,???,xhr,,,Ancient
 xht,xht-Zyyy-TR,Hattic,TR,,,,,,,,WAS,xht,,,Ancient
 xhu,xhu-Zyyy-XX,Hurrian,XX,,,,,,,,???,xhu,,,Ancient
 xhv,xhv-Latn-VN,Khua,LA VN,,,,,1,,,SEA,xhv,NMC,20-Nov-2017,
-xia,xia-Latn-CN,Xiando,CN MM,,,06294 06295 06658 06659 06660 18356,,,,,EAS SEA,acn,LE,12-Jan-2018,
+xia,xia-Latn-CN,Xiando,CN MM,,,06294 06295 06658 06659 06660 18356,,,,acn,EAS SEA,acn,LE,12-Jan-2018,
 xib,xib-Zyyy-XX,Iberian,XX,,,,,,,,???,xib,,,Ancient
 xii,xii-Latn-ZA,Xiri,NA ZA,,,,,1,,,SAF,xii,LE,9-Jan-2018,
 xil,xil-Zyyy-XX,Illyrian,XX,,,,,,,,???,xil,,,Ancient

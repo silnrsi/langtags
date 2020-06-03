@@ -66,7 +66,7 @@ aci = aci-IN = aci-Zyyy = aci-Zyyy-IN
 ack = ack-IN = ack-Zyyy = ack-Zyyy-IN
 acl = acl-IN = acl-Zyyy = acl-Zyyy-IN
 acm = acm-Arab = acm-IQ = acm-Arab-IQ
-acn = acn-CN = acn-Latn = acn-Latn-CN
+acn = acn-CN = acn-Latn = xia = xia-CN = xia-Latn = xia-Latn-CN = acn-Latn-CN
 acp = acp-Latn = acp-NG = acp-Latn-NG
 acq = acq-Arab = acq-YE = acq-Arab-YE
 *acr = acr-GT = acr-Latn = acr-Latn-GT
@@ -6182,7 +6182,7 @@ pro = pro-FR = pro-Latn = pro-Latn-FR
 prp = prp-IN = prp-Zyyy = prp-Zyyy-IN
 *prq = prq-Latn = prq-PE = prq-Latn-PE
 prr = prr-BR = prr-Latn = prr-Latn-BR
-prs = drw = drw-AF = drw-Arab = drw-Arab-AF = prs-AF = prs-Arab = prs-Arab-AF
+prs = drw = drw-AF = drw-Arab = drw-Arab-AF = prs-AF = prs-Arab = tnf = tnf-AF = tnf-Arab = tnf-Arab-AF = prs-Arab-AF
 prt = prt-TH = prt-Thai = pry = pry-TH = pry-Thai = pry-Thai-TH = prt-Thai-TH
 pru = pru-ID = pru-Latn = pru-Latn-ID
 prw = prw-Latn = prw-PG = prw-Latn-PG
@@ -6696,7 +6696,7 @@ sgi = sgi-CM = sgi-Latn = sgi-Latn-CM
 sgj = sgj-Deva = sgj-IN = sgj-Deva-IN
 sgk = sgk-CN = sgk-Zyyy = sgk-Zyyy-CN
 sgm = sgm-KE = sgm-Latn = sgm-Latn-KE
-sgn-MY-MM = sgn-MY-Zxxx = sgn-MY-Zxxx-MM
+sgn-MM = sgn-Zxxx = sgn-Zxxx-MM
 sgp = sgp-IN = sgp-Latn = sgp-Latn-IN
 sgr = sgr-Arab = sgr-IR = sgr-Arab-IR
 sgs = sgs-LT = sgs-Latn = sgs-Latn-LT
@@ -7487,7 +7487,6 @@ tmz = tmz-Latn = tmz-VE = tmz-Latn-VE
 tnb = tnb-CO = tnb-Latn = tnb-Latn-CO
 *tnc = tnc-CO = tnc-Latn = tnc-Latn-CO
 tnd = tnd-CO = tnd-Latn = tnd-Latn-CO
-tnf = tnf-AF = tnf-Arab = tnf-Arab-AF
 tng = tng-Latn = tng-TD = tng-Latn-TD
 *tnh = tnh-Latn = tnh-PG = tnh-Latn-PG
 tni = tni-ID = tni-Latn = tni-Latn-ID
@@ -8340,7 +8339,6 @@ xhr = xhr-XX = xhr-Zyyy = xhr-Zyyy-XX
 xht = xht-TR = xht-Zyyy = xht-Zyyy-TR
 xhu = xhu-XX = xhu-Zyyy = xhu-Zyyy-XX
 xhv = xhv-Latn = xhv-VN = xhv-Latn-VN
-xia = xia-CN = xia-Latn = xia-Latn-CN
 xib = xib-XX = xib-Zyyy = xib-Zyyy-XX
 xii = xii-Latn = xii-ZA = xii-Latn-ZA
 xil = xil-XX = xil-Zyyy = xil-Zyyy-XX

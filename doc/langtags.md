@@ -20,7 +20,7 @@ Langtags.json consists of an array of objects. Each object corresponds to an equ
 - **region** Region code, from the full tag, for this set. Conforms to ISO 3166-1.
 - **regions** Other regions that may be used with these tags. A tag from this set with one of the extra regions is not equivalent to other tags in this set, unless they have the same region component. Each conforms to ISO 3166-1
 - **regionname** The English name for this region taken from the IANA registry.
-- **iana** The IANA name for the language of the canonical tag.
+- **iana** The IANA name for the language of the canonical tag. May also be an array. \[Array added 1.1.1\]
 - **name** The name from the Ethnologue names list for the language and region of the full tag. If this does not exist, then any name from the list of names given for this language is used. If this fails to find anything, then the **iana** entry is used. Thus **name** is never empty.
 - **names** Other alternative names for this language coming from the Ethnologue names list, including alternate names and names and alternate names from other regions.
 - **localname** If present, this gives the name of the language in the orthography specified by this set. Also known as the autonym. This comes from CLDR/SLDR data. \[Deprecated 1.1.0, use localnames instead\]
@@ -29,6 +29,7 @@ Langtags.json consists of an array of objects. Each object corresponds to an equ
 - **script** Specifies the script component of the full tag, for this set. Conforms to ISO 15924. \[Added 1.0.1\]
 - **localnames** Specifies a list of local names (autonyms), coming from the Ethnologue. \[Added 1.1.0\]
 - **latnnames** Specifies a list of romanised autonyms in direct correspondance to the localnames list. \[Added 1.1.0\]
+- **rod** A Registry of Dialects numeric code \(as a string\) \[Added 1.1.1\]
 - **suppress** If present and true indicates that the IANA language tag registry has the suppress script set for this language. \[Added 1.1.1\]
 - **windows** Windows requires a strict BCP-47 interpretation and requires a script tag unless the suppress script from the IANA registry is the same as the script. This field is always present and may be the same as the **tag** field or one of the values in the **tags** list. \[Added 1.1.1\]
 

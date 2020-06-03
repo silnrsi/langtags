@@ -9,7 +9,7 @@
     },
     {
         "api": "1.1.1",
-        "date": "2020-03-17",
+        "date": "2020-06-03",
         "tag": "_version"
     },
     {
@@ -1028,7 +1028,7 @@
         "script": "Latn",
         "sldr": false,
         "tag": "acn",
-        "tags": [ "acn-CN", "acn-Latn" ],
+        "tags": [ "acn-CN", "acn-Latn", "xia", "xia-CN", "xia-Latn", "xia-Latn-CN" ],
         "windows": "acn-Latn"
     },
     {
@@ -90181,7 +90181,7 @@
         "script": "Arab",
         "sldr": false,
         "tag": "prs",
-        "tags": [ "drw", "drw-AF", "drw-Arab", "drw-Arab-AF", "prs-AF", "prs-Arab" ],
+        "tags": [ "drw", "drw-AF", "drw-Arab", "drw-Arab-AF", "prs-AF", "prs-Arab", "tnf", "tnf-AF", "tnf-Arab", "tnf-Arab-AF" ],
         "windows": "prs-Arab"
     },
     {
@@ -97699,16 +97699,17 @@
         "windows": "sgm-Latn"
     },
     {
-        "full": "sgn-MY-Zxxx-MM",
+        "full": "sgn-Zxxx-MM",
+        "iana": "Sign languages",
         "iso639_3": "sgn",
-        "name": "Myanmar Sign Language",
+        "name": "Sign languages",
         "region": "MM",
         "regionname": "Myanmar",
         "script": "Zxxx",
         "sldr": false,
-        "tag": "sgn-MY-MM",
-        "tags": [ "sgn-MY-Zxxx" ],
-        "windows": "sgn-Zxxx-MY-mm"
+        "tag": "sgn-MM",
+        "tags": [ "sgn-Zxxx" ],
+        "windows": "sgn-Zxxx-MM"
     },
     {
         "full": "sgp-Latn-IN",
@@ -109209,23 +109210,6 @@
         "tag": "tnd",
         "tags": [ "tnd-CO", "tnd-Latn" ],
         "windows": "tnd-Latn"
-    },
-    {
-        "full": "tnf-Arab-AF",
-        "iana": "Tangshewi",
-        "iso639_3": "prs",
-        "latnnames": [ "Farsi" ],
-        "localnames": [ "فارسی" ],
-        "name": "Dari",
-        "names": [ "Afghan Persian", "Badakhshi", "Eastern Farsi", "Madaglashti", "Parsi", "Persian", "Tangshewi" ],
-        "region": "AF",
-        "regionname": "Afghanistan",
-        "regions": [ "AU", "IR", "PK" ],
-        "script": "Arab",
-        "sldr": false,
-        "tag": "tnf",
-        "tags": [ "tnf-AF", "tnf-Arab" ],
-        "windows": "tnf-Arab"
     },
     {
         "full": "tng-Latn-TD",
@@ -121412,21 +121396,6 @@
         "tag": "xhv",
         "tags": [ "xhv-Latn", "xhv-VN" ],
         "windows": "xhv-Latn"
-    },
-    {
-        "full": "xia-Latn-CN",
-        "iana": "Xiandao",
-        "iso639_3": "acn",
-        "name": "Achang",
-        "names": [ "Acang", "Achung", "Ach’ang", "Ahchan", "Anchan", "Atsang", "Chung", "Lawng", "Maingtha", "Manmaw", "Mönghsa", "Ngacang", "Ngachang", "Ngac’ang", "Ngatsang", "Ngo Chang", "Ngochang", "Tai Sa’", "Xiandao" ],
-        "region": "CN",
-        "regionname": "China",
-        "regions": [ "MM" ],
-        "script": "Latn",
-        "sldr": false,
-        "tag": "xia",
-        "tags": [ "xia-CN", "xia-Latn" ],
-        "windows": "xia-Latn"
     },
     {
         "full": "xib-Zyyy-XX",
