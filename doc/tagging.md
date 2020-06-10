@@ -707,11 +707,13 @@ normalizes its tags can be found in
 and
 [*here*](http://cldr.unicode.org/index/cldr-spec/picking-the-right-language-code).
 
-Question: Do we extend alltags to include the macro language equivalents? Thus:
+We follow CLDR in giving every macro language a default concrete language that is
+mapped to it. Thus, for example:
 
 ```
-*zh = zh-CN = *zh-Hans = cmn = cmn-Hans = cmn-Hans-CN = *zh-Hans-CN
-
-zh-TW = *zh-Hant = cmn-Hant = cmn-TW = cmn-Hant-TW = *zh-Hant-TW
+ps = pbu = pbu-AF = pbu-Arab = pbu-Arab-AF = *ps-AF = ps-Arab = ps-Arab-AF
 ```
 
+which says that while Pashto is a macro language, the default language in that set
+is Northern Pashto and that Northern Pashto will be mapped to the macro language
+due to their equivalence.

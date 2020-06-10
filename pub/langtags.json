@@ -24540,18 +24540,33 @@
         "windows": "cv-Cyrl"
     },
     {
-        "full": "cvg-Zyyy-IN",
+        "full": "cvg-Latn-IN",
         "iana": "Chug",
         "iso639_3": "cvg",
+        "localnames": [ "Duhumbi" ],
         "name": "Chug",
         "names": [ "Chug Monpa", "Chugpa", "Duhumbi" ],
         "region": "IN",
         "regionname": "India",
-        "script": "Zyyy",
+        "script": "Latn",
         "sldr": false,
         "tag": "cvg",
-        "tags": [ "cvg-IN", "cvg-Zyyy" ],
-        "windows": "cvg-Zyyy"
+        "tags": [ "cvg-IN", "cvg-Latn" ],
+        "windows": "cvg-Latn"
+    },
+    {
+        "full": "cvg-Tibt-IN",
+        "iana": "Chug",
+        "iso639_3": "cvg",
+        "name": "Chug",
+        "names": [ "Chug Monpa", "Chugpa", "Duhumbi" ],
+        "nophonvars": true,
+        "region": "IN",
+        "regionname": "India",
+        "script": "Tibt",
+        "sldr": false,
+        "tag": "cvg-Tibt",
+        "windows": "cvg-Tibt"
     },
     {
         "full": "cvn-Latn-MX",
@@ -112583,18 +112598,17 @@
         "windows": "txo-Deva"
     },
     {
-        "full": "txo-Zzzz-IN-x-toto",
+        "full": "txo-Toto-IN",
         "iana": "Toto",
         "iso639_3": "txo",
         "name": "Toto",
         "nophonvars": true,
         "region": "IN",
         "regionname": "India",
-        "script": "Zzzz",
+        "script": "Toto",
         "sldr": false,
-        "tag": "txo-Zzzz-x-toto",
-        "tags": [ "txo-IN-x-toto" ],
-        "windows": "txo-Zzzz-x-toto"
+        "tag": "txo-Toto",
+        "windows": "txo-Toto"
     },
     {
         "full": "txq-Latn-ID",

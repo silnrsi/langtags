@@ -1675,7 +1675,8 @@ cuw = cuw-NP = cuw-Zyyy = cuw-Zyyy-NP
 *cux = cux-Latn = cux-MX = cux-Latn-MX
 cuy = cuy-Latn = cuy-XX = cuy-Latn-XX
 cv = cv-Cyrl = cv-RU = cv-Cyrl-RU
-cvg = cvg-IN = cvg-Zyyy = cvg-Zyyy-IN
+cvg = cvg-IN = cvg-Latn = cvg-Latn-IN
+cvg-Tibt = cvg-Tibt-IN
 cvn = cvn-Latn = cvn-MX = cvn-Latn-MX
 cwa = cwa-Latn = cwa-TZ = cwa-Latn-TZ
 cwb = cwb-Latn = cwb-MZ = cwb-Latn-MZ
@@ -7719,7 +7720,7 @@ txm = txm-ID = txm-Latn = txm-Latn-ID
 txn = txn-ID = txn-Latn = txn-Latn-ID
 txo-Beng = txo-Beng-IN
 txo-Deva = txo-Deva-IN
-txo-Zzzz-x-toto = txo-IN-x-toto = txo-Zzzz-IN-x-toto
+txo-Toto = txo-Toto-IN
 *txq = txq-ID = txq-Latn = txq-Latn-ID
 txr = txr-XX = txr-Zyyy = txr-Zyyy-XX
 txs = txs-ID = txs-Latn = txs-Latn-ID
