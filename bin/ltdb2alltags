@@ -3,7 +3,7 @@
 import os, sys, csv, json, re, datetime
 from argparse import ArgumentParser
 import xml.etree.ElementTree as et
-import palaso.sldr.langtags_full as lt
+import sldr.langtags_full as lt
 import csv, codecs
 import urllib.request as urllib2
 from palaso.unicode.ucd import UCD
@@ -160,6 +160,7 @@ lts = lt.LangTags(noalltags=True)
 deprecated = {}
 iananames = {}
 suppress = {}
+preferences = {}
 for k,v in lts.items():
     if getattr(v, 'deprecated', False):
         deprecated[v.lang] = "1"
@@ -167,6 +168,9 @@ for k,v in lts.items():
         iananames[k] = v.desc
     if getattr(v, 'suppress', False):
         suppress[k] = v.script
+    pref = getattr(v, 'preferred', None)
+    if pref is not None:
+        preferences.setdefault(pref, []).append(k)
 regionnames = get_regionnames()
 lts.clear()
 allentries = {}
@@ -320,8 +324,7 @@ def make_record(t):
         n['windows'] = str(temp)
     if t.region in regionnames:
         n['regionname'] = regionnames[t.region]
-    if len(r) > 2:
-        n['tags'] = sorted(set(r[1:-1]))
+    tags = set(r[1:-1])
     hassldr = False
     # n['primary'] = True
     if False and "-" in n['tag']:
@@ -338,7 +341,29 @@ def make_record(t):
     # Code positioned here to use zh when hunting localname
     if r[0] == 'zh':
         n['tag'] = 'zh-CN'
-        n['tags'] = [x if x != 'zh-CN' else 'zh' for x in n['tags']]
+        tags.discard('zh-CN')
+        tags.add("zh")
+    for a in [n['tag'], n['full']] + list(tags):
+        atag = lt.LangTag(a)
+        al = atag.lang
+        if al not in preferences:
+            continue
+        for ap in preferences[al]:
+            ntag = lt.LangTag(a)
+            apt = lt.LangTag(ap)
+            if apt.lang == "iw": print(ntag, apt)
+            if apt.script is not None:
+                if t.script != apt.script:
+                    continue
+                ntag.script = apt.script
+            if apt.region is not None:
+                if apt.region != t.region:
+                    continue
+                ntag.region = apt.region
+            ntag.lang = apt.lang
+            tags.add(str(ntag))
+    if len(tags):
+        n['tags'] = sorted(tags)
     if hasattr(t, 'iso639'):
         n['iso639_3'] = t.iso639
     elif t.base is not None and len(t.base):
@@ -389,9 +414,9 @@ def make_record(t):
         extlang = "-".join([t.lang] + t._extensions())
         ns = iananames.get(extlang, getattr(t, 'name', iananames[t.lang]))[:]
         if len(ns):
-            n['iana'] = ns if len(ns) > 1 else ns[0]
             if 'name' not in n:
-                n['name'] = ns.pop(0)
+                n['name'] = ns[0]
+            n['iana'] = ns
             if len(ns) > 0 :
                 n['names'].extend(ns)
     if 'name' in n:
@@ -432,7 +457,7 @@ if not args.quiet:
 # special record for passing standard variants
 res.append({'tag': '_globalvar', 'variants': ['simple']})
 res.append({'tag': "_phonvar", 'variants': ['alalc97', 'fonipa', 'fonkirsh', 'fonnapa', 'fonupa', 'fonxsamp']})
-res.append({'tag': "_version", 'api': '1.1.1', 'date': str(datetime.date.today())})
+res.append({'tag': "_version", 'api': '1.2.0', 'date': str(datetime.date.today())})
 if args.jobs == 1:
     for t in sorted(set(lts.values())):
         r = make_record(t)
