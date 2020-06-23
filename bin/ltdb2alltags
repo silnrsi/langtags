@@ -351,11 +351,12 @@ def make_record(t):
         for ap in preferences[al]:
             ntag = lt.LangTag(a)
             apt = lt.LangTag(ap)
-            if apt.lang == "iw": print(ntag, apt)
             if apt.script is not None:
                 if t.script != apt.script:
                     continue
                 ntag.script = apt.script
+            elif ntag.script is not None and ntag.script != apt.script:
+                continue
             if apt.region is not None:
                 if apt.region != t.region:
                     continue

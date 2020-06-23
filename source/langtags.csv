@@ -2606,7 +2606,7 @@ gsp,gsp-Latn-PG,Wasembo,PG,,,,,1,,,MEL,gsp,LE,10-Jan-2018,
 gss,gss-Zxxx-GR,Greek Sign Language,GR,,,,,,,,SEU,gss,,,
 gsw,gsw-Latn-CH,"German, Swiss",AT CH DE FR LI,,,06878 06882 06883 06886,,,,,WEU,gsw,CLDR,,
 gta,gta-Latn-BR,Guató,BR,,,,,1,,,SAM,gta,LE,9-Jan-2018,
-gti,gti-Latn-CD,Gbati-ri,CD,,,,gti,1,,nyc,MAF,nyc,,,
+gti,gti-Latn-CD,Gbati-ri,CD,,,,,1,,nyc,MAF,nyc,,,
 gtu,gtu-Latn-AU,Aghu-Tharnggala,AU,,,,,1,,,ANZ,gtu,LE,10-Jan-2018,Extinct
 gu,gu-Gujr-IN,Gujarati,AU BD BH BW CA FJ GB IN KE LK MU MW NZ PK SG TZ US ZM ZW,,,,,,,,ANZ EAF MEL NAM NEU SAF SAS SEA WAS,guj,CLDR,,
 gu-Brai,gu-Brai-IN,Gujarati,AU BD BH BW CA FJ GB IN KE LK MU MW NZ PK SG TZ US ZM ZW,,,,,,,,ANZ EAF MEL NAM NEU SAF SAS SEA WAS,guj,,,
@@ -3171,7 +3171,7 @@ jgk,jgk-Latn-NG,Gwak,NG,,,01961,,,,,WAF,jgk,,,
 jgo,jgo-Latn-CM,Ngomba,CM,,,,,,,,MAF,jgo,CLDR,,
 jhi,jhi-Latn-MY,Jehai,MY TH,,,,,1,,,SEA,jhi,,,
 jhs,jhs-Zxxx-NP,Jhankot Sign Language,NP,,,,,,,,SAS,jhs,,,
-ji,ji-Hebr-UA,Yiddish,UA,,,,yi,,,yi,???,yid,CLDR,,grandfathered
+ji,ji-Hebr-UA,Yiddish,UA,,,,,,,yi,???,yid,CLDR,,grandfathered
 jia,jia-Latn-CM,Jina,CM,,,,,1,,,MAF,jia,,,
 jib,jib-Latn-NG,Jibu,NG,,,,,,,,WAF,jib,,,
 jic,jic-Latn-HN,Tol,HN,,,,,,,,CAM,jic,LE,9-Jan-2018,
@@ -4221,7 +4221,7 @@ llk,llk-Latn-MY,Lelak,MY,,,,,1,,,SEA,llk,LE,10-Jan-2018,Extinct
 lll,lll-Latn-PG,Lilau,PG,,,,,1,,,MEL,lll,LE,10-Jan-2018,
 llm,llm-Latn-ID,Lasalimu,ID,,,,,1,,,SEA,llm,,,
 lln,lln-Latn-TD,Lele,TD,,,,,,,,MAF,lln,LE,12-Jan-2018,
-llo,llo-Zyyy-LA,Khlor,LA,,,,,,,ngt,SEA,llo,NMC,20-Nov-2017,It's very likely that this language will retire and become a part of Kriang [ngt] in the future
+llo,llo-Laoo-LA,Khlor,LA,,,,,,,ngt,SEA,llo,NMC,20-Nov-2017,It's very likely that this language will retire and become a part of Kriang [ngt] in the future
 llp,llp-Latn-VU,"Efate, North",VU,,,04471 04490,,,,,MEL,llp,LE,10-Jan-2018,
 llq,llq-Latn-ID,Lolak,ID,,,,,1,,,SEA,llq,,,
 lls,lls-Zxxx-LT,Lithuanian Sign Language,LT,,,,,,,,NEU,lls,,,
@@ -6029,7 +6029,7 @@ ply,ply-Zyyy-CN,Bolyu,CN,,,,,1,,,EAS,ply,,,
 plz,plz-Latn-MY,"Murut, Paluan",MY,,,,,1,,,SEA,plz,,,
 pma,pma-Latn-VU,Paama,VU,,,04477,,,,,MEL,pma,LE,10-Jan-2018,
 pmb,pmb-Latn-CD,Pambia,CD,,,,,1,,,MAF,pmb,,,
-pmc,pmc-Latn-ID,Palumata,ID,,,,pmc,1,,huw,SEA,huw,LE,10-Jan-2018,Extinct
+pmc,pmc-Latn-ID,Palumata,ID,,,,,1,,huw,SEA,huw,LE,10-Jan-2018,Extinct
 pmd,pmd-Latn-AU,Pallanganmiddang,AU,,,,,1,,,ANZ,pmd,LE,10-Jan-2018,Extinct
 pme,pme-Latn-NC,Pwaamei,NC,,,,,1,,,MEL,pme,LE,10-Jan-2018,
 pmf,pmf-Latn-ID,Pamona,ID,,,03805,,,,,SEA,pmf,,20-Apr-2018,

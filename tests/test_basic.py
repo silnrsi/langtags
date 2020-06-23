@@ -13,7 +13,7 @@ def nonascii(s):
 
 class Basic(unittest.TestCase):
 
-    extraScripts = []
+    extraScripts = ["Toto"]
     extraLangs = ("000", "ckm", "cnp", "csp", "dmf", "dwk", "ebc", "gef", "gmr", "hng",
                   "nsb", "sdq", "uki", "wlh", "xnm", "xpb", "xpd", "xpf", "xph", "xpl",
                   "xpv", "xpw", "xpx", "xpz", "zba")

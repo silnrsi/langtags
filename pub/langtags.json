@@ -226,7 +226,6 @@
         "full": "aak-Latn-PG",
         "iana": [ "Ankave" ],
         "iso639_3": "aak",
-        "localname": "Aga pɨ'ne'",
         "localnames": [ "Aga pɨ'ne'" ],
         "name": "Ankave",
         "names": [ "Aga pɨ’ne’", "Angave" ],
@@ -278,7 +277,7 @@
         "script": "Arab",
         "sldr": false,
         "tag": "aao",
-        "tags": [ "aao-Arab", "aao-DZ", "ar-aao", "ar-aao-Arab", "ar-aao-Arab-DZ", "ar-aao-DZ" ],
+        "tags": [ "aao-Arab", "aao-DZ", "ar-aao", "ar-aao-DZ" ],
         "windows": "aao-Arab"
     },
     {
@@ -545,7 +544,7 @@
         "script": "Arab",
         "sldr": false,
         "tag": "abh",
-        "tags": [ "abh-Arab", "abh-TJ", "ar-abh", "ar-abh-Arab", "ar-abh-Arab-TJ", "ar-abh-TJ" ],
+        "tags": [ "abh-Arab", "abh-TJ", "ar-abh", "ar-abh-TJ" ],
         "windows": "abh-Arab"
     },
     {
@@ -789,7 +788,7 @@
         "script": "Arab",
         "sldr": false,
         "tag": "abv",
-        "tags": [ "abv-Arab", "abv-BH", "ar-abv", "ar-abv-Arab", "ar-abv-Arab-BH", "ar-abv-BH" ],
+        "tags": [ "abv-Arab", "abv-BH", "ar-abv", "ar-abv-BH" ],
         "windows": "abv-Arab"
     },
     {
@@ -1013,7 +1012,7 @@
         "script": "Arab",
         "sldr": false,
         "tag": "acm",
-        "tags": [ "acm-Arab", "acm-IQ", "ar-acm", "ar-acm-Arab", "ar-acm-Arab-IQ", "ar-acm-IQ" ],
+        "tags": [ "acm-Arab", "acm-IQ", "ar-acm", "ar-acm-IQ" ],
         "windows": "acm-Arab"
     },
     {
@@ -1057,7 +1056,7 @@
         "script": "Arab",
         "sldr": false,
         "tag": "acq",
-        "tags": [ "acq-Arab", "acq-YE", "ar-acq", "ar-acq-Arab", "ar-acq-Arab-YE", "ar-acq-YE" ],
+        "tags": [ "acq-Arab", "acq-YE", "ar-acq", "ar-acq-YE" ],
         "windows": "acq-Arab"
     },
     {
@@ -1180,7 +1179,7 @@
         "script": "Arab",
         "sldr": false,
         "tag": "acw",
-        "tags": [ "acw-Arab", "acw-SA", "ar-acw", "ar-acw-Arab", "ar-acw-Arab-SA", "ar-acw-SA" ],
+        "tags": [ "acw-Arab", "acw-SA", "ar-acw", "ar-acw-SA" ],
         "windows": "acw-Arab"
     },
     {
@@ -1197,7 +1196,7 @@
         "script": "Arab",
         "sldr": false,
         "tag": "acx",
-        "tags": [ "acx-Arab", "acx-OM", "ar-acx", "ar-acx-Arab", "ar-acx-Arab-OM", "ar-acx-OM" ],
+        "tags": [ "acx-Arab", "acx-OM", "ar-acx", "ar-acx-OM" ],
         "windows": "acx-Arab"
     },
     {
@@ -1212,7 +1211,7 @@
         "script": "Latn",
         "sldr": false,
         "tag": "acy",
-        "tags": [ "acy-CY", "acy-Latn", "ar-acy", "ar-acy-CY", "ar-acy-Latn", "ar-acy-Latn-CY" ],
+        "tags": [ "acy-CY", "acy-Latn", "ar-acy", "ar-acy-CY" ],
         "windows": "acy-Latn"
     },
     {
@@ -1227,7 +1226,6 @@
         "script": "Arab",
         "sldr": false,
         "tag": "acy-Arab",
-        "tags": [ "ar-acy-Arab", "ar-acy-Arab-CY" ],
         "windows": "acy-Arab"
     },
     {
@@ -1242,7 +1240,6 @@
         "script": "Grek",
         "sldr": false,
         "tag": "acy-Grek",
-        "tags": [ "ar-acy-Grek", "ar-acy-Grek-CY" ],
         "windows": "acy-Grek"
     },
     {
@@ -1334,7 +1331,7 @@
         "script": "Arab",
         "sldr": false,
         "tag": "adf",
-        "tags": [ "adf-Arab", "adf-OM", "ar-adf", "ar-adf-Arab", "ar-adf-Arab-OM", "ar-adf-OM" ],
+        "tags": [ "adf-Arab", "adf-OM", "ar-adf", "ar-adf-OM" ],
         "windows": "adf-Arab"
     },
     {
@@ -1497,7 +1494,7 @@
         "script": "Latn",
         "sldr": false,
         "tag": "ads",
-        "tags": [ "ads-GH", "ads-Latn", "sgn-ads", "sgn-ads-GH", "sgn-ads-Latn", "sgn-ads-Latn-GH" ],
+        "tags": [ "ads-GH", "ads-Latn", "sgn-ads", "sgn-ads-GH" ],
         "windows": "ads-Latn"
     },
     {
@@ -1512,7 +1509,6 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "ads-Zxxx",
-        "tags": [ "sgn-ads-Zxxx", "sgn-ads-Zxxx-GH" ],
         "windows": "ads-Zxxx"
     },
     {
@@ -1704,7 +1700,7 @@
         "script": "Arab",
         "sldr": true,
         "tag": "aeb",
-        "tags": [ "aeb-Arab", "aeb-TN", "ar-aeb", "ar-aeb-Arab", "ar-aeb-Arab-TN", "ar-aeb-TN" ],
+        "tags": [ "aeb-Arab", "aeb-TN", "ar-aeb", "ar-aeb-TN" ],
         "windows": "aeb-Arab"
     },
     {
@@ -1721,7 +1717,6 @@
         "script": "Latn",
         "sldr": true,
         "tag": "aeb-Latn",
-        "tags": [ "ar-aeb-Latn", "ar-aeb-Latn-TN" ],
         "windows": "aeb-Latn"
     },
     {
@@ -1735,7 +1730,7 @@
         "script": "Arab",
         "sldr": false,
         "tag": "aec",
-        "tags": [ "aec-Arab", "aec-EG", "ar-aec", "ar-aec-Arab", "ar-aec-Arab-EG", "ar-aec-EG" ],
+        "tags": [ "aec-Arab", "aec-EG", "ar-aec", "ar-aec-EG" ],
         "windows": "aec-Arab"
     },
     {
@@ -1749,7 +1744,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "aed",
-        "tags": [ "aed-AR", "aed-Zxxx", "sgn-aed", "sgn-aed-AR", "sgn-aed-Zxxx", "sgn-aed-Zxxx-AR" ],
+        "tags": [ "aed-AR", "aed-Zxxx", "sgn-aed", "sgn-aed-AR" ],
         "windows": "aed-Zxxx"
     },
     {
@@ -1819,7 +1814,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "aen",
-        "tags": [ "aen-AM", "aen-Zxxx", "sgn-aen", "sgn-aen-AM", "sgn-aen-Zxxx", "sgn-aen-Zxxx-AM" ],
+        "tags": [ "aen-AM", "aen-Zxxx", "sgn-aen", "sgn-aen-AM" ],
         "windows": "aen-Zxxx"
     },
     {
@@ -1999,7 +1994,7 @@
         "script": "Arab",
         "sldr": false,
         "tag": "afb",
-        "tags": [ "afb-Arab", "afb-KW", "ar-afb", "ar-afb-Arab", "ar-afb-Arab-KW", "ar-afb-KW" ],
+        "tags": [ "afb-Arab", "afb-KW", "ar-afb", "ar-afb-KW" ],
         "windows": "afb-Arab"
     },
     {
@@ -2041,7 +2036,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "afg",
-        "tags": [ "afg-AF", "afg-Zxxx", "sgn-afg", "sgn-afg-AF", "sgn-afg-Zxxx", "sgn-afg-Zxxx-AF" ],
+        "tags": [ "afg-AF", "afg-Zxxx", "sgn-afg", "sgn-afg-AF" ],
         "windows": "afg-Zxxx"
     },
     {
@@ -3282,7 +3277,7 @@
         "script": "Arab",
         "sldr": false,
         "tag": "ajp",
-        "tags": [ "ajp-Arab", "ajp-JO", "ar-ajp", "ar-ajp-Arab", "ar-ajp-Arab-JO", "ar-ajp-JO" ],
+        "tags": [ "ajp-Arab", "ajp-JO", "ar-ajp", "ar-ajp-JO" ],
         "windows": "ajp-Arab"
     },
     {
@@ -5343,7 +5338,7 @@
         "script": "Arab",
         "sldr": true,
         "tag": "apc",
-        "tags": [ "apc-Arab", "apc-SY", "ar-apc", "ar-apc-Arab", "ar-apc-Arab-SY", "ar-apc-SY" ],
+        "tags": [ "apc-Arab", "apc-SY", "ar-apc", "ar-apc-SY" ],
         "windows": "apc-Arab"
     },
     {
@@ -5360,7 +5355,7 @@
         "script": "Arab",
         "sldr": false,
         "tag": "apd",
-        "tags": [ "apd-Arab", "apd-TG", "ar-apd", "ar-apd-Arab", "ar-apd-Arab-TG", "ar-apd-TG" ],
+        "tags": [ "apd-Arab", "apd-TG", "ar-apd", "ar-apd-TG" ],
         "windows": "apd-Arab"
     },
     {
@@ -5376,7 +5371,7 @@
         "script": "Latn",
         "sldr": true,
         "tag": "apd-Latn",
-        "tags": [ "apd-SD", "ar-apd-Latn", "ar-apd-Latn-SD", "ar-apd-SD" ],
+        "tags": [ "apd-SD", "ar-apd-SD" ],
         "windows": "apd-Latn"
     },
     {
@@ -5897,7 +5892,7 @@
         "script": "Brai",
         "sldr": false,
         "tag": "ar-Brai",
-        "tags": [ "ar-arb-Brai", "ar-arb-Brai-SA", "arb-Brai", "arb-Brai-SA" ],
+        "tags": [ "arb-Brai", "arb-Brai-SA" ],
         "windows": "ar-Brai"
     },
     {
@@ -6097,7 +6092,7 @@
         "sldr": true,
         "suppress": true,
         "tag": "ar-SA",
-        "tags": [ "ar-arb", "ar-arb-Arab", "ar-arb-Arab-SA", "ar-arb-SA", "arb", "arb-Arab", "arb-Arab-SA", "arb-SA" ],
+        "tags": [ "ar-arb", "ar-arb-SA", "arb", "arb-Arab", "arb-Arab-SA", "arb-SA" ],
         "windows": "ar-SA"
     },
     {
@@ -6391,7 +6386,7 @@
         "script": "Arab",
         "sldr": false,
         "tag": "arq",
-        "tags": [ "ar-arq", "ar-arq-Arab", "ar-arq-Arab-DZ", "ar-arq-DZ", "arq-Arab", "arq-DZ" ],
+        "tags": [ "ar-arq", "ar-arq-DZ", "arq-Arab", "arq-DZ" ],
         "windows": "arq-Arab"
     },
     {
@@ -6422,7 +6417,7 @@
         "script": "Arab",
         "sldr": false,
         "tag": "ars",
-        "tags": [ "ar-ars", "ar-ars-Arab", "ar-ars-Arab-SA", "ar-ars-SA", "ars-Arab", "ars-SA" ],
+        "tags": [ "ar-ars", "ar-ars-SA", "ars-Arab", "ars-SA" ],
         "windows": "ars-Arab"
     },
     {
@@ -6496,7 +6491,7 @@
         "script": "Arab",
         "sldr": false,
         "tag": "ary",
-        "tags": [ "ar-ary", "ar-ary-Arab", "ar-ary-Arab-MA", "ar-ary-MA", "ary-Arab", "ary-MA" ],
+        "tags": [ "ar-ary", "ar-ary-MA", "ary-Arab", "ary-MA" ],
         "windows": "ary-Arab"
     },
     {
@@ -6514,7 +6509,7 @@
         "script": "Arab",
         "sldr": true,
         "tag": "arz",
-        "tags": [ "ar-arz", "ar-arz-Arab", "ar-arz-Arab-EG", "ar-arz-EG", "arz-Arab", "arz-EG" ],
+        "tags": [ "ar-arz", "ar-arz-EG", "arz-Arab", "arz-EG" ],
         "windows": "arz-Arab"
     },
     {
@@ -6530,7 +6525,6 @@
         "script": "Brai",
         "sldr": false,
         "tag": "arz-Brai",
-        "tags": [ "ar-arz-Brai", "ar-arz-Brai-EG" ],
         "windows": "arz-Brai"
     },
     {
@@ -6608,7 +6602,7 @@
         "script": "Sgnw",
         "sldr": false,
         "tag": "ase",
-        "tags": [ "ase-Sgnw", "ase-US", "sgn-ase", "sgn-ase-Sgnw", "sgn-ase-Sgnw-US", "sgn-ase-US" ],
+        "tags": [ "ase-Sgnw", "ase-US", "sgn-ase", "sgn-ase-US" ],
         "windows": "ase-Sgnw"
     },
     {
@@ -6624,7 +6618,6 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "ase-Zxxx",
-        "tags": [ "sgn-ase-Zxxx", "sgn-ase-Zxxx-US" ],
         "windows": "ase-Zxxx"
     },
     {
@@ -6638,7 +6631,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "asf",
-        "tags": [ "asf-AU", "asf-Zxxx", "sgn-asf", "sgn-asf-AU", "sgn-asf-Zxxx", "sgn-asf-Zxxx-AU" ],
+        "tags": [ "asf-AU", "asf-Zxxx", "sgn-asf", "sgn-asf-AU" ],
         "windows": "asf-Zxxx"
     },
     {
@@ -6766,7 +6759,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "asp",
-        "tags": [ "asp-DZ", "asp-Zxxx", "sgn-asp", "sgn-asp-DZ", "sgn-asp-Zxxx", "sgn-asp-Zxxx-DZ" ],
+        "tags": [ "asp-DZ", "asp-Zxxx", "sgn-asp", "sgn-asp-DZ" ],
         "windows": "asp-Zxxx"
     },
     {
@@ -6780,7 +6773,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "asq",
-        "tags": [ "asq-AT", "asq-Zxxx", "sgn-asq", "sgn-asq-AT", "sgn-asq-Zxxx", "sgn-asq-Zxxx-AT" ],
+        "tags": [ "asq-AT", "asq-Zxxx", "sgn-asq", "sgn-asq-AT" ],
         "windows": "asq-Zxxx"
     },
     {
@@ -6868,7 +6861,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "asw",
-        "tags": [ "asw-AU", "asw-Zxxx", "sgn-asw", "sgn-asw-AU", "sgn-asw-Zxxx", "sgn-asw-Zxxx-AU" ],
+        "tags": [ "asw-AU", "asw-Zxxx", "sgn-asw", "sgn-asw-AU" ],
         "windows": "asw-Zxxx"
     },
     {
@@ -7588,7 +7581,7 @@
         "script": "Arab",
         "sldr": false,
         "tag": "auz",
-        "tags": [ "ar-auz", "ar-auz-Arab", "ar-auz-Arab-UZ", "ar-auz-UZ", "auz-Arab", "auz-UZ" ],
+        "tags": [ "ar-auz", "ar-auz-UZ", "auz-Arab", "auz-UZ" ],
         "windows": "auz-Arab"
     },
     {
@@ -7676,7 +7669,7 @@
         "script": "Arab",
         "sldr": true,
         "tag": "avl",
-        "tags": [ "ar-avl", "ar-avl-Arab", "ar-avl-Arab-EG", "ar-avl-EG", "avl-Arab", "avl-EG" ],
+        "tags": [ "ar-avl", "ar-avl-EG", "avl-Arab", "avl-EG" ],
         "windows": "avl-Arab"
     },
     {
@@ -8277,7 +8270,7 @@
         "script": "Arab",
         "sldr": true,
         "tag": "ayh",
-        "tags": [ "ar-ayh", "ar-ayh-Arab", "ar-ayh-Arab-YE", "ar-ayh-YE", "ayh-Arab", "ayh-YE" ],
+        "tags": [ "ar-ayh", "ar-ayh-YE", "ayh-Arab", "ayh-YE" ],
         "windows": "ayh-Arab"
     },
     {
@@ -8321,7 +8314,7 @@
         "script": "Arab",
         "sldr": false,
         "tag": "ayl",
-        "tags": [ "ar-ayl", "ar-ayl-Arab", "ar-ayl-Arab-LY", "ar-ayl-LY", "ayl-Arab", "ayl-LY" ],
+        "tags": [ "ar-ayl", "ar-ayl-LY", "ayl-Arab", "ayl-LY" ],
         "windows": "ayl-Arab"
     },
     {
@@ -8338,7 +8331,7 @@
         "script": "Arab",
         "sldr": false,
         "tag": "ayn",
-        "tags": [ "ar-ayn", "ar-ayn-Arab", "ar-ayn-Arab-YE", "ar-ayn-YE", "ayn-Arab", "ayn-YE" ],
+        "tags": [ "ar-ayn", "ar-ayn-YE", "ayn-Arab", "ayn-YE" ],
         "windows": "ayn-Arab"
     },
     {
@@ -8370,7 +8363,7 @@
         "script": "Arab",
         "sldr": false,
         "tag": "ayp",
-        "tags": [ "ar-ayp", "ar-ayp-Arab", "ar-ayp-Arab-IQ", "ar-ayp-IQ", "ayp-Arab", "ayp-IQ" ],
+        "tags": [ "ar-ayp", "ar-ayp-IQ", "ayp-Arab", "ayp-IQ" ],
         "windows": "ayp-Arab"
     },
     {
@@ -9441,7 +9434,7 @@
         "script": "Latn",
         "sldr": false,
         "tag": "bbz",
-        "tags": [ "ar-bbz", "ar-bbz-Latn", "ar-bbz-Latn-TD", "ar-bbz-TD", "bbz-Latn", "bbz-TD" ],
+        "tags": [ "ar-bbz", "ar-bbz-TD", "bbz-Latn", "bbz-TD" ],
         "windows": "bbz-Latn"
     },
     {
@@ -10782,7 +10775,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "bfi",
-        "tags": [ "bfi-GB", "bfi-Zxxx", "sgn-bfi", "sgn-bfi-GB", "sgn-bfi-Zxxx", "sgn-bfi-Zxxx-GB" ],
+        "tags": [ "bfi-GB", "bfi-Zxxx", "sgn-bfi", "sgn-bfi-GB" ],
         "windows": "bfi-Zxxx"
     },
     {
@@ -10796,7 +10789,7 @@
         "script": "Zzzz",
         "sldr": false,
         "tag": "bfi-x-stokoe",
-        "tags": [ "bfi-GB-x-stokoe", "bfi-Zzzz-x-stokoe", "sgn-bfi-GB-x-stokoe", "sgn-bfi-Zzzz-GB-x-stokoe", "sgn-bfi-Zzzz-x-stokoe", "sgn-bfi-x-stokoe" ],
+        "tags": [ "bfi-GB-x-stokoe", "bfi-Zzzz-x-stokoe", "sgn-bfi-GB-x-stokoe", "sgn-bfi-x-stokoe" ],
         "windows": "bfi-Zzzz-x-stokoe"
     },
     {
@@ -10825,7 +10818,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "bfk",
-        "tags": [ "bfk-TH", "bfk-Zxxx", "sgn-bfk", "sgn-bfk-TH", "sgn-bfk-Zxxx", "sgn-bfk-Zxxx-TH" ],
+        "tags": [ "bfk-TH", "bfk-Zxxx", "sgn-bfk", "sgn-bfk-TH" ],
         "windows": "bfk-Zxxx"
     },
     {
@@ -12563,7 +12556,7 @@
         "script": "Latn",
         "sldr": true,
         "tag": "bjn",
-        "tags": [ "bjn-ID", "bjn-Latn", "ms-bjn", "ms-bjn-ID", "ms-bjn-Latn", "ms-bjn-Latn-ID" ],
+        "tags": [ "bjn-ID", "bjn-Latn", "ms-bjn", "ms-bjn-ID" ],
         "windows": "bjn-Latn"
     },
     {
@@ -12581,7 +12574,6 @@
         "script": "Arab",
         "sldr": false,
         "tag": "bjn-Arab",
-        "tags": [ "ms-bjn-Arab", "ms-bjn-Arab-ID" ],
         "windows": "bjn-Arab"
     },
     {
@@ -14553,7 +14545,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "bog",
-        "tags": [ "bog-ML", "bog-Zxxx", "sgn-bog", "sgn-bog-ML", "sgn-bog-Zxxx", "sgn-bog-Zxxx-ML" ],
+        "tags": [ "bog-ML", "bog-Zxxx", "sgn-bog", "sgn-bog-ML" ],
         "windows": "bog-Zxxx"
     },
     {
@@ -15358,7 +15350,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "bqn",
-        "tags": [ "bqn-BG", "bqn-Zxxx", "sgn-bqn", "sgn-bqn-BG", "sgn-bqn-Zxxx", "sgn-bqn-Zxxx-BG" ],
+        "tags": [ "bqn-BG", "bqn-Zxxx", "sgn-bqn", "sgn-bqn-BG" ],
         "windows": "bqn-Zxxx"
     },
     {
@@ -15516,7 +15508,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "bqy",
-        "tags": [ "bqy-ID", "bqy-Zxxx", "sgn-bqy", "sgn-bqy-ID", "sgn-bqy-Zxxx", "sgn-bqy-Zxxx-ID" ],
+        "tags": [ "bqy-ID", "bqy-Zxxx", "sgn-bqy", "sgn-bqy-ID" ],
         "windows": "bqy-Zxxx"
     },
     {
@@ -16641,7 +16633,7 @@
         "script": "Latn",
         "sldr": false,
         "tag": "btj",
-        "tags": [ "btj-ID", "btj-Latn", "ms-btj", "ms-btj-ID", "ms-btj-Latn", "ms-btj-Latn-ID" ],
+        "tags": [ "btj-ID", "btj-Latn", "ms-btj", "ms-btj-ID" ],
         "windows": "btj-Latn"
     },
     {
@@ -17316,7 +17308,7 @@
         "script": "Latn",
         "sldr": false,
         "tag": "bve",
-        "tags": [ "bve-ID", "bve-Latn", "ms-bve", "ms-bve-ID", "ms-bve-Latn", "ms-bve-Latn-ID" ],
+        "tags": [ "bve-ID", "bve-Latn", "ms-bve", "ms-bve-ID" ],
         "windows": "bve-Latn"
     },
     {
@@ -17413,7 +17405,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "bvl",
-        "tags": [ "bvl-BO", "bvl-Zxxx", "sgn-bvl", "sgn-bvl-BO", "sgn-bvl-Zxxx", "sgn-bvl-Zxxx-BO" ],
+        "tags": [ "bvl-BO", "bvl-Zxxx", "sgn-bvl", "sgn-bvl-BO" ],
         "windows": "bvl-Zxxx"
     },
     {
@@ -17526,7 +17518,7 @@
         "script": "Latn",
         "sldr": false,
         "tag": "bvu",
-        "tags": [ "bvu-ID", "bvu-Latn", "ms-bvu", "ms-bvu-ID", "ms-bvu-Latn", "ms-bvu-Latn-ID" ],
+        "tags": [ "bvu-ID", "bvu-Latn", "ms-bvu", "ms-bvu-ID" ],
         "windows": "bvu-Latn"
     },
     {
@@ -18952,7 +18944,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "bzs",
-        "tags": [ "bzs-BR", "bzs-Zxxx", "sgn-bzs", "sgn-bzs-BR", "sgn-bzs-Zxxx", "sgn-bzs-Zxxx-BR" ],
+        "tags": [ "bzs-BR", "bzs-Zxxx", "sgn-bzs", "sgn-bzs-BR" ],
         "windows": "bzs-Zxxx"
     },
     {
@@ -20133,7 +20125,6 @@
         "script": "Hans",
         "sldr": false,
         "tag": "cdo-Hans",
-        "tags": [ "zh-cdo-Hans", "zh-cdo-Hans-CN" ],
         "windows": "cdo-Hans"
     },
     {
@@ -20149,7 +20140,6 @@
         "script": "Hant",
         "sldr": false,
         "tag": "cdo-Hant",
-        "tags": [ "zh-cdo-Hant", "zh-cdo-Hant-CN" ],
         "windows": "cdo-Hant"
     },
     {
@@ -20164,7 +20154,6 @@
         "script": "Latn",
         "sldr": false,
         "tag": "cdo-Latn",
-        "tags": [ "zh-cdo-Latn", "zh-cdo-Latn-CN" ],
         "windows": "cdo-Latn"
     },
     {
@@ -20191,7 +20180,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "cds",
-        "tags": [ "cds-TD", "cds-Zxxx", "sgn-cds", "sgn-cds-TD", "sgn-cds-Zxxx", "sgn-cds-Zxxx-TD" ],
+        "tags": [ "cds-TD", "cds-Zxxx", "sgn-cds", "sgn-cds-TD" ],
         "windows": "cds-Zxxx"
     },
     {
@@ -21542,7 +21531,6 @@
         "script": "Hans",
         "sldr": false,
         "tag": "cjy-Hans",
-        "tags": [ "zh-cjy-Hans", "zh-cjy-Hans-CN" ],
         "windows": "cjy-Hans"
     },
     {
@@ -21557,7 +21545,6 @@
         "script": "Hant",
         "sldr": false,
         "tag": "cjy-Hant",
-        "tags": [ "zh-cjy-Hant", "zh-cjy-Hant-CN" ],
         "windows": "cjy-Hant"
     },
     {
@@ -22508,7 +22495,7 @@
         "script": "Latn",
         "sldr": false,
         "tag": "coa",
-        "tags": [ "coa-AU", "coa-Latn", "ms-coa", "ms-coa-AU", "ms-coa-Latn", "ms-coa-Latn-AU" ],
+        "tags": [ "coa-AU", "coa-Latn", "ms-coa", "ms-coa-AU" ],
         "windows": "coa-Latn"
     },
     {
@@ -22997,7 +22984,7 @@
         "script": "Latn",
         "sldr": false,
         "tag": "cpx",
-        "tags": [ "cpx-CN", "cpx-Latn", "zh-cpx", "zh-cpx-CN", "zh-cpx-Latn", "zh-cpx-Latn-CN" ],
+        "tags": [ "cpx-CN", "cpx-Latn", "zh-cpx", "zh-cpx-CN" ],
         "windows": "cpx-Latn"
     },
     {
@@ -23567,7 +23554,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "csc",
-        "tags": [ "csc-ES", "csc-Zxxx", "sgn-csc", "sgn-csc-ES", "sgn-csc-Zxxx", "sgn-csc-Zxxx-ES" ],
+        "tags": [ "csc-ES", "csc-Zxxx", "sgn-csc", "sgn-csc-ES" ],
         "windows": "csc-Zxxx"
     },
     {
@@ -23581,7 +23568,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "csd",
-        "tags": [ "csd-TH", "csd-Zxxx", "sgn-csd", "sgn-csd-TH", "sgn-csd-Zxxx", "sgn-csd-Zxxx-TH" ],
+        "tags": [ "csd-TH", "csd-Zxxx", "sgn-csd", "sgn-csd-TH" ],
         "windows": "csd-Zxxx"
     },
     {
@@ -23595,7 +23582,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "cse",
-        "tags": [ "cse-CZ", "cse-Zxxx", "sgn-cse", "sgn-cse-CZ", "sgn-cse-Zxxx", "sgn-cse-Zxxx-CZ" ],
+        "tags": [ "cse-CZ", "cse-Zxxx", "sgn-cse", "sgn-cse-CZ" ],
         "windows": "cse-Zxxx"
     },
     {
@@ -23609,7 +23596,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "csf",
-        "tags": [ "csf-CU", "csf-Zxxx", "sgn-csf", "sgn-csf-CU", "sgn-csf-Zxxx", "sgn-csf-Zxxx-CU" ],
+        "tags": [ "csf-CU", "csf-Zxxx", "sgn-csf", "sgn-csf-CU" ],
         "windows": "csf-Zxxx"
     },
     {
@@ -23623,7 +23610,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "csg",
-        "tags": [ "csg-CL", "csg-Zxxx", "sgn-csg", "sgn-csg-CL", "sgn-csg-Zxxx", "sgn-csg-Zxxx-CL" ],
+        "tags": [ "csg-CL", "csg-Zxxx", "sgn-csg", "sgn-csg-CL" ],
         "windows": "csg-Zxxx"
     },
     {
@@ -23712,7 +23699,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "csl",
-        "tags": [ "csl-CN", "csl-Zxxx", "sgn-csl", "sgn-csl-CN", "sgn-csl-Zxxx", "sgn-csl-Zxxx-CN" ],
+        "tags": [ "csl-CN", "csl-Zxxx", "sgn-csl", "sgn-csl-CN" ],
         "windows": "csl-Zxxx"
     },
     {
@@ -23740,7 +23727,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "csn",
-        "tags": [ "csn-CO", "csn-Zxxx", "sgn-csn", "sgn-csn-CO", "sgn-csn-Zxxx", "sgn-csn-Zxxx-CO" ],
+        "tags": [ "csn-CO", "csn-Zxxx", "sgn-csn", "sgn-csn-CO" ],
         "windows": "csn-Zxxx"
     },
     {
@@ -23796,7 +23783,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "csq",
-        "tags": [ "csq-HR", "csq-Zxxx", "sgn-csq", "sgn-csq-HR", "sgn-csq-Zxxx", "sgn-csq-Zxxx-HR" ],
+        "tags": [ "csq-HR", "csq-Zxxx", "sgn-csq", "sgn-csq-HR" ],
         "windows": "csq-Zxxx"
     },
     {
@@ -23811,7 +23798,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "csr",
-        "tags": [ "csr-CR", "csr-Zxxx", "sgn-csr", "sgn-csr-CR", "sgn-csr-Zxxx", "sgn-csr-Zxxx-CR" ],
+        "tags": [ "csr-CR", "csr-Zxxx", "sgn-csr", "sgn-csr-CR" ],
         "windows": "csr-Zxxx"
     },
     {
@@ -24758,7 +24745,6 @@
         "script": "Hans",
         "sldr": false,
         "tag": "czh-Hans",
-        "tags": [ "zh-czh-Hans", "zh-czh-Hans-CN" ],
         "windows": "czh-Hans"
     },
     {
@@ -24773,7 +24759,6 @@
         "script": "Hant",
         "sldr": false,
         "tag": "czh-Hant",
-        "tags": [ "zh-czh-Hant", "zh-czh-Hant-CN" ],
         "windows": "czh-Hant"
     },
     {
@@ -24815,7 +24800,7 @@
         "script": "Zyyy",
         "sldr": false,
         "tag": "czo",
-        "tags": [ "czo-CN", "czo-Zyyy", "zh-czo", "zh-czo-CN", "zh-czo-Zyyy", "zh-czo-Zyyy-CN" ],
+        "tags": [ "czo-CN", "czo-Zyyy", "zh-czo", "zh-czo-CN" ],
         "windows": "czo-Zyyy"
     },
     {
@@ -28080,7 +28065,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "doq",
-        "tags": [ "doq-DO", "doq-Zxxx", "sgn-doq", "sgn-doq-DO", "sgn-doq-Zxxx", "sgn-doq-Zxxx-DO" ],
+        "tags": [ "doq-DO", "doq-Zxxx", "sgn-doq", "sgn-doq-DO" ],
         "windows": "doq-Zxxx"
     },
     {
@@ -28439,7 +28424,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "dse",
-        "tags": [ "dse-NL", "dse-Zxxx", "sgn-dse", "sgn-dse-NL", "sgn-dse-Zxxx", "sgn-dse-Zxxx-NL" ],
+        "tags": [ "dse-NL", "dse-Zxxx", "sgn-dse", "sgn-dse-NL" ],
         "windows": "dse-Zxxx"
     },
     {
@@ -28484,7 +28469,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "dsl",
-        "tags": [ "dsl-DK", "dsl-Zxxx", "sgn-dsl", "sgn-dsl-DK", "sgn-dsl-Zxxx", "sgn-dsl-Zxxx-DK" ],
+        "tags": [ "dsl-DK", "dsl-Zxxx", "sgn-dsl", "sgn-dsl-DK" ],
         "windows": "dsl-Zxxx"
     },
     {
@@ -29023,7 +29008,7 @@
         "script": "Latn",
         "sldr": false,
         "tag": "dup",
-        "tags": [ "dup-ID", "dup-Latn", "ms-dup", "ms-dup-ID", "ms-dup-Latn", "ms-dup-Latn-ID" ],
+        "tags": [ "dup-ID", "dup-Latn", "ms-dup", "ms-dup-ID" ],
         "windows": "dup-Latn"
     },
     {
@@ -29740,7 +29725,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "ecs",
-        "tags": [ "ecs-EC", "ecs-Zxxx", "sgn-ecs", "sgn-ecs-EC", "sgn-ecs-Zxxx", "sgn-ecs-Zxxx-EC" ],
+        "tags": [ "ecs-EC", "ecs-Zxxx", "sgn-ecs", "sgn-ecs-EC" ],
         "windows": "ecs-Zxxx"
     },
     {
@@ -33027,7 +33012,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "esl",
-        "tags": [ "esl-EG", "esl-Zxxx", "sgn-esl", "sgn-esl-EG", "sgn-esl-Zxxx", "sgn-esl-Zxxx-EG" ],
+        "tags": [ "esl-EG", "esl-Zxxx", "sgn-esl", "sgn-esl-EG" ],
         "windows": "esl-Zxxx"
     },
     {
@@ -33054,7 +33039,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "esn",
-        "tags": [ "esn-SV", "esn-Zxxx", "sgn-esn", "sgn-esn-SV", "sgn-esn-Zxxx", "sgn-esn-Zxxx-SV" ],
+        "tags": [ "esn-SV", "esn-Zxxx", "sgn-esn", "sgn-esn-SV" ],
         "windows": "esn-Zxxx"
     },
     {
@@ -33068,7 +33053,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "eso",
-        "tags": [ "eso-EE", "eso-Zxxx", "sgn-eso", "sgn-eso-EE", "sgn-eso-Zxxx", "sgn-eso-Zxxx-EE" ],
+        "tags": [ "eso-EE", "eso-Zxxx", "sgn-eso", "sgn-eso-EE" ],
         "windows": "eso-Zxxx"
     },
     {
@@ -33227,7 +33212,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "eth",
-        "tags": [ "eth-ET", "eth-Zxxx", "sgn-eth", "sgn-eth-ET", "sgn-eth-Zxxx", "sgn-eth-Zxxx-ET" ],
+        "tags": [ "eth-ET", "eth-Zxxx", "sgn-eth", "sgn-eth-ET" ],
         "windows": "eth-Zxxx"
     },
     {
@@ -33861,7 +33846,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "fcs",
-        "tags": [ "fcs-CA", "fcs-Zxxx", "sgn-fcs", "sgn-fcs-CA", "sgn-fcs-Zxxx", "sgn-fcs-Zxxx-CA" ],
+        "tags": [ "fcs-CA", "fcs-Zxxx", "sgn-fcs", "sgn-fcs-CA" ],
         "windows": "fcs-Zxxx"
     },
     {
@@ -35248,7 +35233,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "fse",
-        "tags": [ "fse-FI", "fse-Zxxx", "sgn-fse", "sgn-fse-FI", "sgn-fse-Zxxx", "sgn-fse-Zxxx-FI" ],
+        "tags": [ "fse-FI", "fse-Zxxx", "sgn-fse", "sgn-fse-FI" ],
         "windows": "fse-Zxxx"
     },
     {
@@ -35263,7 +35248,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "fsl",
-        "tags": [ "fsl-FR", "fsl-Zxxx", "sgn-fsl", "sgn-fsl-FR", "sgn-fsl-Zxxx", "sgn-fsl-Zxxx-FR" ],
+        "tags": [ "fsl-FR", "fsl-Zxxx", "sgn-fsl", "sgn-fsl-FR" ],
         "windows": "fsl-Zxxx"
     },
     {
@@ -35278,7 +35263,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "fss",
-        "tags": [ "fss-FI", "fss-Zxxx", "sgn-fss", "sgn-fss-FI", "sgn-fss-Zxxx", "sgn-fss-Zxxx-FI" ],
+        "tags": [ "fss-FI", "fss-Zxxx", "sgn-fss", "sgn-fss-FI" ],
         "windows": "fss-Zxxx"
     },
     {
@@ -35927,7 +35912,7 @@
         "script": "Latn",
         "sldr": false,
         "tag": "gal",
-        "tags": [ "gal-Latn", "gal-TL", "ilw", "ilw-Latn", "ilw-Latn-TL", "ilw-TL", "ime", "ime-Latn", "ime-Latn-TL", "ime-TL" ],
+        "tags": [ "gal-Latn", "gal-TL", "ilw", "ilw-TL", "ime", "ime-Latn", "ime-Latn-TL", "ime-TL" ],
         "windows": "gal-Latn"
     },
     {
@@ -35955,7 +35940,7 @@
         "script": "Hans",
         "sldr": false,
         "tag": "gan",
-        "tags": [ "gan-CN", "gan-Hans", "zh-gan", "zh-gan-CN", "zh-gan-Hans", "zh-gan-Hans-CN" ],
+        "tags": [ "gan-CN", "gan-Hans", "zh-gan", "zh-gan-CN" ],
         "windows": "gan-Hans"
     },
     {
@@ -35970,7 +35955,6 @@
         "script": "Hant",
         "sldr": false,
         "tag": "gan-Hant",
-        "tags": [ "zh-gan-Hant", "zh-gan-Hant-CN" ],
         "windows": "gan-Hant"
     },
     {
@@ -35985,7 +35969,6 @@
         "script": "Latn",
         "sldr": false,
         "tag": "gan-Latn",
-        "tags": [ "zh-gan-Latn", "zh-gan-Latn-CN" ],
         "windows": "gan-Latn"
     },
     {
@@ -36966,7 +36949,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "gds",
-        "tags": [ "gds-NP", "gds-Zxxx", "sgn-gds", "sgn-gds-NP", "sgn-gds-Zxxx", "sgn-gds-Zxxx-NP" ],
+        "tags": [ "gds-NP", "gds-Zxxx", "sgn-gds", "sgn-gds-NP" ],
         "windows": "gds-Zxxx"
     },
     {
@@ -39007,7 +38990,7 @@
         "script": "Deva",
         "sldr": false,
         "tag": "gom",
-        "tags": [ "gom-Deva", "gom-IN", "kok-gom", "kok-gom-Deva", "kok-gom-Deva-IN", "kok-gom-IN" ],
+        "tags": [ "gom-Deva", "gom-IN", "kok-gom", "kok-gom-IN" ],
         "windows": "gom-Deva"
     },
     {
@@ -39023,7 +39006,6 @@
         "script": "Knda",
         "sldr": false,
         "tag": "gom-Knda",
-        "tags": [ "kok-gom-Knda", "kok-gom-Knda-IN" ],
         "windows": "gom-Knda"
     },
     {
@@ -39039,7 +39021,6 @@
         "script": "Latn",
         "sldr": false,
         "tag": "gom-Latn",
-        "tags": [ "kok-gom-Latn", "kok-gom-Latn-IN" ],
         "windows": "gom-Latn"
     },
     {
@@ -39736,7 +39717,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "gse",
-        "tags": [ "gse-GH", "gse-Zxxx", "sgn-gse", "sgn-gse-GH", "sgn-gse-Zxxx", "sgn-gse-Zxxx-GH" ],
+        "tags": [ "gse-GH", "gse-Zxxx", "sgn-gse", "sgn-gse-GH" ],
         "windows": "gse-Zxxx"
     },
     {
@@ -39750,7 +39731,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "gsg",
-        "tags": [ "gsg-DE", "gsg-Zxxx", "sgn-gsg", "sgn-gsg-DE", "sgn-gsg-Zxxx", "sgn-gsg-Zxxx-DE" ],
+        "tags": [ "gsg-DE", "gsg-Zxxx", "sgn-gsg", "sgn-gsg-DE" ],
         "windows": "gsg-Zxxx"
     },
     {
@@ -39778,7 +39759,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "gsm",
-        "tags": [ "gsm-GT", "gsm-Zxxx", "sgn-gsm", "sgn-gsm-GT", "sgn-gsm-Zxxx", "sgn-gsm-Zxxx-GT" ],
+        "tags": [ "gsm-GT", "gsm-Zxxx", "sgn-gsm", "sgn-gsm-GT" ],
         "windows": "gsm-Zxxx"
     },
     {
@@ -39835,7 +39816,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "gss",
-        "tags": [ "gss-GR", "gss-Zxxx", "sgn-gss", "sgn-gss-GR", "sgn-gss-Zxxx", "sgn-gss-Zxxx-GR" ],
+        "tags": [ "gss-GR", "gss-Zxxx", "sgn-gss", "sgn-gss-GR" ],
         "windows": "gss-Zxxx"
     },
     {
@@ -39868,20 +39849,6 @@
         "tag": "gta",
         "tags": [ "gta-BR", "gta-Latn" ],
         "windows": "gta-Latn"
-    },
-    {
-        "full": "gti-Latn-CD",
-        "iana": [ "Gbati-ri" ],
-        "iso639_3": "nyc",
-        "name": "Nyanga-li",
-        "names": [ "Gbati-ri", "Linyanga-le" ],
-        "region": "CD",
-        "regionname": "The Democratic Republic of the Congo",
-        "script": "Latn",
-        "sldr": false,
-        "tag": "gti",
-        "tags": [ "gti-CD", "gti-Latn" ],
-        "windows": "gti-Latn"
     },
     {
         "full": "gtu-Latn-AU",
@@ -40220,7 +40187,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "gus",
-        "tags": [ "gus-GN", "gus-Zxxx", "sgn-gus", "sgn-gus-GN", "sgn-gus-Zxxx", "sgn-gus-Zxxx-GN" ],
+        "tags": [ "gus-GN", "gus-Zxxx", "sgn-gus", "sgn-gus-GN" ],
         "windows": "gus-Zxxx"
     },
     {
@@ -41111,7 +41078,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "hab",
-        "tags": [ "hab-VN", "hab-Zxxx", "sgn-hab", "sgn-hab-VN", "sgn-hab-Zxxx", "sgn-hab-Zxxx-VN" ],
+        "tags": [ "hab-VN", "hab-Zxxx", "sgn-hab", "sgn-hab-VN" ],
         "windows": "hab-Zxxx"
     },
     {
@@ -41169,7 +41136,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "haf",
-        "tags": [ "haf-VN", "haf-Zxxx", "sgn-haf", "sgn-haf-VN", "sgn-haf-Zxxx", "sgn-haf-Zxxx-VN" ],
+        "tags": [ "haf-VN", "haf-Zxxx", "sgn-haf", "sgn-haf-VN" ],
         "windows": "haf-Zxxx"
     },
     {
@@ -41261,7 +41228,7 @@
         "script": "Hans",
         "sldr": false,
         "tag": "hak",
-        "tags": [ "hak-CN", "hak-Hans", "zh-hak", "zh-hak-CN", "zh-hak-Hans", "zh-hak-Hans-CN" ],
+        "tags": [ "hak-CN", "hak-Hans", "zh-hak", "zh-hak-CN" ],
         "windows": "hak-Hans"
     },
     {
@@ -41277,7 +41244,6 @@
         "script": "Hant",
         "sldr": false,
         "tag": "hak-Hant",
-        "tags": [ "zh-hak-Hant", "zh-hak-Hant-CN" ],
         "windows": "hak-Hant"
     },
     {
@@ -41292,7 +41258,6 @@
         "script": "Latn",
         "sldr": false,
         "tag": "hak-Latn",
-        "tags": [ "zh-hak-Latn", "zh-hak-Latn-CN" ],
         "windows": "hak-Latn"
     },
     {
@@ -41625,7 +41590,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "hds",
-        "tags": [ "hds-HN", "hds-Zxxx", "sgn-hds", "sgn-hds-HN", "sgn-hds-Zxxx", "sgn-hds-Zxxx-HN" ],
+        "tags": [ "hds-HN", "hds-Zxxx", "sgn-hds", "sgn-hds-HN" ],
         "windows": "hds-Zxxx"
     },
     {
@@ -41687,7 +41652,6 @@
         "script": "Brai",
         "sldr": false,
         "tag": "he-Brai",
-        "tags": [ "iw-Brai", "iw-Brai-IL" ],
         "windows": "he-Brai"
     },
     {
@@ -42158,7 +42122,7 @@
         "script": "Latn",
         "sldr": false,
         "tag": "hji",
-        "tags": [ "hji-ID", "hji-Latn", "ms-hji", "ms-hji-ID", "ms-hji-Latn", "ms-hji-Latn-ID" ],
+        "tags": [ "hji-ID", "hji-Latn", "ms-hji", "ms-hji-ID" ],
         "windows": "hji-Latn"
     },
     {
@@ -42227,7 +42191,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "hks",
-        "tags": [ "hks-HK", "hks-Zxxx", "sgn-hks", "sgn-hks-HK", "sgn-hks-Zxxx", "sgn-hks-Zxxx-HK" ],
+        "tags": [ "hks-HK", "hks-Zxxx", "sgn-hks", "sgn-hks-HK" ],
         "windows": "hks-Zxxx"
     },
     {
@@ -43250,7 +43214,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "hos",
-        "tags": [ "hos-VN", "hos-Zxxx", "sgn-hos", "sgn-hos-VN", "sgn-hos-Zxxx", "sgn-hos-Zxxx-VN" ],
+        "tags": [ "hos-VN", "hos-Zxxx", "sgn-hos", "sgn-hos-VN" ],
         "windows": "hos-Zxxx"
     },
     {
@@ -43349,7 +43313,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "hps",
-        "tags": [ "hps-US", "hps-Zxxx", "sgn-hps", "sgn-hps-US", "sgn-hps-Zxxx", "sgn-hps-Zxxx-US" ],
+        "tags": [ "hps-US", "hps-Zxxx", "sgn-hps", "sgn-hps-US" ],
         "windows": "hps-Zxxx"
     },
     {
@@ -43616,7 +43580,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "hsh",
-        "tags": [ "hsh-HU", "hsh-Zxxx", "sgn-hsh", "sgn-hsh-HU", "sgn-hsh-Zxxx", "sgn-hsh-Zxxx-HU" ],
+        "tags": [ "hsh-HU", "hsh-Zxxx", "sgn-hsh", "sgn-hsh-HU" ],
         "windows": "hsh-Zxxx"
     },
     {
@@ -43630,7 +43594,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "hsl",
-        "tags": [ "hsl-NG", "hsl-Zxxx", "sgn-hsl", "sgn-hsl-NG", "sgn-hsl-Zxxx", "sgn-hsl-Zxxx-NG" ],
+        "tags": [ "hsl-NG", "hsl-Zxxx", "sgn-hsl", "sgn-hsl-NG" ],
         "windows": "hsl-Zxxx"
     },
     {
@@ -43645,7 +43609,7 @@
         "script": "Hans",
         "sldr": false,
         "tag": "hsn",
-        "tags": [ "hsn-CN", "hsn-Hans", "zh-hsn", "zh-hsn-CN", "zh-hsn-Hans", "zh-hsn-Hans-CN" ],
+        "tags": [ "hsn-CN", "hsn-Hans", "zh-hsn", "zh-hsn-CN" ],
         "windows": "hsn-Hans"
     },
     {
@@ -43661,7 +43625,6 @@
         "script": "Hant",
         "sldr": false,
         "tag": "hsn-Hant",
-        "tags": [ "zh-hsn-Hant", "zh-hsn-Hant-CN" ],
         "windows": "hsn-Hant"
     },
     {
@@ -43677,7 +43640,6 @@
         "script": "Nshu",
         "sldr": false,
         "tag": "hsn-Nshu",
-        "tags": [ "zh-hsn-Nshu", "zh-hsn-Nshu-CN" ],
         "windows": "hsn-Nshu"
     },
     {
@@ -44648,7 +44610,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "icl",
-        "tags": [ "icl-IS", "icl-Zxxx", "sgn-icl", "sgn-icl-IS", "sgn-icl-Zxxx", "sgn-icl-Zxxx-IS" ],
+        "tags": [ "icl-IS", "icl-Zxxx", "sgn-icl", "sgn-icl-IS" ],
         "windows": "icl-Zxxx"
     },
     {
@@ -44697,7 +44659,6 @@
         "script": "Arab",
         "sldr": false,
         "tag": "id-Arab",
-        "tags": [ "in-Arab", "in-Arab-ID" ],
         "windows": "id-Arab"
     },
     {
@@ -44713,7 +44674,6 @@
         "script": "Brai",
         "sldr": false,
         "tag": "id-Brai",
-        "tags": [ "in-Brai", "in-Brai-ID" ],
         "windows": "id-Brai"
     },
     {
@@ -45446,7 +45406,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "iks",
-        "tags": [ "iks-CA", "iks-Zxxx", "sgn-iks", "sgn-iks-CA", "sgn-iks-Zxxx", "sgn-iks-Zxxx-CA" ],
+        "tags": [ "iks-CA", "iks-Zxxx", "sgn-iks", "sgn-iks-CA" ],
         "windows": "iks-Zxxx"
     },
     {
@@ -45698,7 +45658,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "ils",
-        "tags": [ "ils-IT", "ils-Zxxx", "sgn-ils", "sgn-ils-IT", "sgn-ils-Zxxx", "sgn-ils-Zxxx-IT" ],
+        "tags": [ "ils-IT", "ils-Zxxx", "sgn-ils", "sgn-ils-IT" ],
         "windows": "ils-Zxxx"
     },
     {
@@ -45939,7 +45899,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "inl",
-        "tags": [ "inl-ID", "inl-Zxxx", "sgn-inl", "sgn-inl-ID", "sgn-inl-Zxxx", "sgn-inl-Zxxx-ID" ],
+        "tags": [ "inl-ID", "inl-Zxxx", "sgn-inl", "sgn-inl-ID" ],
         "windows": "inl-Zxxx"
     },
     {
@@ -46011,7 +45971,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "ins",
-        "tags": [ "ins-IN", "ins-Zxxx", "sgn-ins", "sgn-ins-IN", "sgn-ins-Zxxx", "sgn-ins-Zxxx-IN" ],
+        "tags": [ "ins-IN", "ins-Zxxx", "sgn-ins", "sgn-ins-IN" ],
         "windows": "ins-Zxxx"
     },
     {
@@ -46373,7 +46333,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "ise",
-        "tags": [ "ise-IT", "ise-Zxxx", "sgn-ise", "sgn-ise-IT", "sgn-ise-Zxxx", "sgn-ise-Zxxx-IT" ],
+        "tags": [ "ise-IT", "ise-Zxxx", "sgn-ise", "sgn-ise-IT" ],
         "windows": "ise-Zxxx"
     },
     {
@@ -46388,7 +46348,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "isg",
-        "tags": [ "isg-IE", "isg-Zxxx", "sgn-isg", "sgn-isg-IE", "sgn-isg-Zxxx", "sgn-isg-Zxxx-IE" ],
+        "tags": [ "isg-IE", "isg-Zxxx", "sgn-isg", "sgn-isg-IE" ],
         "windows": "isg-Zxxx"
     },
     {
@@ -46486,7 +46446,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "isr",
-        "tags": [ "isr-IL", "isr-Zxxx", "sgn-isr", "sgn-isr-IL", "sgn-isr-Zxxx", "sgn-isr-Zxxx-IL" ],
+        "tags": [ "isr-IL", "isr-Zxxx", "sgn-isr", "sgn-isr-IL" ],
         "windows": "isr-Zxxx"
     },
     {
@@ -47283,7 +47243,7 @@
         "script": "Latn",
         "sldr": false,
         "tag": "jak",
-        "tags": [ "jak-Latn", "jak-MY", "ms-jak", "ms-jak-Latn", "ms-jak-Latn-MY", "ms-jak-MY" ],
+        "tags": [ "jak-Latn", "jak-MY", "ms-jak", "ms-jak-MY" ],
         "windows": "jak-Latn"
     },
     {
@@ -47411,7 +47371,7 @@
         "script": "Latn",
         "sldr": false,
         "tag": "jax",
-        "tags": [ "jax-ID", "jax-Latn", "ms-jax", "ms-jax-ID", "ms-jax-Latn", "ms-jax-Latn-ID" ],
+        "tags": [ "jax-ID", "jax-Latn", "ms-jax", "ms-jax-ID" ],
         "windows": "jax-Latn"
     },
     {
@@ -47594,7 +47554,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "jcs",
-        "tags": [ "jcs-JM", "jcs-Zxxx", "sgn-jcs", "sgn-jcs-JM", "sgn-jcs-Zxxx", "sgn-jcs-Zxxx-JM" ],
+        "tags": [ "jcs-JM", "jcs-Zxxx", "sgn-jcs", "sgn-jcs-JM" ],
         "windows": "jcs-Zxxx"
     },
     {
@@ -47949,7 +47909,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "jhs",
-        "tags": [ "jhs-NP", "jhs-Zxxx", "sgn-jhs", "sgn-jhs-NP", "sgn-jhs-Zxxx", "sgn-jhs-Zxxx-NP" ],
+        "tags": [ "jhs-NP", "jhs-Zxxx", "sgn-jhs", "sgn-jhs-NP" ],
         "windows": "jhs-Zxxx"
     },
     {
@@ -48319,7 +48279,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "jls",
-        "tags": [ "jls-JM", "jls-Zxxx", "sgn-jls", "sgn-jls-JM", "sgn-jls-Zxxx", "sgn-jls-Zxxx-JM" ],
+        "tags": [ "jls-JM", "jls-Zxxx", "sgn-jls", "sgn-jls-JM" ],
         "windows": "jls-Zxxx"
     },
     {
@@ -48672,7 +48632,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "jos",
-        "tags": [ "jos-JO", "jos-Zxxx", "sgn-jos", "sgn-jos-JO", "sgn-jos-Zxxx", "sgn-jos-Zxxx-JO" ],
+        "tags": [ "jos-JO", "jos-Zxxx", "sgn-jos", "sgn-jos-JO" ],
         "windows": "jos-Zxxx"
     },
     {
@@ -48835,7 +48795,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "jsl",
-        "tags": [ "jsl-JP", "jsl-Zxxx", "sgn-jsl", "sgn-jsl-JP", "sgn-jsl-Zxxx", "sgn-jsl-Zxxx-JP" ],
+        "tags": [ "jsl-JP", "jsl-Zxxx", "sgn-jsl", "sgn-jsl-JP" ],
         "windows": "jsl-Zxxx"
     },
     {
@@ -49035,7 +48995,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "jus",
-        "tags": [ "jus-NP", "jus-Zxxx", "sgn-jus", "sgn-jus-NP", "sgn-jus-Zxxx", "sgn-jus-Zxxx-NP" ],
+        "tags": [ "jus-NP", "jus-Zxxx", "sgn-jus", "sgn-jus-NP" ],
         "windows": "jus-Zxxx"
     },
     {
@@ -49121,7 +49081,6 @@
         "script": "Java",
         "sldr": false,
         "tag": "jv-Java",
-        "tags": [ "jw-Java", "jw-Java-ID" ],
         "windows": "jv-Java"
     },
     {
@@ -51767,7 +51726,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "kgi",
-        "tags": [ "kgi-MY", "kgi-Zxxx", "sgn-kgi", "sgn-kgi-MY", "sgn-kgi-Zxxx", "sgn-kgi-Zxxx-MY" ],
+        "tags": [ "kgi-MY", "kgi-Zxxx", "sgn-kgi", "sgn-kgi-MY" ],
         "windows": "kgi-Zxxx"
     },
     {
@@ -54770,7 +54729,6 @@
         "script": "Knda",
         "sldr": false,
         "tag": "knn-Knda",
-        "tags": [ "kok-knn-Knda", "kok-knn-Knda-IN" ],
         "windows": "knn-Knda"
     },
     {
@@ -54785,7 +54743,6 @@
         "script": "Latn",
         "sldr": false,
         "tag": "knn-Latn",
-        "tags": [ "kok-knn-Latn", "kok-knn-Latn-IN" ],
         "windows": "knn-Latn"
     },
     {
@@ -55202,7 +55159,7 @@
         "sldr": true,
         "suppress": true,
         "tag": "kok",
-        "tags": [ "knn", "knn-Deva", "knn-Deva-IN", "knn-IN", "kok-Deva", "kok-IN", "kok-knn", "kok-knn-Deva", "kok-knn-Deva-IN", "kok-knn-IN" ],
+        "tags": [ "knn", "knn-Deva", "knn-Deva-IN", "knn-IN", "kok-Deva", "kok-IN", "kok-knn", "kok-knn-IN" ],
         "windows": "kok"
     },
     {
@@ -57909,7 +57866,7 @@
         "script": "Latn",
         "sldr": false,
         "tag": "kvb",
-        "tags": [ "kvb-ID", "kvb-Latn", "ms-kvb", "ms-kvb-ID", "ms-kvb-Latn", "ms-kvb-Latn-ID" ],
+        "tags": [ "kvb-ID", "kvb-Latn", "ms-kvb", "ms-kvb-ID" ],
         "windows": "kvb-Latn"
     },
     {
@@ -58034,7 +57991,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "kvk",
-        "tags": [ "kvk-KR", "kvk-Zxxx", "sgn-kvk", "sgn-kvk-KR", "sgn-kvk-Zxxx", "sgn-kvk-Zxxx-KR" ],
+        "tags": [ "kvk-KR", "kvk-Zxxx", "sgn-kvk", "sgn-kvk-KR" ],
         "windows": "kvk-Zxxx"
     },
     {
@@ -58148,7 +58105,7 @@
         "script": "Latn",
         "sldr": false,
         "tag": "kvr",
-        "tags": [ "kvr-ID", "kvr-Latn", "ms-kvr", "ms-kvr-ID", "ms-kvr-Latn", "ms-kvr-Latn-ID" ],
+        "tags": [ "kvr-ID", "kvr-Latn", "ms-kvr", "ms-kvr-ID" ],
         "windows": "kvr-Latn"
     },
     {
@@ -58164,7 +58121,6 @@
         "script": "Rjng",
         "sldr": false,
         "tag": "kvr-Rjng",
-        "tags": [ "ms-kvr-Rjng", "ms-kvr-Rjng-ID" ],
         "windows": "kvr-Rjng"
     },
     {
@@ -58721,7 +58677,7 @@
         "script": "Latn",
         "sldr": false,
         "tag": "kxd",
-        "tags": [ "kxd-BN", "kxd-Latn", "ms-kxd", "ms-kxd-BN", "ms-kxd-Latn", "ms-kxd-Latn-BN" ],
+        "tags": [ "kxd-BN", "kxd-Latn", "ms-kxd", "ms-kxd-BN" ],
         "windows": "kxd-Latn"
     },
     {
@@ -58739,7 +58695,6 @@
         "script": "Arab",
         "sldr": false,
         "tag": "kxd-Arab",
-        "tags": [ "ms-kxd-Arab", "ms-kxd-Arab-BN" ],
         "windows": "kxd-Arab"
     },
     {
@@ -60633,7 +60588,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "lbs",
-        "tags": [ "lbs-LY", "lbs-Zxxx", "sgn-lbs", "sgn-lbs-LY", "sgn-lbs-Zxxx", "sgn-lbs-Zxxx-LY" ],
+        "tags": [ "lbs-LY", "lbs-Zxxx", "sgn-lbs", "sgn-lbs-LY" ],
         "windows": "lbs-Zxxx"
     },
     {
@@ -60774,7 +60729,7 @@
         "script": "Latn",
         "sldr": false,
         "tag": "lce",
-        "tags": [ "lce-ID", "lce-Latn", "ms-lce", "ms-lce-ID", "ms-lce-Latn", "ms-lce-Latn-ID" ],
+        "tags": [ "lce-ID", "lce-Latn", "ms-lce", "ms-lce-ID" ],
         "windows": "lce-Latn"
     },
     {
@@ -60787,7 +60742,7 @@
         "script": "Latn",
         "sldr": false,
         "tag": "lcf",
-        "tags": [ "lcf-ID", "lcf-Latn", "ms-lcf", "ms-lcf-ID", "ms-lcf-Latn", "ms-lcf-Latn-ID" ],
+        "tags": [ "lcf-ID", "lcf-Latn", "ms-lcf", "ms-lcf-ID" ],
         "windows": "lcf-Latn"
     },
     {
@@ -62243,7 +62198,7 @@
         "script": "Latn",
         "sldr": false,
         "tag": "liw",
-        "tags": [ "liw-ID", "liw-Latn", "ms-liw", "ms-liw-ID", "ms-liw-Latn", "ms-liw-Latn-ID" ],
+        "tags": [ "liw-ID", "liw-Latn", "ms-liw", "ms-liw-ID" ],
         "windows": "liw-Latn"
     },
     {
@@ -62879,7 +62834,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "lls",
-        "tags": [ "lls-LT", "lls-Zxxx", "sgn-lls", "sgn-lls-LT", "sgn-lls-Zxxx", "sgn-lls-Zxxx-LT" ],
+        "tags": [ "lls-LT", "lls-Zxxx", "sgn-lls", "sgn-lls-LT" ],
         "windows": "lls-Zxxx"
     },
     {
@@ -64310,7 +64265,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "lsg",
-        "tags": [ "lsg-FR", "lsg-Zxxx", "sgn-lsg", "sgn-lsg-FR", "sgn-lsg-Zxxx", "sgn-lsg-Zxxx-FR" ],
+        "tags": [ "lsg-FR", "lsg-Zxxx", "sgn-lsg", "sgn-lsg-FR" ],
         "windows": "lsg-Zxxx"
     },
     {
@@ -64354,7 +64309,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "lsl",
-        "tags": [ "lsl-LV", "lsl-Zxxx", "sgn-lsl", "sgn-lsl-LV", "sgn-lsl-Zxxx", "sgn-lsl-Zxxx-LV" ],
+        "tags": [ "lsl-LV", "lsl-Zxxx", "sgn-lsl", "sgn-lsl-LV" ],
         "windows": "lsl-Zxxx"
     },
     {
@@ -64384,7 +64339,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "lsn",
-        "tags": [ "lsn-CN", "lsn-Zxxx", "sgn-lsn", "sgn-lsn-CN", "sgn-lsn-Zxxx", "sgn-lsn-Zxxx-CN" ],
+        "tags": [ "lsn-CN", "lsn-Zxxx", "sgn-lsn", "sgn-lsn-CN" ],
         "windows": "lsn-Zxxx"
     },
     {
@@ -64397,7 +64352,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "lso",
-        "tags": [ "lso-LA", "lso-Zxxx", "sgn-lso", "sgn-lso-LA", "sgn-lso-Zxxx", "sgn-lso-Zxxx-LA" ],
+        "tags": [ "lso-LA", "lso-Zxxx", "sgn-lso", "sgn-lso-LA" ],
         "windows": "lso-Zxxx"
     },
     {
@@ -64411,7 +64366,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "lsp",
-        "tags": [ "lsp-PA", "lsp-Zxxx", "sgn-lsp", "sgn-lsp-PA", "sgn-lsp-Zxxx", "sgn-lsp-Zxxx-PA" ],
+        "tags": [ "lsp-PA", "lsp-Zxxx", "sgn-lsp", "sgn-lsp-PA" ],
         "windows": "lsp-Zxxx"
     },
     {
@@ -64453,7 +64408,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "lst",
-        "tags": [ "lst-TT", "lst-Zxxx", "sgn-lst", "sgn-lst-TT", "sgn-lst-Zxxx", "sgn-lst-Zxxx-TT" ],
+        "tags": [ "lst-TT", "lst-Zxxx", "sgn-lst", "sgn-lst-TT" ],
         "windows": "lst-Zxxx"
     },
     {
@@ -64467,7 +64422,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "lsv",
-        "tags": [ "lsv-PE", "lsv-Zxxx", "sgn-lsv", "sgn-lsv-PE", "sgn-lsv-Zxxx", "sgn-lsv-Zxxx-PE" ],
+        "tags": [ "lsv-PE", "lsv-Zxxx", "sgn-lsv", "sgn-lsv-PE" ],
         "windows": "lsv-Zxxx"
     },
     {
@@ -64481,7 +64436,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "lsy",
-        "tags": [ "lsy-MU", "lsy-Zxxx", "sgn-lsy", "sgn-lsy-MU", "sgn-lsy-Zxxx", "sgn-lsy-Zxxx-MU" ],
+        "tags": [ "lsy-MU", "lsy-Zxxx", "sgn-lsy", "sgn-lsy-MU" ],
         "windows": "lsy-Zxxx"
     },
     {
@@ -64543,7 +64498,7 @@
         "script": "Latn",
         "sldr": false,
         "tag": "ltg",
-        "tags": [ "ltg-LV", "ltg-Latn", "lv-ltg", "lv-ltg-LV", "lv-ltg-Latn", "lv-ltg-Latn-LV" ],
+        "tags": [ "ltg-LV", "ltg-Latn", "lv-ltg", "lv-ltg-LV" ],
         "windows": "ltg-Latn"
     },
     {
@@ -65023,7 +64978,7 @@
         "sldr": true,
         "suppress": true,
         "tag": "lv",
-        "tags": [ "lv-LV", "lv-Latn", "lv-lvs", "lv-lvs-LV", "lv-lvs-Latn", "lv-lvs-Latn-LV", "lvs", "lvs-LV", "lvs-Latn", "lvs-Latn-LV" ],
+        "tags": [ "lv-LV", "lv-Latn", "lv-lvs", "lv-lvs-LV", "lvs", "lvs-LV", "lvs-Latn", "lvs-Latn-LV" ],
         "windows": "lv"
     },
     {
@@ -65223,7 +65178,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "lws",
-        "tags": [ "lws-MW", "lws-Zxxx", "sgn-lws", "sgn-lws-MW", "sgn-lws-Zxxx", "sgn-lws-Zxxx-MW" ],
+        "tags": [ "lws-MW", "lws-Zxxx", "sgn-lws", "sgn-lws-MW" ],
         "windows": "lws-Zxxx"
     },
     {
@@ -65323,7 +65278,7 @@
         "script": "Hans",
         "sldr": false,
         "tag": "lzh",
-        "tags": [ "lzh-CN", "lzh-Hans", "zh-lzh", "zh-lzh-CN", "zh-lzh-Hans", "zh-lzh-Hans-CN" ],
+        "tags": [ "lzh-CN", "lzh-Hans", "zh-lzh", "zh-lzh-CN" ],
         "windows": "lzh-Hans"
     },
     {
@@ -65338,7 +65293,6 @@
         "script": "Hant",
         "sldr": false,
         "tag": "lzh-Hant",
-        "tags": [ "zh-lzh-Hant", "zh-lzh-Hant-CN" ],
         "windows": "lzh-Hant"
     },
     {
@@ -65832,7 +65786,7 @@
         "script": "Latn",
         "sldr": false,
         "tag": "max",
-        "tags": [ "max-ID", "max-Latn", "ms-max", "ms-max-ID", "ms-max-Latn", "ms-max-Latn-ID" ],
+        "tags": [ "max-ID", "max-Latn", "ms-max", "ms-max-ID" ],
         "windows": "max-Latn"
     },
     {
@@ -66812,7 +66766,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "mdl",
-        "tags": [ "mdl-MT", "mdl-Zxxx", "sgn-mdl", "sgn-mdl-MT", "sgn-mdl-Zxxx", "sgn-mdl-Zxxx-MT" ],
+        "tags": [ "mdl-MT", "mdl-Zxxx", "sgn-mdl", "sgn-mdl-MT" ],
         "windows": "mdl-Zxxx"
     },
     {
@@ -67259,7 +67213,7 @@
         "script": "Latn",
         "sldr": false,
         "tag": "meo",
-        "tags": [ "meo-Latn", "meo-MY", "ms-meo", "ms-meo-Latn", "ms-meo-Latn-MY", "ms-meo-MY" ],
+        "tags": [ "meo-Latn", "meo-MY", "ms-meo", "ms-meo-MY" ],
         "windows": "meo-Latn"
     },
     {
@@ -67274,7 +67228,6 @@
         "script": "Arab",
         "sldr": false,
         "tag": "meo-Arab",
-        "tags": [ "ms-meo-Arab", "ms-meo-Arab-MY" ],
         "windows": "meo-Arab"
     },
     {
@@ -67454,7 +67407,7 @@
         "script": "Arab",
         "sldr": false,
         "tag": "mfa",
-        "tags": [ "mfa-Arab", "mfa-TH", "ms-mfa", "ms-mfa-Arab", "ms-mfa-Arab-TH", "ms-mfa-TH" ],
+        "tags": [ "mfa-Arab", "mfa-TH", "ms-mfa", "ms-mfa-TH" ],
         "windows": "mfa-Arab"
     },
     {
@@ -67471,7 +67424,6 @@
         "script": "Thai",
         "sldr": false,
         "tag": "mfa-Thai",
-        "tags": [ "ms-mfa-Thai", "ms-mfa-Thai-TH" ],
         "windows": "mfa-Thai"
     },
     {
@@ -67484,7 +67436,7 @@
         "script": "Latn",
         "sldr": false,
         "tag": "mfb",
-        "tags": [ "mfb-ID", "mfb-Latn", "ms-mfb", "ms-mfb-ID", "ms-mfb-Latn", "ms-mfb-Latn-ID" ],
+        "tags": [ "mfb-ID", "mfb-Latn", "ms-mfb", "ms-mfb-ID" ],
         "windows": "mfb-Latn"
     },
     {
@@ -67749,7 +67701,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "mfs",
-        "tags": [ "mfs-MX", "mfs-Zxxx", "sgn-mfs", "sgn-mfs-MX", "sgn-mfs-Zxxx", "sgn-mfs-Zxxx-MX" ],
+        "tags": [ "mfs-MX", "mfs-Zxxx", "sgn-mfs", "sgn-mfs-MX" ],
         "windows": "mfs-Zxxx"
     },
     {
@@ -68883,7 +68835,7 @@
         "script": "Latn",
         "sldr": false,
         "tag": "min",
-        "tags": [ "min-ID", "min-Latn", "ms-min", "ms-min-ID", "ms-min-Latn", "ms-min-Latn-ID" ],
+        "tags": [ "min-ID", "min-Latn", "ms-min", "ms-min-ID" ],
         "windows": "min-Latn"
     },
     {
@@ -68898,7 +68850,6 @@
         "script": "Arab",
         "sldr": false,
         "tag": "min-Arab",
-        "tags": [ "ms-min-Arab", "ms-min-Arab-ID" ],
         "windows": "min-Arab"
     },
     {
@@ -70627,7 +70578,7 @@
         "script": "Brai",
         "sldr": false,
         "tag": "mn-Brai",
-        "tags": [ "drh-Brai", "drh-Brai-MN", "khk-Brai", "khk-Brai-MN" ],
+        "tags": [ "khk-Brai", "khk-Brai-MN" ],
         "windows": "mn-Brai"
     },
     {
@@ -70655,7 +70606,7 @@
         "script": "Mong",
         "sldr": false,
         "tag": "mn-Mong-MN",
-        "tags": [ "drh-Mong", "drh-Mong-MN", "khk-Mong", "khk-Mong-MN" ],
+        "tags": [ "khk-Mong", "khk-Mong-MN" ],
         "windows": "mn-Mong-MN"
     },
     {
@@ -70683,7 +70634,7 @@
         "script": "Phag",
         "sldr": false,
         "tag": "mn-Phag-MN",
-        "tags": [ "drh-Phag", "drh-Phag-MN", "khk-Phag", "khk-Phag-MN" ],
+        "tags": [ "khk-Phag", "khk-Phag-MN" ],
         "windows": "mn-Phag-MN"
     },
     {
@@ -70699,7 +70650,7 @@
         "script": "Tibt",
         "sldr": false,
         "tag": "mn-Tibt",
-        "tags": [ "drh-Tibt", "drh-Tibt-CN", "khk-Tibt", "khk-Tibt-CN" ],
+        "tags": [ "khk-Tibt", "khk-Tibt-CN" ],
         "windows": "mn-Tibt"
     },
     {
@@ -70967,7 +70918,7 @@
         "script": "Latn",
         "sldr": false,
         "tag": "mnp",
-        "tags": [ "mnp-CN", "mnp-Latn", "zh-mnp", "zh-mnp-CN", "zh-mnp-Latn", "zh-mnp-Latn-CN" ],
+        "tags": [ "mnp-CN", "mnp-Latn", "zh-mnp", "zh-mnp-CN" ],
         "windows": "mnp-Latn"
     },
     {
@@ -71896,7 +71847,7 @@
         "script": "Latn",
         "sldr": false,
         "tag": "mqg",
-        "tags": [ "mqg-ID", "mqg-Latn", "ms-mqg", "ms-mqg-ID", "ms-mqg-Latn", "ms-mqg-Latn-ID" ],
+        "tags": [ "mqg-ID", "mqg-Latn", "ms-mqg", "ms-mqg-ID" ],
         "windows": "mqg-Latn"
     },
     {
@@ -72303,7 +72254,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "mre",
-        "tags": [ "mre-US", "mre-Zxxx", "sgn-mre", "sgn-mre-US", "sgn-mre-Zxxx", "sgn-mre-Zxxx-US" ],
+        "tags": [ "mre-US", "mre-Zxxx", "sgn-mre", "sgn-mre-US" ],
         "windows": "mre-Zxxx"
     },
     {
@@ -72655,7 +72606,7 @@
         "sldr": true,
         "suppress": true,
         "tag": "ms",
-        "tags": [ "ms-Latn", "ms-MY", "ms-zsm", "ms-zsm-Latn", "ms-zsm-Latn-MY", "ms-zsm-MY", "zsm", "zsm-Latn", "zsm-Latn-MY", "zsm-MY" ],
+        "tags": [ "ms-Latn", "ms-MY", "ms-zsm", "ms-zsm-MY", "zsm", "zsm-Latn", "zsm-Latn-MY", "zsm-MY" ],
         "windows": "ms"
     },
     {
@@ -72672,7 +72623,7 @@
         "script": "Arab",
         "sldr": true,
         "tag": "ms-Arab",
-        "tags": [ "ms-zsm-Arab", "ms-zsm-Arab-MY", "zsm-Arab", "zsm-Arab-MY" ],
+        "tags": [ "zsm-Arab", "zsm-Arab-MY" ],
         "windows": "ms-Arab"
     },
     {
@@ -72702,7 +72653,7 @@
         "script": "Brai",
         "sldr": false,
         "tag": "ms-Brai",
-        "tags": [ "ms-zsm-Brai", "ms-zsm-Brai-MY", "zsm-Brai", "zsm-Brai-MY" ],
+        "tags": [ "zsm-Brai", "zsm-Brai-MY" ],
         "windows": "ms-Brai"
     },
     {
@@ -72785,7 +72736,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "msd",
-        "tags": [ "msd-MX", "msd-Zxxx", "sgn-msd", "sgn-msd-MX", "sgn-msd-Zxxx", "sgn-msd-Zxxx-MX" ],
+        "tags": [ "msd-MX", "msd-Zxxx", "sgn-msd", "sgn-msd-MX" ],
         "windows": "msd-Zxxx"
     },
     {
@@ -72858,7 +72809,7 @@
         "script": "Latn",
         "sldr": false,
         "tag": "msi",
-        "tags": [ "ms-msi", "ms-msi-Latn", "ms-msi-Latn-MY", "ms-msi-MY", "msi-Latn", "msi-MY" ],
+        "tags": [ "ms-msi", "ms-msi-MY", "msi-Latn", "msi-MY" ],
         "windows": "msi-Latn"
     },
     {
@@ -72988,7 +72939,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "msr",
-        "tags": [ "msr-MN", "msr-Zxxx", "sgn-msr", "sgn-msr-MN", "sgn-msr-Zxxx", "sgn-msr-Zxxx-MN" ],
+        "tags": [ "msr-MN", "msr-Zxxx", "sgn-msr", "sgn-msr-MN" ],
         "windows": "msr-Zxxx"
     },
     {
@@ -73617,7 +73568,7 @@
         "script": "Latn",
         "sldr": false,
         "tag": "mui",
-        "tags": [ "ms-mui", "ms-mui-ID", "ms-mui-Latn", "ms-mui-Latn-ID", "mui-ID", "mui-Latn" ],
+        "tags": [ "ms-mui", "ms-mui-ID", "mui-ID", "mui-Latn" ],
         "windows": "mui-Latn"
     },
     {
@@ -75450,7 +75401,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "mzc",
-        "tags": [ "mzc-MG", "mzc-Zxxx", "sgn-mzc", "sgn-mzc-MG", "sgn-mzc-Zxxx", "sgn-mzc-Zxxx-MG" ],
+        "tags": [ "mzc-MG", "mzc-Zxxx", "sgn-mzc", "sgn-mzc-MG" ],
         "windows": "mzc-Zxxx"
     },
     {
@@ -75490,7 +75441,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "mzg",
-        "tags": [ "mzg-VA", "mzg-Zxxx", "sgn-mzg", "sgn-mzg-VA", "sgn-mzg-Zxxx", "sgn-mzg-Zxxx-VA" ],
+        "tags": [ "mzg-VA", "mzg-Zxxx", "sgn-mzg", "sgn-mzg-VA" ],
         "windows": "mzg-Zxxx"
     },
     {
@@ -75755,7 +75706,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "mzy",
-        "tags": [ "mzy-MZ", "mzy-Zxxx", "sgn-mzy", "sgn-mzy-MZ", "sgn-mzy-Zxxx", "sgn-mzy-Zxxx-MZ" ],
+        "tags": [ "mzy-MZ", "mzy-Zxxx", "sgn-mzy", "sgn-mzy-MZ" ],
         "windows": "mzy-Zxxx"
     },
     {
@@ -75941,7 +75892,7 @@
         "script": "Hans",
         "sldr": false,
         "tag": "nan",
-        "tags": [ "nan-CN", "nan-Hans", "zh-nan", "zh-nan-CN", "zh-nan-Hans", "zh-nan-Hans-CN" ],
+        "tags": [ "nan-CN", "nan-Hans", "zh-nan", "zh-nan-CN" ],
         "windows": "nan-Hans"
     },
     {
@@ -75957,7 +75908,6 @@
         "script": "Bopo",
         "sldr": false,
         "tag": "nan-Bopo",
-        "tags": [ "zh-nan-Bopo", "zh-nan-Bopo-TW" ],
         "windows": "nan-Bopo"
     },
     {
@@ -75973,7 +75923,6 @@
         "script": "Kana",
         "sldr": false,
         "tag": "nan-Kana",
-        "tags": [ "zh-nan-Kana", "zh-nan-Kana-TW" ],
         "windows": "nan-Kana"
     },
     {
@@ -75988,7 +75937,6 @@
         "script": "Latn",
         "sldr": false,
         "tag": "nan-Latn",
-        "tags": [ "zh-nan-Latn", "zh-nan-Latn-TW" ],
         "windows": "nan-Latn"
     },
     {
@@ -76003,7 +75951,7 @@
         "script": "Latn",
         "sldr": false,
         "tag": "nan-Latn-x-transpoj",
-        "tags": [ "nan-TW-x-transpoj", "zh-nan-Latn-TW-x-transpoj", "zh-nan-Latn-x-transpoj", "zh-nan-TW-x-transpoj" ],
+        "tags": [ "nan-TW-x-transpoj", "zh-nan-TW-x-transpoj" ],
         "windows": "nan-Latn-x-transpoj"
     },
     {
@@ -76406,7 +76354,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "nbs",
-        "tags": [ "nbs-NA", "nbs-Zxxx", "sgn-nbs", "sgn-nbs-NA", "sgn-nbs-Zxxx", "sgn-nbs-Zxxx-NA" ],
+        "tags": [ "nbs-NA", "nbs-Zxxx", "sgn-nbs", "sgn-nbs-NA" ],
         "windows": "nbs-Zxxx"
     },
     {
@@ -76779,7 +76727,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "ncs",
-        "tags": [ "ncs-NI", "ncs-Zxxx", "sgn-ncs", "sgn-ncs-NI", "sgn-ncs-Zxxx", "sgn-ncs-Zxxx-NI" ],
+        "tags": [ "ncs-NI", "ncs-Zxxx", "sgn-ncs", "sgn-ncs-NI" ],
         "windows": "ncs-Zxxx"
     },
     {
@@ -78043,19 +77991,6 @@
         "tag": "ngt",
         "tags": [ "llo", "llo-LA", "llo-Laoo", "llo-Laoo-LA", "ngt-LA", "ngt-Laoo" ],
         "windows": "ngt-Laoo"
-    },
-    {
-        "full": "ngt-Zyyy-LA",
-        "iana": [ "Kriang", "Ngeq" ],
-        "name": "Kriang",
-        "names": [ "Griang", "Khiang", "Kuriang", "Ngae", "Nge", "Ngeh", "Ngeq", "Nge’", "Ngkriang", "Nhae", "Nkriang" ],
-        "region": "LA",
-        "regionname": "Lao People's Democratic Republic",
-        "script": "Zyyy",
-        "sldr": false,
-        "tag": "ngt-Zyyy-LA",
-        "tags": [ "llo", "llo-LA", "llo-Zyyy", "llo-Zyyy-LA" ],
-        "windows": "ngt-Zyyy-LA"
     },
     {
         "full": "ngu-Latn-MX",
@@ -81645,7 +81580,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "nsi",
-        "tags": [ "nsi-NG", "nsi-Zxxx", "sgn-nsi", "sgn-nsi-NG", "sgn-nsi-Zxxx", "sgn-nsi-Zxxx-NG" ],
+        "tags": [ "nsi-NG", "nsi-Zxxx", "sgn-nsi", "sgn-nsi-NG" ],
         "windows": "nsi-Zxxx"
     },
     {
@@ -81689,7 +81624,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "nsl",
-        "tags": [ "nsl-NO", "nsl-Zxxx", "sgn-nsl", "sgn-nsl-NO", "sgn-nsl-Zxxx", "sgn-nsl-Zxxx-NO" ],
+        "tags": [ "nsl-NO", "nsl-Zxxx", "sgn-nsl", "sgn-nsl-NO" ],
         "windows": "nsl-Zxxx"
     },
     {
@@ -81767,7 +81702,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "nsp",
-        "tags": [ "nsp-NP", "nsp-Zxxx", "sgn-nsp", "sgn-nsp-NP", "sgn-nsp-Zxxx", "sgn-nsp-Zxxx-NP" ],
+        "tags": [ "nsp-NP", "nsp-Zxxx", "sgn-nsp", "sgn-nsp-NP" ],
         "windows": "nsp-Zxxx"
     },
     {
@@ -81795,7 +81730,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "nsr",
-        "tags": [ "nsr-CA", "nsr-Zxxx", "sgn-nsr", "sgn-nsr-CA", "sgn-nsr-Zxxx", "sgn-nsr-Zxxx-CA" ],
+        "tags": [ "nsr-CA", "nsr-Zxxx", "sgn-nsr", "sgn-nsr-CA" ],
         "windows": "nsr-Zxxx"
     },
     {
@@ -83424,7 +83359,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "nzs",
-        "tags": [ "nzs-NZ", "nzs-Zxxx", "sgn-nzs", "sgn-nzs-NZ", "sgn-nzs-Zxxx", "sgn-nzs-Zxxx-NZ" ],
+        "tags": [ "nzs-NZ", "nzs-Zxxx", "sgn-nzs", "sgn-nzs-NZ" ],
         "windows": "nzs-Zxxx"
     },
     {
@@ -84270,7 +84205,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "okl",
-        "tags": [ "okl-XX", "okl-Zxxx", "sgn-okl", "sgn-okl-XX", "sgn-okl-Zxxx", "sgn-okl-Zxxx-XX" ],
+        "tags": [ "okl-XX", "okl-Zxxx", "sgn-okl", "sgn-okl-XX" ],
         "windows": "okl-Zxxx"
     },
     {
@@ -85290,7 +85225,7 @@
         "script": "Latn",
         "sldr": false,
         "tag": "orn",
-        "tags": [ "ms-orn", "ms-orn-Latn", "ms-orn-Latn-MY", "ms-orn-MY", "orn-Latn", "orn-MY" ],
+        "tags": [ "ms-orn", "ms-orn-MY", "orn-Latn", "orn-MY" ],
         "windows": "orn-Latn"
     },
     {
@@ -85332,7 +85267,7 @@
         "script": "Latn",
         "sldr": false,
         "tag": "ors",
-        "tags": [ "ms-ors", "ms-ors-Latn", "ms-ors-Latn-MY", "ms-ors-MY", "ors-Latn", "ors-MY" ],
+        "tags": [ "ms-ors", "ms-ors-MY", "ors-Latn", "ors-MY" ],
         "windows": "ors-Latn"
     },
     {
@@ -87360,7 +87295,7 @@
         "script": "Latn",
         "sldr": false,
         "tag": "pel",
-        "tags": [ "ms-pel", "ms-pel-ID", "ms-pel-Latn", "ms-pel-Latn-ID", "pel-ID", "pel-Latn" ],
+        "tags": [ "ms-pel", "ms-pel-ID", "pel-ID", "pel-Latn" ],
         "windows": "pel-Latn"
     },
     {
@@ -87531,7 +87466,7 @@
         "script": "Latn",
         "sldr": false,
         "tag": "pga",
-        "tags": [ "ar-pga", "ar-pga-Latn", "ar-pga-Latn-SS", "ar-pga-SS", "pga-Latn", "pga-SS" ],
+        "tags": [ "ar-pga", "ar-pga-SS", "pga-Latn", "pga-SS" ],
         "windows": "pga-Latn"
     },
     {
@@ -87655,7 +87590,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "pgz",
-        "tags": [ "pgz-PG", "pgz-Zxxx", "sgn-pgz", "sgn-pgz-PG", "sgn-pgz-Zxxx", "sgn-pgz-Zxxx-PG" ],
+        "tags": [ "pgz-PG", "pgz-Zxxx", "sgn-pgz", "sgn-pgz-PG" ],
         "windows": "pgz-Zxxx"
     },
     {
@@ -88458,7 +88393,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "pks",
-        "tags": [ "pks-PK", "pks-Zxxx", "sgn-pks", "sgn-pks-PK", "sgn-pks-Zxxx", "sgn-pks-Zxxx-PK" ],
+        "tags": [ "pks-PK", "pks-Zxxx", "sgn-pks", "sgn-pks-PK" ],
         "windows": "pks-Zxxx"
     },
     {
@@ -88853,20 +88788,6 @@
         "tag": "pmb",
         "tags": [ "pmb-CD", "pmb-Latn" ],
         "windows": "pmb-Latn"
-    },
-    {
-        "full": "pmc-Latn-ID",
-        "iana": [ "Palumata" ],
-        "iso639_3": "huw",
-        "name": "Hukumina",
-        "names": [ "Balamata", "Bambaa", "Palamata", "Palumata" ],
-        "region": "ID",
-        "regionname": "Indonesia",
-        "script": "Latn",
-        "sldr": false,
-        "tag": "pmc",
-        "tags": [ "pmc-ID", "pmc-Latn" ],
-        "windows": "pmc-Latn"
     },
     {
         "full": "pmd-Latn-AU",
@@ -90131,7 +90052,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "prl",
-        "tags": [ "prl-PE", "prl-Zxxx", "sgn-prl", "sgn-prl-PE", "sgn-prl-Zxxx", "sgn-prl-Zxxx-PE" ],
+        "tags": [ "prl-PE", "prl-Zxxx", "sgn-prl", "sgn-prl-PE" ],
         "windows": "prl-Zxxx"
     },
     {
@@ -90317,7 +90238,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "prz",
-        "tags": [ "prz-CO", "prz-Zxxx", "sgn-prz", "sgn-prz-CO", "sgn-prz-Zxxx", "sgn-prz-Zxxx-CO" ],
+        "tags": [ "prz-CO", "prz-Zxxx", "sgn-prz", "sgn-prz-CO" ],
         "windows": "prz-Zxxx"
     },
     {
@@ -90379,7 +90300,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "psc",
-        "tags": [ "psc-IR", "psc-Zxxx", "sgn-psc", "sgn-psc-IR", "sgn-psc-Zxxx", "sgn-psc-Zxxx-IR" ],
+        "tags": [ "psc-IR", "psc-Zxxx", "sgn-psc", "sgn-psc-IR" ],
         "windows": "psc-Zxxx"
     },
     {
@@ -90394,7 +90315,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "psd",
-        "tags": [ "psd-US", "psd-Zxxx", "sgn-psd", "sgn-psd-US", "sgn-psd-Zxxx", "sgn-psd-Zxxx-US" ],
+        "tags": [ "psd-US", "psd-Zxxx", "sgn-psd", "sgn-psd-US" ],
         "windows": "psd-Zxxx"
     },
     {
@@ -90408,7 +90329,7 @@
         "script": "Latn",
         "sldr": false,
         "tag": "pse",
-        "tags": [ "ms-pse", "ms-pse-ID", "ms-pse-Latn", "ms-pse-Latn-ID", "pse-ID", "pse-Latn" ],
+        "tags": [ "ms-pse", "ms-pse-ID", "pse-ID", "pse-Latn" ],
         "windows": "pse-Latn"
     },
     {
@@ -90421,7 +90342,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "psg",
-        "tags": [ "psg-MY", "psg-Zxxx", "sgn-psg", "sgn-psg-MY", "sgn-psg-Zxxx", "sgn-psg-Zxxx-MY" ],
+        "tags": [ "psg-MY", "psg-Zxxx", "sgn-psg", "sgn-psg-MY" ],
         "windows": "psg-Zxxx"
     },
     {
@@ -90463,7 +90384,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "psl",
-        "tags": [ "psl-PR", "psl-Zxxx", "sgn-psl", "sgn-psl-PR", "sgn-psl-Zxxx", "sgn-psl-Zxxx-PR" ],
+        "tags": [ "psl-PR", "psl-Zxxx", "sgn-psl", "sgn-psl-PR" ],
         "windows": "psl-Zxxx"
     },
     {
@@ -90505,7 +90426,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "pso",
-        "tags": [ "pso-PL", "pso-Zxxx", "sgn-pso", "sgn-pso-PL", "sgn-pso-Zxxx", "sgn-pso-Zxxx-PL" ],
+        "tags": [ "pso-PL", "pso-Zxxx", "sgn-pso", "sgn-pso-PL" ],
         "windows": "pso-Zxxx"
     },
     {
@@ -90519,7 +90440,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "psp",
-        "tags": [ "psp-PH", "psp-Zxxx", "sgn-psp", "sgn-psp-PH", "sgn-psp-Zxxx", "sgn-psp-Zxxx-PH" ],
+        "tags": [ "psp-PH", "psp-Zxxx", "sgn-psp", "sgn-psp-PH" ],
         "windows": "psp-Zxxx"
     },
     {
@@ -90548,7 +90469,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "psr",
-        "tags": [ "psr-PT", "psr-Zxxx", "sgn-psr", "sgn-psr-PT", "sgn-psr-Zxxx", "sgn-psr-Zxxx-PT" ],
+        "tags": [ "psr-PT", "psr-Zxxx", "sgn-psr", "sgn-psr-PT" ],
         "windows": "psr-Zxxx"
     },
     {
@@ -91469,7 +91390,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "pys",
-        "tags": [ "pys-PY", "pys-Zxxx", "sgn-pys", "sgn-pys-PY", "sgn-pys-Zxxx", "sgn-pys-Zxxx-PY" ],
+        "tags": [ "pys-PY", "pys-Zxxx", "sgn-pys", "sgn-pys-PY" ],
         "windows": "pys-Zxxx"
     },
     {
@@ -94003,7 +93924,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "rms",
-        "tags": [ "rms-RO", "rms-Zxxx", "sgn-rms", "sgn-rms-RO", "sgn-rms-Zxxx", "sgn-rms-Zxxx-RO" ],
+        "tags": [ "rms-RO", "rms-Zxxx", "sgn-rms", "sgn-rms-RO" ],
         "windows": "rms-Zxxx"
     },
     {
@@ -94261,7 +94182,6 @@
         "script": "Brai",
         "sldr": false,
         "tag": "ro-Brai",
-        "tags": [ "mo-Brai", "mo-Brai-RO" ],
         "windows": "ro-Brai"
     },
     {
@@ -94277,7 +94197,6 @@
         "script": "Cyrl",
         "sldr": false,
         "tag": "ro-Cyrl",
-        "tags": [ "mo-Cyrl", "mo-Cyrl-MD" ],
         "windows": "ro-Cyrl"
     },
     {
@@ -94292,7 +94211,6 @@
         "script": "Dupl",
         "sldr": false,
         "tag": "ro-Dupl",
-        "tags": [ "mo-Dupl", "mo-Dupl-RO" ],
         "windows": "ro-Dupl"
     },
     {
@@ -94622,7 +94540,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "rsi",
-        "tags": [ "rsi-SB", "rsi-Zxxx", "sgn-rsi", "sgn-rsi-SB", "sgn-rsi-Zxxx", "sgn-rsi-Zxxx-SB" ],
+        "tags": [ "rsi-SB", "rsi-Zxxx", "sgn-rsi", "sgn-rsi-SB" ],
         "windows": "rsi-Zxxx"
     },
     {
@@ -94637,7 +94555,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "rsl",
-        "tags": [ "rsl-RU", "rsl-Zxxx", "sgn-rsl", "sgn-rsl-RU", "sgn-rsl-Zxxx", "sgn-rsl-Zxxx-RU" ],
+        "tags": [ "rsl-RU", "rsl-Zxxx", "sgn-rsl", "sgn-rsl-RU" ],
         "windows": "rsl-Zxxx"
     },
     {
@@ -94651,7 +94569,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "rsm",
-        "tags": [ "rsm-AU", "rsm-Zxxx", "sgn-rsm", "sgn-rsm-AU", "sgn-rsm-Zxxx", "sgn-rsm-Zxxx-AU" ],
+        "tags": [ "rsm-AU", "rsm-Zxxx", "sgn-rsm", "sgn-rsm-AU" ],
         "windows": "rsm-Zxxx"
     },
     {
@@ -96852,7 +96770,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "sdl",
-        "tags": [ "sdl-SA", "sdl-Zxxx", "sgn-sdl", "sgn-sdl-SA", "sgn-sdl-Zxxx", "sgn-sdl-Zxxx-SA" ],
+        "tags": [ "sdl-SA", "sdl-Zxxx", "sgn-sdl", "sgn-sdl-SA" ],
         "windows": "sdl-Zxxx"
     },
     {
@@ -97474,7 +97392,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "sfb",
-        "tags": [ "sfb-BE", "sfb-Zxxx", "sgn-sfb", "sgn-sfb-BE", "sgn-sfb-Zxxx", "sgn-sfb-Zxxx-BE" ],
+        "tags": [ "sfb-BE", "sfb-Zxxx", "sgn-sfb", "sgn-sfb-BE" ],
         "windows": "sfb-Zxxx"
     },
     {
@@ -97516,7 +97434,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "sfs",
-        "tags": [ "sfs-ZA", "sfs-Zxxx", "sgn-sfs", "sgn-sfs-ZA", "sgn-sfs-Zxxx", "sgn-sfs-Zxxx-ZA" ],
+        "tags": [ "sfs-ZA", "sfs-Zxxx", "sgn-sfs", "sgn-sfs-ZA" ],
         "windows": "sfs-Zxxx"
     },
     {
@@ -97649,7 +97567,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "sgg",
-        "tags": [ "sgg-CH", "sgg-Zxxx", "sgn-sgg", "sgn-sgg-CH", "sgn-sgg-Zxxx", "sgn-sgg-Zxxx-CH" ],
+        "tags": [ "sgg-CH", "sgg-Zxxx", "sgn-sgg", "sgn-sgg-CH" ],
         "windows": "sgg-Zxxx"
     },
     {
@@ -97866,7 +97784,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "sgx",
-        "tags": [ "sgn-sgx", "sgn-sgx-SL", "sgn-sgx-Zxxx", "sgn-sgx-Zxxx-SL", "sgx-SL", "sgx-Zxxx" ],
+        "tags": [ "sgn-sgx", "sgn-sgx-SL", "sgx-SL", "sgx-Zxxx" ],
         "windows": "sgx-Zxxx"
     },
     {
@@ -98297,7 +98215,6 @@
         "script": "Arab",
         "sldr": true,
         "tag": "shu-Arab",
-        "tags": [ "ar-shu-Arab", "ar-shu-Arab-TD" ],
         "windows": "shu-Arab"
     },
     {
@@ -98312,7 +98229,6 @@
         "script": "Latn",
         "sldr": true,
         "tag": "shu-Latn",
-        "tags": [ "ar-shu-Latn", "ar-shu-Latn-TD" ],
         "windows": "shu-Latn"
     },
     {
@@ -99567,7 +99483,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "slf",
-        "tags": [ "sgn-slf", "sgn-slf-CH", "sgn-slf-Zxxx", "sgn-slf-Zxxx-CH", "slf-CH", "slf-Zxxx" ],
+        "tags": [ "sgn-slf", "sgn-slf-CH", "slf-CH", "slf-Zxxx" ],
         "windows": "slf-Zxxx"
     },
     {
@@ -99726,7 +99642,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "sls",
-        "tags": [ "sgn-sls", "sgn-sls-SG", "sgn-sls-Zxxx", "sgn-sls-Zxxx-SG", "sls-SG", "sls-Zxxx" ],
+        "tags": [ "sgn-sls", "sgn-sls-SG", "sls-SG", "sls-Zxxx" ],
         "windows": "sls-Zxxx"
     },
     {
@@ -101450,7 +101366,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "sqk",
-        "tags": [ "sgn-sqk", "sgn-sqk-AL", "sgn-sqk-Zxxx", "sgn-sqk-Zxxx-AL", "sqk-AL", "sqk-Zxxx" ],
+        "tags": [ "sgn-sqk", "sgn-sqk-AL", "sqk-AL", "sqk-Zxxx" ],
         "windows": "sqk-Zxxx"
     },
     {
@@ -101528,7 +101444,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "sqs",
-        "tags": [ "sgn-sqs", "sgn-sqs-LK", "sgn-sqs-Zxxx", "sgn-sqs-Zxxx-LK", "sqs-LK", "sqs-Zxxx" ],
+        "tags": [ "sgn-sqs", "sgn-sqs-LK", "sqs-LK", "sqs-Zxxx" ],
         "windows": "sqs-Zxxx"
     },
     {
@@ -102272,7 +102188,7 @@
         "script": "Arab",
         "sldr": false,
         "tag": "ssh",
-        "tags": [ "ar-ssh", "ar-ssh-AE", "ar-ssh-Arab", "ar-ssh-Arab-AE", "ssh-AE", "ssh-Arab" ],
+        "tags": [ "ar-ssh", "ar-ssh-AE", "ssh-AE", "ssh-Arab" ],
         "windows": "ssh-Arab"
     },
     {
@@ -102385,7 +102301,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "ssp",
-        "tags": [ "sgn-ssp", "sgn-ssp-ES", "sgn-ssp-Zxxx", "sgn-ssp-Zxxx-ES", "ssp-ES", "ssp-Zxxx" ],
+        "tags": [ "sgn-ssp", "sgn-ssp-ES", "ssp-ES", "ssp-Zxxx" ],
         "windows": "ssp-Zxxx"
     },
     {
@@ -102413,7 +102329,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "ssr",
-        "tags": [ "sgn-ssr", "sgn-ssr-CH", "sgn-ssr-Zxxx", "sgn-ssr-Zxxx-CH", "ssr-CH", "ssr-Zxxx" ],
+        "tags": [ "sgn-ssr", "sgn-ssr-CH", "ssr-CH", "ssr-Zxxx" ],
         "windows": "ssr-Zxxx"
     },
     {
@@ -103451,7 +103367,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "svk",
-        "tags": [ "sgn-svk", "sgn-svk-SK", "sgn-svk-Zxxx", "sgn-svk-Zxxx-SK", "svk-SK", "svk-Zxxx" ],
+        "tags": [ "sgn-svk", "sgn-svk-SK", "svk-SK", "svk-Zxxx" ],
         "windows": "svk-Zxxx"
     },
     {
@@ -103510,7 +103426,7 @@
         "sldr": true,
         "suppress": true,
         "tag": "sw",
-        "tags": [ "sw-Latn", "sw-TZ", "sw-swh", "sw-swh-Latn", "sw-swh-Latn-TZ", "sw-swh-TZ", "swh", "swh-Latn", "swh-Latn-TZ", "swh-TZ" ],
+        "tags": [ "sw-Latn", "sw-TZ", "sw-swh", "sw-swh-TZ", "swh", "swh-Latn", "swh-Latn-TZ", "swh-TZ" ],
         "windows": "sw"
     },
     {
@@ -103612,7 +103528,7 @@
         "script": "Latn",
         "sldr": true,
         "tag": "swc",
-        "tags": [ "sw-swc", "sw-swc-CD", "sw-swc-Latn", "sw-swc-Latn-CD", "swc-CD", "swc-Latn" ],
+        "tags": [ "sw-swc", "sw-swc-CD", "swc-CD", "swc-Latn" ],
         "windows": "swc-Latn"
     },
     {
@@ -103628,7 +103544,6 @@
         "script": "Arab",
         "sldr": false,
         "tag": "swc-Arab",
-        "tags": [ "sw-swc-Arab", "sw-swc-Arab-CD" ],
         "windows": "swc-Arab"
     },
     {
@@ -103675,7 +103590,6 @@
         "script": "Arab",
         "sldr": false,
         "tag": "swh-Arab",
-        "tags": [ "sw-swh-Arab", "sw-swh-Arab-TZ" ],
         "windows": "swh-Arab"
     },
     {
@@ -103691,7 +103605,6 @@
         "script": "Brai",
         "sldr": false,
         "tag": "swh-Brai",
-        "tags": [ "sw-swh-Brai", "sw-swh-Brai-TZ" ],
         "windows": "swh-Brai"
     },
     {
@@ -103748,7 +103661,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "swl",
-        "tags": [ "sgn-swl", "sgn-swl-SE", "sgn-swl-Zxxx", "sgn-swl-Zxxx-SE", "swl-SE", "swl-Zxxx" ],
+        "tags": [ "sgn-swl", "sgn-swl-SE", "swl-SE", "swl-Zxxx" ],
         "windows": "swl-Zxxx"
     },
     {
@@ -104353,7 +104266,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "syy",
-        "tags": [ "sgn-syy", "sgn-syy-IL", "sgn-syy-Zxxx", "sgn-syy-Zxxx-IL", "syy-IL", "syy-Zxxx" ],
+        "tags": [ "sgn-syy", "sgn-syy-IL", "syy-IL", "syy-Zxxx" ],
         "windows": "syy-Zxxx"
     },
     {
@@ -104492,7 +104405,7 @@
         "script": "Latn",
         "sldr": false,
         "tag": "szs",
-        "tags": [ "sgn-szs", "sgn-szs-Latn", "sgn-szs-Latn-SB", "sgn-szs-SB", "szs-Latn", "szs-SB" ],
+        "tags": [ "sgn-szs", "sgn-szs-SB", "szs-Latn", "szs-SB" ],
         "windows": "szs-Latn"
     },
     {
@@ -104507,7 +104420,6 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "szs-Zxxx",
-        "tags": [ "sgn-szs-Zxxx", "sgn-szs-Zxxx-SB" ],
         "windows": "szs-Zxxx"
     },
     {
@@ -104774,7 +104686,7 @@
         "script": "Tibt",
         "sldr": false,
         "tag": "taj-Tibt",
-        "tags": [ "taj-BT", "tsf-BT", "tsf-Tibt", "tsf-Tibt-BT" ],
+        "tags": [ "taj-BT", "tsf-BT" ],
         "windows": "taj-Tibt"
     },
     {
@@ -104792,7 +104704,7 @@
         "script": "Tibt",
         "sldr": false,
         "tag": "taj-Tibt-x-tamhig",
-        "tags": [ "taj-BT-x-tamhig", "tsf-BT-x-tamhig", "tsf-Tibt-BT-x-tamhig", "tsf-Tibt-x-tamhig" ],
+        "tags": [ "taj-BT-x-tamhig", "tsf-BT-x-tamhig" ],
         "windows": "taj-Tibt-x-tamhig"
     },
     {
@@ -109154,7 +109066,7 @@
         "script": "Latn",
         "sldr": false,
         "tag": "tmw",
-        "tags": [ "ms-tmw", "ms-tmw-Latn", "ms-tmw-Latn-MY", "ms-tmw-MY", "tmw-Latn", "tmw-MY" ],
+        "tags": [ "ms-tmw", "ms-tmw-MY", "tmw-Latn", "tmw-MY" ],
         "windows": "tmw-Latn"
     },
     {
@@ -110946,7 +110858,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "tse",
-        "tags": [ "sgn-tse", "sgn-tse-TN", "sgn-tse-Zxxx", "sgn-tse-Zxxx-TN", "tse-TN", "tse-Zxxx" ],
+        "tags": [ "sgn-tse", "sgn-tse-TN", "tse-TN", "tse-Zxxx" ],
         "windows": "tse-Zxxx"
     },
     {
@@ -111067,7 +110979,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "tsm",
-        "tags": [ "sgn-tsm", "sgn-tsm-TR", "sgn-tsm-Zxxx", "sgn-tsm-Zxxx-TR", "tsm-TR", "tsm-Zxxx" ],
+        "tags": [ "sgn-tsm", "sgn-tsm-TR", "tsm-TR", "tsm-Zxxx" ],
         "windows": "tsm-Zxxx"
     },
     {
@@ -111095,7 +111007,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "tsq",
-        "tags": [ "sgn-tsq", "sgn-tsq-TH", "sgn-tsq-Zxxx", "sgn-tsq-Zxxx-TH", "tsq-TH", "tsq-Zxxx" ],
+        "tags": [ "sgn-tsq", "sgn-tsq-TH", "tsq-TH", "tsq-Zxxx" ],
         "windows": "tsq-Zxxx"
     },
     {
@@ -111123,7 +111035,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "tss",
-        "tags": [ "sgn-tss", "sgn-tss-TW", "sgn-tss-Zxxx", "sgn-tss-Zxxx-TW", "tss-TW", "tss-Zxxx" ],
+        "tags": [ "sgn-tss", "sgn-tss-TW", "tss-TW", "tss-Zxxx" ],
         "windows": "tss-Zxxx"
     },
     {
@@ -111208,7 +111120,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "tsy",
-        "tags": [ "sgn-tsy", "sgn-tsy-ML", "sgn-tsy-Zxxx", "sgn-tsy-Zxxx-ML", "tsy-ML", "tsy-Zxxx" ],
+        "tags": [ "sgn-tsy", "sgn-tsy-ML", "tsy-ML", "tsy-Zxxx" ],
         "windows": "tsy-Zxxx"
     },
     {
@@ -112857,7 +112769,7 @@
         "script": "Zzzz",
         "sldr": false,
         "tag": "tyj-Zzzz-x-taiyo",
-        "tags": [ "tmp-VN-x-taiyo", "tmp-Zzzz-VN-x-taiyo", "tmp-Zzzz-x-taiyo", "tyj-VN-x-taiyo" ],
+        "tags": [ "tmp-VN-x-taiyo", "tyj-VN-x-taiyo" ],
         "windows": "tyj-Zzzz-x-taiyo"
     },
     {
@@ -113028,7 +112940,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "tza",
-        "tags": [ "sgn-tza", "sgn-tza-TZ", "sgn-tza-Zxxx", "sgn-tza-Zxxx-TZ", "tza-TZ", "tza-Zxxx" ],
+        "tags": [ "sgn-tza", "sgn-tza-TZ", "tza-TZ", "tza-Zxxx" ],
         "windows": "tza-Zxxx"
     },
     {
@@ -113635,7 +113547,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "ugn",
-        "tags": [ "sgn-ugn", "sgn-ugn-UG", "sgn-ugn-Zxxx", "sgn-ugn-Zxxx-UG", "ugn-UG", "ugn-Zxxx" ],
+        "tags": [ "sgn-ugn", "sgn-ugn-UG", "ugn-UG", "ugn-Zxxx" ],
         "windows": "ugn-Zxxx"
     },
     {
@@ -113663,7 +113575,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "ugy",
-        "tags": [ "sgn-ugy", "sgn-ugy-UY", "sgn-ugy-Zxxx", "sgn-ugy-Zxxx-UY", "ugy-UY", "ugy-Zxxx" ],
+        "tags": [ "sgn-ugy", "sgn-ugy-UY", "ugy-UY", "ugy-Zxxx" ],
         "windows": "ugy-Zxxx"
     },
     {
@@ -113835,7 +113747,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "ukl",
-        "tags": [ "sgn-ukl", "sgn-ukl-UA", "sgn-ukl-Zxxx", "sgn-ukl-Zxxx-UA", "ukl-UA", "ukl-Zxxx" ],
+        "tags": [ "sgn-ukl", "sgn-ukl-UA", "ukl-UA", "ukl-Zxxx" ],
         "windows": "ukl-Zxxx"
     },
     {
@@ -113876,7 +113788,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "uks",
-        "tags": [ "sgn-uks", "sgn-uks-BR", "sgn-uks-Zxxx", "sgn-uks-Zxxx-BR", "uks-BR", "uks-Zxxx" ],
+        "tags": [ "sgn-uks", "sgn-uks-BR", "uks-BR", "uks-Zxxx" ],
         "windows": "uks-Zxxx"
     },
     {
@@ -114700,7 +114612,7 @@
         "script": "Thai",
         "sldr": false,
         "tag": "urk",
-        "tags": [ "ms-urk", "ms-urk-TH", "ms-urk-Thai", "ms-urk-Thai-TH", "urk-TH", "urk-Thai" ],
+        "tags": [ "ms-urk", "ms-urk-TH", "urk-TH", "urk-Thai" ],
         "windows": "urk-Thai"
     },
     {
@@ -115239,7 +115151,7 @@
         "script": "Latn",
         "sldr": true,
         "tag": "uz",
-        "tags": [ "uz-Latn", "uz-UZ", "uz-uzn", "uz-uzn-Latn", "uz-uzn-Latn-UZ", "uz-uzn-UZ", "uzn", "uzn-Latn", "uzn-Latn-UZ", "uzn-UZ" ],
+        "tags": [ "uz-Latn", "uz-UZ", "uz-uzn", "uz-uzn-UZ", "uzn", "uzn-Latn", "uzn-Latn-UZ", "uzn-UZ" ],
         "variants": [ "baku1926" ],
         "windows": "uz-Latn"
     },
@@ -115256,7 +115168,7 @@
         "script": "Arab",
         "sldr": true,
         "tag": "uz-AF",
-        "tags": [ "uz-Arab", "uz-uzn-Arab", "uz-uzn-Arab-AF", "uzn-Arab", "uzn-Arab-AF" ],
+        "tags": [ "uz-Arab", "uzn-Arab", "uzn-Arab-AF" ],
         "windows": "uz-Arab-AF"
     },
     {
@@ -115272,7 +115184,7 @@
         "script": "Brai",
         "sldr": false,
         "tag": "uz-Brai",
-        "tags": [ "uz-uzn-Brai", "uz-uzn-Brai-UZ", "uzn-Brai", "uzn-Brai-UZ" ],
+        "tags": [ "uzn-Brai", "uzn-Brai-UZ" ],
         "windows": "uz-Brai"
     },
     {
@@ -115303,7 +115215,7 @@
         "script": "Cyrl",
         "sldr": true,
         "tag": "uz-Cyrl",
-        "tags": [ "uz-uzn-Cyrl", "uz-uzn-Cyrl-UZ", "uzn-Cyrl", "uzn-Cyrl-UZ" ],
+        "tags": [ "uzn-Cyrl", "uzn-Cyrl-UZ" ],
         "windows": "uz-Cyrl"
     },
     {
@@ -115319,7 +115231,7 @@
         "script": "Sogd",
         "sldr": false,
         "tag": "uz-Sogd",
-        "tags": [ "uz-uzn-Sogd", "uz-uzn-Sogd-CN", "uzn-Sogd", "uzn-Sogd-CN" ],
+        "tags": [ "uzn-Sogd", "uzn-Sogd-CN" ],
         "windows": "uz-Sogd"
     },
     {
@@ -115336,7 +115248,7 @@
         "script": "Arab",
         "sldr": false,
         "tag": "uzs",
-        "tags": [ "uz-uzs", "uz-uzs-AF", "uz-uzs-Arab", "uz-uzs-Arab-AF", "uzs-AF", "uzs-Arab" ],
+        "tags": [ "uz-uzs", "uz-uzs-AF", "uzs-AF", "uzs-Arab" ],
         "windows": "uzs-Arab"
     },
     {
@@ -115818,7 +115730,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "vgt",
-        "tags": [ "sgn-vgt", "sgn-vgt-BE", "sgn-vgt-Zxxx", "sgn-vgt-Zxxx-BE", "vgt-BE", "vgt-Zxxx" ],
+        "tags": [ "sgn-vgt", "sgn-vgt-BE", "vgt-BE", "vgt-Zxxx" ],
         "windows": "vgt-Zxxx"
     },
     {
@@ -116052,7 +115964,7 @@
         "script": "Latn",
         "sldr": false,
         "tag": "vkk",
-        "tags": [ "ms-vkk", "ms-vkk-ID", "ms-vkk-Latn", "ms-vkk-Latn-ID", "vkk-ID", "vkk-Latn" ],
+        "tags": [ "ms-vkk", "ms-vkk-ID", "vkk-ID", "vkk-Latn" ],
         "windows": "vkk-Latn"
     },
     {
@@ -116136,7 +116048,7 @@
         "script": "Latn",
         "sldr": false,
         "tag": "vkt",
-        "tags": [ "ms-vkt", "ms-vkt-ID", "ms-vkt-Latn", "ms-vkt-Latn-ID", "vkt-ID", "vkt-Latn" ],
+        "tags": [ "ms-vkt", "ms-vkt-ID", "vkt-ID", "vkt-Latn" ],
         "windows": "vkt-Latn"
     },
     {
@@ -116692,7 +116604,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "vsi",
-        "tags": [ "sgn-vsi", "sgn-vsi-MD", "sgn-vsi-Zxxx", "sgn-vsi-Zxxx-MD", "vsi-MD", "vsi-Zxxx" ],
+        "tags": [ "sgn-vsi", "sgn-vsi-MD", "vsi-MD", "vsi-Zxxx" ],
         "windows": "vsi-Zxxx"
     },
     {
@@ -116706,7 +116618,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "vsl",
-        "tags": [ "sgn-vsl", "sgn-vsl-VE", "sgn-vsl-Zxxx", "sgn-vsl-Zxxx-VE", "vsl-VE", "vsl-Zxxx" ],
+        "tags": [ "sgn-vsl", "sgn-vsl-VE", "vsl-VE", "vsl-Zxxx" ],
         "windows": "vsl-Zxxx"
     },
     {
@@ -116720,7 +116632,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "vsv",
-        "tags": [ "sgn-vsv", "sgn-vsv-ES", "sgn-vsv-Zxxx", "sgn-vsv-Zxxx-ES", "vsv-ES", "vsv-Zxxx" ],
+        "tags": [ "sgn-vsv", "sgn-vsv-ES", "vsv-ES", "vsv-Zxxx" ],
         "windows": "vsv-Zxxx"
     },
     {
@@ -117432,7 +117344,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "wbs",
-        "tags": [ "sgn-wbs", "sgn-wbs-IN", "sgn-wbs-Zxxx", "sgn-wbs-Zxxx-IN", "wbs-IN", "wbs-Zxxx" ],
+        "tags": [ "sgn-wbs", "sgn-wbs-IN", "wbs-IN", "wbs-Zxxx" ],
         "windows": "wbs-Zxxx"
     },
     {
@@ -119976,7 +119888,7 @@
         "script": "Hans",
         "sldr": false,
         "tag": "wuu",
-        "tags": [ "wuu-CN", "wuu-Hans", "zh-wuu", "zh-wuu-CN", "zh-wuu-Hans", "zh-wuu-Hans-CN" ],
+        "tags": [ "wuu-CN", "wuu-Hans", "zh-wuu", "zh-wuu-CN" ],
         "windows": "wuu-Hans"
     },
     {
@@ -119992,7 +119904,6 @@
         "script": "Hant",
         "sldr": false,
         "tag": "wuu-Hant",
-        "tags": [ "zh-wuu-Hant", "zh-wuu-Hant-CN" ],
         "windows": "wuu-Hant"
     },
     {
@@ -120008,7 +119919,6 @@
         "script": "Latn",
         "sldr": false,
         "tag": "wuu-Latn",
-        "tags": [ "zh-wuu-Latn", "zh-wuu-Latn-CN" ],
         "windows": "wuu-Latn"
     },
     {
@@ -121705,7 +121615,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "xki",
-        "tags": [ "sgn-xki", "sgn-xki-KE", "sgn-xki-Zxxx", "sgn-xki-Zxxx-KE", "xki-KE", "xki-Zxxx" ],
+        "tags": [ "sgn-xki", "sgn-xki-KE", "xki-KE", "xki-Zxxx" ],
         "windows": "xki-Zxxx"
     },
     {
@@ -122272,7 +122182,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "xml",
-        "tags": [ "sgn-xml", "sgn-xml-MY", "sgn-xml-Zxxx", "sgn-xml-Zxxx-MY", "xml-MY", "xml-Zxxx" ],
+        "tags": [ "sgn-xml", "sgn-xml-MY", "xml-MY", "xml-Zxxx" ],
         "windows": "xml-Zxxx"
     },
     {
@@ -122287,7 +122197,7 @@
         "script": "Latn",
         "sldr": false,
         "tag": "xmm",
-        "tags": [ "ms-xmm", "ms-xmm-ID", "ms-xmm-Latn", "ms-xmm-Latn-ID", "xmm-ID", "xmm-Latn" ],
+        "tags": [ "ms-xmm", "ms-xmm-ID", "xmm-ID", "xmm-Latn" ],
         "windows": "xmm-Latn"
     },
     {
@@ -122368,7 +122278,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "xms",
-        "tags": [ "sgn-xms", "sgn-xms-MA", "sgn-xms-Zxxx", "sgn-xms-Zxxx-MA", "xms-MA", "xms-Zxxx" ],
+        "tags": [ "sgn-xms", "sgn-xms-MA", "xms-MA", "xms-Zxxx" ],
         "windows": "xms-Zxxx"
     },
     {
@@ -125473,7 +125383,7 @@
         "windows": "yei-Latn"
     },
     {
-        "full": "yej-Zyyy-IL",
+        "full": "yej-Grek-IL",
         "iana": [ "Yevanic" ],
         "iso639_3": "yej",
         "name": "Yevanic",
@@ -125481,11 +125391,11 @@
         "region": "IL",
         "regionname": "Israel",
         "regions": [ "US" ],
-        "script": "Zyyy",
+        "script": "Grek",
         "sldr": false,
         "tag": "yej",
-        "tags": [ "yej-IL", "yej-Zyyy" ],
-        "windows": "yej-Zyyy"
+        "tags": [ "yej-Grek", "yej-IL" ],
+        "windows": "yej-Grek"
     },
     {
         "full": "yel-Latn-CD",
@@ -125683,7 +125593,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "ygs",
-        "tags": [ "sgn-ygs", "sgn-ygs-AU", "sgn-ygs-Zxxx", "sgn-ygs-Zxxx-AU", "ygs-AU", "ygs-Zxxx" ],
+        "tags": [ "sgn-ygs", "sgn-ygs-AU", "ygs-AU", "ygs-Zxxx" ],
         "windows": "ygs-Zxxx"
     },
     {
@@ -125768,7 +125678,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "yhs",
-        "tags": [ "sgn-yhs", "sgn-yhs-AU", "sgn-yhs-Zxxx", "sgn-yhs-Zxxx-AU", "yhs-AU", "yhs-Zxxx" ],
+        "tags": [ "sgn-yhs", "sgn-yhs-AU", "yhs-AU", "yhs-Zxxx" ],
         "windows": "yhs-Zxxx"
     },
     {
@@ -127388,7 +127298,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "ysl",
-        "tags": [ "sgn-ysl", "sgn-ysl-RS", "sgn-ysl-Zxxx", "sgn-ysl-Zxxx-RS", "ysl-RS", "ysl-Zxxx" ],
+        "tags": [ "sgn-ysl", "sgn-ysl-RS", "ysl-RS", "ysl-Zxxx" ],
         "windows": "ysl-Zxxx"
     },
     {
@@ -127618,7 +127528,7 @@
         "script": "Hant",
         "sldr": true,
         "tag": "yue",
-        "tags": [ "yue-HK", "yue-Hant", "zh-yue", "zh-yue-HK", "zh-yue-Hant", "zh-yue-Hant-HK" ],
+        "tags": [ "yue-HK", "yue-Hant", "zh-yue", "zh-yue-HK" ],
         "windows": "yue-Hant"
     },
     {
@@ -127634,7 +127544,6 @@
         "script": "Brai",
         "sldr": false,
         "tag": "yue-Brai",
-        "tags": [ "zh-yue-Brai", "zh-yue-Brai-HK" ],
         "windows": "yue-Brai"
     },
     {
@@ -127650,7 +127559,7 @@
         "script": "Hans",
         "sldr": true,
         "tag": "yue-CN",
-        "tags": [ "yue-Hans", "zh-yue-CN", "zh-yue-Hans", "zh-yue-Hans-CN" ],
+        "tags": [ "yue-Hans", "zh-yue-CN" ],
         "windows": "yue-Hans-CN"
     },
     {
@@ -127665,7 +127574,6 @@
         "script": "Latn",
         "sldr": false,
         "tag": "yue-Latn",
-        "tags": [ "zh-yue-Latn", "zh-yue-Latn-CN" ],
         "variants": [ "jyutping" ],
         "windows": "yue-Latn"
     },
@@ -129019,7 +128927,7 @@
         "script": "Bopo",
         "sldr": false,
         "tag": "zh-Bopo",
-        "tags": [ "cmn-Bopo", "cmn-Bopo-TW", "zh-cmn-Bopo", "zh-cmn-Bopo-TW" ],
+        "tags": [ "cmn-Bopo", "cmn-Bopo-TW" ],
         "windows": "zh-Bopo"
     },
     {
@@ -129035,7 +128943,7 @@
         "script": "Brai",
         "sldr": false,
         "tag": "zh-Brai",
-        "tags": [ "cmn-Brai", "cmn-Brai-CN", "zh-cmn-Brai", "zh-cmn-Brai-CN" ],
+        "tags": [ "cmn-Brai", "cmn-Brai-CN" ],
         "windows": "zh-Brai"
     },
     {
@@ -129051,7 +128959,7 @@
         "script": "Hans",
         "sldr": true,
         "tag": "zh-CN",
-        "tags": [ "cmn", "cmn-CN", "cmn-Hans", "cmn-Hans-CN", "zh", "zh-Hans", "zh-cmn", "zh-cmn-CN", "zh-cmn-Hans", "zh-cmn-Hans-CN" ],
+        "tags": [ "cmn", "cmn-CN", "cmn-Hans", "cmn-Hans-CN", "zh", "zh-Hans", "zh-cmn", "zh-cmn-CN" ],
         "windows": "zh-Hans"
     },
     {
@@ -129154,7 +129062,7 @@
         "script": "Latn",
         "sldr": false,
         "tag": "zh-Latn",
-        "tags": [ "cmn-Latn", "cmn-Latn-CN", "zh-cmn-Latn", "zh-cmn-Latn-CN" ],
+        "tags": [ "cmn-Latn", "cmn-Latn-CN" ],
         "variants": [ "pinyin", "wadegile" ],
         "windows": "zh-Latn"
     },
@@ -129283,7 +129191,7 @@
         "script": "Hant",
         "sldr": true,
         "tag": "zh-TW",
-        "tags": [ "cmn-Hant", "cmn-Hant-TW", "zh-Hant", "zh-cmn-Hant", "zh-cmn-Hant-TW" ],
+        "tags": [ "cmn-Hant", "cmn-Hant-TW", "zh-Hant" ],
         "windows": "zh-Hant-TW"
     },
     {
@@ -129448,7 +129356,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "zib",
-        "tags": [ "sgn-zib", "sgn-zib-ZW", "sgn-zib-Zxxx", "sgn-zib-Zxxx-ZW", "zib-ZW", "zib-Zxxx" ],
+        "tags": [ "sgn-zib", "sgn-zib-ZW", "zib-ZW", "zib-Zxxx" ],
         "windows": "zib-Zxxx"
     },
     {
@@ -129796,7 +129704,7 @@
         "script": "Latn",
         "sldr": false,
         "tag": "zlm",
-        "tags": [ "ms-zlm", "ms-zlm-Latn", "ms-zlm-Latn-TG", "ms-zlm-TG", "zlm-Latn", "zlm-TG" ],
+        "tags": [ "ms-zlm", "ms-zlm-TG", "zlm-Latn", "zlm-TG" ],
         "windows": "zlm-Latn"
     },
     {
@@ -129814,7 +129722,7 @@
         "script": "Arab",
         "sldr": true,
         "tag": "zlm-Arab",
-        "tags": [ "ms-zlm-Arab", "ms-zlm-Arab-MY", "ms-zlm-MY", "zlm-MY" ],
+        "tags": [ "ms-zlm-MY", "zlm-MY" ],
         "windows": "zlm-Arab"
     },
     {
@@ -129967,7 +129875,7 @@
         "script": "Latn",
         "sldr": false,
         "tag": "zmi",
-        "tags": [ "ms-zmi", "ms-zmi-Latn", "ms-zmi-Latn-MY", "ms-zmi-MY", "zmi-Latn", "zmi-MY" ],
+        "tags": [ "ms-zmi", "ms-zmi-MY", "zmi-Latn", "zmi-MY" ],
         "windows": "zmi-Latn"
     },
     {
@@ -130952,7 +130860,7 @@
         "script": "Zxxx",
         "sldr": false,
         "tag": "zsl",
-        "tags": [ "sgn-zsl", "sgn-zsl-ZM", "sgn-zsl-Zxxx", "sgn-zsl-Zxxx-ZM", "zsl-ZM", "zsl-Zxxx" ],
+        "tags": [ "sgn-zsl", "sgn-zsl-ZM", "zsl-ZM", "zsl-Zxxx" ],
         "windows": "zsl-Zxxx"
     },
     {
