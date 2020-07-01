@@ -1029,7 +1029,7 @@ bpt = bpt-AU = bpt-Latn = bpt-Latn-AU
 bpu = bpu-Latn = bpu-PG = bpu-Latn-PG
 bpv = bpv-ID = bpv-Latn = bpv-Latn-ID
 bpw = bpw-Latn = bpw-PG = bpw-Latn-PG
-bpx = bpx-IN = bpx-Zyyy = bpx-Zyyy-IN
+bpx = bpx-Deva = bpx-IN = bpx-Deva-IN
 bpy = bpy-Beng = bpy-IN = bpy-Beng-IN
 bpz = bpz-ID = bpz-Latn = bpz-Latn-ID
 bqa = bqa-BJ = bqa-Latn = bqa-Latn-BJ
@@ -2453,7 +2453,7 @@ gan-Hant = gan-Hant-CN
 gan-Latn = gan-Latn-CN
 gao = gao-Latn = gao-PG = gao-Latn-PG
 gap = gap-Latn = gap-PG = gap-Latn-PG
-gaq = gaq-IN = gaq-Zyyy = gaq-Zyyy-IN
+gaq = gaq-IN = gaq-Orya = gaq-Orya-IN
 gar = gar-Latn = gar-PG = gar-Latn-PG
 gas = gas-Gujr = gas-IN = gas-Gujr-IN
 gat = gat-Latn = gat-PG = gat-Latn-PG
@@ -2954,7 +2954,7 @@ hos = hos-VN = hos-Zxxx = sgn-hos = sgn-hos-VN = hos-Zxxx-VN
 *hot = hot-Latn = hot-PG = hot-Latn-PG
 hov = hov-ID = hov-Latn = hov-Latn-ID
 how = how-CN = how-Hani = how-Hani-CN
-hoy = hoy-IN = hoy-Zyyy = hoy-Zyyy-IN
+hoy = hoy-Deva = hoy-IN = hoy-Deva-IN
 hoz = hoz-ET = hoz-Zyyy = hoz-Zyyy-ET
 hpo = hpo-MM = hpo-Zyyy = hpo-Zyyy-MM
 hps = hps-US = hps-Zxxx = sgn-hps = sgn-hps-US = hps-Zxxx-US
@@ -4134,7 +4134,7 @@ lbg = lbg-LA = lbg-Zyyy = lbg-Zyyy-LA
 lbi = lbi-CM = lbi-Latn = lbi-Latn-CM
 *lbj = lbj-IN = lbj-Tibt = lbj-Tibt-IN
 lbl = lbl-Latn = lbl-PH = lbl-Latn-PH
-lbm = lbm-IN = lbm-Zyyy = lbm-Zyyy-IN
+lbm = lbm-Deva = lbm-IN = lbm-Deva-IN
 lbn-Laoo = lbn-Laoo-LA
 lbn-Latn = lbn-Latn-LA
 lbo = lbo-LA = lbo-Zyyy = lbo-Zyyy-LA

@@ -15508,19 +15508,18 @@
         "windows": "bpw-Latn"
     },
     {
-        "full": "bpx-Zyyy-IN",
+        "full": "bpx-Deva-IN",
         "iana": [ "Palya Bareli" ],
         "iso639_3": "bpx",
         "name": "Bareli, Palya",
         "names": [ "Bareli", "Pali", "Palodi", "Palya Bareli" ],
         "region": "IN",
         "regionname": "India",
-        "script": "Zyyy",
+        "script": "Deva",
         "sldr": false,
         "tag": "bpx",
-        "tags": [ "bpx-IN", "bpx-Zyyy" ],
-        "unwritten": true,
-        "windows": "bpx-Zyyy"
+        "tags": [ "bpx-Deva", "bpx-IN" ],
+        "windows": "bpx-Deva"
     },
     {
         "full": "bpy-Beng-IN",
@@ -16240,7 +16239,6 @@
         "sldr": false,
         "tag": "brq",
         "tags": [ "brq-Latn", "brq-PG" ],
-        "unwritten": true,
         "windows": "brq-Latn"
     },
     {
@@ -36879,19 +36877,18 @@
         "windows": "gap-Latn"
     },
     {
-        "full": "gaq-Zyyy-IN",
+        "full": "gaq-Orya-IN",
         "iana": [ "Gata'" ],
         "iso639_3": "gaq",
         "name": "Gata’",
         "names": [ "Didayi", "Didei", "Dire", "Gata'", "Gataq", "Getaq", "Geta’", "Gta Asa", "Gta’" ],
         "region": "IN",
         "regionname": "India",
-        "script": "Zyyy",
+        "script": "Orya",
         "sldr": false,
         "tag": "gaq",
-        "tags": [ "gaq-IN", "gaq-Zyyy" ],
-        "unwritten": true,
-        "windows": "gaq-Zyyy"
+        "tags": [ "gaq-IN", "gaq-Orya" ],
+        "windows": "gaq-Orya"
     },
     {
         "full": "gar-Latn-PG",
@@ -44346,19 +44343,18 @@
         "windows": "how-Hani"
     },
     {
-        "full": "hoy-Zyyy-IN",
+        "full": "hoy-Deva-IN",
         "iana": [ "Holiya" ],
         "iso639_3": "hoy",
         "name": "Holiya",
         "names": [ "Gohllaru", "Golari-Kannada", "Holar", "Holari", "Hole", "Holian", "Holu" ],
         "region": "IN",
         "regionname": "India",
-        "script": "Zyyy",
+        "script": "Deva",
         "sldr": false,
         "tag": "hoy",
-        "tags": [ "hoy-IN", "hoy-Zyyy" ],
-        "unwritten": true,
-        "windows": "hoy-Zyyy"
+        "tags": [ "hoy-Deva", "hoy-IN" ],
+        "windows": "hoy-Deva"
     },
     {
         "full": "hoz-Zyyy-ET",
@@ -62028,18 +62024,18 @@
         "windows": "lbl-Latn"
     },
     {
-        "full": "lbm-Zyyy-IN",
+        "full": "lbm-Deva-IN",
         "iana": [ "Lodhi" ],
         "iso639_3": "lbm",
         "name": "Lodhi",
         "names": [ "Lodha", "Lodi", "Lohi", "Lozi" ],
         "region": "IN",
         "regionname": "India",
-        "script": "Zyyy",
+        "script": "Deva",
         "sldr": false,
         "tag": "lbm",
-        "tags": [ "lbm-IN", "lbm-Zyyy" ],
-        "windows": "lbm-Zyyy"
+        "tags": [ "lbm-Deva", "lbm-IN" ],
+        "windows": "lbm-Deva"
     },
     {
         "full": "lbn-Laoo-LA",
@@ -67807,7 +67803,6 @@
         "sldr": false,
         "tag": "mbv",
         "tags": [ "mbv-GN", "mbv-Latn" ],
-        "unwritten": true,
         "windows": "mbv-Latn"
     },
     {
