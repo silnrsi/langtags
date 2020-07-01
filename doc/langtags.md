@@ -8,7 +8,7 @@ The preferred download location for the text data file is <https://ldml.api.sil.
 
 ## langtags.json
 
-Current API version 1.1.1 Unless otherwise stated all fields were add at v1.0.0. The preferred download location for the json data file is <https://ldml.api.sil.org/langtags.json>
+Current API version 1.2.0 Unless otherwise stated all fields were add at v1.0.0. The preferred download location for the json data file is <https://ldml.api.sil.org/langtags.json>
 
 Langtags.json consists of an array of objects. Each object corresponds to an equivalence set. The fields in that object are defined as:
 
@@ -32,6 +32,8 @@ Langtags.json consists of an array of objects. Each object corresponds to an equ
 - **rod** A Registry of Dialects numeric code \(as a string\) \[Added 1.1.1\]
 - **suppress** If present and true indicates that the IANA language tag registry has the suppress script set for this language. \[Added 1.1.1\]
 - **windows** Windows requires a strict BCP-47 interpretation and requires a script tag unless the suppress script from the IANA registry is the same as the script. This field is always present and may be the same as the **tag** field or one of the values in the **tags** list. \[Added 1.1.1\]
+- **obsolete** If present and true indicates that the language is obsolete \[Added 1.2.1\]
+- **unwritten** If present and true indicates that the language is unwritten. It may still have a non Zyyy script due to regional inference. \[Added 1.2.1\]
 
 ### Special tags
 

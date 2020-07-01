@@ -224,6 +224,8 @@ with open(args.infile) as csvfile :
         t.nofonipa = not t.hidescript and t.script != 'Latn'
         t.extra_variants = variants
         t.rod = rod
+        t.obsolete = row['obsolete'] != ""
+        t.unwritten = row['unwritten'] != ""
 
 if not args.quiet:
     print("Reading sldr")
@@ -444,6 +446,11 @@ def make_record(t):
         n['variants'] = t.extra_variants.split()
     if getattr(t, 'rod', ""):
         n['rod'] = t.rod
+    if getattr(t, 'obsolete', False):
+        n['obsolete'] = True
+    if getattr(t, 'unwritten', False):
+        n['unwritten'] = True
+
     if n['tag'] in collisions:
         print("Multiple entries for: {} = {}, {}".format(n['tag'], n['full'], collisions[n['tag']]))
     else:
@@ -458,7 +465,7 @@ if not args.quiet:
 # special record for passing standard variants
 res.append({'tag': '_globalvar', 'variants': ['simple']})
 res.append({'tag': "_phonvar", 'variants': ['alalc97', 'fonipa', 'fonkirsh', 'fonnapa', 'fonupa', 'fonxsamp']})
-res.append({'tag': "_version", 'api': '1.2.0', 'date': str(datetime.date.today())})
+res.append({'tag': "_version", 'api': '1.2.1', 'date': str(datetime.date.today())})
 if args.jobs == 1:
     for t in sorted(set(lts.values())):
         r = make_record(t)
