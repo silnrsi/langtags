@@ -3,12 +3,12 @@
 import os, sys, csv, json, re, datetime
 from argparse import ArgumentParser
 import xml.etree.ElementTree as et
-import sldr.langtags_full as lt
 import csv, codecs
 import urllib.request as urllib2
-from palaso.unicode.ucd import UCD
 from collections import namedtuple
 from multiprocessing import Pool
+import sldr.langtags_full as lt
+from palaso.unicode.ucd import UCD
 
 try: unicode
 except NameError:
@@ -161,6 +161,7 @@ deprecated = {}
 iananames = {}
 suppress = {}
 preferences = {}
+cldrs = {}
 for k,v in lts.items():
     if getattr(v, 'deprecated', False):
         deprecated[v.lang] = "1"
@@ -168,6 +169,8 @@ for k,v in lts.items():
         iananames[k] = v.desc
     if getattr(v, 'suppress', False):
         suppress[k] = v.script
+    if getattr(v, 'isCldr', False):
+        cldrs[k] = True
     pref = getattr(v, 'preferred', None)
     if pref is not None:
         preferences.setdefault(pref, []).append(k)
@@ -381,6 +384,9 @@ def make_record(t):
     auto = set()
     for l in r:
         x = lt.LangTag(l)
+        # Pending a need:
+        # if str(x) in cldrs:
+        #     n['fromCldr'] = True
         if not x.script:
             continue
         s = "{}-{}".format(x.lang, x.script)

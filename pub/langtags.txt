@@ -627,7 +627,7 @@ bbg = bbg-GA = bbg-Latn = bbg-Latn-GA
 bbh = bbh-CN = bbh-Zyyy = bbh-Zyyy-CN
 bbi = bbi-CM = bbi-Latn = bbi-Latn-CM
 bbj = bbj-CM = bbj-Latn = bbj-Latn-CM
-bbk = bbk-CM = bbk-Latn = bbk-Latn-CM
+*bbk = bbk-CM = bbk-Latn = bbk-Latn-CM
 bbl = bbl-GE = bbl-Zyyy = bbl-Zyyy-GE
 bbm = bbm-CD = bbm-Latn = bbm-Latn-CD
 bbn = bbn-Latn = bbn-PG = bbn-Latn-PG
@@ -6519,6 +6519,7 @@ rwa = rwa-Latn = rwa-PG = rwa-Latn-PG
 *rwk = rwk-Latn = *rwk-TZ = rwk-Latn-TZ
 rwm = rwm-Latn = rwm-UG = rwm-Latn-UG
 *rwo = rwo-Latn = rwo-PG = rwo-Latn-PG
+*rwo-x-karo = rwo-Latn-x-karo = rwo-PG-x-karo = rwo-Latn-PG-x-karo
 rwr = rwr-Deva = rwr-IN = rwr-Deva-IN
 rxd = rxd-AU = rxd-Latn = rxd-Latn-AU
 rxw = rxw-AU = rxw-Latn = rxw-Latn-AU
@@ -6879,6 +6880,7 @@ snm = snm-Latn = snm-UG = snm-Latn-UG
 *snn = snn-CO = snn-Latn = snn-Latn-CO
 sno = sno-Latn = sno-US = sno-Latn-US
 *snp = snp-Latn = snp-PG = snp-Latn-PG
+*snp-x-lambau = snp-Latn-x-lambau = snp-PG-x-lambau = snp-Latn-PG-x-lambau
 snq = snq-GA = snq-Latn = snq-Latn-GA
 snr = snr-Latn = snr-PG = snr-Latn-PG
 sns = sns-Latn = sns-VU = sns-Latn-VU
@@ -7765,6 +7767,8 @@ ubi = ubi-Latn = ubi-TD = ubi-Latn-TD
 ubl = ubl-Latn = ubl-PH = ubl-Latn-PH
 *ubr = ubr-Latn = ubr-PG = ubr-Latn-PG
 *ubu = ubu-Latn = ubu-PG = ubu-Latn-PG
+*ubu-x-kala = ubu-Latn-x-kala = ubu-PG-x-kala = ubu-Latn-PG-x-kala
+*ubu-x-nopenge = ubu-Latn-x-nopenge = ubu-PG-x-nopenge = ubu-Latn-PG-x-nopenge
 uby = uby-TR = uby-Zyyy = uby-Zyyy-TR
 uda = uda-Latn = uda-NG = uda-Latn-NG
 ude = ude-Cyrl = ude-RU = ude-Cyrl-RU
@@ -8646,7 +8650,6 @@ yhd = yhd-Hebr = yhd-IL = yhd-Hebr-IL
 yhl = yhl-CN = yhl-Zyyy = yhl-Zyyy-CN
 yhs = sgn-yhs = sgn-yhs-AU = yhs-AU = yhs-Zxxx = yhs-Zxxx-AU
 *yi = ji = ji-001 = ji-Hebr = ji-Hebr-001 = ydd = ydd-001 = ydd-Hebr = ydd-Hebr-001 = *yi-001 = yi-Hebr = yi-Hebr-001
-yi-Hebr-UA = ji = ji-Hebr = ji-Hebr-UA = ji-UA = yi-Hebr-UA
 yia = yia-AU = yia-Latn = yia-Latn-AU
 yif = yif-CN = yif-Zyyy = yif-Zyyy-CN
 yig = yig-CN = yig-Yiii = yig-Yiii-CN

@@ -12,6 +12,7 @@ def isnotint(s):
         return True
 
 langtagtxt = os.path.join(os.path.dirname(__file__), '..', 'pub', 'langtags.txt')
+exceptions = ['ji-Hebr-UA']
 
 class LikelySubtags(unittest.TestCase):
     ''' Tests alltags.txt for discrepencies against likelySubtags.xml '''
@@ -31,10 +32,12 @@ class LikelySubtags(unittest.TestCase):
     def test_noBadMappings(self):
         for k, v in self.likelymap.items():
             t = LangTag(k)
+            r = str(v)
+            if r in exceptions:
+                continue
             if t.lang=="und" or t.region=="ZZ" or t.script=="Zyyy":
                 continue
             if k in self.ltags:
-                r = str(v)
                 if r not in self.ltags:
                     self.fail(r + " is missing from langtags")
                 self.assertIs(self.ltags[k], self.ltags[r])
