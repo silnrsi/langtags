@@ -1092,9 +1092,9 @@ bru,bru-Latn-VN,"Bru, Eastern",LA VN,,,08377,,,,,SEA,bru,SVW,,"Latin script orth
 bru-Laoo,bru-Laoo-LA,"Bru, Eastern",LA VN,,,03339 08378,,,,,SEA,bru,NMC,4-Dec-2017,
 bru-Thai,bru-Thai-LA,"Bru, Eastern",LA VN,,,03339 08378,,,,,SEA,bru,SVW NMC,,"I'm not aware of a Thai orthography for Eastern Bru (only Western Bru); if anyone has information on this, please let me know. - SVW [LE: it's been in the Ethnologue since 2010. Should I remove it there?] SVW: Just asked C. Miller about it, will get back to you soon."
 brv,brv-Laoo-LA,"Bru, Western (Bru Chomphon)",LA TH US,,,,,,,,NAM SEA,brv,NMC SVW,,This is the only orthography in Lao script
-brv-Thai-x-dongluang,brv-Thai-TH-x-dongluang,Bru Dong Luang,LA TH US,,,,,,,,NAM SEA,brv,NMC SVW,15-Jan-2018,
-brv-Thai-x-khongchiem,brv-Thai-TH-x-khongchiem,Bru Khong Chiem,LA TH US,,,,,,,,NAM SEA,brv,SVW,9-Feb-2018,"Sounds like this is a different orthography from Bru Sakon Nakhon and Bru Dong Luang, but not sure how different. Might actually be a dialect of ""Katang"" (either ncq or sct, I'm not sure which)."
-brv-Thai-x-sakonnakon,brv-Thai-TH-x-sakonnakon,Bru Sakon Nakhorn,LA TH US,,,,,,,,NAM SEA,brv,NMC SVW,28-Sep-2018,
+brv-Thai-x-dongluang,brv-Thai-TH-x-dongluang,Bru Dong Luang,LA TH US,,,,,,,,NAM SEA,brv,NMC SVW,15-Jan-2018,long
+brv-Thai-x-khongchiem,brv-Thai-TH-x-khongchiem,Bru Khong Chiem,LA TH US,,,,,,,,NAM SEA,brv,SVW,9-Feb-2018,"long,Sounds like this is a different orthography from Bru Sakon Nakhon and Bru Dong Luang, but not sure how different. Might actually be a dialect of ""Katang"" (either ncq or sct, I'm not sure which)."
+brv-Thai-x-sakonnakon,brv-Thai-TH-x-sakonnakon,Bru Sakon Nakhorn,LA TH US,,,,,,,,NAM SEA,brv,NMC SVW,28-Sep-2018,long
 brw,brw-Zyyy-IN,Bellari,IN,,,,,1,,,SAS,brw,,,
 brx,brx-Deva-IN,Bodo,IN NP,,,03838 03890 06478,,,,,SAS,brx,CLDR,,
 brx-Beng,brx-Beng-IN,Bodo,IN NP,,,03838 03890 06478,,,,,SAS,brx,,,
@@ -1399,11 +1399,11 @@ ceb,ceb-Latn-PH,Cebuano,PH US,,,08665,,,,,NAM SEA,ceb,CLDR,,
 ceb-Brai,ceb-Brai-PH,Cebuano,PH US,,,08665,,,,,NAM SEA,ceb,,,
 ceg,ceg-Latn-PY,Chamacoco,PY,,,01899,,,,,SAM,ceg,LE,9-Jan-2018,
 cek,cek-Latn-MM,"Chin, Eastern Khumi",MM,,,05182 22888,,,,,SEA,cek,NMC,10-Jan-2018,"still following up, [cek] has many dialects"
-cek-x-asangkhongso,cek-Latn-MM-x-asangkhongso,"Chin, Eastern Khumi Asang (Khongso) dialect",MM,,,05182 22888,,,,,SEA,cek,NMC,31-Aug-2018,
+cek-x-asangkhongso,cek-Latn-MM-x-asangkhongso,"Chin, Eastern Khumi Asang (Khongso) dialect",MM,,,05182 22888,,,,,SEA,cek,NMC,31-Aug-2018,long
 cek-x-hnise,cek-Latn-MM-x-hnise,"Chin, Eastern Khumi Hnise dialect",MM,,,05182 22888,,,,,SEA,cek,NMC,31-Aug-2018,
 cek-x-kanise,cek-Latn-MM-x-kanise,"Chin, Eastern Khumi Kanise dialect",MM,,,05182 22888,,,,,SEA,cek,NMC,31-Aug-2018,
 cek-x-khongtu,cek-Latn-MM-x-khongtu,"Chfin, Eastern Khumi Khong Tu dialect",MM,,,05182 22888,,,,,SEA,cek,NMC,31-Aug-2018,Yes Khong Tu uses a different spelling system then Khawng Tuu above
-cek-x-khawngtuu,cek-Latn-MM-x-khawngtuu,"Chin, Eastern Khumi Khawng Tuu dialect",MM,,,05182 22888,,,,,SEA,cek,NMC,31-Aug-2018,Yes Khawng Tuu uses a different spelling system then Khong Tu below
+cek-x-khawngtuu,cek-Latn-MM-x-khawngtuu,"Chin, Eastern Khumi Khawng Tuu dialect",MM,,,05182 22888,,,,,SEA,cek,NMC,31-Aug-2018,"long, Yes Khawng Tuu uses a different spelling system then Khong Tu below"
 cek-x-lemi,cek-Latn-MM-x-lemi,"Chin, Eastern Khumi Lemi dialect",MM,,,05182 22888,,,,,SEA,cek,NMC,7-Sep-2018,
 cek-x-likhy,cek-Latn-MM-x-likhy,"Chin, Eastern Khumi Likhy dialect",MM,,,05182 22888,,,,,SEA,cek,NMC,31-Aug-2018,
 cek-x-rengcaa,cek-Latn-MM-x-rengcaa,"Chin, Eastern Khumi Rengcaa dialect",MM,,,05182 22888,,,,,SEA,cek,NMC,31-Aug-2018,
@@ -1724,7 +1724,7 @@ dak,dak-Latn-US,Dakota,CA US,,,,,,,,NAM,dak,CLDR,,
 dal,dal-Latn-KE,Dahalo,KE,,,,,1,,,EAF,dal,LE,12-Jan-2018,
 dam,dam-Latn-NG,Damakawa,NG,,,,,1,,,WAF,dam,,,
 dao,dao-Latn-MM,"Chin, Daai",MM,,,21262 21282 22845,,,,,SEA,dao,NMC,4-Dec-2017,Has 3 orthographies!
-dao-x-khengdaai,dao-Latn-MM-x-khengdaai,"Chin, Kheng Daai",MM,,,21262 21282 22845,,,,,SEA,dao,NMC,8-Feb-2018,
+dao-x-khengdaai,dao-Latn-MM-x-khengdaai,"Chin, Kheng Daai",MM,,,21262 21282 22845,,,,,SEA,dao,NMC,8-Feb-2018,long
 dao-x-matlic,dao-Latn-MM-x-matlic,"Chin, Daai Matupi Licang",MM,,,21262 21282 22845,,,,,SEA,dao,NMC,8-Aug-2018,see above
 dao-x-mattui,dao-Latn-MM-x-mattui,"Chin, Daai Matupi Tuivang",MM,,,21262 21282 22845,,,,,SEA,dao,NMC,8-Aug-2018,"Within the Matupi dialect many different villages have developed hymnbooks using their own homegrown orthographies, so there are many different orthographies. I think there are at least 2 translations Tuivang and Licang. There isn't unity over a single representative variety of this dialect."
 dao-x-yindu,dao-Latn-MM-x-yindu,"Chin, Yindu Daar",MM,,,21262 21282 22845,,,,,SEA,dao,NMC,8-Aug-2018,
@@ -1807,7 +1807,7 @@ dgh,dgh-Latn-NG,Dghwede,NG,,,04427,,,,,WAF,dgh,,,
 dgi,dgi-Latn-BF,"Dagara, Northern",BF,,,02252 05009 20799,,,,,WAF,dgi,,,
 dgk,dgk-Latn-CF,Dagba,CF TD,,,,,,,,MAF,dgk,jb,,
 dgl-Arab,dgl-Arab-SD,Andaandi,SD,,,,,,,,NAF,dgl,,,
-dgl-Copt,dgl-Copt-SD-x-oldnubian,Andaandi,SD,,,,,,,,NAF,dgl,,,
+dgl-Copt,dgl-Copt-SD-x-olnubian,Andaandi,SD,,,,,,,,NAF,dgl,,,
 dgl-Latn,dgl-Latn-SD,Andaandi,SD,,,,,,,,NAF,dgl,,,
 dgn,dgn-Latn-AU,Dagoman,AU,,,,,1,,,ANZ,dgn,LE,10-Jan-2018,Extinct
 dgo,dgo-Arab-IN,Dogri,IN,,,,doi,,1,,SAS,dgo,CLDR,23-Mar-2018,via macro mapping
@@ -2144,7 +2144,7 @@ eri,eri-Latn-PG,Ogea,PG,,,,,,,,MEL,eri,LE,10-Jan-2018,
 erk,erk-Latn-VU,"Efate, South",VU,,,04498 04708,,,,,MEL,erk,LE,10-Jan-2018,
 ero,ero-Zyyy-CN,Horpa,CN,,,10687 10688,,1,,,EAS,ero,,,
 err,err-Latn-AU,Erre,AU,,,,,1,,,ANZ,err,LE,10-Jan-2018,Extinct
-ers,ers-Zzzz-CN-x-ersushaba,Ersu,CN,,,09646 09647,,,1,,EAS,ers,,,
+ers,ers-Zzzz-CN-x-ersushab,Ersu,CN,,,09646 09647,,,1,,EAS,ers,,,
 ert,ert-Latn-ID,Eritai,ID,,,,,1,,,SEA,ert,,,
 erw,erw-Latn-ID,Erokwanas,ID,,,,,1,,,SEA,erw,,,
 es,es-Latn-ES,Spanish,AD AR AT AU AW BE BG BO BQ BR BZ CA CH CI CL CO CR CU CW CZ DE DK DO DZ EA EC EH ES FI FR GI GQ GT GU HN HR IC IE IL IS IT JM KY LU MA MT MX NI NL NO NZ PA PE PH PL PR PT PY RO RU SE SR SV SX TR TT US UY VE VI,spanglis,,,,,,,ANZ CAM CAR EEU MAF MIC NAF NAM NEU SAM SEA SEU WAF WAS WEU,spa,CLDR,,
@@ -2226,7 +2226,7 @@ fgr,fgr-Latn-TD,Fongoro,TD,,,,,1,,,MAF,fgr,,,
 fi,fi-Latn-FI,Finnish,AX CA DE EE FI NO RU SE US,,,,,,,,EEU NAM NEU WEU,fin,CLDR,,
 fi-Brai,fi-Brai-FI,Finnish,CA DE EE FI NO RU SE US,,,,,,,,EEU NAM NEU WEU,fin,,,
 fia,fia-Arab-SD,Nobiin,EG SD,,,15030,,,,,NAF,fia,CLDR,,
-fia-Copt,fia-Copt-SD-x-oldnubian,Nobiin,EG SD,,,15030,,,,,NAF,fia,,,
+fia-Copt,fia-Copt-SD-x-olnubian,Nobiin,EG SD,,,15030,,,,,NAF,fia,,,
 fia-Latn,fia-Latn-SD,Nobiin,EG SD,,,15030,,,,,NAF,fia,,,
 fie,fie-Latn-NG,Fyer,NG,,,,,1,,,WAF,fie,,,
 fil,fil-Latn-PH,Filipino,PH,,,,,,,,SEA,fil,CLDR,,
@@ -2852,8 +2852,8 @@ hr-Brai,hr-Brai-HR,Croatian,AT AU BA CA CL CZ DE DK HR HU ME RO RS SI SK US,,,,,
 hra,hra-Latn-IN,Hrangkhol,IN,,,00887 10697,,,,,SAS,hra,,,
 hrc,hrc-Latn-PG,Niwer Mil,PG,,,,,,,,MEL,hrc,LE,10-Jan-2018,
 hre,hre-Latn-VN,Hre,VN,,,,,,,,SEA,hre,PN SVW,,
-hre-x-1968,hre-Latn-VN-x-1968,Hre,VN,,,03328,,,,hre,SEA,hre,PN SVW,,"Two different orthographies (possibly more) in use. NT is printed in this orthography, including revisions made in 1968, but some Hre leaders reject changes and use 1960 system. Default should be 1968 since this has tacit government support."
-hre-x-1960,hre-Latn-VN-x-1960,Hre,VN,,,03328,,,,,SEA,hre,SVW,,
+hre-x-1968,hre-Latn-VN-x-1968,Hre,VN,,,03328,,,,hre,SEA,hre,PN SVW,,"digits, Two different orthographies (possibly more) in use. NT is printed in this orthography, including revisions made in 1968, but some Hre leaders reject changes and use 1960 system. Default should be 1968 since this has tacit government support."
+hre-x-1960,hre-Latn-VN-x-1960,Hre,VN,,,03328,,,,,SEA,hre,SVW,,digits
 hrk,hrk-Latn-ID,Haruku,ID,,,,,1,,,SEA,hrk,,,
 hrm,hrm-Zyyy-CN,"Miao, Horned",CN,,,06245,,1,,,EAS,hrm,,,
 hro,hro-Latn-VN,Haroi,VN,,,,,,,,SEA,hro,NMC,20-Nov-2017,
@@ -3094,7 +3094,7 @@ ium,ium-Latn-CN,Iu Mien,CN DK LA TH US VN,,,06049 06050 06051 06052 06053 06054 
 ium-Hani,ium-Hani-CN,Iu Mien,CN DK LA TH US VN,,,06049 06050 06051 06052 06053 06054 06055 06057 06094 06096 06097 06115 06117 06119 06120 06121 06122 06138 06139 06252 06280 06281 06282 06283 06335 06336 22319,,,,,EAS NAM NEU SEA,ium,,,
 ium-Laoo,ium-Laoo-LA,Iu Mien,CN DK LA TH US VN,,,,,,,,EAS NAM NEU SEA,ium,SVW,,
 ium-Thai,ium-Thai-TH,Iu Mien,CN DK LA TH US VN,,,11018,,,,,EAS NAM NEU SEA,ium,,,"[ium] could be missing some other scripts, see the Ethnologue page for [ium]"
-ium-x-1954,ium-Latn-CN-x-1954,Iu Mien,CN DK LA TH US VN,,,06049 06050 06051 06052 06053 06054 06055 06057 06094 06096 06097 06115 06117 06119 06120 06121 06122 06138 06139 06252 06280 06281 06282 06283 06335 06336 22319,,,,,EAS NAM NEU SEA,ium,SVW,,"Also known as ""Old Roman"", Bible printed in this orthography as well as ""New Roman"", which is default ium tag. Orthography situation described by Herb Purnell in various papers (1987, 2002, 2012). This probably needs a public variant, perhaps ium-or1954? - SVW"
+ium-x-1954,ium-Latn-CN-x-1954,Iu Mien,CN DK LA TH US VN,,,06049 06050 06051 06052 06053 06054 06055 06057 06094 06096 06097 06115 06117 06119 06120 06121 06122 06138 06139 06252 06280 06281 06282 06283 06335 06336 22319,,,,,EAS NAM NEU SEA,ium,SVW,,"digits, Also known as ""Old Roman"", Bible printed in this orthography as well as ""New Roman"", which is default ium tag. Orthography situation described by Herb Purnell in various papers (1987, 2002, 2012). This probably needs a public variant, perhaps ium-or1954? - SVW"
 ivb,ivb-Latn-PH,Ibatan,PH,,,,,,,,SEA,ivb,,,
 ivv,ivv-Latn-PH,Ivatan,PH,,,,,,,,SEA,ivv,,,
 iw,iw-Hebr-IL,Hebrew,IL,,,,he,,,he,???,heb,CLDR,,grandfathered
@@ -3946,7 +3946,7 @@ kxn,kxn-Latn-MY,"Melanau, Kanowit-Tanjong",MY,,,00599,,1,,,SEA,kxn,,,
 kxo,kxo-Latn-BR,Kanoé,BR,,,,,1,,,SAM,kxo,LE,10-Jan-2018,Extinct
 kxp,kxp-Arab-PK,"Koli, Wadiyara",IN PK,,,03558 12158,,,,,SAS,kxp,CLDR,,
 kxp-Gujr,kxp-Gujr-IN,"Koli, Wadiyara",IN PK,,,,,,,,EAS,kxp,,,
-kxp-x-Thr,kxp-Arab-PK-x-Thr,"Koli, Thradhri",IN PK,,,03558 12158,,,,,SAS,kxp,,,Thardhri (Tharadari) is distinct from Wadiyara. (SK)
+kxp-x-Thr,kxp-Arab-PK-x-Thr,"Koli, Thradhri",IN PK,,,03558 12158,,,,,SAS,kxp,,,"Capital, Thardhri (Tharadari) is distinct from Wadiyara. (SK)"
 kxq,kxq-Latn-ID,"Kanum, Smärky",ID,,,,,1,,,SEA,kxq,,,
 kxr,kxr-Latn-PG,Koro,PG,,,,,1,,,MEL,kxr,LE,10-Jan-2018,
 kxs,kxs-Zyyy-CN,Kangjia,CN,,,,,1,,,EAS,kxs,,,
@@ -4760,7 +4760,7 @@ mn-Tibt,mn-Tibt-CN,"Mongolian, Halh",CZ KG MN RU TW US,,,,,,1,,CAS EAS EEU NAM,m
 mna,mna-Latn-PG,Mbula,PG,,,,,,,,MEL,mna,LE,10-Jan-2018,
 mnb,mnb-Latn-ID,Muna,ID,,,04654 14384 14386,,,,,SEA,mnb,,20-Apr-2018,
 mnc-Mong-x-manchu,mnc-Mong-CN-x-manchu,Manchu,CN,,,,,,,,EAS,mnc,,,
-mnc-Mong-x-oldmanchu,mnc-Mong-CN-x-oldmanchu,Manchu,CN,,,,,,1,,EAS,mnc,,,
+mnc-Mong-x-olmanchu,mnc-Mong-CN-x-olmanchu,Manchu,CN,,,,,,1,,EAS,mnc,,,
 mnc-Mong,mnc-Mong-CN,Manchu,CN,,,,,,,,EAS,mnc,CLDR supplemental,,
 mnd,mnd-Latn-BR,Mondé,BR,,,,,1,,,SAM,mnd,LE,9-Jan-2018,
 mne,mne-Latn-TD,Naba,TD,,,02966,,1,,,MAF,mne,,,
@@ -4979,8 +4979,8 @@ muz-Latn,muz-Latn-ET,Mursi,ET,,,,,,,,EAF,muz,,,
 mva,mva-Latn-PG,Manam,PG,,,,,,,,MEL,mva,LE,10-Jan-2018,
 mvb,mvb-Zyyy-US,Mattole,US,,,,,1,,,NAM,mvb,LE,10-Jan-2018,Extinct
 mvd,mvd-Latn-ID,Mamboru,ID,,,,,1,,,SEA,mvd,,,
-mve-Arab,mve-Arab-PK-x-Sindhi,Marwari,PK,,,13794 13795 13796 20548 20750 20751,,,,,SAS,mve,,,
-mve-Arab-x-Urdu,mve-Arab-PK-x-Urdu,Marwari,PK,,,13794 13795 13796 20548 20750 20751,,,,,SAS,mve,,,
+mve-Arab,mve-Arab-PK-x-Sindhi,Marwari,PK,,,13794 13795 13796 20548 20750 20751,,,,,SAS,mve,,,Capital
+mve-Arab-x-Urdu,mve-Arab-PK-x-Urdu,Marwari,PK,,,13794 13795 13796 20548 20750 20751,,,,,SAS,mve,,,Capital
 mvf,mvf-Mong-CN,"Mongolian, Peripheral",CN MN,,,04947 06221 06222 06223,,,,,EAS,mvf,,,
 mvf-Phag,mvf-Phag-CN,"Mongolian, Peripheral",CN MN,,,04947 06221 06222 06223,,,1,,EAS,mvf,,,
 mvg,mvg-Latn-MX,"Mixtec, Yucuañe",MX,,,02826,,,,,CAM,mvg,LE,9-Jan-2018,
@@ -5529,7 +5529,7 @@ nsq,nsq-Latn-US,"Miwok, Northern Sierra",US,,,,,1,,,NAM,nsq,LE,9-Jan-2018,
 nsr,nsr-Zxxx-CA,Maritime Sign Language,CA,,,,,,,,NAM,nsr,,,
 nss,nss-Latn-PG,Nali,PG,,,,,,,,MEL,nss,LE,10-Jan-2018,
 nst,nst-Latn-MM,"Naga, Tase",IN MM,,,01131 03008 03387 14596 14601 14602 14612 20171 21147 21264 21267 21269 21270 21271 21272 21273 21274,,,,,SAS SEA,nst,SVW,13-Apr-2018,multiple dialects!
-nst-x-moshanghawa,nst-Latn-MM-x-moshanghawa,"Naga, Tangshang - Moshang Hawa",IN MM,,,01131 03008 03387 14596 14601 14602 14612 20171 21147 21264 21267 21269 21270 21271 21272 21273 21274,,,,,SEA,nst,"NMC, SVW",13-Apr-2018,
+nst-x-moshanghawa,nst-Latn-MM-x-moshanghawa,"Naga, Tangshang - Moshang Hawa",IN MM,,,01131 03008 03387 14596 14601 14602 14612 20171 21147 21264 21267 21269 21270 21271 21272 21273 21274,,,,,SEA,nst,"NMC, SVW",13-Apr-2018,long
 nsu,nsu-Latn-MX,"Nahuatl, Sierra Negra",MX,,,,,,,,CAM,nsu,LE,9-Jan-2018,
 nsv,nsv-Yiii-CN,"Nisu, Southwestern",CN,,,,,,,,EAS,nsv,,,x-traditional
 nsw,nsw-Latn-VU,Navut,VU,,,,,1,,,MEL,nsw,LE,10-Jan-2018,
@@ -5754,7 +5754,7 @@ onr,onr-Latn-PG,"One, Northern",PG,,,21166 21167 21168,,,,,MEL,onr,LE,10-Jan-201
 ons,ons-Latn-PG,Ono,PG,,,,,,,,MEL,ons,LE,10-Jan-2018,
 ont,ont-Latn-PG,Ontenu,PG,,,,,1,,,MEL,ont,LE,10-Jan-2018,
 onu,onu-Latn-VU,Unua,VU,,,,,,,,MEL,onu,LE,10-Jan-2018,
-onw,onw-Copt-SD-x-oldnubian,Old Nubian,EG SD,,,,,,,,NAF,onw,LE,12-Jan-2018,Historical
+onw,onw-Copt-SD-x-olnubian,Old Nubian,EG SD,,,,,,,,NAF,onw,LE,12-Jan-2018,Historical
 onx,onx-Latn-ID,Onin Based Pidgin,ID,,,,,1,,,SEA,onx,,,
 ood,ood-Latn-US,Tohono O'odham,MX US,,,00237 15308,,,,,CAM NAM,ood,LE,9-Jan-2018,
 oog,oog-Zyyy-LA,Ong,LA,,,,,1,,,SEA,oog,NMC,4-Dec-2017,
@@ -7226,7 +7226,7 @@ tet,tet-Latn-TL,Tetun,ID TL,,,,,,,,SEA,tet,CLDR,,
 teu,teu-Latn-UG,Soo,UG,,,,,1,,,EAF,teu,,,
 tev,tev-Latn-ID,Teor,ID,,,,,1,,,SEA,tev,,,
 tew,tew-Latn-US,Tewa,US,,,02159 17413,,,,,NAM,tew,LE,9-Jan-2018,
-tew-x-santaclara,tew-Latn-US-x-santaclara,Tewa - Santa Clara,US,,02159,02159 17413,,,,,NAM,tew,,,
+tew-x-sanclara,tew-Latn-US-x-sanclara,Tewa - Santa Clara,US,,02159,02159 17413,,,,,NAM,tew,,,
 tew-x-sanjuan,tew-Latn-US-x-sanjuan,Tewa - San Juan,US,,17413,02159 17413,,,,,NAM,tew,,,
 tex,tex-Latn-SS,Tennet,SS,,,,,,,,EAF,tex,LE,12-Jan-2018,
 tey,tey-Latn-SD,Tulishi,SD,,,,,,,,NAF,tey,LE,12-Jan-2018,
@@ -7690,9 +7690,9 @@ tzm-Arab,tzm-Arab-MA,"Tamazight, Central Atlas",FR MA,,,,,,,,NAF WEU,tzm,,,
 tzm-Tfng,tzm-Tfng-MA,"Tamazight, Central Atlas",FR MA,,,,,,,,NAF WEU,tzm,,,
 tzn,tzn-Latn-ID,Tugun,ID,,,,,,,,SEA,tzn,,20-Apr-2018,
 tzo,tzo-Latn-MX,Tzotzil,MX,,,00060 01204 02443 02641 02680 02681 02737 02738 02739 19461,,,,,CAM,tzo,LE,9-Jan-2018,
-tzo-x-zinacantan,tzo-Latn-MX-x-zinacantan,Tzotzil - Zinacantan,MX,,00060,00060 01204 02443 02641 02680 02681 02737 02738 02739 19461,,,,,CAM,tzo,,,
+tzo-x-zinacntn,tzo-Latn-MX-x-zinacntn,Tzotzil - Zinacantan,MX,,00060,00060 01204 02443 02641 02680 02681 02737 02738 02739 19461,,,,,CAM,tzo,,,
 tzo-x-huixtan,tzo-Latn-MX-x-huixtan,Tzotzil - Huixtan,MX,,01204,00060 01204 02443 02641 02680 02681 02737 02738 02739 19461,,,,,CAM,tzo,,,
-tzo-x-sanandres,tzo-Latn-MX-x-sanandres,Tzotzil - San Andres,MX,,02443,00060 01204 02443 02641 02680 02681 02737 02738 02739 19461,,,,,CAM,tzo,,,
+tzo-x-sanandre,tzo-Latn-MX-x-sanandre,Tzotzil - San Andres,MX,,02443,00060 01204 02443 02641 02680 02681 02737 02738 02739 19461,,,,,CAM,tzo,,,
 tzx,tzx-Latn-PG,Tabriak,PG,,,,,1,,,MEL,tzx,LE,10-Jan-2018,
 uam,uam-Latn-BR,Uamué,BR,,,,,1,,,SAM,uam,LE,10-Jan-2018,Extinct
 uan,uan-Zyyy-LA,Kuan,LA,,,,,,,,SEA,uan,NMC,20-Nov-2017,
@@ -8376,7 +8376,7 @@ xnt,xnt-Zyyy-US,Narragansett,US,,,,,1,,,NAM,xnt,LE,10-Jan-2018,Extinct
 xnu,xnu-Latn-AU,Nukunul,AU,,,,,1,,,ANZ,xnu,LE,10-Jan-2018,Extinct
 xny,xny-Latn-AU,Nyiyaparli,AU,,,,,1,,,ANZ,xny,LE,10-Jan-2018,
 xnz-Arab,xnz-Arab-EG,Mattokki,EG,,,,,,,,NAF,xnz,,,
-xnz-Copt,xnz-Copt-EG-x-oldnubian,Mattokki,EG,,,,,,,,NAF,xnz,,,
+xnz-Copt,xnz-Copt-EG-x-olnubian,Mattokki,EG,,,,,,,,NAF,xnz,,,
 xnz-Latn,xnz-Latn-EG,Mattokki,EG,,,,,,,,NAF,xnz,,,
 xoc,xoc-Latn-NG,O'chi'chi',NG,,,,,1,,,WAF,xoc,LE,10-Jan-2018,Extinct
 xod,xod-Latn-ID,Kokoda,ID,,,01733,,1,,,SEA,xod,,,
