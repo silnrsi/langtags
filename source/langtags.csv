@@ -1240,7 +1240,7 @@ bxb,bxb-Latn-SS,Belanda Bor,SS,,,,,,,,EAF,bxb,LE,12-Jan-2018,
 bxc,bxc-Latn-GQ,Molengue,GQ,,,,,1,,,MAF,bxc,LE,30-Jan-2018,
 bxd,bxd-Zyyy-CN,Pela,CN,,,,,1,,,EAS,bxd,,,
 bxe,bxe-Zyyy-ET,Ongota,ET,,,,,1,,,EAF,bxe,,,
-bxf,bxf-Latn-PG,Minigir,PG,,,,,1,,,MEL,bxf,LE,10-Jan-2018,
+bxf,bxf-Latn-PG,Minigir,PG,,,,,,,,MEL,bxf,LE,10-Jan-2018,
 bxg,bxg-Latn-CD,Bangala,CD,,,04548,,,,,MAF,bxg,LE,12-Jan-2018,
 bxh,bxh-Latn-PG,Buhutu,PG,,,,,,,,MEL,bxh,LE,10-Jan-2018,
 bxi,bxi-Latn-AU,Pirlatapa,AU,,,,,1,,,ANZ,bxi,LE,10-Jan-2018,Extinct
@@ -5992,7 +5992,7 @@ pjt,pjt-Latn-AU,Pitjantjatjara,AU,,,04312,,,,,ANZ,pjt,LE,10-Jan-2018,
 pka,pka-Brah-IN,Ardhamāgadhī Prākrit,IN,,,,,,,,???,pka,CLDR,,Historical
 pkb,pkb-Latn-KE,Kipfokomo,KE,,,01128 15712,,,,,EAF,pkb,LE,12-Jan-2018,
 pkc,pkc-Zyyy-KR,Paekche,KR,,,,,,,,???,pkc,,,Extinct
-pkg,pkg-Latn-PG,Pak-Tong,PG,,,,,1,,,MEL,pkg,LE,10-Jan-2018,
+pkg,pkg-Latn-PG,Pak-Tong,PG,,,,,,,,MEL,pkg,LE,10-Jan-2018,
 pkh-Deva,pkh-Deva-BD,Pangkhua,BD IN,,,04417,,,,,SAS,pkh,,,
 pkh-Latn,pkh-Latn-BD,Pangkhua,BD IN,,,04417,,,,,SAS,pkh,,,
 pkn,pkn-Latn-AU,Pakanha,AU,,,,,1,,,ANZ,pkn,LE,10-Jan-2018,
