@@ -9,7 +9,7 @@
     },
     {
         "api": "1.2.1",
-        "date": "2020-07-03",
+        "date": "2020-08-18",
         "tag": "_version"
     },
     {
@@ -4179,7 +4179,6 @@
         "sldr": false,
         "tag": "alx",
         "tags": [ "alx-Latn", "alx-PG" ],
-        "unwritten": true,
         "windows": "alx-Latn"
     },
     {
@@ -7590,7 +7589,6 @@
         "sldr": false,
         "tag": "auk",
         "tags": [ "auk-Latn", "auk-PG" ],
-        "unwritten": true,
         "windows": "auk-Latn"
     },
     {
@@ -14014,7 +14012,6 @@
         "sldr": false,
         "tag": "bmc",
         "tags": [ "bmc-Latn", "bmc-PG" ],
-        "unwritten": true,
         "windows": "bmc-Latn"
     },
     {
@@ -14333,7 +14330,6 @@
         "sldr": false,
         "tag": "bmx",
         "tags": [ "bmx-Latn", "bmx-PG" ],
-        "unwritten": true,
         "windows": "bmx-Latn"
     },
     {
@@ -16350,7 +16346,7 @@
         "windows": "brv-Laoo"
     },
     {
-        "full": "brv-Thai-TH-x-dongluang",
+        "full": "brv-Thai-TH-x-dongluag",
         "iana": [ "Bru Dong Luang" ],
         "iso639_3": "brv",
         "name": "Bru, Western",
@@ -16361,12 +16357,12 @@
         "regions": [ "LA", "US" ],
         "script": "Thai",
         "sldr": false,
-        "tag": "brv-Thai-x-dongluang",
-        "tags": [ "brv-TH-x-dongluang" ],
-        "windows": "brv-Thai-x-dongluang"
+        "tag": "brv-Thai-x-dongluag",
+        "tags": [ "brv-TH-x-dongluag" ],
+        "windows": "brv-Thai-x-dongluag"
     },
     {
-        "full": "brv-Thai-TH-x-khongchiem",
+        "full": "brv-Thai-TH-x-khongchi",
         "iana": [ "Bru Khong Chiem" ],
         "iso639_3": "brv",
         "name": "Bru, Western",
@@ -16377,12 +16373,12 @@
         "regions": [ "LA", "US" ],
         "script": "Thai",
         "sldr": false,
-        "tag": "brv-Thai-x-khongchiem",
-        "tags": [ "brv-TH-x-khongchiem" ],
-        "windows": "brv-Thai-x-khongchiem"
+        "tag": "brv-Thai-x-khongchi",
+        "tags": [ "brv-TH-x-khongchi" ],
+        "windows": "brv-Thai-x-khongchi"
     },
     {
-        "full": "brv-Thai-TH-x-sakonnakon",
+        "full": "brv-Thai-TH-x-sakonnak",
         "iana": [ "Bru Sakon Nakhorn" ],
         "iso639_3": "brv",
         "name": "Bru, Western",
@@ -16393,9 +16389,9 @@
         "regions": [ "LA", "US" ],
         "script": "Thai",
         "sldr": false,
-        "tag": "brv-Thai-x-sakonnakon",
-        "tags": [ "brv-TH-x-sakonnakon" ],
-        "windows": "brv-Thai-x-sakonnakon"
+        "tag": "brv-Thai-x-sakonnak",
+        "tags": [ "brv-TH-x-sakonnak" ],
+        "windows": "brv-Thai-x-sakonnak"
     },
     {
         "full": "brw-Zyyy-IN",
@@ -18557,7 +18553,6 @@
         "sldr": false,
         "tag": "bxf",
         "tags": [ "bxf-Latn", "bxf-PG" ],
-        "unwritten": true,
         "windows": "bxf-Latn"
     },
     {
@@ -20934,7 +20929,7 @@
         "windows": "cek-Latn-x-kanise"
     },
     {
-        "full": "cek-Latn-MM-x-khawngtuu",
+        "full": "cek-Latn-MM-x-khawngtu",
         "iana": [ "Chin, Eastern Khumi Khawng Tuu dialect" ],
         "iso639_3": "cek",
         "name": "Chin, Eastern Khumi",
@@ -20943,9 +20938,9 @@
         "regionname": "Myanmar",
         "script": "Latn",
         "sldr": false,
-        "tag": "cek-x-khawngtuu",
-        "tags": [ "cek-Latn-x-khawngtuu", "cek-MM-x-khawngtuu" ],
-        "windows": "cek-Latn-x-khawngtuu"
+        "tag": "cek-x-khawngtu",
+        "tags": [ "cek-Latn-x-khawngtu", "cek-MM-x-khawngtu" ],
+        "windows": "cek-Latn-x-khawngtu"
     },
     {
         "full": "cek-Latn-MM-x-khongtu",
@@ -25691,7 +25686,7 @@
         "windows": "dao-Latn"
     },
     {
-        "full": "dao-Latn-MM-x-khengdaai",
+        "full": "dao-Latn-MM-x-khengdai",
         "iana": [ "Chin, Kheng Daai" ],
         "iso639_3": "dao",
         "localnames": [ "Daai", "Daai Chin" ],
@@ -25701,9 +25696,9 @@
         "regionname": "Myanmar",
         "script": "Latn",
         "sldr": false,
-        "tag": "dao-x-khengdaai",
-        "tags": [ "dao-Latn-x-khengdaai", "dao-MM-x-khengdaai" ],
-        "windows": "dao-Latn-x-khengdaai"
+        "tag": "dao-x-khengdai",
+        "tags": [ "dao-Latn-x-khengdai", "dao-MM-x-khengdai" ],
+        "windows": "dao-Latn-x-khengdai"
     },
     {
         "full": "dao-Latn-MM-x-matlic",
@@ -26989,7 +26984,7 @@
         "windows": "dgl-Arab"
     },
     {
-        "full": "dgl-Copt-SD-x-oldnubian",
+        "full": "dgl-Copt-SD-x-olnubian",
         "iana": [ "Andaandi" ],
         "iso639_3": "dgl",
         "name": "Andaandi",
@@ -26998,9 +26993,9 @@
         "region": "SD",
         "regionname": "Sudan",
         "script": "Copt",
-        "sldr": true,
+        "sldr": false,
         "tag": "dgl-Copt",
-        "tags": [ "dgl-Copt-SD", "dgl-Copt-x-oldnubian", "dgl-SD-x-oldnubian" ],
+        "tags": [ "dgl-Copt-SD", "dgl-Copt-x-olnubian", "dgl-SD-x-olnubian" ],
         "windows": "dgl-Copt"
     },
     {
@@ -28385,7 +28380,6 @@
         "sldr": false,
         "tag": "dne",
         "tags": [ "dne-Latn", "dne-TZ" ],
-        "unwritten": true,
         "windows": "dne-Latn"
     },
     {
@@ -33247,7 +33241,7 @@
         "windows": "err-Latn"
     },
     {
-        "full": "ers-Zzzz-CN-x-ersushaba",
+        "full": "ers-Zzzz-CN-x-ersushab",
         "iana": [ "Ersu" ],
         "iso639_3": "ers",
         "name": "Ersu",
@@ -33258,7 +33252,7 @@
         "script": "Zzzz",
         "sldr": false,
         "tag": "ers",
-        "tags": [ "ers-CN", "ers-CN-x-ersushaba", "ers-Zzzz", "ers-Zzzz-CN", "ers-Zzzz-x-ersushaba", "ers-x-ersushaba" ],
+        "tags": [ "ers-CN", "ers-CN-x-ersushab", "ers-Zzzz", "ers-Zzzz-CN", "ers-Zzzz-x-ersushab", "ers-x-ersushab" ],
         "windows": "ers-Zzzz"
     },
     {
@@ -34962,7 +34956,7 @@
         "windows": "fia-Arab"
     },
     {
-        "full": "fia-Copt-SD-x-oldnubian",
+        "full": "fia-Copt-SD-x-olnubian",
         "iana": [ "Nobiin" ],
         "iso639_3": "fia",
         "name": "Nobiin",
@@ -34972,9 +34966,9 @@
         "regionname": "Sudan",
         "regions": [ "EG" ],
         "script": "Copt",
-        "sldr": true,
+        "sldr": false,
         "tag": "fia-Copt",
-        "tags": [ "fia-Copt-SD", "fia-Copt-x-oldnubian", "fia-SD-x-oldnubian" ],
+        "tags": [ "fia-Copt-SD", "fia-Copt-x-olnubian", "fia-SD-x-olnubian" ],
         "windows": "fia-Copt"
     },
     {
@@ -48583,7 +48577,6 @@
         "sldr": false,
         "tag": "jaz",
         "tags": [ "jaz-Latn", "jaz-NC" ],
-        "unwritten": true,
         "windows": "jaz-Latn"
     },
     {
@@ -51158,7 +51151,6 @@
         "sldr": false,
         "tag": "kbv",
         "tags": [ "kbv-ID", "kbv-Latn" ],
-        "unwritten": true,
         "windows": "kbv-Latn"
     },
     {
@@ -54012,7 +54004,6 @@
         "sldr": false,
         "tag": "kiz",
         "tags": [ "kiz-Latn", "kiz-TZ" ],
-        "unwritten": true,
         "windows": "kiz-Latn"
     },
     {
@@ -56709,7 +56700,6 @@
         "sldr": true,
         "tag": "koz",
         "tags": [ "koz-Latn", "koz-PG" ],
-        "unwritten": true,
         "windows": "koz-Latn"
     },
     {
@@ -66037,7 +66027,6 @@
         "sldr": false,
         "tag": "lsr",
         "tags": [ "lsr-Latn", "lsr-PG" ],
-        "unwritten": true,
         "windows": "lsr-Latn"
     },
     {
@@ -72512,7 +72501,7 @@
         "windows": "mnc-Mong-x-manchu"
     },
     {
-        "full": "mnc-Mong-CN-x-oldmanchu",
+        "full": "mnc-Mong-CN-x-olmanchu",
         "iana": [ "Manchu" ],
         "iso639_3": "mnc",
         "name": "Manchu",
@@ -72523,9 +72512,9 @@
         "regionname": "China",
         "script": "Mong",
         "sldr": false,
-        "tag": "mnc-Mong-x-oldmanchu",
-        "tags": [ "mnc-CN-x-oldmanchu" ],
-        "windows": "mnc-Mong-x-oldmanchu"
+        "tag": "mnc-Mong-x-olmanchu",
+        "tags": [ "mnc-CN-x-olmanchu" ],
+        "windows": "mnc-Mong-x-olmanchu"
     },
     {
         "full": "mnd-Latn-BR",
@@ -83852,7 +83841,7 @@
         "windows": "nst-Latn"
     },
     {
-        "full": "nst-Latn-MM-x-moshanghawa",
+        "full": "nst-Latn-MM-x-moshang",
         "iana": [ "Naga, Tangshang - Moshang Hawa" ],
         "iso639_3": "nst",
         "localnames": [ "Tangshang Naga" ],
@@ -83863,9 +83852,9 @@
         "regions": [ "IN" ],
         "script": "Latn",
         "sldr": false,
-        "tag": "nst-x-moshanghawa",
-        "tags": [ "nst-Latn-x-moshanghawa", "nst-MM-x-moshanghawa" ],
-        "windows": "nst-Latn-x-moshanghawa"
+        "tag": "nst-x-moshang",
+        "tags": [ "nst-Latn-x-moshang", "nst-MM-x-moshang" ],
+        "windows": "nst-Latn-x-moshang"
     },
     {
         "full": "nsu-Latn-MX",
@@ -87106,7 +87095,7 @@
         "windows": "onu-Latn"
     },
     {
-        "full": "onw-Copt-SD-x-oldnubian",
+        "full": "onw-Copt-SD-x-olnubian",
         "iana": [ "Old Nubian" ],
         "iso639_3": "onw",
         "name": "Old Nubian",
@@ -87116,7 +87105,7 @@
         "script": "Copt",
         "sldr": false,
         "tag": "onw",
-        "tags": [ "onw-Copt", "onw-Copt-SD", "onw-Copt-x-oldnubian", "onw-SD", "onw-SD-x-oldnubian", "onw-x-oldnubian" ],
+        "tags": [ "onw-Copt", "onw-Copt-SD", "onw-Copt-x-olnubian", "onw-SD", "onw-SD-x-olnubian", "onw-x-olnubian" ],
         "windows": "onw-Copt"
     },
     {
@@ -90559,7 +90548,6 @@
         "sldr": false,
         "tag": "pkg",
         "tags": [ "pkg-Latn", "pkg-PG" ],
-        "unwritten": true,
         "windows": "pkg-Latn"
     },
     {
@@ -97030,7 +97018,6 @@
         "sldr": false,
         "tag": "rth",
         "tags": [ "rth-ID", "rth-Latn" ],
-        "unwritten": true,
         "windows": "rth-Latn"
     },
     {
@@ -109197,6 +109184,22 @@
         "windows": "tew-Latn"
     },
     {
+        "full": "tew-Latn-US-x-sanclara",
+        "iana": [ "Tewa - Santa Clara" ],
+        "iso639_3": "tew",
+        "localnames": [ "Tewa" ],
+        "name": "Tewa",
+        "names": [ "Tano", "Tewa - Santa Clara" ],
+        "region": "US",
+        "regionname": "United States",
+        "rod": "02159",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "tew-x-sanclara",
+        "tags": [ "tew-Latn-x-sanclara", "tew-US-x-sanclara" ],
+        "windows": "tew-Latn-x-sanclara"
+    },
+    {
         "full": "tew-Latn-US-x-sanjuan",
         "iana": [ "Tewa - San Juan" ],
         "iso639_3": "tew",
@@ -109211,22 +109214,6 @@
         "tag": "tew-x-sanjuan",
         "tags": [ "tew-Latn-x-sanjuan", "tew-US-x-sanjuan" ],
         "windows": "tew-Latn-x-sanjuan"
-    },
-    {
-        "full": "tew-Latn-US-x-santaclara",
-        "iana": [ "Tewa - Santa Clara" ],
-        "iso639_3": "tew",
-        "localnames": [ "Tewa" ],
-        "name": "Tewa",
-        "names": [ "Tano", "Tewa - Santa Clara" ],
-        "region": "US",
-        "regionname": "United States",
-        "rod": "02159",
-        "script": "Latn",
-        "sldr": false,
-        "tag": "tew-x-santaclara",
-        "tags": [ "tew-Latn-x-santaclara", "tew-US-x-santaclara" ],
-        "windows": "tew-Latn-x-santaclara"
     },
     {
         "full": "tex-Latn-SS",
@@ -115174,7 +115161,6 @@
         "sldr": false,
         "tag": "twp",
         "tags": [ "twp-Latn", "twp-PG" ],
-        "unwritten": true,
         "windows": "twp-Latn"
     },
     {
@@ -115996,7 +115982,7 @@
         "windows": "tzo-Latn-x-huixtan"
     },
     {
-        "full": "tzo-Latn-MX-x-sanandres",
+        "full": "tzo-Latn-MX-x-sanandre",
         "iana": [ "Tzotzil - San Andres" ],
         "iso639_3": "tzo",
         "localnames": [ "Bats'i k'op" ],
@@ -116007,12 +115993,12 @@
         "rod": "02443",
         "script": "Latn",
         "sldr": false,
-        "tag": "tzo-x-sanandres",
-        "tags": [ "tzo-Latn-x-sanandres", "tzo-MX-x-sanandres" ],
-        "windows": "tzo-Latn-x-sanandres"
+        "tag": "tzo-x-sanandre",
+        "tags": [ "tzo-Latn-x-sanandre", "tzo-MX-x-sanandre" ],
+        "windows": "tzo-Latn-x-sanandre"
     },
     {
-        "full": "tzo-Latn-MX-x-zinacantan",
+        "full": "tzo-Latn-MX-x-zinacntn",
         "iana": [ "Tzotzil - Zinacantan" ],
         "iso639_3": "tzo",
         "localnames": [ "Bats'i k'op" ],
@@ -116023,9 +116009,9 @@
         "rod": "00060",
         "script": "Latn",
         "sldr": false,
-        "tag": "tzo-x-zinacantan",
-        "tags": [ "tzo-Latn-x-zinacantan", "tzo-MX-x-zinacantan" ],
-        "windows": "tzo-Latn-x-zinacantan"
+        "tag": "tzo-x-zinacntn",
+        "tags": [ "tzo-Latn-x-zinacntn", "tzo-MX-x-zinacntn" ],
+        "windows": "tzo-Latn-x-zinacntn"
     },
     {
         "full": "tzx-Latn-PG",
@@ -125836,7 +125822,7 @@
         "windows": "xnz-Arab"
     },
     {
-        "full": "xnz-Copt-EG-x-oldnubian",
+        "full": "xnz-Copt-EG-x-olnubian",
         "iana": [ "Mattokki" ],
         "iso639_3": "xnz",
         "name": "Mattokki",
@@ -125845,9 +125831,9 @@
         "region": "EG",
         "regionname": "Egypt",
         "script": "Copt",
-        "sldr": true,
+        "sldr": false,
         "tag": "xnz-Copt",
-        "tags": [ "xnz-Copt-EG", "xnz-Copt-x-oldnubian", "xnz-EG-x-oldnubian" ],
+        "tags": [ "xnz-Copt-EG", "xnz-Copt-x-olnubian", "xnz-EG-x-olnubian" ],
         "windows": "xnz-Copt"
     },
     {

@@ -958,7 +958,7 @@ bn-Brai = bn-Brai-BD
 bn-Newa = bn-NP = bn-Newa-NP
 bna = bna-ID = bna-Latn = bna-Latn-ID
 bnb = bnb-Latn = bnb-MY = bnb-Latn-MY
-bnc = bkb = bkb-Latn = bkb-Latn-PH = bkb-PH = bnc-Latn = bnc-PH = lbk = lbk-Latn = lbk-Latn-PH = lbk-PH = bnc-Latn-PH
+*bnc = bkb = bkb-Latn = bkb-Latn-PH = bkb-PH = bnc-Latn = bnc-PH = lbk = lbk-Latn = lbk-Latn-PH = lbk-PH = bnc-Latn-PH
 bnd = bnd-ID = bnd-Latn = bnd-Latn-ID
 bne = bne-ID = bne-Latn = bne-Latn-ID
 bnf = bnf-ID = bnf-Latn = bnf-Latn-ID
@@ -1085,9 +1085,9 @@ brt = brt-Latn = brt-NG = brt-Latn-NG
 bru-Laoo = bru-Laoo-LA
 bru-Thai = bru-Thai-LA
 brv = brv-LA = brv-Laoo = brv-Laoo-LA
-brv-Thai-x-dongluang = brv-TH-x-dongluang = brv-Thai-TH-x-dongluang
-brv-Thai-x-khongchiem = brv-TH-x-khongchiem = brv-Thai-TH-x-khongchiem
-brv-Thai-x-sakonnakon = brv-TH-x-sakonnakon = brv-Thai-TH-x-sakonnakon
+brv-Thai-x-dongluag = brv-TH-x-dongluag = brv-Thai-TH-x-dongluag
+brv-Thai-x-khongchi = brv-TH-x-khongchi = brv-Thai-TH-x-khongchi
+brv-Thai-x-sakonnak = brv-TH-x-sakonnak = brv-Thai-TH-x-sakonnak
 brw = brw-IN = brw-Zyyy = brw-Zyyy-IN
 *brx = brx-Deva = *brx-IN = brx-Deva-IN
 brx-Beng = brx-Beng-IN
@@ -1393,7 +1393,7 @@ ceg = ceg-Latn = ceg-PY = ceg-Latn-PY
 cek-x-asangkhongso = cek-Latn-x-asangkhongso = cek-MM-x-asangkhongso = cek-Latn-MM-x-asangkhongso
 cek-x-hnise = cek-Latn-x-hnise = cek-MM-x-hnise = cek-Latn-MM-x-hnise
 cek-x-kanise = cek-Latn-x-kanise = cek-MM-x-kanise = cek-Latn-MM-x-kanise
-cek-x-khawngtuu = cek-Latn-x-khawngtuu = cek-MM-x-khawngtuu = cek-Latn-MM-x-khawngtuu
+cek-x-khawngtu = cek-Latn-x-khawngtu = cek-MM-x-khawngtu = cek-Latn-MM-x-khawngtu
 cek-x-khongtu = cek-Latn-x-khongtu = cek-MM-x-khongtu = cek-Latn-MM-x-khongtu
 cek-x-lemi = cek-Latn-x-lemi = cek-MM-x-lemi = cek-Latn-MM-x-lemi
 cek-x-likhy = cek-Latn-x-likhy = cek-MM-x-likhy = cek-Latn-MM-x-likhy
@@ -1709,7 +1709,7 @@ dak = dak-Latn = dak-US = dak-Latn-US
 dal = dal-KE = dal-Latn = dal-Latn-KE
 dam = dam-Latn = dam-NG = dam-Latn-NG
 dao = dao-Latn = dao-MM = dao-Latn-MM
-dao-x-khengdaai = dao-Latn-x-khengdaai = dao-MM-x-khengdaai = dao-Latn-MM-x-khengdaai
+dao-x-khengdai = dao-Latn-x-khengdai = dao-MM-x-khengdai = dao-Latn-MM-x-khengdai
 dao-x-matlic = dao-Latn-x-matlic = dao-MM-x-matlic = dao-Latn-MM-x-matlic
 dao-x-mattui = dao-Latn-x-mattui = dao-MM-x-mattui = dao-Latn-MM-x-mattui
 dao-x-yindu = dao-Latn-x-yindu = dao-MM-x-yindu = dao-Latn-MM-x-yindu
@@ -1796,7 +1796,7 @@ dgg = dgg-Latn = dgg-PG = dgg-Latn-PG
 *dgi = dgi-BF = dgi-Latn = dgi-Latn-BF
 dgk = dgk-CF = dgk-Latn = dgk-Latn-CF
 *dgl-Arab = dgl-Arab-SD
-dgl-Copt = dgl-Copt-SD = *dgl-Copt-x-oldnubian = dgl-SD-x-oldnubian = dgl-Copt-SD-x-oldnubian
+dgl-Copt = dgl-Copt-SD = *dgl-Copt-x-olnubian = dgl-SD-x-olnubian = dgl-Copt-SD-x-olnubian
 dgl-Latn = dgl-Latn-SD
 dgn = dgn-AU = dgn-Latn = dgn-Latn-AU
 *dgr = dgr-CA = dgr-Latn = dgr-Latn-CA
@@ -2214,7 +2214,7 @@ erh = erh-Latn = erh-NG = erh-Latn-NG
 erk = erk-Latn = erk-VU = erk-Latn-VU
 ero = ero-CN = ero-Zyyy = ero-Zyyy-CN
 err = err-AU = err-Latn = err-Latn-AU
-ers = ers-CN = ers-CN-x-ersushaba = ers-Zzzz = ers-Zzzz-CN = ers-Zzzz-x-ersushaba = ers-x-ersushaba = ers-Zzzz-CN-x-ersushaba
+ers = ers-CN = ers-CN-x-ersushab = ers-Zzzz = ers-Zzzz-CN = ers-Zzzz-x-ersushab = ers-x-ersushab = ers-Zzzz-CN-x-ersushab
 ert = ert-ID = ert-Latn = ert-Latn-ID
 erw = erw-ID = erw-Latn = erw-Latn-ID
 *es = *es-ES = es-Latn = es-Latn-ES
@@ -2327,7 +2327,7 @@ fgr = fgr-Latn = fgr-TD = fgr-Latn-TD
 *fi = *fi-FI = fi-Latn = fi-Latn-FI
 fi-Brai = fi-Brai-FI
 *fia = fia-Arab = fia-SD = fia-Arab-SD
-fia-Copt = fia-Copt-SD = *fia-Copt-x-oldnubian = fia-SD-x-oldnubian = fia-Copt-SD-x-oldnubian
+fia-Copt = fia-Copt-SD = *fia-Copt-x-olnubian = fia-SD-x-olnubian = fia-Copt-SD-x-olnubian
 fia-Latn = fia-Latn-SD
 fie = fie-Latn = fie-NG = fie-Latn-NG
 *fil = fil-Latn = *fil-PH = fil-Latn-PH
@@ -2622,7 +2622,7 @@ gml = gml-DE = gml-Latf = gml-Latf-DE
 gmn = gmn-CM = gmn-Latn = gmn-Latn-CM
 gmr = gmr-AU = gmr-Latn = gmr-Latn-AU
 gmu = gmu-Latn = gmu-PG = gmu-Latn-PG
-*gmv = gmv-ET = *gmv-Ethi = gmv-Ethi-ET
+*gmv = gmv-ET = gmv-Ethi = gmv-Ethi-ET
 *gmv-Latn = gmv-Latn-ET
 gmx = gmx-Latn = gmx-TZ = gmx-Latn-TZ
 gmy = gmy-GR = gmy-Zyyy = gmy-Zyyy-GR
@@ -4834,7 +4834,7 @@ mn-Tibt = khk-Tibt = khk-Tibt-CN = mn-Tibt-CN
 mnb = mnb-ID = mnb-Latn = mnb-Latn-ID
 mnc-Mong = mnc-CN = mnc-Mong-CN
 mnc-Mong-x-manchu = mnc-CN-x-manchu = mnc-Mong-CN-x-manchu
-mnc-Mong-x-oldmanchu = mnc-CN-x-oldmanchu = mnc-Mong-CN-x-oldmanchu
+mnc-Mong-x-olmanchu = mnc-CN-x-olmanchu = mnc-Mong-CN-x-olmanchu
 mnd = mnd-BR = mnd-Latn = mnd-Latn-BR
 mne = mne-Latn = mne-TD = mne-Latn-TD
 *mnf = mnf-CM = mnf-Latn = mnf-Latn-CM
@@ -5597,7 +5597,7 @@ nsq = nsq-Latn = nsq-US = nsq-Latn-US
 nsr = nsr-CA = nsr-Zxxx = sgn-nsr = sgn-nsr-CA = nsr-Zxxx-CA
 *nss = nss-Latn = nss-PG = nss-Latn-PG
 nst = nst-Latn = nst-MM = nst-Latn-MM
-nst-x-moshanghawa = nst-Latn-x-moshanghawa = nst-MM-x-moshanghawa = nst-Latn-MM-x-moshanghawa
+nst-x-moshang = nst-Latn-x-moshang = nst-MM-x-moshang = nst-Latn-MM-x-moshang
 *nsu = nsu-Latn = nsu-MX = nsu-Latn-MX
 nsv = nsv-CN = nsv-Yiii = nsv-Yiii-CN
 nsw = nsw-Latn = nsw-VU = nsw-Latn-VU
@@ -5819,7 +5819,7 @@ onr = onr-Latn = onr-PG = onr-Latn-PG
 *ons = ons-Latn = ons-PG = ons-Latn-PG
 ont = ont-Latn = ont-PG = ont-Latn-PG
 onu = onu-Latn = onu-VU = onu-Latn-VU
-onw = onw-Copt = onw-Copt-SD = onw-Copt-x-oldnubian = onw-SD = onw-SD-x-oldnubian = onw-x-oldnubian = onw-Copt-SD-x-oldnubian
+onw = onw-Copt = onw-Copt-SD = onw-Copt-x-olnubian = onw-SD = onw-SD-x-olnubian = onw-x-olnubian = onw-Copt-SD-x-olnubian
 onx = onx-ID = onx-Latn = onx-Latn-ID
 *ood = ood-Latn = ood-US = ood-Latn-US
 oog = oog-LA = oog-Zyyy = oog-Zyyy-LA
@@ -7299,8 +7299,8 @@ tes = tes-ID = tes-Java = tes-Java-ID
 teu = teu-Latn = teu-UG = teu-Latn-UG
 tev = tev-ID = tev-Latn = tev-Latn-ID
 *tew = tew-Latn = tew-US = tew-Latn-US
+tew-x-sanclara = tew-Latn-x-sanclara = tew-US-x-sanclara = tew-Latn-US-x-sanclara
 tew-x-sanjuan = tew-Latn-x-sanjuan = tew-US-x-sanjuan = tew-Latn-US-x-sanjuan
-tew-x-santaclara = tew-Latn-x-santaclara = tew-US-x-santaclara = tew-Latn-US-x-santaclara
 *tex = tex-Latn = tex-SS = tex-Latn-SS
 tey = tey-Latn = tey-SD = tey-Latn-SD
 tez-Latn = tez-Latn-NE
@@ -7756,8 +7756,8 @@ tzm-Tfng = tzm-Tfng-MA
 tzn = tzn-ID = tzn-Latn = tzn-Latn-ID
 *tzo = tzo-Latn = tzo-MX = tzo-Latn-MX
 tzo-x-huixtan = tzo-Latn-x-huixtan = tzo-MX-x-huixtan = tzo-Latn-MX-x-huixtan
-tzo-x-sanandres = tzo-Latn-x-sanandres = tzo-MX-x-sanandres = tzo-Latn-MX-x-sanandres
-tzo-x-zinacantan = tzo-Latn-x-zinacantan = tzo-MX-x-zinacantan = tzo-Latn-MX-x-zinacantan
+tzo-x-sanandre = tzo-Latn-x-sanandre = tzo-MX-x-sanandre = tzo-Latn-MX-x-sanandre
+tzo-x-zinacntn = tzo-Latn-x-zinacntn = tzo-MX-x-zinacntn = tzo-Latn-MX-x-zinacntn
 tzx = tzx-Latn = tzx-PG = tzx-Latn-PG
 uam = uam-BR = uam-Latn = uam-Latn-BR
 uan = uan-LA = uan-Zyyy = uan-Zyyy-LA
@@ -8430,7 +8430,7 @@ xnt = xnt-US = xnt-Zyyy = xnt-Zyyy-US
 xnu = xnu-AU = xnu-Latn = xnu-Latn-AU
 xny = nad = nad-AU = nad-Latn = nad-Latn-AU = xny-AU = xny-Latn = xny-Latn-AU
 xnz-Arab = xnz-Arab-EG
-xnz-Copt = xnz-Copt-EG = *xnz-Copt-x-oldnubian = xnz-EG-x-oldnubian = xnz-Copt-EG-x-oldnubian
+xnz-Copt = xnz-Copt-EG = *xnz-Copt-x-olnubian = xnz-EG-x-olnubian = xnz-Copt-EG-x-olnubian
 xnz-Latn = xnz-Latn-EG
 xoc = xoc-Latn = xoc-NG = xoc-Latn-NG
 xod = xod-ID = xod-Latn = xod-Latn-ID

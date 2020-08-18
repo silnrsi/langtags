@@ -1399,11 +1399,11 @@ ceb,ceb-Latn-PH,Cebuano,PH US,,,08665,,,,,NAM SEA,ceb,CLDR,,
 ceb-Brai,ceb-Brai-PH,Cebuano,PH US,,,08665,,,,,NAM SEA,ceb,,,
 ceg,ceg-Latn-PY,Chamacoco,PY,,,01899,,,,,SAM,ceg,LE,9-Jan-2018,
 cek,cek-Latn-MM,"Chin, Eastern Khumi",MM,,,05182 22888,,,,,SEA,cek,NMC,10-Jan-2018,"still following up, [cek] has many dialects"
-cek-x-asangkhongso,cek-Latn-MM-x-asangkhongso,"Chin, Eastern Khumi Asang (Khongso) dialect",MM,,,05182 22888,,,,,SEA,cek,NMC,31-Aug-2018,long
+cek-x-asang,cek-Latn-MM-x-asangkhongso,"Chin, Eastern Khumi Asang (Khongso) dialect",MM,,,05182 22888,,,,,SEA,cek,NMC,31-Aug-2018,long. Was cek-x-asangkhongso
 cek-x-hnise,cek-Latn-MM-x-hnise,"Chin, Eastern Khumi Hnise dialect",MM,,,05182 22888,,,,,SEA,cek,NMC,31-Aug-2018,
 cek-x-kanise,cek-Latn-MM-x-kanise,"Chin, Eastern Khumi Kanise dialect",MM,,,05182 22888,,,,,SEA,cek,NMC,31-Aug-2018,
 cek-x-khongtu,cek-Latn-MM-x-khongtu,"Chfin, Eastern Khumi Khong Tu dialect",MM,,,05182 22888,,,,,SEA,cek,NMC,31-Aug-2018,Yes Khong Tu uses a different spelling system then Khawng Tuu above
-cek-x-khawngtuu,cek-Latn-MM-x-khawngtuu,"Chin, Eastern Khumi Khawng Tuu dialect",MM,,,05182 22888,,,,,SEA,cek,NMC,31-Aug-2018,"long, Yes Khawng Tuu uses a different spelling system then Khong Tu below"
+cek-x-khawngtu,cek-Latn-MM-x-khawngtu,"Chin, Eastern Khumi Khawng Tuu dialect",MM,,,05182 22888,,,,,SEA,cek,NMC,31-Aug-2018,"long, Yes Khawng Tuu uses a different spelling system then Khong Tu below" was cek-x-khawngtuu
 cek-x-lemi,cek-Latn-MM-x-lemi,"Chin, Eastern Khumi Lemi dialect",MM,,,05182 22888,,,,,SEA,cek,NMC,7-Sep-2018,
 cek-x-likhy,cek-Latn-MM-x-likhy,"Chin, Eastern Khumi Likhy dialect",MM,,,05182 22888,,,,,SEA,cek,NMC,31-Aug-2018,
 cek-x-rengcaa,cek-Latn-MM-x-rengcaa,"Chin, Eastern Khumi Rengcaa dialect",MM,,,05182 22888,,,,,SEA,cek,NMC,31-Aug-2018,
@@ -1724,7 +1724,7 @@ dak,dak-Latn-US,Dakota,CA US,,,,,,,,NAM,dak,CLDR,,
 dal,dal-Latn-KE,Dahalo,KE,,,,,1,,,EAF,dal,LE,12-Jan-2018,
 dam,dam-Latn-NG,Damakawa,NG,,,,,1,,,WAF,dam,,,
 dao,dao-Latn-MM,"Chin, Daai",MM,,,21262 21282 22845,,,,,SEA,dao,NMC,4-Dec-2017,Has 3 orthographies!
-dao-x-khengdaai,dao-Latn-MM-x-khengdaai,"Chin, Kheng Daai",MM,,,21262 21282 22845,,,,,SEA,dao,NMC,8-Feb-2018,long
+dao-x-khengdai,dao-Latn-MM-x-khengdai,"Chin, Kheng Daai",MM,,,21262 21282 22845,,,,,SEA,dao,NMC,8-Feb-2018,long. Was dao-x-khengdaai
 dao-x-matlic,dao-Latn-MM-x-matlic,"Chin, Daai Matupi Licang",MM,,,21262 21282 22845,,,,,SEA,dao,NMC,8-Aug-2018,see above
 dao-x-mattui,dao-Latn-MM-x-mattui,"Chin, Daai Matupi Tuivang",MM,,,21262 21282 22845,,,,,SEA,dao,NMC,8-Aug-2018,"Within the Matupi dialect many different villages have developed hymnbooks using their own homegrown orthographies, so there are many different orthographies. I think there are at least 2 translations Tuivang and Licang. There isn't unity over a single representative variety of this dialect."
 dao-x-yindu,dao-Latn-MM-x-yindu,"Chin, Yindu Daar",MM,,,21262 21282 22845,,,,,SEA,dao,NMC,8-Aug-2018,
@@ -5529,7 +5529,7 @@ nsq,nsq-Latn-US,"Miwok, Northern Sierra",US,,,,,1,,,NAM,nsq,LE,9-Jan-2018,
 nsr,nsr-Zxxx-CA,Maritime Sign Language,CA,,,,,,,,NAM,nsr,,,
 nss,nss-Latn-PG,Nali,PG,,,,,,,,MEL,nss,LE,10-Jan-2018,
 nst,nst-Latn-MM,"Naga, Tase",IN MM,,,01131 03008 03387 14596 14601 14602 14612 20171 21147 21264 21267 21269 21270 21271 21272 21273 21274,,,,,SAS SEA,nst,SVW,13-Apr-2018,multiple dialects!
-nst-x-moshanghawa,nst-Latn-MM-x-moshanghawa,"Naga, Tangshang - Moshang Hawa",IN MM,,,01131 03008 03387 14596 14601 14602 14612 20171 21147 21264 21267 21269 21270 21271 21272 21273 21274,,,,,SEA,nst,"NMC, SVW",13-Apr-2018,long
+nst-x-moshang,nst-Latn-MM-x-moshang,"Naga, Tangshang - Moshang Hawa",IN MM,,,01131 03008 03387 14596 14601 14602 14612 20171 21147 21264 21267 21269 21270 21271 21272 21273 21274,,,,,SEA,nst,"NMC, SVW",13-Apr-2018,long. Was nst-x-moshanghawa
 nsu,nsu-Latn-MX,"Nahuatl, Sierra Negra",MX,,,,,,,,CAM,nsu,LE,9-Jan-2018,
 nsv,nsv-Yiii-CN,"Nisu, Southwestern",CN,,,,,,,,EAS,nsv,,,x-traditional
 nsw,nsw-Latn-VU,Navut,VU,,,,,1,,,MEL,nsw,LE,10-Jan-2018,
