@@ -1085,9 +1085,9 @@ brt = brt-Latn = brt-NG = brt-Latn-NG
 bru-Laoo = bru-Laoo-LA
 bru-Thai = bru-Thai-LA
 brv = brv-LA = brv-Laoo = brv-Laoo-LA
-brv-Thai-x-dongluag = brv-TH-x-dongluag = brv-Thai-TH-x-dongluag
-brv-Thai-x-khongchi = brv-TH-x-khongchi = brv-Thai-TH-x-khongchi
-brv-Thai-x-sakonnak = brv-TH-x-sakonnak = brv-Thai-TH-x-sakonnak
+brv-Thai-x-donglng = brv-TH-x-donglng = brv-Thai-TH-x-donglng
+brv-Thai-x-khongchm = brv-TH-x-khongchm = brv-Thai-TH-x-khongchm
+brv-Thai-x-sakonnkn = brv-TH-x-sakonnkn = brv-Thai-TH-x-sakonnkn
 brw = brw-IN = brw-Zyyy = brw-Zyyy-IN
 *brx = brx-Deva = *brx-IN = brx-Deva-IN
 brx-Beng = brx-Beng-IN
@@ -1390,7 +1390,7 @@ cea = cea-US = cea-Zyyy = cea-Zyyy-US
 ceb-Brai = ceb-Brai-PH
 ceg = ceg-Latn = ceg-PY = ceg-Latn-PY
 *cek = cek-Latn = cek-MM = cek-Latn-MM
-cek-x-asangkhongso = cek-Latn-x-asangkhongso = cek-MM-x-asangkhongso = cek-Latn-MM-x-asangkhongso
+cek-x-asang = cek-Latn-x-asang = cek-MM-x-asang = cek-Latn-MM-x-asang
 cek-x-hnise = cek-Latn-x-hnise = cek-MM-x-hnise = cek-Latn-MM-x-hnise
 cek-x-kanise = cek-Latn-x-kanise = cek-MM-x-kanise = cek-Latn-MM-x-kanise
 cek-x-khawngtu = cek-Latn-x-khawngtu = cek-MM-x-khawngtu = cek-Latn-MM-x-khawngtu

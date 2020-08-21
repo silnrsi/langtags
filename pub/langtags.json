@@ -9,7 +9,7 @@
     },
     {
         "api": "1.2.1",
-        "date": "2020-08-18",
+        "date": "2020-08-21",
         "tag": "_version"
     },
     {
@@ -16346,7 +16346,7 @@
         "windows": "brv-Laoo"
     },
     {
-        "full": "brv-Thai-TH-x-dongluag",
+        "full": "brv-Thai-TH-x-donglng",
         "iana": [ "Bru Dong Luang" ],
         "iso639_3": "brv",
         "name": "Bru, Western",
@@ -16357,12 +16357,12 @@
         "regions": [ "LA", "US" ],
         "script": "Thai",
         "sldr": false,
-        "tag": "brv-Thai-x-dongluag",
-        "tags": [ "brv-TH-x-dongluag" ],
-        "windows": "brv-Thai-x-dongluag"
+        "tag": "brv-Thai-x-donglng",
+        "tags": [ "brv-TH-x-donglng" ],
+        "windows": "brv-Thai-x-donglng"
     },
     {
-        "full": "brv-Thai-TH-x-khongchi",
+        "full": "brv-Thai-TH-x-khongchm",
         "iana": [ "Bru Khong Chiem" ],
         "iso639_3": "brv",
         "name": "Bru, Western",
@@ -16373,12 +16373,12 @@
         "regions": [ "LA", "US" ],
         "script": "Thai",
         "sldr": false,
-        "tag": "brv-Thai-x-khongchi",
-        "tags": [ "brv-TH-x-khongchi" ],
-        "windows": "brv-Thai-x-khongchi"
+        "tag": "brv-Thai-x-khongchm",
+        "tags": [ "brv-TH-x-khongchm" ],
+        "windows": "brv-Thai-x-khongchm"
     },
     {
-        "full": "brv-Thai-TH-x-sakonnak",
+        "full": "brv-Thai-TH-x-sakonnkn",
         "iana": [ "Bru Sakon Nakhorn" ],
         "iso639_3": "brv",
         "name": "Bru, Western",
@@ -16389,9 +16389,9 @@
         "regions": [ "LA", "US" ],
         "script": "Thai",
         "sldr": false,
-        "tag": "brv-Thai-x-sakonnak",
-        "tags": [ "brv-TH-x-sakonnak" ],
-        "windows": "brv-Thai-x-sakonnak"
+        "tag": "brv-Thai-x-sakonnkn",
+        "tags": [ "brv-TH-x-sakonnkn" ],
+        "windows": "brv-Thai-x-sakonnkn"
     },
     {
         "full": "brw-Zyyy-IN",
@@ -20887,7 +20887,7 @@
         "windows": "cek-Latn"
     },
     {
-        "full": "cek-Latn-MM-x-asangkhongso",
+        "full": "cek-Latn-MM-x-asang",
         "iana": [ "Chin, Eastern Khumi Asang (Khongso) dialect" ],
         "iso639_3": "cek",
         "name": "Chin, Eastern Khumi",
@@ -20896,9 +20896,9 @@
         "regionname": "Myanmar",
         "script": "Latn",
         "sldr": false,
-        "tag": "cek-x-asangkhongso",
-        "tags": [ "cek-Latn-x-asangkhongso", "cek-MM-x-asangkhongso" ],
-        "windows": "cek-Latn-x-asangkhongso"
+        "tag": "cek-x-asang",
+        "tags": [ "cek-Latn-x-asang", "cek-MM-x-asang" ],
+        "windows": "cek-Latn-x-asang"
     },
     {
         "full": "cek-Latn-MM-x-hnise",
