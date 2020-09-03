@@ -1403,7 +1403,7 @@ cek-x-asang,cek-Latn-MM-x-asang,"Chin, Eastern Khumi Asang (Khongso) dialect",MM
 cek-x-hnise,cek-Latn-MM-x-hnise,"Chin, Eastern Khumi Hnise dialect",MM,,,05182 22888,,,,,SEA,cek,NMC,31-Aug-2018,
 cek-x-kanise,cek-Latn-MM-x-kanise,"Chin, Eastern Khumi Kanise dialect",MM,,,05182 22888,,,,,SEA,cek,NMC,31-Aug-2018,
 cek-x-khongtu,cek-Latn-MM-x-khongtu,"Chfin, Eastern Khumi Khong Tu dialect",MM,,,05182 22888,,,,,SEA,cek,NMC,31-Aug-2018,Yes Khong Tu uses a different spelling system then Khawng Tuu above
-cek-x-khawngtu,cek-Latn-MM-x-khawngtu,"Chin, Eastern Khumi Khawng Tuu dialect",MM,,,05182 22888,,,,,SEA,cek,NMC,31-Aug-2018,"long, Yes Khawng Tuu uses a different spelling system then Khong Tu below" was cek-x-khawngtuu
+cek-x-khawngtu,cek-Latn-MM-x-khawngtu,"Chin, Eastern Khumi Khawng Tuu dialect",MM,,,05182 22888,,,,,SEA,cek,NMC,31-Aug-2018,"long, Yes Khawng Tuu uses a different spelling system then Khong Tu below was cek-x-khawngtuu"
 cek-x-lemi,cek-Latn-MM-x-lemi,"Chin, Eastern Khumi Lemi dialect",MM,,,05182 22888,,,,,SEA,cek,NMC,7-Sep-2018,
 cek-x-likhy,cek-Latn-MM-x-likhy,"Chin, Eastern Khumi Likhy dialect",MM,,,05182 22888,,,,,SEA,cek,NMC,31-Aug-2018,
 cek-x-rengcaa,cek-Latn-MM-x-rengcaa,"Chin, Eastern Khumi Rengcaa dialect",MM,,,05182 22888,,,,,SEA,cek,NMC,31-Aug-2018,
@@ -7792,6 +7792,7 @@ upv,upv-Latn-VU,Uripiv-Wala-Rano-Atchin,VU,,,04573 04705 04714 04722 17968,,,,,M
 ur,ur-Arab-PK,Urdu,AE AU BD BH BW CA DE DK FI FJ GB GY IN MU MW NO NP OM PK QA SA SG US ZA ZM,,,,,,,,ANZ EAF MEL NAM NEU SAF SAS SEA WAS WEU,urd,CLDR,,
 ur-Brai,ur-Brai-PK,Urdu,AE AU BD BH BW CA DE DK FI FJ GB IN MU MW NO NP OM PK QA SA SG US ZA ZM,,,,,,,,ANZ EAF MEL NAM NEU SAF SAS SEA WAS WEU,urd,,,
 ur-Latn,ur-Latn-PK,Urdu,GB PK,,,,,,,,???,urd,St,,Romanised Urdu
+ur-Deva,ur-Deva-IN,Urdu,IN,,,,,,,,ANZ EAF MEL NAM NEU SAF SAS SEA WAS WEU,urd,,,
 ura,ura-Latn-PE,Urarina,PE,,,,,,,,SAM,ura,LE,9-Jan-2018,
 urb,urb-Latn-BR,Kaapor,BR,,,,,,,,SAM,urb,LE,9-Jan-2018,
 urc,urc-Latn-AU,Urningangg,AU,,,,,1,,,ANZ,urc,LE,10-Jan-2018,Extinct
