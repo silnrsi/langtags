@@ -5877,7 +5877,7 @@ pbm,pbm-Latn-MX,"Mazatec, Puebla and Northeastern",MX,,,,,1,,,CAM,pbm,LE,30-Oct-
 pbn,pbn-Latn-NG,Kpasham,NG,,,,,1,,,WAF,pbn,,,
 pbo,pbo-Latn-GW,Papel,GW SN,,,01672 01702,,,,,WAF,pbo,,,
 pbp,pbp-Latn-GN,Badyara,GN GW SN,,,,,,,,WAF,pbp,,,
-pbr,pbr-Latn-TZ,Pangwa,TZ,,,,,1,,,EAF,pbr,,,
+pbr,pbr-Latn-TZ,Pangwa,TZ,,,,,,,,EAF,pbr,,,
 pbs,pbs-Latn-MX,"Pame, Central",MX,,,,,,,,CAM,pbs,LE,9-Jan-2018,
 pbt,pbt-Arab-AF,"Pashto, Southern",AE AF IR PK TJ TM,,,00090,,,,,CAS NEU SAS WAS,pbt,,,
 pbu,pbu-Arab-AF,"Pashto, Northern",AE AF CA IN PK US,,,15544,ps,,,,NAM NEU SAS WAS,pbu,CLDR,23-Mar-2018,via macro mapping
