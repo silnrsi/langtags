@@ -9,7 +9,7 @@
     },
     {
         "api": "1.2.1",
-        "date": "2020-08-21",
+        "date": "2020-09-29",
         "tag": "_version"
     },
     {
@@ -49724,6 +49724,20 @@
         "windows": "jnj-Latn"
     },
     {
+        "full": "jnj-Ethi-ET",
+        "iana": [ "Yemsa" ],
+        "iso639_3": "jnj",
+        "name": "Yemsa",
+        "nophonvars": true,
+        "obsolete": true,
+        "region": "ET",
+        "regionname": "Ethiopia",
+        "script": "Ethi",
+        "sldr": false,
+        "tag": "jnj-Ethi",
+        "windows": "jnj-Ethi"
+    },
+    {
         "full": "jnl-Deva-IN",
         "iana": [ "Rawat" ],
         "iso639_3": "jnl",
@@ -73182,6 +73196,20 @@
         "windows": "moy-Latn"
     },
     {
+        "full": "moy-Ethi-ET",
+        "iana": [ "Shekkacho" ],
+        "iso639_3": "moy",
+        "name": "Shekkacho",
+        "nophonvars": true,
+        "obsolete": true,
+        "region": "ET",
+        "regionname": "Ethiopia",
+        "script": "Ethi",
+        "sldr": false,
+        "tag": "moy-Ethi",
+        "windows": "moy-Ethi"
+    },
+    {
         "full": "moz-Latn-TD",
         "iana": [ "Mukulu", "Gergiko" ],
         "iso639_3": "moz",
@@ -88881,7 +88909,6 @@
         "sldr": false,
         "tag": "pbr",
         "tags": [ "pbr-Latn", "pbr-TZ" ],
-        "unwritten": true,
         "windows": "pbr-Latn"
     },
     {
@@ -117408,6 +117435,20 @@
         "sldr": false,
         "tag": "ur-Brai",
         "windows": "ur-Brai"
+    },
+    {
+        "full": "ur-Deva-IN",
+        "iana": [ "Urdu" ],
+        "iso639_3": "urd",
+        "name": "Urdu",
+        "names": [ "Islami", "Undri", "Urudu" ],
+        "nophonvars": true,
+        "region": "IN",
+        "regionname": "India",
+        "script": "Deva",
+        "sldr": false,
+        "tag": "ur-Deva",
+        "windows": "ur-Deva"
     },
     {
         "full": "ur-Arab-IN",
