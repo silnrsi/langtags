@@ -17,6 +17,7 @@ jobs:
         id: sdlr
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
+          results-encoding: string 
           script: |
             return "Hello World"
 #        with:
