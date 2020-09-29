@@ -16,10 +16,14 @@ jobs:
         uses: actions/github-script@v3
         id: sdlr
         with:
-          script: return github.listArtifactsForRepo({"owner": "silnrsi", "repo": "sldr"})[0]
+          github-token: ${{secrets.GITHUB_TOKEN}}
+          script: |
+            return "Hello World"
+#        with:
+#          script: return github.listArtifactsForRepo({"owner": "silnrsi", "repo": "sldr"})[0]
       
       - name: Outputs
-        run: echo ${{steps.sldr.outputs.result}}
+        run: echo "${{steps.sldr.outputs.result}}"
 
  #     - name: Cache SLDR
  #       uses: actions/cache@v2
