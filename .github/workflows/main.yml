@@ -1,0 +1,34 @@
+name: Build and deploy langtags
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Find SLDR dependency
+        uses: actions/github-script@v3
+        id: sdlr
+        with:
+          script: return github.listArtifactsForRepo({"owner": "silnrsi", "repo": "sldr"})[0]
+      
+      - name: Outputs
+        run: echo ${{steps.sldr.outputs.result}}
+
+ #     - name: Cache SLDR
+ #       uses: actions/cache@v2
+ #       with:
+ #         path: sldr/
+ #         key: sldr-${{steps.sldr.outputs.result.created_at}}
+      
+#      - name: Download SLDR dependecy
+#        uses: actions/github-script@v3
+#        with:
+#          script: |
+            
