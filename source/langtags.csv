@@ -2268,7 +2268,7 @@ frk,frk-Latn-DE,Frankish,DE,,,,,,,,WEU,frk,,,Extinct
 frm,frm-Latn-FR,Middle French (ca. 1400-1600),BE FR,1606nict,,,,,,,WEU,frm,St,,Historical
 fro,fro-Latn-FR,Old French (842-ca. 1400),BE FR GB,,,,,,,,NEU WEU,fro,St,,Historical
 frp,frp-Latn-FR,Arpitan,CH FR IT,,,09869 09871 09874,,,,,SEU WEU,frp,CLDR,,
-frq,frq-Latn-PG,Forak,PG,,,,,1,,,MEL,frq,LE,10-Jan-2018,
+frq,frq-Latn-PG,Forak,PG,,,,,,,,MEL,frq,LE,10-Jan-2018,
 frr,frr-Latn-DE,"Frisian, Northern",DE,,,,,,,,WEU,frr,CLDR,,
 frs,frs-Latn-DE,"Saxon, East Frisian Low",DE,,,,,,,,WEU,frs,CLDR,,
 frt,frt-Latn-VU,Fortsenal,VU,,,,,1,,,MEL,frt,LE,10-Jan-2018,
@@ -8174,7 +8174,7 @@ wud,wud-Latn-TG,Wudu,TG,,,,,1,,,WAF,wud,,,
 wuh,wuh-Zyyy-CN,Wutunhua,CN,,,,,,,,EAS,wuh,,,
 wul,wul-Latn-ID,Silimo,ID,,,,,,,,SEA,wul,,20-Apr-2018,
 wum,wum-Latn-GA,Wumbvu,CG GA,,,,,1,,,MAF,wum,LE,30-Jan-2018,
-wun,wun-Latn-TZ,Bungu,TZ,,,,,1,,,EAF,wun,,,
+wun,wun-Latn-TZ,Bungu,TZ,,,,,,,,EAF,wun,,,
 wur,wur-Latn-AU,Wurrugu,AU,,,,,1,,,ANZ,wur,LE,10-Jan-2018,Extinct
 wut,wut-Latn-PG,Wutung,PG,,,05001,,1,,,MEL,wut,LE,10-Jan-2018,
 wuu,wuu-Hans-CN,"Chinese, Wu",CN US,,,00396 08864 08866 08867 19408 19412 19413,,,,,EAS NAM,wuu,CLDR,,
@@ -8384,7 +8384,7 @@ xnz-Latn,xnz-Latn-EG,Mattokki,EG,,,,,,,,NAF,xnz,,,
 xoc,xoc-Latn-NG,O'chi'chi',NG,,,,,1,,,WAF,xoc,LE,10-Jan-2018,Extinct
 xod,xod-Latn-ID,Kokoda,ID,,,01733,,1,,,SEA,xod,,,
 xog,xog-Latn-UG,Soga,UG,,,16811,,,,,EAF,xog,CLDR,,
-xoi,xoi-Latn-PG,Kominimung,PG,,,,,1,,,MEL,xoi,LE,10-Jan-2018,
+xoi,xoi-Latn-PG,Kominimung,PG,,,,,,,,MEL,xoi,LE,10-Jan-2018,
 xok,xok-Latn-BR,Xokleng,BR,,,,,,,,SAM,xok,LE,9-Jan-2018,
 xom,xom-Latn-SD,Komo,ET SD SS,,,,,,,,EAF NAF,xom,LE,12-Jan-2018,
 xom-Ethi,xom-Ethi-ET,Komo,,,,,,,,,EAF NAF,xom,LE,,
