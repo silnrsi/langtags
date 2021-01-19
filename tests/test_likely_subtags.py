@@ -12,7 +12,7 @@ def isnotint(s):
         return True
 
 langtagtxt = os.path.join(os.path.dirname(__file__), '..', 'pub', 'langtags.txt')
-exceptions = ['ji-Hebr-UA']
+exceptions = ['ji-Hebr-UA', 'kxc-Ethi', 'bji-Ethi']
 
 class LikelySubtags(unittest.TestCase):
     ''' Tests alltags.txt for discrepencies against likelySubtags.xml '''
