@@ -577,6 +577,7 @@ az-RU,az-Cyrl-RU,Azerbaijani,RU,,,,,,,,SAS,aze,CLDR,,
 aza-Zyyy,aza-Zyyy-CN,Azha,CN,,,,,,,,EAS,aza,,,
 azb,azb-Arab-IR,"Azerbaijani, South",AZ CA IQ IR SY TR US,,,03308 03389 07464,,,,,NAM SAS WAS,azb,,,
 azb-Cyrl,azb-Cyrl-AZ,"Azerbaijani, South",AZ CA IQ IR SY TR US,,,,,,,,NAM SAS WAS,azb,,,
+azb-Latn,azb-Latn-AZ,"Azerbaijani, South",AZ CA IQ IR SY TR US,,,,,,1,,NAM SAS WAS,azb,,,
 azd,azd-Latn-MX,"Nahuatl, Eastern Durango",MX,,,,,,,,CAM,azd,LE,9-Jan-2018,
 azg,azg-Latn-MX,"Amuzgo, San Pedro Amuzgos",MX,,,,,,,,CAM,azg,LE,9-Jan-2018,
 azj,azj-Latn-AZ,"Azerbaijani, North",AF AM AZ DE EE GE KG KZ RU TM UA UZ,,,,az,,,,CAS EEU NEU WAS WEU,azj,CLDR,23-Mar-2018,via macro replacement
