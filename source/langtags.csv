@@ -2870,7 +2870,6 @@ hsh,hsh-Zxxx-HU,Hungarian Sign Language,HU RO,,,,,,,,EEU,hsh,,,
 hsl,hsl-Zxxx-NG,Hausa Sign Language,NG,,,,,,,,WAF,hsl,,,LE: HamNoSys
 hsn,hsn-Hans-CN,"Chinese, Xiang",CN US,,,06275,,,,,EAS NAM,hsn,CLDR,,
 hsn-Hant,hsn-Hant-CN,"Chinese, Xiang",CN US,,,06275,,,,,EAS NAM,hsn,,,
-hsn-Nshu,hsn-Nshu-CN,"Chinese, Xiang",CN US,,,06275,,,,,EAS NAM,hsn,,,
 hss-Zyyy,hss-Zyyy-OM,Harsusi,OM,,,,,,,,WAS,hss,,,
 ht,ht-Latn-HT,Haitian Creole,BS CA DO GF GP HT KY MF PR TC US,,,,,,,,CAR NAM SAM,hat,CLDR,,
 hti,hti-Latn-ID,Hoti,ID,,,,,1,,,SEA,hti,,,Extinct
@@ -8993,7 +8992,6 @@ zxx-Zyyy,zxx-Zyyy-001,No linguistic content,001,,,,,,,,???,zxx,,,Special
 zyb,zyb-Latn-CN,"Zhuang, Yongbei",CN,,,18709,za,,,,EAS,zyb,CLDR,23-Mar-2018,via macro mapping
 zyb-Hani,zyb-Hani-CN,"Zhuang, Yongbei",CN,,,18709,za,,,,EAS,zyb,,,
 zyg,zyg-Hani-CN,"Zhuang, Yang",CN VN,,,06247,,,,,EAS SEA,zyg,,,
-zyg-Nshu,zyg-Nshu-CN,"Zhuang, Yang",CN VN,,,06247,,,,,EAS SEA,zyg,,,
 zyj-Hani,zyj-Hani-CN,"Zhuang, Youjiang",CN,,,06034 06035,,,,,EAS,zyj,,,
 zyj,zyj-Latn-CN,"Zhuang, Youjiang",CN,,,06034 06035,,,,,EAS,zyj,,,
 zyn,zyn-Hani-CN,"Zhuang, Yongnan",CN VN,,,04979 06134 06135,,,,,EAS SEA,zyn,,,
