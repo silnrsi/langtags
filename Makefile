@@ -20,4 +20,4 @@ ${RESULTS}/${NAME}.txt : ${RESULTS}/${NAME}.json
 #	-${LTDB} -i ${SLDR} -t -p $< $@
 
 test : build
-	python -m unittest discover -s tests
+	python3 -m unittest discover -s tests

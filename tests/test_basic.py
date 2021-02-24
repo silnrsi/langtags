@@ -1,9 +1,9 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 import os, re
 import csv, unittest
 from langtag import langtag
-from palaso.sldr.iana import Iana
+from sldr.iana import Iana
 
 bannedchars = list(range(33, 45)) + [47] + list(range(58, 63)) + [94, 96]
 def nonascii(s):
@@ -13,10 +13,8 @@ def nonascii(s):
 
 class Basic(unittest.TestCase):
 
-    extraScripts = ["Toto"]
-    extraLangs = ("000", "ckm", "cnp", "csp", "dmf", "dwk", "ebc", "gef", "gmr", "hng",
-                  "nsb", "sdq", "uki", "wlh", "xnm", "xpb", "xpd", "xpf", "xph", "xpl",
-                  "xpv", "xpw", "xpx", "xpz", "zba")
+    extraScripts = ["Toto", "Vith"]
+    extraLangs = ("000", )
 
     def setUp(self):
         self.fname = os.path.join(os.path.dirname(__file__), '../source/langtags.csv')

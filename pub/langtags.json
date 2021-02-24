@@ -9,7 +9,7 @@
     },
     {
         "api": "1.2.1",
-        "date": "2021-01-19",
+        "date": "2021-02-24",
         "tag": "_version"
     },
     {
@@ -1301,7 +1301,7 @@
     },
     {
         "full": "adb-Latn-TL",
-        "iana": [ "Adabe" ],
+        "iana": [ "Atauran" ],
         "iso639_3": "adb",
         "name": "Atauran",
         "names": [ "Adabe", "Ataura", "Atauro", "Atauru", "Raklu Un", "Raklu-Un" ],
@@ -2902,6 +2902,18 @@
         "tags": [ "aht-Latn", "aht-US" ],
         "unwritten": true,
         "windows": "aht-Latn"
+    },
+    {
+        "full": "ahu-Latn-MM",
+        "name": "Chin, Anu-Hkongso",
+        "names": [ "Kaungso", "Kaungtso", "Khaungtso", "Khawngso", "Khong", "Khongso", "No" ],
+        "region": "MM",
+        "regionname": "Myanmar",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "ahu-Latn-MM",
+        "tags": [ "anl", "anl-Latn", "anl-Latn-MM", "anl-MM" ],
+        "windows": "ahu-Latn-MM"
     },
     {
         "full": "aia-Latn-SB",
@@ -4865,20 +4877,6 @@
         "windows": "ank-Latn"
     },
     {
-        "full": "anl-Latn-MM",
-        "iana": [ "Anu-Hkongso Chin" ],
-        "iso639_3": "anl",
-        "name": "Chin, Anu-Hkongso",
-        "names": [ "Anu-Hkongso Chin", "Kaungso", "Kaungtso", "Khaungtso", "Khawngso", "Khong", "Khongso", "No" ],
-        "region": "MM",
-        "regionname": "Myanmar",
-        "script": "Latn",
-        "sldr": false,
-        "tag": "anl",
-        "tags": [ "anl-Latn", "anl-MM" ],
-        "windows": "anl-Latn"
-    },
-    {
         "full": "anm-Latn-IN",
         "iana": [ "Anal" ],
         "iso639_3": "anm",
@@ -5917,6 +5915,20 @@
         "tags": [ "aqg-Latn", "aqg-NG" ],
         "unwritten": true,
         "windows": "aqg-Latn"
+    },
+    {
+        "full": "aqk-Latn-NG",
+        "iana": [ "Aninka" ],
+        "iso639_3": "aqk",
+        "name": "Aninka",
+        "region": "NG",
+        "regionname": "Nigeria",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "aqk",
+        "tags": [ "aqk-Latn", "aqk-NG" ],
+        "unwritten": true,
+        "windows": "aqk-Latn"
     },
     {
         "full": "aqm-Latn-ID",
@@ -7966,20 +7978,6 @@
         "windows": "avu-Latn"
     },
     {
-        "full": "avu-Latn-SD",
-        "iana": [ "Avokaya" ],
-        "iso639_3": "avu",
-        "localname": "Ãvõkáyã",
-        "localnames": [ "Ãvõkáyã" ],
-        "name": "Avokaya",
-        "region": "SD",
-        "regionname": "Sudan",
-        "script": "Latn",
-        "sldr": true,
-        "tag": "avu-SD",
-        "windows": "avu-Latn-SD"
-    },
-    {
         "full": "avv-Latn-BR",
         "iana": [ "Avá-Canoeiro" ],
         "iso639_3": "avv",
@@ -8818,8 +8816,22 @@
         "script": "Cyrl",
         "sldr": false,
         "tag": "azb-Cyrl",
-        "tags": [ "azb-AZ" ],
         "windows": "azb-Cyrl"
+    },
+    {
+        "full": "azb-Latn-AZ",
+        "iana": [ "South Azerbaijani" ],
+        "iso639_3": "azb",
+        "name": "Azerbaijani, South",
+        "names": [ "Azeri", "Azəricə", "South Azerbaijani", "Turk", "Turkmen", "Turkomen", "Türki" ],
+        "obsolete": true,
+        "region": "AZ",
+        "regionname": "Azerbaijan",
+        "regions": [ "CA", "IQ", "IR", "SY", "TR", "US" ],
+        "script": "Latn",
+        "sldr": false,
+        "tag": "azb-Latn",
+        "windows": "azb-Latn"
     },
     {
         "full": "azd-Latn-MX",
@@ -12366,21 +12378,6 @@
         "windows": "bib-Latn"
     },
     {
-        "full": "bic-Latn-PG",
-        "iana": [ "Bikaru" ],
-        "iso639_3": "bic",
-        "name": "Bikaru",
-        "names": [ "Bugalu", "Pikaru" ],
-        "region": "PG",
-        "regionname": "Papua New Guinea",
-        "script": "Latn",
-        "sldr": false,
-        "tag": "bic",
-        "tags": [ "bic-Latn", "bic-PG" ],
-        "unwritten": true,
-        "windows": "bic-Latn"
-    },
-    {
         "full": "bid-Latn-TD",
         "iana": [ "Bidiyo" ],
         "iso639_3": "bid",
@@ -12437,21 +12434,6 @@
         "tag": "big",
         "tags": [ "big-Latn", "big-PG" ],
         "windows": "big-Latn"
-    },
-    {
-        "full": "bij-Latn-NG",
-        "iana": [ "Vaghat-Ya-Bijim-Legeri" ],
-        "iso639_3": "bij",
-        "name": "Vaghat-Ya-Bijim-Legeri",
-        "names": [ "Vwhat" ],
-        "region": "NG",
-        "regionname": "Nigeria",
-        "script": "Latn",
-        "sldr": false,
-        "tag": "bij",
-        "tags": [ "bij-Latn", "bij-NG" ],
-        "unwritten": true,
-        "windows": "bij-Latn"
     },
     {
         "full": "bik-Latn-PH",
@@ -12576,13 +12558,13 @@
         "iana": [ "Bisorio" ],
         "iso639_3": "bir",
         "name": "Bisorio",
-        "names": [ "Iniai", "Inyai-Gadio-Bisorio" ],
+        "names": [ "Bikaru", "Bugalu", "Iniai", "Inyai-Gadio-Bisorio", "Pikaru" ],
         "region": "PG",
         "regionname": "Papua New Guinea",
         "script": "Latn",
         "sldr": false,
         "tag": "bir",
-        "tags": [ "bir-Latn", "bir-PG" ],
+        "tags": [ "bic", "bic-Latn", "bic-Latn-PG", "bic-PG", "bir-Latn", "bir-PG" ],
         "windows": "bir-Latn"
     },
     {
@@ -13574,21 +13556,6 @@
         "tag": "blf",
         "tags": [ "blf-ID", "blf-Latn" ],
         "windows": "blf-Latn"
-    },
-    {
-        "full": "blg-Latn-MY",
-        "iana": [ "Balau" ],
-        "iso639_3": "blg",
-        "name": "Balau",
-        "names": [ "Bala’u" ],
-        "region": "MY",
-        "regionname": "Malaysia",
-        "script": "Latn",
-        "sldr": false,
-        "tag": "blg",
-        "tags": [ "blg-Latn", "blg-MY" ],
-        "unwritten": true,
-        "windows": "blg-Latn"
     },
     {
         "full": "blh-Latn-LR",
@@ -15272,6 +15239,20 @@
         "windows": "bpd-Latn"
     },
     {
+        "full": "bpe-Latn-PG",
+        "iana": [ "Bauni" ],
+        "iso639_3": "bpe",
+        "name": "Warapu",
+        "names": [ "Barupu", "Bauni" ],
+        "region": "PG",
+        "regionname": "Papua New Guinea",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "bpe",
+        "tags": [ "bpe-Latn", "bpe-PG", "wra", "wra-Latn", "wra-Latn-PG", "wra-PG" ],
+        "windows": "bpe-Latn"
+    },
+    {
         "full": "bpg-Latn-ID",
         "iana": [ "Bonggo" ],
         "iso639_3": "bpg",
@@ -16065,7 +16046,7 @@
     },
     {
         "full": "brf-Latn-CD",
-        "iana": [ "Bera" ],
+        "iana": [ "Bira" ],
         "iso639_3": "brf",
         "localnames": [ "Kibira" ],
         "name": "Bira",
@@ -22220,6 +22201,7 @@
     },
     {
         "full": "ckm-Latn-HR",
+        "iana": [ "Chakavian" ],
         "iso639_3": "ckm",
         "localnames": [ "Čakavski" ],
         "name": "Chakavian",
@@ -22234,6 +22216,7 @@
     },
     {
         "full": "ckm-Glag-HR",
+        "iana": [ "Chakavian" ],
         "iso639_3": "ckm",
         "name": "Chakavian",
         "names": [ "Chakavski", "Chekavski", "Čakavian", "Čakavica", "Čakavski", "Čakavština", "Čekavski", "Čokovski" ],
@@ -22737,6 +22720,7 @@
         "script": "Khmr",
         "sldr": true,
         "tag": "cmo-Khmr",
+        "tags": [ "cmo-KH" ],
         "windows": "cmo-Khmr"
     },
     {
@@ -22749,25 +22733,12 @@
         "names": [ "Bu Nong", "Budang", "Budong", "Bunong", "Central Bu Nong", "Central Mnong", "Phanong", "Phnong", "Pnong" ],
         "region": "VN",
         "regionname": "Viet Nam",
+        "regions": [ "KH" ],
         "script": "Latn",
         "sldr": true,
         "tag": "cmo-Latn",
         "tags": [ "cmo-VN" ],
         "windows": "cmo-Latn"
-    },
-    {
-        "full": "cmo-Latn-KH",
-        "iana": [ "Central Mnong" ],
-        "localname": "Bunong",
-        "localnames": [ "Bunong" ],
-        "name": "Mnong, Central",
-        "names": [ "Budong", "Bunong", "Central Mnong", "Phanong", "Phnong", "Pnong" ],
-        "region": "KH",
-        "regionname": "Cambodia",
-        "script": "Latn",
-        "sldr": true,
-        "tag": "cmo-Latn-KH",
-        "windows": "cmo-Latn-KH"
     },
     {
         "full": "cmr-Latn-MM",
@@ -22951,9 +22922,10 @@
     },
     {
         "full": "cnp-Hans-CN",
+        "iana": [ "Northern Ping Chinese", "Northern Pinghua" ],
         "iso639_3": "cnp",
         "name": "Pinghua, Northern",
-        "names": [ "Guìběi Pínghuà", "Northern Guangxi", "Northern Ping Chinese" ],
+        "names": [ "Guìběi Pínghuà", "Northern Guangxi", "Northern Ping Chinese", "Northern Pinghua" ],
         "nophonvars": true,
         "region": "CN",
         "regionname": "China",
@@ -22964,9 +22936,10 @@
     },
     {
         "full": "cnp-Hant-CN",
+        "iana": [ "Northern Ping Chinese", "Northern Pinghua" ],
         "iso639_3": "cnp",
         "name": "Pinghua, Northern",
-        "names": [ "Guìběi Pínghuà", "Northern Guangxi", "Northern Ping Chinese" ],
+        "names": [ "Guìběi Pínghuà", "Northern Guangxi", "Northern Ping Chinese", "Northern Pinghua" ],
         "nophonvars": true,
         "region": "CN",
         "regionname": "China",
@@ -24387,9 +24360,10 @@
     },
     {
         "full": "csp-Hans-CN",
+        "iana": [ "Southern Ping Chinese", "Southern Pinghua" ],
         "iso639_3": "csp",
         "name": "Pinghua, Southern",
-        "names": [ "Guìnán Pínghuà", "Southern Guangxi", "Southern Ping Chinese" ],
+        "names": [ "Guìnán Pínghuà", "Southern Guangxi", "Southern Ping Chinese", "Southern Pinghua" ],
         "nophonvars": true,
         "region": "CN",
         "regionname": "China",
@@ -24400,9 +24374,10 @@
     },
     {
         "full": "csp-Hant-CN",
+        "iana": [ "Southern Ping Chinese", "Southern Pinghua" ],
         "iso639_3": "csp",
         "name": "Pinghua, Southern",
-        "names": [ "Guìnán Pínghuà", "Southern Guangxi", "Southern Ping Chinese" ],
+        "names": [ "Guìnán Pínghuà", "Southern Guangxi", "Southern Ping Chinese", "Southern Pinghua" ],
         "nophonvars": true,
         "region": "CN",
         "regionname": "China",
@@ -24500,6 +24475,19 @@
         "tag": "csw",
         "tags": [ "csw-CA", "csw-Cans" ],
         "windows": "csw-Cans"
+    },
+    {
+        "full": "csx-Zxxx-KH",
+        "iana": [ "Cambodian Sign Language" ],
+        "iso639_3": "csx",
+        "name": "Cambodian Sign Language",
+        "region": "KH",
+        "regionname": "Cambodia",
+        "script": "Zxxx",
+        "sldr": false,
+        "tag": "csx",
+        "tags": [ "csx-KH", "csx-Zxxx", "sgn-csx", "sgn-csx-KH" ],
+        "windows": "csx-Zxxx"
     },
     {
         "full": "csy-Latn-MM",
@@ -24818,6 +24806,19 @@
         "tag": "ctu-x-tumbala",
         "tags": [ "ctu-Latn-x-tumbala", "ctu-MX-x-tumbala" ],
         "windows": "ctu-Latn-x-tumbala"
+    },
+    {
+        "full": "cty-Zyyy-IN",
+        "iana": [ "Moundadan Chetty" ],
+        "iso639_3": "cty",
+        "name": "Moundadan Chetty",
+        "region": "IN",
+        "regionname": "India",
+        "script": "Zyyy",
+        "sldr": false,
+        "tag": "cty",
+        "tags": [ "cty-IN", "cty-Zyyy" ],
+        "windows": "cty-Zyyy"
     },
     {
         "full": "ctz-Latn-MX",
@@ -27047,12 +27048,12 @@
     },
     {
         "full": "dgr-Latn-CA",
-        "iana": [ "Dogrib" ],
+        "iana": [ "Dogrib", "Tłı̨chǫ" ],
         "iso639_3": "dgr",
         "localname": "Tłı̨chǫ Yatıì",
         "localnames": [ "Tłı̨chǫ Yatıì" ],
         "name": "Tlicho",
-        "names": [ "Dogrib", "Flanc-de-chien", "Thlingchadine", "Tłı̨chǫ", "Tłı̨chǫ Yatıì" ],
+        "names": [ "Dogrib", "Flanc-de-chien", "Thlingchadine", "Tłı̨chǫ", "Tłı̨chǫ", "Tłı̨chǫ Yatıì" ],
         "region": "CA",
         "regionname": "Canada",
         "script": "Latn",
@@ -27977,6 +27978,20 @@
         "windows": "dka-Zyyy"
     },
     {
+        "full": "dkg-Latn-NG",
+        "iana": [ "Kadung" ],
+        "iso639_3": "dkg",
+        "name": "Kadung",
+        "region": "NG",
+        "regionname": "Nigeria",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "dkg",
+        "tags": [ "dkg-Latn", "dkg-NG" ],
+        "unwritten": true,
+        "windows": "dkg-Latn"
+    },
+    {
         "full": "dkk-Latn-ID",
         "iana": [ "Dakka" ],
         "iso639_3": "dkk",
@@ -28173,6 +28188,7 @@
     },
     {
         "full": "dmf-Medf-NG",
+        "iana": [ "Medefaidrin" ],
         "iso639_3": "dmf",
         "name": "Medefaidrin",
         "region": "NG",
@@ -29992,8 +30008,10 @@
     },
     {
         "full": "dwk-Orya-IN",
+        "iana": [ "Dawik Kui" ],
         "iso639_3": "dwk",
         "name": "Kui, Dawik",
+        "names": [ "Dawik Kui" ],
         "region": "IN",
         "regionname": "India",
         "script": "Orya",
@@ -30419,6 +30437,7 @@
     },
     {
         "full": "ebc-Latn-ID",
+        "iana": [ "Beginci" ],
         "iso639_3": "ebc",
         "name": "Beginci",
         "names": [ "Bihak" ],
@@ -30713,6 +30732,19 @@
         "windows": "egy-Egyp"
     },
     {
+        "full": "ehs-Zxxx-JP",
+        "iana": [ "Miyakubo Sign Language" ],
+        "iso639_3": "ehs",
+        "name": "Miyakubo Sign Language",
+        "region": "JP",
+        "regionname": "Japan",
+        "script": "Zxxx",
+        "sldr": false,
+        "tag": "ehs",
+        "tags": [ "ehs-JP", "ehs-Zxxx", "sgn-ehs", "sgn-ehs-JP" ],
+        "windows": "ehs-Zxxx"
+    },
+    {
         "full": "ehu-Latn-NG",
         "iana": [ "Ehueun" ],
         "iso639_3": "ehu",
@@ -30798,19 +30830,6 @@
         "tag": "eka",
         "tags": [ "eka-Latn", "eka-NG" ],
         "windows": "eka-Latn"
-    },
-    {
-        "full": "eka-Latn-NG-x-ekajuk",
-        "iana": [ "Ekajuk" ],
-        "iso639_3": "eka",
-        "name": "Ekajuk",
-        "names": [ "Akajo", "Akajuk" ],
-        "region": "NG",
-        "regionname": "Nigeria",
-        "script": "Latn",
-        "sldr": true,
-        "tag": "eka-Latn-NG-x-ekajuk",
-        "windows": "eka-Latn-NG-x-ekajuk"
     },
     {
         "full": "ekc-Latn-AU",
@@ -31261,6 +31280,20 @@
         "windows": "emp-Latn"
     },
     {
+        "full": "emq-Zyyy-CN",
+        "iana": [ "Eastern Minyag" ],
+        "iso639_3": "emq",
+        "name": "Eastern Minyag",
+        "region": "CN",
+        "regionname": "China",
+        "script": "Zyyy",
+        "sldr": false,
+        "tag": "emq",
+        "tags": [ "emq-CN", "emq-Zyyy" ],
+        "unwritten": true,
+        "windows": "emq-Zyyy"
+    },
+    {
         "full": "ems-Latn-US",
         "iana": [ "Pacific Gulf Yupik" ],
         "iso639_3": "ems",
@@ -31347,6 +31380,19 @@
         "tags": [ "emy-MX", "emy-Zyyy" ],
         "unwritten": true,
         "windows": "emy-Zyyy"
+    },
+    {
+        "full": "emz-Latn-CM",
+        "iana": [ "Mbessa" ],
+        "iso639_3": "emz",
+        "name": "Mbessa",
+        "region": "CM",
+        "regionname": "Cameroon",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "emz",
+        "tags": [ "emz-CM", "emz-Latn" ],
+        "windows": "emz-Latn"
     },
     {
         "full": "en-Latn-US",
@@ -34749,11 +34795,143 @@
         "nophonvars": true,
         "region": "GN",
         "regionname": "Guinea",
-        "regions": [ "BJ", "CM", "ML", "NE", "NG", "SN", "TD" ],
+        "regions": [ "BJ", "ML", "TD" ],
         "script": "Adlm",
         "sldr": false,
         "tag": "ff-Adlm",
         "windows": "ff-Adlm"
+    },
+    {
+        "full": "ff-Adlm-BF",
+        "iana": [ "Fulah" ],
+        "iso639_3": "ful",
+        "name": "Fulah",
+        "region": "BF",
+        "regionname": "Burkina Faso",
+        "script": "Adlm",
+        "sldr": false,
+        "tag": "ff-Adlm-BF",
+        "windows": "ff-Adlm-BF"
+    },
+    {
+        "full": "ff-Adlm-CM",
+        "iana": [ "Fulah" ],
+        "iso639_3": "ful",
+        "name": "Fulah",
+        "region": "CM",
+        "regionname": "Cameroon",
+        "script": "Adlm",
+        "sldr": false,
+        "tag": "ff-Adlm-CM",
+        "windows": "ff-Adlm-CM"
+    },
+    {
+        "full": "ff-Adlm-GH",
+        "iana": [ "Fulah" ],
+        "iso639_3": "ful",
+        "name": "Fulah",
+        "region": "GH",
+        "regionname": "Ghana",
+        "script": "Adlm",
+        "sldr": false,
+        "tag": "ff-Adlm-GH",
+        "windows": "ff-Adlm-GH"
+    },
+    {
+        "full": "ff-Adlm-GM",
+        "iana": [ "Fulah" ],
+        "iso639_3": "ful",
+        "name": "Fulah",
+        "region": "GM",
+        "regionname": "Gambia",
+        "script": "Adlm",
+        "sldr": false,
+        "tag": "ff-Adlm-GM",
+        "windows": "ff-Adlm-GM"
+    },
+    {
+        "full": "ff-Adlm-GW",
+        "iana": [ "Fulah" ],
+        "iso639_3": "ful",
+        "name": "Fulah",
+        "region": "GW",
+        "regionname": "Guinea-Bissau",
+        "script": "Adlm",
+        "sldr": false,
+        "tag": "ff-Adlm-GW",
+        "windows": "ff-Adlm-GW"
+    },
+    {
+        "full": "ff-Adlm-LR",
+        "iana": [ "Fulah" ],
+        "iso639_3": "ful",
+        "name": "Fulah",
+        "region": "LR",
+        "regionname": "Liberia",
+        "script": "Adlm",
+        "sldr": false,
+        "tag": "ff-Adlm-LR",
+        "windows": "ff-Adlm-LR"
+    },
+    {
+        "full": "ff-Adlm-MR",
+        "iana": [ "Fulah" ],
+        "iso639_3": "ful",
+        "name": "Fulah",
+        "region": "MR",
+        "regionname": "Mauritania",
+        "script": "Adlm",
+        "sldr": false,
+        "tag": "ff-Adlm-MR",
+        "windows": "ff-Adlm-MR"
+    },
+    {
+        "full": "ff-Adlm-NE",
+        "iana": [ "Fulah" ],
+        "iso639_3": "ful",
+        "name": "Fulah",
+        "region": "NE",
+        "regionname": "Niger",
+        "script": "Adlm",
+        "sldr": false,
+        "tag": "ff-Adlm-NE",
+        "windows": "ff-Adlm-NE"
+    },
+    {
+        "full": "ff-Adlm-NG",
+        "iana": [ "Fulah" ],
+        "iso639_3": "ful",
+        "name": "Fulah",
+        "region": "NG",
+        "regionname": "Nigeria",
+        "script": "Adlm",
+        "sldr": false,
+        "tag": "ff-Adlm-NG",
+        "windows": "ff-Adlm-NG"
+    },
+    {
+        "full": "ff-Adlm-SL",
+        "iana": [ "Fulah" ],
+        "iso639_3": "ful",
+        "name": "Fulah",
+        "region": "SL",
+        "regionname": "Sierra Leone",
+        "script": "Adlm",
+        "sldr": false,
+        "tag": "ff-Adlm-SL",
+        "windows": "ff-Adlm-SL"
+    },
+    {
+        "full": "ff-Adlm-SN",
+        "iana": [ "Fulah" ],
+        "iso639_3": "ful",
+        "name": "Fulah",
+        "region": "SN",
+        "regionname": "Senegal",
+        "script": "Adlm",
+        "sldr": false,
+        "tag": "ff-Adlm-SN",
+        "windows": "ff-Adlm-SN"
     },
     {
         "full": "ff-Arab-SN",
@@ -37699,7 +37877,7 @@
     },
     {
         "full": "gdh-Latn-AU",
-        "iana": [ "Gadjerawang" ],
+        "iana": [ "Gadjerawang", "Gajirrabeng" ],
         "iso639_3": "gdh",
         "name": "Gadjerawang",
         "names": [ "Gadjerong", "Gadjerrong", "Gadyerong", "Gajerrong", "Gajirrabeng", "Gajirrawoong", "Kadjerawang", "Kadjeroen", "Kadjerong", "Kadpjeroen", "Kajirrawong", "Kajirrawung" ],
@@ -37980,6 +38158,7 @@
     },
     {
         "full": "gef-Latn-ID",
+        "iana": [ "Gerai" ],
         "iso639_3": "gef",
         "localnames": [ "Gorai" ],
         "name": "Gerai",
@@ -38634,6 +38813,20 @@
         "windows": "gih-Latn"
     },
     {
+        "full": "gii-Zyyy-ET",
+        "iana": [ "Girirra" ],
+        "iso639_3": "gii",
+        "name": "Girirra",
+        "region": "ET",
+        "regionname": "Ethiopia",
+        "script": "Zyyy",
+        "sldr": false,
+        "tag": "gii",
+        "tags": [ "gii-ET", "gii-Zyyy" ],
+        "unwritten": true,
+        "windows": "gii-Zyyy"
+    },
+    {
         "full": "gil-Latn-KI",
         "iana": [ "Gilbertese" ],
         "iso639_3": "gil",
@@ -38829,20 +39022,6 @@
         "tag": "giz",
         "tags": [ "giz-CM", "giz-Latn" ],
         "windows": "giz-Latn"
-    },
-    {
-        "full": "gji-Latn-NG",
-        "iana": [ "Geji" ],
-        "iso639_3": "gji",
-        "name": "Geji",
-        "names": [ "Gejawa", "Gezawa", "Kaiyorawa", "Kayauri" ],
-        "region": "NG",
-        "regionname": "Nigeria",
-        "script": "Latn",
-        "sldr": false,
-        "tag": "gji",
-        "tags": [ "gji-Latn", "gji-NG" ],
-        "windows": "gji-Latn"
     },
     {
         "full": "gjk-Arab-PK",
@@ -39093,6 +39272,20 @@
         "tags": [ "gl-ES", "gl-Latn" ],
         "variants": [ "ao1990" ],
         "windows": "gl"
+    },
+    {
+        "full": "glb-Latn-NG",
+        "iana": [ "Belning" ],
+        "iso639_3": "glb",
+        "name": "Belning",
+        "region": "NG",
+        "regionname": "Nigeria",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "glb",
+        "tags": [ "glb-Latn", "glb-NG" ],
+        "unwritten": true,
+        "windows": "glb-Latn"
     },
     {
         "full": "glc-Latn-TD",
@@ -39395,6 +39588,7 @@
     },
     {
         "full": "gmr-Latn-AU",
+        "iana": [ "Mirning", "Mirniny" ],
         "iso639_3": "gmr",
         "name": "Mirning",
         "names": [ "Mirniny" ],
@@ -41558,7 +41752,7 @@
     },
     {
         "full": "gwc-Arab-PK",
-        "iana": [ "Kalami" ],
+        "iana": [ "Gawri", "Kalami" ],
         "iso639_3": "gwc",
         "name": "Gawri",
         "names": [ "Bashgharik", "Bashkarik", "Baskarik", "Dir Kohistani", "Diri", "Dirwali", "Gaawro", "Garwa", "Garwi", "Gowri", "Kalam Kohistani", "Kalami", "Kohistana", "Kohistani" ],
@@ -41962,6 +42156,20 @@
         "tags": [ "gyy-AU", "gyy-Latn" ],
         "unwritten": true,
         "windows": "gyy-Latn"
+    },
+    {
+        "full": "gyz-Latn-NG",
+        "iana": [ "Geji", "Gyaazi" ],
+        "iso639_3": "gyz",
+        "name": "Geji",
+        "names": [ "Gejawa", "Gezawa", "Gyaazi", "Kaiyorawa", "Kayauri" ],
+        "region": "NG",
+        "regionname": "Nigeria",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "gyz",
+        "tags": [ "gji", "gji-Latn", "gji-Latn-NG", "gji-NG", "gyz-Latn", "gyz-NG" ],
+        "windows": "gyz-Latn"
     },
     {
         "full": "gza-Latn-SD",
@@ -43228,6 +43436,20 @@
         "windows": "hke-Latn"
     },
     {
+        "full": "hkh-Arab-IN",
+        "iana": [ "Khah", "Poguli" ],
+        "iso639_3": "hkh",
+        "name": "Khah",
+        "names": [ "Poguli" ],
+        "region": "IN",
+        "regionname": "India",
+        "script": "Arab",
+        "sldr": false,
+        "tag": "hkh",
+        "tags": [ "hkh-Arab", "hkh-IN" ],
+        "windows": "hkh-Arab"
+    },
+    {
         "full": "hkk-Latn-PG",
         "iana": [ "Hunjara-Kaina Ke" ],
         "iso639_3": "hkk",
@@ -43823,6 +44045,7 @@
     },
     {
         "full": "hng-Latn-AO",
+        "iana": [ "Hungu" ],
         "iso639_3": "hng",
         "name": "Hungu",
         "names": [ "Bahungu", "Dihungu", "Kihungu" ],
@@ -44732,21 +44955,6 @@
         "windows": "hsn-Hant"
     },
     {
-        "full": "hsn-Nshu-CN",
-        "iana": [ "Xiang Chinese" ],
-        "iso639_3": "hsn",
-        "name": "Chinese, Xiang",
-        "names": [ "Hsiang", "Hunan", "Hunanese", "Xiang Chinese" ],
-        "nophonvars": true,
-        "region": "CN",
-        "regionname": "China",
-        "regions": [ "US" ],
-        "script": "Nshu",
-        "sldr": false,
-        "tag": "hsn-Nshu",
-        "windows": "hsn-Nshu"
-    },
-    {
         "full": "hss-Zyyy-OM",
         "iana": [ "Harsusi" ],
         "iso639_3": "hss",
@@ -44900,10 +45108,10 @@
     },
     {
         "full": "huc-Latn-BW",
-        "iana": [ "ǂHua" ],
+        "iana": [ "ǂHua", "ǂʼAmkhoe" ],
         "iso639_3": "huc",
         "name": "ǂ’Amkhoe",
-        "names": [ "Eastern ‡Hoan", "ǀHua", "ǀHû", "ǂHua", "‡Hoa", "‡Hoan", "‡Hoã", "‡Hua", "‡Hua-Owani" ],
+        "names": [ "Eastern ‡Hoan", "ǀHua", "ǀHû", "ǂHua", "ǂʼAmkhoe", "‡Hoa", "‡Hoan", "‡Hoã", "‡Hua", "‡Hua-Owani" ],
         "region": "BW",
         "regionname": "Botswana",
         "script": "Latn",
@@ -45532,14 +45740,14 @@
         "iso639_3": "iba",
         "localnames": [ "Jaku Iban" ],
         "name": "Iban",
-        "names": [ "Iban Sabah", "Jaku Iban", "Sea Dayak" ],
+        "names": [ "Balau", "Bala’u", "Iban Sabah", "Jaku Iban", "Sea Dayak" ],
         "region": "MY",
         "regionname": "Malaysia",
         "regions": [ "BN", "ID" ],
         "script": "Latn",
         "sldr": false,
         "tag": "iba",
-        "tags": [ "iba-Latn", "iba-MY" ],
+        "tags": [ "blg", "blg-Latn", "blg-Latn-MY", "blg-MY", "iba-Latn", "iba-MY" ],
         "windows": "iba-Latn"
     },
     {
@@ -48664,6 +48872,21 @@
         "windows": "jbk-Latn"
     },
     {
+        "full": "jbm-Latn-NG",
+        "iana": [ "Bijim" ],
+        "iso639_3": "jbm",
+        "name": "Vaghat-Ya-Bijim-Legeri",
+        "names": [ "Bijim", "Vwhat" ],
+        "region": "NG",
+        "regionname": "Nigeria",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "jbm",
+        "tags": [ "bij", "bij-Latn", "bij-Latn-NG", "bij-NG", "jbm-Latn", "jbm-NG" ],
+        "unwritten": true,
+        "windows": "jbm-Latn"
+    },
+    {
         "full": "jbn-Arab-LY",
         "iana": [ "Nafusi" ],
         "iso639_3": "jbn",
@@ -49178,10 +49401,10 @@
     },
     {
         "full": "jid-Latn-NG",
-        "iana": [ "Bu" ],
+        "iana": [ "Bu (Kaduna State)" ],
         "iso639_3": "jid",
         "name": "Bu",
-        "names": [ "Ibut", "Jida", "Jida-Abu", "Jidda-Abu", "Nakare" ],
+        "names": [ "Bu (Kaduna State)", "Ibut", "Jida", "Jida-Abu", "Jidda-Abu", "Nakare" ],
         "region": "NG",
         "regionname": "Nigeria",
         "script": "Latn",
@@ -49466,6 +49689,19 @@
         "tags": [ "jkr-IN", "jkr-Zyyy" ],
         "unwritten": true,
         "windows": "jkr-Zyyy"
+    },
+    {
+        "full": "jks-Zxxx-JP",
+        "iana": [ "Amami Koniya Sign Language" ],
+        "iso639_3": "jks",
+        "name": "Amami Koniya Sign Language",
+        "region": "JP",
+        "regionname": "Japan",
+        "script": "Zxxx",
+        "sldr": false,
+        "tag": "jks",
+        "tags": [ "jks-JP", "jks-Zxxx", "sgn-jks", "sgn-jks-JP" ],
+        "windows": "jks-Zxxx"
     },
     {
         "full": "jku-Latn-NG",
@@ -50018,7 +50254,7 @@
     },
     {
         "full": "jrt-Latn-NG",
-        "iana": [ "Jorto" ],
+        "iana": [ "Jakattoe" ],
         "iso639_3": "jrt",
         "name": "Jakattoe",
         "names": [ "Chakato", "Jakato", "Jorto" ],
@@ -50115,7 +50351,6 @@
         "sldr": false,
         "tag": "jud",
         "tags": [ "jud-CI", "jud-Latn" ],
-        "unwritten": true,
         "windows": "jud-Latn"
     },
     {
@@ -50494,7 +50729,7 @@
     },
     {
         "full": "kaa-Cyrl-UZ",
-        "iana": [ "Kara-Kalpak" ],
+        "iana": [ "Kara-Kalpak", "Karakalpak" ],
         "iso639_3": "kaa",
         "latnnames": [ "Qaraqalpaq tili" ],
         "localnames": [ "Қарақалпақ тили" ],
@@ -50511,7 +50746,7 @@
     },
     {
         "full": "kaa-Arab-UZ",
-        "iana": [ "Kara-Kalpak" ],
+        "iana": [ "Kara-Kalpak", "Karakalpak" ],
         "iso639_3": "kaa",
         "name": "Karakalpak",
         "names": [ "Kara-Kalpak", "Karaklobuk", "Klobouki", "Qaraqalpaq tili", "Tchorny" ],
@@ -50526,7 +50761,7 @@
     },
     {
         "full": "kaa-Latn-UZ",
-        "iana": [ "Kara-Kalpak" ],
+        "iana": [ "Kara-Kalpak", "Karakalpak" ],
         "iso639_3": "kaa",
         "localnames": [ "Qaraqalpaq tili" ],
         "name": "Karakalpak",
@@ -54158,9 +54393,10 @@
     },
     {
         "full": "kjf-Zyyy-AZ",
-        "iana": [ "Khalaj" ],
+        "iana": [ "Khalaj [Indo-Iranian]"
+        ],
         "iso639_3": "kjf",
-        "name": "Khalaj",
+        "name": "Khalaj [Indo-Iranian]",
         "region": "AZ",
         "regionname": "Azerbaijan",
         "regions": [ "IR" ],
@@ -54831,20 +55067,6 @@
         "windows": "kkj-Latn"
     },
     {
-        "full": "kkj-Latn-TD",
-        "iana": [ "Kako" ],
-        "iso639_3": "kkj",
-        "localname": "kakɔ",
-        "localnames": [ "Kakɔ" ],
-        "name": "Kako",
-        "region": "TD",
-        "regionname": "Chad",
-        "script": "Latn",
-        "sldr": true,
-        "tag": "kkj-TD",
-        "windows": "kkj-Latn-TD"
-    },
-    {
         "full": "kkk-Latn-SB",
         "iana": [ "Kokota" ],
         "iso639_3": "kkk",
@@ -54935,7 +55157,7 @@
     },
     {
         "full": "kkq-Latn-CD",
-        "iana": [ "Kaiku" ],
+        "iana": [ "Kaeku" ],
         "iso639_3": "kkq",
         "name": "Kaiku",
         "names": [ "Ekaeku", "Ikaiku", "Kaeku", "Kaiko" ],
@@ -55233,7 +55455,7 @@
     },
     {
         "full": "klj-Zyyy-IR",
-        "iana": [ "Turkic Khalaj" ],
+        "iana": [ "Khalaj" ],
         "iso639_3": "klj",
         "name": "Khalaj",
         "names": [ "Chaladsch", "Turkic Khalaj" ],
@@ -56459,11 +56681,11 @@
     },
     {
         "full": "koe-Latn-SS",
-        "iana": [ "Kacipo-Balesi" ],
+        "iana": [ "Kacipo-Bale Suri" ],
         "iso639_3": "koe",
         "localnames": [ "Kacipo" ],
         "name": "Kacipo-Balesi",
-        "names": [ "Baale", "Kacipo" ],
+        "names": [ "Baale", "Kacipo", "Kacipo-Bale Suri" ],
         "region": "SS",
         "regionname": "South Sudan",
         "regions": [ "ET" ],
@@ -57821,30 +58043,15 @@
         "latnnames": [ "Kudukh" ],
         "localnames": [ "कुड़ुख़" ],
         "name": "Kurux",
-        "names": [ "Kadukali", "Kurka", "Kurukh", "Oraoan", "Urang", "Uraon" ],
+        "names": [ "Kadukali", "Kurka", "Kurukh", "Kurukha", "Nepali Kurux", "Oraoan", "Oraon", "Orau", "Urang", "Uranw", "Uraon", "Urau", "Uraw" ],
         "region": "IN",
         "regionname": "India",
-        "regions": [ "BD", "BT" ],
+        "regions": [ "BD", "BT", "NP" ],
         "script": "Deva",
         "sldr": false,
         "tag": "kru",
-        "tags": [ "kru-Deva", "kru-IN" ],
+        "tags": [ "kru-Deva", "kru-IN", "kxl", "kxl-Deva", "kxl-Deva-NP", "kxl-IN", "kxl-NP" ],
         "windows": "kru-Deva"
-    },
-    {
-        "full": "kru-Deva-NP",
-        "iana": [ "Kurukh" ],
-        "latnnames": [ "Kudukh" ],
-        "localnames": [ "कुड़ुख़" ],
-        "name": "Kurux",
-        "names": [ "Kurukh", "Kurukha", "Nepali Kurux", "Oraon", "Orau", "Uranw", "Uraon", "Urau", "Uraw" ],
-        "region": "NP",
-        "regionname": "Nepal",
-        "script": "Deva",
-        "sldr": false,
-        "tag": "kru-Deva-NP",
-        "tags": [ "kxl", "kxl-Deva", "kxl-Deva-NP", "kxl-NP" ],
-        "windows": "kru-Deva-NP"
     },
     {
         "full": "krv-Khmr-KH",
@@ -59006,7 +59213,7 @@
     },
     {
         "full": "kui-Latn-BR",
-        "iana": [ "Kuikúro-Kalapálo" ],
+        "iana": [ "Kuikúro-Kalapálo", "Kalapalo" ],
         "iso639_3": "kui",
         "name": "Kuikúro-Kalapálo",
         "names": [ "Apalakiri", "Apalaquiri", "Calapalu", "Cuicuro", "Cuicutl", "Guicurú", "Kalapalo", "Kuikuru", "Kurkuro" ],
@@ -60445,13 +60652,13 @@
         "iana": [ "Koro (Papua New Guinea)" ],
         "iso639_3": "kxr",
         "name": "Koro",
-        "names": [ "Kara", "Koro (Papua New Guinea)" ],
+        "names": [ "Kara", "Koro (Papua New Guinea)", "Papitalai" ],
         "region": "PG",
         "regionname": "Papua New Guinea",
         "script": "Latn",
         "sldr": false,
         "tag": "kxr",
-        "tags": [ "kxr-Latn", "kxr-PG" ],
+        "tags": [ "kxr-Latn", "kxr-PG", "pat", "pat-Latn", "pat-Latn-PG", "pat-PG" ],
         "unwritten": true,
         "windows": "kxr-Latn"
     },
@@ -63262,7 +63469,6 @@
         "sldr": false,
         "tag": "lgq",
         "tags": [ "lgq-GH", "lgq-Latn" ],
-        "unwritten": true,
         "windows": "lgq-Latn"
     },
     {
@@ -65501,7 +65707,6 @@
         "sldr": false,
         "tag": "lou",
         "tags": [ "lou-Latn", "lou-US" ],
-        "unwritten": true,
         "windows": "lou-Latn"
     },
     {
@@ -65918,6 +66123,20 @@
         "tag": "lsa",
         "tags": [ "lsa-Arab", "lsa-IR" ],
         "windows": "lsa-Arab"
+    },
+    {
+        "full": "lsb-Zxxx-BI",
+        "iana": [ "Burundian Sign Language", "Langue des Signes Burundaise" ],
+        "iso639_3": "lsb",
+        "name": "Burundian Sign Language",
+        "names": [ "Langue des Signes Burundaise" ],
+        "region": "BI",
+        "regionname": "Burundi",
+        "script": "Zxxx",
+        "sldr": false,
+        "tag": "lsb",
+        "tags": [ "lsb-BI", "lsb-Zxxx", "sgn-lsb", "sgn-lsb-BI" ],
+        "windows": "lsb-Zxxx"
     },
     {
         "full": "lsd-Hebr-IL",
@@ -66863,20 +67082,6 @@
         "windows": "lwo-Latn"
     },
     {
-        "full": "lwo-Latn-ZA",
-        "iana": [ "Luwo" ],
-        "iso639_3": "lwo",
-        "localname": "dhe Luuo",
-        "localnames": [ "dhe Luuo" ],
-        "name": "Luwo",
-        "region": "ZA",
-        "regionname": "South Africa",
-        "script": "Latn",
-        "sldr": true,
-        "tag": "lwo-ZA",
-        "windows": "lwo-Latn-ZA"
-    },
-    {
         "full": "lws-Zxxx-MW",
         "iana": [ "Malawian Sign Language" ],
         "iso639_3": "lws",
@@ -66934,6 +67139,20 @@
         "tag": "lww",
         "tags": [ "lww-Latn", "lww-VU" ],
         "windows": "lww-Latn"
+    },
+    {
+        "full": "lxm-Latn-PG",
+        "iana": [ "Lakurumau" ],
+        "iso639_3": "lxm",
+        "name": "Lakurumau",
+        "region": "PG",
+        "regionname": "Papua New Guinea",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "lxm",
+        "tags": [ "lxm-Latn", "lxm-PG" ],
+        "unwritten": true,
+        "windows": "lxm-Latn"
     },
     {
         "full": "lya-Zyyy-BT",
@@ -68222,20 +68441,6 @@
         "tag": "mcu",
         "tags": [ "mcu-CM", "mcu-Latn" ],
         "windows": "mcu-Latn"
-    },
-    {
-        "full": "mcu-Laoo-CM",
-        "iana": [ "Cameroon Mambila" ],
-        "iso639_3": "mcu",
-        "localname": "Jù Bà",
-        "name": "Mambila, Cameroon",
-        "names": [ "Bang", "Bea", "Ble", "Cameroon Mambila", "Juli", "Jù Bà", "Lagubi", "Mambere", "Mambilla", "Nor", "Tagbo", "Tongbo" ],
-        "region": "CM",
-        "regionname": "Cameroon",
-        "script": "Laoo",
-        "sldr": true,
-        "tag": "mcu-Laoo-CM",
-        "windows": "mcu-Laoo-CM"
     },
     {
         "full": "mcv-Latn-PG",
@@ -72939,7 +73144,7 @@
     },
     {
         "full": "moe-Latn-CA",
-        "iana": [ "Montagnais" ],
+        "iana": [ "Innu", "Montagnais" ],
         "iso639_3": "moe",
         "localnames": [ "Innu", "Innu Aimun" ],
         "name": "Innu",
@@ -75909,20 +76114,6 @@
         "tags": [ "mvl-AU", "mvl-Latn" ],
         "unwritten": true,
         "windows": "mvl-Latn"
-    },
-    {
-        "full": "mvm-Zyyy-CN",
-        "iana": [ "Muya" ],
-        "iso639_3": "mvm",
-        "name": "Muya",
-        "names": [ "Boba", "Manyak", "Menya", "Minyag", "Minyak", "Miyao", "Munya" ],
-        "region": "CN",
-        "regionname": "China",
-        "script": "Zyyy",
-        "sldr": false,
-        "tag": "mvm",
-        "tags": [ "mvm-CN", "mvm-Zyyy" ],
-        "windows": "mvm-Zyyy"
     },
     {
         "full": "mvn-Latn-PG",
@@ -79604,21 +79795,20 @@
         "windows": "new-Newa"
     },
     {
-        "full": "new-Zzzz-NP-x-ranjana",
-        "iana": [ "Newar" ],
+        "full": "new-Ranj-NP",
+        "iana": [ "Newari", "Nepal Bhasa" ],
         "iso639_3": "new",
         "name": "Newar",
-        "names": [ "Newa Bhaye", "Newaah Bhaae", "Newaah Bhaaye", "Newah", "Newal Bhaye" ],
+        "names": [ "Nepal Bhasa", "Newa Bhaye", "Newaah Bhaae", "Newaah Bhaaye", "Newah", "Newal Bhaye" ],
         "nophonvars": true,
         "obsolete": true,
         "region": "NP",
         "regionname": "Nepal",
         "regions": [ "IN" ],
-        "script": "Zzzz",
+        "script": "Ranj",
         "sldr": false,
-        "tag": "new-Zzzz-x-ranjana",
-        "tags": [ "new-NP-x-ranjana" ],
-        "windows": "new-Zzzz-x-ranjana"
+        "tag": "new-Ranj",
+        "windows": "new-Ranj"
     },
     {
         "full": "nex-Latn-PG",
@@ -79942,22 +80132,6 @@
         "tags": [ "ngn-CM", "ngn-Latn" ],
         "unwritten": true,
         "windows": "ngn-Latn"
-    },
-    {
-        "full": "ngo-Latn-TZ",
-        "iana": [ "Ngoni" ],
-        "iso639_3": "ngo",
-        "localnames": [ "Xingoni" ],
-        "name": "Ngoni",
-        "names": [ "Angoni", "Chingoni", "Cingoni", "Kingoni", "Kisutu", "Sutu", "Xingoni" ],
-        "region": "TZ",
-        "regionname": "United Republic of Tanzania",
-        "regions": [ "MZ" ],
-        "script": "Latn",
-        "sldr": false,
-        "tag": "ngo",
-        "tags": [ "ngo-Latn", "ngo-TZ" ],
-        "windows": "ngo-Latn"
     },
     {
         "full": "ngp-Latn-TZ",
@@ -83302,6 +83476,20 @@
         "windows": "nqq-Latn"
     },
     {
+        "full": "nqt-Latn-NG",
+        "iana": [ "Nteng" ],
+        "iso639_3": "nqt",
+        "name": "Nteng",
+        "region": "NG",
+        "regionname": "Nigeria",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "nqt",
+        "tags": [ "nqt-Latn", "nqt-NG" ],
+        "unwritten": true,
+        "windows": "nqt-Latn"
+    },
+    {
         "full": "nqy-Latn-MM",
         "iana": [ "Akyaung Ari Naga" ],
         "iso639_3": "nqy",
@@ -83611,6 +83799,7 @@
     },
     {
         "full": "nsb-Latn-ZA",
+        "iana": [ "Lower Nossob" ],
         "iso639_3": "nsb",
         "name": "Lower Nossob",
         "names": [ "Lower-Nosop" ],
@@ -85816,6 +86005,18 @@
         "windows": "och-Zyyy"
     },
     {
+        "full": "ocm-Zyyy-XX",
+        "iana": [ "Old Cham" ],
+        "iso639_3": "ocm",
+        "name": "Old Cham",
+        "region": "XX",
+        "script": "Zyyy",
+        "sldr": false,
+        "tag": "ocm",
+        "tags": [ "ocm-XX", "ocm-Zyyy" ],
+        "windows": "ocm-Zyyy"
+    },
+    {
         "full": "oco-Latn-GB",
         "iana": [ "Old Cornish" ],
         "iso639_3": "oco",
@@ -86308,6 +86509,20 @@
         "windows": "okb-Latn"
     },
     {
+        "full": "okc-Latn-CD",
+        "iana": [ "Kobo" ],
+        "iso639_3": "okc",
+        "name": "Kobo",
+        "region": "CD",
+        "regionname": "The Democratic Republic of the Congo",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "okc",
+        "tags": [ "okc-CD", "okc-Latn" ],
+        "unwritten": true,
+        "windows": "okc-Latn"
+    },
+    {
         "full": "okd-Latn-NG",
         "iana": [ "Okodia" ],
         "iso639_3": "okd",
@@ -86536,18 +86751,30 @@
         "windows": "okx-Latn"
     },
     {
+        "full": "okz-Zyyy-XX",
+        "iana": [ "Old Khmer" ],
+        "iso639_3": "okz",
+        "name": "Old Khmer",
+        "region": "XX",
+        "script": "Zyyy",
+        "sldr": false,
+        "tag": "okz",
+        "tags": [ "okz-XX", "okz-Zyyy" ],
+        "windows": "okz-Zyyy"
+    },
+    {
         "full": "ola-Tibt-NP",
         "iana": [ "Walungge" ],
         "iso639_3": "ola",
         "name": "Walungge",
-        "names": [ "Halung", "Halungge", "Olangchung Gola", "Waling", "Walongchung Gola", "Walung", "Walungchung Gola", "Walunggi Keccya" ],
+        "names": [ "Halung", "Halungge", "Olangchung Gola", "Thudam", "Waling", "Walongchung Gola", "Walung", "Walungchung Gola", "Walunggi Keccya" ],
         "region": "NP",
         "regionname": "Nepal",
         "regions": [ "CN", "IN" ],
         "script": "Tibt",
         "sldr": false,
         "tag": "ola",
-        "tags": [ "ola-NP", "ola-Tibt" ],
+        "tags": [ "ola-NP", "ola-Tibt", "thw", "thw-NP", "thw-Zyyy", "thw-Zyyy-NP" ],
         "windows": "ola-Tibt"
     },
     {
@@ -86940,6 +87167,18 @@
         "tag": "omx",
         "tags": [ "omx-XX", "omx-Zyyy" ],
         "windows": "omx-Zyyy"
+    },
+    {
+        "full": "omy-Zyyy-XX",
+        "iana": [ "Old Malay" ],
+        "iso639_3": "omy",
+        "name": "Old Malay",
+        "region": "XX",
+        "script": "Zyyy",
+        "sldr": false,
+        "tag": "omy",
+        "tags": [ "omy-XX", "omy-Zyyy" ],
+        "windows": "omy-Zyyy"
     },
     {
         "full": "ona-Latn-AR",
@@ -87738,6 +87977,19 @@
         "windows": "osi-Java"
     },
     {
+        "full": "osn-Sund-XX",
+        "iana": [ "Old Sundanese" ],
+        "iso639_3": "osn",
+        "name": "Old Sundanese",
+        "obsolete": true,
+        "region": "XX",
+        "script": "Sund",
+        "sldr": false,
+        "tag": "osn",
+        "tags": [ "osn-Sund", "osn-XX" ],
+        "windows": "osn-Sund"
+    },
+    {
         "full": "oso-Latn-NG",
         "iana": [ "Ososo" ],
         "iso639_3": "oso",
@@ -88120,16 +88372,17 @@
         "windows": "oue-Latn"
     },
     {
-        "full": "oui-Zyyy-XX",
+        "full": "oui-Ougr-XX",
         "iana": [ "Old Uighur" ],
         "iso639_3": "oui",
         "name": "Old Uighur",
+        "obsolete": true,
         "region": "XX",
-        "script": "Zyyy",
+        "script": "Ougr",
         "sldr": false,
         "tag": "oui",
-        "tags": [ "oui-XX", "oui-Zyyy" ],
-        "windows": "oui-Zyyy"
+        "tags": [ "oui-Ougr", "oui-XX" ],
+        "windows": "oui-Ougr"
     },
     {
         "full": "oui-Mong-XX",
@@ -88653,20 +88906,6 @@
         "tags": [ "pas-ID", "pas-Latn" ],
         "unwritten": true,
         "windows": "pas-Latn"
-    },
-    {
-        "full": "pat-Latn-PG",
-        "iana": [ "Papitalai" ],
-        "iso639_3": "pat",
-        "name": "Papitalai",
-        "region": "PG",
-        "regionname": "Papua New Guinea",
-        "script": "Latn",
-        "sldr": false,
-        "tag": "pat",
-        "tags": [ "pat-Latn", "pat-PG" ],
-        "unwritten": true,
-        "windows": "pat-Latn"
     },
     {
         "full": "pau-Latn-PW",
@@ -89728,7 +89967,7 @@
     },
     {
         "full": "pfe-Latn-CM",
-        "iana": [ "Peere" ],
+        "iana": [ "Pere" ],
         "iso639_3": "pfe",
         "localnames": [ "Pɛrɛ" ],
         "name": "Pere",
@@ -91468,7 +91707,7 @@
     },
     {
         "full": "png-Latn-NG",
-        "iana": [ "Pongu" ],
+        "iana": [ "Pangu", "Pongu" ],
         "iso639_3": "png",
         "localnames": [ "Tarin" ],
         "name": "Pangu",
@@ -97585,6 +97824,20 @@
         "windows": "rwk-Latn"
     },
     {
+        "full": "rwl-Latn-TZ",
+        "iana": [ "Ruwila" ],
+        "iso639_3": "rwl",
+        "name": "Ruwila",
+        "region": "TZ",
+        "regionname": "United Republic of Tanzania",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "rwl",
+        "tags": [ "rwl-Latn", "rwl-TZ" ],
+        "unwritten": true,
+        "windows": "rwl-Latn"
+    },
+    {
         "full": "rwm-Latn-UG",
         "iana": [ "Amba (Uganda)" ],
         "iso639_3": "rwm",
@@ -99056,7 +99309,7 @@
         "script": "Latn",
         "sldr": false,
         "tag": "scv",
-        "tags": [ "scv-Latn", "scv-NG" ],
+        "tags": [ "scv-Latn", "scv-NG", "zir", "zir-Latn", "zir-Latn-NG", "zir-NG" ],
         "unwritten": true,
         "windows": "scv-Latn"
     },
@@ -99379,6 +99632,7 @@
     },
     {
         "full": "sdq-Latn-ID",
+        "iana": [ "Semandang" ],
         "iso639_3": "sdq",
         "localnames": [ "Semandang" ],
         "name": "Semandang",
@@ -103988,6 +104242,20 @@
         "windows": "sq-MK"
     },
     {
+        "full": "sq-Vith-AL",
+        "iana": [ "Albanian" ],
+        "iso639_3": "sqi",
+        "name": "Albanian",
+        "nophonvars": true,
+        "obsolete": true,
+        "region": "AL",
+        "regionname": "Albania",
+        "script": "Vith",
+        "sldr": false,
+        "tag": "sq-Vith",
+        "windows": "sq-Vith"
+    },
+    {
         "full": "sq-Latn-XK",
         "iana": [ "Albanian" ],
         "iso639_3": "sqi",
@@ -104166,6 +104434,19 @@
         "tag": "squ",
         "tags": [ "squ-CA", "squ-Latn" ],
         "windows": "squ-Latn"
+    },
+    {
+        "full": "sqx-Zxxx-IL",
+        "iana": [ "Kufr Qassem Sign Language (KQSL)" ],
+        "iso639_3": "sqx",
+        "name": "Kufr Qassem Sign Language (KQSL)",
+        "region": "IL",
+        "regionname": "Israel",
+        "script": "Zxxx",
+        "sldr": false,
+        "tag": "sqx",
+        "tags": [ "sgn-sqx", "sgn-sqx-IL", "sqx-IL", "sqx-Zxxx" ],
+        "windows": "sqx-Zxxx"
     },
     {
         "full": "sr-Cyrl-RS",
@@ -105747,12 +106028,26 @@
         "windows": "suk-Latn"
     },
     {
+        "full": "suo-Latn-PG",
+        "iana": [ "Bouni" ],
+        "iso639_3": "suo",
+        "name": "Bouni",
+        "region": "PG",
+        "regionname": "Papua New Guinea",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "suo",
+        "tags": [ "suo-Latn", "suo-PG" ],
+        "windows": "suo-Latn"
+    },
+    {
         "full": "suq-Latn-ET",
-        "iana": [ "Suri" ],
+        "iana": [ "Tirmaga-Chai Suri", "Suri" ],
         "iso639_3": "suq",
         "localname": "Surichɛn",
         "localnames": [ "Surichɛn" ],
         "name": "Suri",
+        "names": [ "Tirmaga-Chai Suri" ],
         "region": "ET",
         "regionname": "Ethiopia",
         "script": "Latn",
@@ -105763,10 +106058,11 @@
     },
     {
         "full": "suq-Ethi-ET",
-        "iana": [ "Suri" ],
+        "iana": [ "Tirmaga-Chai Suri", "Suri" ],
         "iso639_3": "suq",
         "localname": "Surichɛn",
         "name": "Suri",
+        "names": [ "Tirmaga-Chai Suri" ],
         "nophonvars": true,
         "region": "ET",
         "regionname": "Ethiopia",
@@ -110110,18 +110406,6 @@
         "windows": "thv-Latn"
     },
     {
-        "full": "thv-Latn-DZ-x-ahaggar",
-        "iana": [ "Tahaggart Tamahaq" ],
-        "name": "Tamahaq, Tahaggart",
-        "names": [ "Tahaggart Tamahaq", "Tamachek", "Tamachek’", "Tamahaq", "Tamashekin", "Tamasheq", "Tomachek", "Touareg", "Tourage", "Tuareg" ],
-        "region": "DZ",
-        "regionname": "Algeria",
-        "script": "Latn",
-        "sldr": true,
-        "tag": "thv-Latn-DZ-x-ahaggar",
-        "windows": "thv-Latn-DZ-x-ahaggar"
-    },
-    {
         "full": "thv-Tfng-DZ",
         "iana": [ "Tahaggart Tamahaq" ],
         "iso639_3": "thv",
@@ -110135,20 +110419,6 @@
         "sldr": false,
         "tag": "thv-Tfng",
         "windows": "thv-Tfng"
-    },
-    {
-        "full": "thw-Zyyy-NP",
-        "iana": [ "Thudam" ],
-        "iso639_3": "thw",
-        "name": "Thudam",
-        "region": "NP",
-        "regionname": "Nepal",
-        "script": "Zyyy",
-        "sldr": false,
-        "tag": "thw",
-        "tags": [ "thw-NP", "thw-Zyyy" ],
-        "unwritten": true,
-        "windows": "thw-Zyyy"
     },
     {
         "full": "thy-Latn-NG",
@@ -110785,25 +111055,12 @@
         "nophonvars": true,
         "region": "AF",
         "regionname": "Afghanistan",
-        "regions": [ "DE", "IQ", "KG", "KZ", "PK", "RU", "SY", "TJ", "TM", "TR", "US", "UZ" ],
+        "regions": [ "DE", "IQ", "IR", "KG", "KZ", "PK", "RU", "SY", "TJ", "TM", "TR", "US", "UZ" ],
         "script": "Arab",
         "sldr": true,
         "tag": "tk-Arab",
         "tags": [ "tk-AF" ],
         "windows": "tk-Arab"
-    },
-    {
-        "full": "tk-Arab-IR",
-        "iana": [ "Turkmen" ],
-        "iso639_3": "tuk",
-        "localname": "Türkmen dili",
-        "name": "Turkmen",
-        "region": "IR",
-        "regionname": "Islamic Republic of Iran",
-        "script": "Arab",
-        "sldr": true,
-        "tag": "tk-Arab-IR",
-        "windows": "tk-Arab-IR"
     },
     {
         "full": "tk-Cyrl-TM",
@@ -111326,20 +111583,6 @@
         "tag": "tlj",
         "tags": [ "tlj-Latn", "tlj-UG" ],
         "windows": "tlj-Latn"
-    },
-    {
-        "full": "tlj-Latn-GH",
-        "iana": [ "Talinga-Bwisi" ],
-        "iso639_3": "tlj",
-        "localname": "Bwisi",
-        "localnames": [ "Bwisi" ],
-        "name": "Talinga-Bwisi",
-        "region": "GH",
-        "regionname": "Ghana",
-        "script": "Latn",
-        "sldr": true,
-        "tag": "tlj-GH",
-        "windows": "tlj-Latn-GH"
     },
     {
         "full": "tlk-Latn-ID",
@@ -115872,6 +116115,19 @@
         "windows": "tyx-Latn"
     },
     {
+        "full": "tyy-Latn-NG",
+        "iana": [ "Tiyaa" ],
+        "iso639_3": "tyy",
+        "name": "Tiyaa",
+        "region": "NG",
+        "regionname": "Nigeria",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "tyy",
+        "tags": [ "tyy-Latn", "tyy-NG" ],
+        "windows": "tyy-Latn"
+    },
+    {
         "full": "tyz-Latn-VN",
         "iana": [ "Tày" ],
         "iso639_3": "tyz",
@@ -116714,9 +116970,10 @@
     },
     {
         "full": "uki-Orya-IN",
+        "iana": [ "Kui (India)" ],
         "iso639_3": "uki",
         "name": "Kui",
-        "names": [ "Kanda", "Kandh", "Khond", "Khondi", "Khondo", "Kodu", "Kodulu", "Kuinga", "Kuy" ],
+        "names": [ "Kanda", "Kandh", "Khond", "Khondi", "Khondo", "Kodu", "Kodulu", "Kui (India)", "Kuinga", "Kuy" ],
         "region": "IN",
         "regionname": "India",
         "script": "Orya",
@@ -117249,6 +117506,20 @@
         "tags": [ "ung-AU", "ung-Latn" ],
         "unwritten": true,
         "windows": "ung-Latn"
+    },
+    {
+        "full": "uni-Latn-PG",
+        "iana": [ "Uni" ],
+        "iso639_3": "uni",
+        "name": "Uni",
+        "region": "PG",
+        "regionname": "Papua New Guinea",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "uni",
+        "tags": [ "uni-Latn", "uni-PG" ],
+        "unwritten": true,
+        "windows": "uni-Latn"
     },
     {
         "full": "unk-Latn-BR",
@@ -119012,21 +119283,6 @@
         "windows": "vka-Latn"
     },
     {
-        "full": "vki-Latn-NG",
-        "iana": [ "Ija-Zuba" ],
-        "iso639_3": "vki",
-        "name": "Ija-Zuba",
-        "names": [ "Koro Afiki", "Koro Ija", "Koro Zuba" ],
-        "region": "NG",
-        "regionname": "Nigeria",
-        "script": "Latn",
-        "sldr": false,
-        "tag": "vki",
-        "tags": [ "vki-Latn", "vki-NG" ],
-        "unwritten": true,
-        "windows": "vki-Latn"
-    },
-    {
         "full": "vkj-Latn-TD",
         "iana": [ "Kujarge" ],
         "iso639_3": "vkj",
@@ -119084,6 +119340,21 @@
         "tags": [ "vkm-BR", "vkm-Latn" ],
         "unwritten": true,
         "windows": "vkm-Latn"
+    },
+    {
+        "full": "vkn-Latn-NG",
+        "iana": [ "Koro Nulu" ],
+        "iso639_3": "vkn",
+        "name": "Ija-Zuba",
+        "names": [ "Koro Afiki", "Koro Ija", "Koro Nulu", "Koro Zuba" ],
+        "region": "NG",
+        "regionname": "Nigeria",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "vkn",
+        "tags": [ "vki", "vki-Latn", "vki-Latn-NG", "vki-NG", "vkn-Latn", "vkn-NG" ],
+        "unwritten": true,
+        "windows": "vkn-Latn"
     },
     {
         "full": "vko-Latn-ID",
@@ -119156,6 +119427,20 @@
         "tags": [ "vku-AU", "vku-Latn" ],
         "unwritten": true,
         "windows": "vku-Latn"
+    },
+    {
+        "full": "vkz-Latn-NG",
+        "iana": [ "Koro Zuba" ],
+        "iso639_3": "vkz",
+        "name": "Koro Zuba",
+        "region": "NG",
+        "regionname": "Nigeria",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "vkz",
+        "tags": [ "vkz-Latn", "vkz-NG" ],
+        "unwritten": true,
+        "windows": "vkz-Latn"
     },
     {
         "full": "vlp-Latn-VU",
@@ -119882,7 +120167,7 @@
     },
     {
         "full": "wad-Latn-ID",
-        "iana": [ "Wandamen" ],
+        "iana": [ "Wamesa", "Wondama" ],
         "iso639_3": "wad",
         "localnames": [ "Wamesa", "Wondama" ],
         "name": "Wandamen",
@@ -121470,6 +121755,7 @@
     },
     {
         "full": "wlh-Latn-TL",
+        "iana": [ "Welaun" ],
         "iso639_3": "wlh",
         "name": "Welaun",
         "names": [ "Bekais", "Wekais" ],
@@ -121731,6 +122017,21 @@
         "tag": "wme",
         "tags": [ "wme-Deva", "wme-NP" ],
         "windows": "wme-Deva"
+    },
+    {
+        "full": "wmg-Zyyy-CN",
+        "iana": [ "Western Minyag" ],
+        "iso639_3": "wmg",
+        "name": "Muya",
+        "names": [ "Boba", "Manyak", "Menya", "Minyag", "Minyak", "Miyao", "Munya", "Western Minyag" ],
+        "region": "CN",
+        "regionname": "China",
+        "script": "Zyyy",
+        "sldr": false,
+        "tag": "wmg",
+        "tags": [ "mvm", "mvm-CN", "mvm-Zyyy", "mvm-Zyyy-CN", "wmg-CN", "wmg-Zyyy" ],
+        "unwritten": true,
+        "windows": "wmg-Zyyy"
     },
     {
         "full": "wmh-Latn-TL",
@@ -122410,20 +122711,6 @@
         "tag": "wpc",
         "tags": [ "wpc-Latn", "wpc-VE" ],
         "windows": "wpc-Latn"
-    },
-    {
-        "full": "wra-Latn-PG",
-        "iana": [ "Warapu" ],
-        "iso639_3": "wra",
-        "name": "Warapu",
-        "names": [ "Barupu" ],
-        "region": "PG",
-        "regionname": "Papua New Guinea",
-        "script": "Latn",
-        "sldr": false,
-        "tag": "wra",
-        "tags": [ "wra-Latn", "wra-PG" ],
-        "windows": "wra-Latn"
     },
     {
         "full": "wrb-Latn-AU",
@@ -125769,6 +126056,22 @@
         "windows": "xni-Latn"
     },
     {
+        "full": "xnj-Latn-TZ",
+        "iana": [ "Ngoni (Tanzania)" ],
+        "iso639_3": "xnj",
+        "localnames": [ "Xingoni" ],
+        "name": "Ngoni",
+        "names": [ "Angoni", "Chingoni", "Cingoni", "Kingoni", "Kisutu", "Ngoni (Tanzania)", "Sutu", "Xingoni" ],
+        "region": "TZ",
+        "regionname": "United Republic of Tanzania",
+        "regions": [ "MZ" ],
+        "script": "Latn",
+        "sldr": false,
+        "tag": "xnj",
+        "tags": [ "ngo", "ngo-Latn", "ngo-Latn-TZ", "ngo-TZ", "xnj-Latn", "xnj-TZ" ],
+        "windows": "xnj-Latn"
+    },
+    {
         "full": "xnk-Latn-AU",
         "iana": [ "Nganakarti" ],
         "iso639_3": "xnk",
@@ -125785,6 +126088,7 @@
     },
     {
         "full": "xnm-Latn-AU",
+        "iana": [ "Ngumbarl" ],
         "iso639_3": "xnm",
         "name": "Ngumbarl",
         "names": [ "Ngombal" ],
@@ -125822,6 +126126,19 @@
         "tag": "xno",
         "tags": [ "xno-XX", "xno-Zyyy" ],
         "windows": "xno-Zyyy"
+    },
+    {
+        "full": "xnq-Latn-MZ",
+        "iana": [ "Ngoni (Mozambique)" ],
+        "iso639_3": "xnq",
+        "name": "Ngoni (Mozambique)",
+        "region": "MZ",
+        "regionname": "Mozambique",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "xnq",
+        "tags": [ "xnq-Latn", "xnq-MZ" ],
+        "windows": "xnq-Latn"
     },
     {
         "full": "xnr-Deva-IN",
@@ -126151,8 +126468,10 @@
     },
     {
         "full": "xpb-Latn-AU",
+        "iana": [ "Northeastern Tasmanian", "Pyemmairrener" ],
         "iso639_3": "xpb",
         "name": "Northeastern Tasmanian",
+        "names": [ "Pyemmairrener" ],
         "region": "AU",
         "regionname": "Australia",
         "script": "Latn",
@@ -126175,6 +126494,7 @@
     },
     {
         "full": "xpd-Latn-AU",
+        "iana": [ "Oyster Bay Tasmanian" ],
         "iso639_3": "xpd",
         "name": "Oyster Bay Tasmanian",
         "region": "AU",
@@ -126187,8 +126507,10 @@
     },
     {
         "full": "xpf-Latn-AU",
+        "iana": [ "Southeast Tasmanian", "Nuenonne" ],
         "iso639_3": "xpf",
         "name": "Southeast Tasmanian",
+        "names": [ "Nuenonne" ],
         "region": "AU",
         "regionname": "Australia",
         "script": "Latn",
@@ -126212,8 +126534,10 @@
     },
     {
         "full": "xph-Latn-AU",
+        "iana": [ "North Midlands Tasmanian", "Tyerrenoterpanner" ],
         "iso639_3": "xph",
         "name": "North Midlands Tasmanian",
+        "names": [ "Tyerrenoterpanner" ],
         "region": "AU",
         "regionname": "Australia",
         "script": "Latn",
@@ -126267,6 +126591,7 @@
     },
     {
         "full": "xpl-Latn-AU",
+        "iana": [ "Port Sorell Tasmanian" ],
         "iso639_3": "xpl",
         "name": "Port Sorell Tasmanian",
         "region": "AU",
@@ -126405,8 +126730,10 @@
     },
     {
         "full": "xpv-Latn-AU",
+        "iana": [ "Northern Tasmanian", "Tommeginne" ],
         "iso639_3": "xpv",
         "name": "Northern Tasmanian",
+        "names": [ "Tommeginne" ],
         "region": "AU",
         "regionname": "Australia",
         "script": "Latn",
@@ -126417,8 +126744,10 @@
     },
     {
         "full": "xpw-Latn-AU",
+        "iana": [ "Northwestern Tasmanian", "Peerapper" ],
         "iso639_3": "xpw",
         "name": "Northwestern Tasmanian",
+        "names": [ "Peerapper" ],
         "region": "AU",
         "regionname": "Australia",
         "script": "Latn",
@@ -126429,8 +126758,10 @@
     },
     {
         "full": "xpx-Latn-AU",
+        "iana": [ "Southwestern Tasmanian", "Toogee" ],
         "iso639_3": "xpx",
         "name": "Southwestern Tasmanian",
+        "names": [ "Toogee" ],
         "region": "AU",
         "regionname": "Australia",
         "script": "Latn",
@@ -126454,6 +126785,7 @@
     },
     {
         "full": "xpz-Latn-AU",
+        "iana": [ "Bruny Island Tasmanian" ],
         "iso639_3": "xpz",
         "name": "Bruny Island Tasmanian",
         "region": "AU",
@@ -127375,10 +127707,10 @@
     },
     {
         "full": "xul-Latn-AU",
-        "iana": [ "Ngunawal" ],
+        "iana": [ "Ngunawal", "Nunukul" ],
         "iso639_3": "xul",
         "name": "Ngunawal",
-        "names": [ "Gurungada", "Ngoonawal", "Ngunnawal", "Ngunuwal", "Nungawal", "Wonnawal", "Yarr" ],
+        "names": [ "Gurungada", "Ngoonawal", "Ngunnawal", "Ngunuwal", "Nungawal", "Nunukul", "Wonnawal", "Yarr" ],
         "region": "AU",
         "regionname": "Australia",
         "script": "Latn",
@@ -130765,6 +131097,19 @@
         "windows": "ysl-Zxxx"
     },
     {
+        "full": "ysm-Zxxx-MM",
+        "iana": [ "Myanmar Sign Language" ],
+        "iso639_3": "ysm",
+        "name": "Myanmar Sign Language",
+        "region": "MM",
+        "regionname": "Myanmar",
+        "script": "Zxxx",
+        "sldr": false,
+        "tag": "ysm",
+        "tags": [ "sgn-ysm", "sgn-ysm-MM", "ysm-MM", "ysm-Zxxx" ],
+        "windows": "ysm-Zxxx"
+    },
+    {
         "full": "ysn-Yiii-CN",
         "iana": [ "Sani" ],
         "iso639_3": "ysn",
@@ -132082,6 +132427,7 @@
     },
     {
         "full": "zba-Zyyy-001",
+        "iana": [ "Balaibalan" ],
         "iso639_3": "zba",
         "name": "Balaibalan",
         "region": "001",
@@ -132152,6 +132498,20 @@
         "tags": [ "zbt-ID", "zbt-Latn" ],
         "unwritten": true,
         "windows": "zbt-Latn"
+    },
+    {
+        "full": "zbu-Latn-NG",
+        "iana": [ "Bu (Bauchi State)" ],
+        "iso639_3": "zbu",
+        "name": "Bu (Bauchi State)",
+        "region": "NG",
+        "regionname": "Nigeria",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "zbu",
+        "tags": [ "zbu-Latn", "zbu-NG" ],
+        "unwritten": true,
+        "windows": "zbu-Latn"
     },
     {
         "full": "zbw-Latn-MY",
@@ -132925,20 +133285,6 @@
         "windows": "zin-Latn"
     },
     {
-        "full": "zir-Latn-NG",
-        "iana": [ "Ziriya" ],
-        "iso639_3": "zir",
-        "name": "Ziriya",
-        "region": "NG",
-        "regionname": "Nigeria",
-        "script": "Latn",
-        "sldr": false,
-        "tag": "zir",
-        "tags": [ "zir-Latn", "zir-NG" ],
-        "unwritten": true,
-        "windows": "zir-Latn"
-    },
-    {
         "full": "ziw-Latn-TZ",
         "iana": [ "Zigula" ],
         "iso639_3": "ziw",
@@ -133181,6 +133527,20 @@
         "tags": [ "zkz-Cyrl", "zkz-RU" ],
         "unwritten": true,
         "windows": "zkz-Cyrl"
+    },
+    {
+        "full": "zla-Latn-CD",
+        "iana": [ "Zula" ],
+        "iso639_3": "zla",
+        "name": "Zula",
+        "region": "CD",
+        "regionname": "The Democratic Republic of the Congo",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "zla",
+        "tags": [ "zla-CD", "zla-Latn" ],
+        "unwritten": true,
+        "windows": "zla-Latn"
     },
     {
         "full": "zlj-Hani-CN",
@@ -134783,21 +135143,6 @@
         "tag": "zyg",
         "tags": [ "zyg-CN", "zyg-Hani" ],
         "windows": "zyg-Hani"
-    },
-    {
-        "full": "zyg-Nshu-CN",
-        "iana": [ "Yang Zhuang" ],
-        "iso639_3": "zyg",
-        "name": "Zhuang, Yang",
-        "names": [ "Caj coux", "Can Yang", "Dejing Zhuang", "Dianbao", "Fouh", "Gen Yang", "Jingxi Zhuang", "Lang", "Nong", "Nung Giang", "Tianpao", "Tuhua", "Yang Zhuang", "Yangx", "Yangyu", "Yangzhou", "Zhuangyu Nanbu fangyan Dejing tuyu" ],
-        "nophonvars": true,
-        "region": "CN",
-        "regionname": "China",
-        "regions": [ "VN" ],
-        "script": "Nshu",
-        "sldr": false,
-        "tag": "zyg-Nshu",
-        "windows": "zyg-Nshu"
     },
     {
         "full": "zyj-Latn-CN",

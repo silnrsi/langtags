@@ -300,13 +300,13 @@ else:
 def make_record(t):
     if t.skip:
         return None
-    if t.region is None:
-        print("Missing Region for {}".format(str(t)))
-        return None
     r = t.allforms()
     if not len(r[0]):
         return None
     if r[0][0] == "q" and r[0][1] in "abcdefghijklmnopqrst":
+        return None
+    if t.region is None:
+        print("Missing Region for {}".format(str(t)))
         return None
     if hasattr(t, 'primary'):
         r = [t.primary] + [x for x in r if x != t.primary]
