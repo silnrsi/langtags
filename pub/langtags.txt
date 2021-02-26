@@ -189,7 +189,6 @@ ahp = ahp-CI = ahp-Latn = ahp-Latn-CI
 ahr = ahr-IN = ahr-Zyyy = ahr-Zyyy-IN
 ahs = ahs-Latn = ahs-NG = ahs-Latn-NG
 aht = aht-Latn = aht-US = aht-Latn-US
-ahu-Latn-MM = anl = anl-Latn = anl-Latn-MM = anl-MM = ahu-Latn-MM
 aia = aia-Latn = aia-SB = aia-Latn-SB
 aib = aib-CN = aib-Zyyy = aib-Zyyy-CN
 aic = aic-Latn = aic-PG = aic-Latn-PG
@@ -322,6 +321,7 @@ anh = anh-Latn = anh-PG = anh-Latn-PG
 ani = ani-Cyrl = ani-RU = ani-Cyrl-RU
 anj = anj-Latn = anj-PG = anj-Latn-PG
 ank = *ank-Latn = ank-NG = ank-Latn-NG
+anl = anl-Latn = anl-MM = anl-Latn-MM
 anm = anm-IN = anm-Latn = anm-Latn-IN
 ann = *ann-Latn = ann-NG = ann-Latn-NG
 ano = ano-CO = ano-Latn = ano-Latn-CO
