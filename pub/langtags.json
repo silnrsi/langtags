@@ -9,7 +9,7 @@
     },
     {
         "api": "1.2.1",
-        "date": "2021-02-26",
+        "date": "2021-03-01",
         "tag": "_version"
     },
     {
@@ -7986,6 +7986,20 @@
         "tag": "avu",
         "tags": [ "avu-Latn", "avu-SS" ],
         "windows": "avu-Latn"
+    },
+    {
+        "full": "avu-Latn-SD",
+        "iana": [ "Avokaya" ],
+        "iso639_3": "avu",
+        "localname": "Ãvõkáyã",
+        "localnames": [ "Ãvõkáyã" ],
+        "name": "Avokaya",
+        "region": "SD",
+        "regionname": "Sudan",
+        "script": "Latn",
+        "sldr": true,
+        "tag": "avu-SD",
+        "windows": "avu-Latn-SD"
     },
     {
         "full": "avv-Latn-BR",
@@ -22772,7 +22786,6 @@
         "script": "Khmr",
         "sldr": true,
         "tag": "cmo-Khmr",
-        "tags": [ "cmo-KH" ],
         "windows": "cmo-Khmr"
     },
     {
@@ -22785,12 +22798,25 @@
         "names": [ "Bu Nong", "Budang", "Budong", "Bunong", "Central Bu Nong", "Central Mnong", "Phanong", "Phnong", "Pnong" ],
         "region": "VN",
         "regionname": "Viet Nam",
-        "regions": [ "KH" ],
         "script": "Latn",
         "sldr": true,
         "tag": "cmo-Latn",
         "tags": [ "cmo-VN" ],
         "windows": "cmo-Latn"
+    },
+    {
+        "full": "cmo-Latn-KH",
+        "iana": [ "Central Mnong" ],
+        "localname": "Bunong",
+        "localnames": [ "Bunong" ],
+        "name": "Mnong, Central",
+        "names": [ "Budong", "Bunong", "Central Mnong", "Phanong", "Phnong", "Pnong" ],
+        "region": "KH",
+        "regionname": "Cambodia",
+        "script": "Latn",
+        "sldr": true,
+        "tag": "cmo-Latn-KH",
+        "windows": "cmo-Latn-KH"
     },
     {
         "full": "cmr-Latn-MM",
@@ -27530,20 +27556,6 @@
         "windows": "dij-Latn"
     },
     {
-        "full": "dik-Arab-SS",
-        "iana": [ "Southwestern Dinka" ],
-        "iso639_3": "dik",
-        "name": "Dinka, Southwestern",
-        "names": [ "Southwestern Dinka", "Thuɔŋjäŋ", "Western Dinka" ],
-        "nophonvars": true,
-        "region": "SS",
-        "regionname": "South Sudan",
-        "script": "Arab",
-        "sldr": false,
-        "tag": "dik-Arab",
-        "windows": "dik-Arab"
-    },
-    {
         "full": "dil-Latn-SD",
         "iana": [ "Dilling" ],
         "iso639_3": "dil",
@@ -27592,13 +27604,15 @@
         "full": "din-Arab-SS",
         "iana": [ "Dinka" ],
         "iso639_3": "din",
-        "name": "Dinka",
+        "name": "Dinka, Southwestern",
+        "names": [ "Dinka", "Thuɔŋjäŋ", "Western Dinka" ],
         "nophonvars": true,
         "region": "SS",
         "regionname": "South Sudan",
         "script": "Arab",
         "sldr": false,
         "tag": "din-Arab",
+        "tags": [ "dik-Arab", "dik-Arab-SS" ],
         "windows": "din-Arab"
     },
     {
@@ -30896,6 +30910,19 @@
         "tag": "eka",
         "tags": [ "eka-Latn", "eka-NG" ],
         "windows": "eka-Latn"
+    },
+    {
+        "full": "eka-Latn-NG-x-ekajuk",
+        "iana": [ "Ekajuk" ],
+        "iso639_3": "eka",
+        "name": "Ekajuk",
+        "names": [ "Akajo", "Akajuk" ],
+        "region": "NG",
+        "regionname": "Nigeria",
+        "script": "Latn",
+        "sldr": true,
+        "tag": "eka-Latn-NG-x-ekajuk",
+        "windows": "eka-Latn-NG-x-ekajuk"
     },
     {
         "full": "ekc-Latn-AU",
@@ -34863,143 +34890,11 @@
         "nophonvars": true,
         "region": "GN",
         "regionname": "Guinea",
-        "regions": [ "BJ", "ML", "TD" ],
+        "regions": [ "BJ", "CM", "ML", "NE", "NG", "SN", "TD" ],
         "script": "Adlm",
         "sldr": false,
         "tag": "ff-Adlm",
         "windows": "ff-Adlm"
-    },
-    {
-        "full": "ff-Adlm-BF",
-        "iana": [ "Fulah" ],
-        "iso639_3": "ful",
-        "name": "Fulah",
-        "region": "BF",
-        "regionname": "Burkina Faso",
-        "script": "Adlm",
-        "sldr": false,
-        "tag": "ff-Adlm-BF",
-        "windows": "ff-Adlm-BF"
-    },
-    {
-        "full": "ff-Adlm-CM",
-        "iana": [ "Fulah" ],
-        "iso639_3": "ful",
-        "name": "Fulah",
-        "region": "CM",
-        "regionname": "Cameroon",
-        "script": "Adlm",
-        "sldr": false,
-        "tag": "ff-Adlm-CM",
-        "windows": "ff-Adlm-CM"
-    },
-    {
-        "full": "ff-Adlm-GH",
-        "iana": [ "Fulah" ],
-        "iso639_3": "ful",
-        "name": "Fulah",
-        "region": "GH",
-        "regionname": "Ghana",
-        "script": "Adlm",
-        "sldr": false,
-        "tag": "ff-Adlm-GH",
-        "windows": "ff-Adlm-GH"
-    },
-    {
-        "full": "ff-Adlm-GM",
-        "iana": [ "Fulah" ],
-        "iso639_3": "ful",
-        "name": "Fulah",
-        "region": "GM",
-        "regionname": "Gambia",
-        "script": "Adlm",
-        "sldr": false,
-        "tag": "ff-Adlm-GM",
-        "windows": "ff-Adlm-GM"
-    },
-    {
-        "full": "ff-Adlm-GW",
-        "iana": [ "Fulah" ],
-        "iso639_3": "ful",
-        "name": "Fulah",
-        "region": "GW",
-        "regionname": "Guinea-Bissau",
-        "script": "Adlm",
-        "sldr": false,
-        "tag": "ff-Adlm-GW",
-        "windows": "ff-Adlm-GW"
-    },
-    {
-        "full": "ff-Adlm-LR",
-        "iana": [ "Fulah" ],
-        "iso639_3": "ful",
-        "name": "Fulah",
-        "region": "LR",
-        "regionname": "Liberia",
-        "script": "Adlm",
-        "sldr": false,
-        "tag": "ff-Adlm-LR",
-        "windows": "ff-Adlm-LR"
-    },
-    {
-        "full": "ff-Adlm-MR",
-        "iana": [ "Fulah" ],
-        "iso639_3": "ful",
-        "name": "Fulah",
-        "region": "MR",
-        "regionname": "Mauritania",
-        "script": "Adlm",
-        "sldr": false,
-        "tag": "ff-Adlm-MR",
-        "windows": "ff-Adlm-MR"
-    },
-    {
-        "full": "ff-Adlm-NE",
-        "iana": [ "Fulah" ],
-        "iso639_3": "ful",
-        "name": "Fulah",
-        "region": "NE",
-        "regionname": "Niger",
-        "script": "Adlm",
-        "sldr": false,
-        "tag": "ff-Adlm-NE",
-        "windows": "ff-Adlm-NE"
-    },
-    {
-        "full": "ff-Adlm-NG",
-        "iana": [ "Fulah" ],
-        "iso639_3": "ful",
-        "name": "Fulah",
-        "region": "NG",
-        "regionname": "Nigeria",
-        "script": "Adlm",
-        "sldr": false,
-        "tag": "ff-Adlm-NG",
-        "windows": "ff-Adlm-NG"
-    },
-    {
-        "full": "ff-Adlm-SL",
-        "iana": [ "Fulah" ],
-        "iso639_3": "ful",
-        "name": "Fulah",
-        "region": "SL",
-        "regionname": "Sierra Leone",
-        "script": "Adlm",
-        "sldr": false,
-        "tag": "ff-Adlm-SL",
-        "windows": "ff-Adlm-SL"
-    },
-    {
-        "full": "ff-Adlm-SN",
-        "iana": [ "Fulah" ],
-        "iso639_3": "ful",
-        "name": "Fulah",
-        "region": "SN",
-        "regionname": "Senegal",
-        "script": "Adlm",
-        "sldr": false,
-        "tag": "ff-Adlm-SN",
-        "windows": "ff-Adlm-SN"
     },
     {
         "full": "ff-Arab-SN",
@@ -55180,6 +55075,20 @@
         "windows": "kkj-Latn"
     },
     {
+        "full": "kkj-Latn-TD",
+        "iana": [ "Kako" ],
+        "iso639_3": "kkj",
+        "localname": "kakɔ",
+        "localnames": [ "Kakɔ" ],
+        "name": "Kako",
+        "region": "TD",
+        "regionname": "Chad",
+        "script": "Latn",
+        "sldr": true,
+        "tag": "kkj-TD",
+        "windows": "kkj-Latn-TD"
+    },
+    {
         "full": "kkk-Latn-SB",
         "iana": [ "Kokota" ],
         "iso639_3": "kkk",
@@ -67219,6 +67128,20 @@
         "windows": "lwo-Latn"
     },
     {
+        "full": "lwo-Latn-ZA",
+        "iana": [ "Luwo" ],
+        "iso639_3": "lwo",
+        "localname": "dhe Luuo",
+        "localnames": [ "dhe Luuo" ],
+        "name": "Luwo",
+        "region": "ZA",
+        "regionname": "South Africa",
+        "script": "Latn",
+        "sldr": true,
+        "tag": "lwo-ZA",
+        "windows": "lwo-Latn-ZA"
+    },
+    {
         "full": "lws-Zxxx-MW",
         "iana": [ "Malawian Sign Language" ],
         "iso639_3": "lws",
@@ -68581,6 +68504,20 @@
         "tag": "mcu",
         "tags": [ "mcu-CM", "mcu-Latn" ],
         "windows": "mcu-Latn"
+    },
+    {
+        "full": "mcu-Laoo-CM",
+        "iana": [ "Cameroon Mambila" ],
+        "iso639_3": "mcu",
+        "localname": "Jù Bà",
+        "name": "Mambila, Cameroon",
+        "names": [ "Bang", "Bea", "Ble", "Cameroon Mambila", "Juli", "Jù Bà", "Lagubi", "Mambere", "Mambilla", "Nor", "Tagbo", "Tongbo" ],
+        "region": "CM",
+        "regionname": "Cameroon",
+        "script": "Laoo",
+        "sldr": true,
+        "tag": "mcu-Laoo-CM",
+        "windows": "mcu-Laoo-CM"
     },
     {
         "full": "mcv-Latn-PG",
@@ -110628,6 +110565,19 @@
         "windows": "thv-Latn"
     },
     {
+        "full": "thv-Latn-DZ-x-ahaggar",
+        "iana": [ "Tahaggart Tamahaq" ],
+        "localnames": [ "Tamahaq" ],
+        "name": "Tamahaq, Tahaggart",
+        "names": [ "Tahaggart Tamahaq", "Tamachek", "Tamachek’", "Tamahaq", "Tamashekin", "Tamasheq", "Tomachek", "Touareg", "Tourage", "Tuareg" ],
+        "region": "DZ",
+        "regionname": "Algeria",
+        "script": "Latn",
+        "sldr": true,
+        "tag": "thv-Latn-DZ-x-ahaggar",
+        "windows": "thv-Latn-DZ-x-ahaggar"
+    },
+    {
         "full": "thv-Tfng-DZ",
         "iana": [ "Tahaggart Tamahaq" ],
         "iso639_3": "thv",
@@ -111277,12 +111227,25 @@
         "nophonvars": true,
         "region": "AF",
         "regionname": "Afghanistan",
-        "regions": [ "DE", "IQ", "IR", "KG", "KZ", "PK", "RU", "SY", "TJ", "TM", "TR", "US", "UZ" ],
+        "regions": [ "DE", "IQ", "KG", "KZ", "PK", "RU", "SY", "TJ", "TM", "TR", "US", "UZ" ],
         "script": "Arab",
         "sldr": true,
         "tag": "tk-Arab",
         "tags": [ "tk-AF" ],
         "windows": "tk-Arab"
+    },
+    {
+        "full": "tk-Arab-IR",
+        "iana": [ "Turkmen" ],
+        "iso639_3": "tuk",
+        "localname": "Türkmen dili",
+        "name": "Turkmen",
+        "region": "IR",
+        "regionname": "Islamic Republic of Iran",
+        "script": "Arab",
+        "sldr": true,
+        "tag": "tk-Arab-IR",
+        "windows": "tk-Arab-IR"
     },
     {
         "full": "tk-Cyrl-TM",
@@ -111808,6 +111771,20 @@
         "tag": "tlj",
         "tags": [ "tlj-Latn", "tlj-UG" ],
         "windows": "tlj-Latn"
+    },
+    {
+        "full": "tlj-Latn-GH",
+        "iana": [ "Talinga-Bwisi" ],
+        "iso639_3": "tlj",
+        "localname": "Bwisi",
+        "localnames": [ "Lubwisi" ],
+        "name": "Talinga-Bwisi",
+        "region": "GH",
+        "regionname": "Ghana",
+        "script": "Latn",
+        "sldr": true,
+        "tag": "tlj-GH",
+        "windows": "tlj-Latn-GH"
     },
     {
         "full": "tlk-Latn-ID",
