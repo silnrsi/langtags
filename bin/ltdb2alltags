@@ -249,6 +249,7 @@ for k, v in allmacros.items():
     except KeyError:
         macro = lt.LangTag(v)
         lts.add(macro)
+        macro.iso639 = base.iso639
         if base.script is None:
             macro.hidescript = True
         if base.region is None:
@@ -285,10 +286,16 @@ res = []
 alllangreg = set()
 allscripts = {}
 allregions = {}
+langregions = {}
 
 for t in set(lts.values()):
     x = lt.LangTag(lang=t.lang, region=t.region, variants=t.variants, extensions=t.extensions)
     allregions.setdefault(str(x), set()).add(t)
+    y = t.copy()
+    y.hidescript = True
+    y.hideboth = True
+    y.hideregion = True
+    langregions.setdefault(str(y), set()).add(t.region)
     x = lt.LangTag(lang=t.lang, script=t.script, variants=t.variants, extensions=t.extensions)
     allscripts.setdefault(str(x), set()).add(t)
 
@@ -319,14 +326,17 @@ def make_record(t):
         if len(allscripts.get(str(x), [])) < 2:
             r.insert(1, str(x))
     n = {'tag': r[0], 'full': r[-1], 'script': t.script, 'region': t.region}
-    n['windows'] = r[0]
-    if suppress.get(t.lang, '') == t.script:
+    wintag = t.copy()
+    if suppress.get(str(t), '') == t.script:
         n['suppress'] = True
-    elif t.hidescript:
-        temp = lt.LangTag(str(r[0]))
-        temp.hidescript = False
-        temp.script = t.script
-        n['windows'] = str(temp)
+        wintag.hidescript = True
+    else:
+        wintag.hidescript = False
+    if len(langregions.get(t.lang, [])) > 1:
+#        if t.lang.startswith("a"):
+#            print(f"{t.lang}: {langregions[t.lang]}")
+        wintag.hideregion = False
+    n['windows'] = str(wintag)
     if t.region in regionnames:
         n['regionname'] = regionnames[t.region]
     tags = set(r[1:-1])
