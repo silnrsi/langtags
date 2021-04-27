@@ -8,7 +8,11 @@ The preferred download location for the text data file is <https://ldml.api.sil.
 
 ## langtags.json
 
-Current API version 1.2.0 Unless otherwise stated all fields were add at v1.0.0. The preferred download location for the json data file is <https://ldml.api.sil.org/langtags.json>
+Current API version 1.2.1
+
+Unless otherwise stated all fields were add at v1.0.0. 
+
+The preferred download location for the json data file is <https://ldml.api.sil.org/langtags.json>
 
 Langtags.json consists of an array of objects. Each object corresponds to an equivalence set. The fields in that object are defined as:
 
