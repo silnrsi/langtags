@@ -9,7 +9,7 @@
     },
     {
         "api": "1.2.1",
-        "date": "2021-03-31",
+        "date": "2021-04-28",
         "tag": "_version"
     },
     {
@@ -5970,13 +5970,24 @@
         "name": "Arabic",
         "region": "EG",
         "regionname": "Egypt",
-        "regions": [ "BH", "KW", "OM", "QA", "SD", "TD", "YE" ],
         "script": "Arab",
         "sldr": false,
         "suppress": true,
         "tag": "ar",
         "tags": [ "ar-Arab", "ar-EG" ],
         "windows": "ar-EG"
+    },
+    {
+        "full": "ar-Arab-001",
+        "iana": [ "Arabic" ],
+        "iso639_3": "ara",
+        "name": "Arabic",
+        "region": "001",
+        "regionname": "World",
+        "script": "Arab",
+        "sldr": false,
+        "tag": "ar-001",
+        "windows": "ar-Arab-001"
     },
     {
         "full": "ar-Arab-AE",
@@ -5989,6 +6000,18 @@
         "sldr": false,
         "tag": "ar-AE",
         "windows": "ar-Arab-AE"
+    },
+    {
+        "full": "ar-Arab-BH",
+        "iana": [ "Arabic" ],
+        "iso639_3": "ara",
+        "name": "Arabic",
+        "region": "BH",
+        "regionname": "Bahrain",
+        "script": "Arab",
+        "sldr": false,
+        "tag": "ar-BH",
+        "windows": "ar-Arab-BH"
     },
     {
         "full": "ar-Brai-SA",
@@ -6103,6 +6126,18 @@
         "windows": "ar-Arab-KM"
     },
     {
+        "full": "ar-Arab-KW",
+        "iana": [ "Arabic" ],
+        "iso639_3": "ara",
+        "name": "Arabic",
+        "region": "KW",
+        "regionname": "Kuwait",
+        "script": "Arab",
+        "sldr": false,
+        "tag": "ar-KW",
+        "windows": "ar-Arab-KW"
+    },
+    {
         "full": "ar-Arab-LB",
         "iana": [ "Arabic" ],
         "iso639_3": "ara",
@@ -6151,6 +6186,18 @@
         "windows": "ar-Arab-MR"
     },
     {
+        "full": "ar-Arab-OM",
+        "iana": [ "Arabic" ],
+        "iso639_3": "ara",
+        "name": "Arabic",
+        "region": "OM",
+        "regionname": "Oman",
+        "script": "Arab",
+        "sldr": false,
+        "tag": "ar-OM",
+        "windows": "ar-Arab-OM"
+    },
+    {
         "full": "ar-Arab-PS",
         "iana": [ "Arabic" ],
         "iso639_3": "ara",
@@ -6163,6 +6210,18 @@
         "windows": "ar-Arab-PS"
     },
     {
+        "full": "ar-Arab-QA",
+        "iana": [ "Arabic" ],
+        "iso639_3": "ara",
+        "name": "Arabic",
+        "region": "QA",
+        "regionname": "Qatar",
+        "script": "Arab",
+        "sldr": false,
+        "tag": "ar-QA",
+        "windows": "ar-Arab-QA"
+    },
+    {
         "full": "ar-Arab-SA",
         "iana": [ "Arabic" ],
         "latnnames": [ "al-ʻArabīyah" ],
@@ -6171,12 +6230,24 @@
         "names": [ "Al-’Arabiyya", "Arabic", "Literary Arabic" ],
         "region": "SA",
         "regionname": "Saudi Arabia",
-        "regions": [ "BH", "DK", "IR", "KW", "ML", "NE", "OM", "PH", "QA", "SD", "TD", "TR", "TZ", "YE" ],
+        "regions": [ "DK", "IR", "ML", "NE", "PH", "TR", "TZ" ],
         "script": "Arab",
         "sldr": false,
         "tag": "ar-SA",
         "tags": [ "ar-arb", "ar-arb-SA", "arb", "arb-Arab", "arb-Arab-SA", "arb-SA" ],
         "windows": "ar-Arab-SA"
+    },
+    {
+        "full": "ar-Arab-SD",
+        "iana": [ "Arabic" ],
+        "iso639_3": "ara",
+        "name": "Arabic",
+        "region": "SD",
+        "regionname": "Sudan",
+        "script": "Arab",
+        "sldr": false,
+        "tag": "ar-SD",
+        "windows": "ar-Arab-SD"
     },
     {
         "full": "ar-Arab-SO",
@@ -6230,6 +6301,18 @@
         "windows": "ar-Syrc-SA"
     },
     {
+        "full": "ar-Arab-TD",
+        "iana": [ "Arabic" ],
+        "iso639_3": "ara",
+        "name": "Arabic",
+        "region": "TD",
+        "regionname": "Chad",
+        "script": "Arab",
+        "sldr": false,
+        "tag": "ar-TD",
+        "windows": "ar-Arab-TD"
+    },
+    {
         "full": "ar-Arab-TN",
         "iana": [ "Arabic" ],
         "iso639_3": "ara",
@@ -6240,6 +6323,18 @@
         "sldr": false,
         "tag": "ar-TN",
         "windows": "ar-Arab-TN"
+    },
+    {
+        "full": "ar-Arab-YE",
+        "iana": [ "Arabic" ],
+        "iso639_3": "ara",
+        "name": "Arabic",
+        "region": "YE",
+        "regionname": "Yemen",
+        "script": "Arab",
+        "sldr": false,
+        "tag": "ar-YE",
+        "windows": "ar-Arab-YE"
     },
     {
         "full": "arc-Armi-IR",
@@ -7865,7 +7960,20 @@
         "sldr": false,
         "tag": "avu",
         "tags": [ "avu-Latn", "avu-SS" ],
-        "windows": "avu-Latn"
+        "windows": "avu-Latn-SS"
+    },
+    {
+        "full": "avu-Latn-SD",
+        "iana": [ "Avokaya" ],
+        "iso639_3": "avu",
+        "localnames": [ "Ãvõkáyã" ],
+        "name": "Avokaya",
+        "region": "SD",
+        "regionname": "Sudan",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "avu-SD",
+        "windows": "avu-Latn-SD"
     },
     {
         "full": "avv-Latn-BR",
@@ -8605,6 +8713,18 @@
         "windows": "az-Brai-IR"
     },
     {
+        "full": "az-Cyrl-AZ",
+        "iana": [ "Azerbaijani" ],
+        "iso639_3": "aze",
+        "name": "Azerbaijani",
+        "region": "AZ",
+        "regionname": "Azerbaijan",
+        "script": "Cyrl",
+        "sldr": false,
+        "tag": "az-Cyrl-AZ",
+        "windows": "az-Cyrl-AZ"
+    },
+    {
         "full": "az-Arab-IQ",
         "iana": [ "Azerbaijani" ],
         "iso639_3": "aze",
@@ -8639,7 +8759,7 @@
         "names": [ "Azerbaijan", "Azerbaijani", "Azerbaydzhani", "Azeri", "Azeri Turk", "Azərbaycan dili", "Azərbaycanca", "Turkler" ],
         "region": "RU",
         "regionname": "Russian Federation",
-        "regions": [ "AM", "AZ", "DE", "EE", "GE", "IR", "KG", "KZ", "TM", "UA", "UZ" ],
+        "regions": [ "AM", "DE", "EE", "GE", "IR", "KG", "KZ", "TM", "UA", "UZ" ],
         "script": "Cyrl",
         "sldr": false,
         "tag": "az-RU",
@@ -19393,13 +19513,27 @@
         "names": [ "Algherese Catalan", "Catalan-Valencian-Balear", "Catalonian", "Català", "Catalán", "Valencian" ],
         "region": "ES",
         "regionname": "Spain",
-        "regions": [ "AD", "AR", "BE", "BR", "CH", "CL", "CO", "CU", "DE", "DO", "IT", "MX", "US", "UY", "VE" ],
+        "regions": [ "AR", "BE", "BR", "CH", "CL", "CO", "CU", "DE", "DO", "MX", "US", "UY", "VE" ],
         "script": "Latn",
         "sldr": false,
         "suppress": true,
         "tag": "ca",
         "tags": [ "ca-ES", "ca-Latn" ],
         "windows": "ca-ES"
+    },
+    {
+        "full": "ca-Latn-AD",
+        "iana": [ "Catalan", "Valencian" ],
+        "iso639_3": "cat",
+        "localnames": [ "Català" ],
+        "name": "Catalan",
+        "names": [ "Valencian" ],
+        "region": "AD",
+        "regionname": "Andorra",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "ca-AD",
+        "windows": "ca-Latn-AD"
     },
     {
         "full": "ca-Latn-FR",
@@ -19414,6 +19548,20 @@
         "sldr": false,
         "tag": "ca-FR",
         "windows": "ca-Latn-FR"
+    },
+    {
+        "full": "ca-Latn-IT",
+        "iana": [ "Catalan", "Valencian" ],
+        "iso639_3": "cat",
+        "localnames": [ "Català" ],
+        "name": "Catalan",
+        "names": [ "Valencian" ],
+        "region": "IT",
+        "regionname": "Italy",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "ca-IT",
+        "windows": "ca-Latn-IT"
     },
     {
         "full": "ca-Latn-ES-valencia",
@@ -20227,7 +20375,7 @@
         "names": [ "Chakama", "Changma Kodha", "Changma Vaj", "Daingnet", "Sakma", "Sangma", "Takam", "Tsakma" ],
         "region": "BD",
         "regionname": "Bangladesh",
-        "regions": [ "IN", "MM" ],
+        "regions": [ "MM" ],
         "script": "Cakm",
         "sldr": false,
         "tag": "ccp",
@@ -20247,8 +20395,20 @@
         "script": "Beng",
         "sldr": false,
         "tag": "ccp-Beng",
-        "tags": [ "ccp-IN" ],
         "windows": "ccp-Beng-IN"
+    },
+    {
+        "full": "ccp-Cakm-IN",
+        "iana": [ "Chakma" ],
+        "iso639_3": "ccp",
+        "name": "Chakma",
+        "names": [ "Chakama", "Changma Vaj", "Takam", "Tsakma" ],
+        "region": "IN",
+        "regionname": "India",
+        "script": "Cakm",
+        "sldr": false,
+        "tag": "ccp-IN",
+        "windows": "ccp-Cakm-IN"
     },
     {
         "full": "ccp-Latn-BD",
@@ -22497,7 +22657,6 @@
         "script": "Khmr",
         "sldr": false,
         "tag": "cmo-Khmr",
-        "tags": [ "cmo-KH" ],
         "windows": "cmo-Khmr-KH"
     },
     {
@@ -22509,12 +22668,24 @@
         "names": [ "Bu Nong", "Budang", "Budong", "Bunong", "Central Bu Nong", "Central Mnong", "Phanong", "Phnong", "Pnong" ],
         "region": "VN",
         "regionname": "Viet Nam",
-        "regions": [ "KH" ],
         "script": "Latn",
         "sldr": false,
         "tag": "cmo-Latn",
         "tags": [ "cmo-VN" ],
         "windows": "cmo-Latn-VN"
+    },
+    {
+        "full": "cmo-Latn-KH",
+        "iana": [ "Central Mnong" ],
+        "localnames": [ "Bunong" ],
+        "name": "Mnong, Central",
+        "names": [ "Budong", "Bunong", "Central Mnong", "Phanong", "Phnong", "Pnong" ],
+        "region": "KH",
+        "regionname": "Cambodia",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "cmo-Latn-KH",
+        "windows": "cmo-Latn-KH"
     },
     {
         "full": "cmr-Latn-MM",
@@ -25229,14 +25400,14 @@
         "names": [ "Dansk", "Dänisch", "Rigsdansk" ],
         "region": "DK",
         "regionname": "Denmark",
-        "regions": [ "AE", "CA", "DE", "FO", "GL", "LU", "NO", "SE", "US" ],
+        "regions": [ "AE", "CA", "DE", "FO", "LU", "NO", "SE", "US" ],
         "script": "Latn",
         "sldr": false,
         "suppress": true,
         "tag": "da",
         "tags": [ "da-DK", "da-Latn" ],
         "variants": [ "bornholm" ],
-        "windows": "da"
+        "windows": "da-DK"
     },
     {
         "full": "da-Brai-DK",
@@ -25251,7 +25422,20 @@
         "script": "Brai",
         "sldr": false,
         "tag": "da-Brai",
-        "windows": "da-Brai"
+        "windows": "da-Brai-DK"
+    },
+    {
+        "full": "da-Latn-GL",
+        "iana": [ "Danish" ],
+        "iso639_3": "dan",
+        "localnames": [ "Dansk" ],
+        "name": "Danish",
+        "region": "GL",
+        "regionname": "Greenland",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "da-GL",
+        "windows": "da-Latn-GL"
     },
     {
         "full": "daa-Latn-TD",
@@ -26153,7 +26337,7 @@
         "names": [ "Alemán", "Alemão", "Allemand", "Deutsch", "Duits", "Däitsch", "German", "Germană", "Nemec", "Nemetskiy", "Niemiec", "Njemački", "Német", "Němec", "Tedesco", "Tudestg", "Tysk" ],
         "region": "DE",
         "regionname": "Germany",
-        "regions": [ "AE", "AR", "AU", "BA", "BE", "BG", "BO", "BR", "CA", "CL", "CY", "CZ", "DK", "EC", "EE", "ES", "FI", "FR", "GR", "HR", "HU", "IE", "IL", "KG", "KZ", "LT", "LV", "MC", "MT", "MZ", "NA", "NL", "NZ", "PH", "PL", "PR", "PT", "PY", "RO", "RU", "SE", "SI", "SK", "TJ", "UA", "US", "UY", "ZA" ],
+        "regions": [ "AE", "AR", "AU", "BA", "BG", "BO", "BR", "CA", "CL", "CY", "CZ", "DK", "EC", "EE", "ES", "FI", "FR", "GR", "HR", "HU", "IE", "IL", "KG", "KZ", "LT", "LV", "MC", "MT", "MZ", "NA", "NL", "NZ", "PH", "PL", "PR", "PT", "PY", "RO", "RU", "SE", "SI", "SK", "TJ", "UA", "US", "UY", "ZA" ],
         "script": "Latn",
         "sldr": false,
         "suppress": true,
@@ -26174,6 +26358,19 @@
         "sldr": false,
         "tag": "de-AT",
         "windows": "de-Latn-AT"
+    },
+    {
+        "full": "de-Latn-BE",
+        "iana": [ "German" ],
+        "iso639_3": "deu",
+        "localnames": [ "Deutsch" ],
+        "name": "German",
+        "region": "BE",
+        "regionname": "Belgium",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "de-BE",
+        "windows": "de-Latn-BE"
     },
     {
         "full": "de-Brai-DE",
@@ -30519,6 +30716,19 @@
         "windows": "eka-Latn"
     },
     {
+        "full": "eka-Latn-NG-x-ekajuk",
+        "iana": [ "Ekajuk" ],
+        "iso639_3": "eka",
+        "name": "Ekajuk",
+        "names": [ "Akajo", "Akajuk" ],
+        "region": "NG",
+        "regionname": "Nigeria",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "eka-Latn-NG-x-ekajuk",
+        "windows": "eka-Latn-NG-x-ekajuk"
+    },
+    {
         "full": "ekc-Latn-AU",
         "iana": [ "Eastern Karnic" ],
         "iso639_3": "ekc",
@@ -30688,7 +30898,7 @@
         "names": [ "Greacă", "Grec", "Greco", "Görög", "Hretsʹkyy", "Modern Greek (1453-)", "Neo-Hellenic", "Romaic", "Urum", "Yunan" ],
         "region": "GR",
         "regionname": "Greece",
-        "regions": [ "AE", "AL", "AM", "AU", "BA", "BE", "BG", "CA", "CD", "CY", "CZ", "DE", "DJ", "EG", "GB", "HU", "IL", "IT", "JO", "KG", "KZ", "LU", "LY", "MK", "MW", "MZ", "RO", "RU", "SE", "SL", "TR", "UA", "US" ],
+        "regions": [ "AE", "AL", "AM", "AU", "BA", "BE", "BG", "CA", "CD", "CZ", "DE", "DJ", "EG", "GB", "HU", "IL", "IT", "JO", "KG", "KZ", "LU", "LY", "MK", "MW", "MZ", "RO", "RU", "SE", "SL", "TR", "UA", "US" ],
         "script": "Grek",
         "sldr": false,
         "suppress": true,
@@ -30711,6 +30921,20 @@
         "sldr": false,
         "tag": "el-Brai",
         "windows": "el-Brai-GR"
+    },
+    {
+        "full": "el-Grek-CY",
+        "iana": [ "Modern Greek (1453-)" ],
+        "iso639_3": "ell",
+        "latnnames": [ "Néa Ellīniká", "Elliniká" ],
+        "localnames": [ "Νέα Ελληνικά", "ελληνικά" ],
+        "name": "Modern Greek (1453-)",
+        "region": "CY",
+        "regionname": "Cyprus",
+        "script": "Grek",
+        "sldr": false,
+        "tag": "el-CY",
+        "windows": "el-Grek-CY"
     },
     {
         "full": "el-Cyrl-UA",
@@ -31088,7 +31312,7 @@
         "names": [ "Anglais", "Angleščina", "Anglisy", "Angličtina", "Anglų", "Angol", "Angļu", "Engels", "Engelsk", "Engelska", "Engelski", "Englaisa", "Englanti", "Englesch", "Engleză", "Englisch", "Ingilizce", "Inglese", "Ingliż", "Inglés", "Inglês", "Język angielski", "Kiingereza", "anglais" ],
         "region": "US",
         "regionname": "United States",
-        "regions": [ "AD", "AF", "AR", "AS", "AW", "BD", "BG", "BH", "BL", "BN", "BQ", "BT", "CL", "CN", "CO", "CW", "CY", "CZ", "DO", "EC", "EE", "ES", "ET", "FM", "FR", "GQ", "GR", "GW", "HN", "HR", "HU", "ID", "IS", "IT", "JP", "KH", "KR", "LB", "LK", "LT", "LU", "LV", "LY", "MC", "ME", "MF", "MV", "MX", "NO", "NP", "OM", "PL", "PM", "PR", "PT", "RO", "RU", "SA", "SK", "SO", "SR", "ST", "TC", "TH", "TN", "UM", "VE", "VG", "VI" ],
+        "regions": [ "AD", "AF", "AR", "AW", "BD", "BG", "BH", "BL", "BN", "BQ", "BT", "CL", "CN", "CO", "CW", "CZ", "DO", "EC", "EE", "ES", "ET", "FR", "GQ", "GR", "GW", "HN", "HR", "HU", "ID", "IS", "IT", "JP", "KH", "KR", "LB", "LK", "LT", "LU", "LV", "LY", "MC", "ME", "MF", "MV", "MX", "NO", "NP", "OM", "PL", "PM", "PT", "RO", "RU", "SA", "SK", "SO", "SR", "ST", "TH", "TN", "VE" ],
         "script": "Latn",
         "sldr": false,
         "suppress": true,
@@ -31161,6 +31385,19 @@
         "sldr": false,
         "tag": "en-AI",
         "windows": "en-Latn-AI"
+    },
+    {
+        "full": "en-Latn-AS",
+        "iana": [ "English" ],
+        "iso639_3": "eng",
+        "localnames": [ "English" ],
+        "name": "English",
+        "region": "AS",
+        "regionname": "American Samoa",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "en-AS",
+        "windows": "en-Latn-AS"
     },
     {
         "full": "en-Latn-AT",
@@ -31375,6 +31612,19 @@
         "windows": "en-Latn-CX"
     },
     {
+        "full": "en-Latn-CY",
+        "iana": [ "English" ],
+        "iso639_3": "eng",
+        "localnames": [ "English" ],
+        "name": "English",
+        "region": "CY",
+        "regionname": "Cyprus",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "en-CY",
+        "windows": "en-Latn-CY"
+    },
+    {
         "full": "en-Latn-DE",
         "iana": [ "English" ],
         "iso639_3": "eng",
@@ -31505,6 +31755,19 @@
         "sldr": false,
         "tag": "en-FK",
         "windows": "en-Latn-FK"
+    },
+    {
+        "full": "en-Latn-FM",
+        "iana": [ "English" ],
+        "iso639_3": "eng",
+        "localnames": [ "English" ],
+        "name": "English",
+        "region": "FM",
+        "regionname": "Federated States of Micronesia",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "en-FM",
+        "windows": "en-Latn-FM"
     },
     {
         "full": "en-Latn-GB",
@@ -32066,6 +32329,19 @@
         "windows": "en-Latn-PN"
     },
     {
+        "full": "en-Latn-PR",
+        "iana": [ "English" ],
+        "iso639_3": "eng",
+        "localnames": [ "English" ],
+        "name": "English",
+        "region": "PR",
+        "regionname": "Puerto Rico",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "en-PR",
+        "windows": "en-Latn-PR"
+    },
+    {
         "full": "en-Latn-PW",
         "iana": [ "English" ],
         "iso639_3": "eng",
@@ -32251,6 +32527,19 @@
         "windows": "en-Shaw-GB"
     },
     {
+        "full": "en-Latn-TC",
+        "iana": [ "English" ],
+        "iso639_3": "eng",
+        "localnames": [ "English" ],
+        "name": "English",
+        "region": "TC",
+        "regionname": "Turks and Caicos Islands",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "en-TC",
+        "windows": "en-Latn-TC"
+    },
+    {
         "full": "en-Latn-TK",
         "iana": [ "English" ],
         "iso639_3": "eng",
@@ -32329,6 +32618,19 @@
         "windows": "en-Latn-UG"
     },
     {
+        "full": "en-Latn-UM",
+        "iana": [ "English" ],
+        "iso639_3": "eng",
+        "localnames": [ "English" ],
+        "name": "English",
+        "region": "UM",
+        "regionname": "United States Minor Outlying Islands",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "en-UM",
+        "windows": "en-Latn-UM"
+    },
+    {
         "full": "en-Latn-VC",
         "iana": [ "English" ],
         "iso639_3": "eng",
@@ -32340,6 +32642,32 @@
         "sldr": false,
         "tag": "en-VC",
         "windows": "en-Latn-VC"
+    },
+    {
+        "full": "en-Latn-VG",
+        "iana": [ "English" ],
+        "iso639_3": "eng",
+        "localnames": [ "English" ],
+        "name": "English",
+        "region": "VG",
+        "regionname": "British Virgin Islands",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "en-VG",
+        "windows": "en-Latn-VG"
+    },
+    {
+        "full": "en-Latn-VI",
+        "iana": [ "English" ],
+        "iso639_3": "eng",
+        "localnames": [ "English" ],
+        "name": "English",
+        "region": "VI",
+        "regionname": "U.S. Virgin Islands",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "en-VI",
+        "windows": "en-Latn-VI"
     },
     {
         "full": "en-Latn-VU",
@@ -32847,7 +33175,7 @@
         "names": [ "Castellano", "Castilian", "Castillan", "Espagnol", "Español" ],
         "region": "ES",
         "regionname": "Spain",
-        "regions": [ "AD", "AT", "AU", "AW", "BE", "BG", "BQ", "CA", "CH", "CI", "CW", "CZ", "DE", "DK", "DZ", "EA", "EH", "FI", "FR", "GB", "GI", "GU", "GW", "HR", "IC", "IE", "IL", "IS", "IT", "JM", "KY", "LU", "MA", "MT", "NL", "NO", "NZ", "PL", "PT", "RO", "RU", "SE", "SR", "SX", "TR", "TT", "VG", "VI" ],
+        "regions": [ "AD", "AT", "AU", "AW", "BE", "BG", "BQ", "CA", "CH", "CI", "CW", "CZ", "DE", "DK", "DZ", "EH", "FI", "FR", "GB", "GI", "GU", "GW", "HR", "IE", "IL", "IS", "IT", "JM", "KY", "LU", "MA", "MT", "NL", "NO", "NZ", "PL", "PT", "RO", "RU", "SE", "SR", "SX", "TR", "TT", "VG", "VI" ],
         "script": "Latn",
         "sldr": false,
         "suppress": true,
@@ -33027,6 +33355,20 @@
         "windows": "es-Dupl-ES"
     },
     {
+        "full": "es-Latn-EA",
+        "iana": [ "Spanish", "Castilian" ],
+        "iso639_3": "spa",
+        "localnames": [ "Castellano", "Español" ],
+        "name": "Spanish",
+        "names": [ "Castilian" ],
+        "region": "EA",
+        "regionname": "Ceuta, Melilla",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "es-EA",
+        "windows": "es-Latn-EA"
+    },
+    {
         "full": "es-Latn-EC",
         "iana": [ "Spanish", "Castilian" ],
         "iso639_3": "spa",
@@ -33081,6 +33423,20 @@
         "sldr": false,
         "tag": "es-HN",
         "windows": "es-Latn-HN"
+    },
+    {
+        "full": "es-Latn-IC",
+        "iana": [ "Spanish", "Castilian" ],
+        "iso639_3": "spa",
+        "localnames": [ "Castellano", "Español" ],
+        "name": "Spanish",
+        "names": [ "Castilian" ],
+        "region": "IC",
+        "regionname": "Canary Islands",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "es-IC",
+        "windows": "es-Latn-IC"
     },
     {
         "full": "es-Latn-MX",
@@ -34202,7 +34558,7 @@
         "names": [ "Fulah", "Fulani", "Fulbe Jeeri", "Fulfulde Pulaar", "Fulfulde-Pulaar", "Haalpulaar", "Peuhl", "Peul", "Peulh", "Pulaar Fulfulde", "Pël" ],
         "region": "SN",
         "regionname": "Senegal",
-        "regions": [ "BF", "BJ", "CM", "GM", "GN", "GW", "ML", "NE", "NG", "TD" ],
+        "regions": [ "BJ", "ML", "TD" ],
         "script": "Latn",
         "sldr": false,
         "tag": "ff",
@@ -34221,7 +34577,6 @@
         "script": "Adlm",
         "sldr": false,
         "tag": "ff-Adlm",
-        "tags": [ "ff-GN" ],
         "windows": "ff-Adlm-GN"
     },
     {
@@ -34241,6 +34596,90 @@
         "windows": "ff-Arab-SN"
     },
     {
+        "full": "ff-Latn-BF",
+        "iana": [ "Fulah" ],
+        "iso639_3": "ful",
+        "name": "Fulah",
+        "region": "BF",
+        "regionname": "Burkina Faso",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "ff-BF",
+        "windows": "ff-Latn-BF"
+    },
+    {
+        "full": "ff-Latn-CM",
+        "iana": [ "Fulah" ],
+        "iso639_3": "ful",
+        "name": "Fulah",
+        "region": "CM",
+        "regionname": "Cameroon",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "ff-CM",
+        "windows": "ff-Latn-CM"
+    },
+    {
+        "full": "ff-Latn-GH",
+        "iana": [ "Fulah" ],
+        "iso639_3": "ful",
+        "name": "Fulah",
+        "region": "GH",
+        "regionname": "Ghana",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "ff-GH",
+        "windows": "ff-Latn-GH"
+    },
+    {
+        "full": "ff-Latn-GM",
+        "iana": [ "Fulah" ],
+        "iso639_3": "ful",
+        "name": "Fulah",
+        "region": "GM",
+        "regionname": "Gambia",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "ff-GM",
+        "windows": "ff-Latn-GM"
+    },
+    {
+        "full": "ff-Latn-GN",
+        "iana": [ "Fulah" ],
+        "iso639_3": "ful",
+        "name": "Fulah",
+        "region": "GN",
+        "regionname": "Guinea",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "ff-GN",
+        "windows": "ff-Latn-GN"
+    },
+    {
+        "full": "ff-Latn-GW",
+        "iana": [ "Fulah" ],
+        "iso639_3": "ful",
+        "name": "Fulah",
+        "region": "GW",
+        "regionname": "Guinea-Bissau",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "ff-GW",
+        "windows": "ff-Latn-GW"
+    },
+    {
+        "full": "ff-Latn-LR",
+        "iana": [ "Fulah" ],
+        "iso639_3": "ful",
+        "name": "Fulah",
+        "region": "LR",
+        "regionname": "Liberia",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "ff-LR",
+        "windows": "ff-Latn-LR"
+    },
+    {
         "full": "ff-Latn-MR",
         "iana": [ "Fulah" ],
         "iso639_3": "ful",
@@ -34251,6 +34690,42 @@
         "sldr": false,
         "tag": "ff-MR",
         "windows": "ff-Latn-MR"
+    },
+    {
+        "full": "ff-Latn-NE",
+        "iana": [ "Fulah" ],
+        "iso639_3": "ful",
+        "name": "Fulah",
+        "region": "NE",
+        "regionname": "Niger",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "ff-NE",
+        "windows": "ff-Latn-NE"
+    },
+    {
+        "full": "ff-Latn-NG",
+        "iana": [ "Fulah" ],
+        "iso639_3": "ful",
+        "name": "Fulah",
+        "region": "NG",
+        "regionname": "Nigeria",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "ff-NG",
+        "windows": "ff-Latn-NG"
+    },
+    {
+        "full": "ff-Latn-SL",
+        "iana": [ "Fulah" ],
+        "iso639_3": "ful",
+        "name": "Fulah",
+        "region": "SL",
+        "regionname": "Sierra Leone",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "ff-SL",
+        "windows": "ff-Latn-SL"
     },
     {
         "full": "ffi-Latn-PG",
@@ -34883,7 +35358,7 @@
         "names": [ "Barang", "Francese", "Francès", "Francés", "Frans", "Frantsay", "Französisch", "Français", "Inglês", "français" ],
         "region": "FR",
         "regionname": "France",
-        "regions": [ "AD", "AE", "AL", "AM", "AT", "AU", "BA", "BF", "BG", "BJ", "BL", "CF", "CG", "CV", "CZ", "DE", "DK", "DM", "DO", "EE", "EG", "ES", "FI", "GA", "GE", "GG", "GH", "GP", "GQ", "GR", "GW", "HR", "HU", "IE", "IL", "IN", "IT", "JE", "KH", "LA", "LB", "LC", "LT", "LV", "LY", "MC", "MD", "ME", "MF", "MK", "MQ", "MT", "MX", "MZ", "NC", "NE", "NL", "NO", "NZ", "PF", "PL", "PM", "PR", "PT", "QA", "RO", "RS", "RU", "SE", "SI", "SK", "ST", "TG", "UA", "US", "VI", "WF", "YT" ],
+        "regions": [ "AD", "AE", "AL", "AM", "AT", "AU", "BA", "BG", "CV", "CZ", "DE", "DK", "DM", "DO", "EE", "EG", "ES", "FI", "GE", "GG", "GH", "GR", "GW", "HR", "HU", "IE", "IL", "IN", "IT", "JE", "KH", "LA", "LB", "LC", "LT", "LV", "LY", "MD", "ME", "MK", "MT", "MX", "MZ", "NL", "NO", "NZ", "PL", "PR", "PT", "QA", "RO", "RS", "RU", "SE", "SI", "SK", "ST", "UA", "US", "VI" ],
         "script": "Latn",
         "sldr": false,
         "suppress": true,
@@ -34906,6 +35381,19 @@
         "windows": "fr-Latn-BE"
     },
     {
+        "full": "fr-Latn-BF",
+        "iana": [ "French" ],
+        "iso639_3": "fra",
+        "localnames": [ "français" ],
+        "name": "French",
+        "region": "BF",
+        "regionname": "Burkina Faso",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "fr-BF",
+        "windows": "fr-Latn-BF"
+    },
+    {
         "full": "fr-Latn-BI",
         "iana": [ "French" ],
         "iso639_3": "fra",
@@ -34917,6 +35405,32 @@
         "sldr": false,
         "tag": "fr-BI",
         "windows": "fr-Latn-BI"
+    },
+    {
+        "full": "fr-Latn-BJ",
+        "iana": [ "French" ],
+        "iso639_3": "fra",
+        "localnames": [ "français" ],
+        "name": "French",
+        "region": "BJ",
+        "regionname": "Benin",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "fr-BJ",
+        "windows": "fr-Latn-BJ"
+    },
+    {
+        "full": "fr-Latn-BL",
+        "iana": [ "French" ],
+        "iso639_3": "fra",
+        "localnames": [ "français" ],
+        "name": "French",
+        "region": "BL",
+        "regionname": "Saint Barthélemy",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "fr-BL",
+        "windows": "fr-Latn-BL"
     },
     {
         "full": "fr-Brai-FR",
@@ -34958,6 +35472,32 @@
         "sldr": false,
         "tag": "fr-CD",
         "windows": "fr-Latn-CD"
+    },
+    {
+        "full": "fr-Latn-CF",
+        "iana": [ "French" ],
+        "iso639_3": "fra",
+        "localnames": [ "français" ],
+        "name": "French",
+        "region": "CF",
+        "regionname": "Central African Republic",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "fr-CF",
+        "windows": "fr-Latn-CF"
+    },
+    {
+        "full": "fr-Latn-CG",
+        "iana": [ "French" ],
+        "iso639_3": "fra",
+        "localnames": [ "français" ],
+        "name": "French",
+        "region": "CG",
+        "regionname": "Congo",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "fr-CG",
+        "windows": "fr-Latn-CG"
     },
     {
         "full": "fr-Latn-CH",
@@ -35040,6 +35580,19 @@
         "windows": "fr-Dupl-FR"
     },
     {
+        "full": "fr-Latn-GA",
+        "iana": [ "French" ],
+        "iso639_3": "fra",
+        "localnames": [ "français" ],
+        "name": "French",
+        "region": "GA",
+        "regionname": "Gabon",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "fr-GA",
+        "windows": "fr-Latn-GA"
+    },
+    {
         "full": "fr-Latn-GF",
         "iana": [ "French" ],
         "iso639_3": "fra",
@@ -35064,6 +35617,32 @@
         "sldr": false,
         "tag": "fr-GN",
         "windows": "fr-Latn-GN"
+    },
+    {
+        "full": "fr-Latn-GP",
+        "iana": [ "French" ],
+        "iso639_3": "fra",
+        "localnames": [ "français" ],
+        "name": "French",
+        "region": "GP",
+        "regionname": "Guadeloupe",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "fr-GP",
+        "windows": "fr-Latn-GP"
+    },
+    {
+        "full": "fr-Latn-GQ",
+        "iana": [ "French" ],
+        "iso639_3": "fra",
+        "localnames": [ "français" ],
+        "name": "French",
+        "region": "GQ",
+        "regionname": "Equatorial Guinea",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "fr-GQ",
+        "windows": "fr-Latn-GQ"
     },
     {
         "full": "fr-Latn-HT",
@@ -35118,6 +35697,32 @@
         "windows": "fr-Latn-MA"
     },
     {
+        "full": "fr-Latn-MC",
+        "iana": [ "French" ],
+        "iso639_3": "fra",
+        "localnames": [ "français" ],
+        "name": "French",
+        "region": "MC",
+        "regionname": "Monaco",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "fr-MC",
+        "windows": "fr-Latn-MC"
+    },
+    {
+        "full": "fr-Latn-MF",
+        "iana": [ "French" ],
+        "iso639_3": "fra",
+        "localnames": [ "français" ],
+        "name": "French",
+        "region": "MF",
+        "regionname": "Saint Martin (French part)",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "fr-MF",
+        "windows": "fr-Latn-MF"
+    },
+    {
         "full": "fr-Latn-MG",
         "iana": [ "French" ],
         "iso639_3": "fra",
@@ -35144,6 +35749,19 @@
         "windows": "fr-Latn-ML"
     },
     {
+        "full": "fr-Latn-MQ",
+        "iana": [ "French" ],
+        "iso639_3": "fra",
+        "localnames": [ "français" ],
+        "name": "French",
+        "region": "MQ",
+        "regionname": "Martinique",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "fr-MQ",
+        "windows": "fr-Latn-MQ"
+    },
+    {
         "full": "fr-Latn-MR",
         "iana": [ "French" ],
         "iso639_3": "fra",
@@ -35168,6 +35786,58 @@
         "sldr": false,
         "tag": "fr-MU",
         "windows": "fr-Latn-MU"
+    },
+    {
+        "full": "fr-Latn-NC",
+        "iana": [ "French" ],
+        "iso639_3": "fra",
+        "localnames": [ "français" ],
+        "name": "French",
+        "region": "NC",
+        "regionname": "New Caledonia",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "fr-NC",
+        "windows": "fr-Latn-NC"
+    },
+    {
+        "full": "fr-Latn-NE",
+        "iana": [ "French" ],
+        "iso639_3": "fra",
+        "localnames": [ "français" ],
+        "name": "French",
+        "region": "NE",
+        "regionname": "Niger",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "fr-NE",
+        "windows": "fr-Latn-NE"
+    },
+    {
+        "full": "fr-Latn-PF",
+        "iana": [ "French" ],
+        "iso639_3": "fra",
+        "localnames": [ "français" ],
+        "name": "French",
+        "region": "PF",
+        "regionname": "French Polynesia",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "fr-PF",
+        "windows": "fr-Latn-PF"
+    },
+    {
+        "full": "fr-Latn-PM",
+        "iana": [ "French" ],
+        "iso639_3": "fra",
+        "localnames": [ "français" ],
+        "name": "French",
+        "region": "PM",
+        "regionname": "Saint Pierre and Miquelon",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "fr-PM",
+        "windows": "fr-Latn-PM"
     },
     {
         "full": "fr-Latn-RE",
@@ -35248,6 +35918,19 @@
         "windows": "fr-Latn-TD"
     },
     {
+        "full": "fr-Latn-TG",
+        "iana": [ "French" ],
+        "iso639_3": "fra",
+        "localnames": [ "français" ],
+        "name": "French",
+        "region": "TG",
+        "regionname": "Togo",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "fr-TG",
+        "windows": "fr-Latn-TG"
+    },
+    {
         "full": "fr-Latn-TN",
         "iana": [ "French" ],
         "iso639_3": "fra",
@@ -35272,6 +35955,32 @@
         "sldr": false,
         "tag": "fr-VU",
         "windows": "fr-Latn-VU"
+    },
+    {
+        "full": "fr-Latn-WF",
+        "iana": [ "French" ],
+        "iso639_3": "fra",
+        "localnames": [ "français" ],
+        "name": "French",
+        "region": "WF",
+        "regionname": "Wallis and Futuna",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "fr-WF",
+        "windows": "fr-Latn-WF"
+    },
+    {
+        "full": "fr-Latn-YT",
+        "iana": [ "French" ],
+        "iso639_3": "fra",
+        "localnames": [ "français" ],
+        "name": "French",
+        "region": "YT",
+        "regionname": "Mayotte",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "fr-YT",
+        "windows": "fr-Latn-YT"
     },
     {
         "full": "frc-Latn-US",
@@ -40165,13 +40874,41 @@
         "names": [ "Alemanic", "Alemannic", "Alemannisch", "Alsacien", "Alsatian", "Elsaessisch", "Schweizerdeutsch", "Schwiizerdütsch", "Schwiizertüütsch", "Schwizerdütsch", "Schwizertitsch", "Schwizertitsch Mundart", "Schwytzertuetsch", "Schwyzerdütsch", "Schwyzerdütschi Sprooch", "Swiss German", "Upper Alemannic" ],
         "region": "CH",
         "regionname": "Switzerland",
-        "regions": [ "AT", "DE", "FR", "LI" ],
+        "regions": [ "AT", "DE" ],
         "script": "Latn",
         "sldr": false,
         "suppress": true,
         "tag": "gsw",
         "tags": [ "gsw-CH", "gsw-Latn" ],
-        "windows": "gsw"
+        "windows": "gsw-CH"
+    },
+    {
+        "full": "gsw-Latn-FR",
+        "iana": [ "Swiss German", "Alemannic", "Alsatian" ],
+        "iso639_3": "gsw",
+        "localnames": [ "Schwiizerdütsch" ],
+        "name": "Alsatian",
+        "names": [ "Alemannic", "Alemannisch", "Alsacien", "Elsaessisch", "Swiss German" ],
+        "region": "FR",
+        "regionname": "France",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "gsw-FR",
+        "windows": "gsw-Latn-FR"
+    },
+    {
+        "full": "gsw-Latn-LI",
+        "iana": [ "Swiss German", "Alemannic", "Alsatian" ],
+        "iso639_3": "gsw",
+        "localnames": [ "Schwiizerdütsch" ],
+        "name": "Alemannic",
+        "names": [ "Alemannisch", "Alsatian", "Schwytzertuetsch", "Schwyzerdütsch", "Swiss German" ],
+        "region": "LI",
+        "regionname": "Liechtenstein",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "gsw-LI",
+        "windows": "gsw-Latn-LI"
     },
     {
         "full": "gta-Latn-BR",
@@ -41325,7 +42062,7 @@
         "names": [ "Abakwariga", "Habe", "Haoussa", "Hausawa", "Haussa", "Hawsa", "Kado", "Mgbakpa" ],
         "region": "NG",
         "regionname": "Nigeria",
-        "regions": [ "BF", "BJ", "CF", "CG", "CI", "CM", "DE", "ER", "NE", "SD", "TD", "TG" ],
+        "regions": [ "BF", "BJ", "CF", "CG", "CI", "CM", "DE", "ER", "SD", "TD", "TG" ],
         "script": "Latn",
         "sldr": false,
         "tag": "ha",
@@ -41387,6 +42124,19 @@
         "sldr": false,
         "tag": "ha-GH",
         "windows": "ha-Latn-GH"
+    },
+    {
+        "full": "ha-Latn-NE",
+        "iana": [ "Hausa" ],
+        "iso639_3": "hau",
+        "localnames": [ "Hausa" ],
+        "name": "Hausa",
+        "region": "NE",
+        "regionname": "Niger",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "ha-Latn-NE",
+        "windows": "ha-Latn-NE"
     },
     {
         "full": "ha-Arab-NE",
@@ -44752,7 +45502,19 @@
         "sldr": false,
         "tag": "ia",
         "tags": [ "ia-FR", "ia-Latn" ],
-        "windows": "ia-Latn"
+        "windows": "ia-Latn-FR"
+    },
+    {
+        "full": "ia-Latn-001",
+        "iana": [ "Interlingua (International Auxiliary Language" ],
+        "iso639_3": "ina",
+        "name": "Interlingua (International Auxiliary Language",
+        "region": "001",
+        "regionname": "World",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "ia-001",
+        "windows": "ia-Latn-001"
     },
     {
         "full": "iai-Latn-NC",
@@ -46929,7 +47691,7 @@
         "names": [ "Italiano", "Italiană", "Italien", "Italienisch", "Italijanski", "Talijanski", "Talyaaniga" ],
         "region": "IT",
         "regionname": "Italy",
-        "regions": [ "AE", "AL", "AR", "AT", "AU", "BA", "BE", "BR", "CA", "CL", "CZ", "DE", "ER", "FI", "FR", "GB", "HR", "IL", "LI", "LU", "LY", "MC", "MT", "NZ", "PL", "PR", "RO", "RU", "SI", "SM", "SO", "TN", "US", "UY", "VA" ],
+        "regions": [ "AE", "AL", "AR", "AT", "AU", "BA", "BE", "BR", "CA", "CL", "CZ", "DE", "ER", "FI", "FR", "GB", "HR", "IL", "LI", "LU", "LY", "MC", "MT", "NZ", "PL", "PR", "RO", "RU", "SI", "SO", "TN", "US", "UY" ],
         "script": "Latn",
         "sldr": false,
         "suppress": true,
@@ -46964,6 +47726,32 @@
         "sldr": false,
         "tag": "it-CH",
         "windows": "it-Latn-CH"
+    },
+    {
+        "full": "it-Latn-SM",
+        "iana": [ "Italian" ],
+        "iso639_3": "ita",
+        "localnames": [ "Italiano" ],
+        "name": "Italian",
+        "region": "SM",
+        "regionname": "San Marino",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "it-SM",
+        "windows": "it-Latn-SM"
+    },
+    {
+        "full": "it-Latn-VA",
+        "iana": [ "Italian" ],
+        "iso639_3": "ita",
+        "localnames": [ "Italiano" ],
+        "name": "Italian",
+        "region": "VA",
+        "regionname": "Holy See (Vatican City State)",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "it-VA",
+        "windows": "it-Latn-VA"
     },
     {
         "full": "itb-Latn-PH",
@@ -54084,7 +54872,20 @@
         "sldr": false,
         "tag": "kkj",
         "tags": [ "kkj-CM", "kkj-Latn" ],
-        "windows": "kkj-Latn"
+        "windows": "kkj-Latn-CM"
+    },
+    {
+        "full": "kkj-Latn-TD",
+        "iana": [ "Kako" ],
+        "iso639_3": "kkj",
+        "localnames": [ "Kakɔ" ],
+        "name": "Kako",
+        "region": "TD",
+        "regionname": "Chad",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "kkj-TD",
+        "windows": "kkj-Latn-TD"
     },
     {
         "full": "kkk-Latn-SB",
@@ -57996,7 +58797,6 @@
     {
         "full": "ku-Arab-TR",
         "iana": [ "Kurdish" ],
-        "iso639_3": "kmr",
         "name": "Kurdish, Northern",
         "names": [ "Badinani", "Badînî", "Bahdini", "Behdînî", "Eastern Kurmanji", "Ezdiki", "Kermancî", "Khorasani", "Khorasani Kurmanji", "Kirmanciya Jori", "Kirmancî", "Kordi", "Kordi Kormanji", "Kurdi", "Kurdish", "Kurdish Kurmanji", "Kurdiya jorîn", "Kurdmancî", "Kurdî", "Kurdî-Kurmancî", "Kurmancî", "Kurmanji", "Kurmanji Kurdish", "Kurmanjî", "Red Kurmanji" ],
         "region": "TR",
@@ -64064,7 +64864,7 @@
         "names": [ "Ngala" ],
         "region": "CD",
         "regionname": "The Democratic Republic of the Congo",
-        "regions": [ "BE", "CF", "CG" ],
+        "regions": [ "BE" ],
         "script": "Latn",
         "sldr": false,
         "suppress": true,
@@ -64084,6 +64884,32 @@
         "sldr": false,
         "tag": "ln-AO",
         "windows": "ln-Latn-AO"
+    },
+    {
+        "full": "ln-Latn-CF",
+        "iana": [ "Lingala" ],
+        "iso639_3": "lin",
+        "localnames": [ "Lingala" ],
+        "name": "Lingala",
+        "region": "CF",
+        "regionname": "Central African Republic",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "ln-CF",
+        "windows": "ln-Latn-CF"
+    },
+    {
+        "full": "ln-Latn-CG",
+        "iana": [ "Lingala" ],
+        "iso639_3": "lin",
+        "localnames": [ "Lingala" ],
+        "name": "Lingala",
+        "region": "CG",
+        "regionname": "Congo",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "ln-CG",
+        "windows": "ln-Latn-CG"
     },
     {
         "full": "lna-Latn-CF",
@@ -66013,7 +66839,20 @@
         "sldr": false,
         "tag": "lwo",
         "tags": [ "lwo-Latn", "lwo-SS" ],
-        "windows": "lwo-Latn"
+        "windows": "lwo-Latn-SS"
+    },
+    {
+        "full": "lwo-Latn-ZA",
+        "iana": [ "Luwo" ],
+        "iso639_3": "lwo",
+        "localnames": [ "dhe Luuo" ],
+        "name": "Luwo",
+        "region": "ZA",
+        "regionname": "South Africa",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "lwo-ZA",
+        "windows": "lwo-Latn-ZA"
     },
     {
         "full": "lws-Zxxx-MW",
@@ -66504,7 +67343,6 @@
     {
         "full": "man-Latn-GN",
         "iana": [ "Mandingo", "Manding" ],
-        "iso639_3": "emk",
         "localnames": [ "Maninka" ],
         "name": "Maninkakan, Eastern",
         "names": [ "Eastern Malinke", "Kankan Maninka", "Madingo", "Malinké", "Mande", "Manding", "Mandingo", "Maninga", "Maninka", "Maninka-Mori", "Maninkakan", "Maninkaxan", "Southern Malinke", "Southern Maninka" ],
@@ -67350,6 +68188,19 @@
         "tag": "mcu",
         "tags": [ "mcu-CM", "mcu-Latn" ],
         "windows": "mcu-Latn"
+    },
+    {
+        "full": "mcu-Laoo-CM",
+        "iana": [ "Cameroon Mambila" ],
+        "iso639_3": "mcu",
+        "name": "Mambila, Cameroon",
+        "names": [ "Bang", "Bea", "Ble", "Cameroon Mambila", "Juli", "Jù Bà", "Lagubi", "Mambere", "Mambilla", "Nor", "Tagbo", "Tongbo" ],
+        "region": "CM",
+        "regionname": "Cameroon",
+        "script": "Laoo",
+        "sldr": false,
+        "tag": "mcu-Laoo-CM",
+        "windows": "mcu-Laoo-CM"
     },
     {
         "full": "mcv-Latn-PG",
@@ -68360,17 +69211,31 @@
         "windows": "mff-Latn"
     },
     {
-        "full": "mfg-Arab-GN",
+        "full": "mfg-Latn-GN",
         "iana": [ "Mogofin" ],
         "iso639_3": "mfg",
         "name": "Mogofin",
         "names": [ "Mikifore", "Mixifore" ],
         "region": "GN",
         "regionname": "Guinea",
-        "script": "Arab",
+        "script": "Latn",
         "sldr": false,
         "tag": "mfg",
-        "tags": [ "mfg-Arab", "mfg-GN" ],
+        "tags": [ "mfg-GN", "mfg-Latn" ],
+        "windows": "mfg-Latn"
+    },
+    {
+        "full": "mfg-Arab-GN",
+        "iana": [ "Mogofin" ],
+        "iso639_3": "mfg",
+        "name": "Mogofin",
+        "names": [ "Mikifore", "Mixifore" ],
+        "nophonvars": true,
+        "region": "GN",
+        "regionname": "Guinea",
+        "script": "Arab",
+        "sldr": false,
+        "tag": "mfg-Arab",
         "windows": "mfg-Arab"
     },
     {
@@ -77134,13 +77999,24 @@
         "name": "Norwegian Bokmål",
         "region": "NO",
         "regionname": "Norway",
-        "regions": [ "SJ" ],
         "script": "Latn",
         "sldr": false,
         "suppress": true,
         "tag": "nb",
         "tags": [ "nb-Latn", "nb-NO" ],
-        "windows": "nb"
+        "windows": "nb-NO"
+    },
+    {
+        "full": "nb-Latn-SJ",
+        "iana": [ "Norwegian Bokmål" ],
+        "iso639_3": "nob",
+        "name": "Norwegian Bokmål",
+        "region": "SJ",
+        "regionname": "Svalbard and Jan Mayen",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "nb-SJ",
+        "windows": "nb-Latn-SJ"
     },
     {
         "full": "nba-Latn-AO",
@@ -82896,7 +83772,23 @@
         "sldr": false,
         "tag": "nst",
         "tags": [ "nst-Latn", "nst-MM" ],
-        "windows": "nst-Latn"
+        "windows": "nst-Latn-MM"
+    },
+    {
+        "full": "nst-Tnsa-IN",
+        "iana": [ "Tase Naga" ],
+        "iso639_3": "nst",
+        "name": "Naga, Tangsa",
+        "names": [ "Cham Chang", "Haimi", "Hawa", "Heimi", "Kuwa", "Naga, Tangshang", "Pangmi", "Pangwa", "Rangpan", "Rangpang", "Tangsa", "Tangshang", "Tangwa", "Tase", "Tase Naga", "Tasey" ],
+        "nophonvars": true,
+        "region": "IN",
+        "regionname": "India",
+        "regions": [ "MM" ],
+        "script": "Tnsa",
+        "sldr": false,
+        "tag": "nst-Tnsa",
+        "tags": [ "nst-IN" ],
+        "windows": "nst-Tnsa-IN"
     },
     {
         "full": "nst-Latn-MM-x-moshang",
@@ -82912,7 +83804,7 @@
         "sldr": false,
         "tag": "nst-x-moshang",
         "tags": [ "nst-Latn-x-moshang", "nst-MM-x-moshang" ],
-        "windows": "nst-Latn-x-moshang"
+        "windows": "nst-Latn-MM-x-moshang"
     },
     {
         "full": "nsu-Latn-MX",
@@ -83495,12 +84387,25 @@
         "names": [ "Naadh", "Naath" ],
         "region": "SS",
         "regionname": "South Sudan",
-        "regions": [ "ET", "SD" ],
+        "regions": [ "ET" ],
         "script": "Latn",
         "sldr": false,
         "tag": "nus",
         "tags": [ "nus-Latn", "nus-SS" ],
-        "windows": "nus-Latn"
+        "windows": "nus-Latn-SS"
+    },
+    {
+        "full": "nus-Latn-SD",
+        "iana": [ "Nuer" ],
+        "iso639_3": "nus",
+        "localnames": [ "Naath" ],
+        "name": "Nuer",
+        "region": "SD",
+        "regionname": "Sudan",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "nus-SD",
+        "windows": "nus-Latn-SD"
     },
     {
         "full": "nut-Latn-VN",
@@ -84254,9 +85159,10 @@
         "iso639_3": "nyn",
         "localnames": [ "Runyankore" ],
         "name": "Nyankore",
-        "names": [ "Nkole", "Nyankole", "Olunyankole", "Runyankole", "Runyankore", "Ulunyankole", "Ulunyankore" ],
+        "names": [ "Hima", "Nkole", "Nyankole", "Olunyankole", "Runyankole", "Runyankore", "Ulunyankole", "Ulunyankore" ],
         "region": "UG",
         "regionname": "Uganda",
+        "regions": [ "RW" ],
         "script": "Latn",
         "sldr": false,
         "tag": "nyn",
@@ -88097,15 +89003,30 @@
         "iana": [ "Ruching Palaung" ],
         "iso639_3": "pce",
         "name": "Palaung, Ruching",
-        "names": [ "Bulai", "Bulei", "Da’ang", "Di-Ang", "Dlang", "Ngwe Palaung", "Palaung, Pale", "Palay", "Pale", "Pale Palaung", "Pulei", "Ruching Palaung", "Silver Palaung", "Southern Palaung", "Southern Ta’ang", "Ta-Ang" ],
+        "names": [ "Bulai", "Bulei", "Da’ang", "Di-Ang", "Dlang", "Ngwe Palaung", "Palay", "Pale", "Pale Palaung", "Pulei", "Ruching Palaung", "Silver Palaung", "Southern Ta’ang" ],
         "region": "MM",
         "regionname": "Myanmar",
-        "regions": [ "CN", "TH" ],
+        "regions": [ "CN" ],
         "script": "Mymr",
         "sldr": false,
         "tag": "pce",
         "tags": [ "pce-MM", "pce-Mymr" ],
-        "windows": "pce-Mymr"
+        "windows": "pce-Mymr-MM"
+    },
+    {
+        "full": "pce-Thai-TH",
+        "iana": [ "Ruching Palaung" ],
+        "iso639_3": "pce",
+        "name": "Palaung, Pale",
+        "names": [ "Di-Ang", "Ngwe Palaung", "Palay", "Pale", "Ruching Palaung", "Silver Palaung", "Southern Palaung", "Ta-Ang" ],
+        "nophonvars": true,
+        "region": "TH",
+        "regionname": "Thailand",
+        "script": "Thai",
+        "sldr": false,
+        "tag": "pce-Thai",
+        "tags": [ "pce-TH" ],
+        "windows": "pce-Thai-TH"
     },
     {
         "full": "pcf-Zyyy-IN",
@@ -91939,7 +92860,7 @@
         "names": [ "Portugais", "Portugués", "Portugués del Uruguay", "Português", "Portunhol", "Portuñol", "Purtagaalee", "Uruguayan Portuguese" ],
         "region": "BR",
         "regionname": "Brazil",
-        "regions": [ "AD", "AG", "AU", "BE", "BM", "CA", "CG", "CH", "CW", "DE", "ES", "FI", "FR", "GG", "GQ", "GY", "IN", "JE", "JM", "MW", "PY", "RU", "SN", "SR", "US", "UY", "VC", "VE", "ZA", "ZM" ],
+        "regions": [ "AD", "AG", "AU", "BE", "BM", "CA", "CG", "CW", "DE", "ES", "FI", "FR", "GG", "GY", "IN", "JE", "JM", "MW", "PY", "RU", "SN", "SR", "US", "UY", "VC", "VE", "ZA", "ZM" ],
         "script": "Latn",
         "sldr": false,
         "suppress": true,
@@ -91977,6 +92898,19 @@
         "windows": "pt-Brai-PT"
     },
     {
+        "full": "pt-Latn-CH",
+        "iana": [ "Portuguese" ],
+        "iso639_3": "por",
+        "localnames": [ "Português" ],
+        "name": "Portuguese",
+        "region": "CH",
+        "regionname": "Switzerland",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "pt-CH",
+        "windows": "pt-Latn-CH"
+    },
+    {
         "full": "pt-Latn-CV",
         "iana": [ "Portuguese" ],
         "iso639_3": "por",
@@ -91988,6 +92922,19 @@
         "sldr": false,
         "tag": "pt-CV",
         "windows": "pt-Latn-CV"
+    },
+    {
+        "full": "pt-Latn-GQ",
+        "iana": [ "Portuguese" ],
+        "iso639_3": "por",
+        "localnames": [ "Português" ],
+        "name": "Portuguese",
+        "region": "GQ",
+        "regionname": "Equatorial Guinea",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "pt-GQ",
+        "windows": "pt-Latn-GQ"
     },
     {
         "full": "pt-Latn-GW",
@@ -103081,13 +104028,27 @@
         "names": [ "Montenegrin", "Serbo-Croatian" ],
         "region": "RS",
         "regionname": "Serbia",
-        "regions": [ "AE", "AL", "AT", "AU", "BA", "BG", "CA", "CH", "CZ", "DK", "GR", "HR", "HU", "LU", "LY", "ME", "MK", "RO", "RU", "SI", "TR", "UA", "US", "XK", "ZM" ],
+        "regions": [ "AE", "AL", "AT", "AU", "BG", "CA", "CH", "CZ", "DK", "GR", "HR", "HU", "LU", "LY", "MK", "RO", "RU", "SI", "TR", "UA", "US", "ZM" ],
         "script": "Cyrl",
         "sldr": false,
         "tag": "sr",
         "tags": [ "sr-Cyrl", "sr-RS" ],
         "variants": [ "ekavsk", "ijekavsk" ],
         "windows": "sr-Cyrl-RS"
+    },
+    {
+        "full": "sr-Cyrl-BA",
+        "iana": [ "Serbian" ],
+        "iso639_3": "srp",
+        "latnnames": [ "Srpski" ],
+        "localnames": [ "српски" ],
+        "name": "Serbian",
+        "region": "BA",
+        "regionname": "Bosnia and Herzegovina",
+        "script": "Cyrl",
+        "sldr": false,
+        "tag": "sr-BA",
+        "windows": "sr-Cyrl-BA"
     },
     {
         "full": "sr-Brai-RS",
@@ -103105,6 +104066,20 @@
         "windows": "sr-Brai-RS"
     },
     {
+        "full": "sr-Cyrl-ME",
+        "iana": [ "Serbian" ],
+        "iso639_3": "srp",
+        "latnnames": [ "Srpski" ],
+        "localnames": [ "српски" ],
+        "name": "Serbian",
+        "region": "ME",
+        "regionname": "Montenegro",
+        "script": "Cyrl",
+        "sldr": false,
+        "tag": "sr-Cyrl-ME",
+        "windows": "sr-Cyrl-ME"
+    },
+    {
         "full": "sr-Latn-RS",
         "iana": [ "Serbian" ],
         "iso639_3": "srp",
@@ -103112,12 +104087,35 @@
         "names": [ "Montenegrin", "Serbo-Croatian" ],
         "region": "RS",
         "regionname": "Serbia",
-        "regions": [ "AE", "AL", "AT", "AU", "BA", "BG", "CA", "CH", "CZ", "DK", "GR", "HR", "HU", "LU", "LY", "MK", "SI", "UA", "US", "XK", "ZM" ],
+        "regions": [ "AE", "AL", "AT", "AU", "BG", "CA", "CH", "CZ", "DK", "GR", "HR", "HU", "LU", "LY", "MK", "SI", "UA", "US", "ZM" ],
         "script": "Latn",
         "sldr": false,
         "tag": "sr-Latn",
         "variants": [ "ekavsk", "ijekavsk" ],
         "windows": "sr-Latn-RS"
+    },
+    {
+        "full": "sr-Latn-BA",
+        "iana": [ "Serbian" ],
+        "iso639_3": "srp",
+        "name": "Serbian",
+        "region": "BA",
+        "regionname": "Bosnia and Herzegovina",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "sr-Latn-BA",
+        "windows": "sr-Latn-BA"
+    },
+    {
+        "full": "sr-Latn-XK",
+        "iana": [ "Serbian" ],
+        "iso639_3": "srp",
+        "name": "Serbian",
+        "region": "XK",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "sr-Latn-XK",
+        "windows": "sr-Latn-XK"
     },
     {
         "full": "sr-Latn-ME",
@@ -103170,6 +104168,19 @@
         "sldr": false,
         "tag": "sr-TR",
         "windows": "sr-Latn-TR"
+    },
+    {
+        "full": "sr-Cyrl-XK",
+        "iana": [ "Serbian" ],
+        "iso639_3": "srp",
+        "latnnames": [ "Srpski" ],
+        "localnames": [ "српски" ],
+        "name": "Serbian",
+        "region": "XK",
+        "script": "Cyrl",
+        "sldr": false,
+        "tag": "sr-XK",
+        "windows": "sr-Cyrl-XK"
     },
     {
         "full": "sra-Latn-PG",
@@ -103571,13 +104582,26 @@
         "names": [ "Isiswazi", "Ngwane", "Phuthi", "Sephuthi", "Siswati", "Siswazi", "Swazi", "Síphùthì", "Tekela", "Tekeza", "Thithiza", "Yeyeza", "siSwati" ],
         "region": "ZA",
         "regionname": "South Africa",
-        "regions": [ "LS", "MZ", "SZ" ],
+        "regions": [ "LS", "MZ" ],
         "script": "Latn",
         "sldr": false,
         "suppress": true,
         "tag": "ss",
         "tags": [ "ss-Latn", "ss-ZA" ],
-        "windows": "ss"
+        "windows": "ss-ZA"
+    },
+    {
+        "full": "ss-Latn-SZ",
+        "iana": [ "Swati" ],
+        "iso639_3": "ssw",
+        "localnames": [ "siSwati" ],
+        "name": "Swati",
+        "region": "SZ",
+        "regionname": "Swaziland",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "ss-SZ",
+        "windows": "ss-Latn-SZ"
     },
     {
         "full": "ssb-Latn-PH",
@@ -104774,13 +105798,26 @@
         "names": [ "Ruotsi", "Svenska", "Sverige" ],
         "region": "SE",
         "regionname": "Sweden",
-        "regions": [ "AX", "CA", "DE", "DK", "EE", "LU", "NO", "RU", "US" ],
+        "regions": [ "CA", "DE", "DK", "EE", "LU", "NO", "RU", "US" ],
         "script": "Latn",
         "sldr": false,
         "suppress": true,
         "tag": "sv",
         "tags": [ "sv-Latn", "sv-SE" ],
         "windows": "sv-SE"
+    },
+    {
+        "full": "sv-Latn-AX",
+        "iana": [ "Swedish" ],
+        "iso639_3": "swe",
+        "localnames": [ "Svenska" ],
+        "name": "Swedish",
+        "region": "AX",
+        "regionname": "Åland Islands",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "sv-AX",
+        "windows": "sv-Latn-AX"
     },
     {
         "full": "sv-Brai-SE",
@@ -107496,7 +108533,6 @@
         "sldr": false,
         "tag": "tdj",
         "tags": [ "tdj-ID", "tdj-Latn" ],
-        "unwritten": true,
         "windows": "tdj-Latn"
     },
     {
@@ -108889,6 +109925,19 @@
         "windows": "thv-Latn"
     },
     {
+        "full": "thv-Latn-DZ-x-ahaggar",
+        "iana": [ "Tahaggart Tamahaq" ],
+        "localnames": [ "Tamahaq" ],
+        "name": "Tamahaq, Tahaggart",
+        "names": [ "Tahaggart Tamahaq", "Tamachek", "Tamachek’", "Tamahaq", "Tamashekin", "Tamasheq", "Tomachek", "Touareg", "Tourage", "Tuareg" ],
+        "region": "DZ",
+        "regionname": "Algeria",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "thv-Latn-DZ-x-ahaggar",
+        "windows": "thv-Latn-DZ-x-ahaggar"
+    },
+    {
         "full": "thv-Tfng-DZ",
         "iana": [ "Tahaggart Tamahaq" ],
         "iso639_3": "thv",
@@ -109528,12 +110577,24 @@
         "nophonvars": true,
         "region": "AF",
         "regionname": "Afghanistan",
-        "regions": [ "DE", "IQ", "IR", "KG", "KZ", "PK", "RU", "SY", "TJ", "TM", "TR", "US", "UZ" ],
+        "regions": [ "DE", "IQ", "KG", "KZ", "PK", "RU", "SY", "TJ", "TM", "TR", "US", "UZ" ],
         "script": "Arab",
         "sldr": false,
         "tag": "tk-Arab",
         "tags": [ "tk-AF" ],
         "windows": "tk-Arab-AF"
+    },
+    {
+        "full": "tk-Arab-IR",
+        "iana": [ "Turkmen" ],
+        "iso639_3": "tuk",
+        "name": "Turkmen",
+        "region": "IR",
+        "regionname": "Islamic Republic of Iran",
+        "script": "Arab",
+        "sldr": false,
+        "tag": "tk-Arab-IR",
+        "windows": "tk-Arab-IR"
     },
     {
         "full": "tk-Cyrl-TM",
@@ -110053,7 +111114,20 @@
         "sldr": false,
         "tag": "tlj",
         "tags": [ "tlj-Latn", "tlj-UG" ],
-        "windows": "tlj-Latn"
+        "windows": "tlj-Latn-UG"
+    },
+    {
+        "full": "tlj-Latn-GH",
+        "iana": [ "Talinga-Bwisi" ],
+        "iso639_3": "tlj",
+        "localnames": [ "Lubwisi" ],
+        "name": "Talinga-Bwisi",
+        "region": "GH",
+        "regionname": "Ghana",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "tlj-GH",
+        "windows": "tlj-Latn-GH"
     },
     {
         "full": "tlk-Latn-ID",
@@ -131173,7 +132247,7 @@
         "names": [ "Beifang Fangyan", "Beijinghua", "Chinese", "Hoton", "Hui", "Hui-Zu", "Hytad", "Khoton", "Mandarin", "Northern Chinese", "Qotong", "Standard Chinese", "Tayok", "Xui", "Zhongguohua" ],
         "region": "CN",
         "regionname": "China",
-        "regions": [ "AU", "BN", "BS", "CA", "GB", "GQ", "HK", "ID", "KH", "KR", "LA", "LY", "MM", "MN", "MO", "MU", "MY", "NL", "NZ", "PH", "RU", "SG", "TH", "TW", "US", "VN", "WS", "ZA", "ZM" ],
+        "regions": [ "AU", "BN", "BS", "CA", "GB", "GQ", "ID", "KH", "KR", "LA", "LY", "MM", "MN", "MU", "MY", "NL", "NZ", "PH", "RU", "TH", "TW", "US", "VN", "WS", "ZA", "ZM" ],
         "script": "Hans",
         "sldr": false,
         "tag": "zh-CN",
@@ -131228,6 +132302,30 @@
         "sldr": false,
         "tag": "zh-Hanb",
         "windows": "zh-Hanb-TW"
+    },
+    {
+        "full": "zh-Hans-HK",
+        "iana": [ "Chinese" ],
+        "iso639_3": "zho",
+        "name": "Chinese",
+        "region": "HK",
+        "regionname": "Hong Kong",
+        "script": "Hans",
+        "sldr": false,
+        "tag": "zh-Hans-HK",
+        "windows": "zh-Hans-HK"
+    },
+    {
+        "full": "zh-Hans-MO",
+        "iana": [ "Chinese" ],
+        "iso639_3": "zho",
+        "name": "Chinese",
+        "region": "MO",
+        "regionname": "Macao",
+        "script": "Hans",
+        "sldr": false,
+        "tag": "zh-Hans-MO",
+        "windows": "zh-Hans-MO"
     },
     {
         "full": "zh-Hant-ID",
@@ -131331,6 +132429,18 @@
         "sldr": false,
         "tag": "zh-Phag",
         "windows": "zh-Phag-CN"
+    },
+    {
+        "full": "zh-Hans-SG",
+        "iana": [ "Chinese" ],
+        "iso639_3": "zho",
+        "name": "Chinese",
+        "region": "SG",
+        "regionname": "Singapore",
+        "script": "Hans",
+        "sldr": false,
+        "tag": "zh-SG",
+        "windows": "zh-Hans-SG"
     },
     {
         "full": "zh-Hant-SR",
