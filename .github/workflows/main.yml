@@ -104,4 +104,4 @@ jobs:
         name: langtags
     # Upload results
     - name: Upload langtags to /sites/s/data/${{env.STAGE}}
-      run: rsync ${{env.RSYNC_OPTS}} --dry-run -i langtags.{json,txt} ${{secrets.UPLOAD_TARGET}}/sites/s/data/${{env.STAGE}}/
+      run: rsync ${{env.RSYNC_OPTS}} langtags.{json,txt} ${{secrets.UPLOAD_TARGET}}/sites/s/data/${{env.STAGE}}/
