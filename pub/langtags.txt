@@ -3415,7 +3415,7 @@ jus = jus-NP = jus-Zxxx = sgn-jus = sgn-jus-NP = jus-Zxxx-NP
 jut = jut-DK = jut-Latn = jut-Latn-DK
 juu = juu-Latn = juu-NG = juu-Latn-NG
 juw = juw-Latn = juw-NG = juw-Latn-NG
-juy = juy-IN = juy-Zyyy = juy-Zyyy-IN
+juy = juy-IN = juy-Orya = juy-Orya-IN
 *jv = *jv-ID = jv-Latn = jw = jw-ID = jw-Latn = jw-Latn-ID = jv-Latn-ID
 jv-Java = jv-Java-ID
 jvd = jvd-ID = jvd-Latn = jvd-Latn-ID
@@ -4093,6 +4093,7 @@ kxs = kxs-CN = kxs-Zyyy = kxs-Zyyy-CN
 kxt = kxt-Latn = kxt-PG = kxt-Latn-PG
 kxu = kxu-IN = kxu-Orya = kxu-Orya-IN
 kxv = kxv-IN = kxv-Orya = kxv-Orya-IN
+kxv-Telu = kxv-Telu-IN
 *kxw = kxw-Latn = kxw-PG = kxw-Latn-PG
 kxx = kxx-CG = kxx-Latn = kxx-Latn-CG
 kxy = kxy-Latn = kxy-VN = kxy-Latn-VN
@@ -4808,6 +4809,7 @@ mju = mju-IN = mju-Telu = mju-Telu-IN
 mjv = mjv-IN = mjv-Mlym = mjv-Mlym-IN
 mjw = mjw-IN = mjw-Latn = mjw-Latn-IN
 mjx = mjx-BD = mjx-Latn = mjx-Latn-BD
+mjx-Beng = mjx-Beng-BD
 mjy = mjy-US = mjy-Zyyy = mjy-Zyyy-US
 mjz = mjz-Deva = mjz-NP = mjz-Deva-NP
 *mk = mk-Cyrl = *mk-MK = mk-Cyrl-MK
@@ -6564,7 +6566,7 @@ rtc = rtc-Latn = rtc-MM = rtc-Latn-MM
 rth = rth-ID = rth-Latn = rth-Latn-ID
 rtm = rtm-FJ = rtm-Latn = rtm-Latn-FJ
 rts = rts-XX = rts-Zyyy = rts-Zyyy-XX
-rtw = rtw-IN = rtw-Zyyy = rtw-Zyyy-IN
+rtw = rtw-Deva = rtw-IN = rtw-Deva-IN
 *ru = ru-Cyrl = *ru-RU = ru-Cyrl-RU
 *ru-BY = ru-Cyrl-BY
 ru-Brai = ru-Brai-RU
@@ -7908,7 +7910,7 @@ uma = uma-Latn = uma-US = uma-Latn-US
 umb = umb-AO = umb-Latn = umb-Latn-AO
 umc = umc-XX = umc-Zyyy = umc-Zyyy-XX
 umd = umd-AU = umd-Latn = umd-Latn-AU
-umg = umg-AU = umg-Qaax = umg-Qaax-AU
+umg = umg-AU = umg-Latn = umg-Latn-AU
 umi = umi-Latn = umi-MY = umi-Latn-MY
 umm = umm-Latn = umm-NG = umm-Latn-NG
 umn = umn-Latn = umn-MM = umn-Latn-MM
@@ -7931,6 +7933,7 @@ unr-Orya = unr-Orya-IN
 unu = unu-Latn = unu-PG = unu-Latn-PG
 unx = unx-Beng = unx-IN = unx-Beng-IN
 unx-Deva = unx-Deva-IN
+unx-Orya = unx-Orya-IN
 unz = unz-ID = unz-Latn = unz-Latn-ID
 upi = upi-Latn = upi-PG = upi-Latn-PG
 *upv = upv-Latn = upv-VU = upv-Latn-VU

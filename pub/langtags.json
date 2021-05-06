@@ -12773,6 +12773,7 @@
         "sldr": false,
         "tag": "bix",
         "tags": [ "bix-IN", "bix-Zyyy" ],
+        "unwritten": true,
         "windows": "bix-Zyyy"
     },
     {
@@ -51102,17 +51103,17 @@
         "windows": "juw-Latn"
     },
     {
-        "full": "juy-Zyyy-IN",
+        "full": "juy-Orya-IN",
         "iana": [ "Juray" ],
         "iso639_3": "juy",
         "name": "Juray",
         "region": "IN",
         "regionname": "India",
-        "script": "Zyyy",
+        "script": "Orya",
         "sldr": false,
         "tag": "juy",
-        "tags": [ "juy-IN", "juy-Zyyy" ],
-        "windows": "juy-Zyyy"
+        "tags": [ "juy-IN", "juy-Orya" ],
+        "windows": "juy-Orya"
     },
     {
         "full": "jv-Latn-ID",
@@ -61320,6 +61321,22 @@
         "tag": "kxv",
         "tags": [ "kxv-IN", "kxv-Orya" ],
         "windows": "kxv-Orya"
+    },
+    {
+        "full": "kxv-Telu-IN",
+        "iana": [ "Kuvi" ],
+        "iso639_3": "kxv",
+        "latnnames": [ "Kuvi" ],
+        "localnames": [ "కువి" ],
+        "name": "Kuvi",
+        "names": [ "Jatapu", "Khondh", "Khondi", "Kond", "Kuvi Kond", "Kuvinga", "Kuwi" ],
+        "nophonvars": true,
+        "region": "IN",
+        "regionname": "India",
+        "script": "Telu",
+        "sldr": false,
+        "tag": "kxv-Telu",
+        "windows": "kxv-Telu"
     },
     {
         "full": "kxw-Latn-PG",
@@ -72062,6 +72079,20 @@
         "tag": "mjx",
         "tags": [ "mjx-BD", "mjx-Latn" ],
         "windows": "mjx-Latn"
+    },
+    {
+        "full": "mjx-Beng-BD",
+        "iana": [ "Mahali" ],
+        "iso639_3": "mjx",
+        "name": "Mahali",
+        "names": [ "Mahle" ],
+        "nophonvars": true,
+        "region": "BD",
+        "regionname": "Bangladesh",
+        "script": "Beng",
+        "sldr": false,
+        "tag": "mjx-Beng",
+        "windows": "mjx-Beng"
     },
     {
         "full": "mjy-Zyyy-US",
@@ -98183,19 +98214,18 @@
         "windows": "rts-Zyyy"
     },
     {
-        "full": "rtw-Zyyy-IN",
+        "full": "rtw-Deva-IN",
         "iana": [ "Rathawi" ],
         "iso639_3": "rtw",
         "name": "Rathawi",
         "names": [ "Bal-La", "Kohelia", "Rathwi" ],
         "region": "IN",
         "regionname": "India",
-        "script": "Zyyy",
+        "script": "Deva",
         "sldr": false,
         "tag": "rtw",
-        "tags": [ "rtw-IN", "rtw-Zyyy" ],
-        "unwritten": true,
-        "windows": "rtw-Zyyy"
+        "tags": [ "rtw-Deva", "rtw-IN" ],
+        "windows": "rtw-Deva"
     },
     {
         "full": "ru-Cyrl-RU",
@@ -118251,18 +118281,19 @@
         "windows": "umd-Latn"
     },
     {
-        "full": "umg-Qaax-AU",
+        "full": "umg-Latn-AU",
         "iana": [ "Morrobalama", "Umbuygamu" ],
         "iso639_3": "umg",
         "name": "Morrobalama",
         "names": [ "Baka", "Banjigam", "Barungguan", "Barunguan", "Ganganda", "Jintjingga", "Kuuku-yani", "Moroba-Lama", "Morrabalama", "Morrobolam", "Njindingga", "Umbuygamu", "Umbuykamu", "Umpuykumu", "Yintjingga" ],
         "region": "AU",
         "regionname": "Australia",
-        "script": "Qaax",
+        "script": "Latn",
         "sldr": false,
         "tag": "umg",
-        "tags": [ "umg-AU", "umg-Qaax" ],
-        "windows": "umg-Qaax"
+        "tags": [ "umg-AU", "umg-Latn" ],
+        "unwritten": true,
+        "windows": "umg-Latn"
     },
     {
         "full": "umi-Latn-MY",
@@ -118594,6 +118625,20 @@
         "sldr": false,
         "tag": "unx-Deva",
         "windows": "unx-Deva"
+    },
+    {
+        "full": "unx-Orya-IN",
+        "iana": [ "Munda" ],
+        "iso639_3": "unx",
+        "name": "Munda",
+        "names": [ "Heriki", "Killi", "hoɽo jagar", "muɳɖa jagar" ],
+        "nophonvars": true,
+        "region": "IN",
+        "regionname": "India",
+        "script": "Orya",
+        "sldr": false,
+        "tag": "unx-Orya",
+        "windows": "unx-Orya"
     },
     {
         "full": "unz-Latn-ID",
