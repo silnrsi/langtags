@@ -10,6 +10,8 @@ from multiprocessing import Pool
 import sldr.langtags_full as lt
 from palaso.unicode.ucd import UCD
 
+# A useless comment
+
 try: unicode
 except NameError:
     unicode = str
