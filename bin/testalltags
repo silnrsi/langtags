@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 
 import palaso.sldr.langtags_full as lt
 import argparse
