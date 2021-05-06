@@ -46,12 +46,13 @@ def script_analyze(s):
                 res[sc] = res.setdefault(sc, 0) + 1
     return sorted(res.keys(), key=lambda x:-res[x])[0]
 
-def find_file(tagstr, root='.') :
+def find_file(tagstr, root='.', alt='.') :
     fname = tagstr.replace('-', '_') + '.xml'
-    testf = os.path.join(root, fname)
-    if os.path.exists(testf) : return testf
-    testf = os.path.join(root, fname[0], fname)
-    if os.path.exists(testf) : return testf
+    for a in (root, alt, '.'):
+        for f in (fname, os.path.join(fname[0], fname)):
+            testf = os.path.join(a, f)
+            if os.path.exists(testf):
+                return testf
     return None
 
 def getlocalename(testf, getnames):
@@ -102,7 +103,7 @@ def process_cldrentry(s, lts, allentries, root='.'):
         lts.add(l)
     return l
 
-def addnames(n, b, names, regions):
+def addnames(n, b, names, regions, getname=True):
     alllrefs = set()
     regionlist = [b.region] + sorted(list(set(r for r in getattr(b, 'regions', []) if r != b.region)))
     for reg in regionlist:
@@ -111,7 +112,7 @@ def addnames(n, b, names, regions):
         lname = "{}-{}".format(getattr(b, 'iso639', b.lang), reg)
         alllrefs.add(lname)
         if lname in names:
-            if 'name' in n:
+            if 'name' in n or not getname:
                 n['names'].append(names[lname][0][0])
             else:
                 n['name'] = names[lname][0][0]
@@ -155,6 +156,9 @@ parser.add_argument('-a','--autonyms',help="CSV of Autonyms from Ethnologue")
 parser.add_argument('-q','--quiet',action='store_false',default=True,help='Be noisy')
 parser.add_argument('-j','--jobs',type=int,default=0,help='Number of parallel jobs to run, 0 = number of processors')
 args = parser.parse_args()
+
+if args.flatdir and not os.path.exists(args.flatdir):
+    print(f"Can't find {args.flatdir}")
 
 lts = lt.LangTags(noalltags=True)
 deprecated = {}
@@ -413,7 +417,7 @@ def make_record(t):
         if not any(n['latnnames']):
             del n['latnnames']
     for rf in r:
-        tf = find_file(rf, root=args.flatdir)
+        tf = find_file(rf, root=args.flatdir, alt=args.indir)
         if tf is not None:
             hassldr = True
             getnames = [n['full']]
@@ -421,14 +425,14 @@ def make_record(t):
                 getnames.extend(n['tags'])
             getnames.extend([n['tag'], t.lang])
             name = getlocalename(tf, getnames)
-            if name is not None and name != "":
+            if name is not None and name != "" and 'localname' not in n:
                 n['localname'] = name
     n['sldr'] = hassldr
     n['names'] = []
     regions = set()
     alllrefs = addnames(n, t, names, regions)
     for b in t.base:
-        alllrefs.update(addnames(n, b, names, regions))
+        alllrefs.update(addnames(n, b, names, regions, getname=False))
     if t.lang in iananames:
         extlang = "-".join([t.lang] + t._extensions())
         ns = iananames.get(extlang, getattr(t, 'name', iananames[t.lang]))[:]
