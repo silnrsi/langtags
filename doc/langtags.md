@@ -1,5 +1,7 @@
 # LangTags
 
+Language tags are identifiers used for locales, orthographies and writing systems and in extreme cases, just languages. For more information on what is a language tag and how they are used in this project see [tagging.md].
+
 ## langtags.txt
 
 Langtags.txt contains a sequence of equivalence sets. Each set consists of a list of language tags separated by `=`. The first tag on the line is the canonical tag and the last tag on the line is the maximal tag. In addition, a tag is prefixed with `*` if there is an entry in the SLDR for that particular tag.
@@ -7,6 +9,16 @@ Langtags.txt contains a sequence of equivalence sets. Each set consists of a lis
 The preferred download location for the text data file is <https://ldml.api.sil.org/langtags.txt>
 
 ## langtags.json
+
+This file brings together information regarding a tag equivalence set. It includes information from the following sources:
+
+- ISO 639 parts 1 and 3 - language codes
+- ISO 15924 - script codes
+- ISO 3166 part 1 - region codes
+- Ethnologue: Language names and autonyms
+- IANA tag registry - standard language tag components
+- CLDR likely\_subtags.xml,  - agreed defaults and aliases
+- SLDR [https://github.com/silnrsi/sldr]
 
 Current API version 1.2.1
 

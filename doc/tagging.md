@@ -163,6 +163,15 @@ regarding a tag in the list. The data originates from the Ethnologue and
 periodically some resolution will take place, but the list is not master of the
 Ethnologue, while it does provide some information the Ethnologue may not have.
 
+Notice that this project does not add language tags for new languages. It
+entirely bases its information on existing standards, but adds value by bringing
+those standards together for specific orthographies and writing systems. If
+there is a need for a new language to be added to the ISO 639 standard then an
+application needs to be made to the ISO 639-3 registrar. On the other hand if
+there is a need for a new language tag for a particular orthography variant in a
+language then application may be made through raising issues on this project
+repository.
+
 ### Easy Case
 
 The easy case is where a language group has no dialects, is found in one
