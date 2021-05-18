@@ -1925,7 +1925,7 @@ doc = doc-CN = doc-Latn = doc-Latn-CN
 doe = doe-Latn = doe-TZ = doe-Latn-TZ
 dof = dof-Latn = dof-PG = dof-Latn-PG
 doh = doh-Latn = doh-NG = doh-Latn-NG
-doi = dgo = dgo-Arab = dgo-Arab-IN = dgo-IN = doi-Arab = doi-IN = doi-Arab-IN
+*doi = dgo = dgo-Arab = dgo-Arab-IN = dgo-IN = doi-Arab = *doi-IN = doi-Arab-IN
 doi-Deva = dgo-Deva = dgo-Deva-IN = doi-Deva-IN
 doi-Takr = dgo-Takr = dgo-Takr-IN = doi-Takr-IN
 dok = dok-ID = dok-Latn = dok-Latn-ID
@@ -2341,7 +2341,18 @@ fbl = fbl-Latn = fbl-PH = fbl-Latn-PH
 fcs = fcs-CA = fcs-Zxxx = sgn-fcs = sgn-fcs-CA = fcs-Zxxx-CA
 fer = fer-Latn = fer-SS = fer-Latn-SS
 *ff = *ff-Latn = *ff-SN = fuc = fuc-Latn = fuc-Latn-SN = fuc-SN = *ff-Latn-SN
-ff-Adlm = ff-Adlm-GN
+*ff-Adlm = *ff-Adlm-GN
+*ff-Adlm-BF
+*ff-Adlm-CM
+*ff-Adlm-GH
+*ff-Adlm-GM
+*ff-Adlm-GW
+*ff-Adlm-LR
+*ff-Adlm-MR
+*ff-Adlm-NE
+*ff-Adlm-NG
+*ff-Adlm-SL
+*ff-Adlm-SN
 *ff-Arab = *fuc-Arab = fuc-Arab-SN = ff-Arab-SN
 ff-BF = *ff-Latn-BF
 *ff-CM = *ff-Latn-CM
@@ -4543,7 +4554,7 @@ mad = mad-ID = mad-Latn = mad-Latn-ID
 mae = mae-Latn = mae-NG = mae-Latn-NG
 maf = maf-CM = maf-Latn = maf-Latn-CM
 mag = mag-Deva = mag-IN = mag-Deva-IN
-*mai = mai-Deva = mai-IN = mai-Deva-IN
+*mai = mai-Deva = *mai-IN = mai-Deva-IN
 mai-Kthi = mai-Kthi-IN
 mai-Newa = mai-Newa-IN
 mai-Tirh = mai-Tirh-IN
@@ -4909,7 +4920,7 @@ mne = mne-Latn = mne-TD = mne-Latn-TD
 *mnf = mnf-CM = mnf-Latn = mnf-Latn-CM
 mng = mng-Latn = mng-VN = mng-Latn-VN
 mnh = mnh-CD = mnh-Latn = mnh-Latn-CD
-mni = mni-Beng = mni-IN = mni-Beng-IN
+*mni = *mni-Beng = mni-IN = *mni-Beng-IN
 mni-Brai = mni-Brai-IN
 mni-Mtei = mni-Mtei-IN
 mnj-Arab = mnj-AF = mnj-Arab-AF
@@ -5038,7 +5049,7 @@ mrz = mrz-ID = mrz-Latn = mrz-Latn-ID
 *ms-BN = *ms-Latn-BN
 ms-Brai = zsm-Brai = zsm-Brai-MY = ms-Brai-MY
 ms-CC = ms-Arab-CC
-ms-ID = ms-Arab-ID
+*ms-ID = ms-Arab-ID
 *ms-SG = *ms-Latn-SG
 *msb = msb-Latn = msb-PH = msb-Latn-PH
 *msc = msc-GN = msc-Latn = msc-Latn-GN
@@ -5583,7 +5594,7 @@ nnv = nnv-AU = nnv-Latn = nnv-Latn-AU
 *nnw = nnw-BF = nnw-Latn = nnw-Latn-BF
 nny = nny-AU = nny-Latn = nny-Latn-AU
 nnz = nnz-CM = nnz-Latn = nnz-Latn-CM
-no = no-Latn = no-NO = no-Latn-NO
+*no = no-Latn = no-NO = no-Latn-NO
 *noa = noa-CO = noa-Latn = noa-Latn-CO
 noc = noc-Latn = noc-PG = noc-Latn-PG
 *nod = nod-Lana = nod-TH = nod-Lana-TH
@@ -6037,7 +6048,7 @@ pci-Orya = pci-Orya-IN
 pcj = pcj-IN = pcj-Telu = pcj-Telu-IN
 pck = pck-IN = pck-Latn = pck-Latn-IN
 pcl = pcl-IN = pcl-Zyyy = pcl-Zyyy-IN
-*pcm = pcm-Latn = pcm-NG = pcm-Latn-NG
+*pcm = pcm-Latn = *pcm-NG = pcm-Latn-NG
 pcn = pcn-Latn = pcn-NG = pcn-Latn-NG
 pcp = pcp-BO = pcp-Latn = pcp-Latn-BO
 pcw = pcw-Latn = pcw-NG = pcw-Latn-NG
@@ -6607,7 +6618,7 @@ ryn = ryn-JP = ryn-Zyyy = ryn-Zyyy-JP
 rys = rys-JP = rys-Zyyy = rys-Zyyy-JP
 ryu = ryu-JP = ryu-Kana = ryu-Kana-JP
 rzh = rzh-YE = rzh-Zyyy = rzh-Zyyy-YE
-*sa = sa-Deva = sa-IN = sa-Deva-IN
+*sa = sa-Deva = *sa-IN = sa-Deva-IN
 sa-Gran = sa-Gran-IN
 sa-Mymr = sa-Mymr-IN
 sa-Nand = sa-Nand-IN
@@ -6632,10 +6643,10 @@ sao = sao-ID = sao-Latn = sao-Latn-ID
 sar = sar-BO = sar-Latn = sar-Latn-BO
 sas = sas-ID = sas-Latn = sas-Latn-ID
 sas-Bali = sas-Bali-ID
-sat = sat-IN = sat-Latn = sat-Latn-IN
+*sat = sat-IN = sat-Latn = sat-Latn-IN
 sat-Beng = sat-Beng-IN
 sat-Deva = sat-NP = sat-Deva-NP
-sat-Olck = sat-Olck-IN
+*sat-Olck = *sat-Olck-IN
 sat-Orya = sat-Orya-IN
 sau = sau-ID = sau-Latn = sau-Latn-ID
 *sav = sav-Latn = sav-SN = sav-Latn-SN
@@ -6697,8 +6708,8 @@ scu = scu-IN = scu-Zyyy = scu-Zyyy-IN
 scv = scv-Latn = scv-NG = zir = zir-Latn = zir-Latn-NG = zir-NG = scv-Latn-NG
 scw = scw-Latn = scw-NG = scw-Latn-NG
 scx = scx-XX = scx-Zyyy = scx-Zyyy-XX
-*sd = sd-Arab = *sd-PK = sd-Arab-PK
-sd-Deva = sd-Deva-IN
+*sd = *sd-Arab = *sd-PK = *sd-Arab-PK
+*sd-Deva = *sd-Deva-IN
 sd-Guru = sd-Guru-IN
 sd-Khoj = sd-Khoj-IN
 sd-Khoj-PK
@@ -7136,7 +7147,7 @@ stv = stv-ET = *stv-Ethi = stv-Ethi-ET
 stv-Arab = stv-Arab-ET
 stw = stw-FM = stw-Latn = stw-Latn-FM
 sty = sty-Cyrl = sty-RU = sty-Cyrl-RU
-su = su-ID = su-Latn = su-Latn-ID
+*su = su-ID = *su-Latn = *su-Latn-ID
 su-Arab = su-Arab-ID
 *su-Java = su-Java-ID
 *su-Sund = su-Sund-ID
@@ -7453,6 +7464,7 @@ tia = tia-DZ = tia-Zyyy = tia-Zyyy-DZ
 tic = tic-Latn = tic-SD = tic-Latn-SD
 *tif = tif-Latn = tif-PG = tif-Latn-PG
 *tig = tig-ER = tig-Ethi = tig-Ethi-ER
+tig-Arab = tig-Arab-ER
 tig-SD = tig-Latn = tig-Latn-SD
 tih = tih-Latn = tih-MY = tih-Latn-MY
 tii = tii-CD = tii-Latn = tii-Latn-CD
