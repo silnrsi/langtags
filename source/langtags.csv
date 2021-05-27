@@ -3051,7 +3051,7 @@ ins,ins-Zxxx-IN,Indian Sign Language,BD IN PK,,,20848 23756,,,,,SAS,ins,,,
 int,int-Mymr-MM,Intha,MM,,,,,1,,,SEA,int,NMC,4-Dec-2017,"From Ethnologue ""Unwritten [Qaax], informal and non-standardized use of Myanmar script."""
 inz,inz-Zyyy-US,Ineseño,US,,,,,1,,,NAM,inz,LE,10-Jan-2018,Extinct
 io,io-Latn-001,Ido,001,,,,,,,,???,ido,CLDR,,Constructed
-ior,ior-Zyyy-ET,Inor,ET,,,10464,,1,,,EAF,ior,,,
+ior,ior-Ethi-ET,Inor,ET,,,10464,,,,,EAF,ior,,,
 iou,iou-Latn-PG,Tuma-Irumu,PG,,,,,,,,MEL,iou,LE,10-Jan-2018,
 iow,iow-Zyyy-US,Iowa-Oto,US,,,,,1,,,NAM,iow,LE,10-Jan-2018,Extinct
 ipi,ipi-Latn-PG,Ipili,PG,,,,,,,,MEL,ipi,LE,10-Jan-2018,
@@ -6827,6 +6827,7 @@ smp-Hebr,smp-Hebr-PS,Samaritan,IL PS,,,,,,1,,WAS,smp,,,Extinct
 smq,smq-Latn-PG,Samo,PG,,,04533,,,,,MEL,smq,LE,10-Jan-2018,
 smr,smr-Latn-ID,Simeulue,ID,,,,,1,,,SEA,smr,,,
 sms,sms-Latn-FI,"Saami, Skolt",FI NO RU,,,,,,,,EEU NEU,sms,CLDR,,
+sms-Cyrl,sms-Cyrl-RU,"Saami, Skolt",FI NO RU,,,,,,1,,EEU NEU,sms,,,
 smt,smt-Latn-IN,Simte,IN,,,,,,,,SAS,smt,,,
 smu,smu-Zyyy-KH,Somray,KH,,,,,,,,SEA,smu,NMC,4-Dec-2017,Extinct
 smv,smv-Zyyy-IN,Samvedi,IN,,,,,,,,SAS,smv,,,
@@ -7017,7 +7018,7 @@ stu,stu-Zyyy-MM,Samtao,CN LA MM,,,,,1,,,EAS SEA,stu,NMC,10-Jan-2018,
 stv,stv-Ethi-ET,Silt'e,ET,,,01452,,,,,EAF,stv,LE,30-Aug-2018,
 stv-Arab,stv-Arab-ET,Silt'e,ET,,,,,,,,EAF,stv,,,
 stw,stw-Latn-FM,Satawalese,FM,,,,,,,,MIC,stw,LE,10-Jan-2018,
-sty,sty-Cyrl-RU,"Tatar, Siberian",RU,,,,,1,,,EEU,sty,,,
+sty,sty-Cyrl-RU,"Tatar, Siberian",RU,,,,,,,,EEU,sty,,,
 su,su-Latn-ID,Sunda,ID,,,,,,,,SEA,sun,CLDR,,
 su-Arab,su-Arab-ID,Sunda,ID,,,,,,,,SEA,sun,,,
 su-Java,su-Java-ID,Sunda,ID,,,,,,1,,SEA,sun,,,
