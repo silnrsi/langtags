@@ -90,12 +90,16 @@ jobs:
         python-version: '3.x'
     - uses: actions/checkout@v2
 
-    # Check-out the tooling
+    # Fetch and install the tooling
+    - uses: actions/checkout@v2
+      with:
+        repository: silnrsi/sldrtools
+        path: sldrtools
     - uses: actions/checkout@v2
       with:
         repository: silnrsi/palaso-python
         path: palaso
-    - run: pip install ./palaso . six
+    - run: pip install ./sldrtools ./palaso . six
     
     # Download the artefact
     - uses: actions/download-artifact@v2
