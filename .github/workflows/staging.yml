@@ -73,8 +73,6 @@ jobs:
     - name: Generate langtags
       run: |
         make SLDR=unflat FLATDIR=flat build
-        echo "::set-output name=need_commit::$(git diff -wU0 pub/langtags.json | grep '^+ ' | grep -v '\"date\":' | wc -l)"
-        echo "name=need_commit::$(git diff -wU0 pub/langtags.json | grep '^+ ' | grep -v '\"date\":' | wc -l)"
     - uses: actions/upload-artifact@v2
       with:
         name: langtags
@@ -108,10 +106,11 @@ jobs:
         path: pub
 
     # Test it.
-    - name: Test lanatgs
+    - name: Test langtags
       id: langtags
       run: |
         make SLDR=unflat FLATDIR=flat test
+        echo "::set-output name=need_commit::$(git diff -wU0 pub/langtags.json | grep '^+ ' | grep -v '\"date\":' | wc -l)"
 #    - name: Commit built langtags
 #      if: steps.langtags.output.need_commit != 0
 #      uses: EndBug/add-and-commit@v5
