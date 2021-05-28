@@ -27,9 +27,11 @@ jobs:
     - uses: actions/setup-python@v2
       with:
         python-version: '3.x'
+    
+    # Checkout the source
     - uses: actions/checkout@v2
 
-    # Check-out the tooling
+    # Fetch and install the tooling
     - uses: actions/checkout@v2
       with:
         repository: silnrsi/sldrtools
@@ -40,7 +42,7 @@ jobs:
         path: palaso
     - run: pip install ./sldrtools ./palaso . six
 
-    # Checkout the external artefact dependencies
+    # Download the external artefact dependencies
     - name: Find latest SLDR dependency
       uses: actions/github-script@v3
       id: find-sldr
@@ -67,17 +69,48 @@ jobs:
         unzip -q sldr.zip
         rm sldr.zip
     
+    # Build it
     - name: Generate langtags
-      id: langtags
       run: |
-        make SLDR=unflat FLATDIR=flat
-        echo "::set-output name=need_commit::$(git diff -wU0 pub/langtags.json | grep '^+ ' | grep -v '\"date\":' | wc -l)"
-        echo "name=need_commit::$(git diff -wU0 pub/langtags.json | grep '^+ ' | grep -v '\"date\":' | wc -l)"
+        make SLDR=unflat FLATDIR=flat build
     - uses: actions/upload-artifact@v2
       with:
         name: langtags
         path: |
           pub/**
+
+  test:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+    - uses: actions/checkout@v2
+
+    # Fetch and install the tooling
+    - uses: actions/checkout@v2
+      with:
+        repository: silnrsi/sldrtools
+        path: sldrtools
+    - uses: actions/checkout@v2
+      with:
+        repository: silnrsi/palaso-python
+        path: palaso
+    - run: pip install ./sldrtools ./palaso . six
+    
+    # Download the artefact
+    - uses: actions/download-artifact@v2
+      with:
+        name: langtags
+        path: pub
+
+    # Test it.
+    - name: Test lanatgs
+      id: langtags
+      run: |
+        make SLDR=unflat FLATDIR=flat test
+        echo "::set-output name=need_commit::$(git diff -wU0 pub/langtags.json | grep '^+ ' | grep -v '\"date\":' | wc -l)"
 #    - name: Commit built langtags
 #      if: steps.langtags.output.need_commit != 0
 #      uses: EndBug/add-and-commit@v5
