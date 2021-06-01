@@ -1,4 +1,4 @@
-name: Build and deploy langtags
+name: Build and deploy langtags for staging
 
 on:
   push:
