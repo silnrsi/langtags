@@ -22,7 +22,7 @@ This file brings together information regarding a tag equivalence set. It includ
 
 Current API version 1.2.1
 
-Unless otherwise stated all fields were add at v1.0.0. 
+Unless otherwise stated all fields were added at v1.0.0. 
 
 The preferred download location for the json data file is <https://ldml.api.sil.org/langtags.json>
 
@@ -74,7 +74,7 @@ There are three specially named (via the **tag** field) objects that occur at th
 - All plural fields store their results as arrays.
 - Empty fields are not stored in the record.
 - The **tag** and the **full** fields are not stable and may change between versions of the data file. But they will always appear somewhere in the equivalence set. In effect the equivalence set is stable in terms of once something is in it, it is not removed (unless there is an actual fault).
-- A tagset may have an empy **localname** while still having a non empty **localnames**. Likewise the same name may occur as both **localname** and in **localnames**.
+- A tagset may have an empty **localname** while still having a non empty **localnames**. Likewise the same name may occur as both **localname** and in **localnames**.
 
 ### Variants field
 
@@ -82,7 +82,7 @@ The variants field lists different variants that may occur with the tags in the 
 
 The \_phonvar header record contains a variants field list that may be applied to any equivalence set, but it implies Latn script even if used with a non-Latin script language. For examle from our bg-Cyrl-BG example, we also have an equivalence set of bg-fonipa, bg-BG-fonipa, bg-Latn-fonipa, bg-Latn-BG-fonipa. Only one of the list of variants in the \_phonvar variants list may occur in a tag, at most.
 
-The **variants** field itself does not chain. Thus if there is more than one variant in the field then there is not a further variant that is a sequence of them both. For example be-Cyrl-BY has a **variants** field containing 1959acad and tarask. So there could be `be-1959acad` and `be-tarask` but not `be-1959acad-tarask`. If such a thing were allowed, then the variants list would include an entry 1959acad-tarask. For an example see ja-Latn with `hepburn` and `hepburm-heploc`.
+The **variants** field itself does not chain. Thus if there is more than one variant in the field then there is not a further variant that is a sequence of them both. For example be-Cyrl-BY has a **variants** field containing 1959acad and tarask. So there could be `be-1959acad` and `be-tarask` but not `be-1959acad-tarask`. If such a thing were allowed, then the variants list would include an entry 1959acad-tarask. For an example see ja-Latn with `hepburn` and `hepburn-heploc`.
 
 Thus a complete list of equivalence sets for bg-Cyrl-GB (with only one of the variants from \_phonvar used) would be:
 
