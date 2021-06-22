@@ -1862,7 +1862,7 @@ dif,dif-Latn-AU,Dieri,AU,,,,,,,,ANZ,dif,LE,10-Jan-2018,Extinct
 dig,dig-Latn-KE,Chidigo,KE TZ,,,,,,,,EAF,dig,LE,12-Jan-2018,
 dih,dih-Latn-MX,Kumiai,MX US,,,,,1,,,CAM NAM,dih,LE,9-Jan-2018,
 dii,dii-Latn-CM,Dimbong,CM,,,,,1,,,MAF,dii,,,
-dij,dij-Latn-ID,Dai,ID,,,,,1,,,SEA,dij,,,
+dij,dij-Latn-ID,Dai,ID,,,,,,,,SEA,dij,,,
 dik,dik-Latn-SS,"Dinka, Southwestern",SS,,,,din,,,,EAF,dik,LE,12-Jan-2018,
 dik-Arab,dik-Arab-SS,"Dinka, Southwestern",SS,,,,din,,,,EAF,dik,,,
 dil,dil-Latn-SD,Dilling,SD,,,,,,,,NAF,dil,LE,12-Jan-2018,
@@ -5111,7 +5111,7 @@ myd,myd-Latn-PG,Maramba,PG,,,,,1,,aog,MEL,myd,LE,10-Jan-2018,
 mye,mye-Latn-GA,Myene,GA,,,14479 14480 14481 14482 14483 14484,,,,,MAF,mye,LE,12-Jan-2018,
 myf,myf-Latn-ET,Bambassi,ET,,,,,,,,EAF,myf,,,
 myg,myg-Latn-CM,Manta,CM,,,,,1,,,MAF,myg,,,
-myh,myh-Latn-US,Makah,US,,,,,1,,,NAM,myh,LE,9-Jan-2018,
+myh,myh-Latn-US,Makah,US,,,,,,,,NAM,myh,LE,9-Jan-2018,
 myi-Zyyy,myi-Zyyy-IN,Mina,IN,,,,,,,1,SAS,myi,,,
 myj,myj-Latn-SS,Mangayat,SS,,,,,1,,,EAF,myj,,,
 myk,myk-Latn-ML,"Sénoufo, Mamara",ML,,,02553 03076 16519 16520,,,,,WAF,myk,,,
@@ -8497,7 +8497,7 @@ xrb,xrb-Latn-BF,"Karaboro, Eastern",BF CI,,,,,,,,WAF,xrb,,,
 xrd,xrd-Latn-AU,Gundungurra,AU,,,,,1,,,ANZ,xrd,LE,10-Jan-2018,Extinct
 xre,xre-Latn-BR,Kreye,BR,,,,,1,,,SAM,xre,LE,9-Jan-2018,
 xrg,xrg-Latn-AU,Minang,AU,,,,,1,,,ANZ,xrg,LE,10-Jan-2018,Extinct
-xri,xri-Latn-BR,Krikati-Timbira,BR,,,,,1,,,SAM,xri,LE,9-Jan-2018,
+xri,xri-Latn-BR,Krikati-Timbira,BR,,,,,,,,SAM,xri,LE,9-Jan-2018,
 xrm,xrm-Cyrl-RU,Armazic,AM AZ GE RU,,,,,1,,,EEU,xrm,,,Extinct
 xrn,xrn-Cyrl-RU,Arin,RU,,,,,1,,,EEU,xrn,,,Extinct
 xrq,xrq-Latn-AU,Karranga,AU,,,,dmw,1,,dmw,ANZ,xrq,LE,10-Jan-2018,Extinct
