@@ -4436,7 +4436,8 @@ lzh-Hant,lzh-Hant-CN,Literary Chinese,CN JP KR VN,,,,,,,,EAS SEA,lzh,,,Historica
 lzl,lzl-Latn-VU,Litzlitz,VU,,,,,1,,,MEL,lzl,LE,10-Jan-2018,
 lzn,lzn-Latn-MM,"Naga, Leinong",MM,,,,,,,,SEA,lzn,NMC,4-Dec-2017,
 lzz,lzz-Latn-TR,Laz,BE DE GE TR US,,,,,,,,WAS WEU,lzz,CLDR,,
-lzz-Geor,lzz-Geor-TR,Laz,BE DE GE TR US,,,,,,,,WAS WEU,lzz,,,
+lzz-Latn-GE,lzz-Latn-GE,Laz,GE,,,,,,,,WAS WEU,lzz,,,different orthography in GE
+lzz-Geor,lzz-Geor-GE,Laz,GE,,,,,,,,WAS WEU,lzz,,,
 maa,maa-Latn-MX,"Mazatec, San Jerónimo Tecóatl",MX,,,04675 19386,,,,,CAM,maa,LE,9-Jan-2018,Retire 2017
 mab,mab-Latn-MX,"Mixtec, Yutanduchi",MX,,,,,,,,CAM,mab,LE,9-Jan-2018,
 mad,mad-Latn-ID,Madura,ID SG,,,04623 13255 13259,,,,,SEA,mad,CLDR,,
@@ -7426,6 +7427,7 @@ tkz,tkz-Latn-VN,Takua,VN,,,,,1,,,SEA,tkz,NMC,6-Dec-2017,a 16 page vocabulary has
 tl,tl-Latn-PH,Tagalog,AE AS AU BH CA CY DE FI GU HK IE KY LY MO MP NZ OM PH PW QA SA SE US,,,,,,,,ANZ CAR EAS MIC NAF NAM NEU POL SEA WAS WEU,tgl,CLDR,,
 tl-Brai,tl-Brai-PH,Tagalog,AE AS AU BH CA CY DE FI GU HK IE KY LY MO MP NZ OM PH PW QA SA US,,,,,,,,ANZ CAR EAS MIC NAF NAM NEU POL SEA WAS WEU,tgl,,,
 tl-Tglg,tl-Tglg-PH,Tagalog,AE AS AU BH CA CY DE FI GU HK IE KY LY MO MP NZ OM PH PW QA SA US,,,,,,1,,ANZ CAR EAS MIC NAF NAM NEU POL SEA WAS WEU,tgl,,,
+tl-Buhd,tl-Buhd-PH,Tagalog,AE AS AU BH CA CY DE FI GU HK IE KY LY MO MP NZ OM PH PW QA SA US,,,,,,,,ANZ CAR EAS MIC NAF NAM NEU POL SEA WAS WEU,tgl,,,
 tla,tla-Latn-MX,"Tepehuan, Southwestern",MX,,,,,,,,CAM,tla,LE,9-Jan-2018,
 tlb,tlb-Latn-ID,Tobelo,ID,,,,,,,,SEA,tlb,,20-Apr-2018,
 tlc,tlc-Latn-MX,"Totonac, Yecuatla",MX,,,,,1,,,CAM,tlc,LE,9-Jan-2018,
