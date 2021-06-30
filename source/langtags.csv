@@ -3381,8 +3381,8 @@ kdd,kdd-Latn-AU,Yankunytjatjara,AU,,,,,1,,,ANZ,kdd,LE,10-Jan-2018,
 kde,kde-Latn-TZ,Makonde,MZ TZ,,,13374,,,,,EAF,kde,CLDR,,
 kdf,kdf-Latn-PG,Mamusi,PG,,,,,,,,MEL,kdf,LE,10-Jan-2018,
 kdg,kdg-Latn-CD,Seba,CD,,,,,1,,,MAF,kdg,,,
-kdh-Arab,kdh-Arab-TG,Tem,BJ GH TG,,,22304 22401,,,,,WAF,kdh,CLDR,,Latin is primary. This is against current CLDR.
-kdh,kdh-Latn-TG,Tem,BJ GH TG,,,22304 22401,,,,,WAF,kdh,,,Latin is primary. This is against current CLDR.
+kdh-Arab,kdh-Arab-TG,Tem,BJ GH TG,,,22304 22401,,,,,WAF,kdh,,,Add CLDR back into confirmed field when adjusted
+kdh,kdh-Latn-TG,Tem,BJ GH TG,,,22304 22401,,,,,WAF,kdh,,,Add CLDR back into confirmed field when adjusted
 kdi,kdi-Latn-UG,Kumam,UG,,,,,,,,EAF,kdi,LE,12-Jan-2018,
 kdj,kdj-Latn-UG,Ng'akarimojong,UG,,,,,,,,EAF,kdj,LE,12-Jan-2018,
 kdk,kdk-Latn-NC,Numèè,NC,,,,,1,,,MEL,kdk,LE,10-Jan-2018,
