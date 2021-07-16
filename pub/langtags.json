@@ -9,7 +9,7 @@
     },
     {
         "api": "1.2.1",
-        "date": "2021-06-29",
+        "date": "2021-07-16",
         "tag": "_version"
     },
     {
@@ -12970,12 +12970,13 @@
         "full": "bji-Latn-ET",
         "iana": [ "Burji" ],
         "iso639_3": "bji",
+        "localname": "ቡረጊ",
         "name": "Burji",
         "region": "ET",
         "regionname": "Ethiopia",
         "regions": [ "KE" ],
         "script": "Latn",
-        "sldr": false,
+        "sldr": true,
         "tag": "bji",
         "tags": [ "bji-ET", "bji-Latn" ],
         "windows": "bji-Latn"
@@ -28783,14 +28784,14 @@
         "script": "Latn",
         "sldr": true,
         "tag": "dnj",
-        "tags": [ "dnj-CI", "dnj-Latn" ],
+        "tags": [ "daf", "daf-CI", "daf-Latn", "daf-Latn-CI", "dnj-CI", "dnj-Latn" ],
         "windows": "dnj-Latn-CI"
     },
     {
         "full": "dnj-Latn-LR",
         "iana": [ "Dan" ],
         "iso639_3": "dnj",
-        "localname": "Dan (Blowo)",
+        "localname": "Dan",
         "localnames": [ "Dã̀ã̀" ],
         "name": "Dan",
         "names": [ "Da", "Dàn", "Dã̀ã̀", "Gio", "Gio-Dan", "Guio", "Gyo", "Ya", "Yacouba", "Yakuba" ],
@@ -28800,7 +28801,6 @@
         "script": "Latn",
         "sldr": true,
         "tag": "dnj-LR",
-        "tags": [ "daf", "daf-LR", "daf-Latn", "daf-Latn-LR" ],
         "windows": "dnj-Latn-LR"
     },
     {
@@ -29027,36 +29027,36 @@
         "windows": "doh-Latn"
     },
     {
-        "full": "doi-Arab-IN",
-        "iana": [ "Dogri (macrolanguage)" ],
-        "iso639_3": "doi",
-        "localname": "डोगरी",
-        "name": "Dogri (macrolanguage)",
-        "names": [ "Dhogaryali", "Dogari", "Dogri", "Dogri Jammu", "Dogri Pahari", "Dogri-Kangri", "Dongari", "Hindi Dogri", "Tokkaru" ],
-        "region": "IN",
-        "regionname": "India",
-        "script": "Arab",
-        "sldr": true,
-        "tag": "doi",
-        "tags": [ "dgo", "dgo-Arab", "dgo-Arab-IN", "dgo-IN", "doi-Arab", "doi-IN" ],
-        "windows": "doi-Arab"
-    },
-    {
         "full": "doi-Deva-IN",
         "iana": [ "Dogri (macrolanguage)" ],
         "iso639_3": "doi",
         "latnnames": [ "Dogri" ],
+        "localname": "डोगरी",
         "localnames": [ "डोगरी" ],
+        "name": "Dogri (macrolanguage)",
+        "names": [ "Dhogaryali", "Dogari", "Dogri", "Dogri Jammu", "Dogri Pahari", "Dogri-Kangri", "Dongari", "Hindi Dogri", "Tokkaru" ],
+        "region": "IN",
+        "regionname": "India",
+        "script": "Deva",
+        "sldr": true,
+        "tag": "doi",
+        "tags": [ "dgo", "dgo-Deva", "dgo-Deva-IN", "dgo-IN", "doi-Deva", "doi-IN" ],
+        "windows": "doi-Deva"
+    },
+    {
+        "full": "doi-Arab-IN",
+        "iana": [ "Dogri (macrolanguage)" ],
+        "iso639_3": "doi",
         "name": "Dogri (macrolanguage)",
         "names": [ "Dhogaryali", "Dogari", "Dogri", "Dogri Jammu", "Dogri Pahari", "Dogri-Kangri", "Dongari", "Hindi Dogri", "Tokkaru" ],
         "nophonvars": true,
         "region": "IN",
         "regionname": "India",
-        "script": "Deva",
+        "script": "Arab",
         "sldr": false,
-        "tag": "doi-Deva",
-        "tags": [ "dgo-Deva", "dgo-Deva-IN" ],
-        "windows": "doi-Deva"
+        "tag": "doi-Arab",
+        "tags": [ "dgo-Arab", "dgo-Arab-IN" ],
+        "windows": "doi-Arab"
     },
     {
         "full": "doi-Takr-IN",
@@ -34198,6 +34198,20 @@
         "windows": "ese-Latn"
     },
     {
+        "full": "esg-Gonm-IN",
+        "iana": [ "Aheri Gondi" ],
+        "iso639_3": "esg",
+        "name": "Gondi, Aheri",
+        "names": [ "Aheri Gondi", "Koyam", "Raj Gond" ],
+        "region": "IN",
+        "regionname": "India",
+        "script": "Gonm",
+        "sldr": false,
+        "tag": "esg",
+        "tags": [ "esg-Gonm", "esg-IN" ],
+        "windows": "esg-Gonm"
+    },
+    {
         "full": "esg-Deva-IN",
         "iana": [ "Aheri Gondi" ],
         "iso639_3": "esg",
@@ -34205,27 +34219,13 @@
         "localnames": [ "कोयम", "गोंडी" ],
         "name": "Gondi, Aheri",
         "names": [ "Aheri Gondi", "Koyam", "Raj Gond" ],
+        "nophonvars": true,
         "region": "IN",
         "regionname": "India",
         "script": "Deva",
         "sldr": false,
-        "tag": "esg",
-        "tags": [ "esg-Deva", "esg-IN" ],
+        "tag": "esg-Deva",
         "windows": "esg-Deva"
-    },
-    {
-        "full": "esg-Gonm-IN",
-        "iana": [ "Aheri Gondi" ],
-        "iso639_3": "esg",
-        "name": "Gondi, Aheri",
-        "names": [ "Aheri Gondi", "Koyam", "Raj Gond" ],
-        "nophonvars": true,
-        "region": "IN",
-        "regionname": "India",
-        "script": "Gonm",
-        "sldr": false,
-        "tag": "esg-Gonm",
-        "windows": "esg-Gonm"
     },
     {
         "full": "esg-Telu-IN",
@@ -43846,6 +43846,20 @@
         "windows": "hi-Brai"
     },
     {
+        "full": "hi-Latn-IN",
+        "iana": [ "Hindi" ],
+        "iso639_3": "hin",
+        "name": "Hindi",
+        "names": [ "Dakhini", "Hindi-Urdu", "Hindustani", "Modern Standard Hindi" ],
+        "region": "IN",
+        "regionname": "India",
+        "regions": [ "AE", "AU", "BD", "BT", "BZ", "CA", "DE", "DJ", "FI", "FJ", "GB", "GQ", "GY", "KE", "LK", "MU", "NP", "NZ", "PH", "PR", "RU", "SG", "SX", "TH", "US", "YE", "ZA", "ZM" ],
+        "script": "Latn",
+        "sldr": false,
+        "tag": "hi-Latn",
+        "windows": "hi-Latn"
+    },
+    {
         "full": "hi-Mahj-IN",
         "iana": [ "Hindi" ],
         "iso639_3": "hin",
@@ -44872,7 +44886,7 @@
         "windows": "hni-Latn"
     },
     {
-        "full": "hnj-Hmng-LA",
+        "full": "hnj-Hmnp-LA",
         "iana": [ "Hmong Njua", "Mong Leng", "Mong Njua" ],
         "iso639_3": "hnj",
         "name": "Hmong Njua",
@@ -44880,10 +44894,26 @@
         "region": "LA",
         "regionname": "Lao People's Democratic Republic",
         "regions": [ "CA", "CN", "GF", "MM", "TH", "US", "VN" ],
-        "script": "Hmng",
+        "script": "Hmnp",
         "sldr": false,
         "tag": "hnj",
-        "tags": [ "hnj-Hmng", "hnj-LA" ],
+        "tags": [ "hnj-Hmnp", "hnj-LA" ],
+        "variants": [ "pahawh2", "pahawh3", "pahawh4" ],
+        "windows": "hnj-Hmnp-LA"
+    },
+    {
+        "full": "hnj-Hmng-LA",
+        "iana": [ "Hmong Njua", "Mong Leng", "Mong Njua" ],
+        "iso639_3": "hnj",
+        "name": "Hmong Njua",
+        "names": [ "Blue Hmong", "Ching Miao", "Green Hmong", "Hmong Leng", "Hmong Nzhua", "Hmongb Nzhuab", "Hmoob Leeg", "Lu Man Zi", "Lu Miao", "Miao Tsi", "Mong Leng", "Mong Njua", "Mong Ntsua", "Moob Leeg", "Qing Miao", "Tak Miao" ],
+        "nophonvars": true,
+        "region": "LA",
+        "regionname": "Lao People's Democratic Republic",
+        "regions": [ "CA", "CN", "GF", "MM", "TH", "US", "VN" ],
+        "script": "Hmng",
+        "sldr": false,
+        "tag": "hnj-Hmng",
         "variants": [ "pahawh2", "pahawh3", "pahawh4" ],
         "windows": "hnj-Hmng-LA"
     },
@@ -46445,21 +46475,6 @@
         "windows": "hz-Latn"
     },
     {
-        "full": "ia-Latn-FR",
-        "iana": [ "Interlingua (International Auxiliary Language" ],
-        "iso639_3": "ina",
-        "localname": "interlingua",
-        "name": "Interlingua (International Auxiliary Language",
-        "region": "FR",
-        "regionname": "France",
-        "regions": [ "BR" ],
-        "script": "Latn",
-        "sldr": true,
-        "tag": "ia",
-        "tags": [ "ia-FR", "ia-Latn" ],
-        "windows": "ia-Latn-FR"
-    },
-    {
         "full": "ia-Latn-001",
         "iana": [ "Interlingua (International Auxiliary Language" ],
         "iso639_3": "ina",
@@ -46469,8 +46484,22 @@
         "regionname": "World",
         "script": "Latn",
         "sldr": true,
-        "tag": "ia-001",
+        "tag": "ia",
+        "tags": [ "ia-001", "ia-Latn" ],
         "windows": "ia-Latn-001"
+    },
+    {
+        "full": "ia-Latn-FR",
+        "iana": [ "Interlingua (International Auxiliary Language" ],
+        "iso639_3": "ina",
+        "localname": "interlingua",
+        "name": "Interlingua (International Auxiliary Language",
+        "region": "FR",
+        "regionname": "France",
+        "script": "Latn",
+        "sldr": true,
+        "tag": "ia-FR",
+        "windows": "ia-Latn-FR"
     },
     {
         "full": "iai-Latn-NC",
@@ -52848,21 +52877,6 @@
         "windows": "kdg-Latn"
     },
     {
-        "full": "kdh-Arab-TG",
-        "iana": [ "Tem" ],
-        "iso639_3": "kdh",
-        "name": "Tem",
-        "names": [ "Cotocoli", "Kotokoli", "Temba", "Tembe", "Tim", "Timu" ],
-        "region": "TG",
-        "regionname": "Togo",
-        "regions": [ "BJ", "GH" ],
-        "script": "Arab",
-        "sldr": true,
-        "tag": "kdh",
-        "tags": [ "kdh-Arab", "kdh-TG" ],
-        "windows": "kdh-Arab"
-    },
-    {
         "full": "kdh-Latn-TG",
         "iana": [ "Tem" ],
         "iso639_3": "kdh",
@@ -52875,8 +52889,24 @@
         "regions": [ "BJ", "GH" ],
         "script": "Latn",
         "sldr": true,
-        "tag": "kdh-Latn",
+        "tag": "kdh",
+        "tags": [ "kdh-Latn", "kdh-TG" ],
         "windows": "kdh-Latn"
+    },
+    {
+        "full": "kdh-Arab-TG",
+        "iana": [ "Tem" ],
+        "iso639_3": "kdh",
+        "name": "Tem",
+        "names": [ "Cotocoli", "Kotokoli", "Temba", "Tembe", "Tim", "Timu" ],
+        "nophonvars": true,
+        "region": "TG",
+        "regionname": "Togo",
+        "regions": [ "BJ", "GH" ],
+        "script": "Arab",
+        "sldr": false,
+        "tag": "kdh-Arab",
+        "windows": "kdh-Arab"
     },
     {
         "full": "kdi-Latn-UG",
@@ -58973,7 +59003,7 @@
         "script": "Deva",
         "sldr": false,
         "tag": "kru",
-        "tags": [ "kru-Deva", "kru-IN", "kxl", "kxl-Deva", "kxl-Deva-NP", "kxl-IN", "kxl-NP" ],
+        "tags": [ "kru-Deva", "kru-IN", "kxl", "kxl-Deva", "kxl-Deva-IN", "kxl-Deva-NP", "kxl-IN", "kxl-NP" ],
         "windows": "kru-Deva"
     },
     {
@@ -61316,7 +61346,7 @@
         "regionname": "Ethiopia",
         "regions": [ "KE" ],
         "script": "Latn",
-        "sldr": false,
+        "sldr": true,
         "tag": "kxc",
         "tags": [ "kxc-ET", "kxc-Latn" ],
         "windows": "kxc-Latn"
@@ -69506,20 +69536,6 @@
         "windows": "mcu-Latn"
     },
     {
-        "full": "mcu-Laoo-CM",
-        "iana": [ "Cameroon Mambila" ],
-        "iso639_3": "mcu",
-        "localname": "Jù Bà",
-        "name": "Mambila, Cameroon",
-        "names": [ "Bang", "Bea", "Ble", "Cameroon Mambila", "Juli", "Jù Bà", "Lagubi", "Mambere", "Mambilla", "Nor", "Tagbo", "Tongbo" ],
-        "region": "CM",
-        "regionname": "Cameroon",
-        "script": "Laoo",
-        "sldr": true,
-        "tag": "mcu-Laoo-CM",
-        "windows": "mcu-Laoo-CM"
-    },
-    {
         "full": "mcv-Latn-PG",
         "iana": [ "Minanibai" ],
         "iso639_3": "mcv",
@@ -73751,28 +73767,15 @@
         "iso639_3": "mon",
         "localname": "монгол",
         "name": "Mongolian",
+        "names": [ "Central Mongolian", "Halh", "Halha", "Kalkh", "Khalkha", "Khalkha Mongolian", "Mongol", "Mongolian, Halh" ],
         "region": "CN",
         "regionname": "China",
+        "regions": [ "CZ", "KG", "MN", "RU", "TW", "US" ],
         "script": "Mong",
         "sldr": true,
         "tag": "mn-CN",
-        "tags": [ "mn-Mong" ],
+        "tags": [ "drh-Mong", "drh-Mong-CN", "khk-Mong", "khk-Mong-CN", "mn-Mong" ],
         "windows": "mn-Mong-CN"
-    },
-    {
-        "full": "mn-Mong-MN",
-        "iana": [ "Mongolian" ],
-        "iso639_3": "khk",
-        "name": "Mongolian, Halh",
-        "names": [ "Central Mongolian", "Halh", "Halha", "Kalkh", "Khalkha", "Khalkha Mongolian", "Mongol", "Mongolian" ],
-        "region": "MN",
-        "regionname": "Mongolia",
-        "regions": [ "CZ", "KG", "RU", "TW", "US" ],
-        "script": "Mong",
-        "sldr": false,
-        "tag": "mn-Mong-MN",
-        "tags": [ "khk-Mong", "khk-Mong-MN" ],
-        "windows": "mn-Mong-MN"
     },
     {
         "full": "mn-Phag-CN",
@@ -77768,20 +77771,19 @@
         "windows": "mwv-Latn"
     },
     {
-        "full": "mww-Latn-CN",
+        "full": "mww-Hmnp-CN",
         "iana": [ "Hmong Daw" ],
         "iso639_3": "mww",
-        "localnames": [ "Hmongb Dleub" ],
         "name": "Hmong Daw",
         "names": [ "Bai Miao", "Banded Arm Hmong", "Chuan Miao", "Forest Miao", "Hmong Dao", "Hmong Der", "Hmong Dleu", "Hmong Qua Mpa", "Hmong Rongd", "Hmongb Dleub", "Hmoob Dawb", "Meo Do", "Meo Kao", "Mong Do", "Mong Trang", "Mán Tráng", "Pe Miao", "Peh Miao", "Striped Arm Hmong", "Striped Hmong", "White Hmong", "White Lum", "White Meo", "White Miao" ],
         "region": "CN",
         "regionname": "China",
         "regions": [ "FR", "LA", "TH", "US", "VN" ],
-        "script": "Latn",
+        "script": "Hmnp",
         "sldr": false,
         "tag": "mww",
-        "tags": [ "mww-CN", "mww-Latn" ],
-        "windows": "mww-Latn-CN"
+        "tags": [ "mww-CN", "mww-Hmnp" ],
+        "windows": "mww-Hmnp-CN"
     },
     {
         "full": "mww-Hmng-CN",
@@ -77813,6 +77815,21 @@
         "tag": "mww-Laoo",
         "tags": [ "mww-LA" ],
         "windows": "mww-Laoo-LA"
+    },
+    {
+        "full": "mww-Latn-CN",
+        "iana": [ "Hmong Daw" ],
+        "iso639_3": "mww",
+        "localnames": [ "Hmongb Dleub" ],
+        "name": "Hmong Daw",
+        "names": [ "Bai Miao", "Banded Arm Hmong", "Chuan Miao", "Forest Miao", "Hmong Dao", "Hmong Der", "Hmong Dleu", "Hmong Qua Mpa", "Hmong Rongd", "Hmongb Dleub", "Hmoob Dawb", "Meo Do", "Meo Kao", "Mong Do", "Mong Trang", "Mán Tráng", "Pe Miao", "Peh Miao", "Striped Arm Hmong", "Striped Hmong", "White Hmong", "White Lum", "White Meo", "White Miao" ],
+        "region": "CN",
+        "regionname": "China",
+        "regions": [ "FR", "LA", "TH", "US", "VN" ],
+        "script": "Latn",
+        "sldr": false,
+        "tag": "mww-Latn",
+        "windows": "mww-Latn-CN"
     },
     {
         "full": "mww-Plrd-CN",
@@ -84027,7 +84044,7 @@
         "names": [ "Norsk" ],
         "region": "NO",
         "regionname": "Norway",
-        "regions": [ "CA", "DE", "RU", "SE", "US" ],
+        "regions": [ "CA", "DE", "RU", "SE", "SJ", "US" ],
         "script": "Latn",
         "sldr": true,
         "suppress": true,
@@ -85262,6 +85279,21 @@
         "windows": "nss-Latn"
     },
     {
+        "full": "nst-Tnsa-IN",
+        "iana": [ "Tase Naga" ],
+        "iso639_3": "nst",
+        "name": "Naga, Tangsa",
+        "names": [ "Cham Chang", "Haimi", "Hawa", "Heimi", "Kuwa", "Naga, Tangshang", "Pangmi", "Pangwa", "Rangpan", "Rangpang", "Tangsa", "Tangshang", "Tangwa", "Tase", "Tase Naga", "Tasey" ],
+        "region": "IN",
+        "regionname": "India",
+        "regions": [ "MM" ],
+        "script": "Tnsa",
+        "sldr": false,
+        "tag": "nst",
+        "tags": [ "nst-IN", "nst-Tnsa" ],
+        "windows": "nst-Tnsa-IN"
+    },
+    {
         "full": "nst-Latn-MM",
         "iana": [ "Tase Naga" ],
         "iso639_3": "nst",
@@ -85273,25 +85305,9 @@
         "regions": [ "IN" ],
         "script": "Latn",
         "sldr": false,
-        "tag": "nst",
-        "tags": [ "nst-Latn", "nst-MM" ],
+        "tag": "nst-Latn",
+        "tags": [ "nst-MM" ],
         "windows": "nst-Latn-MM"
-    },
-    {
-        "full": "nst-Tnsa-IN",
-        "iana": [ "Tase Naga" ],
-        "iso639_3": "nst",
-        "name": "Naga, Tangsa",
-        "names": [ "Cham Chang", "Haimi", "Hawa", "Heimi", "Kuwa", "Naga, Tangshang", "Pangmi", "Pangwa", "Rangpan", "Rangpang", "Tangsa", "Tangshang", "Tangwa", "Tase", "Tase Naga", "Tasey" ],
-        "nophonvars": true,
-        "region": "IN",
-        "regionname": "India",
-        "regions": [ "MM" ],
-        "script": "Tnsa",
-        "sldr": false,
-        "tag": "nst-Tnsa",
-        "tags": [ "nst-IN" ],
-        "windows": "nst-Tnsa-IN"
     },
     {
         "full": "nst-Latn-MM-x-moshang",
@@ -89661,17 +89677,18 @@
         "windows": "oue-Latn"
     },
     {
-        "full": "oui-Ougr-XX",
+        "full": "oui-Ougr-143",
         "iana": [ "Old Uighur" ],
         "iso639_3": "oui",
         "name": "Old Uighur",
         "obsolete": true,
-        "region": "XX",
+        "region": "143",
+        "regionname": "Central Asia",
         "script": "Ougr",
         "sldr": false,
         "tag": "oui",
-        "tags": [ "oui-Ougr", "oui-XX" ],
-        "windows": "oui-Ougr"
+        "tags": [ "oui-143", "oui-Ougr" ],
+        "windows": "oui-Ougr-143"
     },
     {
         "full": "oui-Mong-XX",
@@ -89683,7 +89700,8 @@
         "script": "Mong",
         "sldr": false,
         "tag": "oui-Mong",
-        "windows": "oui-Mong"
+        "tags": [ "oui-XX" ],
+        "windows": "oui-Mong-XX"
     },
     {
         "full": "oum-Latn-PG",
@@ -99767,21 +99785,20 @@
         "windows": "sas-Bali"
     },
     {
-        "full": "sat-Latn-IN",
+        "full": "sat-Olck-IN",
         "iana": [ "Santali" ],
         "iso639_3": "sat",
         "localname": "ᱥᱟᱱᱛᱟᱲᱤ",
-        "localnames": [ "Har Rar" ],
         "name": "Santhali",
         "names": [ "Har", "Har Rar", "Hor", "Sainti", "Samtali", "Sandal", "Sangtal", "Santal", "Santali", "Santhal", "Santhiali", "Satar", "Sentali", "Sonthal" ],
         "region": "IN",
         "regionname": "India",
         "regions": [ "BD", "BT", "NP" ],
-        "script": "Latn",
+        "script": "Olck",
         "sldr": true,
         "tag": "sat",
-        "tags": [ "sat-IN", "sat-Latn" ],
-        "windows": "sat-Latn-IN"
+        "tags": [ "sat-IN", "sat-Olck" ],
+        "windows": "sat-Olck-IN"
     },
     {
         "full": "sat-Beng-IN",
@@ -99815,19 +99832,19 @@
         "windows": "sat-Deva-NP"
     },
     {
-        "full": "sat-Olck-IN",
+        "full": "sat-Latn-IN",
         "iana": [ "Santali" ],
         "iso639_3": "sat",
+        "localnames": [ "Har Rar" ],
         "name": "Santhali",
         "names": [ "Har", "Har Rar", "Hor", "Sainti", "Samtali", "Sandal", "Sangtal", "Santal", "Santali", "Santhal", "Santhiali", "Satar", "Sentali", "Sonthal" ],
-        "nophonvars": true,
         "region": "IN",
         "regionname": "India",
         "regions": [ "BD", "BT", "NP" ],
-        "script": "Olck",
-        "sldr": true,
-        "tag": "sat-Olck",
-        "windows": "sat-Olck-IN"
+        "script": "Latn",
+        "sldr": false,
+        "tag": "sat-Latn",
+        "windows": "sat-Latn-IN"
     },
     {
         "full": "sat-Orya-IN",
@@ -113122,21 +113139,7 @@
         "sldr": true,
         "tag": "tlj",
         "tags": [ "tlj-Latn", "tlj-UG" ],
-        "windows": "tlj-Latn-UG"
-    },
-    {
-        "full": "tlj-Latn-GH",
-        "iana": [ "Talinga-Bwisi" ],
-        "iso639_3": "tlj",
-        "localname": "Bwisi",
-        "localnames": [ "Lubwisi" ],
-        "name": "Talinga-Bwisi",
-        "region": "GH",
-        "regionname": "Ghana",
-        "script": "Latn",
-        "sldr": true,
-        "tag": "tlj-GH",
-        "windows": "tlj-Latn-GH"
+        "windows": "tlj-Latn"
     },
     {
         "full": "tlk-Latn-ID",
@@ -118158,19 +118161,35 @@
         "windows": "udg-Mlym"
     },
     {
+        "full": "udi-Aghb-RU",
+        "iana": [ "Udi" ],
+        "iso639_3": "udi",
+        "name": "Udi",
+        "names": [ "Udin", "Uti", "udin muz" ],
+        "region": "RU",
+        "regionname": "Russian Federation",
+        "regions": [ "AZ", "GE", "TM" ],
+        "script": "Aghb",
+        "sldr": true,
+        "tag": "udi",
+        "tags": [ "udi-Aghb", "udi-RU" ],
+        "windows": "udi-Aghb-RU"
+    },
+    {
         "full": "udi-Cyrl-AZ",
         "iana": [ "Udi" ],
         "iso639_3": "udi",
         "name": "Udi",
         "names": [ "Udin", "Uti", "udin muz" ],
+        "nophonvars": true,
         "region": "AZ",
         "regionname": "Azerbaijan",
         "regions": [ "GE", "RU", "TM" ],
         "script": "Cyrl",
-        "sldr": true,
-        "tag": "udi",
-        "tags": [ "udi-AZ", "udi-Cyrl" ],
-        "windows": "udi-Cyrl"
+        "sldr": false,
+        "tag": "udi-Cyrl",
+        "tags": [ "udi-AZ" ],
+        "windows": "udi-Cyrl-AZ"
     },
     {
         "full": "udj-Latn-ID",
@@ -124634,21 +124653,19 @@
         "windows": "wsa-Latn"
     },
     {
-        "full": "wsg-Telu-IN",
+        "full": "wsg-Gong-IN",
         "iana": [ "Adilabad Gondi" ],
         "iso639_3": "wsg",
-        "latnnames": [ "Koyang", "Gondi" ],
         "localname": "కోయంగ్",
-        "localnames": [ "కోయంగ్", "గోండి" ],
         "name": "Gondi, Adilabad",
         "names": [ "Adilabad Gondi", "Gunjala Gondi", "Koyang", "Nirmal", "Raj Gond", "Telugu Gondi" ],
         "region": "IN",
         "regionname": "India",
-        "script": "Telu",
+        "script": "Gong",
         "sldr": true,
         "tag": "wsg",
-        "tags": [ "ggo", "ggo-IN", "ggo-Telu", "ggo-Telu-IN", "wsg-IN", "wsg-Telu" ],
-        "windows": "wsg-Telu"
+        "tags": [ "wsg-Gong", "wsg-IN" ],
+        "windows": "wsg-Gong"
     },
     {
         "full": "wsg-Deva-IN",
@@ -124665,20 +124682,6 @@
         "windows": "wsg-Deva"
     },
     {
-        "full": "wsg-Gong-IN",
-        "iana": [ "Adilabad Gondi" ],
-        "iso639_3": "wsg",
-        "name": "Gondi, Adilabad",
-        "names": [ "Adilabad Gondi", "Gunjala Gondi", "Koyang", "Nirmal", "Raj Gond", "Telugu Gondi" ],
-        "nophonvars": true,
-        "region": "IN",
-        "regionname": "India",
-        "script": "Gong",
-        "sldr": false,
-        "tag": "wsg-Gong",
-        "windows": "wsg-Gong"
-    },
-    {
         "full": "wsg-Gonm-IN",
         "iana": [ "Adilabad Gondi" ],
         "iso639_3": "wsg",
@@ -124691,6 +124694,23 @@
         "sldr": false,
         "tag": "wsg-Gonm",
         "windows": "wsg-Gonm"
+    },
+    {
+        "full": "wsg-Telu-IN",
+        "iana": [ "Adilabad Gondi" ],
+        "iso639_3": "wsg",
+        "latnnames": [ "Koyang", "Gondi" ],
+        "localnames": [ "కోయంగ్", "గోండి" ],
+        "name": "Gondi, Adilabad",
+        "names": [ "Adilabad Gondi", "Gunjala Gondi", "Koyang", "Nirmal", "Raj Gond", "Telugu Gondi" ],
+        "nophonvars": true,
+        "region": "IN",
+        "regionname": "India",
+        "script": "Telu",
+        "sldr": false,
+        "tag": "wsg-Telu",
+        "tags": [ "ggo", "ggo-IN", "ggo-Telu", "ggo-Telu-IN" ],
+        "windows": "wsg-Telu"
     },
     {
         "full": "wsi-Latn-VU",
@@ -125952,28 +125972,30 @@
         "windows": "xcn-Zyyy"
     },
     {
-        "full": "xco-Arab-XX",
+        "full": "xco-Chrs-UZ",
         "iana": [ "Chorasmian" ],
         "iso639_3": "xco",
         "name": "Chorasmian",
-        "region": "XX",
-        "script": "Arab",
+        "region": "UZ",
+        "regionname": "Uzbekistan",
+        "script": "Chrs",
         "sldr": false,
         "tag": "xco",
-        "tags": [ "xco-Arab", "xco-XX" ],
-        "windows": "xco-Arab"
+        "tags": [ "xco-Chrs", "xco-UZ" ],
+        "windows": "xco-Chrs-UZ"
     },
     {
-        "full": "xco-Chrs-XX",
+        "full": "xco-Arab-XX",
         "iana": [ "Chorasmian" ],
         "iso639_3": "xco",
         "name": "Chorasmian",
         "nophonvars": true,
         "region": "XX",
-        "script": "Chrs",
+        "script": "Arab",
         "sldr": false,
-        "tag": "xco-Chrs",
-        "windows": "xco-Chrs"
+        "tag": "xco-Arab",
+        "tags": [ "xco-XX" ],
+        "windows": "xco-Arab-XX"
     },
     {
         "full": "xcr-Cari-TR",
@@ -134681,7 +134703,7 @@
         "obsolete": true,
         "region": "CN",
         "regionname": "China",
-        "regions": [ "ID", "MY", "TH", "US" ],
+        "regions": [ "ID", "MY", "TH", "US", "VN" ],
         "script": "Phag",
         "sldr": false,
         "tag": "zh-Phag",
