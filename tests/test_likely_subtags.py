@@ -3,6 +3,7 @@
 import unittest, os, re
 from xml.etree import ElementTree as et
 from palaso.sldr.langtags_full import LangTags, LangTag
+from langtag import lookup, langtag, LangTags
 
 def isnotint(s):
     try:
@@ -11,27 +12,28 @@ def isnotint(s):
     except ValueError:
         return True
 
+langtagjson = os.path.join(os.path.dirname(__file__), '..', 'pub', 'langtags.json')
 langtagtxt = os.path.join(os.path.dirname(__file__), '..', 'pub', 'langtags.txt')
-exceptions = ['ji-Hebr-UA', 'kxc-Ethi', 'bji-Ethi']
+exceptions = ['ji-Hebr-UA', 'kxc-Ethi', 'bji-Ethi', 'drh-Mong-CN']
 
 class LikelySubtags(unittest.TestCase):
     ''' Tests alltags.txt for discrepencies against likelySubtags.xml '''
     def setUp(self):
         self.likelymap = {}
         thisdir = os.path.dirname(__file__)
-        self.ltags = LangTags(alltags=langtagtxt)
+        self.ltags = LangTags(langtagjson)
         doc = et.parse(os.path.join(thisdir, "likelySubtags.xml"))
         for e in doc.findall("./likelySubtags/likelySubtag"):
-            tolt = LangTag(e.get('to').replace("_", "-"))
-            if tolt.region == "ZZ":
-                tolt.hideregion = True
-            if tolt.script == "Zyyy":
-                tolt.hidescript = True
+            tolt = langtag(e.get('to').replace("_", "-").replace("-ZZ", "").replace("-Zyyy", ""))
             self.likelymap[e.get('from').replace("_", "-")] = tolt
+        self.ltags.matchRegions = True
 
     def test_noBadMappings(self):
+        fails = []
+        failequalities = []
+        error = ""
         for k, v in self.likelymap.items():
-            t = LangTag(k)
+            t = langtag(k)
             r = str(v)
             if r in exceptions:
                 continue
@@ -39,8 +41,15 @@ class LikelySubtags(unittest.TestCase):
                 continue
             if k in self.ltags:
                 if r not in self.ltags:
-                    self.fail(r + " is missing from langtags")
-                self.assertIs(self.ltags[k], self.ltags[r])
+                    fails.append(r)
+                elif str(self.ltags[k]) != str(self.ltags[r]):
+                    failequalities.append((self.ltags[k], self.ltags[r]))
+        if len(fails):
+            error += ", ".join(fails) + " are missing from langtags\n"
+        if len(failequalities):
+            error += ", ".join("{} != {}".format(*x) for x in failequalities)
+        if len(error):
+            self.fail(error)
 
     def test_noBadComponents(self):
         for v in self.ltags.values():
@@ -53,7 +62,7 @@ class LikelySubtags(unittest.TestCase):
 
     def test_zh_CN(self):
         lt = self.ltags['zh']
-        self.assertEqual(str(lt), 'zh-CN')
+        self.assertEqual(str(lt.tag), 'zh-CN')
 
     def test_noDuplicates(self):
         found = {}

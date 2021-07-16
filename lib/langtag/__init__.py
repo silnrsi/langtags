@@ -165,8 +165,8 @@ class LangTags(with_metaclass(_Singleton)):
         self._iso639s = {}
         self._info = {}
         self._regions = {}      # collect region names from json
+        inf = None
         if fname is None:
-            inf = None
             try:
                 import pkg_resources
                 inf = pkg_resources.resource_stream("langtag", "langtags.json")
@@ -184,12 +184,16 @@ class LangTags(with_metaclass(_Singleton)):
                 self._cachedltags = CachedFile('langtags.json', url=useurl, 
                         srcdir = srcdir, prefix=cachedprefix or "langtag-LangTags")
                 fname = self._cachedltags.get_latest()
+        if inf is None:
+            try:
                 inf = open(fname, "r")
-            if inf is not None:
-                data = json.load(inf, object_hook=self.addSet)
-                inf.close()
-            else:
-                raise IOError("Unable to load langtags.json")
+            except OSError:
+                inf = None
+        if inf is not None:
+            data = json.load(inf, object_hook=self.addSet)
+            inf.close()
+        else:
+            raise IOError("Unable to load {}".format(fname))
 
     def addSet(self, d):
         '''Adds a TagSet to this collection'''
@@ -279,6 +283,10 @@ class LangTags(with_metaclass(_Singleton)):
         if res is None:
             raise KeyError(s)
         return res
+
+    def __contains__(self, s):
+        res = self.get(s)
+        return res is not None
 
 def lookup(lt, default=None, fname=None, matchRegions=True, **kw):
     ''' Looks up a language tag by name in a language tags database. Returns a
