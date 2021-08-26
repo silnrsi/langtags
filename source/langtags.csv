@@ -4687,7 +4687,8 @@ mio,mio-Latn-MX,"Mixtec, Pinotepa Nacional",MX,,,,,,,,CAM,mio,LE,9-Jan-2018,
 mip,mip-Latn-MX,"Mixtec, Apasco-Apoala",MX,,,02735 03153,,,,,CAM,mip,LE,9-Jan-2018,
 miq,miq-Latn-NI,Mískito,HN NI,,,,,,,,CAM,miq,LE,9-Jan-2018,
 mir,mir-Latn-MX,"Mixe, Isthmus",MX,,,,,,,,CAM,mir,LE,9-Jan-2018,
-mis,mis-Hatr-IQ,Uncoded languages ,IQ IR US,,,,,,,,???,mis,CLDR,,"Special, LE: this doesn't make sense that they've assigned Hatr to it"
+mis,mis-Hatr-001,Uncoded languages ,001,,,,,,,,001,mis,CLDR,,"Special, LE: this doesn't make sense that they've assigned Hatr to it"
+mis-Latn,mis-Latn-001,Uncoded languages,001,,,,,,,,001,mis,,,
 mit,mit-Latn-MX,"Mixtec, Southern Puebla",MX,,,02767,,,,,CAM,mit,LE,9-Jan-2018,
 miu,miu-Latn-MX,"Mixtec, Cacaloxtepec",MX,,,,,,,,CAM,miu,LE,9-Jan-2018,
 miw,miw-Latn-PG,Akoye,PG,,,,,,,,MEL,miw,LE,10-Jan-2018,
