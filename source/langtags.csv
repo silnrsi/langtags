@@ -559,7 +559,7 @@ axe,axe-Latn-AU,Ayerrerenge,AU,,,,,1,,,ANZ,axe,LE,10-Jan-2018,Extinct
 axg,axg-Latn-BR,"Arára, Mato Grosso",BR,,,,,1,,,SAM,axg,LE,10-Jan-2018,Extinct
 axk,axk-Latn-CF,Yaka,CF CG,,,,,,,,MAF,axk,jb,,
 axl,axl-Latn-AU,"Arabda, Lower Southern",AU,,,,,1,,,ANZ,axl,LE,10-Jan-2018,Extinct
-axm-Zyyy,axm-Zyyy-AM,Middle Armenian,AM,,,,,,,,???,axm,,,Historical
+axm,axm-Armn-AM,Middle Armenian,AM,,,,,,,,???,axm,,,Historical
 axx,axx-Latn-NC,Xârâgurè,NC,,,,,1,,,MEL,axx,LE,10-Jan-2018,
 ay,ay-Latn-BO,Aymara,BO PE AR CL,,,,,,,,SAM,aym,CLDR,23-Mar-2018,
 aya,aya-Latn-PG,Awar,PG,,,,,1,,,MEL,aya,LE,10-Jan-2018,
@@ -878,7 +878,7 @@ bji-Ethi,bji-Ethi-ET,Burji,ET KE,,,,,,,,EAF,bji,LE,30-Aug-2018,
 bjj,bjj-Deva-IN,Kanauji,IN,,,,,,,,SAS,bjj,CLDR,,
 bjk,bjk-Latn-PG,Barok,PG,,,,,,,,MEL,bjk,LE,10-Jan-2018,
 bjl,bjl-Latn-PG,Bulu,PG,,,,,1,,,MEL,bjl,LE,10-Jan-2018,
-bjm-Zyyy,bjm-Zyyy-IQ,Bajelani,IQ,,,,,,,,WAS,bjm,,,
+bjm,bjm-Arab-IQ,Bajelani,IQ,,,,,,,,WAS,bjm,,,
 bjn,bjn-Latn-ID,Banjar,ID MY,,,04688 05080 22507,,,,,SEA,bjn,CLDR,,
 bjn-Arab,bjn-Arab-ID,Banjar,ID MY,,,04688 05080 22507,,,,,SEA,bjn,,,
 bjo,bjo-Latn-CF,"Banda, Mid-Southern",CD CF SS,,,,,,,,EAF MAF,bjo,jb,,
@@ -1835,6 +1835,7 @@ dgn,dgn-Latn-AU,Dagoman,AU,,,,,1,,,ANZ,dgn,LE,10-Jan-2018,Extinct
 dgo-Arab,dgo-Arab-IN,Dogri,IN,,,,doi,,1,,SAS,dgo,CLDR,23-Mar-2018,via macro mapping
 dgo,dgo-Deva-IN,Dogri,IN,,,,doi,,,,SAS,dgo,,23-Mar-2018,
 dgo-Takr,dgo-Takr-IN,Dogri,IN,,,,doi,,1,,SAS,dgo,,23-Mar-2018,
+dgo-Dogr,dgo-Dogr-IN,Dogri,IN,,,,doi,,1,,SAS,dgo,,,
 dgr,dgr-Latn-CA,Dogrib,CA,,,,,,,,NAM,dgr,CLDR,,
 dgs,dgs-Latn-BF,Dogoso,BF CI,,,,,1,,,WAF,dgs,,,
 dgt,dgt-Latn-AU,Ndra'ngith,AU,,,,,1,,,ANZ,dgt,LE,10-Jan-2018,Extinct
@@ -1954,6 +1955,7 @@ doh,doh-Latn-NG,Dong,NG,,,,,1,,,WAF,doh,,,
 doi-Arab,doi-Arab-IN,Dogri (macrolanguage),IN,,,,,,,,SAS,doi,CLDR,,
 doi,doi-Deva-IN,Dogri,IN,,,,,,,,SAS,doi,,23-Mar-2018,
 doi-Takr,doi-Takr-IN,Dogri,IN,,,,,,1,,SAS,doi,,23-Mar-2018,
+doi-Dogr,doi-Dogr-IN,Dogri,IN,,,,,,1,,SAS,doi,,,
 dok,dok-Latn-ID,Dondo,ID,,,,,1,,,SEA,dok,,,
 dol,dol-Latn-PG,Doso,PG,,,,,1,,,MEL,dol,LE,10-Jan-2018,
 don,don-Latn-PG,Toura,PG,,,,,1,,,MEL,don,LE,10-Jan-2018,
@@ -8462,6 +8464,7 @@ xnn,xnn-Latn-PH,"Kankanay, Northern",PH,,,,,,,,SEA,xnn,,,
 xno,xno-Zyyy-XX,Anglo-Norman,XX,,,,,,,,???,xno,,,Historical
 xnq,xnq-Latn-MZ,Xingoni,MZ,,,,,,,,EAF,xnq,,,
 xnr,xnr-Deva-IN,Kangri,IN,,,,,,,,SAS,xnr,CLDR,,
+xnr-Takr,xnr-Takr-IN,Kangri,IN,,,,,,1,,SAS,xnr,,,
 xns,xns-Zyyy-IN,Kanashi,IN,,,,,1,,,SAS,xns,LE,28-Aug-2018,
 xnt,xnt-Zyyy-US,Narragansett,US,,,,,1,,,NAM,xnt,LE,10-Jan-2018,Extinct
 xnu,xnu-Latn-AU,Nukunul,AU,,,,,1,,,ANZ,xnu,LE,10-Jan-2018,Extinct
