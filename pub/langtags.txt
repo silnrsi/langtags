@@ -2972,6 +2972,7 @@ hmc = hmc-CN = hmc-Zyyy = hmc-Zyyy-CN
 *hmd = hmd-CN = hmd-Plrd = hmd-Plrd-CN
 hmd-Hmng = hmd-Hmng-CN
 hmd-Latn = hmd-Latn-CN
+hmd-x-normal = hmd-CN-x-normal = hmd-Plrd-x-normal = hmd-Plrd-CN-x-normal
 hme = hme-CN = hme-Zyyy = hme-Zyyy-CN
 hmf = hmf-Latn = hmf-VN = hmf-Latn-VN
 hmg = hmg-CN = hmg-Zyyy = hmg-Zyyy-CN

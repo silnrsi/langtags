@@ -9,7 +9,7 @@
     },
     {
         "api": "1.2.1",
-        "date": "2021-07-16",
+        "date": "2021-08-27",
         "tag": "_version"
     },
     {
@@ -44459,6 +44459,20 @@
         "sldr": false,
         "tag": "hmd-Latn",
         "windows": "hmd-Latn"
+    },
+    {
+        "full": "hmd-Plrd-CN-x-normal",
+        "iana": [ "Miao, Large Flowery, Normalised orthography" ],
+        "iso639_3": "hmd",
+        "name": "Miao, Large Flowery",
+        "names": [ "A-Hmao", "A-Hmaos", "Ad Hmaob lul", "Big Flowery Miao", "Da Hua Bei Miao", "Da Hua Miao", "Diandongbei Miao", "Flowery Miao", "Great Flowery Tribe", "Hua Miao", "Hwa Miao", "Miao, Large Flowery, Normalised orthography", "Northeastern Dian Miao", "Northeastern Yunnan Miao", "Ta Hwa Miao" ],
+        "region": "CN",
+        "regionname": "China",
+        "script": "Plrd",
+        "sldr": false,
+        "tag": "hmd-x-normal",
+        "tags": [ "hmd-CN-x-normal", "hmd-Plrd-x-normal" ],
+        "windows": "hmd-Plrd-x-normal"
     },
     {
         "full": "hme-Zyyy-CN",
