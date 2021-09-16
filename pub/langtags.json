@@ -9,7 +9,7 @@
     },
     {
         "api": "1.2.1",
-        "date": "2021-07-16",
+        "date": "2021-09-16",
         "tag": "_version"
     },
     {
@@ -12970,13 +12970,12 @@
         "full": "bji-Latn-ET",
         "iana": [ "Burji" ],
         "iso639_3": "bji",
-        "localname": "ቡረጊ",
         "name": "Burji",
         "region": "ET",
         "regionname": "Ethiopia",
         "regions": [ "KE" ],
         "script": "Latn",
-        "sldr": true,
+        "sldr": false,
         "tag": "bji",
         "tags": [ "bji-ET", "bji-Latn" ],
         "windows": "bji-Latn"
@@ -61346,7 +61345,7 @@
         "regionname": "Ethiopia",
         "regions": [ "KE" ],
         "script": "Latn",
-        "sldr": true,
+        "sldr": false,
         "tag": "kxc",
         "tags": [ "kxc-ET", "kxc-Latn" ],
         "windows": "kxc-Latn"
@@ -116842,6 +116841,20 @@
         "tag": "tvy",
         "tags": [ "tvy-TL", "tvy-Zyyy" ],
         "windows": "tvy-Zyyy"
+    },
+    {
+        "full": "tw-Latn-GH-x-asante",
+        "iana": [ "Twi" ],
+        "iso639_3": "twi",
+        "name": "Twi",
+        "region": "GH",
+        "regionname": "Ghana",
+        "rod": "360",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "tw-x-asante",
+        "tags": [ "tw-GH-x-asante", "tw-Latn-x-asante" ],
+        "windows": "tw-Latn-x-asante"
     },
     {
         "full": "twa-Zyyy-US",

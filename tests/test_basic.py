@@ -63,7 +63,7 @@ class Basic(unittest.TestCase):
         ''' Qaa? type scripts must have an -x- for the script name '''
         for r, t in self._allRows():
             scr = t.script
-            if scr.startswith("Qaa") or scr.startswith("Qab"):
+            if scr is not None and (scr.startswith("Qaa") or scr.startswith("Qab")):
                 if scr not in ("Qaax", "Qaby", "Qabz") and (t.extensions is None or 'x' not in t.extensions):
                     self.fail("{Lang_Id} has no extension for script name".format(**r))
             elif scr not in self.iana.script and scr not in self.extraScripts:
@@ -100,7 +100,7 @@ class Basic(unittest.TestCase):
                 continue
             if len(t.ns) == 1 and 'x' in t.ns and len(t.ns['x']) == 1:
                 continue        # allow a private script extension
-            if sorted(t.ns.keys()) != sorted(l.extensions.keys()):
+            if sorted(t.ns.keys()) != sorted(l.ns.keys()):
                 self.fail("{Lang_Id} and {likely_subtag} have different extension namespaces".format(**r))
             for k, v in t.ns.items():
                 if sorted(v) != sorted(l.ns[k]):
