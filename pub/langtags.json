@@ -211,7 +211,6 @@
         "sldr": false,
         "tag": "aah",
         "tags": [ "aah-Latn", "aah-PG" ],
-        "unwritten": true,
         "windows": "aah-Latn"
     },
     {
@@ -427,7 +426,7 @@
         "suppress": true,
         "tag": "ab",
         "tags": [ "ab-Cyrl", "ab-GE" ],
-        "windows": "ab"
+        "windows": "ab-GE"
     },
     {
         "full": "ab-Geor-GE",
@@ -443,7 +442,21 @@
         "script": "Geor",
         "sldr": false,
         "tag": "ab-Geor",
-        "windows": "ab-Geor"
+        "windows": "ab-Geor-GE"
+    },
+    {
+        "full": "ab-Latn-TR",
+        "iana": [ "Abkhazian" ],
+        "iso639_3": "abk",
+        "name": "Abkhaz",
+        "names": [ "Abkhazian", "Abxazo" ],
+        "region": "TR",
+        "regionname": "Turkey",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "ab-Latn",
+        "tags": [ "ab-TR" ],
+        "windows": "ab-Latn-TR"
     },
     {
         "full": "aba-Latn-CI",
@@ -3097,7 +3110,6 @@
         "sldr": false,
         "tag": "ail",
         "tags": [ "ail-Latn", "ail-PG" ],
-        "unwritten": true,
         "windows": "ail-Latn"
     },
     {
@@ -3186,7 +3198,6 @@
         "sldr": false,
         "tag": "aiq",
         "tags": [ "aiq-AF", "aiq-Arab" ],
-        "unwritten": true,
         "windows": "aiq-Arab"
     },
     {
@@ -4558,7 +4569,6 @@
         "sldr": false,
         "tag": "amt",
         "tags": [ "amt-Latn", "amt-PG" ],
-        "unwritten": true,
         "windows": "amt-Latn"
     },
     {
@@ -8490,17 +8500,17 @@
         "windows": "axl-Latn"
     },
     {
-        "full": "axm-Zyyy-AM",
+        "full": "axm-Armn-AM",
         "iana": [ "Middle Armenian" ],
         "iso639_3": "axm",
         "name": "Middle Armenian",
         "region": "AM",
         "regionname": "Armenia",
-        "script": "Zyyy",
+        "script": "Armn",
         "sldr": false,
         "tag": "axm",
-        "tags": [ "axm-AM", "axm-Zyyy" ],
-        "windows": "axm-Zyyy"
+        "tags": [ "axm-AM", "axm-Armn" ],
+        "windows": "axm-Armn"
     },
     {
         "full": "axx-Latn-NC",
@@ -9555,7 +9565,6 @@
         "sldr": false,
         "tag": "bbf",
         "tags": [ "bbf-Latn", "bbf-PG" ],
-        "unwritten": true,
         "windows": "bbf-Latn"
     },
     {
@@ -9957,7 +9966,6 @@
         "sldr": false,
         "tag": "bcg",
         "tags": [ "bcg-GN", "bcg-Latn", "bgm", "bgm-GN", "bgm-Latn", "bgm-Latn-GN" ],
-        "unwritten": true,
         "windows": "bcg-Latn"
     },
     {
@@ -11744,7 +11752,6 @@
         "sldr": false,
         "tag": "bgf",
         "tags": [ "bgf-CM", "bgf-Latn" ],
-        "unwritten": true,
         "windows": "bgf-Latn"
     },
     {
@@ -12726,7 +12733,6 @@
         "sldr": false,
         "tag": "bip",
         "tags": [ "bip-CD", "bip-Latn" ],
-        "unwritten": true,
         "windows": "bip-Latn"
     },
     {
@@ -13044,18 +13050,18 @@
         "windows": "bjl-Latn"
     },
     {
-        "full": "bjm-Zyyy-IQ",
+        "full": "bjm-Arab-IQ",
         "iana": [ "Bajelani" ],
         "iso639_3": "bjm",
         "name": "Bajelani",
         "names": [ "Bajalani", "Bajoran", "Bejwan", "Chichamachu", "Gurani" ],
         "region": "IQ",
         "regionname": "Iraq",
-        "script": "Zyyy",
+        "script": "Arab",
         "sldr": false,
         "tag": "bjm",
-        "tags": [ "bjm-IQ", "bjm-Zyyy" ],
-        "windows": "bjm-Zyyy"
+        "tags": [ "bjm-Arab", "bjm-IQ" ],
+        "windows": "bjm-Arab"
     },
     {
         "full": "bjn-Latn-ID",
@@ -13480,7 +13486,6 @@
         "sldr": false,
         "tag": "bkp",
         "tags": [ "bkp-CD", "bkp-Latn" ],
-        "unwritten": true,
         "windows": "bkp-Latn"
     },
     {
@@ -16482,7 +16487,6 @@
         "sldr": false,
         "tag": "brs",
         "tags": [ "brs-ID", "brs-Latn" ],
-        "unwritten": true,
         "windows": "brs-Latn"
     },
     {
@@ -29056,6 +29060,22 @@
         "tag": "doi-Arab",
         "tags": [ "dgo-Arab", "dgo-Arab-IN" ],
         "windows": "doi-Arab"
+    },
+    {
+        "full": "doi-Dogr-IN",
+        "iana": [ "Dogri (macrolanguage)" ],
+        "iso639_3": "doi",
+        "name": "Dogri (macrolanguage)",
+        "names": [ "Dhogaryali", "Dogari", "Dogri", "Dogri Jammu", "Dogri Pahari", "Dogri-Kangri", "Dongari", "Hindi Dogri", "Tokkaru" ],
+        "nophonvars": true,
+        "obsolete": true,
+        "region": "IN",
+        "regionname": "India",
+        "script": "Dogr",
+        "sldr": false,
+        "tag": "doi-Dogr",
+        "tags": [ "dgo-Dogr", "dgo-Dogr-IN" ],
+        "windows": "doi-Dogr"
     },
     {
         "full": "doi-Takr-IN",
@@ -52590,7 +52610,6 @@
         "sldr": false,
         "tag": "kcm",
         "tags": [ "kcm-CF", "kcm-Latn" ],
-        "unwritten": true,
         "windows": "kcm-Latn"
     },
     {
@@ -53011,7 +53030,6 @@
         "sldr": false,
         "tag": "kdp",
         "tags": [ "kdp-Latn", "kdp-NG" ],
-        "unwritten": true,
         "windows": "kdp-Latn"
     },
     {
@@ -57710,7 +57728,6 @@
         "iso639_3": "koi",
         "name": "Komi-Permyak",
         "names": [ "Kama Permyak", "Komi-Perm", "Komi-Permyaki", "Komi-Permyat", "Permian", "Permyak" ],
-        "obsolete": true,
         "region": "RU",
         "regionname": "Russian Federation",
         "script": "Latn",
@@ -58625,7 +58642,6 @@
         "sldr": false,
         "tag": "kqv",
         "tags": [ "kqv-ID", "kqv-Latn" ],
-        "unwritten": true,
         "windows": "kqv-Latn"
     },
     {
@@ -60489,11 +60505,13 @@
         "iana": [ "Komi" ],
         "iso639_3": "kom",
         "name": "Komi",
+        "names": [ "Komi-Zyrian", "Komi-Zyryan", "Zyrian" ],
         "region": "RU",
         "regionname": "Russian Federation",
         "script": "Latn",
         "sldr": false,
         "tag": "kv-Latn",
+        "tags": [ "kpv-Latn", "kpv-Latn-RU" ],
         "windows": "kv-Latn"
     },
     {
@@ -60880,19 +60898,18 @@
         "windows": "kvx-Arab"
     },
     {
-        "full": "kvy-Zyyy-MM",
+        "full": "kvy-Kali-MM",
         "iana": [ "Yintale Karen", "Yintale" ],
         "iso639_3": "kvy",
         "name": "Yintale",
         "names": [ "Taliak", "Yangatalet", "Yangtadai", "Yintale Karen", "Yintalet" ],
         "region": "MM",
         "regionname": "Myanmar",
-        "script": "Zyyy",
+        "script": "Kali",
         "sldr": false,
         "tag": "kvy",
-        "tags": [ "kvy-MM", "kvy-Zyyy" ],
-        "unwritten": true,
-        "windows": "kvy-Zyyy"
+        "tags": [ "kvy-Kali", "kvy-MM" ],
+        "windows": "kvy-Kali"
     },
     {
         "full": "kvz-Latn-ID",
@@ -70073,7 +70090,6 @@
         "sldr": false,
         "tag": "mec",
         "tags": [ "mec-AU", "mec-Latn" ],
-        "unwritten": true,
         "windows": "mec-Latn"
     },
     {
@@ -70193,7 +70209,6 @@
         "sldr": false,
         "tag": "mel",
         "tags": [ "mel-Latn", "mel-MY" ],
-        "unwritten": true,
         "windows": "mel-Latn"
     },
     {
@@ -70500,7 +70515,6 @@
         "sldr": false,
         "tag": "mfc",
         "tags": [ "mfc-CD", "mfc-Latn" ],
-        "unwritten": true,
         "windows": "mfc-Latn"
     },
     {
@@ -71299,7 +71313,6 @@
         "sldr": false,
         "tag": "mgw",
         "tags": [ "mgw-Latn", "mgw-TZ" ],
-        "unwritten": true,
         "windows": "mgw-Latn"
     },
     {
@@ -72015,18 +72028,29 @@
         "windows": "mir-Latn"
     },
     {
-        "full": "mis-Hatr-IQ",
+        "full": "mis-Hatr-001",
         "iana": [ "Uncoded languages" ],
         "iso639_3": "mis",
         "name": "Uncoded languages",
-        "region": "IQ",
-        "regionname": "Iraq",
-        "regions": [ "IR", "US" ],
+        "region": "001",
+        "regionname": "World",
         "script": "Hatr",
         "sldr": false,
         "tag": "mis",
-        "tags": [ "mis-Hatr", "mis-IQ" ],
+        "tags": [ "mis-001", "mis-Hatr" ],
         "windows": "mis-Hatr"
+    },
+    {
+        "full": "mis-Latn-001",
+        "iana": [ "Uncoded languages" ],
+        "iso639_3": "mis",
+        "name": "Uncoded languages",
+        "region": "001",
+        "regionname": "World",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "mis-Latn",
+        "windows": "mis-Latn"
     },
     {
         "full": "mit-Latn-MX",
@@ -76837,7 +76861,6 @@
         "sldr": false,
         "tag": "mui",
         "tags": [ "ms-mui", "ms-mui-ID", "mui-ID", "mui-Latn" ],
-        "unwritten": true,
         "windows": "mui-Latn"
     },
     {
@@ -83800,7 +83823,6 @@
         "sldr": false,
         "tag": "nni",
         "tags": [ "nni-ID", "nni-Latn" ],
-        "unwritten": true,
         "windows": "nni-Latn"
     },
     {
@@ -95379,7 +95401,6 @@
         "sldr": false,
         "tag": "pye",
         "tags": [ "pye-CI", "pye-Latn" ],
-        "unwritten": true,
         "windows": "pye-Latn"
     },
     {
@@ -99872,7 +99893,6 @@
         "sldr": false,
         "tag": "sau",
         "tags": [ "sau-ID", "sau-Latn" ],
-        "unwritten": true,
         "windows": "sau-Latn"
     },
     {
@@ -106727,7 +106747,6 @@
         "sldr": false,
         "tag": "ssn",
         "tags": [ "ssn-KE", "ssn-Latn" ],
-        "unwritten": true,
         "windows": "ssn-Latn"
     },
     {
@@ -109141,7 +109160,6 @@
         "sldr": false,
         "tag": "tad",
         "tags": [ "tad-ID", "tad-Latn" ],
-        "unwritten": true,
         "windows": "tad-Latn"
     },
     {
@@ -112407,7 +112425,6 @@
         "sldr": false,
         "tag": "tjg",
         "tags": [ "tjg-ID", "tjg-Latn" ],
-        "unwritten": true,
         "windows": "tjg-Latn"
     },
     {
@@ -119141,7 +119158,6 @@
         "sldr": false,
         "tag": "uni",
         "tags": [ "uni-Latn", "uni-PG" ],
-        "unwritten": true,
         "windows": "uni-Latn"
     },
     {
@@ -121587,7 +121603,6 @@
         "sldr": false,
         "tag": "vra",
         "tags": [ "vra-Latn", "vra-VU" ],
-        "unwritten": true,
         "windows": "vra-Latn"
     },
     {
@@ -127839,6 +127854,21 @@
         "windows": "xnr-Deva"
     },
     {
+        "full": "xnr-Takr-IN",
+        "iana": [ "Kangri" ],
+        "iso639_3": "xnr",
+        "name": "Kangri",
+        "names": [ "Kangra-Dogri", "Pahari", "Pahari Kangri" ],
+        "nophonvars": true,
+        "obsolete": true,
+        "region": "IN",
+        "regionname": "India",
+        "script": "Takr",
+        "sldr": false,
+        "tag": "xnr-Takr",
+        "windows": "xnr-Takr"
+    },
+    {
         "full": "xns-Zyyy-IN",
         "iana": [ "Kanashi" ],
         "iso639_3": "xns",
@@ -130680,7 +130710,6 @@
         "sldr": true,
         "tag": "ycl",
         "tags": [ "ycl-CN", "ycl-Latn" ],
-        "unwritten": true,
         "windows": "ycl-Latn"
     },
     {

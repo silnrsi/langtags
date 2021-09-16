@@ -27,6 +27,7 @@ aax = aax-ID = aax-Latn = aax-Latn-ID
 *aaz = aaz-ID = aaz-Latn = aaz-Latn-ID
 ab = ab-Cyrl = ab-GE = ab-Cyrl-GE
 ab-Geor = ab-Geor-GE
+ab-Latn = ab-TR = ab-Latn-TR
 aba = aba-CI = aba-Latn = aba-Latn-CI
 abb = abb-CM = abb-Latn = abb-Latn-CM
 abc = abc-Latn = abc-PH = abc-Latn-PH
@@ -565,7 +566,7 @@ axe = axe-AU = axe-Latn = axe-Latn-AU
 axg = axg-BR = axg-Latn = axg-Latn-BR
 axk = axk-CF = axk-Latn = axk-Latn-CF
 axl = axl-AU = axl-Latn = axl-Latn-AU
-axm = axm-AM = axm-Zyyy = axm-Zyyy-AM
+axm = axm-AM = axm-Armn = axm-Armn-AM
 axx = axx-Latn = axx-NC = axx-Latn-NC
 ay = ay-BO = ay-Latn = ayr = ayr-BO = ayr-Latn = ayr-Latn-BO = ay-Latn-BO
 aya = aya-Latn = aya-PG = aya-Latn-PG
@@ -866,7 +867,7 @@ bji = bji-ET = bji-Latn = bji-Latn-ET
 bjj = bjj-Deva = bjj-IN = bjj-Deva-IN
 bjk = bjk-Latn = bjk-PG = bjk-Latn-PG
 bjl = bjl-Latn = bjl-PG = bjl-Latn-PG
-bjm = bjm-IQ = bjm-Zyyy = bjm-Zyyy-IQ
+bjm = bjm-Arab = bjm-IQ = bjm-Arab-IQ
 *bjn = bjn-ID = bjn-Latn = ms-bjn = ms-bjn-ID = bjn-Latn-ID
 bjn-Arab = bjn-Arab-ID
 *bjo = bjo-CF = bjo-Latn = bjo-Latn-CF
@@ -1933,6 +1934,7 @@ dof = dof-Latn = dof-PG = dof-Latn-PG
 doh = doh-Latn = doh-NG = doh-Latn-NG
 *doi = dgo = dgo-Deva = dgo-Deva-IN = dgo-IN = doi-Deva = *doi-IN = doi-Deva-IN
 doi-Arab = dgo-Arab = dgo-Arab-IN = doi-Arab-IN
+doi-Dogr = dgo-Dogr = dgo-Dogr-IN = doi-Dogr-IN
 doi-Takr = dgo-Takr = dgo-Takr-IN = doi-Takr-IN
 dok = dok-ID = dok-Latn = dok-Latn-ID
 dol = dol-Latn = dol-PG = dol-Latn-PG
@@ -4040,7 +4042,7 @@ kuy = kuy-AU = kuy-Latn = kuy-Latn-AU
 kuz = kuz-CL = kuz-Latn = kuz-Latn-CL
 kv = kpv = kpv-Cyrl = kpv-Cyrl-RU = kpv-RU = kv-Cyrl = kv-RU = kv-Cyrl-RU
 kv-Cyrs-RU = kpv-Cyrs = kpv-Cyrs-RU = kv-Cyrs-RU
-kv-Latn = kv-Latn-RU
+kv-Latn = kpv-Latn = kpv-Latn-RU = kv-Latn-RU
 kv-Perm = kv-Perm-RU
 kva = kva-Cyrl = kva-RU = kva-Cyrl-RU
 kvb = kvb-ID = kvb-Latn = ms-kvb = ms-kvb-ID = kvb-Latn-ID
@@ -4067,7 +4069,7 @@ kvu = kvu-MM = kvu-Zyyy = kvu-Zyyy-MM
 kvv = kvv-ID = kvv-Latn = kvv-Latn-ID
 kvw = kvw-ID = kvw-Latn = kvw-Latn-ID
 *kvx = kvx-Arab = kvx-PK = kvx-Arab-PK
-kvy = kvy-MM = kvy-Zyyy = kvy-Zyyy-MM
+kvy = kvy-Kali = kvy-MM = kvy-Kali-MM
 kvz = kvz-ID = kvz-Latn = kvz-Latn-ID
 *kw = *kw-GB = kw-Latn = kw-Latn-GB
 kwa = kwa-BR = kwa-Latn = kwa-Latn-BR
@@ -4808,7 +4810,8 @@ min-Arab = min-Arab-ID
 mip = mip-Latn = mip-MX = mip-Latn-MX
 miq = miq-Latn = miq-NI = miq-Latn-NI
 *mir = mir-Latn = mir-MX = mir-Latn-MX
-mis = mis-Hatr = mis-IQ = mis-Hatr-IQ
+mis = mis-001 = mis-Hatr = mis-Hatr-001
+mis-Latn = mis-Latn-001
 *mit = mit-Latn = mit-MX = mit-Latn-MX
 miu = miu-Latn = miu-MX = miu-Latn-MX
 *miw = miw-Latn = miw-PG = miw-Latn-PG
@@ -8567,6 +8570,7 @@ xnm = xnm-AU = xnm-Latn = xnm-Latn-AU
 xno = xno-XX = xno-Zyyy = xno-Zyyy-XX
 xnq = xnq-Latn = xnq-MZ = xnq-Latn-MZ
 xnr = xnr-Deva = xnr-IN = xnr-Deva-IN
+xnr-Takr = xnr-Takr-IN
 xns = xns-IN = xns-Zyyy = xns-Zyyy-IN
 xnt = xnt-US = xnt-Zyyy = xnt-Zyyy-US
 xnu = xnu-AU = xnu-Latn = xnu-Latn-AU
