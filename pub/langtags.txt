@@ -4167,6 +4167,7 @@ kxs = kxs-CN = kxs-Zyyy = kxs-Zyyy-CN
 kxt = kxt-Latn = kxt-PG = kxt-Latn-PG
 kxu = kxu-IN = kxu-Orya = kxu-Orya-IN
 kxv = kxv-IN = kxv-Orya = kxv-Orya-IN
+kxv-Latn = kxv-Latn-IN
 kxv-Telu = kxv-Telu-IN
 *kxw = kxw-Latn = kxw-PG = kxw-Latn-PG
 kxx = kxx-CG = kxx-Latn = kxx-Latn-CG

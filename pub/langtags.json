@@ -9,7 +9,7 @@
     },
     {
         "api": "1.2.1",
-        "date": "2021-09-22",
+        "date": "2021-10-05",
         "tag": "_version"
     },
     {
@@ -41165,6 +41165,7 @@
         "sldr": false,
         "tag": "goc",
         "tags": [ "goc-Latn", "goc-PG" ],
+        "unwritten": true,
         "windows": "goc-Latn"
     },
     {
@@ -60033,6 +60034,7 @@
         "sldr": false,
         "tag": "ksl",
         "tags": [ "ksl-Latn", "ksl-PG" ],
+        "unwritten": true,
         "windows": "ksl-Latn"
     },
     {
@@ -62398,6 +62400,19 @@
         "tag": "kxv",
         "tags": [ "kxv-IN", "kxv-Orya" ],
         "windows": "kxv-Orya"
+    },
+    {
+        "full": "kxv-Latn-IN",
+        "iana": [ "Kuvi" ],
+        "iso639_3": "kxv",
+        "name": "Kuvi",
+        "names": [ "Jatapu", "Khondh", "Khondi", "Kond", "Kuvi Kond", "Kuvinga", "Kuwi" ],
+        "region": "IN",
+        "regionname": "India",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "kxv-Latn",
+        "windows": "kxv-Latn"
     },
     {
         "full": "kxv-Telu-IN",
