@@ -42,6 +42,7 @@ abh,abh-Arab-TJ,"Arabic, Tajiki Spoken",AF TJ UZ,,,,,,,,CAS SAS,abh,LE,12-Jan-20
 abi,abi-Latn-CI,Abidji,CI,,,06623 06624,,,,,WAF,abi,LE,12-Jan-2018,
 abj-Zyyy,abj-Zyyy-IN,Aka-Bea,IN,,,,,,,,SAS,abj,,,Extinct
 abl,abl-Rjng-ID,Lampung Nyo,ID,,,,,,,,SEA,abl,,,
+abl-Latn,abl-Latn-ID,Lampung Nyo,ID,,,,,,,,SEA,abl,,,
 abm,abm-Latn-NG,Abanyom,NG,,,,,1,,,WAF,abm,,,
 abn,abn-Latn-NG,Abua,NG,,,,,,,,WAF,abn,LE,12-Jan-2018,
 abo,abo-Latn-NG,Abon,NG,,,,,1,,,WAF,abo,,,
@@ -323,7 +324,7 @@ ana,ana-Latn-CO,Andaqui,CO,,,,,1,,,SAM,ana,LE,10-Jan-2018,Extinct
 anb,anb-Latn-PE,Andoa,PE,,,,,,,,SAM,anb,LE,9-Jan-2018,Extinct
 anc,anc-Latn-NG,Ngas,NG,,,06427,,,,,WAF,anc,,,
 and,and-Latn-ID,Ansus,ID,,,,,1,,,SEA,and,,,
-ane,ane-Latn-NC,Xârâcùù,NC,,,,,1,,,MEL,ane,LE,10-Jan-2018,
+ane,ane-Latn-NC,Xârâcùù,NC,,,,,,,,MEL,ane,LE,10-Jan-2018,
 anf,anf-Latn-GH,Animere,GH,,,,,1,,,WAF,anf,LE,12-Jan-2018,
 ang,ang-Latn-GB,Old English (ca. 450-1100),GB,,,,,,1,,NEU,ang,,,Historical
 anh,anh-Latn-PG,Nend,PG,,,,,,,,MEL,anh,LE,10-Jan-2018,
