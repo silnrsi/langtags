@@ -204,7 +204,7 @@ aif,aif-Latn-PG,Agi,PG,,,,,1,,,MEL,aif,LE,10-Jan-2018,
 aig,aig-Latn-AG,Antigua and Barbuda Creole English,AG AI DM GB KN MF MS SX,,,12828,,,,,CAR NEU,aig,,,
 aih-Zyyy,aih-Zyyy-CN,Ai-Cham,CN,,,,,1,,,EAS,aih,,,
 aii-Cyrl,aii-Cyrl-RU,Assyrian Neo-Aramaic,RU,,,,,,,,EEU,aii,CLDR Supplemental,,
-aii-Syrc,aii-Syrc-IQ,Assyrian Neo-Aramaic,AM AT AU AZ BE BR CA CH CY DE GB GE GR IQ IR IT LB NL NZ RU SE SY TR UA US,,,,,,,,ANZ EEU NAM NEU SAM SAS SEU WAS WEU,aii,CLDR Supplemental,,
+aii-Syrc,aii-Syrc-IQ,Assyrian Neo-Aramaic,AM AT AU AZ BE BR CA CH CY DE GB GE GR IQ IR IT LB NL NZ RU SE SY TR UA US,,,,,,,,ANZ EEU NAM NEU SAM SAS SEU WAS WEU,aii,CLDR Supplemental,11/15/2021,"LE: This one should be primary, but CLDR doesn't indicate it?"
 aij,aij-Hebr-IL,Lishanid Noshan,IL,,,,,,,,WAS,aij,,,
 aik,aik-Latn-NG,Ake,NG,,,,,1,,,WAF,aik,,,
 ail,ail-Latn-PG,Aimele,PG,,,,,,,,MEL,ail,LE,10-Jan-2018,
@@ -219,7 +219,7 @@ ais-Zyyy,ais-Zyyy-TW,"Amis, Nataoran",TW,,,,,,,ami,EAS,ais,,,
 ait,ait-Latn-BR,Arikem,BR,,,,,1,,,SAM,ait,LE,10-Jan-2018,Extinct
 aiw-Arab,aiw-Arab-ET,Aari,ET,,,,,,,,EAF,aiw,,,
 aiw-Ethi,aiw-Ethi-ET,Aari,ET,,,,,,,,EAF,aiw,,,
-aiw-Latn,aiw-Latn-ET,Aari,ET,,,,,,,,EAF,aiw,,,
+aiw,aiw-Latn-ET,Aari,ET,,,,,,,,EAF,aiw,,11/15/2021,LE: made Latn primary based on recent literature
 aix,aix-Latn-PG,Aighon,PG,,,15777 15778,,,,,MEL,aix,LE,10-Jan-2018,
 aiy,aiy-Latn-CF,Ali,CF,,,,,1,,,MAF,aiy,jb,,LE: jb clarified that it will eventually use Latin.
 aja,aja-Latn-SS,Aja,SS,,,,,1,,,EAF,aja,,,
@@ -296,7 +296,7 @@ amb,amb-Latn-NG,Ambo,NG,,,,,1,,,WAF,amb,,,
 amc,amc-Latn-PE,Amahuaca,BR PE,,,,,,,,SAM,amc,LE,9-Jan-2018,
 ame,ame-Latn-PE,Yanesha',PE,,,,,,,,SAM,ame,LE,9-Jan-2018,
 amf-Ethi,amf-Ethi-ET,Hamer-Banna,ET,,,03140,,,,,EAF,amf,,,
-amf-Latn,amf-Latn-ET,Hamer-Banna,ET,,,03140,,,,,EAF,amf,,,
+amf,amf-Latn-ET,Hamer-Banna,ET,,,03140,,,,,EAF,amf,,11/15/2021,LE: Made Latn primary based on Scripture publications
 amg,amg-Latn-AU,Amurdak,AU,,,,,1,,,ANZ,amg,LE,10-Jan-2018,
 ami,ami-Latn-TW,Amis,TW,,,,,,,,EAS,ami,LE,12-Jan-2018,
 amj,amj-Latn-TD,Amdang,TD,,,,,1,,,MAF,amj,JJB,18-Apr-2018,
@@ -316,6 +316,7 @@ amw-Arab,amw-Arab-SY,Western Neo-Aramaic,PS SY,,,,,,,,WAS,amw,,,
 amw-Armi,amw-Armi-SY,Western Neo-Aramaic,SY,,,,,,,,WAS,amw,,,
 amw-Latn,amw-Latn-SY,Western Neo-Aramaic,SY,,,,,,,,WAS,amw,,,
 amw-Syrj,amw-Syrj-SY,Western Neo-Aramaic,SY,,,,,,,,WAS,amw,,,
+amw,amw-Syrc-SY,Western Neo-Aramaic,SY,,,,,,,,WAS,amw,,11/15/2021,I think Syrc is primary
 amx,amx-Latn-AU,Anmatyerre,AU,,,,,,,,ANZ,amx,LE,10-Jan-2018,
 amy,amy-Latn-AU,Ami,AU,,,,,1,,,ANZ,amy,LE,10-Jan-2018,
 amz,amz-Latn-AU,Atampaya,AU,,,,,,,,ANZ,amz,LE,10-Jan-2018,Extinct
@@ -367,7 +368,7 @@ aom,aom-Latn-PG,Ömie,PG,,,02502 02504,,,,,MEL,aom,LE,10-Jan-2018,
 aon,aon-Latn-PG,"Arapesh, Bumbita",PG,,,01173,,,,,MEL,aon,LE,10-Jan-2018,
 aor,aor-Latn-VU,Aore,VU,,,,,1,,,MEL,aor,LE,10-Jan-2018,Extinct
 aos,aos-Latn-ID,Taikat,ID,,,,,1,,,SEA,aos,,,
-aot-Beng,aot-Beng-BD,Atong,BD IN,,,,,1,,,SAS,aot,,,
+aot,aot-Beng-BD,Atong,BD IN,,,,,,,,SAS,aot,,11/15/2021,LE: Made Beng primary
 aot-Latn,aot-Latn-IN,Atong,BD IN,,,,,,,,SAS,aot,,,
 aou,aou-Zyyy-CN,A'ou,CN,,,,,1,,,EAS,aou,,,
 aox,aox-Latn-GY,Atorada,BR GY,,,,,1,,,SAM,aox,LE,9-Jan-2018,
@@ -806,7 +807,7 @@ bhb,bhb-Deva-IN,Bhili,IN,,,00242 00893 00894 03850 04213 04898 04900 04901 08038
 bhb-Gujr,bhb-Gujr-IN,Bhili,IN,,,00242 00893 00894 03850 04213 04898 04900 04901 08038 08045 08053 08059 08062,,,,,SAS,bhb,,,
 bhc,bhc-Latn-ID,Biga,ID,,,,,1,,,SEA,bhc,,,
 bhd-Arab,bhd-Arab-IN,Bhadrawahi,IN,,,08028,,,,,SAS,bhd,,,
-bhd-Deva,bhd-Deva-IN,Bhadrawahi,IN,,,08028,,,,,SAS,bhd,,,
+bhd,bhd-Deva-IN,Bhadrawahi,IN,,,08028,,,,,SAS,bhd,,11/15/2021,LE: made Deva primary
 bhd-Takr,bhd-Takr-IN,Bhadrawahi,IN,,,,,,,,SAS,bhd,,,
 bhe,bhe-Arab-PK,Bhaya,PK,,,,,1,,,SAS,bhe,,,
 bhf,bhf-Latn-PG,Odiai,PG,,,,,1,,,MEL,bhf,LE,10-Jan-2018,
@@ -1411,7 +1412,7 @@ cdj,cdj-Deva-IN,Churahi,IN,,,,,,,,SAS,cdj,LE,14-Feb-2018,
 cdm,cdm-Deva-NP,Chepang,NP,,04097,04097 06426,,,,,SAS,cdm,LE,14-Feb-2018,
 cdm-Latn,cdm-Latn-NP,Chepang,NP,,,,,,,,SAS,cdm,,,
 cdn,cdn-Zyyy-IN,Chaudangsi,IN,,,,,1,,,SAS,cdn,,,
-cdo-Hans,cdo-Hans-CN,"Chinese, Min Dong",BN CN ID MY SG TH US,,,00113,,,,,EAS NAM SEA,cdo,,,
+cdo,cdo-Hans-CN,"Chinese, Min Dong",BN CN ID MY SG TH US,,,00113,,,,,EAS NAM SEA,cdo,,11/15/2021,LE: Made Hans primary based on autonym
 cdo-Hant,cdo-Hant-CN,"Chinese, Min Dong",BN CN ID MY SG TH US,,,00113,,,,,EAS NAM SEA,cdo,,,
 cdo-Latn,cdo-Latn-CN,"Chinese, Min Dong",BN CN ID MY SG TH US,,,00113,,,,,EAS NAM SEA,cdo,,,
 cdr,cdr-Latn-NG,Kamuku,NG,,,02035 02036,,,,,WAF,cdr,,,
@@ -1562,7 +1563,7 @@ cmn-Hant,cmn-Hant-TW,"Chinese, Mandarin",AU BN BS CA CN GB GQ HK ID KH KR LA LY 
 cmn-Latn,cmn-Latn-CN,"Chinese, Mandarin",AU BN BS CA CN GB GQ HK ID KH KR LA LY MM MN MO MY NL NZ PH RU SG TH TW US VN WS ZA ZM,,,00241 04574 04665 04684 04837 06039 06143 06238 06239 06241 06276 06277 06278 06331 06482 08835 08836 08838 19402 19407 19410 20057 22371 22372,zh,,,,ANZ CAR EAF EAS EEU MAF NAM NEU POL SAF SEA WEU,cmn,,23-Mar-2018,
 cmn-Arab,cmn-Arab-CN,"Chinese, Mandarin",CN,,,,zh,,,,,cmn,,,Xiao'erjing
 cmo-Khmr,cmo-Khmr-KH,"Mnong, Central",KH VN,,,00764,,,,,SEA,cmo,NMC,4-Dec-2017,How would we varify this cross boarder language?
-cmo-Latn,cmo-Latn-VN,"Mnong, Central",KH VN,,,,,,,,SEA,cmo,NMC,4-Dec-2017,How would we varify this cross boarder language?
+cmo,cmo-Latn-VN,"Mnong, Central",KH VN,,,,,,,,SEA,cmo,NMC,11/15/2021,Made Latn primary based on VN being hub country
 cmr,cmr-Latn-MM,Mro-Khimi,MM,,,,,,,,SEA,cmr,NMC,4-Dec-2017,
 cms,cms-Latn-IT,Messapic,IT,,,,,1,,,SEU,cms,,,Ancient
 cmt,cmt-Latn-ZA,Camtho,ZA,,,,,1,,,SAF,cmt,LE,9-Jan-2018,
@@ -1838,7 +1839,7 @@ den,den-Latn-CA,Slave (Athapascan),CA,,,,,,,,NAM,den,CLDR,,
 den-Cans,den-Cans-CA,Slave (Athapascan),CA,,,,,,,,NAM,den,,,
 dep,dep-Zyyy-US,"Delaware, Pidgin",US,,,,,1,,,NAM,dep,LE,10-Jan-2018,Extinct
 deq,deq-Latn-CF,Dendi,CF,,,,,1,,,MAF,deq,jb,,
-der-Beng,der-Beng-IN,Deori,IN,,,,,,,,SAS,der,,,
+der,der-Beng-IN,Deori,IN,,,,,,,,SAS,der,,11/15/2021,LE: made Beng primary based on wikipedia autonym
 der-Latn,der-Latn-IN,Deori,IN,,,,,,,,SAS,der,,,
 des,des-Latn-BR,Desano,BR CO,,,,,,,,SAM,des,LE,9-Jan-2018,
 dev,dev-Latn-PG,Domung,PG,,,,,,,,MEL,dev,LE,10-Jan-2018,
@@ -1854,7 +1855,7 @@ dgi,dgi-Latn-BF,"Dagara, Northern",BF,,,02252 05009 20799,,,,,WAF,dgi,,,
 dgk,dgk-Latn-CF,Dagba,CF TD,,,,,,,,MAF,dgk,jb,,
 dgl-Arab,dgl-Arab-SD,Andaandi,SD,,,,,,,,NAF,dgl,,,
 dgl-Copt,dgl-Copt-SD-x-olnubian,Andaandi,SD,,,,,,,,NAF,dgl,,,
-dgl-Latn,dgl-Latn-SD,Andaandi,SD,,,,,,,,NAF,dgl,,,
+dgl,dgl-Latn-SD,Andaandi,SD,,,,,,,,NAF,dgl,,11/15/2021,LE: made Latn primary based on autonym
 dgn,dgn-Latn-AU,Dagoman,AU,,,,,1,,,ANZ,dgn,LE,10-Jan-2018,Extinct
 dgo,dgo-Deva-IN,Dogri,IN,,,,doi,,,,SAS,dgo,,23-Mar-2018,
 dgo-Arab,dgo-Arab-IN,Dogri,IN,,,,doi,,1,,SAS,dgo,CLDR,23-Mar-2018,via macro mapping
@@ -1901,7 +1902,7 @@ diq,diq-Latn-TR,"Zazaki, Southern",TR,,,,zza,,,,WAS,diq,CLDR,23-Mar-2018,via mac
 diq-Arab,diq-Arab-TR,Zaza,TR,,,,zza,,,,WAS,diq,,23-Mar-2018,
 dir,dir-Latn-NG,Dirim,NG,,,,,,,,WAF,dir,LE,,
 dis-Beng,dis-Beng-IN,Dimasa,IN,,,,,,,,SAS,dis,,,
-dis-Latn,dis-Latn-IN,Dimasa,IN,,,,,,,,SAS,dis,,,
+dis,dis-Latn-IN,Dimasa,IN,,,,,,,,SAS,dis,,11/15/2021,LE: made Latn primary based on Eth autonym
 dit,dit-Latn-AU,Dirari,AU,,,,,1,,dif,ANZ,dit,LE,10-Jan-2018,Extinct
 diu,diu-Latn-NA,Diriku,AO BW NA,,,,,,,,MAF SAF,diu,LE,12-Jan-2018,
 diw,diw-Latn-SS,"Dinka, Northwestern",SS,,,,,,,,EAF,diw,LE,12-Jan-2018,
@@ -2026,7 +2027,7 @@ dsl,dsl-Zxxx-DK,Danish Sign Language,DK FO GL,,,,,,,,NAM NEU,dsl,,,
 dsn,dsn-Latn-ID,Dusner,ID,,,01257,,1,,,SEA,dsn,,,Extinct
 dso,dso-Orya-IN,Desiya,IN,,,,,,,,SAS,dso,,,
 dsq-Arab,dsq-Arab-ML,Tadaksahak,DZ ML,,,,,,,,NAF WAF,dsq,,,
-dsq-Latn,dsq-Latn-ML,Tadaksahak,DZ ML,,,,,,,,NAF WAF,dsq,,,
+dsq,dsq-Latn-ML,Tadaksahak,DZ ML,,,,,,,,NAF WAF,dsq,,11/15/2021,LE: made Latn primary based on Eth autonym
 dta,dta-Latn-CN,Daur,CN MN,,,09157,,,,,EAS,dta,,,
 dta-Cyrl,dta-Cyrl-CN,Daur,CN MN,,,09157,,,1,,EAS,dta,,,
 dta-Hans,dta-Hans-CN,Daur,CN MN,,,09157,,,,,EAS,dta,,,
@@ -2053,7 +2054,7 @@ dud,dud-Latn-NG,Hun-Saare,NG,,,02063 02064,,,,uth,WAF,dud,,,
 due,due-Latn-PH,"Agta, Umiray Dumaget",PH,,,06756 06757,,,,,SEA,due,,,
 duf,duf-Latn-NC,Drubea,NC,,,,,1,,,MEL,duf,LE,10-Jan-2018,
 dug,dug-Latn-KE,Chiduruma,KE,,,,,,,,EAF,dug,LE,12-Jan-2018,
-duh-Deva,duh-Deva-IN,Dungra Bhil,IN,,,,,,,,SAS,duh,,,
+duh,duh-Deva-IN,Dungra Bhil,IN,,,,,,,,SAS,duh,,11/15/2021,LE: made Deva primary based on relation to noi
 duh-Gujr,duh-Gujr-IN,Dungra Bhil,IN,,,,,,,,SAS,duh,,,
 dui,dui-Latn-PG,Dumun,PG,,,,,1,,,MEL,dui,LE,10-Jan-2018,
 duj,duj-Latn-AU,Dhuwaya,AU,,,,dwy,,,dwy,ANZ,dwy,LE,10-Jan-2018,
@@ -2348,7 +2349,7 @@ fuf-Adlm,fuf-Adlm-GN,Pular,GN GW ML SL SN,,,09951,,,,,WAF,fuf,,24-Aug-2017,
 fuf-Arab,fuf-Arab-GN,Pular,GM GN GW ML SL SN,,,09951,,,,,WAF,fuf,,,
 fuh-Arab,fuh-Arab-NE,"Fulfulde, Western Niger",BF BJ NE,,,01790 09945,,,,,WAF,fuh,,,
 fuh-BF,fuh-Latn-BF,"Fulfulde, Northeastern Burkina Faso",BF BJ NE,,,04426 04850 04851 06013,,,,,EAF MAF NAF NAM WAF,fuh,MH,,
-fuh-Latn,fuh-Latn-NE,"Fulfulde, Western Niger",BF BJ NE,,,01790 09945,,,,,WAF,fuh,,,
+fuh,fuh-Latn-NE,"Fulfulde, Western Niger",BF BJ NE,,,01790 09945,,,,,WAF,fuh,,11/15/2021,LE: made Latn primary
 fui,fui-Latn-TD,"Fulfulde, Bagirmi",CF TD,,,,,1,,,MAF,fui,jb,,JJB: 2018 trial Arabic orthography
 fuj,fuj-Zyyy-SD,Ko,SD,,,,,1,,,NAF,fuj,,,
 fum,fum-Latn-NG,Fum,NG,,,,,1,,,WAF,fum,,,
@@ -2636,7 +2637,7 @@ gqi,gqi-Zyyy-CN,Guiqiong,CN,,,,,1,,,EAS,gqi,,,
 gqn,gqn-Latn-BR,Guana,BR,,,,,1,,,SAM,gqn,LE,10-Jan-2018,Extinct
 gqr,gqr-Latn-TD,Gor,TD,,,,,,,,MAF,gqr,LE,12-Jan-2018,
 gqu,gqu-Zyyy-CN,Qau,CN,,,,,1,,,EAS,gqu,,,
-gra-Deva,gra-Deva-IN,"Garasia, Rajput",IN,,,,,,,,SAS,gra,,,
+gra,gra-Deva-IN,"Garasia, Rajput",IN,,,,,,,,SAS,gra,,11/15/2021,LE: made Deva primary based on Eth autonym
 gra-Gujr,gra-Gujr-IN,"Garasia, Rajput",IN,,,,,,,,SAS,gra,,,
 grb,grb-Latn-LR,Grebo,LR,,,,,,,,WAF,grb,LE,12-Jan-2018,
 grc,grc-Cprt-CY,"Greek, Ancient",CY GR,,,,,,,,SEU,grc,CLDR,,Historical
@@ -2876,7 +2877,7 @@ hmu,hmu-Latn-ID,Hamap,ID,,,,,1,,,SEA,hmu,,,
 hmv,hmv-Latn-VN,Hmong Dô,VN,,,,,1,,,SEA,hmv,NMC,20-Nov-2017,
 hmw,hmw-Zyyy-CN,"Miao, Western Mashan",CN,,,06167,,1,,,EAS,hmw,,,
 hmy-Zyyy,hmy-Zyyy-CN,"Miao, Southern Guiyang",CN,,,,,,,,EAS,hmy,,,
-hmz-Latn,hmz-Latn-CN,Sinicized Miao,CN VN,,,06190,,,,,EAS SEA,hmz,,,
+hmz,hmz-Latn-CN,Sinicized Miao,CN VN,,,06190,,,,,EAS SEA,hmz,,11/15/2021,LE: made Latn primary based on autonym
 hmz-Plrd,hmz-Plrd-CN,Sinicized Miao,CN VN,,,06190,,,,,EAS SEA,hmz,,,
 hna,hna-Latn-CM,Mina,CM,,,,,1,,,MAF,hna,,,
 hnd,hnd-Arab-PK,"Hindko, Southern",PK,,,00844 10636,,,,,SAS,hnd,CLDR,,
@@ -3484,7 +3485,7 @@ kfc,kfc-Telu-IN,Konda-Dora,IN,,,03414 03415,,,,,SAS,kfc,,,
 kfd,kfd-Knda-IN,"Koraga, Korra",IN,,,,,,,,SAS,kfd,,,
 kfe,kfe-Taml-IN,Kota,IN,,,,,,,,SAS,kfe,,,
 kff-Deva,kff-Deva-IN,Koya,IN,,,02331 03861 03977 04084 05019 12326 18809,,,,,SAS,kff,,,
-kff-Latn,kff-Latn-IN,Koya,IN,,,02331 03861 03977 04084 05019 12326 18809,,,,,SAS,kff,,,
+kff,kff-Latn-IN,Koya,IN,,,02331 03861 03977 04084 05019 12326 18809,,,,,SAS,kff,,11/15/2021,LE: made Latn primary based on comment in Ethn not on publications
 kff-Orya,kff-Orya-IN,Koya,IN,,,02331 03861 03977 04084 05019 12326 18809,,,,,SAS,kff,,,
 kff-Telu,kff-Telu-IN,Koya,IN,,,02331 03861 03977 04084 05019 12326 18809,,,,,SAS,kff,,,
 kfg-Knda,kfg-Knda-IN,Kudiya,IN,,,,,,,,SAS,kfg,,,
@@ -3986,7 +3987,7 @@ kvn,kvn-Latn-CO,"Kuna, Border",CO PA,,,,,,,,CAM SAM,kvn,LE,9-Jan-2018,
 kvo,kvo-Latn-ID,Dobel,ID,,,,,,,,SEA,kvo,,20-Apr-2018,
 kvp,kvp-Latn-ID,Kompane,ID,,,,,1,,,SEA,kvp,,,
 kvq-Latn,kvq-Latn-MM,"Karen, Geba",MM,,,,,,,,SEA,kvq,NMC,,asking a friend
-kvq-Mymr,kvq-Mymr-MM,"Karen, Geba",MM,,,,,,,,SEA,kvq,NMC,,asking a friend
+kvq,kvq-Mymr-MM,"Karen, Geba",MM,,,,,,,,SEA,kvq,NMC,,asking a friend
 kvr,kvr-Latn-ID,Kerinci,ID,,,05154,,,,,???,kvr,CLDR,,
 kvr-Rjng,kvr-Rjng-ID,Kerinci,BH ID,,,05154,,,,,SEA WAS,kvr,,,
 kvs,kvs-Latn-AU,Kunggara,AU,,,,gdj,1,,gdj,ANZ,gdj,LE,10-Jan-2018,
@@ -4088,7 +4089,7 @@ kyu-Latn,kyu-Latn-MM,"Kayah, Western",MM,,,,,,,,SEA,kyu,SVW,,Used mainly by Cath
 kyu-Mymr,kyu-Mymr-MM,"Kayah, Western",MM,,,,,,,,SEA,kyu,SVW,,"not in much use anymore, at least by Christian community. SVW"
 kyv,kyv-Deva-NP,Kayort,NP,,,,,1,,,SAS,kyv,,,
 kyw-Beng,kyw-Beng-IN,Kudmali,IN,,,,,,,,SAS,kyw,,,
-kyw-Deva,kyw-Deva-IN,Kudmali,IN,,,,,,,,SAS,kyw,,,
+kyw,kyw-Deva-IN,Kudmali,IN,,,,,,,,SAS,kyw,,11/15/2021,LE: made Deva primary based on relationship to tdb
 kyw-Orya,kyw-Orya-IN,Kudmali,IN,,,,,,,,SAS,kyw,,,
 kyx,kyx-Latn-PG,Rapoisi,PG,,,,,,,,MEL,kyx,LE,10-Jan-2018,
 kyy,kyy-Latn-PG,Kambaira,PG,,,,,1,,,MEL,kyy,LE,10-Jan-2018,
@@ -4145,7 +4146,7 @@ las,las-Latn-TG,Lama,BJ GH TG,,,06499 12717 12718 12719,,,,,WAF,las,,,
 lau,lau-Latn-ID,Laba,ID,,,,,1,,,SEA,lau,,,
 law,law-Latn-ID,Lauje,ID,,,,,,,,SEA,law,LE,16-May-2018,
 lax-Beng,lax-Beng-IN,Tiwa,IN,,,,,,,,SAS,lax,,,
-lax-Latn,lax-Latn-IN,Tiwa,IN,,,,,,,,SAS,lax,,,
+lax,lax-Latn-IN,Tiwa,IN,,,,,,,,SAS,lax,,11/15/2021,LE: made Latn primary based on wikipedia
 lay-Zyyy,lay-Zyyy-CN,"Bai, Lama",CN,,,,,,,,EAS,lay,,,
 laz,laz-Latn-PG,Aribwatsa,PG,,,,,1,,,MEL,laz,LE,10-Jan-2018,Extinct
 lb,lb-Latn-LU,Luxembourgish,BE DE FR LU RO US,,,,,,,,NAM WEU,ltz,CLDR,,
@@ -4153,7 +4154,7 @@ lba-Zyyy,lba-Zyyy-IN,Lui,IN,,,,,,,1,SAS,lba,,,Extinct
 lbb,lbb-Latn-PG,Label,PG,,,,,,,,MEL,lbb,LE,10-Jan-2018,
 lbc,lbc-Lisu-CN,Lakkia,CN,,,,,,1,,EAS,lbc,LE,11-Dec-2017,I'm leaving the script tag because the use for Lisu was in the 1912 and 1936 range. I don't believe it is used today so I suspect sometime another script will rise to the top of usage.
 lbe,lbe-Cyrl-RU,Lak,AZ KG KZ RU TJ TM UA UZ,,,,,,,,CAS EEU WAS,lbe,CLDR,,
-lbf-Deva,lbf-Deva-IN,Tinani,CN IN,,,22364,,,,,EAS SAS,lbf,,,
+lbf,lbf-Deva-IN,Tinani,CN IN,,,22364,,,,,EAS SAS,lbf,,11/15/2021,LE: made deva primary based on Scripture published
 lbf-Tibt,lbf-Tibt-CN,Tinani,CN IN,,,,,,,,EAS SAS,lbf,,,
 lbg,lbg-Zyyy-LA,Laopang,LA,,,,,,,,SEA,lbg,NMC,1-Dec-2017,
 lbi,lbi-Latn-CM,La'bi,CM,,,,,1,,,MAF,lbi,,,
@@ -4163,7 +4164,7 @@ lbk,lbk-Latn-PH,"Bontok, Central",PH,,,00227 04824 20776,bnc,,,,SEA,lbk,,23-Mar-
 lbl,lbl-Latn-PH,"Bikol, Libon",PH,,,08115,,1,,,SEA,lbl,,,
 lbm,lbm-Deva-IN,Lodhi,IN,,,06178 06445,,,,,SAS,lbm,,,
 lbn-Laoo,lbn-Laoo-LA,Rmeet,LA US,,,00487,,,,,NAM SEA,lbn,NMC,8-Jan-2018,
-lbn-Latn,lbn-Latn-LA,Rmeet,LA US,,,00487,,,,,NAM SEA,lbn,NMC,8-Jan-2018,
+lbn,lbn-Latn-LA,Rmeet,LA US,,,00487,,,,,NAM SEA,lbn,NMC,11/15/2021,LE: made Latn primary based on autonym
 lbo,lbo-Zyyy-LA,Laven,LA US,,,01807 01808 01809 01815,,1,,,NAM SEA,lbo,NMC,,
 lbq,lbq-Latn-PG,Wampar,PG,,,,,,,,MEL,lbq,LE,10-Jan-2018,
 lbr,lbr-Deva-NP,Lohorung,NP,,,04170,,,,,SAS,lbr,,,
@@ -4834,7 +4835,7 @@ mln,mln-Latn-SB,Malango,SB,,,,,1,,,MEL,mln,LE,10-Jan-2018,
 mlo,mlo-Latn-SN,Mlomp,SN,,,,,1,,,WAF,mlo,,,
 mlp,mlp-Latn-PG,Bargam,PG,,,,,,,,MEL,mlp,LE,10-Jan-2018,
 mlq-Arab,mlq-Arab-SN,"Maninkakan, Western",GM GW ML SN,,,00144 02782 13633,,,,,WAF,mlq,,,
-mlq-Latn,mlq-Latn-SN,"Maninkakan, Western",GM GW ML SN,,,00144 02782 13633,,,,,WAF,mlq,,,
+mlq,mlq-Latn-SN,"Maninkakan, Western",GM GW ML SN,,,00144 02782 13633,,,,,WAF,mlq,,11/15/2021,LE: made Latn primary because of relationship to kao
 mlr,mlr-Latn-CM,Vame,CM,,,,,,,,MAF,mlr,,,
 mls,mls-Latn-SD,Masalit,SD TD,,,,,,,,MAF NAF,mls,CLDR,,
 mlu,mlu-Latn-SB,To'abaita,SB,,,,,,,,MEL,mlu,LE,10-Jan-2018,
@@ -5093,7 +5094,7 @@ muu,muu-Latn-KE,Yaaku,KE,,,,,1,,,EAF,muu,,,
 muv,muv-Taml-IN,Muthuvan,IN,,,04072 04073,,,,,SAS,muv,LE,28-Aug-2018,
 mux,mux-Latn-PG,Bo-Ung,PG,,,13928,,,,,MEL,mux,LE,10-Jan-2018,
 muy,muy-Latn-CM,Muyang,CM,,,,,,,,MAF,muy,,,
-muz,muz-Ethi-ET,Mursi,ET,,,,,,,,EAF,muz,LE,23-Jan-2018,
+muz,muz-Ethi-ET,Mursi,ET,,,,,,,,EAF,muz,LE,11/15/2021,LE: Ethi primary based on autonym
 muz-Latn,muz-Latn-ET,Mursi,ET,,,,,,,,EAF,muz,,,
 mva,mva-Latn-PG,Manam,PG,,,,,,,,MEL,mva,LE,10-Jan-2018,
 mvb,mvb-Zyyy-US,Mattole,US,,,,,1,,,NAM,mvb,LE,10-Jan-2018,Extinct
@@ -5281,14 +5282,14 @@ nbq,nbq-Latn-ID,Nggem,ID,,,,,,,,SEA,nbq,,20-Apr-2018,
 nbr,nbr-Latn-NG,Numana-Nunku-Gbantu-Numbu,NG,,,,,1,,,WAF,nbr,,,
 nbs,nbs-Zxxx-NA,Namibian Sign Language,NA,,,,,,,,SAF,nbs,,,
 nbt-Deva,nbt-Deva-IN,Na,IN,,,,,,,,SAS,nbt,,,
-nbt-Latn,nbt-Latn-IN,Na,IN,,,,,,,,SAS,nbt,,,
+nbt,nbt-Latn-IN,Na,IN,,,,,,,,SAS,nbt,,11/15/2021,LE: made Latn primary because of wikipedia autonym
 nbu,nbu-Latn-IN,"Naga, Rongmei",IN,,,,,,,,SAS,nbu,,,
 nbv,nbv-Latn-CM,Ngamambo,CM,,,,,,,,MAF,nbv,,,
 nbw,nbw-Latn-CD,"Ngbandi, Southern",CD,,,01376,,,,,MAF,nbw,LE,12-Jan-2018,
 nby,nby-Latn-PG,Ningera,PG,,,,,1,,,MEL,nby,LE,10-Jan-2018,
 nca,nca-Latn-PG,Iyo,PG,,,,,,,,MEL,nca,LE,10-Jan-2018,
 ncb-Deva,ncb-Deva-IN,"Nicobarese, Central",IN,,,,,,,,SAS,ncb,,,
-ncb-Latn,ncb-Latn-IN,"Nicobarese, Central",IN,,,,,,,,SAS,ncb,,,
+ncb,ncb-Latn-IN,"Nicobarese, Central",IN,,,,,,,,SAS,ncb,,11/15/2021,LE: made Latn primary based on autonym
 ncc,ncc-Latn-PG,Ponam,PG,,,,,1,,,MEL,ncc,LE,10-Jan-2018,
 ncd,ncd-Deva-NP,Nachering,NP,,,,,,,,SAS,ncd,,,
 nce,nce-Latn-PG,Yale,PG,,,,,,,,MEL,nce,LE,10-Jan-2018,
@@ -5308,7 +5309,7 @@ ncq-Thai,ncq-Thai-LA,Northern Katang,LA,,,,,,,,SEA,ncq,NMC,,
 ncr,ncr-Latn-CM,Ncane,CM,,,,,,,,MAF,ncr,,,
 ncs,ncs-Zxxx-NI,Nicaraguan Sign Language,NI,,,,,,,,CAM,ncs,,,
 nct-Beng,nct-Beng-IN,"Naga, Chothe",IN,,,,,,,,SAS,nct,,,
-nct-Latn,nct-Latn-IN,"Naga, Chothe",IN,,,,,,,,SAS,nct,,,
+nct,nct-Latn-IN,"Naga, Chothe",IN,,,,,,,,SAS,nct,,11/15/2021,LE: made Latn primary
 ncu,ncu-Latn-GH,Chumburung,GH,,,04918,,,,,WAF,ncu,LE,12-Jan-2018,
 ncx,ncx-Latn-MX,"Nahuatl, Central Puebla",MX,,,,,,,,CAM,ncx,LE,9-Jan-2018,
 ncz,ncz-Zyyy-US,Natchez,US,,,,,1,,,NAM,ncz,LE,10-Jan-2018,Extinct
@@ -5463,7 +5464,7 @@ nju,nju-Latn-AU,Ngadjunmaya,AU,,,,,1,,,ANZ,nju,LE,10-Jan-2018,
 njx,njx-Latn-CG,Kunyi,CG,,,,,1,,,MAF,njx,LE,31-Jan-2018,
 njy,njy-Latn-CM,Njyem,CG CM,,,,,,,,MAF,njy,,,
 njz-Beng,njz-Beng-IN,Nyishi,IN,,,00684,,,,,SAS,njz,,,
-njz-Latn,njz-Latn-IN,Nyishi,IN,,,00684,,,,,SAS,njz,,,
+njz,njz-Latn-IN,Nyishi,IN,,,00684,,,,,SAS,njz,,11/15/2021,LE: made Latn primary based on autonym
 nka,nka-Latn-ZM,Nkoya,ZM,,,,,,,,EAF,nka,LE,12-Jan-2018,
 nkb,nkb-Latn-IN,"Naga, Khoibu",IN,,,,,,,,SAS,nkb,,,
 nkc,nkc-Latn-CM,Nkongho,CM,,,,,1,,,MAF,nkc,,,
@@ -5473,7 +5474,7 @@ nkf,nkf-Latn-IN,"Naga, Inpui",IN,,,,,,,,SAS,nkf,,,
 nkg,nkg-Latn-PG,Nekgini,PG,,,,,,,,MEL,nkg,LE,10-Jan-2018,
 nkh,nkh-Latn-IN,"Naga, Khezha",IN,,,,,,,,SAS,nkh,LE,8-Jan-2018,
 nki-Beng,nki-Beng-IN,"Naga, Thangal",IN,,,,,,,,SAS,nki,,,
-nki-Latn,nki-Latn-IN,"Naga, Thangal",IN,,,,,,,,SAS,nki,,,
+nki,nki-Latn-IN,"Naga, Thangal",IN,,,,,,,,SAS,nki,,11/15/2021,LE: made Latn primary
 nkj,nkj-Latn-ID,Nakai,ID,,,,,1,,,SEA,nkj,,,
 nkk,nkk-Latn-VU,Nokuku,VU,,,,,,,,MEL,nkk,LE,10-Jan-2018,
 nkm,nkm-Latn-PG,Namat,PG,,,,,1,,,MEL,nkm,LE,10-Jan-2018,
@@ -5525,7 +5526,7 @@ nmm,nmm-Deva-NP,Manangba,NP,,,,,,,,SAS,nmm,,,
 nmm-Tibt,nmm-Tibt-NP,Manangba,NP,,,,,,,,SAS,nmm,,,
 nmn,nmn-Latn-BW,!Xóõ,BW NA,,,,,1,,,SAF,nmn,LE,9-Jan-2018,
 nmo-Beng,nmo-Beng-IN,"Naga, Moyon",IN,,,,,,,,SAS,nmo,,,
-nmo-Latn,nmo-Latn-IN,"Naga, Moyon",IN,,,,,,,,SAS,nmo,,,
+nmo,nmo-Latn-IN,"Naga, Moyon",IN,,,,,,,,SAS,nmo,,11/15/2021,LE: made Latn primary
 nmp,nmp-Latn-AU,Nimanbur,AU,,,,,1,,,ANZ,nmp,LE,10-Jan-2018,Extinct
 nmq,nmq-Latn-ZW,Nambya,BW ZW,,,,,,,,EAF SAF,nmq,LE,12-Jan-2018,
 nmr,nmr-Latn-CM,Nimbari,CM,,,,,1,,,MAF,nmr,LE,10-Jan-2018,Extinct
@@ -5545,7 +5546,7 @@ nnd,nnd-Latn-VU,"Ambae, West",VU,,,04489 04579,,,,,MEL,nnd,LE,10-Jan-2018,
 nne,nne-Latn-AO,Ngandyera,AO NA,,,,,1,,,MAF,nne,LE,30-Jan-2018,
 nnf,nnf-Latn-PG,Ngaing,PG,,,,,,,,MEL,nnf,LE,10-Jan-2018,
 nng-Beng,nng-Beng-IN,"Naga, Maring",IN,,,,,,,,SAS,nng,,,
-nng-Latn,nng-Latn-IN,"Naga, Maring",IN,,,,,,,,SAS,nng,,,
+nng,nng-Latn-IN,"Naga, Maring",IN,,,,,,,,SAS,nng,,11/15/2021,LE: made Latn primary
 nnh,nnh-Latn-CM,Ngiemboon,CM,,,14909 14910 14911,,,,,MAF,nnh,CLDR,,
 nni,nni-Latn-ID,"Nuaulu, North",ID,,,,,,,,SEA,nni,,,
 nnj,nnj-Latn-ET,Nyangatom,ET,,,,,,,,EAF,nnj,,,
@@ -5554,7 +5555,7 @@ nnl,nnl-Latn-IN,"Naga, Northern Rengma",IN,,,,,,,,SAS,nnl,,,
 nnm,nnm-Latn-PG,Namia,PG,,,,,,,,MEL,nnm,LE,10-Jan-2018,
 nnn,nnn-Latn-TD,Ngete,TD,,,,,,,,MAF,nnn,,,
 nnp-Deva,nnp-Deva-IN,"Naga, Wancho",IN,,,,,,,,SAS,nnp,,,
-nnp-Latn,nnp-Latn-IN,"Naga, Wancho",IN,,,,,,,,SAS,nnp,,,
+nnp,nnp-Latn-IN,"Naga, Wancho",IN,,,,,,,,SAS,nnp,,11/15/2021,LE: made Latn primary
 nnp-Wcho,nnp-Wcho-IN,"Naga, Wancho",IN,,,,,,,,SAS,nnp,,,
 nnq,nnq-Latn-TZ,Ngindo,TZ,,,,,,,,EAF,nnq,LE,5-Apr-2018,
 nnr,nnr-Latn-AU,Narungga,AU,,,,,1,,,ANZ,nnr,LE,10-Jan-2018,Extinct
@@ -5883,7 +5884,7 @@ onk,onk-Latn-PG,"One, Kabore",PG,,,,,1,,,MEL,onk,LE,10-Jan-2018,
 onn,onn-Latn-PG,Onobasulu,PG,,,,,,,,MEL,onn,LE,10-Jan-2018,
 ono,ono-Latn-CA,Onondaga,CA US,,,,,,,,NAM,ono,LE,9-Jan-2018,
 onp-Deva,onp-Deva-IN,Sartang,IN,,,,,,,,SAS,onp,,,
-onp-Latn,onp-Latn-IN,Sartang,IN,,,,,,,,SAS,onp,,,
+onp,onp-Latn-IN,Sartang,IN,,,,,,,,SAS,onp,,11/15/2021,LE: made Latn primary based on autonym
 onr,onr-Latn-PG,"One, Northern",PG,,,21166 21167 21168,,,,,MEL,onr,LE,10-Jan-2018,
 ons,ons-Latn-PG,Ono,PG,,,,,,,,MEL,ons,LE,10-Jan-2018,
 ont,ont-Latn-PG,Ontenu,PG,,,,,1,,,MEL,ont,LE,10-Jan-2018,
@@ -6022,7 +6023,7 @@ pby,pby-Latn-PG,Pyu,PG,,,,,1,,,MEL,pby,LE,10-Jan-2018,
 pca,pca-Latn-MX,"Popoloca, Santa Inés Ahuatempan",MX,,,15753,,,,,CAM,pca,LE,9-Jan-2018,
 pcb,pcb-Khmr-KH,Pear,KH,,,,,1,,,SEA,pcb,NMC,4-Dec-2017,
 pcc-Hani,pcc-Hani-CN,Bouyei,CN LA VN,,,04832 06089 06090 06163 06191,,,,,EAS SEA,pcc,NMC,7-Dec-2017,
-pcc-Latn,pcc-Latn-CN,Bouyei,CN LA VN,,,04832 06089 06090 06163 06191,,,,,EAS SEA,pcc,NMC,7-Dec-2017,
+pcc,pcc-Latn-CN,Bouyei,CN LA VN,,,04832 06089 06090 06163 06191,,,,,EAS SEA,pcc,NMC,11/15/2021,LE: wikipedia says official usage
 pcc-x-central,pcc-Latn-CN-x-central,Bouyei,,,6089,,,,,,,pcc,,,
 pcc-x-southern,pcc-Latn-CN-x-southern,Bouyei,,,6163,,,,,,,pcc,,,
 pcc-x-western,pcc-Latn-CN-x-western,Bouyei,,,6090,,,,,,,pcc,,,
@@ -6031,10 +6032,10 @@ pce,pce-Mymr-MM,"Palaung, Ruching",CN MM,,,01179,,,,,EAS SEA,pce,MH NMC,5-Jan-20
 pce-Thai,pce-Thai-TH,"Palaung, Pale",TH,,,,,,,,SEA,pce,,,
 pcf,pcf-Zyyy-IN,Paliyan,IN,,,,,,,,SAS,pcf,,,
 pcg-Knda,pcg-Knda-IN,Paniya,IN,,,00898 04076,,,,,SAS,pcg,,,
-pcg-Mlym,pcg-Mlym-IN,Paniya,IN,,,00898 04076,,,,,SAS,pcg,,,
+pcg,pcg-Mlym-IN,Paniya,IN,,,00898 04076,,,,,SAS,pcg,,11/15/2021,LE: Kerala has the most speakers
 pcg-Taml,pcg-Taml-IN,Paniya,IN,,,00898 04076,,,,,SAS,pcg,,,
 pch,pch-Deva-IN,Pardhan,IN,,,,,1,,,SAS,pch,,,
-pci-Deva,pci-Deva-IN,Duruwa,IN,,,,,,,,SAS,pci,,,
+pci,pci-Deva-IN,Duruwa,IN,,,,,,,,SAS,pci,,11/15/2021,LE: Made Deva primary
 pci-Orya,pci-Orya-IN,Duruwa,IN,,,,,,,,SAS,pci,,,
 pcj,pcj-Telu-IN,Parenga,IN,,,03507,,,,,SAS,pcj,,,
 pck,pck-Latn-IN,"Chin, Paite",IN,,,,,,,,SAS,pck,,,
@@ -6102,10 +6103,13 @@ phu-Laoo,phu-Laoo-LA,Phuan,LA,,,,,,,,SEA,phu,,,
 phu-Thai,phu-Thai-TH,Phuan,KH LA TH,,,,,1,,,SEA,phu,NMC,,
 phv,phv-Arab-AF,Pahlavani,AF,,,,,1,,,SAS,phv,,,
 phw,phw-Deva-NP,Phangduwali,NP,,,,,1,,,SAS,phw,,,
+pi-Brah,pi-Brah-IN,Pali,IN MM,,,,,,,,SAS SEA,pli,,,
 pi-Deva,pi-Deva-IN,Pali,IN MM,,,,,,,,SAS SEA,pli,,,Ancient
+pi-Khar,pi-Khar-IN,Pali,IN MM,,,,,,,,SAS SEA,pli,,,
 pi-Mymr,pi-Mymr-IN,Pali,IN MM,,,,,,,,SAS SEA,pli,,,Ancient
-pi-Sinh,pi-Sinh-IN,Pali,IN MM,,,,,,,,SAS SEA,pli,,,Ancient
+pi,pi-Sinh-IN,Pali,IN MM,,,,,,,,SAS SEA,pli,,11/15/2021,LE: made primary
 pi-Thai,pi-Thai-IN,Pali,IN MM,,,,,,,,SAS SEA,pli,,,Ancient
+pi-Khmr,pi-Khmr-IN,Pali,IN MM,,,,,,,,SAS SEA,pli,,,
 pia,pia-Latn-MX,Pima Bajo,MX,,,,,,,,CAM,pia,LE,9-Jan-2018,
 pib,pib-Latn-PE,Yine,PE,,,,,,,,SAM,pib,LE,9-Jan-2018,
 pic,pic-Latn-GA,Pinji,GA,,,,,1,,,MAF,pic,LE,30-Jan-2018,
@@ -6136,7 +6140,7 @@ pkb,pkb-Latn-KE,Kipfokomo,KE,,,01128 15712,,,,,EAF,pkb,LE,12-Jan-2018,
 pkc,pkc-Zyyy-KR,Paekche,KR,,,,,,,,???,pkc,,,Extinct
 pkg,pkg-Latn-PG,Pak-Tong,PG,,,,,,,,MEL,pkg,LE,10-Jan-2018,
 pkh-Deva,pkh-Deva-BD,Pangkhua,BD IN,,,04417,,,,,SAS,pkh,,,
-pkh-Latn,pkh-Latn-BD,Pangkhua,BD IN,,,04417,,,,,SAS,pkh,,,
+pkh,pkh-Latn-BD,Pangkhua,BD IN,,,04417,,,,,SAS,pkh,,11/15/2021,Made Latn primary
 pkn,pkn-Latn-AU,Pakanha,AU,,,,,1,,,ANZ,pkn,LE,10-Jan-2018,
 pko,pko-Latn-KE,Pökoot,KE UG,,,00748 04054,,,,,EAF,pko,CLDR,,
 pkp,pkp-Latn-CK,Pukapuka,AU CK NZ,,,,,,,,ANZ POL,pkp,LE,12-Jan-2018,
@@ -6493,7 +6497,7 @@ rgr,rgr-Latn-PE,Resígaro,PE,,,,,,,,SAM,rgr,LE,9-Jan-2018,
 rgs,rgs-Latn-VN,"Roglai, Southern",VN,,,,,,,,SEA,rgs,"NMC, SVW",22-Aug-2018,
 rgu,rgu-Latn-ID,Rikou,ID,,,,,,,,SEA,rgu,,20-Apr-2018,
 rhg-Arab,rhg-Arab-MM,Rohingya,BD CN MM MY PK SA TH,,,,,,,,EAS SAS SEA WAS,rhg,MH,5-Jan-2017,
-rhg-Latn,rhg-Latn-MM,Rohingya,BD CN MM MY PK SA TH,,,,,,,,EAS SAS SEA WAS,rhg,MH,5-Jan-2017,
+rhg,rhg-Latn-MM,Rohingya,BD CN MM MY PK SA TH,,,,,,,,EAS SAS SEA WAS,rhg,MH,11/15/2021,LE: made Latn primary based on scripture published
 rhg-Rohg,rhg-Rohg-MM,Rohingya,BD CN MM MY PK SA TH,,,,,,,,EAS SAS SEA WAS,rhg,,,LE: changed PUA code
 rhp,rhp-Latn-PG,Yahang,PG,,,,,1,,,MEL,rhp,LE,10-Jan-2018,
 ria,ria-Latn-IN,Riang,BD IN,,,,,,,,SAS,ria,CLDR,,
@@ -6545,7 +6549,7 @@ rmv,rmv-Zyyy-001,Romanova,001,,,,,,,,001,rmv,,,Constructed
 rmw,rmw-Latn-GB,"Romani, Welsh",GB,,,,,,,,NEU,rmw,St,,archaic form of Anglo-Romani still spoken in northern Wales
 rmx,rmx-Latn-VN,Romam,VN,,,,,1,,,SEA,rmx,NMC,4-Dec-2017,
 rmy-Cyrl,rmy-Cyrl-BG,"Romani, Vlax",AL AT BA BG BG RS GR HU IT MK MX NO PL RO RS RU RU UA SE SK UA,,,04602,rom,,,,CAM EEU NAM NEU SAM SEU WEU,rmy,St,23-Mar-2018,
-rmy-Latn,rmy-Latn-RO,"Romani, Vlax",AL AR AT BA BA BR BG CA CL CO DE ES FR GR GR HU IT MD MK MX NL NO PL PT RO RS RS SE RU SE SK UA,,,03045 16042,rom,,,,CAM EEU NAM NEU SAM SEU WEU,rmy,St,23-Mar-2018,
+rmy,rmy-Latn-RO,"Romani, Vlax",AL AR AT BA BA BR BG CA CL CO DE ES FR GR GR HU IT MD MK MX NL NO PL PT RO RS RS SE RU SE SK UA,,,03045 16042,rom,,,,CAM EEU NAM NEU SAM SEU WEU,rmy,St,11/15/2021,LE: made Latn primary
 rmz,rmz-Mymr-IN,Marma,BD IN,,,,,,,,SAS,rmz,,,
 rn,rn-Latn-BI,Rundi,BI RW TZ,,,,,,,,EAF,run,CLDR,,
 rn-Brai,rn-Brai-BI,Rundi,BI RW TZ,,,,,,,,EAF,run,,,
@@ -6688,7 +6692,7 @@ sbr,sbr-Latn-ID,"Murut, Sembakung",ID MY,,,,,1,,,SEA,sbr,,,
 sbs,sbs-Latn-NA,Kuhane,BW NA ZM,,,,,1,,,EAF SAF,sbs,,,
 sbt,sbt-Latn-ID,Kimki,ID,,,,,1,,,SEA,sbt,,,
 sbu-Deva,sbu-Deva-IN,Stod Bhoti,IN,,,16892 16893,,,,,SAS,sbu,,,
-sbu-Tibt,sbu-Tibt-IN,Stod Bhoti,IN,,,16892 16893,,,,,SAS,sbu,,,
+sbu,sbu-Tibt-IN,Stod Bhoti,IN,,,16892 16893,,,,,SAS,sbu,,11/15/2015,LE: Survey said Bhoti speakers prefer Tibetan
 sbv,sbv-Zyyy-IT,Sabine,IT,,,,,1,,,SEU,sbv,,,Ancient
 sbw,sbw-Latn-GA,Simba,GA,,,,,1,,,MAF,sbw,LE,30-Jan-2018,
 sbx,sbx-Latn-ID,Seberuang,ID,,,05056,,1,,,SEA,sbx,,,
@@ -6739,7 +6743,7 @@ sdn,sdn-Latn-IT,"Sardinian, Gallurese",IT,,,,,,,,SEU,sdn,,,
 sdo,sdo-Latn-MY,"Bidayuh, Bukar-Sadong",ID MY,,,03801,,,,,SEA,sdo,,,
 sdp,sdp-Zyyy-IN,Sherdukpen,IN,,,,,1,,,SAS,sdp,,,
 sdq,sdq-Latn-ID,Semandang,ID,,,,,,,,SEA,sdq,,,
-sdr-Beng,sdr-Beng-BD,"Sadri, Oraon",BD,,,04418 16162,,,,,SAS,sdr,,,
+sdr-Beng,sdr-Beng-BD,"Sadri, Oraon",BD,,,04418 16162,,,,,SAS,sdr,,,"LE: I suspect Beng is primary, but don't know."
 sdr-Deva,sdr-Deva-BD,"Sadri, Oraon",BD,,,,,,,,SAS,sdr,,,
 sdr-Latn,sdr-Latn-BD,"Sadri, Oraon",BD,,,04418 16162,,,,,SAS,sdr,,,
 sds,sds-Arab-TN,Sened,TN,,,,,1,,,NAF,sds,,,Extinct
@@ -6789,7 +6793,7 @@ sgd,sgd-Latn-PH,Surigaonon,PH,,,00279,,,,,SEA,sgd,LE,8-Jan-2018,minimal usage
 sge,sge-Latn-ID,Segai,ID,,,00809,,1,,,SEA,sge,,,
 sgg,sgg-Zxxx-CH,Swiss-German Sign Language,CH LI,,,,,,,,WEU,sgg,,,
 sgh-Arab,sgh-Arab-AF,Shughni,AF TJ,,,,,,,,CAS SAS,sgh,,,
-sgh-Cyrl,sgh-Cyrl-TJ,Shughni,AF TJ,,,03396 03398 06145,,,,,CAS SAS,sgh,,,
+sgh,sgh-Cyrl-TJ,Shughni,AF TJ,,,03396 03398 06145,,,,,CAS SAS,sgh,,,
 sgh-Latn,sgh-Latn-TJ,Shughni,AF TJ,,,03396 03398 06145,,,,,CAS SAS,sgh,,,
 sgi,sgi-Latn-CM,Suga,CM,,,,,,,,MAF,sgi,,,
 sgj,sgj-Deva-IN,Surgujia,IN,,,,,,,,SAS,sgj,LE,14-Feb-2018,
@@ -6832,13 +6836,13 @@ shq,shq-Latn-ZM,Sala,ZM,,,,,1,,,EAF,shq,LE,30-Jan-2018,
 shr,shr-Latn-CD,Shi,CD,,,,,,,,MAF,shr,LE,12-Jan-2018,
 shs,shs-Latn-CA,Shuswap,CA,,,,,1,,,NAM,shs,LE,9-Jan-2018,
 sht,sht-Latn-US,Shasta,US,,,,,1,,,NAM,sht,LE,10-Jan-2018,Extinct
-shu-Arab,shu-Arab-TD,"Arabic, Chadian Spoken",CF CM NE NG TD,,,02944,,,,,MAF WAF,shu,JJB,18-Apr-2018,
+shu,shu-Arab-TD,"Arabic, Chadian Spoken",CF CM NE NG TD,,,02944,,,,,MAF WAF,shu,JJB,11/15/2021,"LE: more speakers use this, probably more books in Latn"
 shu-Latn,shu-Latn-TD,"Arabic, Chadian Spoken",CF CM NE NG TD,,,02944,,,,,MAF WAF,shu,JJB,18-Apr-2018,
 shv,shv-Zyyy-OM,Shehri,OM SA,,,,,,,,WAS,shv,,,
 shw,shw-Latn-SD,Shwai,SD,,,,,,,,NAF,shw,LE,12-Jan-2018,
 shx,shx-Zyyy-CN,She,CN,,,,,,,,EAS,shx,,,
 shy-Arab,shy-Arab-DZ,Tachawit,DZ TN,,,,,,,,NAF,shy,,,
-shy-Latn,shy-Latn-DZ,Tachawit,DZ,,,,,,,,NAF,shy,,,
+shy,shy-Latn-DZ,Tachawit,DZ,,,,,,,,NAF,shy,,11/15/2021,LE: Omniglot indicates Latn as primary
 shy-Tfng,shy-Tfng-DZ,Tachawit,DZ,,,,,,,,NAF,shy,,,
 shz,shz-Latn-ML,"Sénoufo, Syenara",ML,,,,,,,,WAF,shz,,,
 si,si-Sinh-LK,Sinhala,AE AU CA CY DE LK LY MU MY QA SG TH US,,,,,,,,ANZ EAF NAF NAM NEU SAS SEA WAS WEU,sin,CLDR,,
@@ -7285,7 +7289,7 @@ tal,tal-Latn-NG,Tal,NG,,,,,,,,WAF,tal,,,
 tan,tan-Latn-NG,Tangale,NG,,,17189 17190,,,,,WAF,tan,,,
 tao,tao-Latn-TW,Yami,TW,,,,,,,,EAS,tao,,,
 tap,tap-Latn-CD,Taabwa,CD ZM,,,,,,,,EAF MAF,tap,LE,12-Jan-2018,
-taq-Latn,taq-Latn-ML,Tamasheq,BF BG DZ ML,,,,,,,,NAF WAF,taq,,,
+taq,taq-Latn-ML,Tamasheq,BF BG DZ ML,,,,,,,,NAF WAF,taq,,11/15/2021,LE: made Latn primary based on autonym
 taq-Tfng,taq-Tfng-ML,Tamasheq,BF BG DZ ML,,,,,,,,NAF WAF,taq,,,
 tar,tar-Latn-MX,"Tarahumara, Central",MX,,,,,,,,CAM,tar,LE,9-Jan-2018,
 tas,tas-Latn-VN,Tay Boi,VN,,,,,1,,,SEA,tas,NMC,4-Dec-2017,Extinct
@@ -7350,7 +7354,7 @@ tcy-Zzzz-x-tulu,tcy-Zzzz-IN-x-tulu,Tulu,IN,,,04082 04085,,,,,SAS,tcy,,,
 tcz,tcz-Latn-IN,"Chin, Thado",IN MM,,,,,,,,SAS SEA,tcz,,,
 tda-Arab,tda-Arab-NE,Tagdal,NE,,,,,,,,WAF,tda,,,
 tda-Latn,tda-Latn-NE,Tagdal,NE,,,,,,,,WAF,tda,,,
-tda-Tfng,tda-Tfng-NE,Tagdal,NE,,,,,,,,WAF,tda,,,
+tda,tda-Tfng-NE,Tagdal,NE,,,,,,,,WAF,tda,,11/15/2021,LE: made Tfng primary based on wikipedia
 tdb,tdb-Deva-IN,Panchpargania,IN,,,,,,,,SAS,tdb,,,
 tdb-Beng,tdb-Beng-IN,Panchpargania,IN,,,,,,1,,SAS,tdb,,,
 tdb-Kthi,tdb-Kthi-IN,Panchpargania,IN,,,,,,1,,SAS,tdb,,,
@@ -7457,12 +7461,12 @@ ths,ths-Deva-NP,Thakali,NP,,,04449,,,,,SAS,ths,,,
 tht,tht-Latn-CA,Tahltan,CA,,,,,1,,,NAM,tht,LE,9-Jan-2018,
 thu,thu-Latn-SS,Thuri,SS,,,,,,,,EAF,thu,LE,12-Jan-2018,
 thv-Arab,thv-Arab-DZ,"Tamahaq, Tahaggart",DZ LY NE,,,,,,,,NAF WAF,thv,,,
-thv-Latn,thv-Latn-DZ,"Tamahaq, Tahaggart",DZ LY NE,,,,,,,,NAF WAF,thv,,,
+thv,thv-Latn-DZ,"Tamahaq, Tahaggart",DZ LY NE,,,,,,,,NAF WAF,thv,,11/15/2021,LE made primary Latn based on autonym
 thv-Tfng,thv-Tfng-DZ,"Tamahaq, Tahaggart",DZ LY NE,,,,,,,,NAF WAF,thv,,,
 thw,thw-Tibt-NP,Thudam,NP,,,,,1,,ola-Tibt,SAS,thw,,,
 thx,thx-Zyyy-LA,The,LA,,,,oyb,,,oyb,SEA,thx,NMC,4-Dec-2017,
 thy,thy-Latn-NG,Tha,NG,,,,,1,,,WAF,thy,,,
-thz-Latn,thz-Latn-NE,"Tamajeq, Tayart",NE,,,01793 03477,,,,,WAF,thz,,,
+thz,thz-Latn-NE,"Tamajeq, Tayart",NE,,,01793 03477,,,,,WAF,thz,,11/15/2021,LE: made Latn primary based on autonym
 thz-Tfng,thz-Tfng-NE,"Tamajeq, Tayart",NE,,,01793 03477,,,,,WAF,thz,,,
 ti,ti-Ethi-ET,Tigrigna,CA DE DJ ER ET  IL SE,,,,,,,,EAF NAM NEU WAS WEU,tir,CLDR,,
 ti-Arab,ti-Arab-ET,Tigrigna,ER,,,,,,,,EAF NAM,tir,,,
@@ -7638,7 +7642,7 @@ toz,toz-Latn-CM,To,CF CM,,,,,1,,,MAF,toz,jb,,
 tpa,tpa-Latn-PG,Taupota,PG,,,02013,,,,,MEL,tpa,LE,10-Jan-2018,
 tpc,tpc-Latn-MX,"Me'phaa, Azoyú",MX,,,,,,,,CAM,tpc,LE,9-Jan-2018,
 tpe-Beng,tpe-Beng-BD,Tippera,BD,,,,,,,,SAS,tpe,,,
-tpe-Latn,tpe-Latn-BD,Tippera,BD,,,,,,,,SAS,tpe,,,
+tpe,tpe-Latn-BD,Tippera,BD,,,,,,,,SAS,tpe,,11/15/2021,LE: made Latn primary based on wikipedia
 tpf,tpf-Latn-ID,Tarpia,ID,,,,,1,,,SEA,tpf,,,
 tpg,tpg-Latn-ID,Kula,ID,,,,,,,,SEA,tpg,,20-Apr-2018,
 tpi,tpi-Latn-PG,Tok Pisin,PG,,,,,,,,MEL,tpi,CLDR,,
@@ -7689,7 +7693,7 @@ trm,trm-Arab-AF,Tregami,AF,,,,,1,,,SAS,trm,,,
 trn,trn-Latn-BO,Trinitario,BO,,,,,,,,SAM,trn,LE,9-Jan-2018,
 tro,tro-Latn-IN,"Naga, Tarao",IN,,,,,,,,SAS,tro,,,
 trp-Beng,trp-Beng-IN,Kok Borok,BD IN,,,00760 00769 12123,,,,,SAS,trp,,,
-trp-Latn,trp-Latn-IN,Kok Borok,BD IN,,,00760 00769 12123,,,,,SAS,trp,,,
+trp,trp-Latn-IN,Kok Borok,BD IN,,,00760 00769 12123,,,,,SAS,trp,,11/15/2021,LE: made Latn primary based on wikipedia
 trq,trq-Latn-MX,"Triqui, San Martín Itunyoso",MX,,,,,,,,CAM,trq,LE,9-Jan-2018,
 trr,trr-Latn-PE,Taushiro,PE,,,,,,,,SAM,trr,LE,9-Jan-2018,
 trs,trs-Latn-MX,"Triqui, Chicahuaxtla",MX,,,20679,,,,,CAM,trs,LE,9-Jan-2018,
@@ -7730,7 +7734,7 @@ tsy,tsy-Zxxx-ML,Tebul Sign Language,ML,,,,,,,,WAF,tsy,,,
 tsz,tsz-Latn-MX,Purepecha,MX US,,,,,,,,CAM NAM,tsz,LE,9-Jan-2018,
 tt,tt-Cyrl-RU,Tatar,AZ BY CN EE GE KG KZ LV RO RU TJ TM TR UA US UZ,,,,,,,,CAS EAS EEU NAM NEU WAS,tat,CLDR,,
 tt-Latn,tt-Latn-RU,Tatar,AZ BY CN EE GE KG KZ LV RO RU TJ TM TR UA US UZ,baku1926,,,,,,,CAS EAS EEU NAM NEU WAS,tat,,,
-tt-Arab,tt-Arab-RU,Tatar,,,,,,,,,,tat,,,
+tt-Arab,tt-Arab-RU,Tatar,,,,,,,,,CAS EAS EEU NAM NEU WAS,tat,,,
 tta,tta-Zyyy-XX,Tutelo,XX,,,,,,,,???,tta,,,Extinct
 ttb,ttb-Latn-NG,Gaa,NG,,,,,1,,,WAF,ttb,,,
 ttc,ttc-Latn-GT,Tektiteko,GT MX US,,,,,,,,CAM NAM,ttc,LE,9-Jan-2018,
@@ -7831,7 +7835,7 @@ txi,txi-Latn-BR,Ikpeng,BR,,,,,1,,,SAM,txi,LE,9-Jan-2018,
 txj,txj-Latn-NG,Tarjumo,NG,,,,,1,,,WAF,txj,,,
 txm,txm-Latn-ID,Tomini,ID,,,,,1,,,SEA,txm,,,
 txn,txn-Latn-ID,"Tarangan, West",ID,,,17214,,,,,SEA,txn,,20-Apr-2018,
-txo-Beng,txo-Beng-IN,Toto,IN,,,,,,,,SAS,txo,,,
+txo,txo-Beng-IN,Toto,IN,,,,,,,,SAS,txo,,11/15/2021,LE: Beng as primary based on omniglot
 txo-Deva,txo-Deva-IN,Toto,IN,,,,,,,,SAS,txo,,,
 txo-Toto,txo-Toto-IN,Toto,IN,,,,,,,,SAS,txo,,,
 txq,txq-Latn-ID,Tii,ID,,,,,,,,SEA,txq,,20-Apr-2018,
@@ -7853,7 +7857,7 @@ tyn,tyn-Latn-ID,Kombai,ID,,,,,,,,SEA,tyn,,20-Apr-2018,
 typ,typ-Latn-AU,Thaypan,AU,,,,,1,,,ANZ,typ,LE,10-Jan-2018,Extinct
 tyr,tyr-Tavt-VN,Tai Daeng,LA TH US VN,,,,,,,,NAM SEA,tyr,NMC,10-Jan-2018,
 tys,tys-Latn-VN,Tày Sa Pa,VN,,,,,1,,,SEA,tys,NMC,6-Dec-2017,
-tyt-Latn,tyt-Latn-VN,Tày Tac,VN,,,,,,,,SEA,tyt,NMC,,checking on
+tyt,tyt-Latn-VN,Tày Tac,VN,,,,,,,,SEA,tyt,NMC,,checking on
 tyt-Tavt,tyt-Tavt-VN,Tày Tac,VN,,,,,,,,SEA,tyt,NMC,,checking on
 tyu,tyu-Latn-BW,Kua,BW,,,,,1,,,SAF,tyu,LE,9-Jan-2018,
 tyv,tyv-Cyrl-RU,Tuva,CN MN RU,,,,,,,,EAS EEU,tyv,CLDR,,
@@ -8019,7 +8023,7 @@ urz,urz-Latn-BR,Uru-Eu-Wau-Wau,BR,,,,,1,,,SAM,urz,LE,9-Jan-2018,
 usa,usa-Latn-PG,Usarufa,PG,,,,,,,,MEL,usa,LE,10-Jan-2018,
 ush,ush-Arab-PK,Ushojo,PK,,,,,1,,,SAS,ush,,,
 usi-Beng,usi-Beng-BD,Usoi,BD,,,03255,,,,,SAS,usi,,,
-usi-Latn,usi-Latn-BD,Usoi,BD,,,03255,,,,,SAS,usi,,,
+usi,usi-Latn-BD,Usoi,BD,,,03255,,,,,SAS,usi,,11/15/2021,LE: made Latn primary based on autonym
 usk,usk-Latn-CM,Usaghade,CM NG,,,,,1,,,MAF WAF,usk,,,
 usp,usp-Latn-GT,Uspanteko,GT,,,,,,,,CAM,usp,LE,9-Jan-2018,
 uss,uss-Latn-NG,ut-Hun,NG,,,,,1,,,WAF,uss,LE,30-Jan-2019,
@@ -8116,7 +8120,7 @@ vkm,vkm-Latn-BR,Kamakan,BR,,,,,1,,,SAM,vkm,LE,10-Jan-2018,Extinct
 vkn,vkn-Latn-NG,Koro Nulu,NG,,,,,1,,,WAF,vkn,,,
 vko,vko-Latn-ID,Kodeoha,ID,,,,,1,,,SEA,vko,,,
 vkp-Deva,vkp-Deva-IN,Korlai Creole Portuguese,IN,,,,,,,,SAS,vkp,,,
-vkp-Latn,vkp-Latn-IN,Korlai Creole Portuguese,IN,,,,,,,,SAS,vkp,,,
+vkp,vkp-Latn-IN,Korlai Creole Portuguese,IN,,,,,,,,SAS,vkp,,11/15/2021,LE: made Latn primary based on wikipedia
 vkt,vkt-Latn-ID,"Malay, Tenggarong Kutai",ID,,,,,1,,,SEA,vkt,,,
 vku,vku-Latn-AU,Kurrama,AU,,,,,1,,,ANZ,vku,LE,10-Jan-2018,
 vkz,vkz-Latn-NG,Koro Zuba,NG,,,,,1,,,WAF,vkz,,,
@@ -8599,7 +8603,7 @@ xnu,xnu-Latn-AU,Nukunul,AU,,,,,1,,,ANZ,xnu,LE,10-Jan-2018,Extinct
 xny,xny-Latn-AU,Nyiyaparli,AU,,,,,1,,,ANZ,xny,LE,10-Jan-2018,
 xnz-Arab,xnz-Arab-EG,Mattokki,EG,,,,,,,,NAF,xnz,,,
 xnz-Copt,xnz-Copt-EG-x-olnubian,Mattokki,EG,,,,,,,,NAF,xnz,,,
-xnz-Latn,xnz-Latn-EG,Mattokki,EG,,,,,,,,NAF,xnz,,,
+xnz,xnz-Latn-EG,Mattokki,EG,,,,,,,,NAF,xnz,,11/15/2021,LE: made primary because of autonym
 xoc,xoc-Latn-NG,O'chi'chi',NG,,,,,1,,,WAF,xoc,LE,10-Jan-2018,Extinct
 xod,xod-Latn-ID,Kokoda,ID,,,01733,,1,,,SEA,xod,,,
 xog,xog-Latn-UG,Soga,UG,,,16811,,,,,EAF,xog,CLDR,,
@@ -8703,7 +8707,7 @@ xtz,xtz-Latn-AU,Tasmanian,AU,,,,,1,,xpv xph xpb xpd xpf xpx xpw xpl xpz,ANZ,xtz,
 xua,xua-Zyyy-IN,"Kurumba, Alu",IN,,,,,1,,,SAS,xua,,,
 xub-Knda,xub-Knda-IN,"Kurumba, Betta",IN,,,20053,,,,,SAS,xub,,,
 xub-Mlym,xub-Mlym-IN,"Kurumba, Betta",IN,,,20053,,,,,SAS,xub,,,
-xub-Taml,xub-Taml-IN,"Kurumba, Betta",IN,,,20053,,,,,SAS,xub,,,
+xub,xub-Taml-IN,"Kurumba, Betta",IN,,,20053,,,,,SAS,xub,,11/15/2021,LE: made Taml primary because of autonym
 xud,xud-Latn-AU,Umiida,AU,,,,,1,,,ANZ,xud,LE,10-Jan-2018,Extinct
 xug,xug-Zyyy-JP,Kunigami,JP,,,,,,,,EAS,xug,,,
 xuj,xuj-Taml-IN,"Kurumba, Jennu",IN,,,03506 04074 04075 04206,,1,,,SAS,xuj,,,
@@ -8757,11 +8761,12 @@ yaf,yaf-Latn-CD,Yaka,AO CD,,,01543,,,,,MAF,yaf,LE,12-Jan-2018,
 yag,yag-Latn-CL,Yámana,AR CL,,,,,,,,SAM,yag,LE,9-Jan-2018,
 yah-Cyrl,yah-Cyrl-TJ,Yazgulyam,TJ,,,,,,,,CAS,yah,,,
 yah-Latn,yah-Latn-TJ,Yazgulyam,TJ,,,,,,,,CAS,yah,,,
+yah-Arab,yah-Arab-TJ,Yazgulyam,TJ,,,,,,,,CAS,yah,,,
 yai,yai-Cyrl-TJ,Yagnobi,TJ,,,,,,,,CAS,yai,CGk,,
 yaj,yaj-Latn-CF,Banda-Yangere,CF,,,,,1,,,MAF,yaj,jb,,
 yak,yak-Latn-US,Yakama,US,,,,,1,,,NAM,yak,LE,9-Jan-2018,
 yal-Arab,yal-Arab-GN,Yalunka,GN ML SL SN,,,18434,,,,,WAF,yal,,,
-yal-Latn,yal-Latn-GN,Yalunka,GN ML SL SN,,,18434,,,,,WAF,yal,,,
+yal,yal-Latn-GN,Yalunka,GN ML SL SN,,,18434,,,,,WAF,yal,,11/15/2021,LE: made Latn primary based on autonym
 yam,yam-Latn-CM,Yamba,CM NG,,,04363 06233 06269 18437 18438 18439,,,,,MAF WAF,yam,,,
 yan,yan-Latn-NI,Mayangna,HN NI,,,00590,,,,,CAM,yan,LE,9-Jan-2018,
 yao,yao-Latn-MZ,Yao,MW MZ TZ ZM,,,18472,,,,,EAF,yao,CLDR,,
@@ -8802,7 +8807,7 @@ yde,yde-Latn-PG,Yangum Dey,PG,,,03281,,,,,MEL,yde,LE,10-Jan-2018,
 ydg,ydg-Arab-PK,Yidgha,PK,,,,,,,,SAS,ydg,,,
 ydk,ydk-Latn-PG,Yoidik,PG,,,,,1,,,MEL,ydk,LE,10-Jan-2018,
 yea-Knda,yea-Knda-IN,Ravula,IN,,,04044,,,,,SAS,yea,,,
-yea-Mlym,yea-Mlym-IN,Ravula,IN,,,04044,,,,,SAS,yea,,,
+yea,yea-Mlym-IN,Ravula,IN,,,04044,,,,,SAS,yea,,11/15/2021,LE: Made Mlym primary based on scripture published
 yec,yec-Latn-DE,Yeniche,AT CH DE NL PG,,,,,,,,WEU,yec,,,
 yee,yee-Latn-PG,Yimas,PG,,,,,1,,,MEL,yee,LE,10-Jan-2018,
 yei,yei-Latn-CM,Yeni,CM,,,,,1,,,MAF,yei,,,Extinct
@@ -9084,11 +9089,11 @@ zh-TW,zh-Hant-TW,Chinese,TW,,,,,,,,EAS,zho,CLDR,,
 zh-US,zh-Hant-US,Chinese,US,,,,,,,,EAS,zho,CLDR,,
 zh-VN,zh-Hant-VN,Chinese,VN,,,,,,,,EAS,zho,CLDR,,
 zhb,zhb-Zyyy-CN,Zhaba,CN,,,,,1,,,EAS,zhb,,,
-zhd-Hani,zhd-Hani-CN,"Zhuang, Dai",CN VN,,,,,,,,EAS SEA,zhd,,,
+zhd,zhd-Hani-CN,"Zhuang, Dai",CN VN,,,,,,,,EAS SEA,zhd,,11/15/2021,LE: made Hani primary as other is obsolete
 zhd-Latn,zhd-Latn-VN,"Zhuang, Dai",CN VN,,,,,,1,,EAS SEA,zhd,,,Is Hani the mail script system for [zhd] not seen on the list. 
 zhi,zhi-Latn-NG,Zhire,NG,,,,,1,,,WAF,zhi,,,
 zhn-Hani,zhn-Hani-CN,"Zhuang, Nong",CN,,,18712,,,,,EAS,zhn,,,
-zhn-Latn,zhn-Latn-CN,"Zhuang, Nong",CN,,,18712,,,,,EAS,zhn,,,
+zhn,zhn-Latn-CN,"Zhuang, Nong",CN,,,18712,,,,,EAS,zhn,,11/15/2021,LE: made Latn primary based on autonym
 zhw,zhw-Latn-CM,Zhoa,CM,,,,,1,,,MAF,zhw,,,
 zhx,zhx-Nshu-CN,Chinese (family),CN,,,,,,,,EAS,zhx,CLDR,,Collective
 zia,zia-Latn-PG,Zia,PG,,,18715,,,,,MEL,zia,LE,10-Jan-2018,
