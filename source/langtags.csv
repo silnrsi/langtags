@@ -1855,7 +1855,7 @@ dgi,dgi-Latn-BF,"Dagara, Northern",BF,,,02252 05009 20799,,,,,WAF,dgi,,,
 dgk,dgk-Latn-CF,Dagba,CF TD,,,,,,,,MAF,dgk,jb,,
 dgl-Arab,dgl-Arab-SD,Andaandi,SD,,,,,,,,NAF,dgl,,,
 dgl-Copt,dgl-Copt-SD-x-olnubian,Andaandi,SD,,,,,,,,NAF,dgl,,,
-dgl,dgl-Latn-SD,Andaandi,SD,,,,,,,,NAF,dgl,,11/15/2021,LE: made Latn primary based on autonym
+dgl-Latn,dgl-Latn-SD,Andaandi,SD,,,,,,,,NAF,dgl,,,
 dgn,dgn-Latn-AU,Dagoman,AU,,,,,1,,,ANZ,dgn,LE,10-Jan-2018,Extinct
 dgo,dgo-Deva-IN,Dogri,IN,,,,doi,,,,SAS,dgo,,23-Mar-2018,
 dgo-Arab,dgo-Arab-IN,Dogri,IN,,,,doi,,1,,SAS,dgo,CLDR,23-Mar-2018,via macro mapping
@@ -5555,7 +5555,7 @@ nnl,nnl-Latn-IN,"Naga, Northern Rengma",IN,,,,,,,,SAS,nnl,,,
 nnm,nnm-Latn-PG,Namia,PG,,,,,,,,MEL,nnm,LE,10-Jan-2018,
 nnn,nnn-Latn-TD,Ngete,TD,,,,,,,,MAF,nnn,,,
 nnp-Deva,nnp-Deva-IN,"Naga, Wancho",IN,,,,,,,,SAS,nnp,,,
-nnp,nnp-Latn-IN,"Naga, Wancho",IN,,,,,,,,SAS,nnp,,11/15/2021,LE: made Latn primary
+nnp-Latn,nnp-Latn-IN,"Naga, Wancho",IN,,,,,,,,SAS,nnp,,11/15/2021,LE: made Latn primary
 nnp-Wcho,nnp-Wcho-IN,"Naga, Wancho",IN,,,,,,,,SAS,nnp,,,
 nnq,nnq-Latn-TZ,Ngindo,TZ,,,,,,,,EAF,nnq,LE,5-Apr-2018,
 nnr,nnr-Latn-AU,Narungga,AU,,,,,1,,,ANZ,nnr,LE,10-Jan-2018,Extinct
@@ -6497,7 +6497,7 @@ rgr,rgr-Latn-PE,Resígaro,PE,,,,,,,,SAM,rgr,LE,9-Jan-2018,
 rgs,rgs-Latn-VN,"Roglai, Southern",VN,,,,,,,,SEA,rgs,"NMC, SVW",22-Aug-2018,
 rgu,rgu-Latn-ID,Rikou,ID,,,,,,,,SEA,rgu,,20-Apr-2018,
 rhg-Arab,rhg-Arab-MM,Rohingya,BD CN MM MY PK SA TH,,,,,,,,EAS SAS SEA WAS,rhg,MH,5-Jan-2017,
-rhg,rhg-Latn-MM,Rohingya,BD CN MM MY PK SA TH,,,,,,,,EAS SAS SEA WAS,rhg,MH,11/15/2021,LE: made Latn primary based on scripture published
+rhg-Latn,rhg-Latn-MM,Rohingya,BD CN MM MY PK SA TH,,,,,,,,EAS SAS SEA WAS,rhg,MH,,
 rhg-Rohg,rhg-Rohg-MM,Rohingya,BD CN MM MY PK SA TH,,,,,,,,EAS SAS SEA WAS,rhg,,,LE: changed PUA code
 rhp,rhp-Latn-PG,Yahang,PG,,,,,1,,,MEL,rhp,LE,10-Jan-2018,
 ria,ria-Latn-IN,Riang,BD IN,,,,,,,,SAS,ria,CLDR,,
@@ -7835,7 +7835,7 @@ txi,txi-Latn-BR,Ikpeng,BR,,,,,1,,,SAM,txi,LE,9-Jan-2018,
 txj,txj-Latn-NG,Tarjumo,NG,,,,,1,,,WAF,txj,,,
 txm,txm-Latn-ID,Tomini,ID,,,,,1,,,SEA,txm,,,
 txn,txn-Latn-ID,"Tarangan, West",ID,,,17214,,,,,SEA,txn,,20-Apr-2018,
-txo,txo-Beng-IN,Toto,IN,,,,,,,,SAS,txo,,11/15/2021,LE: Beng as primary based on omniglot
+txo-Beng,txo-Beng-IN,Toto,IN,,,,,,,,SAS,txo,,,
 txo-Deva,txo-Deva-IN,Toto,IN,,,,,,,,SAS,txo,,,
 txo-Toto,txo-Toto-IN,Toto,IN,,,,,,,,SAS,txo,,,
 txq,txq-Latn-ID,Tii,ID,,,,,,,,SEA,txq,,20-Apr-2018,
