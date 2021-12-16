@@ -745,7 +745,7 @@ bff,bff-Latn-CF,Bofi,CF,,,,,,,,MAF,bff,jb,,
 bfg,bfg-Latn-ID,"Kayan, Busang",ID,,,04686,,1,,,SEA,bfg,,,
 bfh,bfh-Latn-PG,Blafe,PG,,,00628,,,,,MEL,bfh,LE,10-Jan-2018,
 bfi,bfi-Zxxx-GB,British Sign Language,GB IM,,,,,,,,NEU,bfi,LE,3-Dec-2018,Video
-bfi-x-stokoe,bfi-Zzzz-GB-x-stokoe,British Sign Language,GB,,,,,,,,NEU,bfi,St,,Stokoe Dictionary
+bfi-Zzzz-x-stokoe,bfi-Zzzz-GB-x-stokoe,British Sign Language,GB,,,,,,,,NEU,bfi,St,,Stokoe Dictionary
 bfj,bfj-Latn-CM,Bafanji,CM,,,,,,,,MAF,bfj,LE,12-Jan-2018,
 bfk,bfk-Zxxx-TH,Ban Khor Sign Language,TH,,,,,,,,SEA,bfk,,,
 bfl,bfl-Latn-CF,Banda-Ndélé,CF SS,,,,,1,,,EAF MAF,bfl,jb,,
@@ -756,13 +756,13 @@ bfp,bfp-Latn-CM,Beba,CM,,,,,1,,,MAF,bfp,,,
 bfq,bfq-Taml-IN,Badaga,IN,,,,,,,,SAS,bfq,CLDR,,
 bfq-Knda,bfq-Knda-IN,Badaga,IN,,,,,,1,,SAS,bfq,,,
 bfq-Latn,bfq-Latn-IN,Badaga,IN,,,,,,,,SAS,bfq,,,
-bfq-x-badaga,bfq-Zzzz-IN-x-badaga,Badaga,IN,,,,,,,,SAS,bfq,,,
+bfq-Zzzz-x-badaga,bfq-Zzzz-IN-x-badaga,Badaga,IN,,,,,,,,SAS,bfq,,,
 bfr,bfr-Zyyy-IN,Bazigar,IN,,,,,1,,,SAS,bfr,,,
 bfs,bfs-Latn-CN,"Bai, Southern",CN,,,04699,,,,,EAS,bfs,,,
 bfs-Hani,bfs-Hani-CN,"Bai, Southern",CN,,,04699,,,,,EAS,bfs,,,
 bft,bft-Arab-PK,Balti,IN PK,,,,,,,,SAS,bft,CLDR,,
 bft-Tibt,bft-Tibt-PK,Balti,IN PK,,,,,,1,,SAS,bft,,,
-bft-x-baltia,bft-Zzzz-PK-x-baltia,Balti,IN PK,,,,,,1,,SAS,bft,,,
+bft-Zzzz-x-baltia,bft-Zzzz-PK-x-baltia,Balti,IN PK,,,,,,1,,SAS,bft,,,
 bfu,bfu-Tibt-IN,Gahri,IN,,,,,,,,SAS,bfu,,,
 bfu-Takr,bfu-Takr-IN,Gahri,IN,,,,,,1,,SAS,bfu,,,
 bfw,bfw-Orya-IN,Bondo,IN,,,,,,,,SAS,bfw,,,
@@ -898,7 +898,7 @@ bkg,bkg-Latn-CF,Buraka,CD CF,,,,,1,,,MAF,bkg,jb,,
 bkh,bkh-Latn-CM,Bakoko,CM,,,,,,,,MAF,bkh,LE,12-Jan-2018,
 bki,bki-Latn-VU,Baki,VU,,,,,,,,MEL,bki,LE,10-Jan-2018,
 bkj,bkj-Latn-CF,Pande,CF,,,,,1,,,MAF,bkj,jb,,
-bkk-x-baltia,bkk-Zzzz-IN-x-baltia,Brokskat,IN,,,,,,,,SAS,bkk,,,
+bkk-Zzzz-x-baltia,bkk-Zzzz-IN-x-baltia,Brokskat,IN,,,,,,,,SAS,bkk,,,
 bkl,bkl-Latn-ID,Berik,ID,,,01174,,,,,SEA,bkl,,20-Apr-2018,
 bkm,bkm-Latn-CM,Kom,CM,,,12162,,,,,MAF,bkm,CLDR,,
 bkn,bkn-Latn-ID,Bukitan,ID MY,,,,,1,,,SEA,bkn,,,
@@ -2206,7 +2206,7 @@ eri,eri-Latn-PG,Ogea,PG,,,,,,,,MEL,eri,LE,10-Jan-2018,
 erk,erk-Latn-VU,"Efate, South",VU,,,04498 04708,,,,,MEL,erk,LE,10-Jan-2018,
 ero,ero-Zyyy-CN,Horpa,CN,,,10687 10688,,1,,,EAS,ero,,,
 err,err-Latn-AU,Erre,AU,,,,,1,,,ANZ,err,LE,10-Jan-2018,Extinct
-ers,ers-Zzzz-CN-x-ersushab,Ersu,CN,,,09646 09647,,,1,,EAS,ers,,,
+ers-Zzzz-x-ersushab,ers-Zzzz-CN-x-ersushab,Ersu,CN,,,09646 09647,,,1,,EAS,ers,,,
 ert,ert-Latn-ID,Eritai,ID,,,,,1,,,SEA,ert,,,
 erw,erw-Latn-ID,Erokwanas,ID,,,,,1,,,SEA,erw,,,
 es,es-Latn-ES,Spanish,AD AR AT AU AW BE BG BO BQ BR BZ CA CH CI CL CO CR CU CW CZ DE DK DO DZ EA EC EH ES FI FR GB GI GQ GT GU GW HN HR IC IE IL IS IT JM KY LU MA MT MX NI NL NO NZ PA PE PH PL PR PT PY RO RU SE SR SV SX TR TT US UY VE VG VI,spanglis,,,,,,,ANZ CAM CAR EEU MAF MIC NAF NAM NEU SAM SEA SEU WAF WAS WEU,spa,CLDR,,
@@ -3619,7 +3619,7 @@ kjg-Latn,kjg-Latn-LA,Khmu,CN LA TH US VN,,,02040,,,,,EAS NAM SEA,kjg,SVW,,
 kjg-Thai,kjg-Thai-TH,Khmu,CN LA TH US VN,,,00488,,,,,EAS NAM SEA,kjg,SVW,,"not sure to what extent there is a single standardized orthography here, or various attempts."
 kjh,kjh-Cyrl-RU,Khakas,CN RU,,,,,,,,EAS EEU,kjh,,,
 kji,kji-Latn-SB,Zabana,SB,,,,,,,,MEL,kji,LE,10-Jan-2018,
-kjj,kjj-Latn-AZ,Khinalugh,AZ,,,,,1,,,WAS,kjj,KK,,
+kjj,kjj-Latn-AZ,Khinalugh,AZ,,,,,,,,WAS,kjj,KK,,
 kjk,kjk-Latn-ID,"Konjo, Highland",ID,,,,,1,,,SEA,kjk,,,
 kjl,kjl-Deva-NP,"Kham, Western Parbate",NP,,,,,,,,SAS,kjl,,,
 kjm,kjm-Latn-VN,Kháng,VN,,,,,1,,,SEA,kjm,NMC,20-Nov-2017,
@@ -4673,7 +4673,8 @@ mft,mft-Latn-PG,Mokerang,PG,,,,,1,,,MEL,mft,LE,10-Jan-2018,
 mfu,mfu-Latn-AO,Mbwela,AO,,,,,,,,MAF,mfu,LE,12-Jan-2018,
 mfv,mfv-Latn-GW,Mandjak,GM GW SN,,,01674 01700 01701 05700 13597 20006 20007,,,,,WAF,mfv,,,
 mfw,mfw-Latn-PG,Mulaha,PG,,,,,1,,,MEL,mfw,LE,10-Jan-2018,Extinct
-mfx,mfx-Zyyy-ET,Melo,ET,,,,,1,,,EAF,mfx,,,
+mfx,mfx-Latn-ET,Melo,ET,,,,,,,,EAF,mfx,LE,16-Dec-2021,informal usage
+mfx-Ethi,mfx-Ethi-ET,Melo,ET,,,,,,,,EAF,mfx,LE,16-Dec-2021,informal usage
 mfy,mfy-Latn-MX,Mayo,MX,,,,,,,,CAM,mfy,LE,9-Jan-2018,
 mfz,mfz-Latn-SS,Mabaan,SS,,,,,,,,EAF,mfz,LE,12-Jan-2018,
 mg,mg-Latn-MG,Malagasy,MG,,,,,,,,EAF,mlg,CLDR,,
@@ -7443,7 +7444,7 @@ tgy,tgy-Latn-SS,Togoyo,SS,,,,,1,,,EAF,tgy,LE,10-Jan-2018,Extinct
 tgz,tgz-Latn-AU,Tagalaka,AU,,,,,1,,,ANZ,tgz,LE,10-Jan-2018,Extinct
 th,th-Thai-TH,Thai,AE AU CA DE DK FI KH SE SG TH US,,,,,,,,ANZ NAM NEU SEA WAS WEU,tha,CLDR,,
 th-Brai,th-Brai-TH,Thai,AE AU CA DE DK FI  KH SE SG TH US,,,,,,,,ANZ NAM NEU SEA WAS WEU,tha,NMC,10-Jan-2018,
-thc,thc-Zyyy-LA,Tai Hang Tong,LA VN,,,,tpo,1,,tpo,SEA,tpo,NMC,6-Dec-2017,wikipedia: Lai Pao script
+thc-Zzzz-x-laipao,thc-Zzzz-LA-x-laipao,Tai Hang Tong,LA VN,,,,tpo,1,,tpo,SEA,tpo,NMC,6-Dec-2017,wikipedia: Lai Pao script
 thd,thd-Latn-AU,Thayore,AU,,,,,,,,ANZ,thd,LE,10-Jan-2018,
 the,the-Deva-NP,"Tharu, Chitwania",IN NP,,,02688 04331,,,,,SAS,the,,,
 thf,thf-Deva-NP,Thangmi,CN IN NP,,,,,,,,EAS SAS,thf,,,
@@ -7651,7 +7652,7 @@ tpk,tpk-Latn-BR,Tupinikin,BR,,,,,1,,,SAM,tpk,LE,10-Jan-2018,Extinct
 tpl,tpl-Latn-MX,"Me'phaa, Tlacoapa",MX,,,,,,,,CAM,tpl,LE,9-Jan-2018,
 tpm,tpm-Latn-GH,Tampulma,GH,,,,,,,,WAF,tpm,LE,12-Jan-2018,
 tpn,tpn-Latn-BR,Tupinambá,BR,,,,,1,,,SAM,tpn,,,Extinct
-tpo,tpo-Zyyy-LA,Tai Pao,LA VN,,,,,1,,,SEA,tpo,NMC,6-Dec-2017,Lai Pao script
+tpo-Zzzz-x-laipao,tpo-Zzzz-LA-x-laipao,Tai Pao,LA VN,,,,,,,,SEA,tpo,NMC,6-Dec-2017,Lai Pao script
 tpp,tpp-Latn-MX,"Tepehua, Pisaflores",MX,,,,,,,,CAM,tpp,LE,9-Jan-2018,
 tpq,tpq-Zyyy-IN,Tukpa,IN,,,,,1,,,SAS,tpq,,,
 tpr,tpr-Latn-BR,Tuparí,BR,,,,,1,,,SAM,tpr,LE,9-Jan-2018,
