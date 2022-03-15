@@ -1146,7 +1146,8 @@ bst-Latn = bst-Latn-ET
 bsu = bsu-ID = bsu-Latn = bsu-Latn-ID
 bsv = bsv-GN = bsv-Latn = bsv-Latn-GN
 bsv-Arab = bsv-Arab-GN
-bsw = bsw-ET = bsw-Zyyy = bsw-Zyyy-ET
+bsw = bsw-ET = bsw-Latn = bsw-Latn-ET
+bsw-Ethi = bsw-Ethi-ET
 bsx = bsx-Latn = bsx-NG = bsx-Latn-NG
 bsy = bsy-Latn = bsy-MY = bsy-Latn-MY
 bta = bta-Latn = bta-NG = bta-Latn-NG
@@ -1170,6 +1171,7 @@ bts-Batk = bts-Batk-ID
 *btt = btt-Latn = btt-NG = btt-Latn-NG
 btu = btu-Latn = btu-NG = btu-Latn-NG
 btv = btv-Deva = btv-PK = btv-Deva-PK
+btv-Arab = btv-Arab-PK
 btw = btw-Latn = btw-PH = btw-Latn-PH
 btx = btx-ID = btx-Latn = btx-Latn-ID
 btx-Batk = btx-Batk-ID
@@ -3129,7 +3131,8 @@ huq = huq-CN = huq-Zyyy = huq-Zyyy-CN
 hur = hur-CA = hur-Latn = hur-Latn-CA
 *hus = hus-Latn = hus-MX = hus-Latn-MX
 hus-x-central = hus-Latn-x-central = hus-MX-x-central = hus-Latn-MX-x-central
-hut = hut-NP = hut-Tibt = hut-Tibt-NP
+hut = hut-Deva = hut-NP = hut-Deva-NP
+hut-Tibt = hut-Tibt-NP
 *huu = huu-Latn = huu-PE = huu-Latn-PE
 *huv = huv-Latn = huv-MX = huv-Latn-MX
 huw = huw-ID = huw-Latn = pmc = pmc-ID = pmc-Latn = pmc-Latn-ID = huw-Latn-ID
@@ -3692,7 +3695,7 @@ kgu = kgu-Latn = kgu-PG = kgu-Latn-PG
 kgv = kgv-ID = kgv-Latn = kgv-Latn-ID
 kgw = kgw-ID = kgw-Latn = kgw-Latn-ID
 kgx = kgx-ID = kgx-Latn = kgx-Latn-ID
-kgy = kgy-CN = kgy-Zyyy = kgy-Zyyy-CN
+kgy = kgy-Deva = kgy-NP = kgy-Deva-NP
 kha = kha-IN = kha-Latn = kha-Latn-IN
 kha-Beng = kha-Beng-IN
 *khb = khb-CN = khb-Talu = khb-Talu-CN
@@ -5370,7 +5373,7 @@ nan-Bopo = nan-Bopo-TW
 nan-Kana = nan-Kana-TW
 nan-Latn = nan-Latn-TW
 nan-Latn-x-transpoj = nan-TW-x-transpoj = zh-nan-TW-x-transpoj = nan-Latn-TW-x-transpoj
-nao = nao-NP = nao-Zyyy = nao-Zyyy-NP
+nao = nao-Deva = nao-NP = nao-Deva-NP
 nap = nap-IT = nap-Latn = nap-Latn-IT
 *naq = naq-Latn = *naq-NA = naq-Latn-NA
 nar = nar-Latn = nar-NG = nar-Latn-NG
@@ -5965,7 +5968,8 @@ oku = oku-CM = oku-Latn = oku-Latn-CM
 *okv = okv-Latn = okv-PG = okv-Latn-PG
 okx = okx-Latn = okx-NG = okx-Latn-NG
 okz = okz-KH = okz-Khmr = okz-Khmr-KH
-ola = ola-NP = ola-Tibt = thw = thw-NP = thw-Tibt = thw-Tibt-NP = ola-Tibt-NP
+ola = ola-Deva = ola-NP = thw = thw-Deva = thw-Deva-NP = thw-NP = ola-Deva-NP
+ola-Tibt = ola-CN = thw-CN = ola-Tibt-CN
 old = old-Latn = old-TZ = old-Latn-TZ
 ole = ole-BT = ole-Tibt = ole-Tibt-BT
 olk = olk-AU = olk-Latn = olk-Latn-AU
