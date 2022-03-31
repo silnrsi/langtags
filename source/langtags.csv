@@ -829,6 +829,7 @@ bhr,bhr-Latn-MG,"Malagasy, Bara",MG,,,,,,,,EAF,bhr,,,
 bhs,bhs-Latn-CM,Buwal,CM,,,,,,,,MAF,bhs,LE,12-Jan-2018,
 bht,bht-Takr-IN,Bhattiyali,IN,,,02710,,1,,,SAS,bht,,,
 bht-Deva,bht-Deva-IN,Bhattiyali,IN,,,,,,,,SAS,bht,,,
+bht-Latn,bht-Latn-IN,Bhattiyali,IN,,,,,,,,SAS,bht,,,
 bhu,bhu-Deva-IN,Bhunjia,IN,,,,,,,,SAS,bhu,,,
 bhv,bhv-Latn-ID,Bahau,ID,,,,,1,,,SEA,bhv,,,
 bhw,bhw-Latn-ID,Biak,ID,,,00924 05156,,,,,SEA,bhw,,20-Apr-2018,
@@ -1940,7 +1941,7 @@ dks,dks-Latn-SS,"Dinka, Southeastern",CA SS,,,00958,,,,,EAF NAM,dks,LE,12-Jan-20
 dkx,dkx-Latn-CM,Mazagway,CM,,,09059,,,,,MAF,dkx,LE,12-Jan-2018,
 dlg,dlg-Cyrl-RU,Dolgan,RU,,,,,,,,EEU,dlg,,,
 dlk,dlk-Zyyy-ER,Dahalik,ER,,,,,1,,,EAF,dlk,,,
-dlm,dlm-Latn-HR,Dalmatian,HR,,,,,1,,,SEU,dlm,,,Extinct
+dlm,dlm-Latn-HR,Dalmatian,HR,,,,,,,,SEU,dlm,,,Extinct
 dln,dln-Latn-IN,Darlong,IN,,,,,,,,SAS,dln,,,
 dma,dma-Latn-GA,Duma,GA,,,,,1,,,MAF,dma,LE,30-Jan-2018,
 dmb,dmb-Latn-ML,"Dogon, Mombo",ML,,,,,1,,,WAF,dmb,,,
@@ -5401,7 +5402,7 @@ ngj,ngj-Latn-CM,Ngie,CM,,,,,,,,MAF,ngj,,,
 ngk,ngk-Latn-AU,Dalabon,AU,,,04302,,1,,,ANZ,ngk,LE,10-Jan-2018,
 ngl,ngl-Latn-MZ,Lomwe,MZ,,,01106 01107 01301,,,,,EAF,ngl,CLDR,,
 ngm,ngm-Latn-FM,Ngatik Men's Creole,FM,,,,,1,,,MIC,ngm,LE,10-Jan-2018,
-ngn,ngn-Latn-CM,Ngwo,CM,,,04398 14960,,1,,,MAF,ngn,,,
+ngn,ngn-Latn-CM,Ngwo,CM,,,04398 14960,,,,,MAF,ngn,,,
 ngo,ngo-Latn-TZ,Ngoni,MZ TZ,,,,,,,xnj,EAF,ngo,LE,5-Apr-2018,
 ngp,ngp-Latn-TZ,Ngulu,TZ,,,,,,,,EAF,ngp,LE,5-Apr-2018,
 ngq,ngq-Latn-TZ,Ngoreme,TZ,,,,,,,,EAF,ngq,LE,5-Apr-2018,
@@ -6436,7 +6437,9 @@ qvz,qvz-Latn-EC,"Quichua, Northern Pastaza",EC PE,,,,,,,,SAM,qvz,LE,9-Jan-2018,
 qwa,qwa-Latn-PE,"Quechua, Corongo Ancash",PE,,,,,,,,SAM,qwa,LE,9-Jan-2018,
 qwc,qwc-Latn-PE,Classical Quechua,PE,,,,,1,,,SAM,qwc,LE,9-Jan-2018,Historical
 qwh,qwh-Latn-PE,"Quechua, Huaylas Ancash",PE,,,01537 15840,,,,,SAM,qwh,LE,9-Jan-2018,
-qwm,qwm-Cyrl-RU,Kuman (Russia),RU,,,,,1,,,EEU,qwm,,,Extinct
+qwm-Cyrl,qwm-Cyrl-RU,Kuman (Russia),RU,,,,,1,,,EEU,qwm,,,Extinct
+qwm,qwm-Latn-RU,Kuman (Russia),RU,,,,,,,,EEU,qwm,,,
+qwm-Runr,qwm-Runr-RU,Kuman (Russia),RU,,,,,,,,EEU,qwm,,,
 qws,qws-Latn-PE,"Quechua, Sihuas Ancash",PE,,,,,,,,SAM,qws,LE,5-Jul-2017,
 qwt,qwt-Zyyy-US,Kwalhioqua-Tlatskanai,US,,,,,1,,,NAM,qwt,LE,10-Jan-2018,Extinct
 qxa,qxa-Latn-PE,"Quechua, Chiquián",PE,,,,,1,,,SAM,qxa,LE,9-Jan-2018,
