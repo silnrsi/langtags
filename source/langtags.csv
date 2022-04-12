@@ -1756,7 +1756,7 @@ cyb,cyb-Latn-BO,Cayubaba,BO,,,,,1,,,SAM,cyb,LE,10-Jan-2018,Extinct
 cyo,cyo-Latn-PH,Cuyonon,PH,,,,,,,,SEA,cyo,,,
 czh,czh-Hans-CN,"Chinese, Huizhou",CN,,,,,,,,EAS,czh,,,
 czh-Hant,czh-Hant-CN,"Chinese, Huizhou",CN,,,,,,,,EAS,czh,,,
-czk-Zyyy,czk-Zyyy-CZ,Knaanic,CZ,,,,,,,,EEU,czk,,,Extinct
+czk,czk-Hebr-CZ,Knaanic,CZ,,,,,,,,EEU,czk,,,Extinct
 czn,czn-Latn-MX,"Chatino, Zenzontepec",MX,,,,,,,,CAM,czn,LE,9-Jan-2018,
 czo-Zyyy,czo-Zyyy-CN,"Chinese, Min Zhong",CN,,,,,,,,EAS,czo,,,
 czt,czt-Latn-MM,"Chin, Zotung",MM,,,,,,,,SEA,czt,NMC,4-Dec-2017,
@@ -7680,7 +7680,7 @@ tpj,tpj-Latn-PY,Ñandeva,AR BO PY,,,17207,,1,,,SAM,tpj,LE,9-Jan-2018,
 tpk,tpk-Latn-BR,Tupinikin,BR,,,,,1,,,SAM,tpk,LE,10-Jan-2018,Extinct
 tpl,tpl-Latn-MX,"Me'phaa, Tlacoapa",MX,,,,,,,,CAM,tpl,LE,9-Jan-2018,
 tpm,tpm-Latn-GH,Tampulma,GH,,,,,,,,WAF,tpm,LE,12-Jan-2018,
-tpn,tpn-Latn-BR,Tupinambá,BR,,,,,1,,,SAM,tpn,,,Extinct
+tpn,tpn-Latn-BR,Tupinambá,BR,,,,,,,,SAM,tpn,,,Extinct
 tpo-Zzzz-x-laipao,tpo-Zzzz-LA-x-laipao,Tai Pao,LA VN,,,,,,,,SEA,tpo,NMC,6-Dec-2017,Lai Pao script
 tpp,tpp-Latn-MX,"Tepehua, Pisaflores",MX,,,,,,,,CAM,tpp,LE,9-Jan-2018,
 tpq,tpq-Zyyy-IN,Tukpa,IN,,,,,1,,,SAS,tpq,,,
@@ -8956,7 +8956,7 @@ yob,yob-Latn-PG,Yoba,PG,,,,,1,,,MEL,yob,LE,10-Jan-2018,Extinct
 yog,yog-Latn-PH,Yogad,PH,,,,,,1,,SEA,yog,,,
 yoi,yoi-Jpan-JP,Yonaguni,JP,,,,,,,,EAS,yoi,,,
 yok,yok-Latn-US,Yokuts,US,,,,,1,,,NAM,yok,LE,9-Jan-2018,
-yol,yol-Zyyy-GB,Yola,GB,,,,,,,,NEU,yol,,,Extinct
+yol,yol-Latn-GB,Yola,GB,,,,,,,,NEU,yol,,,Extinct
 yom,yom-Latn-CD,Yombe,AO CD CG,,,04353,,,,,MAF,yom,LE,12-Jan-2018,
 yon,yon-Latn-PG,Yongkom,PG,,,00533,,,,,MEL,yon,LE,10-Jan-2018,
 yos,yos-Latn-IN,Yos,IN MM,,,,zom,,,zom,SEA SAS,zom,,,
