@@ -832,6 +832,7 @@ bhr = bhr-Latn = bhr-MG = bhr-Latn-MG
 bhs = bhs-CM = bhs-Latn = bhs-Latn-CM
 bht = bht-IN = bht-Takr = bht-Takr-IN
 bht-Deva = bht-Deva-IN
+bht-Latn = bht-Latn-IN
 bhu = bhu-Deva = bhu-IN = bhu-Deva-IN
 bhv = bhv-ID = bhv-Latn = bhv-Latn-ID
 bhw = bhw-ID = bhw-Latn = bhw-Latn-ID
@@ -1741,7 +1742,7 @@ cyb = cyb-BO = cyb-Latn = cyb-Latn-BO
 cyo = cyo-Latn = cyo-PH = cyo-Latn-PH
 czh = czh-CN = czh-Hans = zh-czh = zh-czh-CN = czh-Hans-CN
 czh-Hant = czh-Hant-CN
-czk = czk-CZ = czk-Zyyy = czk-Zyyy-CZ
+czk = czk-CZ = czk-Hebr = czk-Hebr-CZ
 czn = czn-Latn = czn-MX = czn-Latn-MX
 czo = czo-CN = czo-Zyyy = zh-czo = zh-czo-CN = czo-Zyyy-CN
 czt = czt-Latn = czt-MM = czt-Latn-MM
@@ -3296,6 +3297,7 @@ isg = isg-IE = isg-Zxxx = sgn-isg = sgn-isg-IE = isg-Zxxx-IE
 ish = ish-Latn = ish-NG = ish-Latn-NG
 isi = isi-Latn = isi-NG = isi-Latn-NG
 isk = isk-AF = isk-Arab = isk-Arab-AF
+isk-Cyrl = isk-TJ = isk-Cyrl-TJ
 ism = ism-ID = ism-Latn = ism-Latn-ID
 isn = isn-Latn = isn-TZ = isn-Latn-TZ
 iso = iso-Latn = iso-NG = iso-Latn-NG
@@ -6531,7 +6533,9 @@ qvy = qvy-CN = qvy-Zyyy = qvy-Zyyy-CN
 qwa = qwa-Latn = qwa-PE = qwa-Latn-PE
 qwc = qwc-Latn = qwc-PE = qwc-Latn-PE
 *qwh = qwh-Latn = qwh-PE = qwh-Latn-PE
-qwm = qwm-Cyrl = qwm-RU = qwm-Cyrl-RU
+qwm = qwm-Latn = qwm-RU = qwm-Latn-RU
+qwm-Cyrl = qwm-Cyrl-RU
+qwm-Runr = qwm-Runr-RU
 qws = qws-Latn = qws-PE = qws-Latn-PE
 qwt = qwt-US = qwt-Zyyy = qwt-Zyyy-US
 qxa = qxa-Latn = qxa-PE = qxa-Latn-PE
@@ -9024,7 +9028,7 @@ yob = yob-Latn = yob-PG = yob-Latn-PG
 yog = yog-Latn = yog-PH = yog-Latn-PH
 yoi = yoi-JP = yoi-Jpan = yoi-Jpan-JP
 yok = yok-Latn = yok-US = yok-Latn-US
-yol = yol-GB = yol-Zyyy = yol-Zyyy-GB
+yol = yol-GB = yol-Latn = yol-Latn-GB
 yom = yom-CD = yom-Latn = yom-Latn-CD
 *yon = yon-Latn = yon-PG = yon-Latn-PG
 yot = yot-Latn = yot-NG = yot-Latn-NG
