@@ -10,6 +10,8 @@ on:
       - lib/**
       - source/**
       - tests/**
+      - Makefile
+      - setup.py
   pull_request:
     branches: [ release ]
     paths:
@@ -19,6 +21,8 @@ on:
       - lib/**
       - source/**
       - tests/**
+      - Makefile
+      - setup.py
 
 jobs:
   build:

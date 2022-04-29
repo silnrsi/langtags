@@ -10,6 +10,8 @@ on:
       - lib/**
       - source/**
       - tests/**
+      - Makefile
+      - setup.py
   pull_request:
     branches: [ master ]
     paths:
@@ -19,7 +21,8 @@ on:
       - lib/**
       - source/**
       - tests/**
-
+      - Makefile
+      - setup.py
 jobs:
   build:
     runs-on: ubuntu-latest
