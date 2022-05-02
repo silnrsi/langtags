@@ -47,10 +47,8 @@
           "type": "string"
         },
         "iana": {
-          "oneOf": [
-            { "type": "string" },
-            { "type": "array", "items": {"type":"string"} }
-          ]
+          "type": "array",
+          "items": { "type": "string" }
         },
         "name": {
           "type": "string"
@@ -68,6 +66,9 @@
         "nophonvars": {
           "type": "boolean"
         },
+        "obsolete": {
+          "type": "boolean"
+        },
         "script": {
           "$ref": "#/definitions/iso15924"
         },
@@ -80,6 +81,9 @@
           "items": { "type": "string" }
         },
         "suppress": {
+          "type": "boolean"
+        },
+        "unwritten": {
           "type": "boolean"
         },
         "windows": {
@@ -100,7 +104,7 @@
         },
         "variants": {
           "type": "array",
-          "items": { "type": "string" },
+          "items": { "$ref": "#/definitions/bcp47_variant" },
           "additionalItems": false
         }
       },
@@ -117,7 +121,7 @@
         },
         "variants": {
           "type": "array",
-          "items": { "type": "string" },
+          "items": { "$ref": "#/definitions/bcp47_variant" },
           "additionalItems": false
         }
       },
@@ -134,7 +138,7 @@
         },
         "api": {
           "type": "string",
-          "pattern": "^\\d\\.+\\d\\.+\\d+$"
+          "pattern": "^\\d+\\.\\d+\\.\\d+$"
         },
         "date": {
           "type": "string",
