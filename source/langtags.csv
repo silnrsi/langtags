@@ -2310,7 +2310,7 @@ fj,fj-Latn-FJ,Fijian,FJ NR NZ US VU,,,,,,,,ANZ MEL MIC NAM,fij,CLDR,,
 fkk,fkk-Latn-NG,Kirya-Konzel,NG,,,,,,,,WAF,fkk,,,
 fkv,fkv-Latn-NO,"Finnish, Kven",NO,,,,,,,,NEU,fkv,LE,12-Jan-2018,
 fla,fla-Latn-US,Kalispel-Pend d'Oreille,US,,,,,,,,NAM,fla,LE,9-Jan-2018,
-flh,flh-Latn-ID,Foau,ID,,,,,1,,,SEA,flh,,,
+flh,flh-Latn-ID,Foau,ID,,,,,,,,SEA,flh,,,
 fli,fli-Latn-NG,Fali,NG,,,09752 09753 09755,,1,,,WAF,fli,,,
 fll,fll-Latn-CM,"Fali, North",CM,,,02876 02877,,1,,,MAF,fll,,,
 fln,fln-Latn-AU,Flinders Island,AU,,,,,1,,,ANZ,fln,LE,10-Jan-2018,Extinct
@@ -2751,7 +2751,8 @@ gye,gye-Latn-NG,Gyem,NG,,,,,1,,,WAF,gye,,,
 gyf,gyf-Latn-AU,Gungabula,AU,,,,,1,,,ANZ,gyf,LE,10-Jan-2018,Extinct
 gyg,gyg-Latn-CF,Gbayi,CF,,,,,1,,,MAF,gyg,,,
 gyi,gyi-Latn-CM,Gyele,CM GQ,,,,,,,,MAF,gyi,LE,12-Jan-2018,
-gyl,gyl-Zyyy-ET,Gayil,ET,,,,,1,,,EAF,gyl,,,
+gyl,gyl-Latn-ET,Gayil,ET,,,,,,,,EAF,gyl,,,
+gyl-Ethi,gyl-Ethi-ET,Gayil,ET,,,,,,,,EAF,gyl,,,
 gym,gym-Latn-PA,Ngäbere,CR PA,,,01151 01557,,,,,CAM,gym,LE,9-Jan-2018,
 gyn,gyn-Latn-GY,Guyanese Creole English,GY SR US,,,,,,,,NAM SAM,gyn,LE,12-Jan-2018,
 gyo,gyo-Zyyy-NP,Gyalsumdo,NP,,,,,1,,,???,gyo,,,639-3 2017
