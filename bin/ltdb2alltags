@@ -331,6 +331,11 @@ def make_record(t):
         x = lt.LangTag(lang=t.lang, script=t.script, variants=t.variants, extensions=t.extensions)
         if len(allscripts.get(str(x), [])) < 2:
             r.insert(1, str(x))
+    if r[0] in ('con', 'prn', 'aux', 'nul'):
+        ts = f"{r[0]}-Arab" if r[0] == "prn" else f"{r[0]}-Latn"
+        if ts in r:
+            r.remove(ts)
+        r.insert(0, ts)
     n = {'tag': r[0], 'full': r[-1], 'script': t.script, 'region': t.region}
     wintag = t.copy()
     if suppress.get(str(t), '') == t.script:
@@ -348,7 +353,7 @@ def make_record(t):
     tags = set(r[1:-1])
     hassldr = False
     # n['primary'] = True
-    if False and "-" in n['tag']:
+    if False and "-x-" in n['tag']:
         stripx = n['tag'].find("-x-")
         s = n['tag'][:stripx] if stripx >=0 else n['tag']
         finald = s.rfind("-")

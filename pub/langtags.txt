@@ -530,7 +530,7 @@ aur = aur-Latn = aur-PG = aur-Latn-PG
 aut = aut-Latn = aut-PF = aut-Latn-PF
 *auu = auu-ID = auu-Latn = auu-Latn-ID
 auw = auw-ID = auw-Latn = auw-Latn-ID
-aux = aux-BR = aux-Latn = aux-Latn-BR
+aux-Latn = aux = aux-BR = aux-Latn-BR
 *auy = auy-Latn = auy-PG = auy-Latn-PG
 auz = ar-auz = ar-auz-UZ = auz-Arab = auz-UZ = auz-Arab-UZ
 av = av-Cyrl = av-RU = av-Cyrl-RU
@@ -1594,7 +1594,7 @@ coj = coj-Latn = coj-MX = coj-Latn-MX
 *cok = cok-Latn = cok-MX = cok-Latn-MX
 col = col-Latn = col-US = col-Latn-US
 com = com-Latn = com-US = com-Latn-US
-con = con-EC = *con-Latn = con-Latn-EC
+*con-Latn = con = con-EC = con-Latn-EC
 coo = coo-CA = coo-Latn = coo-Latn-CA
 cop = cop-Copt = cop-EG = cop-Copt-EG
 cop-Arab = cop-Arab-EG
@@ -5809,7 +5809,7 @@ nuh = nuh-Latn = nuh-NG = nuh-Latn-NG
 *nui = nui-GQ = nui-Latn = nui-Latn-GQ
 *nuj = nuj-Latn = nuj-UG = nuj-Latn-UG
 nuk = nuk-CA = nuk-Latn = nuk-Latn-CA
-nul = nul-ID = nul-Latn = nul-Latn-ID
+nul-Latn = nul = nul-ID = nul-Latn-ID
 num = num-Latn = num-TO = num-Latn-TO
 nun = ayx = ayx-Latn = ayx-Latn-MM = ayx-MM = nun-Latn = nun-MM = nun-Latn-MM
 nuo = nuo-Latn = nuo-VN = nuo-Latn-VN
@@ -6380,7 +6380,7 @@ prh = prh-Latn = prh-PH = prh-Latn-PH
 prk = prk-Latn = prk-MM = prk-Latn-MM
 prl = prl-PE = prl-Zxxx = sgn-prl = sgn-prl-PE = prl-Zxxx-PE
 prm = prm-Latn = prm-PG = prm-Latn-PG
-prn = prn-AF = prn-Arab = prn-Arab-AF
+prn-Arab = prn = prn-AF = prn-Arab-AF
 pro = pro-FR = pro-Latn = pro-Latn-FR
 prp = prp-IN = prp-Zyyy = prp-Zyyy-IN
 *prq = prq-Latn = prq-PE = prq-Latn-PE

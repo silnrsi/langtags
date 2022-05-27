@@ -31,7 +31,7 @@ Langtags.json consists of an array of objects. Each object corresponds to an equ
 - **tag** The canonical tag for this set. This is the normal tag to use for the set. Conforms to BCP 47
 - **full** The full tag for this set. Use this if you want to pull out the details. Conforms to BCP 47
 - **tags** A list of other tags that are equivalent. Each conforms to BCP 47
-- **variants** A list of variant tag components that may occur with tags in this set. A tag with a variant is not equivalent to other tags in this set. But a tag in this set with a variant is considered equivalent to another tag in this set with the same variant.
+- **variants** A list of variant tag components that may occur with tags in this set. A tag with a variant is not equivalent to other tags in this set.
 - **iso639_3** The ISO639-3 code for the language of the **tag** in this set.
 - **region** Region code, from the full tag, for this set. Conforms to ISO 3166-1.
 - **regions** Other regions that may be used with these tags. A tag from this set with one of the extra regions is not equivalent to other tags in this set, unless they have the same region component. Each conforms to ISO 3166-1
