@@ -390,7 +390,7 @@ class TagSet:
         ''' Returns what an SLDR filename would be for this langtag. Working around
             Microsoft filename problems.'''
         res = str(self.tag).replace("-", "_")
-        if res in ('aux', 'com', 'con', 'nul', 'prn'):
+        if res in ('aux', 'con', 'nul', 'prn'):
             res += "_" + self.full.script.title()
         return res + ".xml"
 
