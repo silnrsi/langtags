@@ -3314,7 +3314,7 @@ jnl,jnl-Deva-IN,Rawat,IN,,,,,,,,SAS,jnl,,,
 jns,jns-Deva-IN,Jaunsari,IN,,,00846,,,,,SAS,jns,,,
 jns-Latn,jns-Latn-IN,Jaunsari,IN,,,00846,,,1,,SAS,jns,,,
 jns-Takr,jns-Takr-IN,Jaunsari,IN,,,00846,,,1,,SAS,jns,,,
-job,job-Latn-CD,Joba,CD,,,,,1,,,MAF,job,,,
+job,job-Latn-CD,Joba,CD,,,,,,,,MAF,job,,,
 jod,jod-Latn-CI,Wojenaka,CI,,,,,1,,,WAF,jod,,,
 jog,jog-Arab-PK,Jogi,PK,,,,,1,,,SAS,jog,,,
 jor,jor-Latn-BO,Jorá,BO,,,,,1,,,SAM,jor,LE,10-Jan-2018,Extinct
