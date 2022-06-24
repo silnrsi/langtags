@@ -1,0 +1,125 @@
+#!/usr/bin/python3
+
+import argparse, subprocess, sys, datetime
+import json
+
+def getgit(f, sha):
+    try:
+        res = subprocess.check_output(["git", "show", "--pretty=raw", "{}:{}".format(sha, f)]).decode('utf-8')
+    except subprocess.CalledProcessError:
+        return None
+    return res
+
+def getgitdate(sha):
+    if sha is None:
+        res = datetime.datetime.now().isoformat()
+    else:
+        res = subprocess.check_output(["git", "show", "-s", "--pretty='%ci'", sha]).decode('utf-8')
+    return res
+
+def getgitshas():
+    res = subprocess.check_output(["git", "log", "--format='%h'"]).decode('utf-8')
+    return list(x[1:-1] for x in reversed(res.split("\n")))[1:]
+
+def getfile(f):
+    with open(f) as inf:
+        res = inf.read()
+    return res
+
+def procshar(fsha, lsha, first=None, last=None):
+    if first is None:
+        if fsha is not None:
+            first = getgit(args.infile, fsha)
+        else:
+            first = getfile(args.infile)
+    if first is None:
+        return (None, None, None)
+
+    if last is None:
+        if lsha is not None:
+            last = getgit(args.infile, lsha)
+        else:
+            last = getfile(args.infile)
+    if last is None:
+        return (None, first, None)
+
+    fdat = {v['full']: v for v in json.loads(first) if 'full' in v}
+    ldat = {v['full']: v for v in json.loads(last) if 'full' in v}
+    sames = {k:k for k in set(fdat.keys()) & set(ldat.keys())}
+    restshort = {v['tag']:k for k, v in fdat.items() if k not in sames}
+    added = set()
+    deleted = set()
+    changed = {}
+    for k, v in ldat.items():
+        if k in sames:
+            continue
+        if v['tag'] in restshort:
+            changed[restshort[v['tag']]] = k
+            del restshort[v['tag']]
+        else:
+            added.add(k)
+    deleted = set(restshort.values())
+
+    res = { 'date': getgitdate(args.last), 'sha': [fsha, lsha] }
+    gotdat = False
+    if len(changed):
+        res['changed'] = changed
+        gotdat = True
+    if len(added):
+        res['added'] = list(added)
+        gotdat = True
+    if len(deleted):
+        res['deleted'] = list(deleted)
+        gotdat = True
+    return (res if gotdat else None), first, last
+
+parser = argparse.ArgumentParser()
+parser.add_argument("-o","--outfile",default="langtags_history.json",help="Output JSON file")
+parser.add_argument("-i","--infile",default="pub/langtags.json",help="File to process")
+parser.add_argument("-a","--append",action="store_true",help="Append to output file")
+parser.add_argument("-f","--first",help="git SHA of base version")
+parser.add_argument("-l","--last",help="git SHA of changed version")
+args = parser.parse_args()
+
+if args.append:
+    with open(args.outfile) as inf:
+        results = json.load(inf)
+else:
+    results = []
+
+allshas = getgitshas()
+if args.first:
+    for f, a in enumerate(allshas):
+        if (len(a) > len(args.first) and a.startswith(args.first)) \
+                or (len(a) <= len(args.first) and args.first.startswith(a)):
+            break
+    else:
+        f = 0
+else:
+    f = 0
+if args.last:
+    for l, a in enumerate(allshas):
+        if (len(a) > len(args.last) and a.startswith(args.last)) \
+                or (len(a) <= len(args.last) and args.last.startswith(a)):
+            break
+    else:
+        l = None
+else:
+    l = None
+
+allshas = allshas[f:l]
+first = allshas[0]
+fdat = None
+for s in allshas[1:]:
+    (res, _, fdat) = procshar(first, s, first=fdat)
+    first = s
+    if res is not None:
+        results.append(res)
+
+if args.outfile is not None:
+    with open(args.outfile, "w") as outf:
+        json.dump(results, outf, indent=4)
+else:
+    print(json.dumps(results))
+
+
