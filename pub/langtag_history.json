@@ -1,82 +1,91 @@
 [
     {
-        "date": "2022-06-24T11:23:35.472541",
-        "sha": [
+        "first": [
             "e86c0b6",
-            "71e038e"
+            "2019-08-08 13:35:21 +0700"
+        ],
+        "last": [
+            "71e038e",
+            "2019-08-08 13:35:22 +0700"
         ],
         "deleted": [
-            "pt-Latn-CH",
-            "fr-Latn-MQ",
-            "ha-Latn-NE",
-            "fr-Latn-PM",
-            "nus-Latn-SD",
-            "ar-Arab-TD",
-            "ia-Latn-001",
-            "ff-Latn-GW",
-            "es-Latn-EA",
-            "en-Latn-PR",
-            "fr-Latn-PF",
-            "en-Latn-TC",
-            "en-Latn-FM",
-            "fr-Latn-BL",
-            "fr-Latn-MF",
-            "ca-Latn-AD",
-            "fr-Latn-NC",
-            "ss-Latn-SZ",
-            "sv-Latn-AX",
-            "en-Latn-AS",
-            "ff-Latn-NE",
-            "en-Latn-CY",
-            "fr-Latn-GA",
-            "gsw-Latn-LI",
-            "fr-Latn-CF",
-            "fr-Latn-TG",
-            "fr-Latn-GP",
             "fr-Latn-MC",
-            "ca-Latn-IT",
-            "el-Grek-CY",
-            "en-Latn-UM",
-            "ff-Latn-CM",
-            "fr-Latn-CG",
-            "fr-Latn-YT",
+            "sv-Latn-AX",
+            "fr-Latn-WF",
+            "ln-Latn-CG",
+            "gsw-Latn-LI",
+            "nus-Latn-SD",
             "ln-Latn-CF",
-            "fr-Latn-BJ",
+            "en-Latn-PR",
+            "gsw-Latn-FR",
+            "ia-Latn-001",
+            "es-Latn-IC",
             "de-Latn-BE",
+            "fr-Latn-GP",
+            "fr-Latn-CF",
+            "pt-Latn-GQ",
+            "en-Latn-FM",
+            "fr-Latn-PF",
+            "pt-Latn-CH",
+            "el-Grek-CY",
+            "en-Latn-VG",
+            "ccp-Cakm-IN",
+            "fr-Latn-GA",
+            "fr-Latn-NC",
+            "en-Latn-VI",
+            "fr-Latn-NE",
+            "ff-Latn-GW",
+            "en-Latn-CY",
+            "ca-Latn-IT",
+            "it-Latn-VA",
+            "ca-Latn-AD",
+            "ha-Latn-NE",
+            "fr-Latn-TG",
+            "en-Latn-TC",
+            "fr-Latn-GQ",
+            "fr-Latn-BL",
+            "ff-Latn-BF",
+            "en-Latn-UM",
+            "ar-Arab-001",
+            "en-Latn-AS",
+            "fr-Latn-CG",
+            "fr-Latn-MF",
+            "ff-Latn-CM",
+            "fr-Latn-PM",
+            "fr-Latn-YT",
             "it-Latn-SM",
             "nb-Latn-SJ",
-            "ff-Latn-BF",
-            "fr-Latn-BF",
-            "pt-Latn-GQ",
-            "it-Latn-VA",
-            "fr-Latn-NE",
-            "en-Latn-VG",
-            "ln-Latn-CG",
-            "en-Latn-VI",
-            "ar-Arab-001",
-            "ccp-Cakm-IN",
+            "ss-Latn-SZ",
             "da-Latn-GL",
-            "fr-Latn-GQ",
-            "gsw-Latn-FR",
-            "es-Latn-IC",
-            "fr-Latn-WF"
+            "es-Latn-EA",
+            "fr-Latn-BJ",
+            "fr-Latn-MQ",
+            "ar-Arab-TD",
+            "ff-Latn-NE",
+            "fr-Latn-BF"
         ]
     },
     {
-        "date": "2022-06-24T11:23:35.582765",
-        "sha": [
+        "first": [
             "71e038e",
-            "4c4521d"
+            "2019-08-08 13:35:22 +0700"
+        ],
+        "last": [
+            "4c4521d",
+            "2019-08-08 13:38:36 +0700"
         ],
         "added": [
             "wtw-Bugi-ID"
         ]
     },
     {
-        "date": "2022-06-24T11:23:36.475348",
-        "sha": [
+        "first": [
             "e4a546a",
-            "9438151"
+            "2019-08-15 17:24:58 -0500"
+        ],
+        "last": [
+            "9438151",
+            "2019-08-16 15:47:45 +0700"
         ],
         "changed": {
             "auz-Zyyy-UZ": "auz-Arab-UZ",
@@ -84,35 +93,38 @@
             "srz-Zyyy-IR": "srz-Arab-IR"
         },
         "added": [
-            "crh-Arab-UZ",
-            "wof-Arab-GM",
             "ace-Arab-ID",
-            "swh-Arab-TZ",
-            "dsh-Latn-KE",
-            "zen-Arab-MR",
-            "zag-Arab-SD",
-            "yao-Arab-MZ",
-            "am-Arab-ET",
             "swc-Arab-CD",
-            "zne-Arab-SS",
-            "kaa-Arab-UZ",
-            "af-Arab-ZA",
             "meo-Arab-MY",
-            "aju-Arab-MA",
-            "min-Arab-ID",
+            "kaa-Arab-UZ",
             "kab-Arab-DZ",
             "cia-Arab-ID",
-            "cia-Hang-ID"
+            "crh-Arab-UZ",
+            "yao-Arab-MZ",
+            "cia-Hang-ID",
+            "zag-Arab-SD",
+            "aju-Arab-MA",
+            "zne-Arab-SS",
+            "af-Arab-ZA",
+            "swh-Arab-TZ",
+            "zen-Arab-MR",
+            "min-Arab-ID",
+            "dsh-Latn-KE",
+            "am-Arab-ET",
+            "wof-Arab-GM"
         ],
         "deleted": [
             "dsh-Latn-ET"
         ]
     },
     {
-        "date": "2022-06-24T11:23:36.986885",
-        "sha": [
+        "first": [
             "49bda68",
-            "700acf0"
+            "2019-08-26 10:22:05 -0500"
+        ],
+        "last": [
+            "700acf0",
+            "2019-08-27 13:18:45 +0700"
         ],
         "added": [
             "hre-Latn-VN"
@@ -122,10 +134,13 @@
         ]
     },
     {
-        "date": "2022-06-24T11:23:37.083603",
-        "sha": [
+        "first": [
             "700acf0",
-            "3649e5c"
+            "2019-08-27 13:18:45 +0700"
+        ],
+        "last": [
+            "3649e5c",
+            "2019-08-27 13:29:42 +0700"
         ],
         "changed": {
             "brk-Zyyy-SD": "brk-Arab-SD",
@@ -133,44 +148,44 @@
             "siz-Zyyy-EG": "siz-Arab-EG"
         },
         "added": [
-            "aa-Arab-ET",
-            "amw-Armi-SY",
-            "anu-Arab-SS",
-            "ctg-Beng-BD",
-            "aiw-Arab-ET",
-            "clk-Latn-IN",
-            "gjn-Arab-GH",
-            "din-Arab-SS",
-            "har-Arab-ET",
-            "mmd-Latn-CN",
-            "dag-Arab-GH",
-            "gaa-Arab-GH",
-            "kjp-Mymr-MM",
-            "vmw-Arab-MZ",
-            "nnp-Wcho-IN",
-            "clk-Deva-IN",
-            "mur-Arab-SS",
-            "lg-Arab-UG",
-            "nup-Arab-NG",
-            "mvz-Arab-ET",
-            "ak-Arab-GH",
-            "kke-Arab-GN",
-            "knk-Arab-SL",
-            "ymk-Arab-MZ",
-            "om-Arab-ET",
-            "bm-Arab-ML",
-            "shk-Arab-SS",
-            "wle-Arab-ET",
-            "evn-Mong-CN",
             "ti-Arab-ET",
-            "stv-Arab-ET",
-            "lgg-Arab-UG",
-            "amw-Latn-SY",
+            "kjp-Mymr-MM",
+            "wle-Arab-ET",
+            "mur-Arab-SS",
+            "om-Arab-ET",
+            "aa-Arab-ET",
+            "din-Arab-SS",
+            "nnp-Wcho-IN",
+            "shk-Arab-SS",
+            "ctg-Beng-BD",
+            "bm-Arab-ML",
+            "gaa-Arab-GH",
             "mg-Arab-MG",
-            "lot-Arab-SS",
             "maw-Arab-GH",
+            "nup-Arab-NG",
+            "stv-Arab-ET",
+            "ak-Arab-GH",
+            "aiw-Arab-ET",
+            "ymk-Arab-MZ",
+            "amw-Armi-SY",
+            "har-Arab-ET",
+            "evn-Mong-CN",
+            "amw-Latn-SY",
             "esy-Latn-PH",
-            "agj-Arab-ET"
+            "gjn-Arab-GH",
+            "dag-Arab-GH",
+            "clk-Deva-IN",
+            "lot-Arab-SS",
+            "mmd-Latn-CN",
+            "clk-Latn-IN",
+            "mvz-Arab-ET",
+            "lg-Arab-UG",
+            "agj-Arab-ET",
+            "anu-Arab-SS",
+            "knk-Arab-SL",
+            "lgg-Arab-UG",
+            "vmw-Arab-MZ",
+            "kke-Arab-GN"
         ],
         "deleted": [
             "wle-Zyyy-ET",
@@ -178,27 +193,33 @@
         ]
     },
     {
-        "date": "2022-06-24T11:23:38.007011",
-        "sha": [
+        "first": [
             "badd344",
-            "e929480"
+            "2019-11-28 09:12:49 +0700"
+        ],
+        "last": [
+            "e929480",
+            "2019-11-28 09:12:49 +0700"
         ],
         "changed": {
             "xco-Zyyy-XX": "xco-Arab-XX"
         },
         "added": [
+            "xco-Chrs-XX",
+            "ku-Yezi-GE",
             "dv-Diak-MV",
             "pdu-Mymr-MM",
-            "xco-Chrs-XX",
-            "mqx-Bugi-ID",
-            "ku-Yezi-GE"
+            "mqx-Bugi-ID"
         ]
     },
     {
-        "date": "2022-06-24T11:23:38.109473",
-        "sha": [
+        "first": [
             "e929480",
-            "ac7ac87"
+            "2019-11-28 09:12:49 +0700"
+        ],
+        "last": [
+            "ac7ac87",
+            "2019-12-03 16:42:56 +0700"
         ],
         "changed": {
             "lus-Beng-IN": "lus-Beng-BD"
@@ -212,71 +233,80 @@
         ]
     },
     {
-        "date": "2022-06-24T11:23:38.626113",
-        "sha": [
+        "first": [
             "a3a0428",
-            "d85964f"
+            "2019-12-04 12:04:01 +0700"
+        ],
+        "last": [
+            "d85964f",
+            "2019-12-09 10:25:42 +0700"
         ],
         "added": [
             "umg-Qaax-AU"
         ]
     },
     {
-        "date": "2022-06-24T11:23:38.837267",
-        "sha": [
+        "first": [
             "8c28626",
-            "d6dfe93"
+            "2019-12-11 09:46:14 +0700"
+        ],
+        "last": [
+            "d6dfe93",
+            "2019-12-11 14:32:42 +0700"
         ],
         "changed": {
             "emu-Zyyy-IN": "emu-Deva-IN",
             "fmu-Zyyy-IN": "fmu-Deva-IN"
         },
         "added": [
-            "cna-Tibt-IN",
-            "xkf-Tibt-BT",
-            "nsd-Yiii-CN",
-            "kjz-Tibt-BT",
-            "mve-Arab-PK",
             "nsv-Yiii-CN",
-            "kbg-Tibt-IN",
-            "gon-Gonm-IN",
-            "wsg-Gonm-IN",
-            "esg-Telu-IN",
-            "dgl-Copt-SD",
-            "shn-Tale-MM",
             "yig-Yiii-CN",
-            "wsg-Gong-IN",
+            "shn-Tale-MM",
+            "mve-Arab-PK",
+            "kbg-Tibt-IN",
+            "wsg-Deva-IN",
+            "xkf-Tibt-BT",
             "fia-Copt-SD",
+            "ysn-Yiii-CN",
+            "wsg-Gong-IN",
+            "nsd-Yiii-CN",
+            "dgl-Copt-SD",
+            "esg-Telu-IN",
+            "cna-Tibt-IN",
+            "ywq-Yiii-CN",
+            "smh-Yiii-CN",
+            "gon-Gonm-IN",
+            "kjz-Tibt-BT",
             "nos-Yiii-CN",
             "esg-Gonm-IN",
-            "wsg-Deva-IN",
-            "ysn-Yiii-CN",
-            "ywq-Yiii-CN",
-            "smh-Yiii-CN"
+            "wsg-Gonm-IN"
         ],
         "deleted": [
-            "smh-Yiii-CN-x-traditional",
-            "fia-Copt-SD-x-oldnubian",
-            "ywq-Yiii-CN-x-traditional",
-            "xkf-Tibt-BT-x-uchen",
+            "nsd-Yiii-CN-x-traditional",
+            "kbg-Tibt-IN-x-hingna",
+            "mve-Arab-PK-x-sindhi",
+            "nos-Yiii-CN-x-traditional",
             "ysn-Yiii-CN-x-traditional",
             "dgl-Copt-SD-x-oldnubian",
-            "yig-Yiii-CN-x-traditional",
-            "nsv-Yiii-CN-x-traditional",
             "kjz-Tibt-BT-x-uchen",
-            "nos-Yiii-CN-x-traditional",
+            "nsv-Yiii-CN-x-traditional",
             "shn-Tale-MM-x-taimauold",
-            "mve-Arab-PK-x-sindhi",
-            "nsd-Yiii-CN-x-traditional",
+            "xkf-Tibt-BT-x-uchen",
+            "yig-Yiii-CN-x-traditional",
+            "fia-Copt-SD-x-oldnubian",
+            "smh-Yiii-CN-x-traditional",
             "cna-Tibt-IN-x-bodhi",
-            "kbg-Tibt-IN-x-hingna"
+            "ywq-Yiii-CN-x-traditional"
         ]
     },
     {
-        "date": "2022-06-24T11:23:39.154937",
-        "sha": [
+        "first": [
             "2b9ff9f",
-            "af19277"
+            "2019-12-11 10:42:21 -0600"
+        ],
+        "last": [
+            "af19277",
+            "2019-12-12 15:37:42 +0700"
         ],
         "changed": {
             "dgl-Copt-SD": "dgl-Copt-SD-x-oldnubian",
@@ -287,61 +317,70 @@
             "xkf-Tibt-BT": "xkf-Tibt-BT-x-uchen"
         },
         "added": [
+            "xmg-Latn-CM",
+            "bst-Latn-ET",
+            "bwe-Latn-MM",
+            "azb-Cyrl-AZ",
+            "bg-Latn-BG",
+            "gru-Latn-ET",
+            "kfi-Knda-IN",
+            "sdr-Deva-BD",
+            "muz-Latn-ET",
+            "glk-Latn-IR",
             "clk-Tibt-CN",
             "ike-Latn-US",
-            "sdr-Deva-BD",
-            "kfi-Knda-IN",
-            "bst-Latn-ET",
-            "muz-Latn-ET",
-            "xmg-Latn-CM",
-            "bg-Latn-BG",
-            "azb-Cyrl-AZ",
-            "gru-Latn-ET",
-            "glk-Latn-IR",
-            "bwe-Latn-MM",
             "mdy-Latn-ET"
         ]
     },
     {
-        "date": "2022-06-24T11:23:39.588845",
-        "sha": [
+        "first": [
             "851fac4",
-            "6e0aba4"
+            "2020-01-15 15:45:54 -0600"
+        ],
+        "last": [
+            "6e0aba4",
+            "2020-01-23 15:30:39 +0700"
         ],
         "changed": {
             "qya-Zyyy-001": "qya-Latn-001",
             "tlh-Zyyy-001": "tlh-Piqd-001"
         },
         "added": [
-            "qya-Cirt-001",
-            "qya-Teng-001",
             "tlh-Latn-001",
-            "qya-Sara-001"
+            "qya-Cirt-001",
+            "qya-Sara-001",
+            "qya-Teng-001"
         ]
     },
     {
-        "date": "2022-06-24T11:23:40.112413",
-        "sha": [
+        "first": [
             "9c60c36",
-            "5019ed9"
+            "2020-02-25 13:54:06 -0600"
+        ],
+        "last": [
+            "5019ed9",
+            "2020-03-02 12:03:21 +0700"
         ],
         "added": [
+            "tlj-Latn-GH",
+            "lwo-Latn-ZA",
             "tk-Arab-IR",
             "mcu-Laoo-CM",
+            "cmo-Latn-KH",
             "avu-Latn-SD",
             "kkj-Latn-TD",
-            "cmo-Latn-KH",
-            "tlj-Latn-GH",
             "thv-Latn-DZ-x-ahaggar",
-            "eka-Latn-NG-x-ekajuk",
-            "lwo-Latn-ZA"
+            "eka-Latn-NG-x-ekajuk"
         ]
     },
     {
-        "date": "2022-06-24T11:23:40.232101",
-        "sha": [
+        "first": [
             "5019ed9",
-            "a9085d4"
+            "2020-03-02 12:03:21 +0700"
+        ],
+        "last": [
+            "a9085d4",
+            "2020-03-02 12:03:29 +0700"
         ],
         "changed": {
             "nan-Latn-CN": "nan-Latn-TW"
@@ -350,110 +389,125 @@
             "nan-Latn-TW-x-transpoj"
         ],
         "deleted": [
-            "ar-Arab-YE",
-            "ar-Arab-OM",
-            "ar-Arab-QA",
-            "ar-Arab-SD",
             "ar-Arab-BH",
-            "ar-Arab-KW"
+            "ar-Arab-KW",
+            "ar-Arab-YE",
+            "ar-Arab-SD",
+            "ar-Arab-OM",
+            "ar-Arab-QA"
         ]
     },
     {
-        "date": "2022-06-24T11:23:40.338234",
-        "sha": [
+        "first": [
             "a9085d4",
-            "15564bf"
+            "2020-03-02 12:03:29 +0700"
+        ],
+        "last": [
+            "15564bf",
+            "2020-03-02 13:01:00 +0700"
         ],
         "added": [
-            "dmf-Medf-NG",
-            "ckm-Latn-HR",
-            "xpl-Latn-AU",
-            "xph-Latn-AU",
-            "nsb-Latn-ZA",
             "ebc-Latn-ID",
-            "zba-Zyyy-001",
-            "hng-Latn-AO",
-            "cnp-Hans-CN",
-            "xpw-Latn-AU",
-            "xpv-Latn-AU",
+            "nsb-Latn-ZA",
             "csp-Hans-CN",
-            "cnp-Hant-CN",
-            "xpz-Latn-AU",
+            "xpl-Latn-AU",
+            "kru-Deva-NP",
+            "cnp-Hans-CN",
+            "ckm-Glag-HR",
+            "hng-Latn-AO",
+            "uki-Orya-IN",
+            "xpx-Latn-AU",
+            "gmr-Latn-AU",
+            "xpd-Latn-AU",
             "dwk-Orya-IN",
+            "gef-Latn-ID",
+            "zba-Zyyy-001",
+            "xph-Latn-AU",
+            "wlh-Latn-TL",
+            "xpv-Latn-AU",
             "xpb-Latn-AU",
             "sdq-Latn-ID",
-            "gmr-Latn-AU",
-            "xnm-Latn-AU",
-            "xpx-Latn-AU",
-            "csp-Hant-CN",
+            "xpw-Latn-AU",
             "xpf-Latn-AU",
-            "gef-Latn-ID",
-            "xpd-Latn-AU",
-            "kru-Deva-NP",
-            "wlh-Latn-TL",
-            "ckm-Glag-HR",
-            "uki-Orya-IN"
+            "xpz-Latn-AU",
+            "csp-Hant-CN",
+            "cnp-Hant-CN",
+            "xnm-Latn-AU",
+            "dmf-Medf-NG",
+            "ckm-Latn-HR"
         ],
         "deleted": [
-            "xrq-Latn-AU",
             "nxu-Latn-ID",
+            "xrq-Latn-AU",
             "gli-Latn-SB",
             "kxl-Deva-NP",
             "drr-Latn-SB"
         ]
     },
     {
-        "date": "2022-06-24T11:23:41.138648",
-        "sha": [
+        "first": [
             "1ac54da",
-            "298beaa"
+            "2020-05-19 14:08:22 -0500"
+        ],
+        "last": [
+            "298beaa",
+            "2020-06-03 16:50:11 +0700"
         ],
         "added": [
             "sgn-Zxxx-MM"
         ],
         "deleted": [
             "sgn-MY-Zxxx-MM",
-            "tnf-Arab-AF",
-            "xia-Latn-CN"
+            "xia-Latn-CN",
+            "tnf-Arab-AF"
         ]
     },
     {
-        "date": "2022-06-24T11:23:41.246609",
-        "sha": [
+        "first": [
             "298beaa",
-            "0cb2078"
+            "2020-06-03 16:50:11 +0700"
+        ],
+        "last": [
+            "0cb2078",
+            "2020-06-10 10:47:23 +0700"
         ],
         "changed": {
             "cvg-Zyyy-IN": "cvg-Latn-IN"
         },
         "added": [
-            "cvg-Tibt-IN",
-            "txo-Toto-IN"
+            "txo-Toto-IN",
+            "cvg-Tibt-IN"
         ],
         "deleted": [
             "txo-Zzzz-IN-x-toto"
         ]
     },
     {
-        "date": "2022-06-24T11:23:41.593693",
-        "sha": [
+        "first": [
             "bebf179",
-            "deeb21e"
+            "2020-06-23 17:11:25 +0700"
+        ],
+        "last": [
+            "deeb21e",
+            "2020-06-23 17:48:20 +0700"
         ],
         "changed": {
             "yej-Zyyy-IL": "yej-Grek-IL"
         },
         "deleted": [
-            "ngt-Zyyy-LA",
             "pmc-Latn-ID",
-            "gti-Latn-CD"
+            "gti-Latn-CD",
+            "ngt-Zyyy-LA"
         ]
     },
     {
-        "date": "2022-06-24T11:23:41.942873",
-        "sha": [
+        "first": [
             "300ec84",
-            "7c1dd86"
+            "2020-07-01 09:54:44 +0700"
+        ],
+        "last": [
+            "7c1dd86",
+            "2020-07-01 09:57:50 +0700"
         ],
         "changed": {
             "bpx-Zyyy-IN": "bpx-Deva-IN",
@@ -463,15 +517,18 @@
         }
     },
     {
-        "date": "2022-06-24T11:23:42.069364",
-        "sha": [
+        "first": [
             "7c1dd86",
-            "69cfd6c"
+            "2020-07-01 09:57:50 +0700"
+        ],
+        "last": [
+            "69cfd6c",
+            "2020-07-03 11:17:56 +0700"
         ],
         "added": [
             "ubu-Latn-PG-x-kala",
-            "snp-Latn-PG-x-lambau",
             "rwo-Latn-PG-x-karo",
+            "snp-Latn-PG-x-lambau",
             "ubu-Latn-PG-x-nopenge"
         ],
         "deleted": [
@@ -479,10 +536,13 @@
         ]
     },
     {
-        "date": "2022-06-24T11:23:42.906563",
-        "sha": [
+        "first": [
             "0fd961d",
-            "c9014a7"
+            "2020-08-17 11:19:57 -0500"
+        ],
+        "last": [
+            "c9014a7",
+            "2020-08-18 22:53:27 +0700"
         ],
         "changed": {
             "dgl-Copt-SD-x-oldnubian": "dgl-Copt-SD-x-olnubian",
@@ -492,66 +552,75 @@
             "xnz-Copt-EG-x-oldnubian": "xnz-Copt-EG-x-olnubian"
         },
         "added": [
-            "brv-Thai-TH-x-dongluag",
-            "tzo-Latn-MX-x-sanandre",
-            "tzo-Latn-MX-x-zinacntn",
-            "dao-Latn-MM-x-khengdai",
-            "mnc-Mong-CN-x-olmanchu",
-            "tew-Latn-US-x-sanclara",
-            "nst-Latn-MM-x-moshang",
             "brv-Thai-TH-x-sakonnak",
             "cek-Latn-MM-x-khawngtu",
-            "brv-Thai-TH-x-khongchi"
+            "nst-Latn-MM-x-moshang",
+            "brv-Thai-TH-x-dongluag",
+            "tzo-Latn-MX-x-sanandre",
+            "mnc-Mong-CN-x-olmanchu",
+            "tew-Latn-US-x-sanclara",
+            "tzo-Latn-MX-x-zinacntn",
+            "brv-Thai-TH-x-khongchi",
+            "dao-Latn-MM-x-khengdai"
         ],
         "deleted": [
-            "brv-Thai-TH-x-sakonnakon",
-            "mnc-Mong-CN-x-oldmanchu",
-            "tzo-Latn-MX-x-zinacantan",
-            "brv-Thai-TH-x-khongchiem",
-            "dao-Latn-MM-x-khengdaai",
             "tew-Latn-US-x-santaclara",
             "tzo-Latn-MX-x-sanandres",
+            "brv-Thai-TH-x-sakonnakon",
             "brv-Thai-TH-x-dongluang",
+            "tzo-Latn-MX-x-zinacantan",
             "nst-Latn-MM-x-moshanghawa",
+            "dao-Latn-MM-x-khengdaai",
+            "brv-Thai-TH-x-khongchiem",
+            "mnc-Mong-CN-x-oldmanchu",
             "cek-Latn-MM-x-khawngtuu"
         ]
     },
     {
-        "date": "2022-06-24T11:23:43.021056",
-        "sha": [
+        "first": [
             "c9014a7",
-            "2129578"
+            "2020-08-18 22:53:27 +0700"
+        ],
+        "last": [
+            "2129578",
+            "2020-08-21 12:43:42 +0700"
         ],
         "added": [
             "cek-Latn-MM-x-asang",
             "brv-Thai-TH-x-donglng",
-            "brv-Thai-TH-x-sakonnkn",
-            "brv-Thai-TH-x-khongchm"
+            "brv-Thai-TH-x-khongchm",
+            "brv-Thai-TH-x-sakonnkn"
         ],
         "deleted": [
             "brv-Thai-TH-x-sakonnak",
-            "brv-Thai-TH-x-dongluag",
             "brv-Thai-TH-x-khongchi",
+            "brv-Thai-TH-x-dongluag",
             "cek-Latn-MM-x-asangkhongso"
         ]
     },
     {
-        "date": "2022-06-24T11:23:43.976228",
-        "sha": [
+        "first": [
             "857d602",
-            "951489c"
+            "2020-09-29 21:46:55 +0700"
+        ],
+        "last": [
+            "951489c",
+            "2020-09-29 22:50:48 +0700"
         ],
         "added": [
-            "jnj-Ethi-ET",
+            "moy-Ethi-ET",
             "ur-Deva-IN",
-            "moy-Ethi-ET"
+            "jnj-Ethi-ET"
         ]
     },
     {
-        "date": "2022-06-24T11:23:45.565275",
-        "sha": [
+        "first": [
             "43e9485",
-            "7e629e0"
+            "2021-01-08 13:55:26 -0600"
+        ],
+        "last": [
+            "7e629e0",
+            "2021-01-19 23:40:39 +0700"
         ],
         "changed": {
             "dox-Zyyy-ET": "dox-Ethi-ET"
@@ -561,99 +630,105 @@
         ]
     },
     {
-        "date": "2022-06-24T11:23:46.398400",
-        "sha": [
+        "first": [
             "2b4ab72",
-            "4c225cf"
+            "2021-02-23 16:25:29 -0600"
+        ],
+        "last": [
+            "4c225cf",
+            "2021-02-24 13:00:39 +0700"
         ],
         "changed": {
             "oui-Zyyy-XX": "oui-Ougr-XX"
         },
         "added": [
-            "suo-Latn-PG",
-            "vkn-Latn-NG",
-            "xnj-Latn-TZ",
-            "wmg-Zyyy-CN",
-            "ff-Adlm-LR",
-            "dkg-Latn-NG",
-            "azb-Latn-AZ",
-            "tyy-Latn-NG",
-            "sq-Vith-AL",
-            "lxm-Latn-PG",
-            "uni-Latn-PG",
-            "sqx-Zxxx-IL",
-            "ff-Adlm-GH",
-            "glb-Latn-NG",
-            "jks-Zxxx-JP",
-            "ahu-Latn-MM",
-            "ff-Adlm-BF",
-            "ff-Adlm-MR",
+            "ff-Adlm-NE",
             "ff-Adlm-SL",
-            "xnq-Latn-MZ",
-            "aqk-Latn-NG",
-            "gyz-Latn-NG",
-            "lsb-Zxxx-BI",
-            "hkh-Arab-IN",
-            "bpe-Latn-PG",
-            "emq-Zyyy-CN",
-            "csx-Zxxx-KH",
-            "cty-Zyyy-IN",
-            "ff-Adlm-SN",
-            "ff-Adlm-CM",
-            "ff-Adlm-GM",
-            "gii-Zyyy-ET",
             "okz-Zyyy-XX",
-            "rwl-Latn-TZ",
-            "okc-Latn-CD",
-            "omy-Zyyy-XX",
-            "emz-Latn-CM",
+            "emq-Zyyy-CN",
+            "wmg-Zyyy-CN",
             "ff-Adlm-NG",
-            "zbu-Latn-NG",
-            "ysm-Zxxx-MM",
-            "osn-Sund-XX",
+            "csx-Zxxx-KH",
+            "okc-Latn-CD",
+            "lsb-Zxxx-BI",
+            "tyy-Latn-NG",
+            "ff-Adlm-GH",
+            "gii-Zyyy-ET",
+            "lxm-Latn-PG",
+            "ff-Adlm-SN",
+            "azb-Latn-AZ",
+            "nqt-Latn-NG",
             "vkz-Latn-NG",
             "ehs-Zxxx-JP",
-            "ff-Adlm-GW",
-            "ff-Adlm-NE",
+            "osn-Sund-XX",
+            "hkh-Arab-IN",
+            "vkn-Latn-NG",
+            "xnj-Latn-TZ",
+            "xnq-Latn-MZ",
+            "ff-Adlm-BF",
+            "omy-Zyyy-XX",
+            "rwl-Latn-TZ",
+            "bpe-Latn-PG",
+            "ff-Adlm-MR",
+            "uni-Latn-PG",
             "new-Ranj-NP",
-            "zla-Latn-CD",
-            "nqt-Latn-NG",
+            "sq-Vith-AL",
+            "gyz-Latn-NG",
+            "aqk-Latn-NG",
+            "ff-Adlm-CM",
             "jbm-Latn-NG",
-            "ocm-Zyyy-XX"
+            "glb-Latn-NG",
+            "cty-Zyyy-IN",
+            "emz-Latn-CM",
+            "ff-Adlm-GM",
+            "dkg-Latn-NG",
+            "zbu-Latn-NG",
+            "ysm-Zxxx-MM",
+            "ff-Adlm-GW",
+            "jks-Zxxx-JP",
+            "ahu-Latn-MM",
+            "ff-Adlm-LR",
+            "suo-Latn-PG",
+            "sqx-Zxxx-IL",
+            "ocm-Zyyy-XX",
+            "zla-Latn-CD"
         ],
         "deleted": [
-            "zyg-Nshu-CN",
-            "ngo-Latn-TZ",
-            "thw-Zyyy-NP",
-            "avu-Latn-SD",
-            "pat-Latn-PG",
-            "hsn-Nshu-CN",
-            "bic-Latn-PG",
-            "anl-Latn-MM",
+            "gji-Latn-NG",
             "blg-Latn-MY",
-            "eka-Latn-NG-x-ekajuk",
-            "tlj-Latn-GH",
-            "thv-Latn-DZ-x-ahaggar",
+            "thw-Zyyy-NP",
+            "kkj-Latn-TD",
             "new-Zzzz-NP-x-ranjana",
+            "anl-Latn-MM",
+            "kru-Deva-NP",
+            "zyg-Nshu-CN",
+            "tlj-Latn-GH",
+            "mvm-Zyyy-CN",
+            "tk-Arab-IR",
+            "zir-Latn-NG",
             "mcu-Laoo-CM",
             "bij-Latn-NG",
+            "avu-Latn-SD",
+            "thv-Latn-DZ-x-ahaggar",
+            "hsn-Nshu-CN",
             "wra-Latn-PG",
-            "kkj-Latn-TD",
-            "zir-Latn-NG",
-            "vki-Latn-NG",
-            "tk-Arab-IR",
-            "kru-Deva-NP",
+            "ngo-Latn-TZ",
             "cmo-Latn-KH",
-            "mvm-Zyyy-CN",
-            "gji-Latn-NG",
-            "lwo-Latn-ZA"
+            "bic-Latn-PG",
+            "eka-Latn-NG-x-ekajuk",
+            "vki-Latn-NG",
+            "lwo-Latn-ZA",
+            "pat-Latn-PG"
         ]
     },
     {
-        "date": "2022-06-24T11:23:46.636336",
-        "sha": [
+        "first": [
             "5b3d24a",
-            "5df5b6d"
+            "2021-02-24 10:47:49 -0600"
+        ],
+        "last": [
+            "5df5b6d",
+            "2021-02-26 17:18:45 +0700"
         ],
         "added": [
             "anl-Latn-MM"
@@ -663,238 +738,256 @@
         ]
     },
     {
-        "date": "2022-06-24T11:23:46.770300",
-        "sha": [
+        "first": [
             "5df5b6d",
-            "db4f330"
+            "2021-02-26 17:18:45 +0700"
         ],
-        "added": [
-            "tk-Arab-IR",
-            "mcu-Laoo-CM",
-            "avu-Latn-SD",
-            "kkj-Latn-TD",
-            "cmo-Latn-KH",
-            "tlj-Latn-GH",
-            "thv-Latn-DZ-x-ahaggar",
-            "eka-Latn-NG-x-ekajuk",
-            "lwo-Latn-ZA"
-        ],
-        "deleted": [
-            "ff-Adlm-CM",
-            "ff-Adlm-GM",
-            "dik-Arab-SS",
-            "ff-Adlm-BF",
-            "ff-Adlm-LR",
-            "ff-Adlm-MR",
-            "ff-Adlm-SL",
-            "ff-Adlm-GW",
-            "ff-Adlm-NE",
-            "ff-Adlm-NG",
-            "ff-Adlm-GH",
-            "ff-Adlm-SN"
-        ]
-    },
-    {
-        "date": "2022-06-24T11:23:46.905769",
-        "sha": [
+        "last": [
             "db4f330",
-            "c20eb62"
+            "2021-03-01 10:21:23 +0700"
         ],
         "added": [
-            "ff-Adlm-CM",
-            "ff-Adlm-GM",
-            "dik-Arab-SS",
-            "ff-Adlm-BF",
-            "ff-Adlm-LR",
-            "ff-Adlm-MR",
-            "ff-Adlm-SL",
-            "ff-Adlm-GW",
-            "ff-Adlm-NE",
-            "ff-Adlm-NG",
-            "ff-Adlm-GH",
-            "ff-Adlm-SN"
-        ],
-        "deleted": [
+            "tlj-Latn-GH",
+            "lwo-Latn-ZA",
             "tk-Arab-IR",
             "mcu-Laoo-CM",
+            "cmo-Latn-KH",
             "avu-Latn-SD",
             "kkj-Latn-TD",
-            "cmo-Latn-KH",
-            "tlj-Latn-GH",
             "thv-Latn-DZ-x-ahaggar",
-            "eka-Latn-NG-x-ekajuk",
-            "lwo-Latn-ZA"
+            "eka-Latn-NG-x-ekajuk"
+        ],
+        "deleted": [
+            "ff-Adlm-NE",
+            "ff-Adlm-SL",
+            "ff-Adlm-GM",
+            "ff-Adlm-NG",
+            "ff-Adlm-GW",
+            "ff-Adlm-BF",
+            "ff-Adlm-CM",
+            "ff-Adlm-LR",
+            "dik-Arab-SS",
+            "ff-Adlm-GH",
+            "ff-Adlm-SN",
+            "ff-Adlm-MR"
         ]
     },
     {
-        "date": "2022-06-24T11:23:47.024504",
-        "sha": [
+        "first": [
+            "db4f330",
+            "2021-03-01 10:21:23 +0700"
+        ],
+        "last": [
             "c20eb62",
-            "8100a71"
+            "2021-03-09 13:32:07 -0600"
         ],
         "added": [
-            "tk-Arab-IR",
-            "mcu-Laoo-CM",
-            "avu-Latn-SD",
-            "kkj-Latn-TD",
-            "cmo-Latn-KH",
-            "tlj-Latn-GH",
-            "thv-Latn-DZ-x-ahaggar",
-            "eka-Latn-NG-x-ekajuk",
-            "lwo-Latn-ZA"
+            "ff-Adlm-NE",
+            "ff-Adlm-SL",
+            "ff-Adlm-GM",
+            "ff-Adlm-NG",
+            "ff-Adlm-GW",
+            "ff-Adlm-BF",
+            "ff-Adlm-CM",
+            "ff-Adlm-LR",
+            "dik-Arab-SS",
+            "ff-Adlm-GH",
+            "ff-Adlm-SN",
+            "ff-Adlm-MR"
         ],
         "deleted": [
-            "ff-Adlm-CM",
-            "ff-Adlm-GM",
-            "dik-Arab-SS",
-            "ff-Adlm-BF",
-            "ff-Adlm-LR",
-            "ff-Adlm-MR",
-            "ff-Adlm-SL",
-            "ff-Adlm-GW",
-            "ff-Adlm-NE",
-            "ff-Adlm-NG",
-            "ff-Adlm-GH",
-            "ff-Adlm-SN"
+            "tlj-Latn-GH",
+            "lwo-Latn-ZA",
+            "tk-Arab-IR",
+            "mcu-Laoo-CM",
+            "cmo-Latn-KH",
+            "avu-Latn-SD",
+            "kkj-Latn-TD",
+            "thv-Latn-DZ-x-ahaggar",
+            "eka-Latn-NG-x-ekajuk"
         ]
     },
     {
-        "date": "2022-06-24T11:23:47.136356",
-        "sha": [
+        "first": [
+            "c20eb62",
+            "2021-03-09 13:32:07 -0600"
+        ],
+        "last": [
             "8100a71",
-            "e12d441"
+            "2021-03-31 13:16:02 +0700"
+        ],
+        "added": [
+            "tlj-Latn-GH",
+            "lwo-Latn-ZA",
+            "tk-Arab-IR",
+            "mcu-Laoo-CM",
+            "cmo-Latn-KH",
+            "avu-Latn-SD",
+            "kkj-Latn-TD",
+            "thv-Latn-DZ-x-ahaggar",
+            "eka-Latn-NG-x-ekajuk"
+        ],
+        "deleted": [
+            "ff-Adlm-NE",
+            "ff-Adlm-SL",
+            "ff-Adlm-GM",
+            "ff-Adlm-NG",
+            "ff-Adlm-GW",
+            "ff-Adlm-BF",
+            "ff-Adlm-CM",
+            "ff-Adlm-LR",
+            "dik-Arab-SS",
+            "ff-Adlm-GH",
+            "ff-Adlm-SN",
+            "ff-Adlm-MR"
+        ]
+    },
+    {
+        "first": [
+            "8100a71",
+            "2021-03-31 13:16:02 +0700"
+        ],
+        "last": [
+            "e12d441",
+            "2021-03-31 14:47:53 +0700"
         ],
         "changed": {
             "gex-Zyyy-SO": "gex-Latn-SO"
         },
         "deleted": [
-            "ff-Latn-LR",
-            "ff-Latn-GH",
-            "ff-Latn-SL",
-            "zh-Hans-HK",
-            "avu-Latn-SD",
-            "zh-Hans-SG",
-            "zh-Hans-MO",
-            "eka-Latn-NG-x-ekajuk",
-            "tlj-Latn-GH",
-            "thv-Latn-DZ-x-ahaggar",
-            "mcu-Laoo-CM",
-            "ff-Latn-GM",
-            "kkj-Latn-TD",
-            "ff-Latn-NG",
-            "sr-Latn-BA",
-            "az-Cyrl-AZ",
             "sr-Cyrl-BA",
-            "sr-Cyrl-XK",
+            "zh-Hans-SG",
+            "kkj-Latn-TD",
+            "zh-Hans-MO",
+            "ff-Latn-SL",
+            "tlj-Latn-GH",
+            "az-Cyrl-AZ",
             "tk-Arab-IR",
-            "sr-Cyrl-ME",
-            "sr-Latn-XK",
-            "cmo-Latn-KH",
+            "ff-Latn-NG",
+            "mcu-Laoo-CM",
+            "ff-Latn-GH",
+            "sr-Cyrl-XK",
+            "avu-Latn-SD",
+            "thv-Latn-DZ-x-ahaggar",
+            "ff-Latn-GM",
+            "zh-Hans-HK",
+            "ff-Latn-LR",
             "ff-Latn-GN",
-            "lwo-Latn-ZA"
+            "cmo-Latn-KH",
+            "eka-Latn-NG-x-ekajuk",
+            "lwo-Latn-ZA",
+            "sr-Latn-XK",
+            "sr-Cyrl-ME",
+            "sr-Latn-BA"
         ]
     },
     {
-        "date": "2022-06-24T11:23:47.860794",
-        "sha": [
+        "first": [
             "b459548",
-            "cb8a26f"
+            "2021-04-27 10:23:13 -0700"
+        ],
+        "last": [
+            "cb8a26f",
+            "2021-04-28 23:19:00 +0700"
         ],
         "added": [
-            "ff-Latn-LR",
-            "avu-Latn-SD",
-            "nus-Latn-SD",
-            "ia-Latn-001",
-            "nst-Tnsa-IN",
-            "ff-Latn-GW",
-            "es-Latn-EA",
-            "fr-Latn-PF",
-            "zh-Hans-MO",
-            "ca-Latn-AD",
-            "fr-Latn-NC",
-            "en-Latn-AS",
-            "fr-Latn-MC",
-            "el-Grek-CY",
-            "fr-Latn-YT",
-            "sr-Latn-BA",
+            "sr-Cyrl-BA",
+            "es-Latn-IC",
+            "fr-Latn-CF",
+            "mcu-Laoo-CM",
+            "ff-Latn-GH",
+            "thv-Latn-DZ-x-ahaggar",
+            "ca-Latn-IT",
+            "en-Latn-CY",
+            "ar-Arab-OM",
             "it-Latn-VA",
-            "en-Latn-VG",
-            "ar-Arab-001",
-            "ar-Arab-SD",
-            "gsw-Latn-FR",
+            "ar-Arab-QA",
+            "ff-Latn-GM",
+            "mfg-Latn-GN",
+            "fr-Latn-BL",
+            "en-Latn-AS",
+            "lwo-Latn-ZA",
+            "es-Latn-EA",
+            "sr-Latn-BA",
+            "ar-Arab-YE",
+            "ia-Latn-001",
+            "fr-Latn-GP",
+            "zh-Hans-MO",
+            "ff-Latn-SL",
+            "fr-Latn-PF",
             "pt-Latn-CH",
+            "el-Grek-CY",
+            "sr-Cyrl-XK",
+            "avu-Latn-SD",
+            "fr-Latn-NC",
+            "zh-Hans-HK",
+            "fr-Latn-TG",
+            "ar-Arab-KW",
+            "ff-Latn-LR",
+            "ff-Latn-GN",
+            "fr-Latn-GQ",
+            "fr-Latn-PM",
+            "en-Latn-UM",
+            "it-Latn-SM",
+            "ff-Latn-CM",
+            "da-Latn-GL",
+            "nst-Tnsa-IN",
+            "ar-Arab-SD",
+            "fr-Latn-MF",
             "zh-Hans-SG",
             "en-Latn-PR",
-            "ss-Latn-SZ",
-            "sv-Latn-AX",
-            "tlj-Latn-GH",
-            "en-Latn-CY",
-            "fr-Latn-GA",
-            "mcu-Laoo-CM",
-            "fr-Latn-TG",
-            "en-Latn-UM",
-            "ff-Latn-CM",
-            "it-Latn-SM",
-            "sr-Cyrl-BA",
-            "fr-Latn-NE",
-            "ln-Latn-CG",
-            "ccp-Cakm-IN",
-            "sr-Latn-XK",
-            "ar-Arab-KW",
-            "cmo-Latn-KH",
-            "es-Latn-IC",
-            "lwo-Latn-ZA",
-            "ha-Latn-NE",
-            "ar-Arab-OM",
-            "ff-Latn-SL",
-            "zh-Hans-HK",
-            "fr-Latn-PM",
-            "pce-Thai-TH",
-            "en-Latn-TC",
-            "en-Latn-FM",
-            "fr-Latn-BL",
-            "fr-Latn-MF",
-            "ar-Arab-BH",
-            "ff-Latn-NE",
-            "fr-Latn-GP",
-            "ca-Latn-IT",
-            "ar-Arab-QA",
-            "fr-Latn-CG",
-            "ff-Latn-GM",
-            "de-Latn-BE",
-            "ff-Latn-NG",
-            "az-Cyrl-AZ",
-            "nb-Latn-SJ",
-            "fr-Latn-BF",
-            "pt-Latn-GQ",
-            "sr-Cyrl-XK",
-            "tk-Arab-IR",
-            "en-Latn-VI",
-            "fr-Latn-GQ",
-            "fr-Latn-WF",
-            "eka-Latn-NG-x-ekajuk",
-            "fr-Latn-MQ",
-            "ff-Latn-GH",
-            "ar-Arab-TD",
-            "thv-Latn-DZ-x-ahaggar",
-            "gsw-Latn-LI",
-            "fr-Latn-CF",
-            "ln-Latn-CF",
-            "fr-Latn-BJ",
             "kkj-Latn-TD",
-            "ff-Latn-BF",
-            "ar-Arab-YE",
+            "de-Latn-BE",
+            "tk-Arab-IR",
+            "ff-Latn-NG",
+            "ccp-Cakm-IN",
+            "fr-Latn-GA",
+            "en-Latn-VI",
+            "ff-Latn-GW",
+            "ca-Latn-AD",
+            "fr-Latn-YT",
+            "eka-Latn-NG-x-ekajuk",
+            "nb-Latn-SJ",
+            "ss-Latn-SZ",
             "sr-Cyrl-ME",
-            "mfg-Latn-GN",
-            "da-Latn-GL",
-            "ff-Latn-GN"
+            "fr-Latn-MQ",
+            "ar-Arab-TD",
+            "ff-Latn-NE",
+            "fr-Latn-MC",
+            "sv-Latn-AX",
+            "ar-Arab-BH",
+            "fr-Latn-WF",
+            "ln-Latn-CG",
+            "gsw-Latn-LI",
+            "ln-Latn-CF",
+            "gsw-Latn-FR",
+            "pce-Thai-TH",
+            "pt-Latn-GQ",
+            "tlj-Latn-GH",
+            "en-Latn-FM",
+            "az-Cyrl-AZ",
+            "en-Latn-VG",
+            "fr-Latn-NE",
+            "ha-Latn-NE",
+            "en-Latn-TC",
+            "cmo-Latn-KH",
+            "nus-Latn-SD",
+            "ar-Arab-001",
+            "ff-Latn-BF",
+            "fr-Latn-CG",
+            "sr-Latn-XK",
+            "fr-Latn-BJ",
+            "fr-Latn-BF"
         ]
     },
     {
-        "date": "2022-06-24T11:23:48.368752",
-        "sha": [
+        "first": [
             "4175193",
-            "39faac5"
+            "2021-05-06 11:04:45 +0700"
+        ],
+        "last": [
+            "39faac5",
+            "2021-05-06 11:08:43 +0700"
         ],
         "changed": {
             "juy-Zyyy-IN": "juy-Orya-IN",
@@ -908,31 +1001,37 @@
         ]
     },
     {
-        "date": "2022-06-24T11:23:49.736554",
-        "sha": [
+        "first": [
             "8c69706",
-            "05bba8e"
+            "2021-05-18 13:41:27 +0700"
+        ],
+        "last": [
+            "05bba8e",
+            "2021-05-18 13:44:07 +0700"
         ],
         "added": [
-            "ff-Adlm-CM",
-            "ff-Adlm-GM",
-            "ff-Adlm-BF",
-            "ff-Adlm-LR",
-            "ff-Adlm-MR",
-            "ff-Adlm-SL",
-            "ff-Adlm-GW",
             "ff-Adlm-NE",
-            "tig-Arab-ER",
+            "ff-Adlm-SL",
+            "ff-Adlm-GM",
             "ff-Adlm-NG",
+            "ff-Adlm-GW",
+            "tig-Arab-ER",
+            "ff-Adlm-BF",
+            "ff-Adlm-CM",
+            "ff-Adlm-LR",
             "ff-Adlm-GH",
-            "ff-Adlm-SN"
+            "ff-Adlm-SN",
+            "ff-Adlm-MR"
         ]
     },
     {
-        "date": "2022-06-24T11:23:52.744007",
-        "sha": [
+        "first": [
             "1ce4288",
-            "9a24a19"
+            "2021-06-28 11:59:33 -0500"
+        ],
+        "last": [
+            "9a24a19",
+            "2021-06-29 09:10:52 +0700"
         ],
         "changed": {
             "aaq-Zyyy-US": "aaq-Latn-US",
@@ -1061,181 +1160,202 @@
             "zrp-Zyyy-FR": "zrp-Hebr-FR"
         },
         "added": [
-            "kev-Mlym-IN",
-            "sah-Cyrs-RU",
-            "tl-Buhd-PH",
-            "anq-Deva-IN",
-            "nwc-Brah-NP",
-            "sjp-Beng-IN",
-            "anq-Latn-IN",
-            "brw-Knda-IN",
-            "txb-Mani-XX",
-            "sms-Cyrl-RU",
-            "nwc-Ranj-NP",
             "brw-Mlym-IN",
-            "xbc-Grek-XX",
-            "sjn-Cirt-001",
-            "ltc-Hans-CN",
-            "bht-Deva-IN",
-            "kho-Brah-IR",
-            "bro-Latn-BT",
-            "ybe-Ougr-CN",
-            "kho-Khar-IR",
-            "mki-Deva-IN",
-            "phu-Lana-TH",
-            "kv-Cyrs-RU",
-            "nwc-Deva-NP",
-            "jge-Hebr-IL",
-            "kev-Taml-IN",
             "bg-Cyrs-BG",
-            "aot-Latn-IN",
-            "hkh-Deva-IN",
-            "lng-Runr-HU",
-            "hkh-Latn-IN",
-            "igs-Grek-001",
+            "ro-Cyrs-RO",
+            "uby-Latn-TR",
             "nrn-Runr-GB",
             "phu-Thai-TH",
             "ofs-Runr-NL",
-            "ofs-Latn-NL",
-            "uby-Latn-TR",
-            "eve-Cyrs-RU",
-            "uby-Cyrl-TR",
-            "hii-Deva-IN",
-            "aot-Beng-BD",
-            "lng-Latn-HU",
-            "nwc-Sidd-NP",
-            "xbc-Mani-XX",
-            "ltc-Hant-CN",
-            "lzz-Latn-GE",
-            "xdc-Grek-XX",
+            "mki-Deva-IN",
+            "anq-Latn-IN",
             "phu-Laoo-LA",
+            "nwc-Deva-NP",
+            "phu-Lana-TH",
+            "kev-Mlym-IN",
+            "nwc-Sidd-NP",
+            "igs-Grek-001",
+            "lng-Runr-HU",
+            "sjp-Beng-IN",
+            "ltc-Hans-CN",
+            "eve-Cyrs-RU",
+            "bht-Deva-IN",
+            "sjn-Cirt-001",
+            "jge-Hebr-IL",
+            "bro-Latn-BT",
+            "sms-Cyrl-RU",
+            "uby-Cyrl-TR",
+            "kv-Cyrs-RU",
+            "sah-Cyrs-RU",
+            "brw-Knda-IN",
+            "txb-Mani-XX",
+            "kho-Brah-IR",
+            "tl-Buhd-PH",
+            "nwc-Ranj-NP",
+            "hkh-Deva-IN",
             "xtq-Brah-IR",
+            "hii-Deva-IN",
+            "ltc-Hant-CN",
+            "xbc-Mani-XX",
+            "ybe-Ougr-CN",
+            "kev-Taml-IN",
+            "anq-Deva-IN",
+            "aot-Beng-BD",
+            "lzz-Latn-GE",
             "nrn-Latn-GB",
-            "xtq-Khar-IR",
             "bro-Tibt-BT",
-            "ro-Cyrs-RO"
+            "hkh-Latn-IN",
+            "xbc-Grek-XX",
+            "ofs-Latn-NL",
+            "lng-Latn-HU",
+            "kho-Khar-IR",
+            "xtq-Khar-IR",
+            "xdc-Grek-XX",
+            "nwc-Brah-NP",
+            "aot-Latn-IN"
         ],
         "deleted": [
             "bro-Zyyy-BT",
-            "anq-Zyyy-IN",
-            "lng-Zyyy-HU",
-            "kev-Zyyy-IN",
-            "brw-Zyyy-IN",
-            "nrn-Zyyy-GB",
             "uby-Zyyy-TR",
-            "xtq-Zyyy-IR",
             "aot-Zyyy-IN",
-            "ofs-Zyyy-NL",
-            "xbc-Zyyy-XX",
+            "lng-Zyyy-HU",
             "ltc-Zyyy-CN",
+            "nrn-Zyyy-GB",
             "phu-Zyyy-TH",
+            "xbc-Zyyy-XX",
+            "ofs-Zyyy-NL",
+            "brw-Zyyy-IN",
+            "xtq-Zyyy-IR",
+            "kev-Zyyy-IN",
+            "anq-Zyyy-IN",
             "kho-Zyyy-IR"
         ]
     },
     {
-        "date": "2022-06-24T11:23:53.494598",
-        "sha": [
+        "first": [
             "534dc38",
-            "5cb9bf2"
+            "2021-07-01 11:31:43 +0700"
+        ],
+        "last": [
+            "5cb9bf2",
+            "2021-07-16 16:31:25 +0700"
         ],
         "changed": {
             "oui-Ougr-XX": "oui-Ougr-143"
         },
         "added": [
-            "udi-Aghb-RU",
-            "hnj-Hmnp-LA",
             "hi-Latn-IN",
+            "hnj-Hmnp-LA",
             "mww-Hmnp-CN",
+            "udi-Aghb-RU",
             "xco-Chrs-UZ"
         ],
         "deleted": [
-            "tlj-Latn-GH",
             "mn-Mong-MN",
-            "mcu-Laoo-CM",
-            "xco-Chrs-XX"
+            "xco-Chrs-XX",
+            "tlj-Latn-GH",
+            "mcu-Laoo-CM"
         ]
     },
     {
-        "date": "2022-06-24T11:23:53.629872",
-        "sha": [
+        "first": [
             "5cb9bf2",
-            "b42f5d3"
+            "2021-07-16 16:31:25 +0700"
+        ],
+        "last": [
+            "b42f5d3",
+            "2021-07-16 16:34:21 +0700"
         ],
         "changed": {
             "oui-Ougr-143": "oui-Ougr-XX"
         },
         "added": [
-            "tlj-Latn-GH",
             "mn-Mong-MN",
-            "mcu-Laoo-CM",
-            "xco-Chrs-XX"
+            "xco-Chrs-XX",
+            "tlj-Latn-GH",
+            "mcu-Laoo-CM"
         ],
         "deleted": [
-            "udi-Aghb-RU",
-            "hnj-Hmnp-LA",
             "hi-Latn-IN",
+            "hnj-Hmnp-LA",
             "mww-Hmnp-CN",
+            "udi-Aghb-RU",
             "xco-Chrs-UZ"
         ]
     },
     {
-        "date": "2022-06-24T11:23:53.745146",
-        "sha": [
+        "first": [
             "b42f5d3",
-            "23f68b1"
+            "2021-07-16 16:34:21 +0700"
+        ],
+        "last": [
+            "23f68b1",
+            "2021-07-16 16:35:16 +0700"
         ],
         "changed": {
             "oui-Ougr-XX": "oui-Ougr-143"
         },
         "added": [
-            "udi-Aghb-RU",
-            "hnj-Hmnp-LA",
             "hi-Latn-IN",
+            "hnj-Hmnp-LA",
             "mww-Hmnp-CN",
+            "udi-Aghb-RU",
             "xco-Chrs-UZ"
         ],
         "deleted": [
-            "tlj-Latn-GH",
             "mn-Mong-MN",
-            "mcu-Laoo-CM",
-            "xco-Chrs-XX"
+            "xco-Chrs-XX",
+            "tlj-Latn-GH",
+            "mcu-Laoo-CM"
         ]
     },
     {
-        "date": "2022-06-24T11:23:54.495649",
-        "sha": [
+        "first": [
             "4148c4a",
-            "4a247cb"
+            "2021-08-27 10:15:23 +0700"
+        ],
+        "last": [
+            "4a247cb",
+            "2021-08-27 10:49:46 +0700"
         ],
         "added": [
             "hmd-Plrd-CN-x-normal"
         ]
     },
     {
-        "date": "2022-06-24T11:23:54.613423",
-        "sha": [
+        "first": [
             "4a247cb",
-            "ea1150f"
+            "2021-08-27 10:49:46 +0700"
+        ],
+        "last": [
+            "ea1150f",
+            "2021-09-13 15:56:50 -0500"
         ],
         "deleted": [
             "hmd-Plrd-CN-x-normal"
         ]
     },
     {
-        "date": "2022-06-24T11:23:54.733015",
-        "sha": [
+        "first": [
             "ea1150f",
-            "cc069b8"
+            "2021-09-13 15:56:50 -0500"
+        ],
+        "last": [
+            "cc069b8",
+            "2021-09-16 15:01:00 +0700"
         ],
         "added": [
             "tw-Latn-GH-x-asante"
         ]
     },
     {
-        "date": "2022-06-24T11:23:54.998675",
-        "sha": [
+        "first": [
             "1708796",
-            "eb7f373"
+            "2021-09-16 15:01:00 +0700"
+        ],
+        "last": [
+            "eb7f373",
+            "2021-09-16 15:01:57 +0700"
         ],
         "changed": {
             "axm-Zyyy-AM": "axm-Armn-AM",
@@ -1245,143 +1365,155 @@
         },
         "added": [
             "ab-Latn-TR",
-            "doi-Dogr-IN",
+            "mis-Latn-001",
             "xnr-Takr-IN",
-            "mis-Latn-001"
+            "doi-Dogr-IN"
         ]
     },
     {
-        "date": "2022-06-24T11:23:55.251874",
-        "sha": [
+        "first": [
             "ff012a6",
-            "80a9085"
+            "2021-09-22 00:23:24 +0700"
+        ],
+        "last": [
+            "80a9085",
+            "2021-09-22 00:25:10 +0700"
         ],
         "added": [
-            "vi-Latn-VN-x-sub39",
-            "poh-Latn-GT-x-western",
-            "lif-Deva-NP-x-chathare",
-            "cak-Latn-GT-x-northern",
-            "mam-Latn-GT-x-western",
-            "pcc-Latn-CN-x-southern",
-            "quc-Latn-GT-x-ecentral",
-            "jaa-Latn-BR-x-jarawara",
-            "cak-Latn-GT-x-central",
-            "kia-Latn-TD-x-kosop",
-            "kiw-Latn-PG-x-kope",
-            "crn-Latn-MX-x-corapeno",
-            "snp-Latn-PG-x-kolepa",
-            "tzh-Latn-MX-x-tenango",
-            "crn-Latn-MX-x-meseno",
-            "quc-Latn-GT-x-northern",
-            "snp-Latn-PG-x-ona",
-            "pse-Latn-ID-x-enim",
-            "snp-Latn-PG-x-alango",
-            "aae-Latn-IT-x-sub84",
-            "vi-Latn-VN-x-sub49",
-            "tzh-Latn-MX-x-sibal",
-            "upv-Latn-VU-x-wala",
-            "vi-Latn-VN-x-sub31",
-            "vi-Latn-VN-x-sub67",
-            "kfy-Deva-IN-x-soriyali",
-            "ood-Latn-US-x-pima",
-            "tzh-Latn-MX-x-tenejapa",
-            "dnj-Latn-CI-x-yakouba",
-            "tzo-Latn-MX-x-chenalho",
-            "kia-Latn-TD-x-gerep",
-            "snp-Latn-PG-x-galeka",
-            "hus-Latn-MX-x-central",
-            "tzh-Latn-MX-x-delplano",
-            "tzh-Latn-MX-x-bachajon",
-            "cla-Latn-NG-x-bokkos",
-            "pse-Latn-ID-x-manak",
-            "buu-Latn-CD-x-ineta",
-            "kiw-Latn-PG-x-gibaio",
-            "aai-Latn-PG-x-suboro",
-            "pcc-Latn-CN-x-western",
-            "upv-Latn-VU-x-eastern",
-            "kfy-Deva-IN-x-pash",
-            "tzo-Latn-MX-x-venus",
-            "vi-Latn-VN-x-southern",
-            "mam-Latn-GT-x-southern",
-            "cak-Latn-GT-x-swestern",
-            "knv-Latn-PG-x-flyriver",
-            "kiw-Latn-PG-x-urama",
-            "quc-Latn-GT-x-wcentral",
-            "aai-Latn-PG-x-northern-suboro",
-            "crn-Latn-MX-x-rosarito",
-            "cak-Latn-GT-x-subcm",
-            "kia-Latn-TD-x-kolop",
-            "cak-Latn-GT-x-subsa",
-            "tzo-Latn-MX-x-chamula",
-            "pse-Latn-ID-x-semenda",
-            "cla-Latn-NG-x-mangar",
-            "pse-Latn-ID-x-lintang",
-            "pcc-Latn-CN-x-central",
-            "quc-Latn-GT-x-western",
-            "cla-Latn-NG-x-monguna",
-            "ixl-Latn-GT-x-cotzal",
-            "seh-Latn-MZ-x-podzu",
-            "vi-Latn-VN-x-sub25",
-            "cla-Latn-NG-x-daffo",
-            "cak-Latn-GT-x-subsu",
-            "dnj-Latn-CI-x-eastern",
-            "crn-Latn-MX-x-gavilan",
-            "quc-Latn-GT-x-andres",
-            "quc-Latn-GT-x-eastern",
-            "vi-Latn-VN-x-ncentral",
-            "mam-Latn-GT-x-northern",
-            "kfx-Deva-IN-x-mandi",
-            "knv-Latn-PG-x-aramia",
-            "ubu-Latn-PG-x-andelale",
-            "pse-Latn-ID-x-pasemah",
-            "mam-Latn-GT-x-neastern",
-            "lif-Deva-NP-x-phedappe",
-            "cak-Latn-GT-x-xenacoj",
-            "tzh-Latn-MX-x-amate",
-            "cak-Latn-GT-x-subso",
-            "jaa-Latn-BR-x-banawa",
-            "kfx-Deva-IN-x-inner",
-            "cak-Latn-GT-x-eastern",
-            "crn-Latn-MX-x-doleres",
-            "mjg-Latn-CN-x-minhe",
             "snp-Latn-PG-x-keto",
-            "pse-Latn-ID-x-ogan",
-            "upv-Latn-VU-x-tautu",
             "vi-Latn-VN-x-central",
-            "crn-Latn-MX-x-presiden",
-            "dtp-Latn-MY-x-central",
-            "dnj-Latn-CI-x-western",
-            "vi-Latn-VN-x-subdn",
-            "pse-Latn-ID-x-serawai",
+            "quc-Latn-GT-x-eastern",
+            "tzo-Latn-MX-x-chenalho",
+            "hus-Latn-MX-x-central",
+            "kfx-Deva-IN-x-inner",
+            "kfx-Deva-IN-x-mandi",
+            "ood-Latn-US-x-pima",
+            "aai-Latn-PG-x-suboro",
+            "vi-Latn-VN-x-sub39",
+            "kiw-Latn-PG-x-gibaio",
+            "buu-Latn-CD-x-bafwa",
+            "snp-Latn-PG-x-kolepa",
+            "crn-Latn-MX-x-meseno",
+            "vi-Latn-VN-x-sub31",
+            "kiw-Latn-PG-x-kope",
+            "tzo-Latn-MX-x-chamula",
+            "quc-Latn-GT-x-ecentral",
+            "upv-Latn-VU-x-tautu",
+            "tzo-Latn-MX-x-venus",
+            "quc-Latn-GT-x-western",
+            "cak-Latn-GT-x-eastern",
+            "kfy-Deva-IN-x-pash",
+            "cla-Latn-NG-x-mangar",
+            "mam-Latn-GT-x-western",
+            "buu-Latn-CD-x-ineta",
+            "lif-Deva-NP-x-chathare",
+            "cak-Latn-GT-x-subcm",
+            "knv-Latn-PG-x-aramia",
+            "aai-Latn-PG-x-northern-suboro",
+            "pcc-Latn-CN-x-southern",
+            "crn-Latn-MX-x-rosarito",
+            "vi-Latn-VN-x-southern",
+            "cak-Latn-GT-x-subsa",
             "upv-Latn-VU-x-atchin",
-            "buu-Latn-CD-x-bafwa"
+            "dnj-Latn-CI-x-western",
+            "tzh-Latn-MX-x-amate",
+            "vi-Latn-VN-x-sub49",
+            "cak-Latn-GT-x-subso",
+            "mam-Latn-GT-x-neastern",
+            "snp-Latn-PG-x-galeka",
+            "pse-Latn-ID-x-semenda",
+            "pcc-Latn-CN-x-western",
+            "cak-Latn-GT-x-northern",
+            "pse-Latn-ID-x-manak",
+            "cla-Latn-NG-x-monguna",
+            "mam-Latn-GT-x-northern",
+            "quc-Latn-GT-x-andres",
+            "tzh-Latn-MX-x-tenango",
+            "seh-Latn-MZ-x-podzu",
+            "poh-Latn-GT-x-western",
+            "dnj-Latn-CI-x-yakouba",
+            "crn-Latn-MX-x-corapeno",
+            "upv-Latn-VU-x-wala",
+            "crn-Latn-MX-x-gavilan",
+            "pse-Latn-ID-x-serawai",
+            "cak-Latn-GT-x-subsu",
+            "aae-Latn-IT-x-sub84",
+            "tzh-Latn-MX-x-tenejapa",
+            "pse-Latn-ID-x-enim",
+            "tzh-Latn-MX-x-delplano",
+            "crn-Latn-MX-x-doleres",
+            "mam-Latn-GT-x-southern",
+            "cak-Latn-GT-x-xenacoj",
+            "upv-Latn-VU-x-eastern",
+            "mjg-Latn-CN-x-minhe",
+            "jaa-Latn-BR-x-jarawara",
+            "knv-Latn-PG-x-flyriver",
+            "cak-Latn-GT-x-swestern",
+            "kfy-Deva-IN-x-soriyali",
+            "crn-Latn-MX-x-presiden",
+            "snp-Latn-PG-x-alango",
+            "ubu-Latn-PG-x-andelale",
+            "lif-Deva-NP-x-phedappe",
+            "pse-Latn-ID-x-lintang",
+            "quc-Latn-GT-x-wcentral",
+            "kiw-Latn-PG-x-urama",
+            "vi-Latn-VN-x-ncentral",
+            "pcc-Latn-CN-x-central",
+            "dnj-Latn-CI-x-eastern",
+            "vi-Latn-VN-x-sub25",
+            "kia-Latn-TD-x-gerep",
+            "cla-Latn-NG-x-bokkos",
+            "kia-Latn-TD-x-kosop",
+            "tzh-Latn-MX-x-sibal",
+            "quc-Latn-GT-x-northern",
+            "pse-Latn-ID-x-pasemah",
+            "cak-Latn-GT-x-central",
+            "jaa-Latn-BR-x-banawa",
+            "vi-Latn-VN-x-subdn",
+            "tzh-Latn-MX-x-bachajon",
+            "kia-Latn-TD-x-kolop",
+            "cla-Latn-NG-x-daffo",
+            "ixl-Latn-GT-x-cotzal",
+            "vi-Latn-VN-x-sub67",
+            "snp-Latn-PG-x-ona",
+            "pse-Latn-ID-x-ogan",
+            "dtp-Latn-MY-x-central"
         ]
     },
     {
-        "date": "2022-06-24T11:23:55.614382",
-        "sha": [
+        "first": [
             "7d67a9d",
-            "65c3164"
+            "2021-09-24 09:18:34 -0500"
+        ],
+        "last": [
+            "65c3164",
+            "2021-10-05 09:10:59 +0700"
         ],
         "added": [
             "kxv-Latn-IN"
         ]
     },
     {
-        "date": "2022-06-24T11:23:55.745179",
-        "sha": [
+        "first": [
             "65c3164",
-            "5685a83"
+            "2021-10-05 09:10:59 +0700"
+        ],
+        "last": [
+            "5685a83",
+            "2021-10-05 09:15:38 +0700"
         ],
         "added": [
             "hmd-Plrd-CN-x-normal"
         ]
     },
     {
-        "date": "2022-06-24T11:23:57.139758",
-        "sha": [
+        "first": [
             "87523d6",
-            "2ead79a"
+            "2021-12-16 10:22:06 -0600"
+        ],
+        "last": [
+            "2ead79a",
+            "2022-02-16 11:40:59 +0700"
         ],
         "changed": {
             "luv-Zyyy-OM": "luv-Arab-OM",
@@ -1389,76 +1521,79 @@
             "udi-Cyrl-AZ": "udi-Cyrl-RU"
         },
         "added": [
-            "dng-Arab-KG",
-            "ajs-Zxxx-DZ",
-            "rsk-Cyrl-RS",
-            "uk-Latn-UA",
-            "wyn-Latn-US",
-            "imt-Latn-SS",
-            "kfr-Arab-PK",
-            "rsn-Zxxx-RW",
-            "bpc-Latn-CM",
-            "uon-Latn-TW",
-            "arb-Arab-LB",
-            "lsc-Zxxx-MX",
-            "ukv-Latn-SS",
+            "lgo-Latn-SS",
+            "lsw-Zxxx-SC",
+            "oie-Latn-SS",
             "phj-Zyyy-NP",
-            "amw-Syrc-SY",
-            "ugh-Cyrl-RU",
-            "cnq-Latn-CM",
-            "pi-Brah-IN",
+            "jrb-Arab-TN",
+            "zau-Arab-IN",
+            "xdq-Cyrl-RU",
+            "udi-Latn-AZ",
+            "tpo-Zzzz-LA",
+            "rsk-Cyrl-RS",
+            "yah-Arab-TJ",
+            "arb-Arab-LB",
+            "lbj-Arab-IN",
+            "gov-Latn-CI",
+            "nww-Latn-TZ",
+            "abl-Latn-ID",
             "fif-Latn-SA",
-            "pi-Khmr-IN",
+            "cnq-Latn-CM",
+            "dng-Arab-KG",
+            "ksp-Latn-NG",
+            "ukv-Latn-SS",
+            "tt-Arab-RU",
+            "kfr-Arab-PK",
+            "tok-Latn-001",
+            "wdt-Latn-CA",
+            "ugh-Cyrl-RU",
+            "wyn-Latn-US",
+            "pi-Khar-IN",
+            "rsn-Zxxx-RW",
+            "uon-Latn-TW",
+            "wbq-Arab-IN",
+            "zh-Arab-CN",
+            "rnb-Zxxx-CR",
+            "amw-Syrc-SY",
+            "dsz-Zxxx-TK",
+            "bpc-Latn-CM",
+            "bhd-Takr-IN",
+            "uk-Latn-UA",
+            "ssi-Arab-PK",
             "egm-Zyyy-TZ",
             "lqr-Latn-SS",
-            "lgo-Latn-SS",
-            "tok-Latn-001",
-            "udi-Latn-AZ",
-            "rib-Zxxx-CR",
             "mfx-Ethi-ET",
-            "gov-Latn-CI",
-            "jrb-Arab-TN",
-            "tpo-Zzzz-LA-x-laipao",
-            "nww-Latn-TZ",
-            "yah-Arab-TJ",
-            "bhd-Takr-IN",
-            "wbq-Arab-IN",
-            "lsw-Zxxx-SC",
-            "xdq-Cyrl-RU",
             "xhm-Khmr-KH",
-            "ksp-Latn-NG",
-            "rnb-Zxxx-CR",
-            "wdt-Latn-CA",
-            "zh-Arab-CN",
-            "zau-Arab-IN",
-            "ssi-Arab-PK",
-            "tt-Arab-RU",
+            "pi-Brah-IN",
+            "pi-Khmr-IN",
+            "ajs-Zxxx-DZ",
             "pzh-Latn-TW",
-            "lbj-Arab-IN",
-            "pi-Khar-IN",
-            "tpo-Zzzz-LA",
+            "rib-Zxxx-CR",
             "arb-Arab-EG",
-            "oie-Latn-SS",
-            "abl-Latn-ID",
-            "dsz-Zxxx-TK"
+            "imt-Latn-SS",
+            "lsc-Zxxx-MX",
+            "tpo-Zzzz-LA-x-laipao"
         ],
         "deleted": [
+            "lak-Latn-NG",
             "cug-Latn-CM",
-            "tpo-Zyyy-LA",
             "wya-Latn-US",
             "smd-Latn-AO",
-            "uun-Latn-TW",
-            "ajt-Arab-TN",
             "snb-Latn-MY",
             "lno-Latn-SS",
-            "lak-Latn-NG"
+            "tpo-Zyyy-LA",
+            "uun-Latn-TW",
+            "ajt-Arab-TN"
         ]
     },
     {
-        "date": "2022-06-24T11:23:57.791491",
-        "sha": [
+        "first": [
             "8706b78",
-            "db602e7"
+            "2022-03-08 14:51:50 -0600"
+        ],
+        "last": [
+            "db602e7",
+            "2022-03-15 23:09:57 +0700"
         ],
         "changed": {
             "bsw-Zyyy-ET": "bsw-Latn-ET",
@@ -1469,40 +1604,46 @@
         "added": [
             "ola-Tibt-CN",
             "hut-Deva-NP",
-            "bsw-Ethi-ET",
-            "btv-Arab-PK"
+            "btv-Arab-PK",
+            "bsw-Ethi-ET"
         ]
     },
     {
-        "date": "2022-06-24T11:23:58.302541",
-        "sha": [
+        "first": [
             "ae2b095",
-            "aae57f3"
+            "2022-03-24 16:31:24 -0500"
+        ],
+        "last": [
+            "aae57f3",
+            "2022-03-29 23:53:35 +0700"
         ],
         "changed": {
             "egm-Zyyy-TZ": "egm-Latn-TZ"
         },
         "added": [
-            "suz-Sunu-NP",
-            "unr-Nagm-NP",
-            "aeb-Hebr-IL",
+            "jrb-Arab-MA",
             "sa-Kawi-IN",
-            "jrb-Arab-MA"
+            "aeb-Hebr-IL",
+            "unr-Nagm-NP",
+            "suz-Sunu-NP"
         ],
         "deleted": [
             "ajt-Hebr-IL",
-            "ads-Latn-GH",
             "aju-Arab-MA",
+            "jrb-Arab-TN",
+            "ads-Latn-GH",
             "ksp-Latn-NG",
-            "szs-Latn-SB",
-            "jrb-Arab-TN"
+            "szs-Latn-SB"
         ]
     },
     {
-        "date": "2022-06-24T11:23:58.814474",
-        "sha": [
+        "first": [
             "087e2e4",
-            "e7000c6"
+            "2022-04-12 17:05:09 -0500"
+        ],
+        "last": [
+            "e7000c6",
+            "2022-04-28 13:47:25 +0700"
         ],
         "changed": {
             "czk-Zyyy-CZ": "czk-Hebr-CZ",
@@ -1510,9 +1651,9 @@
         },
         "added": [
             "isk-Cyrl-TJ",
-            "bht-Latn-IN",
             "qwm-Latn-RU",
-            "qwm-Runr-RU"
+            "qwm-Runr-RU",
+            "bht-Latn-IN"
         ]
     }
 ]
