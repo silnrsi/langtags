@@ -1609,7 +1609,7 @@ coo,coo-Latn-CA,Comox,CA,,,,,1,,,NAM,coo,LE,9-Jan-2018,
 cop,cop-Copt-EG,Coptic,EG,,,,,,,,NAF,cop,CLDR,,Extinct
 cop-Arab,cop-Arab-EG,Coptic,EG,,,,,,,,NAF,cop,,,Extinct
 cop-Grek,cop-Grek-EG,Coptic,EG,,,,,,,,NAF,cop,,,Extinct
-coq,coq-Zyyy-US,Coquille,US,,,,,1,,,NAM,coq,LE,10-Jan-2018,Extinct
+coq,coq-Latn-US,Coquille,US,,,,,,,,NAM,coq,LE,10-Jan-2018,Extinct
 cot,cot-Latn-PE,Caquinte,PE,,,,,,,,SAM,cot,LE,9-Jan-2018,
 cou,cou-Latn-SN,Wamey,GN SN,,,,,,,,WAF,cou,,,
 cov-Zyyy,cov-Zyyy-CN,Cao Miao,CN,,,06333,,,,,EAS,cov,,,
@@ -3104,7 +3104,7 @@ ilv,ilv-Latn-NG,Ilue,NG,,,,,1,,,WAF,ilv,,,
 ima,ima-Zyyy-IN,Mala Malasar,IN,,,,,1,,,SAS,ima,,,
 ime,ime-Latn-TL,Talur,ID TL,,,,gal,,,gal,SEA,gal,LE,12-Jan-2018,
 imi,imi-Latn-PG,Anamgura,PG,,,,,1,,,MEL,imi,LE,10-Jan-2018,
-iml,iml-Zyyy-US,Miluk,US,,,,,1,,,NAM,iml,LE,10-Jan-2018,Extinct
+iml,iml-Latn-US,Miluk,US,,,,,1,,,NAM,iml,LE,10-Jan-2018,Extinct
 imn,imn-Latn-PG,Imonda,PG,,,,,1,,,MEL,imn,LE,10-Jan-2018,
 imo,imo-Latn-PG,Imbongu,PG,,,,,,,,MEL,imo,LE,10-Jan-2018,
 imr,imr-Latn-ID,Imroing,ID,,,,,1,,,SEA,imr,,,
