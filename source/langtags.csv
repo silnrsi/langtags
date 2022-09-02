@@ -6670,6 +6670,7 @@ rzh,rzh-Zyyy-YE,Rāziḥī,YE,,,,,,,,WAS,rzh,,,
 sa,sa-Deva-IN,Sanskrit,IN NP,bauddha itihasa laukika vaidika,,,,,,,SAS,san,CLDR,,Ancient
 sa-Gran,sa-Gran-IN,Sanskrit,IN NP,,,,,,,,SAS,san,CLDR Supplemental,,
 sa-Kawi,sa-Kawi-IN,Sanskrit,IN NP,,,,,,,,SAS,san,,,
+sa-Khar,sa-Khar-IN,Sanskrit,IN NP,,,,,,,,SAS,san,,,
 sa-Mymr,sa-Mymr-IN,Sanskrit,IN NP,bauddha itihasa laukika vaidika,,,,,,,SAS,san,,,Ancient
 sa-Nand,sa-Nand-IN,Sanskrit,IN NP,bauddha itihasa laukika vaidika,,,,,,,SAS,san,,,Ancient
 sa-Newa,sa-Newa-IN,Sanskrit,IN NP,bauddha itihasa laukika vaidika,,,,,,,SAS,san,,,Ancient
@@ -7477,6 +7478,7 @@ tgq,tgq-Latn-MY,Tring,MY,,,,,1,,,SEA,tgq,,,
 tgr,tgr-Zyyy-LA,Tareng,LA,,,,,,,,SEA,tgr,NMC,4-Dec-2017,
 tgs,tgs-Latn-VU,Nume,VU,,,,,,,,MEL,tgs,LE,10-Jan-2018,
 tgt,tgt-Latn-PH,"Tagbanwa, Central",PH,,,,,,,,SEA,tgt,LE,28-Nov-2017,
+tgt-Tagb,tgt-Tagb-PH,"Tagbanwa, Central",PH,,,,,,,,SEA,tgt,,,
 tgu,tgu-Latn-PG,Tanggu,PG,,,,,,,,MEL,tgu,LE,10-Jan-2018,
 tgv,tgv-Latn-BR,Tingui-Boto,BR,,,,,1,,,SAM,tgv,LE,10-Jan-2018,Extinct
 tgw,tgw-Latn-CI,"Sénoufo, Tagwana",CI,,,,,,,,WAF,tgw,,,
