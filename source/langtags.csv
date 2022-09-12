@@ -6669,6 +6669,7 @@ ryu,ryu-Kana-JP,"Okinawan, Central",JP,,,,,,,,EAS,ryu,CLDR,,
 rzh,rzh-Zyyy-YE,Rāziḥī,YE,,,,,,,,WAS,rzh,,,
 sa,sa-Deva-IN,Sanskrit,IN NP,bauddha itihasa laukika vaidika,,,,,,,SAS,san,CLDR,,Ancient
 sa-Gran,sa-Gran-IN,Sanskrit,IN NP,,,,,,,,SAS,san,CLDR Supplemental,,
+sa-Bhks,sa-Bhks-IN,Sanskrit,IN NP,,,,,,,,SAS,san,,,
 sa-Kawi,sa-Kawi-IN,Sanskrit,IN NP,,,,,,,,SAS,san,,,
 sa-Khar,sa-Khar-IN,Sanskrit,IN NP,,,,,,,,SAS,san,,,
 sa-Mymr,sa-Mymr-IN,Sanskrit,IN NP,bauddha itihasa laukika vaidika,,,,,,,SAS,san,,,Ancient
@@ -6955,6 +6956,7 @@ skr,skr-Arab-PK,Saraiki,IN PK US,,,00863 03568 03570 03957 16338 18865,,,,,NAM N
 skr-Deva,skr-Deva-PK,Saraiki,IN PK US,,,00863 03568 03570 03957 16338 18865,,,1,,NAM NEU SAS,skr,,,
 skr-Guru,skr-Guru-PK,Saraiki,IN PK US,,,00863 03568 03570 03957 16338 18865,,,1,,NAM NEU SAS,skr,,,
 skr-Khoj,skr-Khoj-PK,Saraiki,IN PK US,,,00863 03568 03570 03957 16338 18865,,,,,NAM NEU SAS,skr,,,
+skr-Mult,skr-Mult-IN,Saraiki,IN PK,,,,,,1,,NEU SAS,skr,,,
 sks,sks-Latn-PG,Maia,PG,,,,,,,,MEL,sks,LE,10-Jan-2018,
 skt,skt-Latn-CD,Sakata,CD,,,01563 01601 01681 01682 03882,,,,,MAF,skt,LE,12-Jan-2018,
 sku,sku-Latn-VU,Sakao,VU,,,,,,,,MEL,sku,LE,10-Jan-2018,
