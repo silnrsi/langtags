@@ -265,7 +265,7 @@ alc,alc-Latn-CL,Qawasqar,CL,,,,,1,,,SAM,alc,LE,9-Jan-2018,
 ald,ald-Latn-CI,Alladian,CI,,,,,,,,WAF,ald,,,
 ale,ale-Latn-US,Aleut,RU US,,,00120,,,,,EEU NAM,ale,,,
 ale-Cyrs,ale-Cyrs-US,Aleut,RU US,,,00120,,,1,,EEU NAM,ale,,,
-alf,alf-Latn-NG,Alege,NG,,,02106,,1,,,WAF,alf,,,
+alf,alf-Latn-NG,Alege,NG,,,02106,,,,,WAF,alf,,,
 alh,alh-Latn-AU,Alawa,AU,,,,,1,,,ANZ,alh,LE,10-Jan-2018,
 ali,ali-Latn-PG,Amaimon,PG,,,,,,,,MEL,ali,LE,10-Jan-2018,
 alj,alj-Latn-PH,Alangan,PH,,,,,,,,SEA,alj,,,
@@ -5829,7 +5829,7 @@ odu,odu-Latn-NG,Odual,NG,,,,,,,,WAF,odu,,,
 ofo,ofo-Zyyy-US,Ofo,US,,,,,1,,,NAM,ofo,LE,10-Jan-2018,Extinct
 ofs-Latn,ofs-Latn-NL,Old Frisian,DE NL,,,,,,,,???,ofs,,,Historical
 ofs-Runr,ofs-Runr-NL,Old Frisian,DE NL,,,,,,,,???,ofs,,,
-ofu,ofu-Latn-NG,Efutop,NG,,,,,1,,,WAF,ofu,,,
+ofu,ofu-Latn-NG,Efutop,NG,,,,,,,,WAF,ofu,,,
 ogb,ogb-Latn-NG,Ogbia,NG,,,02366 02387,,,,,WAF,ogb,,,
 ogc,ogc-Latn-NG,Ogbah,NG,,,,,,,,WAF,ogc,,,
 oge,oge-Geok-GE,Old Georgian,GE,,,,,,,,???,oge,,,Historical
