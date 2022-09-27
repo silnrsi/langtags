@@ -2659,7 +2659,7 @@ grc-Grek,grc-Grek-GR,"Greek, Ancient",GR,,,,,,,,SEU,grc,,,Historical
 grc-Linb,grc-Linb-GR,"Greek, Ancient",GR,,,,,,,,SEU,grc,CLDR,,Historical
 grd,grd-Latn-NG,Guruntum-Mbaaru,NG,,,,,1,,,WAF,grd,,,
 grg,grg-Latn-PG,Madi,PG,,,,,,,,MEL,grg,LE,10-Jan-2018,
-grh,grh-Latn-NG,Gbiri-Niragu,NG,,,02569,,,,,WAF,grh,,,
+grh,grh-Latn-NG,Tugbiri-Niragu,NG,,,02569,,,,,WAF,grh,,,
 gri,gri-Latn-SB,Ghari,SB,,,03676,,,,,MEL,gri,LE,10-Jan-2018,
 grj,grj-Latn-LR,"Grebo, Southern",CI LR,,,01605 06457 10341,,1,,,WAF,grj,,,
 grm,grm-Latn-MY,Kota Marudu Talantang,MY,,,,,1,,,SEA,grm,,,
