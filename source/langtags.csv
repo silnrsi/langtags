@@ -421,6 +421,7 @@ arb-Brai,arb-Brai-SA,"Arabic, Standard",AE BH DJ DK DZ EG EH ER IL IQ IR JO KM K
 arc,arc-Armi-IR,Official Aramaic (700-300 BCE),IR,,,,,,,,SAS,arc,CLDR,,Ancient
 arc-Nbat,arc-Nbat-JO,Aramaic,JO,,,,,,,,WAS,arc,CLDR,,
 arc-Palm,arc-Palm-SY,Aramaic,SY,,,,,,,,???,arc,CLDR,,
+arc-Hatr,arc-Hatr-XX,Aramaic,XX,,,,,,,,WAS,arc,,,
 arc-Syrc,arc-Syrc-XX,Aramaic,XX,,,,,,,,???,arc,LE,,keyboard purports to support this script
 ard,ard-Latn-AU,Arabana,AU,,,,,1,,,ANZ,ard,LE,10-Jan-2018,Extinct
 are,are-Latn-AU,"Arrarnta, Western",AU,,,,,,,,ANZ,are,LE,10-Jan-2018,
@@ -7265,6 +7266,7 @@ suz,suz-Deva-NP,Sunwar,NP,,,16951,,,,,SAS,suz,,,
 suz-Sunu,suz-Sunu-NP,Sunwar,NP,,,,,,,,SAS,suz,,,
 sv,sv-Latn-SE,Swedish,AX CA DE DK EE FI LU NO RU SE US,,,,,,,,EEU NAM NEU WEU,swe,CLDR,,
 sv-Brai,sv-Brai-SE,Swedish,CA DE DK EE FI LU NO RU SE US,,,,,,,,EEU NAM NEU WEU,swe,,,
+sv-Runr,sv-Runr-SE,Swedish,AX CA DE DK EE FI LU NO RU SE US,,,,,,,,EEU NAM NEU WEU,swe,,,
 sva,sva-Geor-GE,Svan,GE,,,,,,,,WAS,sva,,,
 sva-Cyrl,sva-Cyrl-GE,Svan,GE RU,,,,,,,,WAS,sva,,,
 sva-Latn,sva-Latn-GE,Svan,GE,,,,,,,,WAS,sva,,,
