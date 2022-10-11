@@ -330,6 +330,7 @@ and,and-Latn-ID,Ansus,ID,,,,,1,,,SEA,and,,,
 ane,ane-Latn-NC,Xârâcùù,NC,,,,,,,,MEL,ane,LE,10-Jan-2018,
 anf,anf-Latn-GH,Animere,GH,,,,,1,,,WAF,anf,LE,12-Jan-2018,
 ang,ang-Latn-GB,Old English (ca. 450-1100),GB,,,,,,1,,NEU,ang,,,Historical
+ang-Runr,ang-Runr-001,Old English (ca. 450-1100),001,,,,,,,,NEU,ang,,,
 anh,anh-Latn-PG,Nend,PG,,,,,,,,MEL,anh,LE,10-Jan-2018,
 ani,ani-Cyrl-RU,Andi,RU,,,,,,,,EEU,ani,,,
 anj,anj-Latn-PG,Anor,PG,,,04012 04013,,1,,,MEL,anj,LE,10-Jan-2018,
@@ -1775,6 +1776,7 @@ czo-Zyyy,czo-Zyyy-CN,"Chinese, Min Zhong",CN,,,,,,,,EAS,czo,,,
 czt,czt-Latn-MM,"Chin, Zotung",MM,,,,,,,,SEA,czt,NMC,4-Dec-2017,
 da,da-Latn-DK,Danish,AE CA DE DK FO GL LU NO SE US,bornholm,,,,,,,NAM NEU WAS WEU,dan,CLDR,,
 da-Brai,da-Brai-DK,Danish,AE CA DE DK FO GL LU NO SE US,,,,,,,,NAM NEU WAS WEU,dan,,,
+da-Runr,da-Runr-001,Danish,001,,,,,,,,,dan,,,
 daa,daa-Latn-TD,Dangaléat,TD,,,09104 09105 09106,,,,,MAF,daa,LE,12-Jan-2018,
 dac,dac-Latn-PG,Dambi,PG,,,,,,,,MEL,dac,LE,10-Jan-2018,
 dad,dad-Latn-PG,Marik,PG,,,,,,,,MEL,dad,LE,10-Jan-2018,
@@ -1842,7 +1844,7 @@ de,de-Latn-DE,"German, Standard",AE AR AT AU BA BE BG BO BR CA CH CL CY CZ DE DK
 de-Brai,de-Brai-DE,"German, Standard",AE AR AT AU BA BE BG BO BR CA CH CL CY CZ DE DK EC EE FI FR HR HU IE IL IT KG KZ LI LT LU MT MZ NA NL NZ PH PL PR PT PY RO RU SE SI SK TJ UA US UY ZA,,,,,,,,ANZ CAR CAS EAF EEU NAM NEU SAF SAM SEA SEU WAS WEU,deu,,,
 de-Dupl,de-Dupl-DE,"German, Standard",AE AR AT AU BA BE BG BO BR CA CH CL CY CZ DE DK EC EE FI FR HR HU IE IL IT KG KZ LI LT LU MT MZ NA NL NZ PH PL PR PT PY RO RU SE SI SK TJ UA US UY ZA,,,,,,,,ANZ CAR CAS EAF EEU NAM NEU SAF SAM SEA SEU WAS WEU,deu,,,
 de-Latf,de-Latf-DE,"German, Standard",AE AR AT AU BA BE BG BO BR CA CH CL CY CZ DE DK EC EE FI FR HR HU IE IL IT KG KZ LI LT LU MT MZ NA NL NZ PH PL PR PT PY RO RU SE SI SK TJ UA US UY ZA,,,,,,1,,ANZ CAR CAS EAF EEU NAM NEU SAF SAM SEA SEU WAS WEU,deu,,,
-de-Runr,de-Runr-DE,"German, Standard",AE AR AT AU BA BE BG BO BR CA CH CL CY CZ DE DK EC EE FI FR GB HR HU IE IL IT KG KZ LI LT LU MT MZ NA NL NZ PH PL PR PT PY RO RU SE SI SK TJ UA US UY ZA,,,,,,1,,ANZ CAR CAS EAF EEU NAM NEU SAF SAM SEA SEU WAS WEU,deu,,,
+de-Runr,de-Runr-DE,"German, Standard",AE AR AT AU BA BE BG BO BR CA CH CL CY CZ DE DK EC EE ES FI FR GR HR HU IE IL IT KG KZ LI LT LU LV MC MT MZ NA NL NZ PH PL PR PT PY RO RU SE SI SK TJ UA US UY ZA 001,,,,,,1,,ANZ CAR CAS EAF EEU NAM NEU SAF SAM SEA SEU WAS WEU,deu,,,
 dec,dec-Latn-SD,Dagik,SD,,,,,,,,NAF,dec,LE,12-Jan-2018,
 ded,ded-Latn-PG,Dedua,PG,,,09198,,,,,MEL,ded,LE,10-Jan-2018,
 dee,dee-Latn-LR,Dewoin,LR,,,,,1,,,WAF,dee,,,
@@ -2199,6 +2201,7 @@ en-Brai,en-Brai-GB,English,AD AE AG AI AS AT AU AW BB BD BE BG BH BL BM BN BQ BS
 en-CA,en-Latn-CA,English,CA,newfound,,,,,,,,eng,,,
 en-Dsrt,en-Dsrt-US,English,AC AD AE AG AI AR AS AT AU AW BA BB BD BE BG BH BL BM BN BQ BR BS BT BW BZ CA CH CK CL CM CW CY CZ DE DK DM DO DZ EC EE EG ER ES ET FI FJ FM FR GB GD GG GH GI GM GQ GR GU GY HK HN HR HU ID IE IL IM IN IO IQ IT JE JM JO JP KE KH KI KR KY KZ LB LC LK LR LS LT LU LV LY MA MF MG MH MO MP MS MT MU MV MW MX MY NA NF NG NL NO NP NR NU NZ OM PG PH PK PL PM PN PR PT PW RO RW SA SB SC SD SE SG SI SK SL SO SR SS ST SX SZ TA TC TH TK TO TR TT TV TZ UG US VC VE VG VI VU WS YE ZA ZM ZW,,,,,,,,ANZ CAM CAR EAF EAS EEU MAF MEL MIC NAF NAM NEU POL SAF SAM SAS SEA SEU WAF WAS WEU,eng,,,
 en-Dupl,en-Dupl-US,English,US,,,,,,,,NAM,eng,,,
+en-Runr,en-Runr-001,English,001,,,,,,,,NAM,eng,,,
 en-Shaw,en-Shaw-GB,English,AC AD AE AG AI AR AS AT AU AW BA BB BD BE BG BH BL BM BN BQ BR BS BT BW BZ CA CH CK CL CM CW CY CZ DE DK DM DO DZ EC EE EG ER ES ET FI FJ FM FR GB GD GG GH GI GM GQ GR GU GY HK HN HR HU ID IE IL IM IN IO IQ IT JE JM JO JP KE KH KI KR KY KZ LB LC LK LR LS LT LU LV LY MA MF MG MH MO MP MS MT MU MV MW MX MY NA NF NG NL NO NP NR NU NZ OM PG PH PK PL PM PN PR PT PW RO RW SA SB SC SD SE SG SI SK SL SO SR SS ST SX SZ TA TC TH TK TO TR TT TV TZ UG US VC VE VG VI VU WS YE ZA ZM ZW,,,,,,1,,ANZ CAM CAR EAF EAS EEU MAF MEL MIC NAF NAM NEU POL SAF SAM SAS SEA SEU WAF WAS WEU,eng,CLDR,,
 ena,ena-Latn-PG,Apali,PG,,,04038,,,,,MEL,ena,LE,10-Jan-2018,
 enb,enb-Latn-KE,Markweeta,KE,,,09568,,,,,EAF,enb,LE,12-Jan-2018,
@@ -2208,6 +2211,7 @@ enf,enf-Cyrl-RU,"Enets, Forest",RU,,,,,,,,EEU,enf,,,
 enh,enh-Cyrl-RU,"Enets, Tundra",RU,,,,,1,,,EEU,enh,,,
 enl,enl-Latn-PY,Enlhet,PY,,,,,,,,SAM,enl,LE,9-Jan-2018,
 enm,enm-Latn-GB,Middle English (1100-1500),GB,,,,,,,,NEU,enm,,,Historical
+enm-Runr,enm-Runr-001,Middle English (1100-1500),001,,,,,,,,NEU,enm,,,
 enn,enn-Latn-NG,Engenni,NG,,,,,,,,WAF,enn,,,
 eno,eno-Latn-ID,Enggano,ID,,,,,1,,,SEA,eno,,,
 enq,enq-Latn-PG,Enga,PG,,,04518 04524 09580,,,,,MEL,enq,LE,10-Jan-2018,
@@ -2335,6 +2339,7 @@ fnb,fnb-Latn-VU,Fanbak,VU,,,,,1,,,MEL,fnb,LE,10-Jan-2018,
 fng,fng-Latn-ZA,Pidgin Bantu,CD NA ZA ZM ZW,,,,,1,,,EAF MAF SAF,fng,,,
 fni,fni-Latn-TD,Fania,TD,,,,,1,,,MAF,fni,,,
 fo,fo-Latn-FO,Faroese,DK FO US,,,,,,,,NAM NEU,fao,CLDR,,
+fo-Runr,fo-Runr-001,Faroese,001,,,,,,,,,fao,,,
 fod,fod-Latn-BJ,Foodo,BJ GH,,,,,,,,WAF,fod,,,
 foi,foi-Latn-PG,Foi,PG,,,,,,,,MEL,foi,LE,10-Jan-2018,
 fom,fom-Latn-CD,Foma,CD,,,,,1,,,MAF,fom,,,
@@ -3164,6 +3169,7 @@ iru-Mlym,iru-Mlym-IN,Irula,IN,,,03071 04048 04740 10949,,,,,SAS,iru,,,
 irx,irx-Latn-ID,Kamberau,ID,,,01247 01735,,1,,,SEA,irx,,,
 iry,iry-Latn-PH,Iraya,PH,,,02137,,,,,SEA,iry,,,
 is,is-Latn-IS,Icelandic,CA DK IS US,,,,,,,,NAM NEU,isl,CLDR,,
+is-Runr,is-Runr-001,Icelandic,001,,,,,,,,,isl,,,
 isa,isa-Latn-PG,Isabi,PG,,,,,1,,,MEL,isa,LE,10-Jan-2018,
 isc,isc-Latn-PE,Isconahua,PE,,,,,1,,,SAM,isc,LE,9-Jan-2018,
 isd,isd-Latn-PH,Isnag,PH,,,00208,,,,,SEA,isd,,,
@@ -4406,7 +4412,7 @@ lna,lna-Latn-CF,Langbashe,CD CF,,,,,1,,,MAF,lna,jb,,
 lnb,lnb-Latn-NA,Mbalanhu,NA,,,,,1,,,SAF,lnb,LE,9-Jan-2018,
 lnd,lnd-Latn-ID,Lun Bawang,BN ID MY,,,00813 04638 21132,,,,,SEA,lnd,,20-Apr-2018,
 lng-Latn,lng-Latn-HU,Langobardic,HU IT,,,,,,,,SEA,lng,,,
-lng-Runr,lng-Runr-HU,Langobardic,HU IT,,,,,,,,EEU,lng,,,Ancient
+lng-Runr,lng-Runr-HU,Langobardic,HU IT 001,,,,,,,,EEU,lng,,,Ancient
 lnh,lnh-Latn-MY,Lanoh,MY,,,,,1,,,SEA,lnh,,,
 lni,lni-Latn-PG,Daantanai',PG,,,,,1,,,MEL,lni,LE,10-Jan-2018,
 lnj,lnj-Latn-AU,Leningitij,AU,,,,,1,,,ANZ,lnj,LE,10-Jan-2018,Extinct
@@ -5378,6 +5384,7 @@ ndp,ndp-Latn-UG,Ndo,CD UG,,,,,,,,EAF MAF,ndp,LE,12-Jan-2018,
 ndq,ndq-Latn-AO,Ndombe,AO,,,,,1,,,MAF,ndq,LE,30-Jan-2018,
 ndr,ndr-Latn-NG,Ndoola,CM NG,,,01749,,1,,,MAF WAF,ndr,,,
 nds,nds-Latn-DE,"Saxon, Low",BR DE NG,,,16396,,,,,WEU,nds,CLDR,,
+nds-Runr,nds-Runr-001,"Saxon, Low",001,,,,,,,,WEU,nds,,,
 ndt,ndt-Latn-CD,Ndunga,CD,,,,,1,,,MAF,ndt,,,
 ndu,ndu-Latn-CM,Dugun,CM,,,,,,,,MAF,ndu,,,
 ndv,ndv-Latn-SN,Ndut,SN,,,,,,,,WAF,ndv,,,
@@ -5615,6 +5622,7 @@ nnx,nnx-Latn-CM,Ngong,CM,,,,ngv,1,,ngv,MAF,ngv,LE,10-Jan-2018,Extinct
 nny,nny-Latn-AU,Nyangga,AU,,,,,1,,,ANZ,nny,LE,10-Jan-2018,Extinct
 nnz,nnz-Latn-CM,Nda'nda',CM,,,04288,,1,,,MAF,nnz,,,
 no,no-Latn-NO,Norwegian,CA DE NO RU SE SJ US,,,,,,,,EEU NAM NEU WEU,nor,CLDR,,
+no-Runr,no-Runr-001,Norwegian,001,,,,,,,,,nor,,,
 noa,noa-Latn-CO,Woun Meu,CO PA,,,,,,,,CAM SAM,noa,LE,9-Jan-2018,
 noc,noc-Latn-PG,Nuk,PG,,,,,,,,MEL,noc,LE,10-Jan-2018,
 nod,nod-Lana-TH,"Thai, Northern",LA TH,,,17422,,,,,SEA,nod,CLDR,,
@@ -5628,7 +5636,7 @@ noj,noj-Latn-CO,Nonuya,CO PE,,,,,1,,,SAM,noj,LE,9-Jan-2018,
 nok,nok-Latn-US,Nooksack,US,,,,,1,,,NAM,nok,LE,10-Jan-2018,Extinct
 nol,nol-Zyyy-US,Nomlaki,US,,,,,1,,,NAM,nol,LE,10-Jan-2018,Extinct
 nom,nom-Latn-PE,Nocamán,BR PE,,,,,1,,,SAM,nom,LE,10-Jan-2018,Extinct
-non,non-Runr-SE,Old Norse,SE,,,,,,,,???,non,CLDR,,Historical
+non,non-Runr-SE,Old Norse,SE 001,,,,,,,,???,non,CLDR,,Historical
 nop,nop-Latn-PG,Numanggang,PG,,,,,,,,MEL,nop,LE,10-Jan-2018,
 noq,noq-Latn-CD,Ngongo,CD,,,,,1,,,MAF,noq,,,
 nos,nos-Yiii-CN,"Nisu, Eastern",CN,,,04670 04938 06080 06192 06193 06349 22738,,,,,EAS,nos,,,x-traditional
@@ -5673,7 +5681,7 @@ nrk,nrk-Latn-AU,Ngarla,AU,,,,,1,,,ANZ,nrk,LE,10-Jan-2018,
 nrl,nrl-Latn-AU,Ngarluma,AU,,,,,1,,,ANZ,nrl,LE,10-Jan-2018,
 nrm,nrm-Latn-MY,Narom,MY,,,,,1,,,SEA,nrm,LE,10-Jan-2018,Extinct
 nrn-Latn,nrn-Latn-GB,Norn,FR GB,,,,,,,,NEU WEU,nrn,,,
-nrn-Runr,nrn-Runr-GB,Norn,FR GB,,,,,,,,NEU WEU,nrn,,,Extinct
+nrn-Runr,nrn-Runr-GB,Norn,FR GB 001,,,,,,,,NEU WEU,nrn,,,Extinct
 nrp,nrp-Latn-IT,North Picene,IT,,,,,1,,,SEU,nrp,,,Ancient
 nrr,nrr-Zyyy-IN,Nora,IN,,,,,,,,SAS,nrr,,,Extinct
 nrt,nrt-Zyyy-US,Northern Kalapuya,US,,,,,1,,,NAM,nrt,LE,10-Jan-2018,Extinct
@@ -5856,7 +5864,7 @@ odt,odt-Latn-NL,Old Dutch,BE FR NL,,,,,,,,???,odt,,,Historical
 odu,odu-Latn-NG,Odual,NG,,,,,,,,WAF,odu,,,
 ofo,ofo-Zyyy-US,Ofo,US,,,,,1,,,NAM,ofo,LE,10-Jan-2018,Extinct
 ofs-Latn,ofs-Latn-NL,Old Frisian,DE NL,,,,,,,,???,ofs,,,Historical
-ofs-Runr,ofs-Runr-NL,Old Frisian,DE NL,,,,,,,,???,ofs,,,
+ofs-Runr,ofs-Runr-NL,Old Frisian,DE NL 001,,,,,,,,???,ofs,,,
 ofu,ofu-Latn-NG,Efutop,NG,,,,,,,,WAF,ofu,,,
 ogb,ogb-Latn-NG,Ogbia,NG,,,02366 02387,,,,,WAF,ogb,,,
 ogc,ogc-Latn-NG,Ogbah,NG,,,,,,,,WAF,ogc,,,
@@ -6479,7 +6487,7 @@ qwc,qwc-Latn-PE,Classical Quechua,PE,,,,,1,,,SAM,qwc,LE,9-Jan-2018,Historical
 qwh,qwh-Latn-PE,"Quechua, Huaylas Ancash",PE,,,01537 15840,,,,,SAM,qwh,LE,9-Jan-2018,
 qwm-Cyrl,qwm-Cyrl-RU,Kuman (Russia),RU,,,,,1,,,EEU,qwm,,,Extinct
 qwm,qwm-Latn-RU,Kuman (Russia),RU,,,,,,,,EEU,qwm,,,
-qwm-Runr,qwm-Runr-RU,Kuman (Russia),RU,,,,,,,,EEU,qwm,,,
+qwm-Runr,qwm-Runr-RU,Kuman (Russia),RU 001,,,,,,,,EEU,qwm,,,
 qws,qws-Latn-PE,"Quechua, Sihuas Ancash",PE,,,,,,,,SAM,qws,LE,5-Jul-2017,
 qwt,qwt-Latn-US,Kwalhioqua-Tlatskanai,US,,,,,1,,,NAM,qwt,LE,10-Jan-2018,Extinct
 qxa,qxa-Latn-PE,"Quechua, Chiquián",PE,,,,,1,,,SAM,qxa,LE,9-Jan-2018,
@@ -6785,6 +6793,7 @@ scl,scl-Arab-PK,Shina,IN PK,,,00665 16626 16628,,,,,SAS,scl,,,
 scl-IN,scl-Arab-IN,Shina,IN,,,00873,,,,,SAS,scl,,,
 scn,scn-Latn-IT,Sicilian,IT,,,,,,,,SEU,scn,CLDR,,
 sco,sco-Latn-GB,Scots,GB IE,ulster,,,,,,,NEU,sco,CLDR,,
+sco-Runr,sco-Runr-001,Scots,001,,,,,,,,,sco,,,
 scp,scp-Deva-NP,Helambu Sherpa,NP,,,10611 10612,,,,,SAS,scp,,,
 scq,scq-Zyyy-KH,Sa'och,KH TH,,,,,,,,SEA,scq,NMC,4-Dec-2017,
 scs,scs-Latn-CA,"Slavey, North",CA,,,,,,,,NAM,scs,CLDR,,
@@ -7266,7 +7275,7 @@ suz,suz-Deva-NP,Sunwar,NP,,,16951,,,,,SAS,suz,,,
 suz-Sunu,suz-Sunu-NP,Sunwar,NP,,,,,,,,SAS,suz,,,
 sv,sv-Latn-SE,Swedish,AX CA DE DK EE FI LU NO RU SE US,,,,,,,,EEU NAM NEU WEU,swe,CLDR,,
 sv-Brai,sv-Brai-SE,Swedish,CA DE DK EE FI LU NO RU SE US,,,,,,,,EEU NAM NEU WEU,swe,,,
-sv-Runr,sv-Runr-SE,Swedish,AX CA DE DK EE FI LU NO RU SE US,,,,,,,,EEU NAM NEU WEU,swe,,,
+sv-Runr,sv-Runr-001,Swedish,001,,,,,,,,EEU NAM NEU WEU,swe,,,
 sva,sva-Geor-GE,Svan,GE,,,,,,,,WAS,sva,,,
 sva-Cyrl,sva-Cyrl-GE,Svan,GE RU,,,,,,,,WAS,sva,,,
 sva-Latn,sva-Latn-GE,Svan,GE,,,,,,,,WAS,sva,,,
@@ -7317,6 +7326,7 @@ sxo,sxo-Zyyy-XX,Sorothaptic,XX,,,,,,,,???,sxo,,,Ancient
 sxr,sxr-Latn-TW,Saaroa,TW,,,,,,,,EAS,sxr,,,
 sxs,sxs-Latn-NG,Sasaru,NG,,,,,1,,,WAF,sxs,,,
 sxu,sxu-Latn-DE,"Saxon, Upper",DE,,,,,,,,WEU,sxu,,,
+sxu-Runr,sxu-Runr-001,"Saxon, Upper",DE 001,,,,,,,,WEU,sxu,,,
 sxw,sxw-Latn-BJ,"Gbe, Saxwe",BJ,,,,,,,,WAF,sxw,,,
 sya,sya-Latn-ID,Siang,ID,,,04625 04627,,1,,,SEA,sya,,,
 syb,syb-Latn-PH,"Subanen, Central",PH,,,03449,,,,,SEA,syb,,,
