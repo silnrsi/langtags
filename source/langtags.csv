@@ -205,6 +205,7 @@ aig,aig-Latn-AG,Antigua and Barbuda Creole English,AG AI DM GB KN MF MS SX,,,128
 aih-Zyyy,aih-Zyyy-CN,Ai-Cham,CN,,,,,1,,,EAS,aih,,,
 aii-Cyrl,aii-Cyrl-RU,Assyrian Neo-Aramaic,RU,,,,,,,,EEU,aii,CLDR Supplemental,,
 aii-Syrc,aii-Syrc-IQ,Assyrian Neo-Aramaic,AM AT AU AZ BE BR CA CH CY DE GB GE GR IQ IR IT LB NL NZ RU SE SY TR UA US,,,,,,,,ANZ EEU NAM NEU SAM SAS SEU WAS WEU,aii,CLDR Supplemental,11/15/2021,"LE: This one should be primary, but CLDR doesn't indicate it?"
+aii-Elym,aii-Elym-IQ,Assyrian Neo-Aramaic,AM AT AU AZ BE BR CA CH CY DE GB GE GR IQ IR IT LB NL NZ RU SE SY TR UA US,,,,,,,,ANZ EEU NAM NEU SAM SAS SEU WAS WEU,aii,,,
 aij,aij-Hebr-IL,Lishanid Noshan,IL,,,,,,,,WAS,aij,,,
 aik,aik-Latn-NG,Ake,NG,,,,,1,,,WAF,aik,,,
 ail,ail-Latn-PG,Aimele,PG,,,,,,,,MEL,ail,LE,10-Jan-2018,
