@@ -204,7 +204,8 @@ aif = aif-Latn = aif-PG = aif-Latn-PG
 aig = aig-AG = aig-Latn = aig-Latn-AG
 aih = aih-CN = aih-Zyyy = aih-Zyyy-CN
 aii-Cyrl = aii-RU = aii-Cyrl-RU
-*aii-Syrc = aii-IQ = aii-Syrc-IQ
+aii-Elym = aii-Elym-IQ
+*aii-Syrc = aii-Syrc-IQ
 aij = aij-Hebr = aij-IL = aij-Hebr-IL
 aik = aik-Latn = aik-NG = aik-Latn-NG
 ail = ail-Latn = ail-PG = ail-Latn-PG
@@ -5286,7 +5287,8 @@ mvv = mvv-Latn = mvv-MY = mvv-Latn-MY
 mvw = mvw-Latn = mvw-TZ = mvw-Latn-TZ
 mvx = mvx-ID = mvx-Latn = mvx-Latn-ID
 *mvy = mvy-Arab = mvy-PK = mvy-Arab-PK
-mvz-Arab = mvz-ET = mvz-Arab-ET
+mvz = mvz-ET = mvz-Ethi = mvz-Ethi-ET
+mvz-Arab = mvz-Arab-ET
 mwa = mwa-Latn = mwa-PG = mwa-Latn-PG
 mwb = mwb-Latn = mwb-PG = mwb-Latn-PG
 *mwc = mwc-Latn = mwc-PG = mwc-Latn-PG
@@ -6827,6 +6829,7 @@ sae = sae-BR = sae-Latn = sae-Latn-BR
 *saf = saf-GH = saf-Latn = saf-Latn-GH
 *sah = sah-Cyrl = *sah-RU = sah-Cyrl-RU
 sah-Cyrs = sah-Cyrs-RU
+sah-Latn = sah-Latn-RU
 saj = saj-ID = saj-Latn = saj-Latn-ID
 sak = sak-GA = sak-Latn = sak-Latn-GA
 sam = sam-PS = sam-Samr = sam-Samr-PS
