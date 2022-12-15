@@ -118,6 +118,7 @@ ae-Arab,ae-Arab-IR,Avestan,IR,,,,,,,,SAS,ave,,,Ancient
 ae-Gujr,ae-Gujr-IR,Avestan,IR,,,,,,,,SAS,ave,,,
 aea,aea-Latn-AU,Areba,AU,,,,,1,,,ANZ,aea,LE,10-Jan-2018,Extinct
 aeb,aeb-Arab-TN,"Arabic, Tunisian Spoken",BE DE FR LY NL TN,,,07155 07156 07157 07158,,,,,NAF WEU,aeb,CLDR,,
+aeb-Hebr,aeb-Hebr-IL,"Arabic, Judeo-Tunisian",ES IL IT TN,,,,,,1,,NAF SEU WAS,aeb,,,
 aeb-Latn,aeb-Latn-TN,"Arabic, Tunisian Spoken",BE DE FR LY NL TN,,,07155 07156 07157 07158,,,,,NAF WEU,aeb,LE,12-Jan-2018,
 aec,aec-Arab-EG,"Arabic, Sa'idi Spoken",EG,,,07144 07145,,,,,NAF,aec,,,
 aed,aed-Zxxx-AR,Argentine Sign Language,AR,,,,,,,,SAM,aed,LE,3-Dec-2018,
@@ -8520,7 +8521,6 @@ wym,wym-Latn-PL,Wymysorys,PL,,,,,,,,EEU,wym,LE,12-Jan-2018,
 wyn,wyn-Latn-US,Wyandot,US,,,,,,,,NAM,wyn,,,
 wyr,wyr-Latn-BR,Wayoró,BR,,,,,1,,,SAM,wyr,LE,9-Jan-2018,
 wyy,wyy-Latn-FJ,"Fijian, Western",FJ,,,04459 04461,,,,,MEL,wyy,LE,10-Jan-2018,
-x-bad-mru,x-bad-mru-Cyrl-RU,Mono (wrong),RU,,,,,,,,,,,,LE: Need to figure out what code was intended as mru is wrong
 xaa,xaa-Latn-ES,Andalusian Arabic,ES PT,,,,,1,,,SEU,xaa,,,Historical
 xab,xab-Latn-NG,Sambe,NG,,,,,1,,,WAF,xab,,,
 xac,xac-Zyyy-IN,Kachari,IN,,,00619,,,,,SAS,xac,,,

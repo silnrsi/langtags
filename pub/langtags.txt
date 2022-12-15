@@ -117,7 +117,7 @@ ae-Arab = ae-Arab-IR
 ae-Gujr = ae-Gujr-IR
 aea = aea-AU = aea-Latn = aea-Latn-AU
 *aeb = aeb-Arab = aeb-TN = ajt = ajt-Arab = ajt-Arab-TN = ajt-TN = ar-aeb = ar-aeb-TN = aeb-Arab-TN
-aeb-Hebr-IL = ajt-Hebr = ajt-Hebr-IL = aeb-Hebr-IL
+aeb-Hebr = aeb-IL = ajt-Hebr = ajt-Hebr-IL = ajt-IL = ar-aeb-IL = aeb-Hebr-IL
 *aeb-Latn = aeb-Latn-TN
 aec = aec-Arab = aec-EG = ar-aec = ar-aec-EG = aec-Arab-EG
 aed = aed-AR = aed-Zxxx = sgn-aed = sgn-aed-AR = aed-Zxxx-AR
@@ -8601,7 +8601,6 @@ wym = wym-Latn = wym-PL = wym-Latn-PL
 wyn = wya = wya-Latn = wya-Latn-US = wya-US = wyn-Latn = wyn-US = wyn-Latn-US
 wyr = wyr-BR = wyr-Latn = wyr-Latn-BR
 wyy = wyy-FJ = wyy-Latn = wyy-Latn-FJ
-x-bad-mru = x-bad-mru-Cyrl = x-bad-mru-RU = x-bad-mru-Cyrl-RU
 xaa = xaa-ES = xaa-Latn = xaa-Latn-ES
 xab = xab-Latn = xab-NG = xab-Latn-NG
 xac = xac-IN = xac-Zyyy = xac-Zyyy-IN
