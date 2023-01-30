@@ -59,7 +59,7 @@ class _Singleton(type):
 class LangTag(namedtuple('LangTag', ['lang', 'script', 'region', 'vars', 'ns'])):
     def __str__(self):
         '''Returns a parsable (by langtag) representation of the language tag.'''
-        res = [self.lang.lower() or ""]
+        res = [(self.lang or "").lower()]
         if self.script:
             res.append(self.script.title())
         if self.region:
@@ -180,7 +180,8 @@ class LangTags(with_metaclass(_Singleton)):
                     if os.path.exists(os.path.join(srcdir, 'langtags.json')):
                         break
                 else:
-                    raise IOError("Cannot find langtags.json")
+                    if useurl is None:
+                        useurl = "https://ldml.api.sil.org/langtags.json"
                 self._cachedltags = CachedFile('langtags.json', url=useurl, 
                         srcdir = srcdir, prefix=cachedprefix or "langtag-LangTags")
                 fname = self._cachedltags.get_latest()
@@ -314,8 +315,8 @@ def tagsets(sort='tag', fname=None, **kw):
             fname   A specific language tags json database to load '''
     lts = LangTags(fname=fname, **kw)
     if sort is None or sort is False or sort == '':
-        return list(set(lts.tags.values()))
-    return sorted(set(lts.tags.values()), key=lambda x:getattr(x, sort, x.fulltag))
+        return list(set(lts._tags.values()))
+    return sorted(set(lts._tags.values()), key=lambda x:getattr(x, sort, x.full))
 
 class TagSet:
     ''' Represents tag set from the json file with same attributes as fields
