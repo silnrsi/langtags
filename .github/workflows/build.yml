@@ -6,20 +6,17 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/setup-python@v2
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v4
       with:
         python-version: '3.x'
-    - uses: actions/checkout@v2
-
-    - name: Fetch and install the tooling
-      run: |
-        pip install \
+        cache: pip
+    - run: pip install . \
           git+https://github.com/silnrsi/{sldrtools#sldrtools,palaso-python#palaso} \
-          six \
-          .
+          six
 
     - name: Find latest SLDR dependency
-      uses: actions/github-script@v3
+      uses: actions/github-script@v6
       id: find-sldr
       with:
         script: |
@@ -30,7 +27,7 @@ jobs:
             })
           console.log(result.data.artifacts[0])
           return result.data.artifacts[0]
-    - uses: actions/cache@v2
+    - uses: actions/cache@v3
       id: cached-sldr
       with:
         path: |
@@ -48,7 +45,7 @@ jobs:
     - name: Generate langtags
       run: |
         make SLDR=unflat FLATDIR=flat build
-    - uses: actions/upload-artifact@v2
+    - uses: actions/upload-artifact@v3
       with:
         name: langtags
         path: |
@@ -58,18 +55,14 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/setup-python@v2
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v4
       with:
         python-version: '3.x'
-    - uses: actions/checkout@v2
-
-    - name: Fetch and install the tooling
-      run: |
-        pip install \
+    - run: pip install . \
           git+https://github.com/silnrsi/{sldrtools#sldrtools,palaso-python#palaso} \
-          six \
-          .
-    
+          six
+
     - uses: actions/download-artifact@v2
       with:
         name: langtags
