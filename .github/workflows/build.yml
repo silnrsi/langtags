@@ -59,7 +59,8 @@ jobs:
     - uses: actions/setup-python@v4
       with:
         python-version: '3.x'
-    - run: pip install . \
+    - run: |
+        pip install . \
           git+https://github.com/silnrsi/{sldrtools#sldrtools,palaso-python#palaso} \
           six
 
