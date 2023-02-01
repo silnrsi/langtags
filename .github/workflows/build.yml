@@ -19,7 +19,7 @@ jobs:
       id: find-sldr
       with:
         script: |
-          const result = await github.actions
+          const result = await github.rest.actions
             .listArtifactsForRepo({
               owner: "silnrsi",
               repo: "sldr"
