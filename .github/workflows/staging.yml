@@ -2,29 +2,39 @@ name: Build and deploy langtags for staging
 
 on:
   push:
-    branches: [ gha-development ]
+    branches: [ staging ]
     paths:
       - .github/workflows/**
+      - bin/ltdb2alltags
+      - bin/jsonlangtagstotxt
+      - lib/**
+      - source/**
+      - tests/**
+      - Makefile
+      - setup.py
+  pull_request:
+    branches: [ staging ]
+    paths:
+      - .github/workflows/**
+      - bin/ltdb2alltags
+      - bin/jsonlangtagstotxt
+      - lib/**
+      - source/**
+      - tests/**
+      - Makefile
+      - setup.py
+  workflow_dispatch:
+
 jobs:
-  call-build-langtags:
+  build-langtags:
     uses: ./.github/workflows/build.yml
     secrets: inherit
 
-  # deploy:
-  #   needs: test
-  #   runs-on: ubuntu-latest
-  #   env:
-  #     STAGE: staging
-  #     RSYNC_OPTS: -aP --no-p --no-g --no-t --compress --del -e "ssh -o StrictHostKeyChecking=no"
-  #   steps:
-  #   # Install our private key for uploading deliverable
-  #   - uses: webfactory/ssh-agent@v0.5.0
-  #     with:
-  #       ssh-private-key: ${{secrets.UPLOADER_SSH_KEY}}
-  #   # Download the artefact
-  #   - uses: actions/download-artifact@v2
-  #     with:
-  #       name: langtags
-  #   # Upload results
-  #   - name: Upload langtags to /sites/s/data/${{env.STAGE}}
-  #     run: rsync ${{env.RSYNC_OPTS}} langtags.{json,txt} ${{secrets.UPLOAD_TARGET}}/sites/s/data/${{env.STAGE}}/
+  deploy:
+    needs: call-build-langtags
+    uses: ./.github/workflows/deploy.yml
+    with:
+      path: staging
+    secrets:
+      uploader_key: ${{ secrets.UPLOADER_SSH_KEY }}
+      server_address: ${{ secrets.UPLOAD_TARGET }}
