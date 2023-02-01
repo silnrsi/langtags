@@ -1,28 +1,28 @@
 name: Build and deploy langtags for production
 
 on:
-  push:
-    branches: [ release ]
-    paths:
-      - .github/workflows/**
-      - bin/ltdb2alltags
-      - bin/jsonlangtagstotxt
-      - lib/**
-      - source/**
-      - tests/**
-      - Makefile
-      - setup.py
-  pull_request:
-    branches: [ release ]
-    paths:
-      - .github/workflows/**
-      - bin/ltdb2alltags
-      - bin/jsonlangtagstotxt
-      - lib/**
-      - source/**
-      - tests/**
-      - Makefile
-      - setup.py
+  # push:
+  #   branches: [ release ]
+  #   paths:
+  #     - .github/workflows/**
+  #     - bin/ltdb2alltags
+  #     - bin/jsonlangtagstotxt
+  #     - lib/**
+  #     - source/**
+  #     - tests/**
+  #     - Makefile
+  #     - setup.py
+  # pull_request:
+  #   branches: [ release ]
+  #   paths:
+  #     - .github/workflows/**
+  #     - bin/ltdb2alltags
+  #     - bin/jsonlangtagstotxt
+  #     - lib/**
+  #     - source/**
+  #     - tests/**
+  #     - Makefile
+  #     - setup.py
   workflow_dispatch:
 
 jobs:
