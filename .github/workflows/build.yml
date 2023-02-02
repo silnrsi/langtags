@@ -81,7 +81,7 @@ jobs:
           git+https://github.com/silnrsi/{sldrtools#sldrtools,palaso-python#palaso} \
           six
 
-    - uses: actions/download-artifact@v2
+    - uses: actions/download-artifact@v3
       with:
         name: langtags
         path: pub
