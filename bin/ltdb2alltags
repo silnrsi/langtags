@@ -121,11 +121,13 @@ def addnames(n, b, names, regions, getname=True):
             n['names'].extend(names[lname][1])
     return alllrefs
 
-def get_regionnames():
-    res = {}
+def get_region_scriptnames():
+    regs = {}
+    scripts = {}
     fname = os.path.join(os.path.dirname(lt.__file__), "language-subtag-registry.txt")
     with open(fname) as f :
         currlang = None
+        currscr = None
         mode = None
         deprecated = False
         for l in f.readlines() :
@@ -133,19 +135,31 @@ def get_regionnames():
             if l.startswith("Type: ") :
                 mode = l[6:]
                 if currlang is not None and currname is not None:
-                    res[currlang] = currname
+                    regs[currlang] = currname
+                elif currscr is not None and currname is not None:
+                    scripts[currscr] = currname
                 currlang = None
+                currscr = None
                 currname = None
             elif l.startswith("Subtag: ") :
                 if mode == "region":
                     currlang = l[8:]
+                elif mode == "script":
+                    currscr = l[8:]
             elif l.startswith("Description: "):
-                if mode == "region":
+                if mode in ("region", "script"):
                     currname = l[13:]
         if currlang is not None:
-            res[currlang] = currname
-    res['TW'] = 'China-Taiwan'  # A tricky political choice
-    return res
+            regs[currlang] = currname
+        elif currscr is not None:
+            scripts[currscr] = currname
+    regs['TW'] = 'China-Taiwan'  # A tricky political choice
+    return regs, scripts
+
+def fromiso639(t, isomap):
+    b = t.split("-")
+    b[0] = isomap.get(b[0], b[0])
+    return "-".join(b)
 
 parser = ArgumentParser()
 parser.add_argument('infile', help='Input CSV file from Google drive')
@@ -180,10 +194,11 @@ for k,v in lts.items():
     pref = getattr(v, 'preferred', None)
     if pref is not None:
         preferences.setdefault(pref, []).append(k)
-regionnames = get_regionnames()
+regionnames, scriptnames = get_region_scriptnames()
 lts.clear()
 allentries = {}
 allmacros = {}
+iso639map = {}
 if not args.quiet:
     print("Reading CSV")
 with open(args.infile) as csvfile :
@@ -221,6 +236,8 @@ with open(args.infile) as csvfile :
         t = lts.add(t)
         if repr(t) in lts:
             lts[repr(t)].iso639 = i6
+        if i6 != t.lang:
+            iso639map[i6] = t.lang
         allentries[lid] = (t, row['regions'].split(' '))
         if macro != "":
             s = str(t)
@@ -293,10 +310,14 @@ alllangreg = set()
 allscripts = {}
 allregions = {}
 langregions = {}
+usedregions = set()
+usedscripts = set()
 
 for t in set(lts.values()):
     x = lt.LangTag(lang=t.lang, region=t.region, variants=t.variants, extensions=t.extensions)
     allregions.setdefault(str(x), set()).add(t)
+    usedregions.add(t.region)
+    usedscripts.add(t.script)
     y = t.copy()
     y.hidescript = True
     y.hideboth = True
@@ -490,9 +511,15 @@ def make_record(t):
 if not args.quiet:
     print("Making records")
 # special record for passing standard variants
+conformance = {'tag': "_conformance"}
+extrascripts = set((x for x in scriptnames.keys() if len(x) == 4))
+extrascripts.update(('Qaa'+chr(97+a) for a in range(26)))
+extrascripts.update(('Qab'+chr(97+a) for a in range(24)))
+conformance['scripts'] = sorted(extrascripts - usedscripts)
 res.append({'tag': '_globalvar', 'variants': ['simple']})
 res.append({'tag': "_phonvar", 'variants': ['alalc97', 'fonipa', 'fonkirsh', 'fonnapa', 'fonupa', 'fonxsamp']})
-res.append({'tag': "_version", 'api': '1.2.1', 'date': str(datetime.date.today())})
+res.append(conformance)
+res.append({'tag': "_version", 'api': '1.2.2', 'date': str(datetime.date.today())})
 if args.jobs == 1:
     for t in sorted(set(lts.values())):
         r = make_record(t)
@@ -507,6 +534,13 @@ else:
             res.append(r[0])
             alllangreg.update(r[1])
 
+for t in res:
+    usedregions.update(getattr(t, 'regions', []))
+possibleregions = set((x for x in regionnames.keys() if len(x) == 2))
+possibleregions.update(('Q' + chr(65+a) for a in range(12, 26)))
+possibleregions.update(('X' + chr(65+a) for a in range(26)))
+conformance['regions'] = sorted(possibleregions - usedregions)
+
 def mergelines(m):
     return "[" + " ".join(x.strip() for x in m.group(1).split("\n")) + "]"
 
@@ -518,6 +552,7 @@ with codecs.open(args.outfile, "w", encoding="utf-8") as fh:
     # use encoding="utf8" (not "utf-8") as a hack around a bug in json: https://stackoverflow.com/a/40777484/10488020
     fh.write(output)
 missing = set(names.keys()) - alllangreg
+missing = set(fromiso639(x, iso639map) for x in missing)
 if len(missing):
     print("Missing language regions ({}): ".format(len(missing)) + " ".join(sorted(missing)))
 

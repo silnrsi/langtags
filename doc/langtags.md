@@ -53,7 +53,7 @@ Langtags.json consists of an array of objects. Each object corresponds to an equ
 
 ### Special tags
 
-There are three specially named (via the **tag** field) objects that occur at the start of the list. All special tags start with `_`:
+There are various specially named (via the **tag** field) objects that occur at the start of the list. All special tags start with `_` and the set may grow:
 
 #### _globalvar
 
@@ -67,6 +67,13 @@ There are three specially named (via the **tag** field) objects that occur at th
 
 - **api** Contains a semantic version string "x.y.z" where x is a major version not backwardly structurally compatible, y is a minor version involving removing fields and z is minimal change that simply adds fields or extra header records (special tags of the form \_tag.)
 - **date** Contains the date of the file creation in the form year-month-date with each component a number.
+
+#### _conformance
+
+Holds information to aid in conformance testing for language tags. \[Added 1.2.2\]
+
+- **regions** Combine this with a list of every region referenced in every tagset to come up with a list of possible regions that are conformant.
+- **scripts** Combine this with a list of every script field in every tagset to come up with a list of possible script subtags that are conformant.
 
 ### File invariants
 

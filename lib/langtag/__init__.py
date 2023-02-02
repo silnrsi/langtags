@@ -32,7 +32,7 @@ l = langtag('en-Latn')
 # OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
 # SUCH DAMAGE.
 
-import json, os, site
+import json, os, site, re
 from six import with_metaclass
 from collections import namedtuple
 from copy import deepcopy
@@ -65,7 +65,7 @@ class LangTag(namedtuple('LangTag', ['lang', 'script', 'region', 'vars', 'ns']))
         if self.region:
             res.append(self.region.upper())
         if self.vars:
-            res.extend(self.vars)
+            res.extend([x.lower() for x in self.vars])
         if self.ns:
             for k in sorted(self.ns.keys()):
                 res.extend([k.lower()] + self.ns[k])
@@ -87,25 +87,26 @@ class LangTag(namedtuple('LangTag', ['lang', 'script', 'region', 'vars', 'ns']))
 def langtag(s):
     '''Parses string to make a LangTag named tuple with properties: lang, script,
        region, vars, ns. Extlangs result in the ext-lang being stored in the
-       lang property.'''
+       lang property. This may raise a SyntaxError'''
     params = {}
     bits = str(s).replace('_', '-').split('-')
     curr = 0
 
     # lang component
     lang = None
-    if 1 < len(bits[curr]) < 4 :
+    if 1 < len(bits[curr]) < 8 or (bits[curr] == "x" and len(bits) > 1):
         lang = bits[curr].lower()
         curr += 1
-    elif bits[curr] == "x" and curr < len(bits) - 1:
-        # private use, try to parse as extlang
-        lang = "x-"
-        curr += 1
-        while curr < len(bits) and 1 < len(bits[curr]) < 4:
-            lang += bits[curr] + "-"
+    if curr >= len(bits): return LangTag(lang, None, None, None, None)
+
+    # extlangs
+    i = 0
+    if len(lang) < 4 and i < 3:
+        while len(bits[curr]) == 3:
+            lang += "-" + bits[curr]
             curr += 1
-        lang = lang[:-1]
-    if curr >= len(bits) : return LangTag(lang, None, None, None, None)
+            i += 1
+            if curr >= len(bits): return LangTag(lang, None, None, None, None)
 
     # script component
     script = None
@@ -119,18 +120,10 @@ def langtag(s):
     if 1 < len(bits[curr]) < 4 :
         region = bits[curr].upper()
         curr += 1
-    if curr >= len(bits): return LangTag(lang, script, region, None, None)
-
-    # extlang spotting
-    if len(bits[curr]) == 4 and script is None:
-        lang += "-"+region
-        script = bits[curr]
-        region = None
-        curr += 1
-        if curr >= len(bits): return LangTag(lang, script, region, None, None)
-        if 1 < len(bits[curr]) < 4:
-            region = bits[curr]
-            curr += 1
+    if curr >= len(bits):
+        if not re.match(r"^([A-Z]{2}|\d{3})$", region):
+                raise SyntaxError(f"Malformed region [{region}] in {s}")
+        return LangTag(lang, script, region, None, None)
 
     # variants and extensions
     ns = ''
@@ -141,9 +134,14 @@ def langtag(s):
             ns = bits[curr].lower()
             extensions[ns] = []
         elif ns == '' :
-            variants.append(bits[curr].lower())
-        else :
+            if 4 < len(bits[curr]) < 9 or re.match(r"\d[a-z]{3}", bits[curr].lower()):
+                variants.append(bits[curr].lower())
+            else:
+                raise SyntaxError(f"Malformed variant [{bits[curr]}] in {s}")
+        elif 1 < len(bits[curr]) < 9 or ns == "x" and len(bits[curr]) == 1:
             extensions[ns].append(bits[curr].lower())
+        else:
+            raise SyntaxError(f"Malformed extension [{bits[curr]}] in {ns}- in {s}")
         curr += 1
     return LangTag(lang, script, region, (variants if len(variants) else None),
                     (extensions if len(extensions) else None))
@@ -316,7 +314,7 @@ def tagsets(sort='tag', fname=None, **kw):
     lts = LangTags(fname=fname, **kw)
     if sort is None or sort is False or sort == '':
         return list(set(lts._tags.values()))
-    return sorted(set(lts._tags.values()), key=lambda x:getattr(x, sort, x.full))
+    return list(sorted(set(lts._tags.values()), key=lambda x:str(getattr(x, sort, getattr(x, 'full', '')))))
 
 class TagSet:
     ''' Represents tag set from the json file with same attributes as fields

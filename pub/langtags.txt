@@ -839,9 +839,8 @@ bhp = bhp-ID = bhp-Latn = bhp-Latn-ID
 bhq = bhq-ID = bhq-Latn = bhq-Latn-ID
 bhr = bhr-Latn = bhr-MG = bhr-Latn-MG
 bhs = bhs-CM = bhs-Latn = bhs-Latn-CM
-bht = bht-IN = bht-Takr = bht-Takr-IN
-bht-Deva = bht-Deva-IN
-bht-Latn = bht-Latn-IN
+bht = bht-Deva = bht-IN = bht-Deva-IN
+bht-Takr = bht-Takr-IN
 bhu = bhu-Deva = bhu-IN = bhu-Deva-IN
 bhv = bhv-ID = bhv-Latn = bhv-Latn-ID
 bhw = bhw-ID = bhw-Latn = bhw-Latn-ID
@@ -2792,7 +2791,7 @@ goe = goe-BT = goe-Tibt = goe-Tibt-BT
 gog = gog-Latn = gog-TZ = gog-Latn-TZ
 goh = goh-DE = goh-Latn = goh-Latn-DE
 *goi = goi-Latn = goi-PG = goi-Latn-PG
-goj = goj-IN = goj-Zyyy = goj-Zyyy-IN
+goj = goj-Deva = goj-IN = goj-Deva-IN
 gok = gok-Deva = gok-IN = gok-Deva-IN
 gol = gol-LR = gol-Latn = gol-Latn-LR
 gom = gom-Deva = gom-IN = kok-gom = kok-gom-IN = gom-Deva-IN
