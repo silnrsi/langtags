@@ -21,7 +21,7 @@ jobs:
       with:
         ssh-private-key: ${{ secrets.uploader_key }}
     # Download the artefact
-    - uses: actions/download-artifact@v2
+    - uses: actions/download-artifact@v3
       with:
         name: langtags
     # Upload results

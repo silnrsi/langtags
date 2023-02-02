@@ -7,6 +7,11 @@ on:
     branches: [master]
 
 jobs:
+  debug:
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo "${{toJSON(github.event.workflow_run)}}"
+
   deploy:
     uses: ./.github/workflows/deploy.yml
     with:
