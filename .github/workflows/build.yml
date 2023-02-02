@@ -91,7 +91,7 @@ jobs:
       id: langtags
       run: |
         make SLDR=unflat FLATDIR=flat test
-        echo "::set-output name=need_commit::$(git diff -wU0 pub/langtags.json | grep '^+ ' | grep -v '\"date\":' | wc -l)"
+        echo "need_commit=$(git diff -wU0 pub/langtags.json | grep '^+ ' | grep -v '\"date\":' | wc -l)" >> $GITHUB_OUTPUT
 #    - name: Commit built langtags
 #      if: steps.langtags.output.need_commit != 0
 #      uses: EndBug/add-and-commit@v5
