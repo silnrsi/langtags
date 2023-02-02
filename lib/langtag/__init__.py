@@ -214,9 +214,9 @@ class LangTags(with_metaclass(_Singleton)):
             self._info[t[1:]] = d
         elif t != "":
             s = TagSet(**d)
-            for l in s.allTags():
+            for l in s.allTags(use639=False):
                 self._tags[str(l).lower()] = s
-            for l in s.allTags():
+            for l in s.allTags(use639=False):
                 if l.lang not in self._tags:
                     self._extralangs.add(l.lang)
                 else:
@@ -234,6 +234,7 @@ class LangTags(with_metaclass(_Singleton)):
             self._regions[r] = rn
 
     def test(self, lt):
+        '''Conformance testing for a language tag'''
         if lt.lang not in self._tags and lt.lang not in self._extralangs:
             return False
         if lt.script is not None and lt.script not in self._allscripts:
@@ -249,6 +250,7 @@ class LangTags(with_metaclass(_Singleton)):
         return self._tags.values()
 
     def region(self, reg):
+        '''Return the name of a region code'''
         return self._regions.get(reg, "")
 
     def _getwithvars(self, l, vs, use639=False):
@@ -475,16 +477,17 @@ class TagSet:
             t = l._replace(lang=self.tag.lang)
             return self.matched(t)
 
-    def allTags(self):
+    def allTags(self, use639=True):
         '''Returns a list of all the LangTags in this set, as LangTag objects.
             Not necessarily every tag that matches is included. But all the
             tags excluding those with regions in the .regions list of extra
             regions matched by this TagSet. This includes ISO639-3 equivalents.'''
         res = [self.tag, self.full]
         res.extend(self.tags)
-        i639 = getattr(self, '_iso639_3', self.tag.lang)
-        if i639 != self.tag.lang:
-            res.extend([l._replace(lang=i639) for l in res])
+        if use639:
+            i639 = getattr(self, '_iso639_3', self.tag.lang)
+            if i639 != self.tag.lang:
+                res.extend([l._replace(lang=i639) for l in res])
         return res
 
     def _make_variant(self, vs):
