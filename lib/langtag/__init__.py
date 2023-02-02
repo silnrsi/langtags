@@ -83,6 +83,11 @@ class LangTag(namedtuple('LangTag', ['lang', 'script', 'region', 'vars', 'ns']))
                 return False
         return True
 
+    def test(self, fname=None, **kw):
+        ''' Test for conformance (not existence in the database) of this language tag '''
+        lts = LangTags(fname=fname, **kw)
+        return lts.test(self)
+
 
 def langtag(s):
     '''Parses string to make a LangTag named tuple with properties: lang, script,
@@ -102,7 +107,7 @@ def langtag(s):
     # extlangs
     i = 0
     if len(lang) < 4 and i < 3:
-        while len(bits[curr]) == 3:
+        while len(bits[curr]) == 3 and not re.match(f"\d{3}", bits[curr]):
             lang += "-" + bits[curr]
             curr += 1
             i += 1
@@ -163,6 +168,10 @@ class LangTags(with_metaclass(_Singleton)):
         self._iso639s = {}
         self._info = {}
         self._regions = {}      # collect region names from json
+        self._allscripts = set()
+        self._allregions = set()
+        self._allvariants = set()
+        self._extralangs = set()
         inf = None
         if fname is None:
             try:
@@ -193,24 +202,47 @@ class LangTags(with_metaclass(_Singleton)):
             inf.close()
         else:
             raise IOError("Unable to load {}".format(fname))
+        if 'conformance' in self._info:
+            self._allregions.update(self._info['conformance'].get('regions', []))
+            self._allscripts.update(self._info['conformance'].get('scripts', []))
 
     def addSet(self, d):
         '''Adds a TagSet to this collection'''
         t = d.get('tag', '')
+        self._allvariants.update(d.get('variants', []))
         if t.startswith("_"):
             self._info[t[1:]] = d
         elif t != "":
             s = TagSet(**d)
             for l in s.allTags():
                 self._tags[str(l).lower()] = s
-            if 'iso639_3' in d:
+            for l in s.allTags():
+                if l.lang not in self._tags:
+                    self._extralangs.add(l.lang)
+                else:
+                    self._extralangs.discard(l.lang)
+            if 'iso639_3' in d and d['iso639_3'] != s.lang:
                 for l in s.allTags():
                     ll = l._replace(lang=d['iso639_3'])
                     self._iso639s[str(ll).lower()] = s
         r = d.get('region', '')
+        self._allregions.add(r)
+        self._allregions.update(d.get('regions', []))
+        self._allscripts.add(d.get('script', ''))
         rn = d.get('regionname', '')
         if r != '' and rn != '':
             self._regions[r] = rn
+
+    def test(self, lt):
+        if lt.lang not in self._tags and lt.lang not in self._extralangs:
+            return False
+        if lt.script is not None and lt.script not in self._allscripts:
+            return False
+        if lt.region is not None and lt.region not in self._allregions and not re.match(r"\d{3}", lt.region):
+            return False
+        if lt.vars is not None and any(v not in self._allvariants for v in lt.vars):
+            return False
+        return True
 
     def values(self):
         '''Return a list of all the tagsets in this LangTags'''

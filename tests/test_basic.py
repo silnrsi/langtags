@@ -47,6 +47,8 @@ class Basic(unittest.TestCase):
                 self.fail("{Lang_Id} has different lang to {likely_subtag} ({0} != {1})".format(l.lang, t.lang, **r))
             if t.lang not in self.iana.language and "-" not in t.lang and t.lang not in self.extraLangs:
                 self.fail("{Lang_Id} lang not in IANA".format(**r))
+            if not l.test():
+                self.fail("{Lang_Id} failed conformance check".format(**r))
 
     def test_region(self):
         ''' Test that region values are sensible and that they equal the default region.
