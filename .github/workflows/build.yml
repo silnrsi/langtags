@@ -1,6 +1,25 @@
-name: Build and test langtags.json
+name: Build
 on:
-  workflow_call:
+  push:
+    paths:
+      - .github/workflows/**
+      - bin/ltdb2alltags
+      - bin/jsonlangtagstotxt
+      - lib/**
+      - source/**
+      - tests/**
+      - Makefile
+      - setup.py
+  pull_request:
+    paths:
+      - .github/workflows/**
+      - bin/ltdb2alltags
+      - bin/jsonlangtagstotxt
+      - lib/**
+      - source/**
+      - tests/**
+      - Makefile
+      - setup.py
     
 jobs:
   build:
