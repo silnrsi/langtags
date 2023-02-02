@@ -1,143 +1,17 @@
-name: Build and deploy langtags for staging
+name: Deploy langtags.json for staging
 
 on:
-  push:
-    branches: [ master ]
-    paths:
-      - .github/workflows/**
-      - bin/ltdb2alltags
-      - bin/jsonlangtagstotxt
-      - lib/**
-      - source/**
-      - tests/**
-      - Makefile
-      - setup.py
-  pull_request:
-    branches: [ master ]
-    paths:
-      - .github/workflows/**
-      - bin/ltdb2alltags
-      - bin/jsonlangtagstotxt
-      - lib/**
-      - source/**
-      - tests/**
-      - Makefile
-      - setup.py
+  workflow_run:
+    workflows: [Build]
+    types: [completed]
+    branches: [master]
+
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/setup-python@v2
-      with:
-        python-version: '3.x'
-    
-    # Checkout the source
-    - uses: actions/checkout@v2
-
-    # Fetch and install the tooling
-    - uses: actions/checkout@v2
-      with:
-        repository: silnrsi/sldrtools
-        path: sldrtools
-    - uses: actions/checkout@v2
-      with:
-        repository: silnrsi/palaso-python
-        path: palaso
-    - run: pip install ./sldrtools ./palaso . six
-
-    # Download the external artefact dependencies
-    - name: Find latest SLDR dependency
-      uses: actions/github-script@v3
-      id: find-sldr
-      with:
-        script: |
-          const result = await github.actions
-            .listArtifactsForRepo({
-              owner: "silnrsi",
-              repo: "sldr"
-            })
-          console.log(result.data.artifacts[0])
-          return result.data.artifacts[0]
-    - uses: actions/cache@v2
-      id: cached-sldr
-      with:
-        path: |
-          unflat
-          flat
-        key: sldr-${{fromJSON(steps.find-sldr.outputs.result).id}}
-    - name: Download and extract SLDR dependency
-      if: steps.cached-sldr.outputs.cache-hit != 'true'
-      run: |
-        wget --quiet --header "Authorization: token ${{secrets.GITHUB_TOKEN}}"  ${{fromJSON(steps.find-sldr.outputs.result).archive_download_url}} -O sldr.zip
-        unzip -q sldr.zip
-        rm sldr.zip
-    
-    # Build it
-    - name: Generate langtags
-      run: |
-        make SLDR=unflat FLATDIR=flat build
-    - uses: actions/upload-artifact@v2
-      with:
-        name: langtags
-        path: |
-          pub/**
-
-  test:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/setup-python@v2
-      with:
-        python-version: '3.x'
-    - uses: actions/checkout@v2
-
-    # Fetch and install the tooling
-    - uses: actions/checkout@v2
-      with:
-        repository: silnrsi/sldrtools
-        path: sldrtools
-    - uses: actions/checkout@v2
-      with:
-        repository: silnrsi/palaso-python
-        path: palaso
-    - run: pip install ./sldrtools ./palaso . six
-    
-    # Download the artefact
-    - uses: actions/download-artifact@v2
-      with:
-        name: langtags
-        path: pub
-
-    # Test it.
-    - name: Test langtags
-      id: langtags
-      run: |
-        make SLDR=unflat FLATDIR=flat test
-        echo "::set-output name=need_commit::$(git diff -wU0 pub/langtags.json | grep '^+ ' | grep -v '\"date\":' | wc -l)"
-#    - name: Commit built langtags
-#      if: steps.langtags.output.need_commit != 0
-#      uses: EndBug/add-and-commit@v5
-#      with:
-#        message: "GitHub Actions updated pub"
-#        add: "pub/*"
-#      env:
-#        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-
   deploy:
     needs: test
-    runs-on: ubuntu-latest
-    env:
-      STAGE: staging
-      RSYNC_OPTS: -aP --no-p --no-g --no-t --compress --del -e "ssh -o StrictHostKeyChecking=no"
-    steps:
-    # Install our private key for uploading deliverable
-    - uses: webfactory/ssh-agent@v0.5.0
-      with:
-        ssh-private-key: ${{secrets.UPLOADER_SSH_KEY}}
-    # Download the artefact
-    - uses: actions/download-artifact@v2
-      with:
-        name: langtags
-    # Upload results
-    - name: Upload langtags to /sites/s/data/${{env.STAGE}}
-      run: rsync ${{env.RSYNC_OPTS}} langtags.{json,txt} ${{secrets.UPLOAD_TARGET}}/sites/s/data/${{env.STAGE}}/
+    uses: ./.github/workflows/deploy.yml
+    with:
+      path: staging
+    secrets:
+      uploader_key: ${{ secrets.UPLOADER_SSH_KEY }}
+      server_address: ${{ secrets.UPLOAD_TARGET }}

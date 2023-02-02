@@ -1,0 +1,102 @@
+name: Build
+on:
+  push:
+    paths:
+      - .github/workflows/**
+      - bin/ltdb2alltags
+      - bin/jsonlangtagstotxt
+      - lib/**
+      - source/**
+      - tests/**
+      - Makefile
+      - setup.py
+  pull_request:
+    paths:
+      - .github/workflows/**
+      - bin/ltdb2alltags
+      - bin/jsonlangtagstotxt
+      - lib/**
+      - source/**
+      - tests/**
+      - Makefile
+      - setup.py
+    
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+    - run: pip install . \
+          git+https://github.com/silnrsi/{sldrtools#sldrtools,palaso-python#palaso} \
+          six
+
+    - name: Find latest SLDR dependency
+      uses: actions/github-script@v6
+      id: find-sldr
+      with:
+        script: |
+          const result = await github.rest.actions
+            .listArtifactsForRepo({
+              owner: "silnrsi",
+              repo: "sldr"
+            })
+          console.log(result.data.artifacts[0])
+          return result.data.artifacts[0]
+    - uses: actions/cache@v3
+      id: cached-sldr
+      with:
+        path: |
+          unflat
+          flat
+        key: sldr-${{fromJSON(steps.find-sldr.outputs.result).id}}
+    - name: Download and extract SLDR dependency
+      if: steps.cached-sldr.outputs.cache-hit != 'true'
+      run: |
+        wget --quiet --header "Authorization: token ${{secrets.GITHUB_TOKEN}}"  ${{fromJSON(steps.find-sldr.outputs.result).archive_download_url}} -O sldr.zip
+        unzip -q sldr.zip
+        rm sldr.zip
+    
+    # Build it
+    - name: Generate langtags
+      run: |
+        make SLDR=unflat FLATDIR=flat build
+    - uses: actions/upload-artifact@v3
+      with:
+        name: langtags
+        path: |
+          pub/**
+
+  test:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+    - run: pip install . \
+          git+https://github.com/silnrsi/{sldrtools#sldrtools,palaso-python#palaso} \
+          six
+
+    - uses: actions/download-artifact@v2
+      with:
+        name: langtags
+        path: pub
+
+    # Test it.
+    - name: Test langtags
+      id: langtags
+      run: |
+        make SLDR=unflat FLATDIR=flat test
+        echo "need_commit=$(git diff -wU0 pub/langtags.json | grep '^+ ' | grep -v '\"date\":' | wc -l)" >> $GITHUB_OUTPUT
+#    - name: Commit built langtags
+#      if: steps.langtags.output.need_commit != 0
+#      uses: EndBug/add-and-commit@v5
+#      with:
+#        message: "GitHub Actions updated pub"
+#        add: "pub/*"
+#      env:
+#        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
