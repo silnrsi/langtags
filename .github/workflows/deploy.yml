@@ -26,4 +26,4 @@ jobs:
         name: langtags
     # Upload results
     - name: Upload langtags to /sites/s/data/${{ inputs.path }}
-      run: echo rsync ${{env.RSYNC_OPTS}} langtags.{json,txt} ${{ secrets.server_address }}/sites/s/data/${{ inputs.path }}/
+      run: rsync ${{env.RSYNC_OPTS}} langtags.{json,txt} ${{ secrets.server_address }}/sites/s/data/${{ inputs.path }}/
