@@ -1,12 +1,32 @@
-name: Deploy langtags.json for staging
-
+name: Deploy langtags.json for production
 on:
-  workflow_run:
-    workflows: [Build]
-    types: [completed]
+  push:
     branches: [release]
+    paths:
+      - .github/workflows/**
+      - bin/ltdb2alltags
+      - bin/jsonlangtagstotxt
+      - lib/**
+      - source/**
+      - tests/**
+      - Makefile
+      - setup.py
+  pull_request:
+    branches: [release]
+    paths:
+      - .github/workflows/**
+      - bin/ltdb2alltags
+      - bin/jsonlangtagstotxt
+      - lib/**
+      - source/**
+      - tests/**
+      - Makefile
+      - setup.py    
 
 jobs:
+  build:
+    uses: ./.github/workflows/build.yml
+
   deploy:
     uses: ./.github/workflows/deploy.yml
     with:

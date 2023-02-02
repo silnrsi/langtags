@@ -1,26 +1,6 @@
 name: Build
 on:
-  push:
-    paths:
-      - .github/workflows/**
-      - bin/ltdb2alltags
-      - bin/jsonlangtagstotxt
-      - lib/**
-      - source/**
-      - tests/**
-      - Makefile
-      - setup.py
-  pull_request:
-    paths:
-      - .github/workflows/**
-      - bin/ltdb2alltags
-      - bin/jsonlangtagstotxt
-      - lib/**
-      - source/**
-      - tests/**
-      - Makefile
-      - setup.py
-    
+  workflow_call:
 jobs:
   build:
     runs-on: ubuntu-latest
