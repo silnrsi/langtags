@@ -71,16 +71,19 @@ class CachedFile:
         except OSError:
             ctime = 0
         if ctime == 0 and self.srcdir is not None:
-            shutil.copy2(os.path.join(self.srcdir, self.filename), self.cname)
-            ctime = os.path.getmtime(self.cname)
+            srcfile = os.path.join(self.srcdir, self.filename)
+            if os.path.exists(srcfile):
+                shutil.copy2(srcfile, self.cname)
+                ctime = os.path.getmtime(self.cname)
         return ctime
 
     def get_latest(self):
         ctime = self._get_ctime()
+        srcfile = os.path.join(self.srcdir, self.filename)
         if self.url and get_newurl(self.url, ctime, self.cname):
             pass
-        elif self.srcdir and os.path.getmtime(os.path.join(self.srcdir, self.filename)) > ctime:
-            shutil.copy2(os.path.join(self.srcdir, self.filename), self.cname)
+        elif self.srcdir and os.path.exists(srcfile) and os.path.getmtime(srcfile) > ctime:
+            shutil.copy2(srcfile, self.cname)
         return self.cname
 
 if __name__ == '__main__':
