@@ -18,7 +18,7 @@ except ImportError:
 class _DefaultErrorHandler(urlreq.HTTPDefaultErrorHandler):
     def http_error_default(self, req, fp, code, msg, hdrs):
         result = urlreq.HTTPError(req.get_full_url(), code, msg, hdrs, fp)
-        result.status = code
+        # result.status = code
         return result
 
 def get_newurl(url, gmsec, target):
@@ -47,7 +47,7 @@ def get_newurl(url, gmsec, target):
     if data is not None and target is not None:
         with open(target, "wb") as outf:
             outf.write(data)
-    return True
+    return data is not None
 
 class CachedFile:
     def __init__(self, filename, srcdir=None, url=None, prefix=None):
@@ -84,6 +84,8 @@ class CachedFile:
             pass
         elif self.srcdir and os.path.exists(srcfile) and os.path.getmtime(srcfile) > ctime:
             shutil.copy2(srcfile, self.cname)
+        elif not os.path.exists(self.cname):
+            return None
         return self.cname
 
 if __name__ == '__main__':

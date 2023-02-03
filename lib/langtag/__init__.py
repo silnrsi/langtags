@@ -107,7 +107,7 @@ def langtag(s):
     # extlangs
     i = 0
     if len(lang) < 4 and i < 3:
-        while len(bits[curr]) == 3 and not re.match(f"\d{3}", bits[curr]):
+        while len(bits[curr]) == 3 and not re.match(r"\d{3}", bits[curr]):
             lang += "-" + bits[curr]
             curr += 1
             i += 1
@@ -191,8 +191,8 @@ class LangTags(with_metaclass(_Singleton)):
                         useurl = "https://ldml.api.sil.org/langtags.json"
                 self._cachedltags = CachedFile('langtags.json', url=useurl, 
                         srcdir = srcdir, prefix=cachedprefix or "langtag-LangTags")
-                fname = self._cachedltags.get_latest()
-        if inf is None:
+            fname = self._cachedltags.get_latest()
+        if inf is None and fname is not None:
             try:
                 inf = open(fname, "r")
             except OSError:
