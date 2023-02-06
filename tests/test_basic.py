@@ -5,6 +5,7 @@ import csv, unittest
 from langtag import langtag
 from sldr.iana import Iana
 
+langtagjson = os.path.join(os.path.dirname(__file__), '..', 'pub', 'langtags.json')
 bannedchars = list(range(33, 45)) + [47] + list(range(58, 63)) + [94, 96]
 def nonascii(s):
     cs = [ord(x) for x in s]
@@ -47,7 +48,7 @@ class Basic(unittest.TestCase):
                 self.fail("{Lang_Id} has different lang to {likely_subtag} ({0} != {1})".format(l.lang, t.lang, **r))
             if t.lang not in self.iana.language and "-" not in t.lang and t.lang not in self.extraLangs:
                 self.fail("{Lang_Id} lang not in IANA".format(**r))
-            if not l.test():
+            if not l.test(fname=langtagjson):
                 self.fail("{Lang_Id} failed conformance check".format(**r))
 
     def test_region(self):
