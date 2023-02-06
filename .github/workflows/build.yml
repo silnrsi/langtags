@@ -70,7 +70,7 @@ jobs:
     - name: Test langtags
       id: langtags
       run: |
-        make SLDR=unflat FLATDIR=flat test
+        python3 -m unittest tests.test_basic tests.python.test_python
         echo "need_commit=$(git diff -wU0 pub/langtags.json | grep '^+ ' | grep -v '\"date\":' | wc -l)" >> $GITHUB_OUTPUT
 #    - name: Commit built langtags
 #      if: steps.langtags.output.need_commit != 0
