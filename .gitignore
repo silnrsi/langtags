@@ -6,3 +6,5 @@ temp/
 *.egg-info/
 build/
 *.sw?
+unflat
+flat
