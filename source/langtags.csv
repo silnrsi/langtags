@@ -1573,7 +1573,7 @@ cma,cma-Latn-VN,Maa,VN,,,,,,,,SEA,cma,NMC,4-Dec-2017,
 cme,cme-Latn-BF,Cerma,BF CI,,,02474 08671 08672 08673 08674,,,,,WAF,cme,,,
 cmg,cmg-Mong-MN,Classical Mongolian,MN,,,,,,,,,cmg,,,
 cmg-Soyo,cmg-Soyo-MN,Classical Mongolian,MN,,,,,,,,,cmg,CLDR,,Historical
-cmb-Zanb,cmg-Zanb-MN,Classical Mongolian,MN,,,,,,,,,cmg,CLDR,,Historical
+cmg-Zanb,cmg-Zanb-MN,Classical Mongolian,MN,,,,,,,,,cmg,CLDR,,Historical
 cmi,cmi-Latn-CO,Emberá-Chamí,CO,,,,,,,,SAM,cmi,LE,9-Jan-2018,
 cmk,cmk-Latn-US,Chemakum,US,,,,xch,,,xch,NAM,xch,,,Extinct
 cml,cml-Latn-ID,Campalagian,ID,,,,,1,,,SEA,cml,,,
