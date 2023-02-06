@@ -2,7 +2,6 @@
 
 import unittest, os, re
 from xml.etree import ElementTree as et
-from sldr.langtags_full import LangTags, LangTag
 from langtag import lookup, langtag, LangTags
 
 def isnotint(s):

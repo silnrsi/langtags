@@ -182,8 +182,11 @@ class LangTags(with_metaclass(_Singleton)):
             except FileNotFoundError:
                 pass
             if inf is None:
-                for srcdir in [os.path.join(os.path.dirname(__file__)),
-                               os.path.join(os.path.dirname(__file__), '..', '..', 'pub')]:
+                srchpath = [os.path.join(os.path.dirname(__file__))]
+                envpath = os.getenv("LANGTAGSPATH", None)
+                if envpath is not None:
+                    srchpath.insert(0, envpath)
+                for srcdir in srchpath:
                     if os.path.exists(os.path.join(srcdir, 'langtags.json')):
                         break
                 else:

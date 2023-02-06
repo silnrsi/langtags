@@ -3,7 +3,6 @@
 
 import unittest, os, re, json
 from xml.etree import ElementTree as et
-from sldr.langtags_full import LangTags, LangTag
 from itertools import product
 
 langtagjson = os.path.join(os.path.dirname(__file__), '..', 'pub', 'langtags.json')
