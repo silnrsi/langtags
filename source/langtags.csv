@@ -464,7 +464,7 @@ asn,asn-Latn-BR,Asurini of Xingú,BR,,,,,1,,,SAM,asn,LE,9-Jan-2018,
 aso,aso-Latn-PG,Dano,PG,,,00455,,,,,MEL,aso,LE,10-Jan-2018,
 asp,asp-Zxxx-DZ,Algerian Sign Language,DZ,,,,,,,,NAF,asp,LE,3-Dec-2018,
 asq,asq-Zxxx-AT,Austrian Sign Language,AT,,,,,,,,WEU,asq,LE,3-Dec-2018,
-asr-Deva,asr-Deva-IN,Asuri,IN,,,04880,,,,,SAS,asr,,,
+asr,asr-Deva-IN,Asuri,IN,,,04880,,,,,SAS,asr,,,
 ass,ass-Latn-CM,Ipulo,CM,,,06228 10932,,,,,MAF,ass,LE,12-Jan-2018,
 ast,ast-Latn-ES,Asturian,ES PT,,,,,,,,SEU,ast,CLDR,,
 asu,asu-Latn-BR,"Asurini, Tocantins",BR,,,,,,,,SAM,asu,LE,9-Jan-2018,
@@ -909,6 +909,7 @@ bkg,bkg-Latn-CF,Buraka,CD CF,,,,,1,,,MAF,bkg,jb,,
 bkh,bkh-Latn-CM,Bakoko,CM,,,,,,,,MAF,bkh,LE,12-Jan-2018,
 bki,bki-Latn-VU,Baki,VU,,,,,,,,MEL,bki,LE,10-Jan-2018,
 bkj,bkj-Latn-CF,Pande,CF,,,,,1,,,MAF,bkj,jb,,
+bkk,bkk-Tibt-IN,Brokskat,IN,,,,,,,,MAF,bkj,le,,
 bkk-Zzzz-x-baltia,bkk-Zzzz-IN-x-baltia,Brokskat,IN,,,,,,,,SAS,bkk,,,
 bkl,bkl-Latn-ID,Berik,ID,,,01174,,,,,SEA,bkl,,20-Apr-2018,
 bkm,bkm-Latn-CM,Kom,CM,,,12162,,,,,MAF,bkm,CLDR,,
@@ -1570,7 +1571,9 @@ clw,clw-Cyrl-RU,Chulym,RU,,,,,1,,,EEU,clw,,,
 cly,cly-Latn-MX,"Chatino, Eastern Highland",MX,,,,,,,,CAM,cly,LE,9-Jan-2018,
 cma,cma-Latn-VN,Maa,VN,,,,,,,,SEA,cma,NMC,4-Dec-2017,
 cme,cme-Latn-BF,Cerma,BF CI,,,02474 08671 08672 08673 08674,,,,,WAF,cme,,,
+cmg,cmg-Mong-MN,Classical Mongolian,MN,,,,,,,,,cmg,,,
 cmg-Soyo,cmg-Soyo-MN,Classical Mongolian,MN,,,,,,,,,cmg,CLDR,,Historical
+cmb-Zanb,cmg-Zanb-MN,Classical Mongolian,MN,,,,,,,,,cmg,CLDR,,Historical
 cmi,cmi-Latn-CO,Emberá-Chamí,CO,,,,,,,,SAM,cmi,LE,9-Jan-2018,
 cmk,cmk-Latn-US,Chemakum,US,,,,xch,,,xch,NAM,xch,,,Extinct
 cml,cml-Latn-ID,Campalagian,ID,,,,,1,,,SEA,cml,,,
@@ -3470,7 +3473,7 @@ kcu,kcu-Latn-TZ,Kami,TZ,,,,,1,,,EAF,kcu,,,
 kcv,kcv-Latn-CD,Kete,CD,,,01219 01228 01229,,1,,,MAF,kcv,,,
 kcw,kcw-Latn-CD,Kabwari,CD,,,,,1,,,MAF,kcw,,,
 kcx,kcx-Zyyy-ET,Kachama-Ganjule,ET,,,11267,,1,,,EAF,kcx,,,
-kcy-Arab,kcy-Arab-DZ,Korandje,DZ,,,,,1,,,NAF,kcy,,,
+kcy,kcy-Arab-DZ,Korandje,DZ,,,,,1,,,NAF,kcy,,,
 kcz,kcz-Latn-TZ,Konongo,TZ,,,,,1,,,EAF,kcz,,,
 kda,kda-Latn-AU,Worimi,AU,,,,,1,,,ANZ,kda,LE,10-Jan-2018,Extinct
 kdc,kdc-Latn-TZ,Kutu,TZ,,,,,,,,EAF,kdc,LE,5-Apr-2018,
@@ -7930,7 +7933,7 @@ txb,txb-Zyyy-XX,Tokharian B,XX,,,,,,,,???,txb,,,Tocharian script (Brahmi?)
 txb-Mani,txb-Mani-XX,Tokharian B,XX,,,,,,,,???,txb,,,
 txc,txc-Zyyy-XX,Tsetsaut,XX,,,,,,,,???,txc,,,Extinct
 txe,txe-Latn-ID,Totoli,ID,,,,,1,,,SEA,txe,,,
-txg-Tang,txg-Tang-CN,Tangut,CN,,,,,,,,EAS,txg,CLDR,,Ancient
+txg,txg-Tang-CN,Tangut,CN,,,,,,,,EAS,txg,CLDR,,Ancient
 txh,txh-Grek-XX,Thracian,XX,,,,,,,,???,txh,,,Ancient
 txi,txi-Latn-BR,Ikpeng,BR,,,,,1,,,SAM,txi,LE,9-Jan-2018,
 txj,txj-Latn-NG,Tarjumo,NG,,,,,1,,,WAF,txj,,,
@@ -8387,7 +8390,9 @@ wkw,wkw-Latn-AU,Wakawaka,AU,,,,,1,,,ANZ,wkw,LE,10-Jan-2018,Extinct
 wky,wky-Latn-AU,Wangkayutyuru,AU,,,,,1,,,ANZ,wky,LE,10-Jan-2018,Extinct
 wla,wla-Latn-PG,Walio,PG,,,,,1,,,MEL,wla,LE,10-Jan-2018,
 wlc,wlc-Zyyy-KM,"Comorian, Mwali",KM MG RE,,,,,1,,,EAF,wlc,,,
-wle-Arab,wle-Arab-ET,Wolane,ET,,,,,1,,,EAF,wle,LE,,I'm not ready to say this is a default
+wle,wle-Ethi-ET,Wolane,ET,,,,,1,,,EAF,wle,,,Default because related to Silte
+wle-Latn,wle-Latn-ET,Wolane,ET,,,,,1,,,EAF,wle,,,
+wle-Arab,wle-Arab-ET,Wolane,ET,,,,,1,,,EAF,wle,,,LE: No idea where Arab came from
 wlg,wlg-Latn-AU,Kunbarlang,AU,,,,,1,,,ANZ,wlg,LE,10-Jan-2018,
 wlh,wlh-Latn-TL,Welaun,ID TL,,,,,,,,SEA,wlh,,,
 wli,wli-Latn-ID,Waioli,ID,,,,,1,,,SEA,wli,,,
