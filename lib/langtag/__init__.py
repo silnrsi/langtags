@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 '''Langtags processing module
 
 SYNOPSIS:
@@ -32,7 +32,7 @@ l = langtag('en-Latn')
 # OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
 # SUCH DAMAGE.
 
-import json, os, site, re
+import json, os, re
 from six import with_metaclass
 from collections import namedtuple
 from copy import deepcopy
@@ -162,7 +162,7 @@ class LangTags(with_metaclass(_Singleton)):
 
     matchRegions = False
 
-    def __init__(self, fname=None, useurl=None, cachedprefix="", **kw):
+    def __init__(self, fname=None, useurl=None, cachedprefix=None, **kw):
         '''fname is an optional langtags.json file'''
         self._tags = {}
         self._iso639s = {}
@@ -173,33 +173,30 @@ class LangTags(with_metaclass(_Singleton)):
         self._allvariants = set()
         self._extralangs = set()
         inf = None
-        if fname is None:
+
+        envpath = os.getenv("LANGTAGSPATH", None)
+        if envpath is not None:
+            fname = envpath
+        if fname is not None:
+            inf = open(fname)
+        else:
+            from importlib import resources
+
+            def open_through_cache(srcpath=None):
+                self._cachedltags = CachedFile('langtags.json', 
+                        url=useurl, 
+                        srcpath = srcpath, 
+                        prefix=cachedprefix or "langtag-LangTags",
+                        stale_period=604800) # One week
+                return self._cachedltags.open()
+
+            if useurl is None:
+                useurl = "https://ldml.api.sil.org/langtags.json"
             try:
-                import pkg_resources
-                inf = pkg_resources.resource_stream("langtag", "langtags.json")
-            except ImportError:
-                pass
+                with resources.as_file(resources.files(__name__) / 'langtags.json') as srcpath:
+                    inf = open_through_cache(srcpath)
             except FileNotFoundError:
-                pass
-            if inf is None:
-                srchpath = [os.path.join(os.path.dirname(__file__))]
-                envpath = os.getenv("LANGTAGSPATH", None)
-                if envpath is not None:
-                    srchpath.insert(0, envpath)
-                for srcdir in srchpath:
-                    if os.path.exists(os.path.join(srcdir, 'langtags.json')):
-                        break
-                else:
-                    if useurl is None:
-                        useurl = "https://ldml.api.sil.org/langtags.json"
-                self._cachedltags = CachedFile('langtags.json', url=useurl, 
-                        srcdir = srcdir, prefix=cachedprefix or "langtag-LangTags")
-            fname = self._cachedltags.get_latest()
-        if inf is None and fname is not None:
-            try:
-                inf = open(fname, "r")
-            except OSError:
-                inf = None
+                inf = open_through_cache()
         if inf is not None:
             data = json.load(inf, object_hook=self.addSet)
             inf.close()

@@ -39,7 +39,7 @@ def get_newurl(url, gmsec, target):
     return data is not None
 
 class CachedFile:
-    def __init__(self, filename, srcpath=None, url=None, prefix=None, stale_period=0):
+    def __init__(self, filename, srcpath=None, url=None, prefix=None, stale_period=24*3600):
         self.url = url
         self.filename = filename
         self.srcpath = srcpath
