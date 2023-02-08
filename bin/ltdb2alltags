@@ -519,7 +519,7 @@ conformance['scripts'] = sorted(extrascripts - usedscripts)
 res.append({'tag': '_globalvar', 'variants': ['simple']})
 res.append({'tag': "_phonvar", 'variants': ['alalc97', 'fonipa', 'fonkirsh', 'fonnapa', 'fonupa', 'fonxsamp']})
 res.append(conformance)
-res.append({'tag': "_version", 'api': '1.2.2', 'date': str(datetime.date.today())})
+res.append({'tag': "_version", 'api': '1.3', 'date': str(datetime.date.today())})
 if args.jobs == 1:
     for t in sorted(set(lts.values())):
         r = make_record(t)

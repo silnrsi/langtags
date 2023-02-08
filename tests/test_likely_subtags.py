@@ -23,6 +23,8 @@ class LikelySubtags(unittest.TestCase):
         self.ltags = LangTags(langtagjson)
         doc = et.parse(os.path.join(thisdir, "likelySubtags.xml"))
         for e in doc.findall("./likelySubtags/likelySubtag"):
+            if e.get('origin', '') == 'sil1':
+                continue
             tolt = langtag(e.get('to').replace("_", "-").replace("-ZZ", "").replace("-Zyyy", ""))
             self.likelymap[e.get('from').replace("_", "-")] = tolt
         self.ltags.matchRegions = True

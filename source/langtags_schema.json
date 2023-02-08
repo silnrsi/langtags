@@ -1,5 +1,6 @@
 {
   "$schema": "http://json-schema.org/schema#",
+  "$id": "https://github.com/silnrsi/langtags/raw/master/source/langtags_schema.json",
   "$ref": "#/definitions/langtags",
   "definitions": {
     "langtags": {
@@ -8,7 +9,8 @@
         {"$ref": "#/definitions/langtag"},
         {"$ref": "#/definitions/_globalvar"},
         {"$ref": "#/definitions/_phonvar"},
-        {"$ref": "#/definitions/_version"}
+        {"$ref": "#/definitions/_version"},
+        {"$ref": "#/definitions/_conformance"}
       ] },
       "additionalItems": false
     },
@@ -138,7 +140,7 @@
         },
         "api": {
           "type": "string",
-          "pattern": "^\\d+\\.\\d+\\.\\d+$"
+          "pattern": "^\\d+\\.\\d+(\\.\\d+)?$"
         },
         "date": {
           "type": "string",
@@ -146,6 +148,26 @@
         }
       },
       "required": ["tag", "api", "date"],
+      "additionalProperties": false
+    },
+
+    "_conformance": {
+      "type": "object",
+      "properties": {
+        "tag": {
+          "type": "string",
+          "const": "_conformance"
+        },
+        "regions": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/iso3166_1"}
+        },
+        "scripts": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/iso15924"}
+        }
+      },
+      "required": ["regions", "scripts"],
       "additionalProperties": false
     },
 
