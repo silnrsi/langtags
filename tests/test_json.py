@@ -2,22 +2,17 @@
 
 import os, unittest, json
 
-try:
-    import jsonschema
-except ModuleError:
-    jsonschema = None
-
 schemapath = os.path.join(os.path.dirname(__file__), '..', 'source', 'langtags_schema.json')
 testfile = os.path.join(os.path.dirname(__file__), '..', 'pub', 'langtags.json')
-error_format = "{error.message}"
 
 class JsonSchemaTest(unittest.TestCase):
     ''' Tests that generated JSON conforms to the schema '''
-    def setup(self):
-        if jsonschema is None:
+    def test_jsonschema(self):
+        try:
+            from jsonschema.validators import validator_for
+        except ImportError:
             self.skipTest("Python jsonschema module is missing")
 
-    def test_jsonschema(self):
         with open(schemapath) as inf:
             schema = json.load(inf)
         factory = jsonschema.validators.validator_for(schema)
