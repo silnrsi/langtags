@@ -70,9 +70,3 @@ class CachedFile:
             elif self.srcpath is not None:
                 shutil.copy2(self.srcpath, self.cname)
         return self.cname
-
-if __name__ == '__main__':
-#    t = time.mktime(time.strptime("2019-01-01", "%Y-%m-%d"))
-#    get_newurl('https://ldml.api.sil.org/?query=langtags&ext=json', t, "test.json")
-    myfile = CachedFile('langtags.json', url='https://ldml.api.sil.org/?query=langtags&ext=json', prefix="python-cachingurl-test")
-    print(myfile.get_latest())
