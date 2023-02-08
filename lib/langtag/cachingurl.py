@@ -39,7 +39,7 @@ def get_newurl(url, gmsec, target):
     ce = response.info().get('Content-Encoding')
     if ce == 'gzip':
         data = decompress(response.read())
-    elif ce == 'deflate' or ce == 'identity':
+    elif ce == 'deflate' or ce is None:
         data = response.read()
     else:
         data = None
