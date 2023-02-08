@@ -1,19 +1,8 @@
 
-import time, os, shutil, site
-try:
-    import urllib.request as urlreq
-except ImportError:
-    import urllib2 as urlreq
-
-try:
-    from gzip import decompress
-except ImportError:
-    from gzip import GzipFile
-    from StringIO import StringIO
-
-    def decompress(dat):
-        inf = StringIO(dat)
-        return GzipFile(fileobj=inf).read()
+import time, shutil, site
+import urllib.request as urlreq
+from pathlib import Path
+from gzip import GzipFile
 
 class _DefaultErrorHandler(urlreq.HTTPDefaultErrorHandler):
     def http_error_default(self, req, fp, code, msg, hdrs):
@@ -38,54 +27,48 @@ def get_newurl(url, gmsec, target):
         return False
     ce = response.info().get('Content-Encoding')
     if ce == 'gzip':
-        data = decompress(response.read())
+        data = GzipFile(response)
     elif ce == 'deflate' or ce is None:
-        data = response.read()
+        data = response
     else:
         data = None
 
     if data is not None and target is not None:
-        with open(target, "wb") as outf:
-            outf.write(data)
+        with open(target, "wb") as target:
+            shutil.copyfileobj(data, target)
     return data is not None
 
 class CachedFile:
-    def __init__(self, filename, srcdir=None, url=None, prefix=None):
+    def __init__(self, filename, srcpath=None, url=None, prefix=None, stale_period=0):
         self.url = url
         self.filename = filename
-        self.srcdir = srcdir
-        udir = site.getuserbase()
-        self.prefix = prefix if prefix is not None else "python-cachingurl"
-        upath = os.path.join(udir, self.prefix)
-        if not os.path.exists(upath):
-            os.makedirs(upath)
-        self.cname = os.path.join(upath, filename)
+        self.srcpath = srcpath
+        self.stale = stale_period
+        prefix = prefix or "python-cachingurl"
+        upath = Path(site.getuserbase()) / prefix
+        upath.mkdir(exist_ok=True)
+        self.cname = upath / filename
 
     def open(self, *a, **kw):
         fname = self.get_latest()
-        return open(fname, *a, **kw)
-
+        return fname.open(*a, **kw)
+        
     def _get_ctime(self):
         try:
-            ctime = os.path.getmtime(self.cname)
+            return self.cname.stat().st_mtime
         except OSError:
-            ctime = 0
-        if ctime == 0 and self.srcdir is not None:
-            srcfile = os.path.join(self.srcdir, self.filename)
-            if os.path.exists(srcfile):
-                shutil.copy2(srcfile, self.cname)
-                ctime = os.path.getmtime(self.cname)
-        return ctime
+            try:
+                return 0 if self.srcpath is None else self.srcpath.stat().st_mtime
+            except OSError:
+                return 0
 
     def get_latest(self):
         ctime = self._get_ctime()
-        srcfile = os.path.join(self.srcdir, self.filename)
-        if self.url and get_newurl(self.url, ctime, self.cname):
-            pass
-        elif self.srcdir and os.path.exists(srcfile) and os.path.getmtime(srcfile) > ctime:
-            shutil.copy2(srcfile, self.cname)
-        elif not os.path.exists(self.cname):
-            return None
+        if time.time() - ctime > self.stale:
+            if self.url and get_newurl(self.url, ctime, self.cname):
+                pass
+            elif self.srcpath is not None:
+                shutil.copy2(self.srcpath, self.cname)
         return self.cname
 
 if __name__ == '__main__':
