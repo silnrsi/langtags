@@ -1,6 +1,6 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 
-import os, unittest, json
+import os, unittest, json, warnings
 
 schemapath = os.path.join(os.path.dirname(__file__), '..', 'source', 'langtags_schema.json')
 testfile = os.path.join(os.path.dirname(__file__), '..', 'pub', 'langtags.json')
@@ -15,14 +15,16 @@ class JsonSchemaTest(unittest.TestCase):
 
         with open(schemapath) as inf:
             schema = json.load(inf)
-        factory = jsonschema.validators.validator_for(schema)
+        with warnings.catch_warnings():
+            warnings.simplefilter("ignore")
+            factory = validator_for(schema)
         validator = factory(schema=schema)
         validator.check_schema(schema)
         errors = []
         with open(testfile) as inf:
             testdata = json.load(inf)
         for error in validator.iter_errors(testdata):
-            errors.append(error_format.format(error=error))
+            errors.append(error.message)
         if len(errors):
             self.fail("\n".join(errors))
 
