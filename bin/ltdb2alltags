@@ -482,7 +482,8 @@ def make_record(t):
     if not len(n.get('iso639_3', "fred")):
         del n['iso639_3']
     if t.region is not None:
-        regions.remove(t.region)
+        regions.discard(t.region)
+    regions.discard('XX')
     testtag = re.sub('-[A-Z]{2}(?:-|$)', '-{}', n['full'])
     regions = [r for r in regions if testtag.format(r) not in lts]
     if len(regions):
