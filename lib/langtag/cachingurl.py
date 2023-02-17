@@ -46,7 +46,7 @@ class CachedFile:
         self.stale = stale_period
         prefix = prefix or "python-cachingurl"
         upath = Path(site.getuserbase()) / prefix
-        upath.mkdir(exist_ok=True)
+        upath.mkdir(exist_ok=True, parents=True)
         self.cname = upath / filename
 
     def open(self, *a, **kw):
