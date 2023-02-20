@@ -21,8 +21,9 @@ on:
       - source/**
       - tests/**
       - Makefile
-      - setup.py    
-
+      - setup.py
+  repository_dispatch:
+    types: [sldr-deployed]
 jobs:
   build:
     uses: ./.github/workflows/build.yml
