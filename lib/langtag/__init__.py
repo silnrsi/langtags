@@ -99,14 +99,14 @@ def langtag(s):
 
     # lang component
     lang = None
-    if 1 < len(bits[curr]) < 8 or (bits[curr] == "x" and len(bits) > 1):
+    if 1 < len(bits[curr]) < 4 or (bits[curr] in "ix" and len(bits) > 1):    # 4-8 is valid but not assigned yet
         lang = bits[curr].lower()
         curr += 1
     if curr >= len(bits): return LangTag(lang, None, None, None, None)
 
     # extlangs
     i = 0
-    if len(lang) < 4 and i < 3:
+    if lang is not None and len(lang) < 4 and i < 3:
         while len(bits[curr]) == 3 and not re.match(r"\d{3}", bits[curr]):
             lang += "-" + bits[curr]
             curr += 1
@@ -148,6 +148,8 @@ def langtag(s):
         else:
             raise SyntaxError(f"Malformed extension [{bits[curr]}] in {ns}- in {s}")
         curr += 1
+    if curr != len(bits):
+        raise SyntaxError(f"Malformed tag with remaining [{'-'.join(bits[curr:])}] in {s}")
     return LangTag(lang, script, region, (variants if len(variants) else None),
                     (extensions if len(extensions) else None))
 
