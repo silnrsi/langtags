@@ -10,6 +10,9 @@ on:
         required: true
       server_address:
         required: true
+      repository_dispatch_pat:
+        required: true
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -27,3 +30,18 @@ jobs:
     # Upload results
     - name: Upload langtags to /sites/s/data/${{ inputs.path }}
       run: rsync ${{env.RSYNC_OPTS}} langtags.{json,txt} ${{ secrets.server_address }}/sites/s/data/${{ inputs.path }}/
+
+  dispatch:
+    runs-on: ubuntu-latest
+    needs: deploy
+    steps:
+    - name: Trigger findafont rebuild
+      uses: peter-evans/repository-dispatch@v2
+      with:
+        token: ${{ secrets.repository_dispatch_pat }}
+        repository: silnrsi/findafont
+        event-type: langtags-deployed
+        client-payload: >- 
+          {
+            "release": "${{ endsWith(github.ref, '/release') }}"
+          }
