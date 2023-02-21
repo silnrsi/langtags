@@ -26,6 +26,7 @@ on:
     types: [sldr-deployed]
 jobs:
   build:
+    if: github.event_name != 'repository_dispatch' || github.event.client_payload.release 
     uses: ./.github/workflows/build.yml
 
   deploy:
