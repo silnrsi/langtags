@@ -52,21 +52,21 @@ class CachedFile:
     def open(self, *a, **kw):
         fname = self.get_latest()
         return fname.open(*a, **kw)
-        
-    def _get_ctime(self):
+
+    def __get_best_local_copy(self):
         try:
-            return self.cname.stat().st_mtime
+            return self.cname, self.cname.stat().st_mtime
         except OSError:
             try:
-                return 0 if self.srcpath is None else self.srcpath.stat().st_mtime
+                return self.srcpath, self.srcpath and self.srcpath.stat().st_mtime
             except OSError:
-                return 0
+                return None, 0
 
     def get_latest(self):
-        ctime = self._get_ctime()
+        cpath, ctime = self.__get_best_local_copy()
         if time.time() - ctime > self.stale:
             if self.url and get_newurl(self.url, ctime, self.cname):
-                pass
-            elif self.srcpath is not None:
-                shutil.copy2(self.srcpath, self.cname)
-        return self.cname
+                cpath = self.cname
+            else:
+                cpath = self.srcpath or self.cname
+        return cpath
