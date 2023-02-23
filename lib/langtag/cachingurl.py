@@ -57,14 +57,11 @@ class CachedFile:
         try:
             return self.cname, self.cname.stat().st_mtime
         except OSError:
-            try:
-                return self.srcpath, self.srcpath and self.srcpath.stat().st_mtime
-            except OSError:
-                return None, 0
+            return self.srcpath, self.srcpath.stat().st_mtime if self.srcpath else 0 
 
     def get_latest(self):
         cpath, ctime = self.__get_best_local_copy()
-        if time.time() - ctime > self.stale:
+        if cpath is None or time.time() - ctime > self.stale:
             if self.url and get_newurl(self.url, ctime, self.cname):
                 cpath = self.cname
             else:

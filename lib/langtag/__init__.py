@@ -185,12 +185,12 @@ class LangTags(with_metaclass(_Singleton)):
             from importlib import resources
 
             def open_through_cache(srcpath=None):
-                self._cachedltags = CachedFile('langtags.json', 
+                cachedltags = CachedFile('langtags.json', 
                         url=useurl, 
                         srcpath = srcpath, 
                         prefix=cachedprefix or "langtag-LangTags",
                         stale_period=604800) # One week
-                return self._cachedltags.open()
+                return cachedltags.open()
 
             if useurl is None:
                 useurl = "https://ldml.api.sil.org/langtags.json"
