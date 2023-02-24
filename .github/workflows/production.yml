@@ -11,22 +11,10 @@ on:
       - tests/**
       - Makefile
       - setup.py
-  pull_request:
-    branches: [release]
-    paths:
-      - .github/workflows/**
-      - bin/ltdb2alltags
-      - bin/jsonlangtagstotxt
-      - lib/**
-      - source/**
-      - tests/**
-      - Makefile
-      - setup.py
   repository_dispatch:
-    types: [sldr-deployed]
+    types: [sldr-release-deployed]
 jobs:
   build:
-    if: github.event_name != 'repository_dispatch' || github.event.client_payload.release 
     uses: ./.github/workflows/build.yml
 
   deploy:
