@@ -183,10 +183,10 @@ ahg = ahg-ET = ahg-Ethi = ahg-Ethi-ET
 ahh = ahh-ID = ahh-Latn = ahh-Latn-ID
 ahi = ahi-CI = ahi-Latn = ahi-Latn-CI
 ahk = ahk-Latn = ahk-MM = ahk-Latn-MM
-ahk-Latn-x-louma = ahk-LA-x-louma = ahk-Latn-LA-x-louma
 ahk-Mymr = ahk-Mymr-MM
 ahk-TH = ahk-Latn-TH
 ahk-Thai = ahk-Thai-TH
+ahk-x-louma = ahk-LA-x-louma = ahk-Latn-x-louma = ahk-Latn-LA-x-louma
 *ahl = ahl-Latn = ahl-TG = ahl-Latn-TG
 ahm = ahm-CI = ahm-Latn = ahm-Latn-CI
 ahn = ahn-Latn = ahn-NG = ahn-Latn-NG
@@ -4075,6 +4075,8 @@ ksu = ksu-IN = ksu-Mymr = ksu-Mymr-IN
 ksv = ksv-CD = ksv-Latn = ksv-Latn-CD
 ksw = ksw-MM = ksw-Mymr = ksw-Mymr-MM
 ksw-Latn = ksw-Latn-MM
+ksw-TH = ksw-Mymr-TH
+ksw-Thai = ksw-Thai-TH
 ksx = ksx-ID = ksx-Latn = ksx-Latn-ID
 ksy = ksy-IN = ksy-Zyyy = ksy-Zyyy-IN
 ksz = ksz-Deva = ksz-IN = ksz-Deva-IN
@@ -8001,7 +8003,6 @@ tvt = tvt-IN = tvt-Latn = tvt-Latn-IN
 tvw = tvw-ID = tvw-Latn = tvw-Latn-ID
 tvx = tvx-Latn = tvx-TW = tvx-Latn-TW
 tvy = tvy-TL = tvy-Zyyy = tvy-Zyyy-TL
-tw-x-asante = tw-GH-x-asante = tw-Latn-x-asante = tw-Latn-GH-x-asante
 twa = twa-Latn = twa-US = twa-Latn-US
 twb = twb-Latn = twb-PH = twb-Latn-PH
 twc = twc-XX = twc-Zyyy = twc-Zyyy-XX

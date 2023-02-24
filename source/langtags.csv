@@ -184,7 +184,7 @@ ahg,ahg-Ethi-ET,Qimant,ET,,,06725,,,1,,EAF,ahg,,,
 ahh,ahh-Latn-ID,Aghu,ID,,,,,1,,,SEA,ahh,,,
 ahi,ahi-Latn-CI,"Aizi, Tiagbamrin",CI,,,,,1,,,WAF,ahi,,,
 ahk,ahk-Latn-MM,Akha,CN LA MM TH VN,,,,,,,,EAS SEA,ahk,MH,,See (p.5) mentions 10 orthographies! (NMC) https://www.researchgate.net/publication/303365969_The_current_status_of_Akha
-ahk-Latn-x-louma,ahk-Latn-LA-x-louma,Louma,CN LA MM TH VN,,,,,1,,,SEA,ahk,NMC,,"Needs to be it's own iso code, currently lumpped under Akha"
+ahk-x-louma,ahk-Latn-LA-x-louma,Louma,CN LA MM TH VN,,,,,1,,,SEA,ahk,NMC,,"Needs to be it's own iso code, currently lumpped under Akha"
 ahk-Mymr,ahk-Mymr-MM,Akha,CN LA MM TH VN,,,,,,,,EAS SEA,ahk,MH,,
 ahk-TH,ahk-Latn-TH,Akha,CN LA MM TH VN,,,03127,,,,,EAS SEA,ahk,MH,,
 ahk-Thai,ahk-Thai-TH,Akha,CN LA MM TH VN,,,03127,,,,,EAS SEA,ahk,MH,,
@@ -3958,8 +3958,10 @@ kss,kss-Latn-LR,"Kisi, Southern",LR SL,,,12054,,,,,WAF,kss,LE,12-Jan-2018,
 kst,kst-Latn-BF,Winyé,BF,,,,,,,,WAF,kst,,,
 ksu,ksu-Mymr-IN,Khamyang,IN,,,,,,,,SAS,ksu,,,
 ksv,ksv-Latn-CD,Kusu,CD,,,,,1,,,MAF,ksv,,,
-ksw,ksw-Mymr-MM,"Karen, S'gaw",MM TH,,,,,,,,SEA,ksw,NMC,4-Dec-2017,
+ksw,ksw-Mymr-MM,"Karen, S'gaw",MM,,,,,,,,SEA,ksw,NMC,4-Dec-2017,
+ksw-Thai,ksw-Thai-TH,"Karen, S'gaw",MM TH,,,,,,,,SEA,ksw,NMC,4-Dec-2017,
 ksw-Latn,ksw-Latn-MM,"Karen, S'gaw",MM TH,,,,,,1,,SEA,ksw,NMC,4-Dec-2017,
+ksw-TH,ksw-Mymr-TH,"Karen, S'gaw",TH,,,,,,,,SEA,ksw,NMC,4-Dec-2017,
 ksx,ksx-Latn-ID,Kedang,ID,,,,,1,,,SEA,ksx,,,
 ksy-Zyyy,ksy-Zyyy-IN,Kharia Thar,IN,,,,,,,,SAS,ksy,,,
 ksz,ksz-Deva-IN,Kodaku,IN,,,,,,,,SAS,ksz,,,
@@ -7906,7 +7908,6 @@ tvw,tvw-Latn-ID,Sedoa,ID,,,,,,,,SEA,tvw,,20-Apr-2018,
 tvx,tvx-Latn-TW,Taivoan,TW,,,,,,,,EAS,tvx,LE,12-Dec-2018,
 tvy,tvy-Zyyy-TL,"Pidgin, Timor",TL,,,,,,,,SEA,tvy,,,Extinct
 tw,tw-Latn-GH,Twi,GH,akuapem asante,,,ak,,,,WAF,twi,LE CLDR,12-Jan-2018,"Ethnologue handles differently, via macro mapping"
-tw-x-asante,tw-Latn-GH-x-asante,Twi,,,360,,,,,,,twi,,,
 twa,twa-Latn-US,Twana,US,,,,,1,,,NAM,twa,LE,10-Jan-2018,Extinct
 twb,twb-Latn-PH,"Tawbuid, Western",PH,,,,,,,,SEA,twb,,,
 twc,twc-Zyyy-XX,Teshenawa,XX,,,,,,,,???,twc,,,Extinct
