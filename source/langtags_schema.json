@@ -91,7 +91,10 @@
         "windows": {
           "$ref": "#/definitions/bcp47"
         },
-        "rod": { "type": "string"}
+        "rod": { "type": "string"},
+        "macrolang": {
+          "$ref": "#/definitions/bcp47"
+        }
       },
       "required": ["full"],
       "additionalProperties": false

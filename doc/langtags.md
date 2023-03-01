@@ -50,6 +50,7 @@ Langtags.json consists of an array of objects. Each object corresponds to an equ
 - **windows** Windows requires a strict BCP-47 interpretation and requires a script tag unless the suppress script from the IANA registry is the same as the script. This field is always present and may be the same as the **tag** field or one of the values in the **tags** list. \[Added 1.1.1\]
 - **obsolete** If present and true indicates that the language is obsolete \[Added 1.2.1\]
 - **unwritten** If present and true indicates that the language is unwritten. It may still have a non Zyyy script due to regional inference. \[Added 1.2.1\]
+- **macrolang** If present another language tag which is a macro language containing this language. \[Added 1.3.1\]
 
 ### Special tags
 
@@ -101,3 +102,30 @@ Thus a complete list of equivalence sets for bg-Cyrl-GB (with only one of the va
 - bg-ivanchov-simple, bg-BG-ivanchov-simple, bg-Cyrl-ivanchov-simple, bg-Cyrl-BG-ivanchov-simple
 - bg-fonipa-simple, bg-BG-fonipa-simple, bg-Latn-fonipa-simple, bg-Latn-BG-fonipa-simple
 - bg-fonipa-ivanchov-simple, bg-BG-fonipa-ivanchov-simple, bg-Latn-fonipa-ivanchov-simple, bg-Latn-BG-fonipa-ivanchov-simple
+
+### Macro Languages
+
+The language component of a language tag may be from ISO639-1 (when it is a 2
+letter code) or ISO639-3 (when a 3 letter code). When ISO639-3 was created, it
+was designed to incorporate the existing 3 letter coding scheme of ISO639-2. As
+part of the analysis for the creation of ISO639-3, Constable and Simons wrote a
+paper: ["An Analysis of ISO 639: Preparing the way for advancements in language
+identification
+standards"](https://www.ethnologue.com/14/iso639/An_analysis_of_ISO_639.pdf).
+Section 3 of this paper examines a number of issues, in particular the concept
+of Collection codes. These came to be known as macro languages. In summary a
+macro language is a language that is a collection of languages. A language may be
+a member of a macro language.
+
+For many macro languages, there is a representative language for that macro
+language. In many cases the macro language code is more popular than the
+representative langauge code. Thus, for example, in the CLDR, the macro language
+code is used instead of the representative language code. For this reason,
+langtags.json unifies the representative language tags into the macro language
+tag set rather than having a separate tag set for them, and gives the tag for
+the tag set in terms of the macro language rather than the representative
+language.
+
+Other languages that are part of a macro language are given a macrolang field
+identifying the macro language they are part of.
+
