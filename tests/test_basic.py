@@ -15,7 +15,9 @@ def nonascii(s):
 class Basic(unittest.TestCase):
 
     extraScripts = ["Toto", "Vith"]
-    extraLangs = ("000", )
+    extraLangs = ("000", 
+                  "cxh", "dsk", "dyr", "eud", "ikh", "izm", "lgs",      # going in ~23/Mar/2023
+                  'lvl', 'nzr', 'pze', 'rsw', 'tvi', 'uly', 'vjk', 'wtb', 'ycr', 'ykh', 'zem', 'zlu') # going in ~23/Mar/2023
 
     def setUp(self):
         self.fname = os.path.join(os.path.dirname(__file__), '../source/langtags.csv')
@@ -42,14 +44,18 @@ class Basic(unittest.TestCase):
 
     def test_lang(self):
         ''' Tests that all lang subtags are in iana '''
+        fails = []
         for r, t in self._allRows():
             l = langtag(r['Lang_Id'])
             if l.lang != t.lang and "-" not in l.lang and "-" not in t.lang:
                 self.fail("{Lang_Id} has different lang to {likely_subtag} ({0} != {1})".format(l.lang, t.lang, **r))
             if t.lang not in self.iana.language and "-" not in t.lang and t.lang not in self.extraLangs:
-                self.fail("{Lang_Id} lang not in IANA".format(**r))
+                fails.append(r['Lang_Id'])
             if not l.test(fname=langtagjson):
                 self.fail("{Lang_Id} failed conformance check".format(**r))
+        if len(fails):
+            self.fail(f"{fails} langs not in IANA")
+
 
     def test_region(self):
         ''' Test that region values are sensible and that they equal the default region.
