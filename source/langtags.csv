@@ -3492,6 +3492,7 @@ kdf,kdf-Latn-PG,Mamusi,PG,,,,,,,,MEL,kdf,LE,10-Jan-2018,
 kdg,kdg-Latn-CD,Seba,CD,,,,,1,,,MAF,kdg,,,
 kdh,kdh-Latn-TG,Tem,BJ GH TG,,,22304 22401,,,,,WAF,kdh,,,Add CLDR back into confirmed field when adjusted
 kdh-Arab,kdh-Arab-TG,Tem,BJ GH TG,,,22304 22401,,,,,WAF,kdh,,,Add CLDR back into confirmed field when adjusted
+kdh-Brai,kdh-Brai-TG,Tem,BJ GH TG,,,22304 22401,,,,,WAF,kdh,,,
 kdi,kdi-Latn-UG,Kumam,UG,,,,,,,,EAF,kdi,LE,12-Jan-2018,
 kdj,kdj-Latn-UG,Ng'akarimojong,UG,,,,,,,,EAF,kdj,LE,12-Jan-2018,
 kdk,kdk-Latn-NC,Numèè,NC,,,,,1,,,MEL,kdk,LE,10-Jan-2018,
@@ -4487,7 +4488,7 @@ lqr,lqr-Latn-SS,Logir,SS,,,,,1,,,EAF,lqr,,,
 lra,lra-Latn-MY,"Bakati', Rara",ID MY,,,,,,,,SEA,lra,,,
 lrc,lrc-Arab-IR,"Luri, Northern",IR,,,,,,,,SAS,lrc,CLDR,,
 lre,lre-Zyyy-US,Laurentian,CA,,,,,1,,,NAM,lre,LE,10-Jan-2018,Extinct
-lrg,lrg-Latn-AU,Laragia,AU,,,,,1,,,ANZ,lrg,LE,10-Jan-2018,Extinct
+lrg,lrg-Latn-AU,Laragia,AU,,,,,,,,ANZ,lrg,LE,10-Jan-2018,Extinct
 lri,lri-Latn-KE,Olumarachi,KE,,,,,,,,EAF,lri,LE,12-Jan-2018,
 lrk,lrk-Arab-PK,Loarki,PK,,,,,1,,,SAS,lrk,,,
 lrl,lrl-Arab-IR,Lari,IR,,,,,,,,SAS,lrl,,,
