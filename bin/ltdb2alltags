@@ -25,13 +25,13 @@ def read_autonyms(filename):
         rdr = csv.reader(inf)
         next(rdr)
         for row in rdr:
-            lang = row[0]
-            name = row[2]
+            lang = row[0].strip()
+            name = row[2].strip()
             if len(row) > 4:
-                roman = row[4]
+                roman = row[4].strip()
             # handle missing comma after T
             elif len(row) > 3 and row[3].startswith("T"):
-                roman = row[3][1:]
+                roman = row[3][1:].strip()
             else:
                 roman = ""
             script = script_analyze(name)
