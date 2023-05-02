@@ -12,6 +12,8 @@ from palaso.unicode.ucd import UCD
 
 # A useless comment
 
+silns = "urn://www.sil.org/ldml/0.1"
+
 try: unicode
 except NameError:
     unicode = str
@@ -74,7 +76,14 @@ def issimple(testf):
         doc = et.parse(testf)
     except:
         return False
-    return len(doc.getroot()) < 2
+    root = doc.getroot()
+    if len(root) < 2:
+        return True
+    elif len(root) > 2:
+        return False
+    elif root[-1].tag == "special" and all(x.tag.startswith(f"{{{silns}}}") for x in root[-1]):
+        return True
+    return False
 
 def process_cldrentry(s, lts, allentries, root='.'):
     s = s.replace("_", "-")

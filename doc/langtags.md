@@ -34,7 +34,7 @@ Langtags.json consists of an array of objects. Each object corresponds to an equ
 - **variants** A list of variant tag components that may occur with tags in this set. A tag with a variant is not equivalent to other tags in this set.
 - **iso639_3** The ISO639-3 code for the language of the **tag** in this set.
 - **region** Region code, from the full tag, for this set. Conforms to ISO 3166-1.
-- **regions** Other regions that may be used with these tags. A tag from this set with one of the extra regions is not equivalent to other tags in this set, unless they have the same region component. Each conforms to ISO 3166-1
+- **regions** Other regions that may be used with these tags. See the following section on regions list. Each conforms to ISO 3166-1
 - **regionname** The English name for this region taken from the IANA registry.
 - **iana** The IANA names for the language of the canonical tag. Is an array. \[Array added 1.1.1\] \[Always an array 1.2.0\]
 - **name** The name from the Ethnologue names list for the language and region of the full tag. If this does not exist, then any name from the list of names given for this language is used. If this fails to find anything, then the **iana** entry is used. Thus **name** is never empty.
@@ -83,6 +83,28 @@ Holds information to aid in conformance testing for language tags. \[Added 1.2.2
 - Empty fields are not stored in the record.
 - The **tag** and the **full** fields are not stable and may change between versions of the data file. But they will always appear somewhere in the equivalence set. In effect the equivalence set is stable in terms of once something is in it, it is not removed (unless there is an actual fault).
 - A tagset may have an empty **localname** while still having a non empty **localnames**. Likewise the same name may occur as both **localname** and in **localnames**.
+
+### Regions list
+
+Language tags have a number of uses. There are two major uses: orthography
+identification and locale identification. An orthography may be used in multiple
+regions. For example it may be used by a diaspora community. At a locale level,
+though, the use of an orthography in a different region may need to be adapted
+to incorporate region specific locale variation that is based on a different
+regional standard.
+
+For example, consider en-FR. It is considered to have the same orthography as
+en-US, but in France, the week is considered to start on a Monday, while in the
+US it is considered to start on a Sunday. Thus en-FR is orthographically the
+same as en-US, but is different at a locale level.
+
+The tagsets in this database are identifying orthography equivalence. The
+regions list within a tagset gives a list of orthographically equivalent
+regions. But users should be aware that this does not imply a locale
+equivalence. For the purposes of this database, if two tags are from the same
+tagset (including the region being in the region list for the tagset) AND they
+have the same region subtag, then they are considered to be equivalent at the
+locale level.
 
 ### Variants field
 
