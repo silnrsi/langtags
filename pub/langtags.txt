@@ -2142,6 +2142,7 @@ eko-Arab = eko-Arab-MZ
 ekp = ekp-Latn = ekp-NG = ekp-Latn-NG
 ekr = ekr-Latn = ekr-NG = ekr-Latn-NG
 eky = eky-Kali = eky-MM = eky-Kali-MM
+eky-Thai = eky-TH = eky-Thai-TH
 *el = *el-GR = el-Grek = el-Grek-GR
 el-Brai = el-Brai-GR
 el-Cyrl = el-UA = el-Cyrl-UA
@@ -3666,7 +3667,7 @@ kfr-Arab = kfr-PK = kfr-Arab-PK
 kfr-Gujr = kfr-Gujr-IN
 kfs = kfs-Deva = kfs-IN = kfs-Deva-IN
 kft = kft-IN = kft-Zyyy = kft-Zyyy-IN
-kfu = kfu-IN = kfu-Zyyy = kfu-Zyyy-IN
+kfu = kfu-Deva = kfu-IN = kfu-Deva-IN
 kfv = kfv-IN = kfv-Latn = kfv-Latn-IN
 kfw = kfw-IN = kfw-Latn = kfw-Latn-IN
 kfx = kfx-Deva = kfx-IN = kfx-Deva-IN
@@ -6686,6 +6687,7 @@ rmv = rmv-001 = rmv-Zyyy = rmv-Zyyy-001
 rmw = rmw-GB = rmw-Latn = rmw-Latn-GB
 rmx = lmm = lmm-Latn = lmm-Latn-VN = lmm-VN = rmx-Latn = rmx-VN = rmx-Latn-VN
 rmz = rmz-IN = rmz-Mymr = rmz-Mymr-IN
+rmz-Beng = rmz-BD = rmz-Beng-BD
 *rn = *rn-BI = rn-Latn = rn-Latn-BI
 rn-Brai = rn-Brai-BI
 rnb = rnb-CR = rnb-Zxxx = sgn-rnb = sgn-rnb-CR = sgn-rnb-Zxxx = sgn-rnb-Zxxx-CR = rnb-Zxxx-CR
