@@ -106,6 +106,12 @@ tagset (including the region being in the region list for the tagset) AND they
 have the same region subtag, then they are considered to be equivalent at the
 locale level.
 
+With regard to the CLDR, the CLDR includes 'empty' LDML files (only consisting
+of an identity block) for each territory for a given language. Only if such a
+file includes actual content differences is a new tagset created for it. The
+mapping between language and territories may be found in supplementalData at
+`supplementalData/languageData/language[@type="lang"]`.
+
 ### Variants field
 
 The variants field lists different variants that may occur with the tags in the equivalence set. As such, a tag with a variant is in a different equivalence set. Thus bg, bg-BG, bg-Cyrl, bg-Cyrl-BG forms one set and bg-ivanchov, bg-BG-ivanchov, bg-Cyrl-ivanchov, bg-Cyrl-BG-ivanchov forms another. The header record \_globalvar contains a variants field that should be appended to the variants field of every equivalence set. Thankfully this list is short and it may not make semantic sense to use it. Not all languages have a simplified form, but in theory they might. See [IANA simple variant](https://www.iana.org/assignments/lang-subtags-templates/simple.txt) for more details.

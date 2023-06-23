@@ -14,6 +14,12 @@ from palaso.unicode.ucd import UCD
 
 silns = "urn://www.sil.org/ldml/0.1"
 
+hacks = {
+    "aeb-Arab-TN": (lambda n:n['tags'].extend(("aeb-Arab-IL", "ar-aeb-Arab-IL", "ar-aeb-Arab-TN")), lambda n:n['regions'].remove('IL')),
+#    "aeb-Hebr-IL": (lambda n:n['tags'].extend(("ar-aeb-Hebr", "ar-aeb-Hebr-IL")),),
+#    "aeb-Latn-TN": (lambda n:n.setdefault('tags', []).extend(("ar-aeb-Latn", "ar-aeb-Latn-TN")),)
+}
+
 try: unicode
 except NameError:
     unicode = str
@@ -22,6 +28,8 @@ Autonym = namedtuple('Autonym', ['langtag', 'name', 'roman'])
 ucds = UCD()
 
 def read_autonyms(filename):
+    def stripinvisibles(s):
+        return re.sub("[\u200E]", "", s)
     res = {}
     with open(filename) as inf:
         rdr = csv.reader(inf)
@@ -38,7 +46,7 @@ def read_autonyms(filename):
                 roman = ""
             script = script_analyze(name)
             lt = "{}-{}".format(lang, script)
-            a = Autonym(lt, name, roman)
+            a = Autonym(lt, stripinvisibles(name), stripinvisibles(roman))
             res.setdefault(lt, []).append(a)
     return res
 
@@ -181,7 +189,11 @@ parser.add_argument('-M','--macros',help="Use ISO639-3 Macrolanguage mappings fi
 parser.add_argument('-a','--autonyms',help="CSV of Autonyms from Ethnologue")
 parser.add_argument('-q','--quiet',action='store_false',default=True,help='Be noisy')
 parser.add_argument('-j','--jobs',type=int,default=0,help='Number of parallel jobs to run, 0 = number of processors')
+parser.add_argument('-Z','--debug',help="Break inside for the given lang tag prefix")
 args = parser.parse_args()
+
+if args.debug is not None:
+    args.jobs = 1
 
 if args.flatdir and not os.path.exists(args.flatdir):
     print(f"Can't find {args.flatdir}")
@@ -226,6 +238,8 @@ with open(args.infile) as csvfile :
         b = lt.LangTag(lid)
         if b.lang == "000":
             continue
+        if args.debug is not None and str(b).startswith(args.debug):
+            import pdb; pdb.set_trace()
         if d != "":
             deprecated[t.lang] = d
             if (4 > len(d) > 1 or "-" in d) and macro == "":
@@ -347,8 +361,8 @@ for t in set(lts.values()):
     usedregions.add(t.region)
     usedscripts.add(t.script)
     y = t.copy()
-    y.hidescript = True
-    y.hideboth = True
+    #y.hidescript = True
+    #y.hideboth = True
     y.hideregion = True
     langregions.setdefault(str(y), set()).add(t.region)
     x = lt.LangTag(lang=t.lang, script=t.script, variants=t.variants, extensions=t.extensions)
@@ -372,14 +386,17 @@ def make_record(t):
         return None
     if hasattr(t, 'primary'):
         r = [t.primary] + [x for x in r if x != t.primary]
+    # Add an entry for the region (if region hidden and this is the only tagset for this region in this lang)
     if t.hideregion and not t.hidescript:
         x = lt.LangTag(lang=t.lang, region=t.region, variants=t.variants, extensions=t.extensions)
         if len(allregions.get(str(x), [])) < 2:
             r.insert(1, str(x))
+    # Add an entry for the script (if script hidden and this is the only tagset for this script in this lang)
     elif t.hidescript and not t.hideregion:
         x = lt.LangTag(lang=t.lang, script=t.script, variants=t.variants, extensions=t.extensions)
         if len(allscripts.get(str(x), [])) < 2:
             r.insert(1, str(x))
+    # Fixup for Windows getting confused by reserved device names in DOS
     if r[0] in ('con', 'prn', 'aux', 'nul'):
         ts = f"{r[0]}-Arab" if r[0] == "prn" else f"{r[0]}-Latn"
         if ts in r:
@@ -430,7 +447,7 @@ def make_record(t):
                 if t.script != apt.script:
                     continue
                 ntag.script = apt.script
-            elif ntag.script is not None and ntag.script != apt.script:
+            elif ntag.script is not None and apt.script is not None and ntag.script != apt.script:
                 continue
             if apt.region is not None:
                 if apt.region != t.region:
@@ -531,6 +548,9 @@ def make_record(t):
         n['obsolete'] = True
     if getattr(t, 'unwritten', False):
         n['unwritten'] = True
+    if n['full'] in hacks:
+        for c in hacks[n['full']]:
+            c(n)
 
     if n['tag'] in collisions:
         print("Multiple entries for: {} = {}, {}".format(n['tag'], n['full'], collisions[n['tag']]))
