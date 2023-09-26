@@ -233,7 +233,7 @@ ajs,ajs-Zxxx-IL,Algerian Jewish Sign Language,DZ FR IL,,,,,,,,,ajs,,,
 ajt,ajt-Arab-TN,"Arabic, Judeo-Tunisian",ES IL IT TN,,,,,,,aeb,NAF SEU WAS,ajt,,,
 ajt-Hebr,ajt-Hebr-IL,"Arabic, Judeo-Tunisian",ES IL IT TN,,,,,,1,aeb,NAF SEU WAS,ajt,,,
 aju-Arab,aju-Arab-MA,"Arabic, Judeo-Moroccan",CA IL MA,,,,jrb,,,,NAF NAM WAS,aju,,,
-aju-Hebr,aju-Hebr-IL,"Arabic, Judeo-Moroccan",CA IL MA,,,,jrb,,,,NAF NAM WAS,aju,,23-Mar-2018,
+aju,aju-Hebr-IL,"Arabic, Judeo-Moroccan",CA IL MA,,,,jrb,,,,NAF NAM WAS,aju,,23-Mar-2018,
 ajw,ajw-Latn-NG,Ajawa,NG,,,,,1,,,WAF,ajw,,,Extinct
 ajz,ajz-Latn-IN,Amri Karbi,IN,,,,,,,,SAS,ajz,,,LE: not in likely subtags.
 ak,ak-Latn-GH,Akan,AU CA GB GH LR NL,,,,,,,,NAM NEU WAF,aka,CLDR,,
@@ -7474,7 +7474,7 @@ tcu,tcu-Latn-MX,"Tarahumara, Southeastern",MX,,,,,1,,,CAM,tcu,LE,9-Jan-2018,
 tcw,tcw-Latn-MX,"Totonac, Tecpatlán",MX,,,,,,,,CAM,tcw,LE,9-Jan-2018,
 tcx,tcx-Taml-IN,Toda,IN,,,,,,,,SAS,tcx,,,
 tcy,tcy-Knda-IN,Tulu,IN,,,04082 04085,,,,,SAS,tcy,CLDR,,
-tcy-Zzzz-x-tulu,tcy-Zzzz-IN-x-tulu,Tulu,IN,,,04082 04085,,,,,SAS,tcy,,,
+tcy-Tutg,tcy-Tutg-IN,Tulu,IN,,,04082 04085,,,,,SAS,tcy,,,
 tcz,tcz-Latn-IN,"Chin, Thado",IN MM,,,,,,,,SAS SEA,tcz,,,
 tda-Arab,tda-Arab-NE,Tagdal,NE,,,,,,,,WAF,tda,,,
 tda-Latn,tda-Latn-NE,Tagdal,NE,,,,,,,,WAF,tda,,,
@@ -7980,7 +7980,7 @@ tye,tye-Latn-NG,Kyanga,BJ NG,,,,,,,,WAF,tye,,,
 tyh,tyh-Latn-VN,O'du,LA VN,,,,,1,,,SEA,tyh,NMC,6-Dec-2017,dying language
 tyi,tyi-Latn-CG,Teke-Tsaayi,CG,,,02839,,,,,MAF,tyi,LE,12-Jan-2018,
 tyj,tyj-Latn-VN,Tai Yo,LA VN,,,,,,,,SEA,tyj,NMC,7-Dec-2017,
-tyj-Zzzz-x-taiyo,tyj-Zzzz-VN-x-taiyo,Tai Yo,LA VN,,,,,,1,,SEA,tyj,NMC,7-Dec-2017,Tai Yo script varient for abandoned Tai Yo script
+tyj-Tayo,tyj-Tayo-VN,Tai Yo,LA VN,,,,,,1,,SEA,tyj,NMC,7-Dec-2017,Tai Yo script varient for abandoned Tai Yo script
 tyl,tyl-Latn-VN,Thu Lao,VN,,,,,1,,,SEA,tyl,NMC,6-Dec-2017,
 tyn,tyn-Latn-ID,Kombai,ID,,,,,,,,SEA,tyn,,20-Apr-2018,
 typ,typ-Latn-AU,Thaypan,AU,,,,,1,,,ANZ,typ,LE,10-Jan-2018,Extinct
