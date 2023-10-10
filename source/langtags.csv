@@ -6602,6 +6602,7 @@ rgu,rgu-Latn-ID,Rikou,ID,,,,,,,,SEA,rgu,,20-Apr-2018,
 rhg-Arab,rhg-Arab-MM,Rohingya,BD CN MM MY PK SA TH,,,,,,,,EAS SAS SEA WAS,rhg,MH,5-Jan-2017,
 rhg-Latn,rhg-Latn-MM,Rohingya,BD CN MM MY PK SA TH,,,,,,,,EAS SAS SEA WAS,rhg,MH,,
 rhg,rhg-Rohg-MM,Rohingya,BD CN MM MY PK SA TH,,,,,,,,EAS SAS SEA WAS,rhg,,,LE: changed PUA code
+rhg-Mymr,rhg-Mymr-MM,Rohingya,BD CN MM MY PK SA TH,,,,,,,,EAS SAS SEA WAS,rhg,,,
 rhp,rhp-Latn-PG,Yahang,PG,,,,,1,,,MEL,rhp,LE,10-Jan-2018,
 ria,ria-Latn-IN,Riang,BD IN,,,,,,,,SAS,ria,CLDR,,
 rib,rib-Zxxx-CR,Bribri Sign Language,CR,,,,,,,,,rib,,,
