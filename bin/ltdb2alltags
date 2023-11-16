@@ -74,6 +74,9 @@ def getlocalename(testf, getnames):
         return None
     if len(doc.getroot()) > 1 :
         for getname in getnames:
+            if getname is None:
+                print(getnames)
+                continue
             e = doc.find('./localeDisplayNames/languages/language[@type="{}"]'.format(getname.replace("-","_")))
             if e is not None:
                 return unicode(e.text)
@@ -443,6 +446,9 @@ def make_record(t):
         for ap in preferences[al]:
             ntag = lt.LangTag(a)
             apt = lt.LangTag(ap)
+            mbase = lts.get(ap, None)
+            if not hasattr(mbase, 'base') or a not in mbase.base:
+                continue
             if apt.script is not None:
                 if t.script != apt.script:
                     continue
@@ -582,6 +588,8 @@ if args.jobs == 1:
 else:
     pool = Pool(processes=args.jobs) if args.jobs else Pool()
     tempres = pool.imap_unordered(make_record, sorted(set(lts.values())))
+    pool.close()
+    pool.join()
     for r in sorted(tempres, key=lambda t:t[0]['full'] if t is not None else ""):
         if r is not None:
             res.append(r[0])

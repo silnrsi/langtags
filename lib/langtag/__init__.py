@@ -307,7 +307,7 @@ class LangTags(metaclass=_Singleton):
             lr = l._replace(region = None)
             res = self.get(str(lr), None, use639=use639)
             if res is not None:
-                if l.region in res.regions:
+                if l.region in res.regions or l.region == res.region:
                     return res
         return default
 
