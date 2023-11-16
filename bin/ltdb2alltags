@@ -217,7 +217,7 @@ for k,v in lts.items():
     if getattr(v, 'isCldr', False):
         cldrs[k] = True
     pref = getattr(v, 'preferred', None)
-    if pref is not None:
+    if pref is not None and v.mode == "extlang":
         preferences.setdefault(pref, []).append(k)
 regionnames, scriptnames = get_region_scriptnames()
 lts.clear()
@@ -446,9 +446,6 @@ def make_record(t):
         for ap in preferences[al]:
             ntag = lt.LangTag(a)
             apt = lt.LangTag(ap)
-            mbase = lts.get(ap, None)
-            if not hasattr(mbase, 'base') or a not in mbase.base:
-                continue
             if apt.script is not None:
                 if t.script != apt.script:
                     continue
