@@ -1653,7 +1653,7 @@ cqd,cqd-Latn-CN,"Miao, Chuanqiandian Cluster",CN,,,21015 21187 21188 21189 21190
 cqu,cqu-Latn-BO,"Quechua, South Bolivian",AR BO CL,,,06352 06353 15878 15879,qu,,,quh,SAM,quh,LE,9-Jan-2018,
 cr,cr-Cans-CA,Cree,CA,,,,,,,,NAM,cre,CLDR,,
 cr-Latn,cr-Latn-CA,Cree,CA,,,,,,,,NAM,cre,,,
-cra,cra-Zyyy-ET,Chara,ET,,,,,1,,,EAF,cra,,,
+cra,cra-Latn-ET,Chara,ET,,,,,,,,EAF,cra,,,
 crb,crb-Latn-VC,Island Carib,DM VC,,,,,1,,,CAR,crb,,,Extinct
 crc,crc-Latn-VU,Lonwolwol,VU,,,04717,,,,,MEL,crc,LE,10-Jan-2018,
 crd,crd-Latn-US,Coeur d'Alene,US,,,,,1,,,NAM,crd,LE,9-Jan-2018,
