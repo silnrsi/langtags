@@ -2946,7 +2946,7 @@ hnj,hnj-Hmnp-LA,Hmong Njua,CA CN GF LA MM TH US VN,pahawh2 pahawh3 pahawh4,,,,,,
 hnj-Hmng,hnj-Hmng-LA,Hmong Njua,CA CN GF LA MM TH US VN,pahawh2 pahawh3 pahawh4,,,,,,,EAS NAM SAM SEA,hnj,CLDR,,"SVW: Are we sure this should be the default script for Hmong Njua and not Latin? I've never actually seen anyone reading the Pahawh script, but I've met lots of religiously diverse people literate in Latin script. Certainly Latin script has more users."
 hnj-Laoo,hnj-Laoo-LA,Hmong Njua,CA CN GF LA MM TH US VN,,,,,,,,EAS NAM SAM SEA,hnj,CLDR Supplemental,,
 hnj-Latn,hnj-Latn-LA,Hmong Njua,CA CN GF LA MM TH US VN,,,,,,,,EAS NAM SAM SEA,hnj,NMC,10-Jan-2018,
-hnj-Plrd,hnj-Plrd-CN,Hmong Njua,CA CN GF LA MM TH US VN,,,06166 06184 06354,,,,,EAS NAM SAM SEA,hnj,,,
+hnj-Plrd,hnj-Plrd-CN,Hmong Njua,CA CN GF LA MM TH US VN,,,06166 06184 06354,,,1,,EAS NAM SAM SEA,hnj,,,LE: This was likely a mistake. It hasn't been used.
 hnj-Thai,hnj-Thai-TH,Hmong Njua,CA CN GF LA MM TH US VN,,,,,,,,EAS NAM SAM SEA,hnj,NMC,10-Jan-2018,
 hnn,hnn-Latn-PH,Hanunoo,PH,,,,,,,,SEA,hnn,CLDR,,
 hnn-Hano,hnn-Hano-PH,Hanunoo,PH,,,,,,,,SEA,hnn,,,
