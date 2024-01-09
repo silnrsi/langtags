@@ -4233,7 +4233,7 @@ laz,laz-Latn-PG,Aribwatsa,PG,,,,,1,,,MEL,laz,LE,10-Jan-2018,Extinct
 lb,lb-Latn-LU,Luxembourgish,BE DE FR LU RO US,,,,,,,,NAM WEU,ltz,CLDR,,
 lba-Zyyy,lba-Zyyy-IN,Lui,IN,,,,,,,1,SAS,lba,,,Extinct
 lbb,lbb-Latn-PG,Label,PG,,,,,,,,MEL,lbb,LE,10-Jan-2018,
-lbc,lbc-Lisu-CN,Lakkia,CN,,,,,,1,,EAS,lbc,LE,11-Dec-2017,I'm leaving the script tag because the use for Lisu was in the 1912 and 1936 range. I don't believe it is used today so I suspect sometime another script will rise to the top of usage.
+lbc,lbc-Plrd-CN,Lakkia,CN,,,,,,1,,EAS,lbc,,,
 lbe,lbe-Cyrl-RU,Lak,AZ KG KZ RU TJ TM UA UZ,,,,,,,,CAS EEU WAS,lbe,CLDR,,
 lbe-Latn,lbe-Latn-RU,Lak,AZ KG KZ RU TJ TM UA UZ,,,,,,1,,CAS EEU WAS,lbe,,,
 lbe-Arab,lbe-Arab-RU,Lak,AZ KG KZ RU TJ TM UA UZ,,,,,,1,,CAS EEU WAS,lbe,,,
