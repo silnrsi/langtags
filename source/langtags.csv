@@ -1901,7 +1901,8 @@ dgw,dgw-Latn-AU,Daungwurrung,AU,,,,,,,,ANZ,dgw,LE,10-Jan-2018,Extinct
 dgx,dgx-Latn-PG,Doghoro,PG,,,,,,,,MEL,dgx,LE,10-Jan-2018,
 dgz,dgz-Latn-PG,Daga,PG,,,02346,,,,,MEL,dgz,LE,10-Jan-2018,
 dhd,dhd-Deva-IN,Dhundari,IN PK,,,13793,mwr,,,,SAS,dhd,CLDR,23-Mar-2018,via macro mapping
-dhg,dhg-Latn-AU,Dhangu-Djangu,AU,,,03723 03724 09228 09229 09230 09231,,,,,ANZ,dhg,LE,10-Jan-2018,
+dhg,dhg-Latn-AU,Dhangu-Djangu,AU,,,03723 03724 09228 09229 09230 09231,,,,,ANZ,dhg,,,
+dhg-x-wangurri,dhg-Latn-AU-x-wangurri,Dhangu-Djangu,AU,,,,,,,,ANZ,dhg,,,Need to review ROD code
 dhi,dhi-Deva-NP,Dhimal,IN NP,,,,,,,,SAS,dhi,,,
 dhl,dhl-Latn-AU,Dhalandji,AU,,,,,1,,,ANZ,dhl,LE,10-Jan-2018,
 dhm,dhm-Latn-AO,Dhimba,AO NA,,,,,,,,MAF SAF,dhm,LE,12-Jan-2018,
@@ -2367,9 +2368,9 @@ for,for-Latn-PG,Fore,PG,,,09862 20092,,,,,MEL,for,LE,10-Jan-2018,
 fos,fos-Latn-TW,Siraya,TW,,,16756 16757 16758 16759,,,,,EAS,fos,LE,12-Jan-2018,Extinct
 fpe,fpe-Latn-GQ,Equatorial Guinean Pidgin,GQ,,,,,,,,MAF,fpe,LE,12-Jan-2018,
 fqs,fqs-Latn-PG,Fas,PG,,,01231,,,,,MEL,fqs,LE,10-Jan-2018,
-fr,fr-Latn-FR,French,AD AE AL AM AT AU BA BE BF BG BI BJ BL CA CD CF CG CH CI CM CV CZ DE DJ DK DM DO DZ EE EG EH ES FI FR GA GE GF GG GH GM GN GP GQ GR GW HR HT HU IE IL IN IT JE KH KM LA LB LC LT LU LV LY MA MC MD ME MF MG MK ML MQ MR MT MU MX MZ NC NE NL NO NZ PF PL PM PR PT PY QA RE RO RS RU RW SC SE SI SK SN ST SY TD TG TN UA US VI VU WF YT,1694acad,,,,,,,ANZ CAR EAF EEU MAF MEL NAF NAM NEU POL SAM SAS SEA SEU WAF WAS WEU,fra,CLDR,,
-fr-Brai,fr-Brai-FR,French,AD AE AL AM AT AU BA BE BF BG BI BJ BL CA CD CF CG CH CI CM CV CZ DE DJ DK DM DO DZ EE EG EH ES FI FR GA GE GF GG GH GM GN GP GQ GR GW HR HT HU IE IL IN IT JE KH KM LA LB LC LT LU LV LY MA MC MD ME MF MG MK ML MQ MR MT MU MX MZ NC NE NL NO NZ PF PL PM PR PT PY QA RE RO RS RU RW SC SE SI SK SN ST SY TD TG TN UA US VI VU WF YT,,,,,,,,ANZ CAR EAF EEU MAF MEL NAF NAM NEU POL SAM SAS SEA SEU WAF WAS WEU,fra,,,
-fr-Dupl,fr-Dupl-FR,French,AD AE AL AM AT AU BA BE BF BG BI BJ BL CA CD CF CG CH CI CM CV CZ DE DJ DK DM DO DZ EE EG EH ES FI FR GA GE GF GG GH GM GN GP GQ GR GW HR HT HU IE IL IN IT JE KH KM LA LB LC LT LU LV LY MA MC MD ME MF MG MK ML MQ MR MT MU MX MZ NC NE NL NO NZ PF PL PM PR PT PY QA RE RO RS RU RW SC SE SI SK SN ST SY TD TG TN UA US VI VU WF YT,,,,,,,,ANZ CAR EAF EEU MAF MEL NAF NAM NEU POL SAM SAS SEA SEU WAF WAS WEU,fra,CLDR Supplemental,,
+fr,fr-Latn-FR,French,AD AE AL AM AT AU BA BE BF BG BI BJ BL CA CD CF CG CH CI CM CV CY CZ DE DJ DK DM DO DZ EE EG EH ES FI FR GA GB GE GF GG GH GM GN GP GQ GR GW HR HT HU IE IL IN IT JE KH KM LA LB LC LT LU LV LY MA MC MD ME MF MG MK ML MQ MR MT MU MX MZ NC NE NL NO NZ PF PL PM PR PT PY QA RE RO RS RU RW SC SE SI SK SN ST SY TD TG TN UA US VI VU WF YT,1694acad,,,,,,,ANZ CAR EAF EEU MAF MEL NAF NAM NEU POL SAM SAS SEA SEU WAF WAS WEU,fra,CLDR,,
+fr-Brai,fr-Brai-FR,French,AD AE AL AM AT AU BA BE BF BG BI BJ BL CA CD CF CG CH CI CM CV CY CZ DE DJ DK DM DO DZ EE EG EH ES FI FR GA GB GE GF GG GH GM GN GP GQ GR GW HR HT HU IE IL IN IT JE KH KM LA LB LC LT LU LV LY MA MC MD ME MF MG MK ML MQ MR MT MU MX MZ NC NE NL NO NZ PF PL PM PR PT PY QA RE RO RS RU RW SC SE SI SK SN ST SY TD TG TN UA US VI VU WF YT,,,,,,,,ANZ CAR EAF EEU MAF MEL NAF NAM NEU POL SAM SAS SEA SEU WAF WAS WEU,fra,,,
+fr-Dupl,fr-Dupl-FR,French,AD AE AL AM AT AU BA BE BF BG BI BJ BL CA CD CF CG CH CI CM CV CY CZ DE DJ DK DM DO DZ EE EG EH ES FI FR GA GB GE GF GG GH GM GN GP GQ GR GW HR HT HU IE IL IN IT JE KH KM LA LB LC LT LU LV LY MA MC MD ME MF MG MK ML MQ MR MT MU MX MZ NC NE NL NO NZ PF PL PM PR PT PY QA RE RO RS RU RW SC SE SI SK SN ST SY TD TG TN UA US VI VU WF YT,,,,,,,,ANZ CAR EAF EEU MAF MEL NAF NAM NEU POL SAM SAS SEA SEU WAF WAS WEU,fra,CLDR Supplemental,,
 frc,frc-Latn-US,"French, Cajun",US,,,,,,,,NAM,frc,CLDR,,
 frd,frd-Latn-ID,Fordata,ID,,,09858 09861,,,,,SEA,frd,,20-Apr-2018,
 frk,frk-Latn-DE,Frankish,DE,,,,,,,,WEU,frk,,,Extinct
@@ -3027,9 +3028,10 @@ hum,hum-Latn-CD,Hungana,CD,,,,,,,,MAF,hum,LE,12-Jan-2018,
 huo,huo-Zyyy-CN,Hu,CN,,,,,1,,,EAS,huo,,,
 hup,hup-Latn-US,Hupa,US,unifon,,,,1,,,NAM,hup,LE,9-Jan-2018,
 huq,huq-Zyyy-CN,Tsat,CN,,,,,1,,,EAS,huq,,,
-hur,hur-Latn-CA,Halkomelem,CA US,,,,,1,,,NAM,hur,LE,9-Jan-2018,
-hus,hus-Latn-MX,Huastec,MX,,,04381 04681,,,,,CAM,hus,LE,9-Jan-2018,
+hur,hur-Latn-CA,Halkomelem,CA US,,,,,1,,,NAM,hur,,,
+hus,hus-Latn-MX,Huastec,MX,,,04381 04681,,,,,CAM,hus,,,
 hus-x-central,hus-Latn-MX-x-central,Huastec,MX,,4681,,,,,,CAM,hus,,,
+hus-x-potosino,hus-Latn-MX-x-potosino,Huastec,MX,,,,,,,,CAM,hus,,,Need to check on ROD code
 hut,hut-Deva-NP,Humla,NP,,,,,1,,,SAS,hut,,,
 hut-Tibt,hut-Tibt-NP,Humla,NP,,,,,,,,SAG,hut,,,
 huu,huu-Latn-PE,"Huitoto, Murui",CO PE,,,,,,,,SAM,huu,LE,9-Jan-2018,
@@ -3245,7 +3247,8 @@ iwo,iwo-Latn-ID,Morop,ID,,,,,1,,,SEA,iwo,,,
 iws,iws-Latn-PG,"Iwam, Sepik",PG,,,,,,,,MEL,iws,LE,10-Jan-2018,
 ixc,ixc-Latn-MX,Ixcatec,MX,,,,,,1,,CAM,ixc,LE,9-Jan-2018,
 ixl,ixl-Latn-GT,Ixil,GT,,,00486 04745 04781,,,,,CAM,ixl,LE,9-Jan-2018,
-ixl-x-cotzal,ixl-Latn-GT-x-cotzal,Ixil,GT,,4781,,,,,,,ixl,,,
+ixl-x-cotzal,ixl-Latn-GT-x-cotzal,Ixil,GT,,4781,,,,,,CAM,ixl,,,
+ixl-x-nebaj,ixl-Latn-GT-x-nebaj,Ixil,GT,,,,,,,,CAM,ixl,,,need to look at ROD code
 iya,iya-Latn-NG,Iyayu,NG,,,,,1,,,WAF,iya,,,
 iyo,iyo-Latn-CM,Mesaka,CM,,,,,,,,MAF,iyo,LE,12-Jan-2018,
 iyx,iyx-Latn-CG,Yaka,CG,,,,,,1,,MAF,iyx,LE,12-Jan-2018,
@@ -3905,6 +3908,8 @@ kqb,kqb-Latn-PG,Kovai,PG,,,21175,,,,,MEL,kqb,LE,10-Jan-2018,
 kqc,kqc-Latn-PG,Doromu-Koki,PG,,,,,,,,MEL,kqc,LE,10-Jan-2018,
 kqd,kqd-Syrc-IQ,Koy Sanjaq Surat,IQ,,,,,,,,WAS,kqd,,,
 kqe,kqe-Latn-PH,Kalagan,PH,,,00284,,,,,SEA,kqe,,,
+kqe-x-east,kqe-Latn-PH-x-east,Kalagan,PH,,,,,,,,SEA,kqe,,,look at ROD
+kqe-x-west,kqe-Latn-PH-x-west,Kalagan,PH,,,,,,,,SEA,kqe,,,look at ROD
 kqf,kqf-Latn-PG,Kakabai,PG,,,,,,,,MEL,kqf,LE,10-Jan-2018,
 kqg,kqg-Latn-BF,Khe,BF CI,,,,,1,,,WAF,kqg,,,
 kqh,kqh-Latn-TZ,Kisankasa,TZ,,,,,1,,,EAF,kqh,,,
@@ -4617,6 +4622,8 @@ mam-x-neastern,mam-Latn-GT-x-neastern,Mam,GT,,3470,,,,,,CAM,mam,,,
 mam-x-northern,mam-Latn-GT-x-northern,Mam,GT,,2116,,,,,,CAM,mam,,,
 mam-x-southern,mam-Latn-GT-x-southern,Mam,GT,,36,,,,,,CAM,mam,,,
 mam-x-western,mam-Latn-GT-x-western,Mam,GT,,4742,,,,,,CAM,mam,,,
+mam-x-central,mam-Latn-GT-x-central,Mam,GT,,,,,,,,CAM,mam,,,figure out ROD
+mam-x-todos,mam-Latn-GT-x-todos,Mam,GT,,,,,,,,CAM,mam,,,figure out ROD
 man,man-Latn-GM,Mandingo,GM GN SN,,,,,,,,WAF,man,CLDR,,
 man-Arab,man-Arab-GN,"Maninkakan, Eastern",GN LR ML SL,,,,,,,,WAF,man,,23-Mar-2018,
 man-GN,man-Nkoo-GN,Mandingo,GN,,,,,,,,WAF,man,CLDR,,
@@ -5518,6 +5525,7 @@ nhu,nhu-Latn-CM,Noone,CM,,,,,,,,MAF,nhu,,,
 nhv,nhv-Latn-MX,"Nahuatl, Temascaltepec",MX,,,,,1,,,CAM,nhv,LE,9-Jan-2018,
 nhw,nhw-Latn-MX,"Nahuatl, Western Huasteca",MX,,,,,,,,CAM,nhw,CLDR,,
 nhx,nhx-Latn-MX,"Nahuatl, Isthmus-Mecayapan",MX,,,22736,,,,,CAM,nhx,LE,9-Jan-2018,
+nhx-x-tatahui,nhx-Latn-MX-x-tatahui,"Nahuatl, Isthmus-Mecayapan",MX,,,,,,,,CAM,nhx,,,Figure out ROD
 nhy,nhy-Latn-MX,"Nahuatl, Northern Oaxaca",MX,,,,,,,,CAM,nhy,LE,9-Jan-2018,
 nhz,nhz-Latn-MX,"Nahuatl, Santa María la Alta",MX,,,,,1,,,CAM,nhz,LE,9-Jan-2018,
 nia,nia-Latn-ID,Nias,ID,,,14968 19470,,,,,SEA,nia,,20-Apr-2018,
@@ -8382,7 +8390,8 @@ wdu,wdu-Latn-AU,Wadjigu,AU,,,,,1,,,ANZ,wdu,LE,10-Jan-2018,Extinct
 wdy,wdy-Latn-AU,Wadjabangayi,AU,,,,,1,,,ANZ,wdy,LE,10-Jan-2018,Extinct
 wea,wea-Zyyy-MM,Wewaw,MM,,,,,1,,,SEA,wea,NMC,6-Dec-2017,Extinct
 wec,wec-Latn-CI,Wè Western,CI,,,18257,,,,,WAF,wec,,,
-wed,wed-Latn-PG,Wedau,PG,,,02296 02344,,,,,MEL,wed,LE,10-Jan-2018,
+wed,wed-Latn-PG,Wedau,PG,,,02296 02344,,,,,MEL,wed,,,
+wed-x-topura,wed-Latn-PG-x-topura,Wedau,PG,,,,,,,,MEL,wed,,,Figure out ROD
 weg,weg-Latn-AU,Wergaia,AU,,,,,1,,,ANZ,weg,LE,10-Jan-2018,
 weh,weh-Latn-CM,Weh,CM,,,,,,,,MAF,weh,,,
 wei,wei-Latn-PG,Kiunum,PG,,,,,,,,MEL,wei,LE,10-Jan-2018,
@@ -8603,7 +8612,9 @@ xbc-Mani,xbc-Mani-XX,Bactrian,XX,,,,,,,,???,xbc,,,
 xbd,xbd-Latn-AU,Bindal,AU,,,,,1,,,ANZ,xbd,LE,10-Jan-2018,Extinct
 xbe,xbe-Latn-AU,Bigambal,AU,,,,,1,,,ANZ,xbe,LE,10-Jan-2018,Extinct
 xbg,xbg-Latn-AU,Bunganditj,AU,,,,,1,,,ANZ,xbg,LE,10-Jan-2018,Extinct
-xbi,xbi-Latn-PG,Kombio,PG,,,01023,,,,,MEL,xbi,LE,10-Jan-2018,
+xbi,xbi-Latn-PG,Kombio,PG,,,01023,,,,,MEL,xbi,,,
+xbi-x-south,xbi-Latn-PG-x-south,Kombio,PG,,,,,,,,MEL,xbi,,,Figure out ROD
+xbi-x-western,xbi-Latn-PG-x-western,Kombio,PG,,,,,,,,MEL,xbi,,,Figure out ROD
 xbj,xbj-Latn-AU,Birrpayi,AU,,,,,1,,,ANZ,xbj,LE,10-Jan-2018,Extinct
 xbm,xbm-Latn-FR,Middle Breton,FR,,,,,,,,???,xbm,St,,Historical
 xbn,xbn-Latn-MY,Kenaboi,MY,,,,,1,,,SEA,xbn,LE,10-Jan-2018,Extinct
@@ -9236,6 +9247,7 @@ zh-BN,zh-Hant-BN,Chinese,BN,,,,,,,,EAS,zho,CLDR,,
 zh-Arab,zh-Arab-CN,Chinese,CN,,,,,,,,EAS,zho,,,Xiao'erjing
 zh-Bopo,zh-Bopo-TW,Chinese,CN TW,,,,,,,,EAS,zho,CLDR,,
 zh-Brai,zh-Brai-CN,Chinese,AU BN BS CA CN GB GQ HK ID KH KR LA LY MM MN MO MY NL NZ PH RU SG TH TW US VN WS ZA ZM,,,,,,,,ANZ CAR EAF EAS EEU MAF NAM NEU POL SAF SEA WEU,cmn,,23-Mar-2018,
+zh-CX,zh-Hant-CX,Chinese,CX,,,,,,,,EAS,zho,,,
 zh-ES,zh-Hant-ES,Chinese,ES,,,,,,,,,cmn,,,
 zh-GB,zh-Hant-GB,Chinese,GB,,,,,,,,EAS,zho,CLDR,,
 zh-GF,zh-Hant-GF,Chinese,GF,,,,,,,,EAS,zho,CLDR,,
