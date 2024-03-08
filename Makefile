@@ -4,7 +4,7 @@ RESULTS = pub
 LTDB = bin/ltdb2alltags
 NAME = langtags
 
-.PHONY : all build test
+.PHONY : all build test history
 
 all : test
 
@@ -21,3 +21,9 @@ ${RESULTS}/${NAME}.txt : ${RESULTS}/${NAME}.json
 
 test : build
 	cd tests ; python3 -m unittest discover 
+
+history : ${RESULTS}/langtag_history.json
+
+${RESULTS}/langtag_history.json : ${RESULTS}/${NAME}.json
+	bin/ltdbhistory -a -o $@
+

@@ -3,6 +3,7 @@
 import unittest, os, re
 from xml.etree import ElementTree as et
 from langtag import lookup, langtag, LangTags
+import sldr       # just to get the path
 
 def isnotint(s):
     try:
@@ -13,6 +14,8 @@ def isnotint(s):
 
 langtagjson = os.path.join(os.path.dirname(__file__), '..', 'pub', 'langtags.json')
 langtagtxt = os.path.join(os.path.dirname(__file__), '..', 'pub', 'langtags.txt')
+likelysubtags = os.path.join(os.path.dirname(sldr.__file__), 'likelySubtags.xml')
+
 exceptions = ['ji-Hebr-UA', 'kxc-Ethi', 'bji-Ethi', 'drh-Mong-CN']
 
 class LikelySubtags(unittest.TestCase):
@@ -21,7 +24,7 @@ class LikelySubtags(unittest.TestCase):
         self.likelymap = {}
         thisdir = os.path.dirname(__file__)
         self.ltags = LangTags(langtagjson)
-        doc = et.parse(os.path.join(thisdir, "likelySubtags.xml"))
+        doc = et.parse(likelysubtags)
         for e in doc.findall("./likelySubtags/likelySubtag"):
             if e.get('origin', '') == 'sil1':
                 continue
@@ -44,11 +47,11 @@ class LikelySubtags(unittest.TestCase):
                 if r not in self.ltags:
                     fails.append(r)
                 elif str(self.ltags[k]) != str(self.ltags[r]):
-                    failequalities.append((self.ltags[k], self.ltags[r]))
+                    failequalities.append((k, self.ltags[k], self.ltags[r]))
         if len(fails):
             error += ", ".join(fails) + " are missing from langtags\n"
         if len(failequalities):
-            error += ", ".join("{} != {}".format(*x) for x in failequalities)
+            error += ", ".join("{}[{}] != {}".format(*x) for x in failequalities)
         if len(error):
             self.fail(error)
 

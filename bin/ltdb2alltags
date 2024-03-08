@@ -536,7 +536,7 @@ def make_record(t):
     if t.region is not None:
         regions.discard(t.region)
     regions.discard('XX')
-    testtag = re.sub('-[A-Z]{2}(?:-|$)', '-{}', n['full'])
+    testtag = re.sub('-(?:[A-Z]{2}|\d{3})(?:-|$)', '-{}', n['full'])
     regions = [r for r in regions if testtag.format(r) not in lts]
     if len(regions):
         n['regions'] = sorted(regions)

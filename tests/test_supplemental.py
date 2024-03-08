@@ -4,6 +4,7 @@
 import unittest, os, re, json
 from xml.etree import ElementTree as et
 from itertools import product
+import sldr         # for the path
 
 langtagjson = os.path.join(os.path.dirname(__file__), '..', 'pub', 'langtags.json')
 
@@ -23,7 +24,7 @@ class Supplemental(unittest.TestCase):
             if 'tags' in j:
                 for t in j['tags']:
                     self.ltags[t] = j
-        thisdir = os.path.dirname(__file__)
+        thisdir = os.path.dirname(sldr.__file__)
         self.doc = et.parse(os.path.join(thisdir, "supplementalData.xml"))
 
     def test_languageData(self):
