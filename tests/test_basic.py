@@ -15,9 +15,7 @@ def nonascii(s):
 class Basic(unittest.TestCase):
 
     extraScripts = ["Tayo", "Vith"]
-    extraLangs = ("000", 
-                  "cxh", "dsk", "dyr", "eud", "ikh", "izm", "lgs",      # going in ~23/Mar/2023
-                  'lvl', 'nzr', 'pze', 'rsw', 'tvi', 'uly', 'vjk', 'wtb', 'ycr', 'ykh', 'zem', 'zlu') # going in ~23/Mar/2023
+    extraLangs = ("000",) 
 
     def setUp(self):
         self.fname = os.path.join(os.path.dirname(__file__), '../source/langtags.csv')
