@@ -19,7 +19,7 @@ l = langtag('en-Latn')
 # 3. Neither the name of the University nor the names of its contributors
 #    may be used to endorse or promote products derived from this software
 #    without specific prior written permission.
-# 
+#
 # THIS SOFTWARE IS PROVIDED BY THE REGENTS AND CONTRIBUTORS ``AS IS'' AND
 # ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
 # IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
@@ -34,7 +34,6 @@ l = langtag('en-Latn')
 
 import json, os, re
 from collections import namedtuple
-from copy import deepcopy
 
 try:
     from cachingurl import CachedFile
@@ -46,9 +45,11 @@ try:
 except NameError:
     FileNotFoundError = IOError
 
+
 class _Singleton(type):
     '''Manage singletons by fname parameter'''
     _instances = {}
+
     def __call__(cls, *args, **kwargs):
         fname = kwargs.get('fname', None)
         if fname not in cls._instances:
@@ -92,7 +93,6 @@ def langtag(s):
     '''Parses string to make a LangTag named tuple with properties: lang, script,
        region, vars, ns. Extlangs result in the ext-lang being stored in the
        lang property. This may raise a SyntaxError'''
-    params = {}
     bits = str(s).replace('_', '-').split('-')
     curr = 0
 
@@ -114,14 +114,15 @@ def langtag(s):
 
     # script component
     script = None
-    if len(bits[curr]) == 4 :
+    if len(bits[curr]) == 4:
         script = bits[curr].title()
         curr += 1
-    if curr >= len(bits) : return LangTag(lang, script, None, None, None)
+    if curr >= len(bits):
+        return LangTag(lang, script, None, None, None)
 
     # region component
     region = None
-    if 1 < len(bits[curr]) < 4 :
+    if 1 < len(bits[curr]) < 4:
         region = bits[curr].upper()
         curr += 1
     if curr >= len(bits):
@@ -133,11 +134,11 @@ def langtag(s):
     ns = ''
     extensions = {}
     variants = []
-    while curr < len(bits) :
-        if len(bits[curr]) == 1 :
+    while curr < len(bits):
+        if len(bits[curr]) == 1:
             ns = bits[curr].lower()
             extensions[ns] = []
-        elif ns == '' :
+        elif ns == '':
             if 4 < len(bits[curr]) < 9 or re.match(r"\d[a-z]{3}", bits[curr].lower()):
                 variants.append(bits[curr].lower())
             else:
@@ -186,9 +187,9 @@ class LangTags(metaclass=_Singleton):
             def open_through_cache(srcpath=None):
                 cachedltags = CachedFile('langtags.json',
                         url=useurl, 
-                        srcpath = srcpath, 
+                        srcpath=srcpath, 
                         prefix=cachedprefix or "langtag-LangTags",
-                        stale_period=604800) # One week
+                        stale_period=604800)    # One week
                 return cachedltags.open(encoding="utf-8")
 
             if useurl is None:
@@ -199,7 +200,7 @@ class LangTags(metaclass=_Singleton):
             except FileNotFoundError:
                 inf = open_through_cache()
         if inf is not None:
-            data = json.load(inf, object_hook=self.addSet)
+            json.load(inf, object_hook=self.addSet)
             inf.close()
         else:
             raise IOError("Unable to load {}".format(fname))
@@ -349,7 +350,7 @@ def tagsets(sort='tag', fname=None, **kw):
     lts = LangTags(fname=fname, **kw)
     if sort is None or sort is False or sort == '':
         return list(set(lts._tags.values()))
-    return list(sorted(set(lts._tags.values()), key=lambda x:str(getattr(x, sort, getattr(x, 'full', '')))))
+    return list(sorted(set(lts._tags.values()), key=lambda x: str(getattr(x, sort, getattr(x, 'full', '')))))
 
 class TagSet:
     ''' Represents tag set from the json file with same attributes as fields
@@ -510,7 +511,7 @@ class TagSet:
                         script = newfull.script or self.full.script,
                         region = newfull.region or self.full.region,
                         vars = newfull.vars,
-                        ns = newfull.ns) 
+                        ns = newfull.ns)
         d['tag'] = LangTag(lang = newfull.lang,
                         script = (newfull.script or self.tag.script) if self.tag.script is not None else None,
                         region = (newfull.region or self.tag.region) if self.tag.region is not None else None,
