@@ -9415,6 +9415,8 @@ zun,zun-Latn-US,Zuni,US,,,,,,,,NAM,zun,LE,9-Jan-2018,
 zuy,zuy-Latn-CM,Zumaya,CM,,,,,1,,,MAF,zuy,,,
 zwa,zwa-Ethi-ET,Zay,ET,,,,,1,,,EAF,zwa,,,LE: made decision based on wikipedia
 zwa-Latn,zwa-Latn-ET,Zay,ET,,,,,1,,,EAF,zwa,,,
+zxx-Zsym,zxx-Zsym-001,No linguistic content,001,,,,,,,,001,zxx,,,
+zxx-Zmth,zxx-Zmth-001,No linguistic content,001,,,,,,,,001,zxx,,,
 zxx-Zyyy,zxx-Zyyy-001,No linguistic content,001,,,,,,,,001,zxx,,,Special
 zyb,zyb-Latn-CN,"Zhuang, Yongbei",CN,,,18709,za,,,,EAS,zyb,CLDR,23-Mar-2018,via macro mapping
 zyb-Hani,zyb-Hani-CN,"Zhuang, Yongbei",CN,,,18709,za,,,,EAS,zyb,,,
