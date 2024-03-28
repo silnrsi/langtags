@@ -8741,6 +8741,7 @@ xmc,xmc-Latn-MZ,Makhuwa-Marrevone,MZ,,,13361,,1,,,EAF,xmc,,,
 xmd,xmd-Latn-CM,Mbudum,CM,,,,,,,,MAF,xmd,,,
 xme,xme-Zyyy-XX,Median,XX,,,,,,,,???,xme,,,Ancient
 xmf,xmf-Geor-GE,Mingrelian,GE RU,,,,,,,,EEU WAS,xmf,CLDR,,
+xmf-Latn,xmf-Latn-GE,Mingrelian,GE RU,,,,,,,,EEU WAS,xmf,,,
 xmg,xmg-Latn-CM,Mengaka,CM,,,,,,,,MAF,xmg,,,
 xmg-Zzzz-x-bagam,xmg-Zzzz-CM-x-bagam,Mengaka,CM,,,04361,,,,,MAF,xmg,,,
 xmh,xmh-Latn-AU,Kuku-Muminh,AU,,,,,1,,,ANZ,xmh,LE,10-Jan-2018,
