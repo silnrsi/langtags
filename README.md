@@ -13,6 +13,6 @@ making the information available as well as keeping a locally cached version.
 Key documents for further reading:
 
 - [Overview of language tags and how this project works with them](doc/tagging.md)
-- [Structure of the published files](doc/langtags.md)
+- [How to use langtags.json](doc/langtags.md)
 
 
