@@ -5296,10 +5296,10 @@ mwt,mwt-Mymr-MM,Moken,MM TH,,,01112,,,,,SEA,mwt,NMC,4-Dec-2017,how do we determi
 mwt-Thai,mwt-Thai-TH,Moken,MM TH,,,,,,,,SEA,mwt,NMC,4-Dec-2017,how do we determin domint script
 mwu,mwu-Latn-SS,Mittu,SS,,,,,1,,,EAF,mwu,LE,10-Jan-2018,Extinct
 mwv,mwv-Latn-ID,Mentawai,ID,,,04610 04611,,,,,SEA,mwv,CLDR,,
-mww,mww-Hmnp-CN,Hmong Daw,CN FR LA TH US VN,,,00491 06048 06127 06165 06185 06186 06242 10661 20035 20040,,,,,EAS NAM SEA WEU,mww,NMC,10-Jan-2018,
+mww-Hmnp,mww-Hmnp-CN,Hmong Daw,CN FR LA TH US VN,,,00491 06048 06127 06165 06185 06186 06242 10661 20035 20040,,,,,EAS NAM SEA WEU,mww,NMC,10-Jan-2018,
 mww-Hmng,mww-Hmng-CN,Hmong Daw,CN FR LA TH US VN,,,00491 06048 06127 06165 06185 06186 06242 10661 20035 20040,,,,,EAS NAM SEA WEU,mww,NMC,10-Jan-2018,
 mww-Laoo,mww-Laoo-LA,Hmong Daw,CN FR LA TH US VN,,,,,,,,EAS NAM SEA WEU,mww,NMC,10-Jan-2018,
-mww-Latn,mww-Latn-CN,Hmong Daw,CN FR LA TH US VN,,,00491 06048 06127 06165 06185 06186 06242 10661 20035 20040,,,,,EAS NAM SEA WEU,mww,NMC,10-Jan-2018,
+mww,mww-Latn-CN,Hmong Daw,CN FR LA TH US VN,,,00491 06048 06127 06165 06185 06186 06242 10661 20035 20040,,,,,EAS NAM SEA WEU,mww,,,
 mww-Plrd,mww-Plrd-CN,Hmong Daw,CN FR LA TH US VN,,,00491 06048 06127 06165 06185 06186 06242 10661 20035 20040,,,1,,EAS NAM SEA WEU,mww,NMC,10-Jan-2018,
 mww-Thai,mww-Thai-TH,Hmong Daw,CN FR LA TH US VN,,,,,,,,EAS NAM SEA WEU,mww,NMC,10-Jan-2018,
 mwx,mwx-Latn-TZ,Mediak,TZ,,,,,1,,,EAF,mwx,,,Retire 2017
