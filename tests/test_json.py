@@ -5,6 +5,7 @@ import os, unittest, json, warnings
 schemapath = os.path.join(os.path.dirname(__file__), '..', 'source', 'langtags_schema.json')
 testfile = os.path.join(os.path.dirname(__file__), '..', 'pub', 'langtags.json')
 
+
 class JsonSchemaTest(unittest.TestCase):
     ''' Tests that generated JSON conforms to the schema '''
     def test_jsonschema(self):
@@ -25,7 +26,25 @@ class JsonSchemaTest(unittest.TestCase):
             testdata = json.load(inf)
         for error in validator.iter_errors(testdata):
             errors.append(error.message)
-        if len(errors):
+        if len(errors) > 0:
+            self.fail("\n".join(errors))
+
+    def test_duplicate_tags(self):
+        'test for duplicate tags not found by schema'
+        unique_values = set()
+        locations = {}
+        errors = []
+        with open(testfile) as data:
+            testdata = json.load(data)
+        for item in testdata:
+            if 'tags' in item:
+                for value in item['tags']:
+                    if value in unique_values:
+                        errors.append(f'tag {value} is repeated at {item["full"]} and {locations[value]}')
+                    else:
+                        unique_values.add(value)
+                        locations[value] = item['full']
+        if len(errors) > 0:
             self.fail("\n".join(errors))
 
 

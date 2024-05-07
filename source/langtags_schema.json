@@ -27,12 +27,14 @@
         "tags": {
           "type": "array",
           "items": { "$ref": "#/definitions/bcp47" },
-          "additionalItems": false
+          "additionalItems": false,
+          "uniqueItems": true
         },
         "variants": {
           "type": "array",
           "items": { "$ref": "#/definitions/bcp47_variant" },
-          "additionalItems": false
+          "additionalItems": false,
+          "uniqueItems": true
         },
         "iso639_3": {
           "$ref": "#/definitions/iso639_3"
@@ -43,21 +45,24 @@
         "regions": {
           "type": "array",
           "items": { "$ref": "#/definitions/iso3166_1" },
-          "additionalItems": false
+          "additionalItems": false,
+          "uniqueItems": true
         },
         "regionname": {
           "type": "string"
         },
         "iana": {
           "type": "array",
-          "items": { "type": "string" }
+          "items": { "type": "string" },
+          "uniqueItems": true
         },
         "name": {
           "type": "string"
         },
         "names": {
           "type": "array",
-          "items": { "type": "string" }
+          "items": { "type": "string" },
+          "uniqueItems": true
         },
         "localname": {
           "type": "string"
@@ -76,11 +81,13 @@
         },
         "localnames": {
           "type": "array",
-          "items": { "type": "string" }
+          "items": { "type": "string" },
+          "uniqueItems": true
         },
         "latnnames": {
           "type": "array",
-          "items": { "type": "string" }
+          "items": { "type": "string" },
+          "uniqueItems": true
         },
         "suppress": {
           "type": "boolean"
