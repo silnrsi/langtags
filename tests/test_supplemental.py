@@ -19,11 +19,12 @@ class Supplemental(unittest.TestCase):
         for j in self.data:
             if j['tag'].startswith("_"):
                 continue
-            self.ltags[j['tag']] = j
-            self.ltags[j['full']] = j
+            self.ltags.setdefault(j['tag'], []).append(j)
+            if j['tag'] != j['full']:
+                self.ltags.setdefault(j['full'], []).append(j)
             if 'tags' in j:
                 for t in j['tags']:
-                    self.ltags[t] = j
+                    self.ltags.setdefault(t, []).append(j)
         thisdir = os.path.dirname(sldr.__file__)
         self.doc = et.parse(os.path.join(thisdir, "supplementalData.xml"))
 
@@ -46,7 +47,7 @@ class Supplemental(unittest.TestCase):
                     t = tag + "-" + r
                     if t in self.ltags:
                         continue
-                    if r not in self.ltags[tag].get('regions', []):
+                    if r not in self.ltags[tag][0].get('regions', []):
                         failures.append(t)
         if len(failures):
             self.fail("Missing tags from supplemental Data" + str(failures))
@@ -62,3 +63,10 @@ class Supplemental(unittest.TestCase):
                 if r['name'] == u'↑↑↑':
                     self.fail("Inherited name in " + str(['tag']))
 
+    def test_duplicates(self):
+        failures = []
+        for k, v in self.ltags.items():
+            if len(v) > 1:
+                failures.append("{}: " + ", ".join(r['full'] for r in v))
+        if len(failures):
+            self.fail("Duplicated tags: " + str(failures))

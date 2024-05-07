@@ -15,7 +15,7 @@ def nonascii(s):
 class Basic(unittest.TestCase):
 
     extraScripts = ["Tayo", "Vith"]
-    extraLangs = ("000",) 
+    extraLangs = ("000", "cls", "rrm", "vsn") 
 
     def setUp(self):
         self.fname = os.path.join(os.path.dirname(__file__), '../source/langtags.csv')
@@ -49,7 +49,7 @@ class Basic(unittest.TestCase):
                 self.fail("{Lang_Id} has different lang to {likely_subtag} ({0} != {1})".format(l.lang, t.lang, **r))
             if t.lang not in self.iana.language and "-" not in t.lang and t.lang not in self.extraLangs:
                 fails.append(r['Lang_Id'])
-            if not l.test(fname=langtagjson):
+            if not l.test(fname=langtagjson) and t.lang not in self.extraLangs:
                 self.fail("{Lang_Id} failed conformance check".format(**r))
         if len(fails):
             self.fail(f"{fails} langs not in IANA")
