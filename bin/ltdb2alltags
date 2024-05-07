@@ -15,7 +15,7 @@ from palaso.unicode.ucd import UCD
 silns = "urn://www.sil.org/ldml/0.1"
 
 hacks = {
-    "aeb-Arab-TN": (lambda n:n['tags'].extend(("aeb-Arab-IL", "ar-aeb-Arab-IL", "ar-aeb-Arab-TN")), lambda n:n['regions'].remove('IL')),
+    "aeb-Arab-TN": (lambda n:n['tags'].extend(("aeb-Arab-IL", "ar-aeb-Arab-IL")), lambda n:n['regions'].remove('IL')),
 #    "aeb-Hebr-IL": (lambda n:n['tags'].extend(("ar-aeb-Hebr", "ar-aeb-Hebr-IL")),),
 #    "aeb-Latn-TN": (lambda n:n.setdefault('tags', []).extend(("ar-aeb-Latn", "ar-aeb-Latn-TN")),)
 }
@@ -419,7 +419,7 @@ def make_record(t):
     n['windows'] = str(wintag)
     if t.region in regionnames:
         n['regionname'] = regionnames[t.region]
-    tags = set(r[1:-1])
+    tags = set(str(t) for t in r[1:-1])
     hassldr = False
     # n['primary'] = True
     if False and "-x-" in n['tag']:

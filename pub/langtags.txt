@@ -116,7 +116,7 @@ ae = ae-Avst = ae-IR = ae-Avst-IR
 ae-Arab = ae-Arab-IR
 ae-Gujr = ae-Gujr-IR
 aea = aea-AU = aea-Latn = aea-Latn-AU
-*aeb = aeb-Arab = aeb-TN = ajt = ajt-Arab = ajt-Arab-TN = ajt-TN = ar-aeb = ar-aeb-Arab = ar-aeb-Arab-TN = ar-aeb-TN = aeb-Arab-IL = ar-aeb-Arab-IL = ar-aeb-Arab-TN = aeb-Arab-TN
+*aeb = aeb-Arab = aeb-TN = ajt = ajt-Arab = ajt-Arab-TN = ajt-TN = ar-aeb = ar-aeb-Arab = ar-aeb-Arab-TN = ar-aeb-TN = aeb-Arab-IL = ar-aeb-Arab-IL = aeb-Arab-TN
 aeb-Hebr = aeb-IL = ajt-Hebr = ajt-Hebr-IL = ar-aeb-Hebr = ar-aeb-Hebr-IL = ar-aeb-IL = aeb-Hebr-IL
 *aeb-Latn = ar-aeb-Latn = ar-aeb-Latn-TN = aeb-Latn-TN
 aec = aec-Arab = aec-EG = ar-aec = ar-aec-Arab = ar-aec-Arab-EG = ar-aec-EG = aec-Arab-EG
@@ -1361,14 +1361,14 @@ cag = cag-Latn = cag-PY = cag-Latn-PY
 cah = cah-Latn = cah-PE = cah-Latn-PE
 caj = caj-BO = caj-Latn = caj-Latn-BO
 *cak = cak-GT = cak-Latn = cak-Latn-GT
-cak-x-central = cak-GT-x-central = cak-Latn-x-central = cak-Latn-GT-x-central
-cak-x-eastern = cak-GT-x-eastern = cak-Latn-x-eastern = cak-Latn-GT-x-eastern
+*cak-x-central = cak-GT-x-central = cak-Latn-x-central = cak-Latn-GT-x-central
+*cak-x-eastern = cak-GT-x-eastern = cak-Latn-x-eastern = cak-Latn-GT-x-eastern
 cak-x-northern = cak-GT-x-northern = cak-Latn-x-northern = cak-Latn-GT-x-northern
 cak-x-subcm = cak-GT-x-subcm = cak-Latn-x-subcm = cak-Latn-GT-x-subcm
-cak-x-subsa = cak-GT-x-subsa = cak-Latn-x-subsa = cak-Latn-GT-x-subsa
-cak-x-subso = cak-GT-x-subso = cak-Latn-x-subso = cak-Latn-GT-x-subso
-cak-x-subsu = cak-GT-x-subsu = cak-Latn-x-subsu = cak-Latn-GT-x-subsu
-cak-x-swestern = cak-GT-x-swestern = cak-Latn-x-swestern = cak-Latn-GT-x-swestern
+*cak-x-subsa = cak-GT-x-subsa = cak-Latn-x-subsa = cak-Latn-GT-x-subsa
+*cak-x-subso = cak-GT-x-subso = cak-Latn-x-subso = cak-Latn-GT-x-subso
+*cak-x-subsu = cak-GT-x-subsu = cak-Latn-x-subsu = cak-Latn-GT-x-subsu
+*cak-x-swestern = cak-GT-x-swestern = cak-Latn-x-swestern = cak-Latn-GT-x-swestern
 *cak-x-xenacoj = cak-GT-x-xenacoj = cak-Latn-x-xenacoj = cak-Latn-GT-x-xenacoj
 cal = cal-Latn = cal-MP = cal-Latn-MP
 *cam = cam-Latn = cam-NC = cam-Latn-NC
@@ -1718,7 +1718,7 @@ cts = cts-Latn = cts-PH = cts-Latn-PH
 ctt = ctt-IN = ctt-Taml = ctt-Taml-IN
 *ctu = ctu-Latn = ctu-MX = ctu-Latn-MX
 *ctu-x-tila = ctu-Latn-x-tila = ctu-MX-x-tila = ctu-Latn-MX-x-tila
-ctu-x-tumbala = ctu-Latn-x-tumbala = ctu-MX-x-tumbala = ctu-Latn-MX-x-tumbala
+*ctu-x-tumbala = ctu-Latn-x-tumbala = ctu-MX-x-tumbala = ctu-Latn-MX-x-tumbala
 cty = cty-IN = cty-Taml = cty-Taml-IN
 cty-Mlym = cty-Mlym-IN
 ctz = ctz-Latn = ctz-MX = ctz-Latn-MX
@@ -2519,7 +2519,7 @@ fud = fud-Latn = fud-WF = fud-Latn-WF
 *fuf = fuf-GN = fuf-Latn = fuf-Latn-GN
 fuf-Adlm = fuf-Adlm-GN
 *fuf-Arab = fuf-Arab-GN
-*fuh = *fuh-Latn = fuh-NE = fuh-Latn-NE
+*fuh = fuh-Latn = fuh-NE = fuh-Latn-NE
 fuh-Arab = fuh-Arab-NE
 fuh-BF = fuh-Latn-BF
 fui = fui-Latn = fui-TD = fui-Latn-TD
@@ -3497,8 +3497,8 @@ juh = juh-Latn = juh-NG = juh-Latn-NG
 jui = jui-AU = jui-Latn = jui-Latn-AU
 juk = juk-Latn = juk-NG = juk-Latn-NG
 jul = jul-Deva = jul-NP = jul-Deva-NP
-jum = jum-Latn = jum-SD = jum-Latn-SD
-jum-Arab = jum-Arab-SD
+*jum = jum-Latn = jum-SD = jum-Latn-SD
+*jum-Arab = jum-Arab-SD
 jun = jun-IN = jun-Orya = jun-Orya-IN
 juo = juo-Latn = juo-NG = juo-Latn-NG
 jup = jup-BR = jup-Latn = jup-Latn-BR
