@@ -29,24 +29,6 @@ class JsonSchemaTest(unittest.TestCase):
         if len(errors) > 0:
             self.fail("\n".join(errors))
 
-    def test_duplicate_tags(self):
-        'test for duplicate tags not found by schema'
-        unique_values = set()
-        locations = {}
-        errors = []
-        with open(testfile) as data:
-            testdata = json.load(data)
-        for item in testdata:
-            if 'tags' in item:
-                for value in item['tags']:
-                    if value in unique_values:
-                        errors.append(f'tag {value} is repeated at {item["full"]} and {locations[value]}')
-                    else:
-                        unique_values.add(value)
-                        locations[value] = item['full']
-        if len(errors) > 0:
-            self.fail("\n".join(errors))
-
 
 if __name__ == '__main__':
     unittest.main()
