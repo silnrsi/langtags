@@ -86,8 +86,7 @@
         },
         "latnnames": {
           "type": "array",
-          "items": { "type": "string" },
-          "uniqueItems": true
+          "items": { "type": "string" }
         },
         "suppress": {
           "type": "boolean"
