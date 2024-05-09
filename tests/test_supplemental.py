@@ -8,7 +8,9 @@ import sldr         # for the path
 
 langtagjson = os.path.join(os.path.dirname(__file__), '..', 'pub', 'langtags.json')
 
-exceptions = set(["aii-Cyrl"])
+exceptions = set(["aii-Cyrl", 
+    "en-Latn-CQ"        # CQ crashes old FLex
+])
 
 class Supplemental(unittest.TestCase):
     ''' Tests alltags.txt for discrepencies against likelySubtags.xml '''
@@ -38,6 +40,8 @@ class Supplemental(unittest.TestCase):
             regions = e.get('territories', '').split(' ')
             for s in scripts:
                 tag = lang + ("-" + s if len(s) else "")
+                if str(tag) in exceptions:
+                    continue
                 if tag not in self.ltags:
                     failures.append(tag)
                     continue
@@ -45,7 +49,7 @@ class Supplemental(unittest.TestCase):
                     if not len(r):
                         continue
                     t = tag + "-" + r
-                    if t in self.ltags:
+                    if t in self.ltags or str(t) in exceptions:
                         continue
                     if r not in self.ltags[tag][0].get('regions', []):
                         failures.append(t)
