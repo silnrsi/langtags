@@ -4,10 +4,13 @@
 import unittest, os, re, json
 from xml.etree import ElementTree as et
 from itertools import product
+import sldr         # for the path
 
 langtagjson = os.path.join(os.path.dirname(__file__), '..', 'pub', 'langtags.json')
 
-exceptions = set(["aii-Cyrl"])
+exceptions = set(["aii-Cyrl", 
+    "en-Latn-CQ"        # CQ crashes old FLex
+])
 
 class Supplemental(unittest.TestCase):
     ''' Tests alltags.txt for discrepencies against likelySubtags.xml '''
@@ -18,12 +21,13 @@ class Supplemental(unittest.TestCase):
         for j in self.data:
             if j['tag'].startswith("_"):
                 continue
-            self.ltags[j['tag']] = j
-            self.ltags[j['full']] = j
+            self.ltags.setdefault(j['tag'], []).append(j)
+            if j['tag'] != j['full']:
+                self.ltags.setdefault(j['full'], []).append(j)
             if 'tags' in j:
                 for t in j['tags']:
-                    self.ltags[t] = j
-        thisdir = os.path.dirname(__file__)
+                    self.ltags.setdefault(t, []).append(j)
+        thisdir = os.path.dirname(sldr.__file__)
         self.doc = et.parse(os.path.join(thisdir, "supplementalData.xml"))
 
     def test_languageData(self):
@@ -36,6 +40,8 @@ class Supplemental(unittest.TestCase):
             regions = e.get('territories', '').split(' ')
             for s in scripts:
                 tag = lang + ("-" + s if len(s) else "")
+                if str(tag) in exceptions:
+                    continue
                 if tag not in self.ltags:
                     failures.append(tag)
                     continue
@@ -43,9 +49,9 @@ class Supplemental(unittest.TestCase):
                     if not len(r):
                         continue
                     t = tag + "-" + r
-                    if t in self.ltags:
+                    if t in self.ltags or str(t) in exceptions:
                         continue
-                    if r not in self.ltags[tag].get('regions', []):
+                    if r not in self.ltags[tag][0].get('regions', []):
                         failures.append(t)
         if len(failures):
             self.fail("Missing tags from supplemental Data" + str(failures))
@@ -61,3 +67,10 @@ class Supplemental(unittest.TestCase):
                 if r['name'] == u'↑↑↑':
                     self.fail("Inherited name in " + str(['tag']))
 
+    def test_duplicates(self):
+        failures = []
+        for k, v in self.ltags.items():
+            if len(v) > 1:
+                failures.append("{}: " + ", ".join(r['full'] for r in v))
+        if len(failures):
+            self.fail("Duplicated tags: " + str(failures))
