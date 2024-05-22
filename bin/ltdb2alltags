@@ -117,6 +117,7 @@ def process_cldrentry(s, lts, allentries, root='.'):
                 l.script = n.script
             if n.hidescript and l.lang+"-"+l.region not in lts:
                 l.hidescript = True
+            l.extra_variants = n.extra_variants
         testf = find_file(str(t), root=root)
         if testf is not None:
             l.parent = t
