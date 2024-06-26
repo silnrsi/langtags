@@ -8,14 +8,14 @@ aac,aac-Latn-PG,Ari,PG,,,,,,,,MEL,aac,LE,10-Jan-2018,
 aad,aad-Latn-PG,Amal,PG,,,,,1,,,MEL,aad,LE,10-Jan-2018,
 aae,aae-Latn-IT,"Albanian, Arbëreshë",IT,,,06860 06861 06862 06863,,,,,SEU,aae,LE,9-Jan-2018,
 aae-Grek,aae-Grek-IT,"Albanian, Arbëreshë",IT,,,06860 06861 06862 06863,,,1,,SEU,aae,LE,9-Jan-2018,
-aae-x-sub84,aae-Latn-IT-x-sub84,"Albanian, Arbereshe",IT,,6861,,,,,,SEU,aae,,,
+aae-x-sub84,aae-Latn-IT-x-sub84,"Albanian, Arbereshe",IT,,6861,06860 06861 06862 06863,,,,,SEU,aae,,,
 aaf,aaf-Mlym-IN,Arabadan,IN,,,,,,,,SAS,aaf,,,
 aaf-Arab,aaf-Arab-IN,Arabadan,IN,,,,,,,,SAS,aaf,,,
 aag,aag-Latn-PG,Ambrak,PG,,,,,1,,,MEL,aag,LE,10-Jan-2018,
 aah,aah-Latn-PG,"Arapesh, Abu'",PG,,,,,,,,MEL,aah,LE,10-Jan-2018,
 aai,aai-Latn-PG,Miniafia Oyan,PG,,,02416 02436,,,,,MEL,aai,LE,10-Jan-2018,
-aai-x-northern-suboro,aai-Latn-PG-x-northern-suboro,Arifama-Miniafia,PG,,2436,,,,,,MEL,aai,,,
-aai-x-suboro,aai-Latn-PG-x-suboro,Arifama-Miniafia,PG,,2416,,,,,,MEL,aai,,,
+aai-x-northern-suboro,aai-Latn-PG-x-northern-suboro,Arifama-Miniafia,PG,,2436,02416 02436,,,,,MEL,aai,,,
+aai-x-suboro,aai-Latn-PG-x-suboro,Arifama-Miniafia,PG,,2416,02416 02436,,,,,MEL,aai,,,
 aak,aak-Latn-PG,Ankave,PG,,,,,,,,MEL,aak,LE,10-Jan-2018,
 aal,aal-Latn-CM,Afade,CM NG,,,,,,,,MAF,aal,LE,12-Jan-2018,
 aam,aam-Latn-TZ,Aasáx,TZ,,,,aas,1,,aas,EAF,aas,LE,9-Jan-2018,
@@ -78,6 +78,7 @@ acq,acq-Arab-YE,"Arabic, Ta'izzi-Adeni Spoken",AE DJ EG ER ET KE LY OM SA SO TM 
 acr,acr-Latn-GT,Achi,GT,,,00448 02098,,,,,CAM,acr,LE,9-Jan-2018,
 acr-x-cubulco,acr-Latn-GT-x-cubulco,Achi - Cubulco,GT,,02098,00448 02098,,,,,CAM,acr,LE,,
 acr-x-rabinal,acr-Latn-GT-x-rabinal,Achi - Rabinal,GT,,00448,00448 02098,,,,,CAM,acr,,,
+acr-x-trabinal,acr-Latn-GT-x-trabinal,Achi - Traditional Rabinal,GT,,,,,,,,,,,,
 acs,acs-Latn-BR,Acroá,BR,,,,,1,,,SAM,acs,LE,10-Jan-2018,Extinct
 act,act-Latn-NL,Achterhoeks,NL,,,,,,,,WEU,act,LE,12-Jan-2018,
 acu,acu-Latn-EC,Achuar-Shiwiar,EC PE,,,,,,,,SAM,acu,LE,9-Jan-2018,
@@ -183,11 +184,11 @@ ahb,ahb-Latn-VU,Axamb,VU,,,,,,,,MEL,ahb,LE,10-Jan-2018,
 ahg,ahg-Ethi-ET,Qimant,ET,,,06725,,,1,,EAF,ahg,,,
 ahh,ahh-Latn-ID,Aghu,ID,,,,,1,,,SEA,ahh,,,
 ahi,ahi-Latn-CI,"Aizi, Tiagbamrin",CI,,,,,1,,,WAF,ahi,,,
-ahk,ahk-Latn-MM,Akha,CN LA MM TH VN,,,,,,,,EAS SEA,ahk,MH,,See (p.5) mentions 10 orthographies! (NMC) https://www.researchgate.net/publication/303365969_The_current_status_of_Akha
-ahk-x-louma,ahk-Latn-LA-x-louma,Louma,CN LA MM TH VN,,,,,1,,,SEA,ahk,NMC,,"Needs to be it's own iso code, currently lumpped under Akha"
-ahk-Mymr,ahk-Mymr-MM,Akha,CN LA MM TH VN,,,,,,,,EAS SEA,ahk,MH,,
-ahk-TH,ahk-Latn-TH,Akha,CN LA MM TH VN,,,03127,,,,,EAS SEA,ahk,MH,,
-ahk-Thai,ahk-Thai-TH,Akha,CN LA MM TH VN,,,03127,,,,,EAS SEA,ahk,MH,,
+ahk,ahk-Latn-MM,Akha,CN LA MM TH VN,,,03127 06819 06820,,,,,EAS SEA,ahk,MH,,See (p.5) mentions 10 orthographies! (NMC) https://www.researchgate.net/publication/303365969_The_current_status_of_Akha
+ahk-x-louma,ahk-Latn-LA-x-louma,Louma,CN LA MM TH VN,,,03127 06819 06820,,1,,,SEA,ahk,NMC,,"Needs to be it's own iso code, currently lumpped under Akha"
+ahk-Mymr,ahk-Mymr-MM,Akha,CN LA MM TH VN,,,03127 06819 06820,,,,,EAS SEA,ahk,MH,,
+ahk-TH,ahk-Latn-TH,Akha,CN LA MM TH VN,,03127,03127 06819 06820,,,,,EAS SEA,ahk,MH,,
+ahk-Thai,ahk-Thai-TH,Akha,CN LA MM TH VN,,03127,03127 06819 06820,,,,,EAS SEA,ahk,MH,,
 ahl,ahl-Latn-TG,Igo,TG,,,,,,,,WAF,ahl,,,
 ahm,ahm-Latn-CI,"Aizi, Mobumrin",CI,,,,,1,,,WAF,ahm,,,
 ahn,ahn-Latn-NG,Àhàn,NG,,,,,1,,,WAF,ahn,,,
@@ -386,9 +387,9 @@ apc,apc-Arab-SY,"Arabic, Levantine Spoken",AE AG AR BR CY DE DO EG GF IL JM JO L
 apc-JO,apc-Arab-JO,"Arabic, Levantine Spoken",JO,,,06442 07137 20554,,,,,CAR NAF SAM WAF WAS,apc,,,
 apd,apd-Arab-TG,"Arabic, Sudanese Spoken",AE EG ER ET LY QA SA SD SS YE,,,,,,,,EAF NAF WAS,apd,CLDR,,"CLDR issue: should not be TG, should be SD"
 apd-Latn,apd-Latn-SD,"Arabic, Sudanese Spoken",EG ER ET LY QA SA SD SS,,,00905 00906 06375 07150,,,,,EAF NAF WAS,apd,LE,12-Jan-2018,
-ape,ape-Latn-PG,Bukiyip,PG,,,08441,,,,,MEL,ape,LE,10-Jan-2018,
-ape-x-coastal,ape-Latn-PG-x-coastal,Bukiyip - Coastal Arapesh,PG,,08441,08441,,,,,MEL,ape,,,
-ape-x-mountain,ape-Latn-PG-x-mountain,Bukiyip - Mountain Arapesh,PG,,03286,08441,,,,,MEL,ape,,,This ROD code wasn't in the official list
+ape,ape-Latn-PG,Bukiyip,PG,,,08441 27999 28000,,,,,MEL,ape,LE,10-Jan-2018,
+ape-x-coastal,ape-Latn-PG-x-coastal,Bukiyip - Coastal Arapesh,PG,,08441,08441 27999 28000,,,,,MEL,ape,,,
+ape-x-mountain,ape-Latn-PG-x-mountain,Bukiyip - Mountain Arapesh,PG,,,08441 27999 28000,,,,,MEL,ape,,,This ROD code wasn't in the official list
 apf,apf-Latn-PH,"Agta, Pahanan",PH,,,,,,,,SEA,apf,,,
 apg,apg-Latn-ID,Ampanang,ID,,,,,1,,,SEA,apg,,,
 aph,aph-Deva-NP,Athpariya,NP,,,,,,,,SAS,aph,,,
@@ -775,8 +776,8 @@ bfq-Knda,bfq-Knda-IN,Badaga,IN,,,,,,1,,SAS,bfq,,,
 bfq-Latn,bfq-Latn-IN,Badaga,IN,,,,,,,,SAS,bfq,,,
 bfq-Zzzz-x-badaga,bfq-Zzzz-IN-x-badaga,Badaga,IN,,,,,,,,SAS,bfq,,,
 bfr,bfr-Zyyy-IN,Bazigar,IN,,,,,1,,,SAS,bfr,,,
-bfs,bfs-Latn-CN,"Bai, Southern",CN,,,04699,,,,,EAS,bfs,,,
-bfs-Hani,bfs-Hani-CN,"Bai, Southern",CN,,,04699,,,,,EAS,bfs,,,
+bfs,bfs-Latn-CN,"Bai, Southern",CN,,,04699 24396,,,,,EAS,bfs,,,
+bfs-Hani,bfs-Hani-CN,"Bai, Southern",CN,,,04699 24396,,,,,EAS,bfs,,,
 bft,bft-Arab-PK,Balti,IN PK,,,,,,,,SAS,bft,CLDR,,
 bft-Tibt,bft-Tibt-PK,Balti,IN PK,,,,,,1,,SAS,bft,,,
 bft-Zzzz-x-baltia,bft-Zzzz-PK-x-baltia,Balti,IN PK,,,,,,1,,SAS,bft,,,
@@ -953,9 +954,9 @@ bln,bln-Latn-PH,"Bikol, Southern Catanduanes",PH,,,,,1,,,SEA,bln,,,
 blo,blo-Latn-BJ,Anii,BJ TG,balanka,,02748 06356 07014 20047 20183,,,,,WAF,blo,,,
 blp,blp-Latn-SB,Blablanga,SB,,,,,1,,,MEL,blp,LE,10-Jan-2018,
 blq,blq-Latn-PG,Baluan-Pam,PG,,,,,1,,,MEL,blq,LE,10-Jan-2018,
-blr,blr-Latn-CN,Blang,CN MM TH,,,06074 06084 06164 08199,,,,,EAS SEA,blr,,,
-blr-Latn-x-pangpung,blr-Latn-MM-x-pangpung,Pangpung Plang,CN MM TH,,,21276,,,,,SEA,blr,NMC,15-Jan-2018,
-blr-Tale,blr-Tale-CN,Blang,CN MM TH,,,06074 06084 06164 08199,,,,,EAS SEA,blr,,,
+blr,blr-Latn-CN,Blang,CN MM TH,,,06074 06084 06164 08198 08199 21276,,,,,EAS SEA,blr,,,
+blr-Latn-x-pangpung,blr-Latn-MM-x-pangpung,Pangpung Plang,CN MM TH,,21276,06074 06084 06164 08198 08199 21276,,,,,SEA,blr,NMC,15-Jan-2018,
+blr-Tale,blr-Tale-CN,Blang,CN MM TH,,,06074 06084 06164 08198 08199 21276,,,,,EAS SEA,blr,,,
 blr-Thai,blr-Thai-TH,Blang,CN MM TH,,,,,,,,EAS SEA,blr,,,"Check the ""Writing"" systems page of Ethnologue 4 scripts listed there, only one script listed in this doc"
 bls,bls-Latn-ID,Balaesang,ID,,,,,1,,,SEA,bls,,,
 blt,blt-Tavt-VN,Tai Dam,CN LA TH US VN,,,,,,,,EAS NAM SEA,blt,CLDR,,"Although the Tavt script is highly valued by the Tai Dam people, most actually use the Latin script.  JLB 9-Jul-2018"
@@ -1130,9 +1131,9 @@ brt,brt-Latn-NG,Bitare,CM NG,,,,,1,,,MAF WAF,brt,,,
 bru,bru-Latn-VN,"Bru, Eastern",LA VN,,,08377,,,,,SEA,bru,SVW,,"Latin script orthography is the most widely used at this time, so it should be the default. - SVW"
 bru-Laoo,bru-Laoo-LA,"Bru, Eastern",LA VN,,,03339 08378,,,,,SEA,bru,NMC,4-Dec-2017,
 bru-Thai,bru-Thai-LA,"Bru, Eastern",LA VN,,,03339 08378,,,,,SEA,bru,SVW NMC,,"I'm not aware of a Thai orthography for Eastern Bru (only Western Bru); if anyone has information on this, please let me know. - SVW [LE: it's been in the Ethnologue since 2010. Should I remove it there?] SVW: Just asked C. Miller about it, will get back to you soon."
-brv,brv-Laoo-LA,"Bru, Western (Bru Chomphon)",LA TH US,,,,,,,,NAM SEA,brv,NMC SVW,,This is the only orthography in Lao script
-brv-Thai-x-donglng,brv-Thai-TH-x-donglng,Bru Dong Luang,LA TH US,,,,,,,,NAM SEA,brv,NMC SVW,15-Jan-2018,long
-brv-Thai-x-khongchm,brv-Thai-TH-x-khongchm,Bru Khong Chiem,LA TH US,,,,,,,,NAM SEA,brv,SVW,9-Feb-2018,"long,Sounds like this is a different orthography from Bru Sakon Nakhon and Bru Dong Luang, but not sure how different. Might actually be a dialect of ""Katang"" (either ncq or sct, I'm not sure which)."
+brv,brv-Laoo-LA,"Bru, Western (Bru Chomphon)",LA TH US,,,08379 27539 27540,,,,,NAM SEA,brv,NMC SVW,,This is the only orthography in Lao script
+brv-Thai-x-donglng,brv-Thai-TH-x-donglng,Bru Dong Luang,LA TH US,,08379,08379 27539 27540,,,,,NAM SEA,brv,NMC SVW,15-Jan-2018,long
+brv-Thai-x-khongchm,brv-Thai-TH-x-khongchm,Bru Khong Chiem,LA TH US,,,08379 27539 27540,,,,,NAM SEA,brv,SVW,9-Feb-2018,"long,Sounds like this is a different orthography from Bru Sakon Nakhon and Bru Dong Luang, but not sure how different. Might actually be a dialect of ""Katang"" (either ncq or sct, I'm not sure which)."
 brv-Thai-x-sakonnkn,brv-Thai-TH-x-sakonnkn,Bru Sakon Nakhorn,LA TH US,,,,,,,,NAM SEA,brv,NMC SVW,28-Sep-2018,long
 brw,brw-Knda-IN,Bellari,IN,,,,,1,,,SAS,brw,,,
 brw-Mlym,brw-Mlym-IN,Bellari,IN,,,,,1,,,SAS,brw,,,
@@ -1222,8 +1223,9 @@ buq,buq-Latn-PG,Brem,PG,,,,,,,,MEL,buq,LE,10-Jan-2018,
 bus,bus-Latn-NG,Bokobaru,NG,,,,,,,,WAF,bus,,,
 but,but-Latn-PG,Bungain,PG,,,,,1,,,MEL,but,LE,10-Jan-2018,
 buu,buu-Latn-CD,Budu,CD,,,08404 08406 19443,,,,,MAF,buu,LE,12-Jan-2018,
-buu-x-bafwa,buu-Latn-CD-x-bafwa,Budu,,,8404,,,,,,,buu,,,
-buu-x-ineta,buu-Latn-CD-x-ineta,Budu,,,8406,,,,,,,buu,,,
+buu-x-bafwa,buu-Latn-CD-x-bafwa,Budu - Bafwa,CD,,8404,08404 08406 19443,,,,,MAF,buu,,,
+buu-x-ineta,buu-Latn-CD-x-ineta,Budu - Ineta,CD,,8406,08404 08406 19443,,,,,MAF,buu,,,
+buu-x-koya,buu-Latn-CD-x-koya,Budu - Koya,CD,,19443,08404 08406 19443,,,,,MAF,buu,,,
 buv,buv-Latn-PG,Bun,PG,,,,,1,,,MEL,buv,LE,10-Jan-2018,
 buw,buw-Latn-GA,Bubi,GA,,,,,1,,,MAF,buw,LE,30-Jan-2018,
 bux,bux-Latn-NG,Boghom,NG,,,,,,1,,WAF,bux,,,
@@ -1456,15 +1458,15 @@ cea,cea-Latn-US,"Chehalis, Lower",US,,,,,1,,,NAM,cea,LE,10-Jan-2018,Extinct
 ceb,ceb-Latn-PH,Cebuano,PH US,,,08665,,,,,NAM SEA,ceb,CLDR,,
 ceb-Brai,ceb-Brai-PH,Cebuano,PH US,,,08665,,,,,NAM SEA,ceb,,,
 ceg,ceg-Latn-PY,Chamacoco,PY,,,01899,,,,,SAM,ceg,LE,9-Jan-2018,
-cek,cek-Latn-MM,"Chin, Eastern Khumi",MM,,,05182 22888,,,,,SEA,cek,NMC,10-Jan-2018,"still following up, [cek] has many dialects"
-cek-x-asang,cek-Latn-MM-x-asang,"Chin, Eastern Khumi Asang (Khongso) dialect",MM,,,05182 22888,,,,,SEA,cek,NMC,31-Aug-2018,long. Was cek-x-asangkhongso
-cek-x-hnise,cek-Latn-MM-x-hnise,"Chin, Eastern Khumi Hnise dialect",MM,,,05182 22888,,,,,SEA,cek,NMC,31-Aug-2018,
-cek-x-kanise,cek-Latn-MM-x-kanise,"Chin, Eastern Khumi Kanise dialect",MM,,,05182 22888,,,,,SEA,cek,NMC,31-Aug-2018,
-cek-x-khawngtu,cek-Latn-MM-x-khawngtu,"Chin, Eastern Khumi Khawng Tuu dialect",MM,,,05182 22888,,,,,SEA,cek,NMC,31-Aug-2018,"long, Yes Khawng Tuu uses a different spelling system then Khong Tu below was cek-x-khawngtuu"
-cek-x-khongtu,cek-Latn-MM-x-khongtu,"Chfin, Eastern Khumi Khong Tu dialect",MM,,,05182 22888,,,,,SEA,cek,NMC,31-Aug-2018,Yes Khong Tu uses a different spelling system then Khawng Tuu above
-cek-x-lemi,cek-Latn-MM-x-lemi,"Chin, Eastern Khumi Lemi dialect",MM,,,05182 22888,,,,,SEA,cek,NMC,7-Sep-2018,
-cek-x-likhy,cek-Latn-MM-x-likhy,"Chin, Eastern Khumi Likhy dialect",MM,,,05182 22888,,,,,SEA,cek,NMC,31-Aug-2018,
-cek-x-rengcaa,cek-Latn-MM-x-rengcaa,"Chin, Eastern Khumi Rengcaa dialect",MM,,,05182 22888,,,,,SEA,cek,NMC,31-Aug-2018,
+cek,cek-Latn-MM,"Chin, Eastern Khumi",MM,,,05182 22888 23796 23797 23798 23799 23800 24601,,,,,SEA,cek,NMC,10-Jan-2018,"still following up, [cek] has many dialects"
+cek-x-asang,cek-Latn-MM-x-asang,"Chin, Eastern Khumi Asang (Khongso) dialect",MM,,23797,05182 22888,,,,,SEA,cek,NMC,31-Aug-2018,long. Was cek-x-asangkhongso
+cek-x-hnise,cek-Latn-MM-x-hnise,"Chin, Eastern Khumi Hnise dialect",MM,,23800,05182 22888,,,,,SEA,cek,NMC,31-Aug-2018,
+cek-x-kanise,cek-Latn-MM-x-kanise,"Chin, Eastern Khumi Kanise dialect",MM,,23798,05182 22888,,,,,SEA,cek,NMC,31-Aug-2018,
+cek-x-khawngtu,cek-Latn-MM-x-khawngtu,"Chin, Eastern Khumi Khawng Tuu dialect",MM,,23799,05182 22888,,,,,SEA,cek,NMC,31-Aug-2018,"long, Yes Khawng Tuu uses a different spelling system then Khong Tu below was cek-x-khawngtuu"
+cek-x-khongtu,cek-Latn-MM-x-khongtu,"Chfin, Eastern Khumi Khong Tu dialect",MM,,24601,05182 22888,,,,,SEA,cek,NMC,31-Aug-2018,Yes Khong Tu uses a different spelling system then Khawng Tuu above
+cek-x-lemi,cek-Latn-MM-x-lemi,"Chin, Eastern Khumi Lemi dialect",MM,,05182,05182 22888,,,,,SEA,cek,NMC,7-Sep-2018,
+cek-x-likhy,cek-Latn-MM-x-likhy,"Chin, Eastern Khumi Likhy dialect",MM,,22888,05182 22888,,,,,SEA,cek,NMC,31-Aug-2018,
+cek-x-rengcaa,cek-Latn-MM-x-rengcaa,"Chin, Eastern Khumi Rengcaa dialect",MM,,23796,05182 22888,,,,,SEA,cek,NMC,31-Aug-2018,
 cek-x-taaw,cek-Latn-MM-x-taaw,"Chin, Eastern Khumi Rengcaa dialect Ta-aw alphabet",MM,,,05182 22888,,,,,SEA,cek,NMC,9/11/2018,
 cen,cen-Latn-NG,Cen,NG,,,,,,,,WAF,cen,,,
 cet,cet-Latn-NG,Centúúm,NG,,,,,1,,,WAF,cet,,,
@@ -2548,6 +2550,8 @@ gex,gex-Latn-SO,Garre,KE SO,,,,,,,,EAF,gex,,,
 gey,gey-Latn-CD,Enya,CD,,,,,1,,,MAF,gey,,,
 gez,gez-Ethi-ET,Geez,ER ET,,,,,,,,EAF,gez,CLDR,,Ancient
 gfk,gfk-Latn-PG,Patpatar,PG,,,15554 21925 21926,,,,,MEL,gfk,LE,10-Jan-2018,
+gfk-x-hinsaal,gfk-Latn-PG-x-hinsaal,Patpatar - Hinsaal,PG,,21926,,,,,,MEL,gfk,,,
+gfk-x-sokarek,gfk-Latn-PG-x-sokarek,Patpatar - Sokarek,PG,,21925,,,,,,MEL,gfk,,,
 gft-Zyyy,gft-Zyyy-ET,Gafat,ET,,,,,,,,???,gft,,,Extinct
 gfx,gfx-Latn-NA,Northwestern !Kung,AO NA ZA,,,,vaj,1,,vaj,MAF SAF,vaj,,,
 gga,gga-Latn-SB,Gao,SB,,,,,,,,MEL,gga,LE,10-Jan-2018,
@@ -3932,7 +3936,8 @@ kpu,kpu-Latn-ID,Kafoa,ID,,,,,1,,,SEA,kpu,,,
 kpv,kpv-Cyrl-RU,Komi-Zyrian,RU,,,,kv,,,,EEU,kpv,CLDR,23-Mar-2018,via macro mapping
 kpv-Cyrs,kpv-Cyrs-RU,Komi-Zyrian,RU,,,,kv,,1,,EEU,kpv,,,
 kpv-Latn,kpv-Latn-RU,Komi-Zyrian,RU,,,,kv,,,,EEU,kpv,,,
-kpw,kpw-Latn-PG,Kobon,PG,,,21176,,,,,MEL,kpw,LE,10-Jan-2018,
+kpw,kpw-Latn-PG,Kobon,PG,,,21176,,,,,MEL,kpw,,,
+kpw-x-minimib,kpw-Latn-PG-x-minimib,Kobon - Minimib,PG,,21176,,,,,,MEL,kpw,,,
 kpx,kpx-Latn-PG,"Koiali, Mountain",PG,,,,,,,,MEL,kpx,LE,10-Jan-2018,
 kpy,kpy-Cyrl-RU,Koryak,RU,,,,,,,,EEU,kpy,,,
 kpz,kpz-Latn-UG,Kupsapiiny,UG,,,12519,,,,,EAF,kpz,LE,12-Jan-2018,
@@ -5727,7 +5732,7 @@ nnz,nnz-Latn-CM,Nda'nda',CM,,,04288,,1,,,MAF,nnz,,,
 no,no-Latn-NO,Norwegian,CA DE NO RU SE SJ US,,,,,,,,EEU NAM NEU WEU,nor,CLDR,,
 no-Brai,no-Brai-NO,Norwegian,CA DE NO RU SE SJ US,,,,,,,,EEU NAM NEU WEU,nor,,,
 no-Runr,no-Runr-001,Norwegian,001,,,,,,,,EEU NAM NEU WEU,nor,,,
-noa,noa-Latn-CO,Woun Meu,CO PA,,,,,,,,CAM SAM,noa,LE,9-Jan-2018,
+noa,noa-Latn-CO,Woun Meu,CO PA,,,20060,,,,,CAM SAM,noa,LE,9-Jan-2018,
 noc,noc-Latn-PG,Nuk,PG,,,,,,,,MEL,noc,LE,10-Jan-2018,
 nod,nod-Lana-TH,"Thai, Northern",LA TH,,,17422,,,,,SEA,nod,CLDR,,
 nod-Thai,nod-Thai-TH,"Thai, Northern",LA TH,,,17422,,,,,SEA,nod,NMC,4-Dec-2017,
@@ -6014,7 +6019,12 @@ oko,oko-Hani-KR,Old Korean (3rd-9th cent.),KR,,,,,,,,???,oko,,,Historical
 okr,okr-Latn-NG,Kirike,NG,,,,,,,,WAF,okr,,,
 oks,oks-Latn-NG,Oko-Eni-Osayen,NG,,,02381,,1,,,WAF,oks,,,
 oku,oku-Latn-CM,Oku,CM,,,,,,,,MAF,oku,,,
-okv,okv-Latn-PG,Orokaiva,PG,,,15340 15341,,,,,MEL,okv,LE,10-Jan-2018,
+okv,okv-Latn-PG,Orokaiva,PG,,,15339 15340 15341 15342 15344,,,,,MEL,okv,,,
+okv-x-ajeka,okv-Latn-PG-x-ajeka,Orokaiva - Ajeka,PG,,15339,,,,,,MEL,okv,,,
+okv-x-ahija,okv-Latn-PG-x-ahija,Orokaiva - Ahija,PG,,15340,,,,,,MEL,okv,,,
+okv-x-etija,okv-Latn-PG-x-etija,Orokaiva - Etija,PG,,15341,,,,,,MEL,okv,,,
+okv-x-harava,okv-Latn-PG-x-harava,Orokaiva - Harava,PG,,15342,,,,,,MEL,okv,,,
+okv--x-Kokoda,okv-Latn-PG-x-kokoda,Orokaiva - Kokoda,PG,,15344,,,,,,MEL,okv,,,
 okx,okx-Latn-NG,Okpe,NG,,,,,1,,,WAF,okx,,,
 okz,okz-Khmr-KH,Old Khmer,KH LA TH VN,,,,,,,,???,okz,,,
 ola,ola-Deva-NP,Walungge,CN IN NP,,,,,,,,EAS SAS,ola,,,
@@ -8681,9 +8691,11 @@ xbc-Mani,xbc-Mani-XX,Bactrian,XX,,,,,,,,???,xbc,,,
 xbd,xbd-Latn-AU,Bindal,AU,,,,,1,,,ANZ,xbd,LE,10-Jan-2018,Extinct
 xbe,xbe-Latn-AU,Bigambal,AU,,,,,1,,,ANZ,xbe,LE,10-Jan-2018,Extinct
 xbg,xbg-Latn-AU,Bunganditj,AU,,,,,1,,,ANZ,xbg,LE,10-Jan-2018,Extinct
-xbi,xbi-Latn-PG,Kombio,PG,,,01023,,,,,MEL,xbi,,,
-xbi-x-south,xbi-Latn-PG-x-south,Kombio,PG,,,,,,,,MEL,xbi,,,Figure out ROD
-xbi-x-western,xbi-Latn-PG-x-western,Kombio,PG,,,,,,,,MEL,xbi,,,Figure out ROD
+xbi,xbi-Latn-PG,Kombio,PG,,,01023 12182 12183 12184 26363,,,,,MEL,xbi,,,
+xbi-x-south,xbi-Latn-PG-x-south,Kombio - Yanimoi (South),PG,,12183,,,,,,MEL,xbi,,,Figure out ROD
+xbi-x-western,xbi-Latn-PG-x-western,Kombio - Wampukuamp (West-Central),PG,,12184,,,,,,MEL,xbi,,,Figure out ROD
+xbi-x-north,xbi-Latn-PG-x-north,Kombio - Mwi (North),PG,,12182,,,,,,MEL,xbi,,,
+xbi-x-east,xbi-Latn-PG-x-east,Kombio - Wampurun (East),PG,,26363,,,,,,MEL,xbi,,,
 xbj,xbj-Latn-AU,Birrpayi,AU,,,,,1,,,ANZ,xbj,LE,10-Jan-2018,Extinct
 xbm,xbm-Latn-FR,Middle Breton,FR,,,,,,,,???,xbm,St,,Historical
 xbn,xbn-Latn-MY,Kenaboi,MY,,,,,1,,,SEA,xbn,LE,10-Jan-2018,Extinct
