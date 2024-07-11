@@ -10,7 +10,9 @@ The preferred download location for the text data file is <https://ldml.api.sil.
 
 ## langtags.json
 
-This file brings together information regarding a tag equivalence set. It includes information from the following sources:
+This file brings together information regarding a tag equivalence set. An equivalence set aims to show equivalence at the orthography level. Locale differences are only listed as possible regions within a given set.
+
+Langtags.json includes information from the following sources:
 
 - ISO 639 parts 1 and 3 - language codes
 - ISO 15924 - script codes
