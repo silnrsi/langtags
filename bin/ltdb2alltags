@@ -77,9 +77,11 @@ def getlocalename(testf, getnames):
             if getname is None:
                 print(getnames)
                 continue
-            e = doc.find('./localeDisplayNames/languages/language[@type="{}"]'.format(getname.replace("-","_")))
-            if e is not None:
-                return unicode(e.text)
+            bits = getname.split("-")
+            for i in range(len(bits), 0, -1):
+                e = doc.find('./localeDisplayNames/languages/language[@type="{}"]'.format("_".join(bits[0:i])))
+                if e is not None:
+                    return e.text
     return None
 
 def issimple(testf):
@@ -537,7 +539,7 @@ def make_record(t):
     if t.region is not None:
         regions.discard(t.region)
     regions.discard('XX')
-    testtag = re.sub('-(?:[A-Z]{2}|\d{3})(?:-|$)', '-{}', n['full'])
+    testtag = re.sub(r'-(?:[A-Z]{2}|\d{3})(?:-|$)', '-{}', n['full'])
     regions = [r for r in regions if testtag.format(r) not in lts]
     if len(regions):
         n['regions'] = sorted(regions)
