@@ -218,7 +218,7 @@ aip = aip-ID = aip-Latn = aip-Latn-ID
 aiq = aiq-AF = aiq-Arab = aiq-Arab-AF
 air = air-ID = air-Latn = air-Latn-ID
 ait = ait-BR = ait-Latn = ait-Latn-BR
-aiw = aiw-ET = aiw-Latn = aiw-Latn-ET
+*aiw = aiw-ET = aiw-Latn = aiw-Latn-ET
 aiw-Arab = aiw-Arab-ET
 *aiw-Ethi = aiw-Ethi-ET
 aix = aix-Latn = aix-PG = aix-Latn-PG
@@ -441,8 +441,6 @@ ar-Syrc-SY = ar-arb-Syrc = ar-arb-Syrc-SY = arb-Syrc = arb-Syrc-SY = ar-Syrc-SY
 *ar-TD = ar-Arab-TD
 *ar-TN = ar-Arab-TN
 *ar-YE = ar-Arab-YE
-*arb-EG = ar-arb-Arab-EG = ar-arb-EG = arb-Arab-EG
-*arb-LB = ar-arb-Arab-LB = ar-arb-LB = arb-Arab-LB
 arc = arc-Armi = arc-IR = arc-Armi-IR
 arc-Hatr = arc-Hatr-XX
 arc-Nbat = arc-JO = arc-Nbat-JO
@@ -605,7 +603,6 @@ ayy = ayy-Latn = ayy-PH = ayy-Latn-PH
 *ayz = ayz-ID = ayz-Latn = ayz-Latn-ID
 *az = az-AZ = *az-Latn = azj = azj-AZ = azj-Latn = azj-Latn-AZ = *az-Latn-AZ
 az-Brai = azj-Brai = azj-Brai-IR = az-Brai-IR
-*az-Cyrl-AZ
 az-IQ = *az-Arab-IQ
 az-IR = *az-Arab = azj-Arab = azj-Arab-IR = *az-Arab-IR
 az-RU = *az-Cyrl = azj-Cyrl = azj-Cyrl-RU = az-Cyrl-RU
@@ -1977,9 +1974,9 @@ dng = dng-Cyrl = dng-KG = dng-Cyrl-KG
 dng-Arab = dng-Arab-KG
 dni = dni-ID = dni-Latn = dni-Latn-ID
 *dnj = daf = daf-CI = daf-Latn = daf-Latn-CI = dnj-CI = dnj-Latn = dnj-Latn-CI
-*dnj-LR = dnj-Latn-LR
+dnj-LR = dnj-Latn-LR
 dnj-x-eastern = dnj-CI-x-eastern = dnj-Latn-x-eastern = dnj-Latn-CI-x-eastern
-dnj-x-western = dnj-CI-x-western = dnj-Latn-x-western = dnj-Latn-CI-x-western
+*dnj-x-western = dnj-CI-x-western = dnj-Latn-x-western = dnj-Latn-CI-x-western
 dnj-x-yakouba = dnj-CI-x-yakouba = dnj-Latn-x-yakouba = dnj-Latn-CI-x-yakouba
 dnk = dnk-ID = dnk-Latn = dnk-Latn-ID
 dnn = dnn-BF = dnn-Latn = dnn-Latn-BF
@@ -2352,8 +2349,8 @@ es-Dupl = es-Dupl-ES
 *es-UY = es-Latn-UY
 *es-VE = es-Latn-VE
 *ese = ese-BO = ese-Latn = ese-Latn-BO
-*esg = esg-Gonm = esg-IN = esg-Gonm-IN
-esg-Deva = esg-Deva-IN
+esg = esg-Gonm = esg-IN = esg-Gonm-IN
+*esg-Deva = esg-Deva-IN
 esg-Telu = esg-Telu-IN
 esh = esh-Arab = esh-IR = esh-Arab-IR
 esi = esi-Latn = esi-US = esi-Latn-US
@@ -3659,7 +3656,7 @@ kdw = kdw-ID = kdw-Latn = kdw-Latn-ID
 kdx = kdx-Latn = kdx-NG = kdx-Latn-NG
 kdy = kdy-ID = kdy-Latn = kdy-Latn-ID
 kdz = kdz-CM = kdz-Latn = ncp = ncp-CM = ncp-Latn = ncp-Latn-CM = kdz-Latn-CM
-*kea = *kea-CV = *kea-Latn = kea-Latn-CV
+*kea = *kea-CV = kea-Latn = kea-Latn-CV
 keb = keb-GA = keb-Latn = keb-Latn-GA
 kec = kec-Latn = kec-SD = kec-Latn-SD
 ked = ked-Latn = ked-TZ = ked-Latn-TZ
@@ -3857,7 +3854,7 @@ kkg = kkg-Latn = kkg-PH = kkg-Latn-PH
 kkh = kkh-Lana = kkh-MM = kkh-Lana-MM
 kki = kki-Latn = kki-TZ = kki-Latn-TZ
 *kkj = *kkj-CM = kkj-Latn = kkj-Latn-CM
-kkj-TD = *kkj-Latn-TD
+*kkj-TD = kkj-Latn-TD
 kkk = kkk-Latn = kkk-SB = kkk-Latn-SB
 kkl = kkl-ID = kkl-Latn = kkl-Latn-ID
 kkm = kkm-Latn = kkm-NG = kkm-Latn-NG
@@ -4226,7 +4223,7 @@ kwy = kwy-AO = kwy-Latn = kwy-Latn-AO
 kwz = kwz-AO = kwz-Latn = kwz-Latn-AO
 *kxa = kxa-Latn = kxa-PG = kxa-Latn-PG
 kxb = kxb-CI = kxb-Latn = kxb-Latn-CI
-kxc = kxc-ET = kxc-Latn = kxc-Latn-ET
+*kxc = kxc-ET = kxc-Latn = kxc-Latn-ET
 *kxc-Ethi = kxc-Ethi-ET
 kxd = kxd-BN = kxd-Latn = ms-kxd = ms-kxd-BN = ms-kxd-Latn = ms-kxd-Latn-BN = kxd-Latn-BN
 kxd-Arab = ms-kxd-Arab = ms-kxd-Arab-BN = kxd-Arab-BN
@@ -7085,7 +7082,7 @@ shq = shq-Latn = shq-ZM = shq-Latn-ZM
 shr = shr-CD = shr-Latn = shr-Latn-CD
 shs = shs-CA = shs-Latn = shs-Latn-CA
 sht = sht-Latn = sht-US = sht-Latn-US
-shu = ar-shu = ar-shu-Arab = ar-shu-Arab-TD = ar-shu-TD = *shu-Arab = shu-TD = shu-Arab-TD
+*shu = ar-shu = ar-shu-Arab = ar-shu-Arab-TD = ar-shu-TD = shu-Arab = shu-TD = shu-Arab-TD
 *shu-Latn = ar-shu-Latn = ar-shu-Latn-TD = shu-Latn-TD
 shv = shv-Arab = shv-OM = shv-Arab-OM
 shw = shw-Latn = shw-SD = shw-Latn-SD
@@ -7563,7 +7560,7 @@ tak = tak-Latn = tak-NG = tak-Latn-NG
 *tan = tan-Latn = tan-NG = tan-Latn-NG
 tao = tao-Latn = tao-TW = tao-Latn-TW
 tap = tap-CD = tap-Latn = tap-Latn-CD
-*taq = *taq-Latn = taq-ML = taq-Latn-ML
+*taq = taq-Latn = taq-ML = taq-Latn-ML
 taq-Tfng = taq-Tfng-ML
 tar = tar-Latn = tar-MX = tar-Latn-MX
 tas = tas-Latn = tas-VN = tas-Latn-VN
