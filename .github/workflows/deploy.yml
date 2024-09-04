@@ -20,7 +20,7 @@ jobs:
       RSYNC_OPTS: -aP --no-p --no-g --no-t --compress --del -e "ssh -o StrictHostKeyChecking=no"
     steps:
     # Install our private key for uploading deliverable
-    - uses: webfactory/ssh-agent@v0.7.0
+    - uses: webfactory/ssh-agent@v0.9.0
       with:
         ssh-private-key: ${{ secrets.uploader_key }}
     # Download the artefact
@@ -36,7 +36,7 @@ jobs:
     needs: deploy
     steps:
     - name: Trigger findafont rebuild
-      uses: peter-evans/repository-dispatch@v2
+      uses: peter-evans/repository-dispatch@v3
       with:
         token: ${{ secrets.repository_dispatch_pat }}
         repository: silnrsi/findafont
