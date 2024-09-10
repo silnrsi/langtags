@@ -126,9 +126,8 @@ def process_cldrentry(s, lts, allentries, root='.'):
             l.parentsame = issimple(find_file(s, root))
     if not l.parentsame:
         lts.add(l)
-    else:
-        if l.region not in n.regions:
-            print(f"LDML region for {l} not in regions list")
+    elif l.region not in n.regions:
+        print(f"LDML region for {l} not in regions list")
     return l
 
 def addnames(n, b, names, regions, getname=True):

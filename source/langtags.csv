@@ -4652,9 +4652,9 @@ lzh,lzh-Hans-CN,Literary Chinese,CN JP KR VN,,,,,,,,EAS SEA,lzh,CLDR,,Historical
 lzh-Hant,lzh-Hant-CN,Literary Chinese,CN JP KR VN,,,,,,,,EAS SEA,lzh,,,Historical
 lzl,lzl-Latn-VU,Litzlitz,VU,,,,,1,,,MEL,lzl,LE,10-Jan-2018,
 lzn,lzn-Latn-MM,"Naga, Leinong",MM,,,,,,,,SEA,lzn,NMC,4-Dec-2017,
-lzz,lzz-Latn-TR,Laz,BE DE GE TR US,,,,,,,,WAS WEU,lzz,CLDR,,
+lzz,lzz-Latn-TR,Laz,BE DE TR US,,,,,,,,WAS WEU,lzz,CLDR,,
 lzz-Geor,lzz-Geor-GE,Laz,GE,,,,,,,,WAS WEU,lzz,,,
-lzz-Latn-GE,lzz-Latn-GE,Laz,GE,,,,,,,,WAS WEU,lzz,,,different orthography in GE
+lzz-GE,lzz-Latn-GE,Laz,GE,,,,,,,,WAS WEU,lzz,,,different orthography in GE
 maa,maa-Latn-MX,"Mazatec, San Jerónimo Tecóatl",MX,,,04675 19386,,,,,CAM,maa,LE,9-Jan-2018,Retire 2017
 mab,mab-Latn-MX,"Mixtec, Yutanduchi",MX,,,,,,,,CAM,mab,LE,9-Jan-2018,
 mad,mad-Latn-ID,Madura,ID SG,,,04623 13255 13259,,,,,SEA,mad,CLDR,,

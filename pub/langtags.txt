@@ -4712,8 +4712,8 @@ lzh-Hant = zh-lzh-Hant = zh-lzh-Hant-CN = lzh-Hant-CN
 lzl = lzl-Latn = lzl-VU = lzl-Latn-VU
 lzn = lzn-Latn = lzn-MM = lzn-Latn-MM
 lzz = lzz-Latn = lzz-TR = lzz-Latn-TR
+lzz-GE = lzz-Latn-GE
 lzz-Geor = lzz-Geor-GE
-lzz-Latn-GE
 *maa = maa-Latn = maa-MX = maa-Latn-MX
 mab = mab-Latn = mab-MX = mab-Latn-MX
 mad = mad-ID = mad-Latn = mad-Latn-ID
