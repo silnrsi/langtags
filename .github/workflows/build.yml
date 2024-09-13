@@ -19,13 +19,14 @@ jobs:
       id: find-sldr
       with:
         script: |
+          const fs = require('fs')
           const result = await github.rest.actions
             .listArtifactsForRepo({
               owner: "silnrsi",
               repo: "sldr"
             })
-          const artifact = result.data.artifacts[0]
           console.log(artifact)
+          const artifact = result.data.artifacts[0]
           const response = await github.rest.actions
             .downloadArtifact({
               owner: "silnrsi",
@@ -33,6 +34,7 @@ jobs:
               artifact_id: artifact.id,
               archive_format: "zip"
             })
+          fs.writeFileSync('sldr.zip', Buffer.from(response.data))
           console.log(response)
           return artifact
 
@@ -46,13 +48,14 @@ jobs:
 
     - name: Download and extract SLDR dependency
       if: steps.cached-sldr.outputs.cache-hit != 'true'
+      #run: |
+      #  wget --quiet \
+      #    --header "Accept: application/vnd.github+json" \
+      #    --header "Authorization: Bearer ${{secrets.GITHUB_TOKEN}}" \
+      #    --header "X-GitHub-Api-Version: 2022-11-28" \
+      #    --server-response \
+      #    ${{fromJSON(steps.find-sldr.outputs.result).archive_download_url}} -O sldr.zip
       run: |
-        wget --quiet \
-          --header "Accept: application/vnd.github+json" \
-          --header "Authorization: Bearer ${{secrets.GITHUB_TOKEN}}" \
-          --header "X-GitHub-Api-Version: 2022-11-28" \
-          --server-response \
-          ${{fromJSON(steps.find-sldr.outputs.result).archive_download_url}} -O sldr.zip
         unzip -q sldr.zip
         rm sldr.zip
     
