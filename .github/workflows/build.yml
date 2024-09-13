@@ -25,8 +25,8 @@ jobs:
               owner: "silnrsi",
               repo: "sldr"
             })
-          console.log(artifact)
           const artifact = result.data.artifacts[0]
+          console.log(artifact)
           const response = await github.rest.actions
             .downloadArtifact({
               owner: "silnrsi",
