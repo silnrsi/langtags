@@ -41,7 +41,8 @@ jobs:
         wget --quiet \
           --header "Accept: application/vnd.github+json" \
           --header "Authorization: Bearer ${{secrets.GITHUB_TOKEN}}" \
-          -- header "X-GitHub-Api-Version: 2022-11-28" \
+          --header "X-GitHub-Api-Version: 2022-11-28" \
+          --server-response \
           ${{fromJSON(steps.find-sldr.outputs.result).archive_download_url}} -O sldr.zip
         unzip -q sldr.zip
         rm sldr.zip
