@@ -24,16 +24,17 @@ jobs:
               owner: "silnrsi",
               repo: "sldr"
             })
-          console.log(result)
-          const reponse = await github.rest.actions
+          const artifact = result.data.artifacts[0]
+          console.log(artifact)
+          const response = await github.rest.actions
             .downloadArtifact({
               owner: "silnrsi",
               repo: "sldr",
-              artifact_id: result.data.artifacts[0].id,
+              artifact_id: artifact.id,
               archive_format: "zip"
             })
           console.log(response)
-          return result.data.artifacts[0]
+          return artifact
 
     - uses: actions/cache@v4
       id: cached-sldr
