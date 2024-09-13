@@ -19,7 +19,6 @@ jobs:
       id: find-sldr
       with:
         script: |
-          const fs = require('fs')
           const result = await github.rest.actions
             .listArtifactsForRepo({
               owner: "silnrsi",
@@ -27,15 +26,6 @@ jobs:
             })
           const artifact = result.data.artifacts[0]
           console.log(artifact)
-          const response = await github.rest.actions
-            .downloadArtifact({
-              owner: "silnrsi",
-              repo: "sldr",
-              artifact_id: artifact.id,
-              archive_format: "zip"
-            })
-          fs.writeFileSync('sldr.zip', Buffer.from(response.data))
-          console.log(response)
           return artifact
 
     - uses: actions/cache@v4
@@ -46,15 +36,25 @@ jobs:
           flat
         key: sldr-${{fromJSON(steps.find-sldr.outputs.result).id}}
 
-    - name: Download and extract SLDR dependency
+    - name: Download the SLDR dependency
       if: steps.cached-sldr.outputs.cache-hit != 'true'
-      #run: |
-      #  wget --quiet \
-      #    --header "Accept: application/vnd.github+json" \
-      #    --header "Authorization: Bearer ${{secrets.GITHUB_TOKEN}}" \
-      #    --header "X-GitHub-Api-Version: 2022-11-28" \
-      #    --server-response \
-      #    ${{fromJSON(steps.find-sldr.outputs.result).archive_download_url}} -O sldr.zip
+      uses: actions/gihub-script@v7
+      env:
+        artifact_id: ${{fromJSON(steps.find-sldr.outputs.result).id}}
+      with:
+        script: |
+          const fs = require('fs')
+          const response = await github.rest.actions
+            .downloadArtifact({
+              owner: "silnrsi",
+              repo: "sldr",
+              artifact_id: process.env.artifact_id,
+              archive_format: "zip"
+            })
+          fs.writeFileSync('sldr.zip', Buffer.from(response.data))
+
+    - name: Extract SLDR dependency
+      if: steps.cached-sldr.outputs.cache-hit != 'true'
       run: |
         unzip -q sldr.zip
         rm sldr.zip
