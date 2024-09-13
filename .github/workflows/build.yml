@@ -23,9 +23,17 @@ jobs:
             .listArtifactsForRepo({
               owner: "silnrsi",
               repo: "sldr"
+            }).data.artifacts[0]
+          console.log(result)
+          const reponse = await github.rest.actions
+            .downloadArtifact({
+              owner: "silnrsi",
+              repo: "sldr",
+              artifact_id: result.id,
+              archive_format: "zip"
             })
-          console.log(result.data.artifacts[0])
-          return result.data.artifacts[0]
+          console.log(response)
+          return { id: result.id, archive_download_url: response.headers['location'] }
 
     - uses: actions/cache@v4
       id: cached-sldr
