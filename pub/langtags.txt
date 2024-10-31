@@ -2827,9 +2827,7 @@ gqu = gio = gio-CN = gio-Zyyy = gio-Zyyy-CN = gqu-CN = gqu-Zyyy = gqu-Zyyy-CN
 gra = gra-Deva = gra-IN = gra-Deva-IN
 gra-Gujr = gra-Gujr-IN
 *grb = gbo = gbo-LR = gbo-Latn = gbo-Latn-LR = grb-LR = grb-Latn = grb-Latn-LR
-grc = grc-CY = grc-Cprt = grc-Cprt-CY
-grc-Grek = grc-Grek-GR
-grc-Linb = grc-Linb-GR
+grc = grc-Grek = grc-GR = grc-Grek-GR
 grd = grd-Latn = grd-NG = grd-Latn-NG
 grg = grg-Latn = grg-PG = grg-Latn-PG
 grh = grh-Latn = grh-NG = grh-Latn-NG

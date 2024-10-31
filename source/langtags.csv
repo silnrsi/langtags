@@ -2721,9 +2721,7 @@ gqu,gqu-Zyyy-CN,Qau,CN,,,,,1,,,EAS,gqu,,,
 gra,gra-Deva-IN,"Garasia, Rajput",IN,,,,,,,,SAS,gra,,11/15/2021,LE: made Deva primary based on Eth autonym
 gra-Gujr,gra-Gujr-IN,"Garasia, Rajput",IN,,,,,,,,SAS,gra,,,
 grb,grb-Latn-LR,Grebo,LR,,,,,,,,WAF,grb,LE,12-Jan-2018,
-grc-Cprt,grc-Cprt-CY,"Greek, Ancient",CY GR,,,,,,,,SEU,grc,CLDR,,Historical
-grc,grc-Grek-GR,"Greek, Ancient",GR,,,,,,,,SEU,grc,,,Historical
-grc-Linb,grc-Linb-GR,"Greek, Ancient",GR,,,,,,,,SEU,grc,CLDR,,Historical
+grc,grc-Grek-GR,"Greek, Ancient",GR,,,,,,,,SEU,grc,CLDR,,Historical
 grd,grd-Latn-NG,Guruntum-Mbaaru,NG,,,,,1,,,WAF,grd,,,
 grg,grg-Latn-PG,Madi,PG,,,,,,,,MEL,grg,LE,10-Jan-2018,
 grh,grh-Latn-NG,Tugbiri-Niragu,NG,,,02569,,,,,WAF,grh,,,
