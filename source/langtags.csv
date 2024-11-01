@@ -6058,6 +6058,7 @@ omu,omu-Latn-PE,Omurano,PE,,,,,1,,,SAM,omu,LE,10-Jan-2018,Extinct
 omw,omw-Latn-PG,"Tairora, South",PG,,,15296,,,,,MEL,omw,LE,10-Jan-2018,
 omx,omx-Mymr-MM,Old Mon,XX,,,,,,,,???,omx,,,Historical
 omy,omy-Zyyy-MY,Old Malay,XX,,,,,,,,???,omy,,,
+omy-Kawi,omy-Kawi-MY,Old Malay,XX,,,,,,,,???,omy,,,
 ona,ona-Latn-AR,Ona,AR,,,,,1,,,SAM,ona,LE,9-Jan-2018,
 onb,onb-Zyyy-CN,Lingao,CN,,,12973,,,,,EAS,onb,,,
 one,one-Latn-CA,Oneida,CA US,,,,,,,,NAM,one,LE,9-Jan-2018,
@@ -6115,6 +6116,7 @@ osc,osc-Ital-IT,Oscan,IT,,,,,,1,,SEU,osc,,,Ancient
 osc-Latn,osc-Latn-IT,Oscan,IT,,,,,,,,SEU,osc,,,Ancient
 osi,osi-Java-ID,Osing,ID,,,,,,,,SEA,osi,,,
 osn,osn-Sund-XX,Old Sundanese,XX,,,,,,1,,???,osn,,,
+osn-Kawi,osn-Kawi-XX,Old Sundanese,XX,,,,,,1,,???,osn,,,
 oso,oso-Latn-NG,Ososo,NG,,,,,1,,,WAF,oso,,,
 osp,osp-Latn-ES,Old Spanish,ES,,,,,,,,???,osp,LE,12-Jan-2018,Historical
 ost,ost-Latn-CM,Osatu,CM,,,,,1,,,MAF,ost,,,
