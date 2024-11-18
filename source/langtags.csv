@@ -3475,8 +3475,8 @@ kao,kao-Latn-ML,Xaasongaxango,GM ML SN,,,,,,,,WAF,kao,CLDR,,
 kap,kap-Cyrl-RU,Bezhta,GE RU,,,,,,,,EEU WAS,kap,,,
 kaq,kaq-Latn-PE,Capanahua,PE,,,,,,,,SAM,kaq,LE,9-Jan-2018,
 kav,kav-Latn-BR,Katukína,BR,,,,,1,,,SAM,kav,LE,9-Jan-2018,
-kaw-Bali,kaw-Bali-MY,Kawi,ID MY,,,,,,,,SEA,kaw,,,Ancient
-kaw,kaw-Kawi-ID,Kawi,ID MY,,,,,,,,SEA,kaw,,,Ancient
+kaw,kaw-Bali-ID,Kawi,ID MY,,,,,,,,SEA,kaw,,,Ancient
+kaw-Kawi,kaw-Kawi-ID,Kawi,ID MY,,,,,,,,SEA,kaw,,,Ancient
 kaw-Java,kaw-Java-ID,Kawi,ID MY,,,,,,,,SEA,kaw,,,
 kax,kax-Latn-ID,Kao,ID,,,,,1,,,SEA,kax,,,
 kay,kay-Latn-BR,Kamayurá,BR,,,,,,,,SAM,kay,LE,5-Jul-2017,
