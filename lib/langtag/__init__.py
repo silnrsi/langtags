@@ -45,6 +45,11 @@ try:
 except NameError:
     FileNotFoundError = IOError
 
+# 10 means infinity
+variantorders = {"1994": 3, "alalc97": 10, "biske": 2, "fonipa": 10, "fonkirsh": 10,
+    "fonnapa": 10, "fonupa": 10, "fonxsamp": 10, "grclass": 2, "grital": 2,
+    "grmistr": 2, "heploc": 2, "lipaw": 2, "njiva": 2, "osojs": 2, "simple": 10,
+    "solba": 2}
 
 class _Singleton(type):
     '''Manage singletons by fname parameter'''
@@ -195,7 +200,7 @@ class LangTags(metaclass=_Singleton):
             if useurl is None:
                 useurl = "https://ldml.api.sil.org/langtags.json"
             try:
-                with resources.as_file(resources.files(__name__) / 'langtags.json') as srcpath:
+                with resources.as_file(resources.files("langtag") / 'langtags.json') as srcpath:
                     inf = open_through_cache(srcpath)
             except FileNotFoundError:
                 inf = open_through_cache()
@@ -494,12 +499,14 @@ class TagSet:
 
     def _make_variant(self, vs):
         '''Return a copy tagset changing all tags to add the variants vs.'''
+        def varsort(v):
+            return variantorders.get(v, 0)
         d = dict([(k, getattr(self, k, None)) for k in self._allkeys])
         for k in ('tag', 'full'):
             if k in d:
-                l = d[k]._replace(vars=sorted((d[k].vars or []) + vs))
+                l = d[k]._replace(vars=sorted((d[k].vars or []) + vs, key=varsort))
                 d[k] = l
-        d['tags'] = [t._replace(vars=sorted((t.vars or []) + vs)) for t in d['tags']]
+        d['tags'] = [t._replace(vars=sorted((t.vars or []) + vs, key=varsort)) for t in d['tags']]
         return TagSet(**d)
 
     def newFull(self, newfull):
