@@ -448,7 +448,7 @@ arq,arq-Arab-DZ,"Arabic, Algerian Spoken",BE DE DZ EG ES FR NL PM TN,,,06373 070
 arr,arr-Latn-BR,Karo,BR,,,,,1,,,SAM,arr,LE,9-Jan-2018,
 ars,ars-Arab-SA,"Arabic, Najdi Spoken",CA IQ JO KW QA SA SY,,,,,,,,NAM WAS,ars,,,
 aru,aru-Latn-BR,Aruá (Amazonas State),BR,,,,,1,,,SAM,aru,LE,10-Jan-2018,Extinct
-arv,arv-Zyyy-ET,Arbore,ET,,,,,1,,,EAF,arv,,,
+arv,arv-Latn-ET,Arbore,ET,,,,,1,,,EAF,arv,,,
 arw,arw-Latn-SR,Arawak,GF GY SR VE,,,,,,,,SAM,arw,LE,9-Jan-2018,
 arx,arx-Latn-BR,Aruá,BR,,,,,1,,,SAM,arx,LE,9-Jan-2018,
 ary,ary-Arab-MA,"Arabic, Moroccan Spoken",BE DE EG EH ES FR GI LY MA NL,,,07126 07127,,,,,NAF SEU WEU,ary,CLDR,,
@@ -6265,6 +6265,7 @@ pfe,pfe-Latn-CM,Pere,CM NG,,,04773 15572 15573 15574,,,,,MAF WAF,pfe,,,
 pfl,pfl-Latn-DE,Palatinate Franconian,DE FR,,,,,,,,WEU,pfl,CLDR,,
 pga,pga-Latn-SS,"Arabic, Sudanese Creole",SS,,,,,,,,EAF,pga,LE,12-Jan-2018,
 pgd,pgd-Khar-PK,Gāndhārī,AF PK,,,,,,,,SAS,pgd,,,Historical
+pgd-Latn,pgd-Latn-PK,Gāndhārī,AF PK,,,,,,,,SAS,pgd,,,
 pgg,pgg-Deva-IN,Pangwali,IN,,,02715 02716,,,,,SAS,pgg,,,
 pgi,pgi-Latn-PG,Pagi,PG,,,,,1,,,MEL,pgi,LE,10-Jan-2018,
 pgk,pgk-Latn-VU,Rerep,VU,,,,,,,,MEL,pgk,LE,10-Jan-2018,
@@ -6834,6 +6835,7 @@ sa-Gran,sa-Gran-IN,Sanskrit,IN NP,,,,,,,,SAS,san,CLDR Supplemental,,
 sa-Bhks,sa-Bhks-IN,Sanskrit,IN NP,,,,,,,,SAS,san,,,
 sa-Kawi,sa-Kawi-IN,Sanskrit,IN NP,,,,,,,,SAS,san,,,
 sa-Khar,sa-Khar-IN,Sanskrit,IN NP,,,,,,,,SAS,san,,,
+sa-Latn,sa-Latn-IN,Sanskrit,IN NP,,,,,,,,SAS,san,,,
 sa-Mymr,sa-Mymr-IN,Sanskrit,IN NP,bauddha itihasa laukika vaidika,,,,,,,SAS,san,,,Ancient
 sa-Nand,sa-Nand-IN,Sanskrit,IN NP,bauddha itihasa laukika vaidika,,,,,,,SAS,san,,,Ancient
 sa-Newa,sa-Newa-IN,Sanskrit,IN NP,bauddha itihasa laukika vaidika,,,,,,,SAS,san,,,Ancient
