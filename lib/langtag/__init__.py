@@ -45,7 +45,7 @@ try:
 except NameError:
     FileNotFoundError = IOError
 
-# 10 means infinity
+# 10 means infinity arising from no prefix. Value is depth of prefixes + 1
 variantorders = {"1994": 3, "alalc97": 10, "biske": 2, "fonipa": 10, "fonkirsh": 10,
     "fonnapa": 10, "fonupa": 10, "fonxsamp": 10, "grclass": 2, "grital": 2,
     "grmistr": 2, "heploc": 2, "lipaw": 2, "njiva": 2, "osojs": 2, "simple": 10,
@@ -315,6 +315,15 @@ class LangTags(metaclass=_Singleton):
             if res is not None:
                 if l.region in res.regions or l.region == res.region:
                     return res
+        if '-x-HIS' in s:
+            lns = l.ns.copy()
+            del lns['x']
+            res = self.get(str(l._replace(ns=lns)), **kw)
+            if res is not None:
+                si = s.index('-x-HIS')
+                rolv = s[si+6:si+11]
+                if rolv in res.rolv:
+                    return res          # or should we fabricate a new tagset?
         return default
 
     def __getitem__(self, s):
@@ -371,7 +380,7 @@ class TagSet:
         self.regions = []
         self._allkeys = []
         for k, v in kw.items():
-            if k in ("iso639_3", "region", "script"):
+            if k in ("iso639_3", "region", "script", "rolv"):
                 k = "_" + k
             setattr(self, k, v)
             self._allkeys.append(k)
@@ -425,6 +434,11 @@ class TagSet:
         '''Returns the iso639-3 of the language for the tagset, whether or not
             specified in the json file.'''
         return getattr(self, "_iso639_3", self.lang)
+
+    @property
+    def rolv(self):
+        '''Returns the list of ROLV dialects'''
+        return getattr(self, '_rolv', [])
 
     def asSldr(self):
         ''' Returns what an SLDR filename would be for this langtag. Working around

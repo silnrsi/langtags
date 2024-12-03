@@ -240,6 +240,7 @@ with open(args.infile) as csvfile :
         i6 = row['ISO 639-3']
         d = row['deprecated']
         rod = row['ROD']
+        rods = row['RODs'].split()
         variants = row['variants'].split()
         macro = row['Macro']
         t = lt.LangTag(ls)
@@ -282,6 +283,7 @@ with open(args.infile) as csvfile :
         t.nofonipa = not t.hidescript and t.script != 'Latn'
         t.extra_variants = variants
         t.rod = rod
+        t.rods = rods
         t.obsolete = row['obsolete'] != ""
         t.unwritten = row['unwritten'] != ""
 
@@ -425,6 +427,14 @@ def make_record(t):
     if t.region in regionnames:
         n['regionname'] = regionnames[t.region]
     tags = set(str(t) for t in r[1:-1])
+    rodtags = []
+    if getattr(t, 'rod', ""):
+        for rt in r:
+            l = lt.LangTag(rt)
+            if l.extensions is None:
+                l.extensions = {}
+            l.extensions['x'] = ['HIS{:05d}'.format(int(t.rod))]
+            rodtags.append(str(l))
     hassldr = False
     # n['primary'] = True
     if False and "-x-" in n['tag']:
@@ -463,6 +473,7 @@ def make_record(t):
                 ntag.region = apt.region
             ntag.lang = apt.lang
             tags.add(str(ntag))
+    tags.update(rodtags)
     if len(tags):
         n['tags'] = sorted(tags)
     if hasattr(t, 'iso639'):
@@ -552,6 +563,8 @@ def make_record(t):
         n['variants'] = t.extra_variants
     if getattr(t, 'rod', ""):
         n['rod'] = t.rod
+    elif len(getattr(t, 'rods', [])):
+        n['rolvs'] = t.rods
     if getattr(t, 'obsolete', False):
         n['obsolete'] = True
     if getattr(t, 'unwritten', False):
