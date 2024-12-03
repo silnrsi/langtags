@@ -5242,7 +5242,7 @@ muh,muh-Latn-SS,Mündü,CD SS,,,,,,,,EAF MAF,muh,LE,12-Jan-2018,
 mui,mui-Latn-ID,Musi,ID,,,04108 12855 15424 16435,,,,,SEA,mui,,,
 muj,muj-Latn-TD,Mabire,TD,,,,,1,,,MAF,muj,,,
 muk,muk-Tibt-NP,Mugom,IN NP,,,,,,,,SAS,muk,,,
-mul-Zyyy,mul-Zyyy-001,Multiple languages,001,,,,,,,,001,mul,,,Special
+mul,mul-Zyyy-001,Multiple languages,001,,,,,,,,001,mul,,,Special
 mum,mum-Latn-PG,Maiwala,PG,,,,,,,,MEL,mum,LE,10-Jan-2018,
 muo,muo-Latn-CM,Nyong,CM NG,,,,,1,,,MAF WAF,muo,,,
 mup,mup-Deva-IN,Malvi,IN,,,13528 13531 13533 13535,raj,,,,SAS,mup,CLDR,23-Mar-2018,via macro mapping
