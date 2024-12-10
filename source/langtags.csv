@@ -1028,6 +1028,7 @@ bny,bny-Latn-MY,Bintulu,MY,,,,,1,,,SEA,bny,,,
 bnz,bnz-Latn-CM,Beezen,CM,,,,,1,,,MAF,bnz,,,
 bo,bo-Tibt-CN,"Tibetan, Central",CH CN IN NO NP TW US,,,,,,,,EAS NAM NEU SAS WEU,bod,CLDR,,
 bo-Latn,bo-Latn-CN,"Tibetan, Central",CN,pinyin,,,,,,,EAS NAM NEU SAS WEU,bod,,,
+bo-Mong,bo-Mong-CN,"Tibetan, Central",CN,,,,,,,,EAS,bod,,,
 bo-Marc,bo-Marc-CN,"Tibetan, Central",CH CN IN NO NP TW US,,,,,,,,EAS NAM NEU SAS WEU,bod,,,
 bo-Phag,bo-Phag-CN,"Tibetan, Central",CH CN IN NO NP TW US,,,,,,,,EAS NAM NEU SAS WEU,bod,,,
 bo-Brai,bo-Brai-CN,"Tibetan, Central",CH CN IN NO NP TW US,,,,,,,,EAS NAM NEU SAS WEU,bod,,,
@@ -6846,6 +6847,7 @@ sa-Bhks,sa-Bhks-IN,Sanskrit,IN NP,,,,,,,,SAS,san,,,
 sa-Kawi,sa-Kawi-IN,Sanskrit,IN NP,,,,,,,,SAS,san,,,
 sa-Khar,sa-Khar-IN,Sanskrit,IN NP,,,,,,,,SAS,san,,,
 sa-Latn,sa-Latn-IN,Sanskrit,IN NP,,,,,,,,SAS,san,,,
+sa-Mong,sa-Mong-IN,Sanskrit,IN NP,,,,,,,,SAS,san,,,
 sa-Mymr,sa-Mymr-IN,Sanskrit,IN NP,bauddha itihasa laukika vaidika,,,,,,,SAS,san,,,Ancient
 sa-Nand,sa-Nand-IN,Sanskrit,IN NP,bauddha itihasa laukika vaidika,,,,,,,SAS,san,,,Ancient
 sa-Newa,sa-Newa-IN,Sanskrit,IN NP,bauddha itihasa laukika vaidika,,,,,,,SAS,san,,,Ancient
