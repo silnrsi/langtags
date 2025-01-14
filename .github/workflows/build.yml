@@ -73,24 +73,28 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
+    - run: ls -la ~/
     - uses: actions/checkout@v4
+    - run: ls -la ~/
     - uses: actions/setup-python@v5
       with:
         python-version: '3.x'
+    - run: ls -la ~/
     - run: pip install . \
           git+https://github.com/silnrsi/{sldrtools#sldrtools,palaso-python#palaso} \
           six
-
+        
+    - run: ls -la ~/
     - uses: actions/download-artifact@v4
       with:
         name: langtags
         path: pub
 
     # Test it.
+    - run: ls -la ~/
     - name: Test langtags
       id: langtags
       run: |
-        ls -l ~/
         ls -l ~/.local/
         ls -l ~/.local/*.cache
         python3 -m unittest tests.test_json tests.python.test_python tests.test_basic
