@@ -90,6 +90,9 @@ jobs:
     - name: Test langtags
       id: langtags
       run: |
+        ls -l ~/
+        ls -l ~/.local/
+        ls -l ~/.local/*.cache
         python3 -m unittest tests.test_json tests.python.test_python tests.test_basic
         echo "need_commit=$(git diff -wU0 pub/langtags.json | grep '^+ ' | grep -v '\"date\":' | wc -l)" >> $GITHUB_OUTPUT
 #    - name: Commit built langtags
