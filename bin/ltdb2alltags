@@ -179,6 +179,7 @@ def get_region_scriptnames():
         elif currscr is not None:
             scripts[currscr] = currname
     regs['TW'] = 'China-Taiwan'  # A tricky political choice
+    regs['XK'] = 'Kosovo'   # a private tag that is in use by CLDR as of 2025
     return regs, scripts
 
 def fromiso639(t, isomap):
