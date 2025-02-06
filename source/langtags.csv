@@ -1103,7 +1103,7 @@ bqr,bqr-Latn-ID,Burusu,ID,,,04114,,1,,,SEA,bqr,,,
 bqs,bqs-Latn-PG,Bosmun,PG,,,,,,,,MEL,bqs,LE,10-Jan-2018,
 bqt,bqt-Latn-CM,Bamukumbit,CM,,,,,,,,MAF,bqt,LE,12-Jan-2018,
 bqu,bqu-Latn-CD,Boguru,CD SS,,,,,1,,,EAF MAF,bqu,,,
-bqv,bqv-Latn-CI,Koro Wachi,CI NG,,,,,,,,WAF,bqv,CLDR,,
+bqv,bqv-Latn-NG,Koro Wachi,NG,,,,,,,,WAF,bqv,CLDR,2025-02-06,Removed CI which now disagrees with CLDR
 bqw,bqw-Latn-NG,Buru,NG,,,,,1,,,WAF,bqw,,,
 bqx,bqx-Latn-NG,Baangi,NG,,,,,1,,,WAF,bqx,,,
 bqy,bqy-Zxxx-ID,Kata Kolok,ID,,,,,,,,SEA,bqy,,,
