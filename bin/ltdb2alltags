@@ -77,9 +77,11 @@ def getlocalename(testf, getnames):
             if getname is None:
                 print(getnames)
                 continue
-            e = doc.find('./localeDisplayNames/languages/language[@type="{}"]'.format(getname.replace("-","_")))
-            if e is not None:
-                return unicode(e.text)
+            bits = getname.split("-")
+            for i in range(len(bits), 0, -1):
+                e = doc.find('./localeDisplayNames/languages/language[@type="{}"]'.format("_".join(bits[0:i])))
+                if e is not None:
+                    return e.text
     return None
 
 def issimple(testf):
@@ -117,12 +119,15 @@ def process_cldrentry(s, lts, allentries, root='.'):
                 l.script = n.script
             if n.hidescript and l.lang+"-"+l.region not in lts:
                 l.hidescript = True
+            l.extra_variants = n.extra_variants
         testf = find_file(str(t), root=root)
         if testf is not None:
             l.parent = t
             l.parentsame = issimple(find_file(s, root))
     if not l.parentsame:
         lts.add(l)
+    elif l.region not in n.regions:
+        print(f"LDML region for {l} not in regions list")
     return l
 
 def addnames(n, b, names, regions, getname=True):
@@ -174,6 +179,7 @@ def get_region_scriptnames():
         elif currscr is not None:
             scripts[currscr] = currname
     regs['TW'] = 'China-Taiwan'  # A tricky political choice
+    regs['XK'] = 'Kosovo'   # a private tag that is in use by CLDR as of 2025
     return regs, scripts
 
 def fromiso639(t, isomap):
@@ -193,6 +199,7 @@ parser.add_argument('-a','--autonyms',help="CSV of Autonyms from Ethnologue")
 parser.add_argument('-q','--quiet',action='store_false',default=True,help='Be noisy')
 parser.add_argument('-j','--jobs',type=int,default=0,help='Number of parallel jobs to run, 0 = number of processors')
 parser.add_argument('-Z','--debug',help="Break inside for the given lang tag prefix")
+parser.add_argument('-H','--hack',type=int,default=0,help='bitmap of hacks 1 - strip XK from regions list')
 args = parser.parse_args()
 
 if args.debug is not None:
@@ -376,7 +383,7 @@ if args.autonyms:
 else:
     autonyms = {}
 
-def make_record(t):
+def make_record(t, args):
     if t.skip:
         return None
     r = t.allforms()
@@ -536,7 +543,9 @@ def make_record(t):
     if t.region is not None:
         regions.discard(t.region)
     regions.discard('XX')
-    testtag = re.sub('-(?:[A-Z]{2}|\d{3})(?:-|$)', '-{}', n['full'])
+    if (args.hack & 1) == 1:
+        regions.discard("XK")
+    testtag = re.sub(r'-(?:[A-Z]{2}|\d{3})(?:-|$)', '-{}', n['full'])
     regions = [r for r in regions if testtag.format(r) not in lts]
     if len(regions):
         n['regions'] = sorted(regions)
@@ -578,13 +587,15 @@ res.append(conformance)
 res.append({'tag': "_version", 'api': '1.3.1', 'date': str(datetime.date.today())})
 if args.jobs == 1:
     for t in sorted(set(lts.values())):
-        r = make_record(t)
+        r = make_record(t, args)
         if r is not None:
             res.append(r[0])
             alllangreg.update(r[1])
 else:
+    def proc_record(t):
+        return make_record(t, args)
     pool = Pool(processes=args.jobs) if args.jobs else Pool()
-    tempres = pool.imap_unordered(make_record, sorted(set(lts.values())))
+    tempres = pool.imap_unordered(proc_record, sorted(set(lts.values())))
     pool.close()
     pool.join()
     for r in sorted(tempres, key=lambda t:t[0]['full'] if t is not None else ""):

@@ -3,18 +3,19 @@ on:
   workflow_call:
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
-    - uses: actions/checkout@v3
-    - uses: actions/setup-python@v4
+    - uses: actions/checkout@v4
+    - uses: actions/setup-python@v5
       with:
         python-version: '3.x'
-    - run: pip install . \
+    - name: Install langtags package and depedencies
+      run: pip install . \
           git+https://github.com/silnrsi/{sldrtools#sldrtools,palaso-python#palaso} \
           six
 
     - name: Find latest SLDR dependency
-      uses: actions/github-script@v6
+      uses: actions/github-script@v7
       id: find-sldr
       with:
         script: |
@@ -23,19 +24,38 @@ jobs:
               owner: "silnrsi",
               repo: "sldr"
             })
-          console.log(result.data.artifacts[0])
-          return result.data.artifacts[0]
-    - uses: actions/cache@v3
+          const artifact = result.data.artifacts[0]
+          console.log(artifact)
+          return artifact
+
+    - uses: actions/cache@v4
       id: cached-sldr
       with:
         path: |
           unflat
           flat
         key: sldr-${{fromJSON(steps.find-sldr.outputs.result).id}}
-    - name: Download and extract SLDR dependency
+
+    - name: Download the SLDR dependency
+      if: steps.cached-sldr.outputs.cache-hit != 'true'
+      uses: actions/github-script@v7
+      env:
+        artifact_id: ${{fromJSON(steps.find-sldr.outputs.result).id}}
+      with:
+        script: |
+          const fs = require('fs')
+          const response = await github.rest.actions
+            .downloadArtifact({
+              owner: "silnrsi",
+              repo: "sldr",
+              artifact_id: process.env.artifact_id,
+              archive_format: "zip"
+            })
+          fs.writeFileSync('sldr.zip', Buffer.from(response.data))
+
+    - name: Extract SLDR dependency
       if: steps.cached-sldr.outputs.cache-hit != 'true'
       run: |
-        wget --quiet --header "Authorization: token ${{secrets.GITHUB_TOKEN}}"  ${{fromJSON(steps.find-sldr.outputs.result).archive_download_url}} -O sldr.zip
         unzip -q sldr.zip
         rm sldr.zip
     
@@ -43,7 +63,7 @@ jobs:
     - name: Generate langtags
       run: |
         make SLDR=unflat FLATDIR=flat build
-    - uses: actions/upload-artifact@v3
+    - uses: actions/upload-artifact@v4
       with:
         name: langtags
         path: |
@@ -51,21 +71,19 @@ jobs:
 
   test:
     needs: build
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
-    - uses: actions/checkout@v3
-    - uses: actions/setup-python@v4
+    - uses: actions/checkout@v4
+    - uses: actions/setup-python@v5
       with:
         python-version: '3.x'
     - run: pip install . \
           git+https://github.com/silnrsi/{sldrtools#sldrtools,palaso-python#palaso} \
-          six
-
-    - uses: actions/download-artifact@v3
+          six        
+    - uses: actions/download-artifact@v4
       with:
         name: langtags
         path: pub
-
     # Test it.
     - name: Test langtags
       id: langtags
