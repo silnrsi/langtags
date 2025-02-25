@@ -6760,8 +6760,8 @@ rmu,rmu-Latn-SE,"Romani, Tavringer",SE,,,,,,,,NEU,rmu,CLDR,,
 rmv,rmv-Zyyy-001,Romanova,001,,,,,,,,001,rmv,,,Constructed
 rmw,rmw-Latn-GB,"Romani, Welsh",GB,,,,,,,,NEU,rmw,St,,archaic form of Anglo-Romani still spoken in northern Wales
 rmx,rmx-Latn-VN,Romam,VN,,,,,1,,,SEA,rmx,NMC,4-Dec-2017,
-rmy-Cyrl,rmy-Cyrl-BG,"Romani, Vlax",AL AR AT BA BA BR BG CA CL CO DE ES FR GR GR HU IT MD MK MX NL NO PL PT RO RS RU SE SK UA,,,04602,rom,,,,CAM EEU NAM NEU SAM SEU WEU,rmy,St,23-Mar-2018,
-rmy,rmy-Latn-RO,"Romani, Vlax",AL AR AT BA BA BR BG CA CL CO DE ES FR GR GR HU IT MD MK MX NL NO PL PT RO RS RU SE SK UA,,,03045 16042,rom,,,,CAM EEU NAM NEU SAM SEU WEU,rmy,St,11/15/2021,LE: made Latn primary
+rmy-Cyrl,rmy-Cyrl-BG,"Romani, Vlax",AL AR AT BA BR BG CA CL CO DE ES FR GR GR HU IT MD MK MX NL NO PL PT RO RS RU SE SK UA,,,04602,rom,,,,CAM EEU NAM NEU SAM SEU WEU,rmy,St,23-Mar-2018,
+rmy,rmy-Latn-RO,"Romani, Vlax",AL AR AT BA BR BG CA CL CO DE ES FR GR GR HU IT MD MK MX NL NO PL PT RO RS RU SE SK UA,,,03045 16042,rom,,,,CAM EEU NAM NEU SAM SEU WEU,rmy,St,11/15/2021,LE: made Latn primary
 rmz,rmz-Mymr-IN,Marma,BD IN,,,,,,,,SAS,rmz,,,
 rmz-Beng,rmz-Beng-BD,Marma,BD,,,,,,,,SAS,rmz,,,
 rn,rn-Latn-BI,Rundi,BI RW TZ,,,,,,,,EAF,run,CLDR,,
@@ -8049,7 +8049,7 @@ tux,tux-Latn-BR,Tuxináwa,BR,,,,,1,,,SAM,tux,LE,10-Jan-2018,Extinct
 tuy,tuy-Latn-KE,Tugen,KE,,,,,,,,EAF,tuy,LE,12-Jan-2018,
 tuz,tuz-Latn-BF,Turka,BF CI,,,17813,,,,,WAF,tuz,,,
 tva,tva-Latn-SB,Vaghua,SB,,,,,1,,,MEL,tva,LE,10-Jan-2018,
-tvd,,Tsuvadi,NG,,,02076 02077 02079 02505,,,,,WAF,tvd,,,
+tvd,tvd-Latn-NG,Tsuvadi,NG,,,02076 02077 02079 02505,,,,,WAF,tvd,,,
 tve,tve-Latn-ID,Te'un,ID,,,,,1,,,SEA,tve,,,
 tvi,tvi-Latn-NG,Tulai,NG,,,,,1,,,WAF,tvi,,9-Mar-2023,
 tvk,tvk-Latn-VU,"Ambrym, Southeast",VU,,,04572,,,,,MEL,tvk,LE,10-Jan-2018,
