@@ -12,8 +12,8 @@ jobs:
     - name: Install langtags package and depedencies
       run: >-
         pip install six .
-          'sldrtools @ git+https://github.com/silnrsi/sldrtools'
-          'palaso @ git+https://github.com/silnrsi/palaso-python'
+        sldr@git+https://github.com/silnrsi/sldrtools
+        palaso@git+https://github.com/silnrsi/palaso-python
     - name: Find latest SLDR dependency
       uses: actions/github-script@v7
       id: find-sldr
@@ -76,8 +76,8 @@ jobs:
     - name: Install langtags package and depedencies
       run: >-
         pip install six .
-          'sldrtools @ git+https://github.com/silnrsi/sldrtools'
-          'palaso @ git+https://github.com/silnrsi/palaso-python'
+        sldr@git+https://github.com/silnrsi/sldrtools
+        palaso@git+https://github.com/silnrsi/palaso-python
     - uses: actions/download-artifact@v4
       with:
         name: langtags
