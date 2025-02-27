@@ -16,6 +16,8 @@ on:
 jobs:
   release:
     runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
     steps:
       # Checkout repo for gh cli to function
       - uses: actions/checkout@v4
