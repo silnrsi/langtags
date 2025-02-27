@@ -11,13 +11,16 @@ all : test
 
 build : ${RESULTS}/${NAME}.json ${RESULTS}/${NAME}.txt # ${RESULTS}/${NAME}_inherited.txt
 
-${RESULTS}/${NAME}.json : source/langtags.csv source/autonyms.csv source/langindex.tab ${LTDB}
-	-${LTDB} -i $(SLDR) -f $(FLATDIR) $(LTDBOPTS) -L source/langindex.tab -a source/autonyms.csv $< $@
+${RESULTS}/${NAME}.json : source/langtags.csv source/autonyms.csv source/langindex.tab ${LTDB} | ${RESULTS}
+	${LTDB} -i $(SLDR) -f $(FLATDIR) $(LTDBOPTS) -L source/langindex.tab -a source/autonyms.csv $< $@
 
-${RESULTS}/${NAME}.txt : ${RESULTS}/${NAME}.json
-	-bin/jsonlangtagstotxt -r -s ${SLDR} $< $@
+${RESULTS}/${NAME}.txt : ${RESULTS}/${NAME}.json | ${RESULTS}
+	bin/jsonlangtagstotxt -r -s ${SLDR} $< $@
 
-#${RESULTS}/${NAME}_inherited.txt : source/langtags.csv ${LTDB}
+${RESULTS}:
+	mkdir pub
+
+#${RESULTS}/${NAME}_inherited.txt : source/langtags.csv ${LTDB} | ${RESULTS}
 #	-${LTDB} -i ${SLDR} -t -p $< $@
 
 test : build
@@ -25,6 +28,6 @@ test : build
 
 history : ${RESULTS}/langtag_history.json
 
-${RESULTS}/langtag_history.json : ${RESULTS}/${NAME}.json
+${RESULTS}/langtag_history.json : ${RESULTS}/${NAME}.json | ${RESULTS}
 	bin/ltdbhistory -a -o $@
 
