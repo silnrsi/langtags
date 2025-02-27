@@ -25,6 +25,7 @@ jobs:
       - uses: actions/download-artifact@v4
         with:
           name: langtags
+          path: pub
       - name: Time based build id
         id: build-id
         run: date --utc +stamp=%g%V%w.%H%M >> $GITHUB_OUTPUT
