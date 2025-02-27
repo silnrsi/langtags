@@ -87,12 +87,3 @@ jobs:
       id: langtags
       run: |
         python3 -m unittest tests.test_json tests.python.test_python tests.test_basic
-        echo "need_commit=$(git diff -wU0 pub/langtags.json | grep '^+ ' | grep -v '\"date\":' | wc -l)" >> $GITHUB_OUTPUT
-#    - name: Commit built langtags
-#      if: steps.langtags.output.need_commit != 0
-#      uses: EndBug/add-and-commit@v5
-#      with:
-#        message: "GitHub Actions updated pub"
-#        add: "pub/*"
-#      env:
-#        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}

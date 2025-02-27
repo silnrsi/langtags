@@ -25,9 +25,6 @@ jobs:
       - uses: actions/download-artifact@v4
         with:
           name: langtags
-      # We ship langtags as a zip with txt and json forms
-      - name: Package
-        run: zip -jr9 langtags.zip pub/* 
       - name: Time based build id
         id: build-id
         run: date --utc +stamp=%g%V%w.%H%M >> $GITHUB_OUTPUT
@@ -38,7 +35,7 @@ jobs:
           --title "Production Language Tags data ${{ steps.build-id.outputs.stamp }}"
           --generate-notes
           --latest
-          langtags.zip
+          pub/langtags.*
       - name: Staging
         if: ${{ github.ref_name == 'master' }}
         run: >-
@@ -48,7 +45,7 @@ jobs:
           --target master
           --prerelease
           --notes 'The latest in-development version of the Langtags data set. This may invalid or incomplete. Use only for testing.'
-          langtags.zip
+          pub/langtags.*
 
   deploy:
     runs-on: ubuntu-latest
