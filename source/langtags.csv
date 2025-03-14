@@ -4564,7 +4564,7 @@ loz,loz-Latn-ZM,Lozi,BW NA ZM ZW,,,,,,,,EAF SAF,loz,CLDR,,
 loz-Brai,loz-Brai-ZM,Lozi,BW NA ZM ZW,,,,,,,,EAF SAF,loz,,,
 lpa,lpa-Latn-VU,Lelepa,VU,,,,,,1,,MEL,lpa,LE,10-Jan-2018,
 lpe,lpe-Latn-ID,Lepki,ID,,,,,1,,,SEA,lpe,,,
-lpn,lpn-Latn-MM,"Naga, Long Phuri",MM,,,,,1,,,SEA,lpn,NMC,4-Dec-2017,
+lpn,lpn-Latn-MM,"Naga, Long Phuri",MM,,,,,,,,SEA,lpn,NMC,4-Dec-2017,
 lpo,lpo-Plrd-CN,Lipo,CN,,,18555 20056,,,,,EAS,lpo,MH,16-Jan-2018,
 lpo-Lisu,lpo-Lisu-CN,Lipo,CN,,,18555 20056,,,1,,EAS,lpo,,,
 lpx,lpx-Latn-SS,Lopit,SS,,,,,,,,EAF,lpx,LE,12-Jan-2018,
@@ -5918,7 +5918,7 @@ nxd,nxd-Latn-CD,Ngando,CD,,,,,,,,MAF,nxd,LE,12-Jan-2018,
 nxe,nxe-Latn-ID,Nage,ID,,,,,,,,SEA,nxe,,,
 nxg,nxg-Latn-ID,Ngad'a,ID,,,03811,,1,,,SEA,nxg,,,
 nxi,nxi-Latn-TZ,Nindi,TZ,,,,,1,,,EAF,nxi,,,
-nxk,nxk-Zyyy-MM,Kokak,MM,,,,,1,,,SEA,nxk,NMC,4-Dec-2017,"Also known as Naga, Kokak (In Ethnologue)"
+nxk,nxk-Latn-MM,Kokak,MM,,,,,,,,SEA,nxk,NMC,4-Dec-2017,"Also known as Naga, Kokak (In Ethnologue)"
 nxl,nxl-Latn-ID,"Nuaulu, South",ID,,,,,,,,SEA,nxl,,20-Apr-2018,
 nxm,nxm-Tfng-XX,Numidian,XX,,,,,,,,???,nxm,,,Ancient
 nxn,nxn-Latn-AU,Ngawun,AU,,,,,1,,,ANZ,nxn,LE,10-Jan-2018,Extinct
