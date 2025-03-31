@@ -130,7 +130,7 @@ aem,aem-Latn-VN,Arem,LA VN,,,,,1,,,SEA,aem,NMC,7-Dec-2017,
 aen,aen-Zxxx-AM,Armenian Sign Language,AM,,,,,,,,WAS,aen,LE,3-Dec-2018,
 aeq,aeq-Arab-PK,Aer,PK,,,,,,,,SAS,aeq,,,
 aer,aer-Latn-AU,"Arrernte, Eastern",AU,,,,,,,,ANZ,aer,LE,10-Jan-2018,
-aes,aes-Zyyy-US,Alsea,US,,,,,1,,,NAM,aes,LE,10-Jan-2018,Extinct
+aes,aes-Latn-US,Alsea,US,,,,,1,,,NAM,aes,LE,10-Jan-2018,Extinct
 aeu,aeu-Latn-CN,Akeu,CN LA MM TH,,,,,,,,EAS SEA,aeu,SVW,31-Oct-2017,"May be two different Roman script orthographies in use, one in China and one based more on Paul Lewis' Akha orthography. Not sure how different they are or whether they need to have separate language tags or not."
 aew,aew-Latn-PG,Ambakich,PG,,,,,1,,,MEL,aew,LE,10-Jan-2018,
 aey,aey-Latn-PG,Amele,PG,,,,,,,,MEL,aey,LE,10-Jan-2018,
