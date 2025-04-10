@@ -5070,8 +5070,8 @@ mni-Mtei,mni-Mtei-IN,Meitei,BD IN,,,00594 05015 05029,,,,,SAS,mni,,,
 mni-Latn,mni-Latn-IN,Meitei,BD IN,,,,,,,,SAS,mni,,,
 mni-Deva,mni-Latn-IN,Meitei,BD IN,,,,,,1,,SAS,mni,,,experimental in 1820s
 mnj,mnj-Arab-AF,Munji,AF,,,,,,,,SAS,mnj,,,
-mnk,mnk-Latn-GM,Mandinka,GM GW SN,,,,man,,,,WAF,mnk,CLDR,23-Mar-2018,via macro mapping (shared!)
-mnk-Arab,mnk-Arab-GN,Mandinka,GM GW SN,,,,man,,,,WAF,mnk,,,
+mnk,mnk-Latn-GM,Mandinka,GM GW SN,,,,,,,,WAF,mnk,CLDR,23-Mar-2018,
+mnk-Arab,mnk-Arab-GN,Mandinka,GM GW SN,,,,,,,,WAF,mnk,,,
 mnl,mnl-Latn-VU,Tiale,VU,,,,,,,,MEL,mnl,LE,10-Jan-2018,
 mnm,mnm-Latn-PG,Mapena,PG,,,,,1,,,MEL,mnm,LE,10-Jan-2018,
 mnn,mnn-Latn-VN,"Mnong, Southern",VN,,,,,1,,,SEA,mnn,NMC,4-Dec-2017,
