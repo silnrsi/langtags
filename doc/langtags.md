@@ -149,7 +149,7 @@ a member of a macro language.
 
 For many macro languages, there is a representative language for that macro
 language. In many cases the macro language code is more popular than the
-representative langauge code. Thus, for example, in the CLDR, the macro language
+representative language code. Thus, for example, in the CLDR, the macro language
 code is used instead of the representative language code. For this reason,
 langtags.json unifies the representative language tags into the macro language
 tag set rather than having a separate tag set for them, and gives the tag for
