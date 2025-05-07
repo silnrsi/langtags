@@ -1912,24 +1912,24 @@ dgn,dgn-Latn-AU,Dagoman,AU,,,,,1,,,ANZ,dgn,LE,10-Jan-2018,Extinct
 dgo,dgo-Deva-IN,Dogri,IN,,,,doi,,,,SAS,dgo,,23-Mar-2018,
 dgo-Arab,dgo-Arab-IN,Dogri,IN,,,,doi,,1,,SAS,dgo,CLDR,23-Mar-2018,via macro mapping
 dgo-Dogr,dgo-Dogr-IN,Dogri,IN,,,,doi,,1,,SAS,dgo,,,
-dgo-Takr,dgo-Takr-IN,Dogri,IN,,,,doi,,1,,SAS,dgo,,23-Mar-2018,
+dgo-Takr,dgo-Takr-IN,Dogri,IN,,,,doi,,1,,SAS,dgo,,,
 dgr,dgr-Latn-CA,Tlicho,CA,,,,,,,,NAM,dgr,CLDR,,
 dgs,dgs-Latn-BF,Dogoso,BF CI,,,,,1,,,WAF,dgs,,,
-dgt,dgt-Latn-AU,Ndra'ngith,AU,,,,,1,,,ANZ,dgt,LE,10-Jan-2018,Extinct
+dgt,dgt-Latn-AU,Ndra'ngith,AU,,,,,1,,,ANZ,dgt,,,Extinct
 dgu-Zyyy,dgu-Zyyy-IN,Degaru,IN,,,,,,,1,SAS,dgu,,,
-dgw,dgw-Latn-AU,Daungwurrung,AU,,,,,,,,ANZ,dgw,LE,10-Jan-2018,Extinct
-dgx,dgx-Latn-PG,Doghoro,PG,,,,,,,,MEL,dgx,LE,10-Jan-2018,
-dgz,dgz-Latn-PG,Daga,PG,,,02346,,,,,MEL,dgz,LE,10-Jan-2018,
+dgw,dgw-Latn-AU,Daungwurrung,AU,,,,,,,,ANZ,dgw,,,Extinct
+dgx,dgx-Latn-PG,Doghoro,PG,,,,,,,,MEL,dgx,,,
+dgz,dgz-Latn-PG,Daga,PG,,,02346,,,,,MEL,dgz,,,
 dhd,dhd-Deva-IN,Dhundari,IN PK,,,13793,mwr,,,,SAS,dhd,CLDR,23-Mar-2018,via macro mapping
 dhg,dhg-Latn-AU,Dhangu-Djangu,AU,,,03723 03724 09228 09229 09230 09231,,,,,ANZ,dhg,,,
 dhg-x-wangurri,dhg-Latn-AU-x-wangurri,Dhangu-Djangu,AU,,,,,,,,ANZ,dhg,,,Need to review ROD code
 dhi,dhi-Deva-NP,Dhimal,IN NP,,,,,,,,SAS,dhi,,,
-dhl,dhl-Latn-AU,Dhalandji,AU,,,,,1,,,ANZ,dhl,LE,10-Jan-2018,
-dhm,dhm-Latn-AO,Dhimba,AO NA,,,,,,,,MAF SAF,dhm,LE,12-Jan-2018,
+dhl,dhl-Latn-AU,Dhalandji,AU,,,,,1,,,ANZ,dhl,,,
+dhm,dhm-Latn-AO,Dhimba,AO NA,,,,,,,,MAF SAF,dhm,,,
 dhn,dhn-Gujr-IN,Dhanki,IN,,,03896 03955,,,,,SAS,dhn,,,
-dho,dho-Deva-IN,Dhodia,IN,,,,,,,,SAS,dho,,,
-dho-Gujr,dho-Gujr-IN,Dhodia,IN,,,,,,,,SAS,dho,,,
-dhr,dhr-Latn-AU,Dhargari,AU,,,,,1,,,ANZ,dhr,LE,10-Jan-2018,
+dho-Deva,dho-Deva-IN,Dhodia,IN,,,,,,,,SAS,dho,,,Probably not used
+dho,dho-Gujr-IN,Dhodia,IN,,,,,,,,SAS,dho,,,
+dhr,dhr-Latn-AU,Dhargari,AU,,,,,1,,,ANZ,dhr,,,
 dhs,dhs-Latn-TZ,Dhaiso,TZ,,,,,1,,,EAF,dhs,,,
 dhu,dhu-Latn-AU,Dhurga,AU,,,,,1,,,ANZ,dhu,LE,10-Jan-2018,Extinct
 dhv,dhv-Latn-NC,Drehu,NC,,,,,,,,MEL,dhv,LE,10-Jan-2018,
