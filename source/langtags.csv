@@ -6279,7 +6279,7 @@ pem,pem-Latn-CD,Phende,CD,,,01519,,,,,MAF,pem,LE,12-Jan-2018,
 peo,peo-Xpeo-IR,Old Persian (ca. 600-400 B.C.),IR,,,,,,,,???,peo,CLDR,,Historical
 pep,pep-Latn-PG,Kunja,PG,,,,,,,,MEL,pep,LE,10-Jan-2018,
 peq,peq-Latn-US,"Pomo, Southern",US,,,,,1,,,NAM,peq,LE,9-Jan-2018,
-pes-Arab,pes-Arab-IR,"Persian, Iranian",AE AT AU AZ BH CA DE DK ES FI FR GR IL IN IQ IR NL OM QA RU SE SY TJ TM TR US UZ,,,22511,fa,,,,ANZ CAS EEU NAM NEU SAS SEU WAS WEU,pes,CLDR,23-Mar-2018,via macro mapping
+pes,pes-Arab-IR,"Persian, Iranian",AE AT AU AZ BH CA DE DK ES FI FR GR IL IN IQ IR NL OM QA RU SE SY TJ TM TR US UZ,,,22511,fa,,,,ANZ CAS EEU NAM NEU SAS SEU WAS WEU,pes,CLDR,23-Mar-2018,via macro mapping
 pes-Brai,pes-Brai-IR,"Persian, Iranian",AE AT AU AZ BH CA DE DK ES FI FR GR IL IN IQ IR NL OM QA RU SE SY TJ TM TR US UZ,,,,fa,,,,ANZ CAS EEU NAM NEU SAS SEU WAS WEU,pes,,,
 pev,pev-Latn-VE,Pémono,VE,,,,,1,,,SAM,pev,LE,9-Jan-2018,
 pex,pex-Latn-PG,Petats,PG,,,03585 03593 04595,,,,,MEL,pex,LE,10-Jan-2018,
