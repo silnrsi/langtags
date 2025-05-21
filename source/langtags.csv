@@ -7232,6 +7232,7 @@ sni,sni-Latn-PE,Sensi,PE,,,,,1,,,SAM,sni,LE,10-Jan-2018,Extinct
 snj,snj-Latn-CF,"Sango, Riverain",CF,,,,,1,,,MAF,snj,jb,,
 snk,snk-Latn-ML,Soninke,CI GA GM GN GW ML MR SN US,,,16837 16838 16839,,,,,NAM WAF,snk,CLDR,,
 snk-Arab,snk-Arab-ML,Soninke,CI GM GW ML MR SN US,,,16837 16838 16839,,,,,NAM WAF,snk,,,
+snk-Zzzz-x-nti,snk-Zzzz-ML-x-nti,Soninke,CI GM GW ML MR SN US,,,,,,,,NAM WAF,snk,,,
 snl,snl-Latn-PH,Sangil,PH,,,,,,,,SEA,snl,,,
 snm,snm-Latn-UG,"Ma'di, Southern",UG,,,13247,,,,,EAF,snm,LE,5-Apr-2018,
 snn,snn-Latn-CO,Siona,CO EC,,,,,,,,SAM,snn,LE,9-Jan-2018,
