@@ -1,9 +1,16 @@
+# runtime litter
 *.pyc
-temp.*
-temp/
-*~
-.cache/
-*.egg-info/
-build/
-*.sw?
+
+# build intermediates
+*.egg-info/**
 dist/
+build/
+/flat/**
+/unflat/**
+
+# dev environment
+.venv/
+.vscode/
+*.env
+*.secrets
+*~

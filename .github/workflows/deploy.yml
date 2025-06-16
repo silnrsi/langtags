@@ -14,6 +14,40 @@ on:
         required: true
 
 jobs:
+  release:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      # Checkout repo for gh cli to function
+      - uses: actions/checkout@v4
+      # Download the artefact
+      - uses: actions/download-artifact@v4
+        with:
+          name: langtags
+          path: pub
+      - name: Time based build id
+        id: build-id
+        run: date --utc +stamp=%g%V%w.%H%M >> $GITHUB_OUTPUT
+      - name: Production
+        if: ${{ github.ref_name == 'release' }}
+        run: >-
+          gh release create ${{ steps.build-id.outputs.stamp }}
+          --title "Production Language Tags data ${{ steps.build-id.outputs.stamp }}"
+          --generate-notes
+          --latest
+          pub/langtags.*
+      - name: Staging
+        if: ${{ github.ref_name == 'master' }}
+        run: >-
+          gh release delete staging -y --cleanup-tag || true;
+          gh release create staging
+          --title "Staging Language Tags data ${{ steps.build-id.outputs.stamp }}"
+          --target master
+          --prerelease
+          --notes 'The latest in-development version of the Langtags data set. This may invalid or incomplete. Use only for testing.'
+          pub/langtags.*
+
   deploy:
     runs-on: ubuntu-latest
     env:

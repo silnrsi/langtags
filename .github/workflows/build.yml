@@ -10,10 +10,10 @@ jobs:
       with:
         python-version: '3.x'
     - name: Install langtags package and depedencies
-      run: pip install . \
-          git+https://github.com/silnrsi/{sldrtools#sldrtools,palaso-python#palaso} \
-          six
-
+      run: >-
+        pip install six .
+        sldr@git+https://github.com/silnrsi/sldrtools
+        palaso@git+https://github.com/silnrsi/palaso-python
     - name: Find latest SLDR dependency
       uses: actions/github-script@v7
       id: find-sldr
@@ -27,7 +27,6 @@ jobs:
           const artifact = result.data.artifacts[0]
           console.log(artifact)
           return artifact
-
     - uses: actions/cache@v4
       id: cached-sldr
       with:
@@ -35,7 +34,6 @@ jobs:
           unflat
           flat
         key: sldr-${{fromJSON(steps.find-sldr.outputs.result).id}}
-
     - name: Download the SLDR dependency
       if: steps.cached-sldr.outputs.cache-hit != 'true'
       uses: actions/github-script@v7
@@ -52,13 +50,11 @@ jobs:
               archive_format: "zip"
             })
           fs.writeFileSync('sldr.zip', Buffer.from(response.data))
-
     - name: Extract SLDR dependency
       if: steps.cached-sldr.outputs.cache-hit != 'true'
       run: |
         unzip -q sldr.zip
         rm sldr.zip
-    
     # Build it
     - name: Generate langtags
       run: |
@@ -77,9 +73,11 @@ jobs:
     - uses: actions/setup-python@v5
       with:
         python-version: '3.x'
-    - run: pip install . \
-          git+https://github.com/silnrsi/{sldrtools#sldrtools,palaso-python#palaso} \
-          six        
+    - name: Install langtags package and depedencies
+      run: >-
+        pip install six .
+        sldr@git+https://github.com/silnrsi/sldrtools
+        palaso@git+https://github.com/silnrsi/palaso-python
     - uses: actions/download-artifact@v4
       with:
         name: langtags
@@ -89,12 +87,3 @@ jobs:
       id: langtags
       run: |
         python3 -m unittest tests.test_json tests.python.test_python tests.test_basic
-        echo "need_commit=$(git diff -wU0 pub/langtags.json | grep '^+ ' | grep -v '\"date\":' | wc -l)" >> $GITHUB_OUTPUT
-#    - name: Commit built langtags
-#      if: steps.langtags.output.need_commit != 0
-#      uses: EndBug/add-and-commit@v5
-#      with:
-#        message: "GitHub Actions updated pub"
-#        add: "pub/*"
-#      env:
-#        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
