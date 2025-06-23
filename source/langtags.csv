@@ -311,7 +311,8 @@ ami,ami-Latn-TW,Amis,TW,,,,,,,,EAS,ami,LE,12-Jan-2018,
 amj,amj-Latn-TD,Amdang,SD TD,,,,,,,,MAF,amj,JJB,18-Apr-2018,
 amj-Arab,amj-Arab-TD,Amdang,SD TD,,,,,,,,MAF,amj,,,
 amk,amk-Latn-ID,Ambai,ID,,,01200,,,,,SEA,amk,,20-Apr-2018,
-aml,aml-Zyyy-BD,War-Jaintia,BD IN,,,,,1,,,SAS,aml,,,
+aml,aml-Latn-BD,War-Jaintia,BD IN,,,,,1,,,SAS,aml,,,
+aml-Beng,aml-Beng-BD,War-Jaintia,BD IN,,,,,1,,,SAS,aml,,,
 amm,amm-Latn-PG,Ama,PG,,,,,,,,MEL,amm,LE,10-Jan-2018,
 amn,amn-Latn-PG,Amanab,PG,,,,,,,,MEL,amn,LE,10-Jan-2018,
 amo,amo-Latn-NG,Amo,NG,,,,,,,,WAF,amo,CLDR,,
@@ -2913,6 +2914,7 @@ hi,hi-Deva-IN,Hindi,AE AU BD BT BZ CA DE DJ FI GB GQ GY IN KE KW LK MM MU NP NZ 
 hi-Brai,hi-Brai-IN,Hindi,AE AU BD BT BZ CA DE DJ FI GB GQ GY IN KE KW LK MM MU NP NZ PH PR RU SG SX TH US YE ZA ZM,,,,,,,,ANZ CAM CAR EAF EEU MAF NAM NEU SAF SAM SAS SEA WAS WEU,hin,,,
 hi-Latn,hi-Latn-IN,Hindi,AE AU BD BT BZ CA DE DJ FI GB GQ GY IN KE KW LK MM MU NP NZ PH PR RU SG SX TH US YE ZA ZM,,,,,,,,ANZ CAM CAR EAF EEU MAF NAM NEU SAF SAM SAS SEA WAS WEU,hin,,,
 hi-Mahj,hi-Mahj-IN,Hindi,AE AU BD BT BZ CA DE DJ FI GB GQ GY IN KE KW LK MM MU NP NZ PH PR RU SG SX TH US YE ZA ZM,,,,,,,,ANZ CAM CAR EAF EEU MAF NAM NEU SAF SAM SAS SEA WAS WEU,hin,CLDR Supplemental,,
+hi-Modi,hi-Modi-IN,Hindi,AE AU BD BT BZ CA DE DJ FI GB GQ GY IN KE KW LK MM MU NP NZ PH PR RU SG SX TH US YE ZA ZM,,,,,,,,ANZ CAM CAR EAF EEU MAF NAM NEU SAF SAM SAS SEA WAS WEU,hin,,,
 hi-Newa,hi-Newa-IN,Hindi,AE AU BD BT BZ CA DE DJ FI GB GQ GY IN KE KW LK MM MU NP NZ PH PR RU SG SX TH US YE ZA ZM,,,,,,,,ANZ CAM CAR EAF EEU MAF NAM NEU SAF SAM SAS SEA WAS WEU,hin,,,
 hia,hia-Latn-NG,Lamang,NG,,,01767,,,,,WAF,hia,,,
 hib,hib-Latn-PE,Hibito,PE,,,,,1,,,SAM,hib,LE,10-Jan-2018,Extinct
@@ -6862,6 +6864,7 @@ sa-Bhks,sa-Bhks-IN,Sanskrit,IN NP,,,,,,,,SAS,san,,,
 sa-Kawi,sa-Kawi-IN,Sanskrit,IN NP,,,,,,,,SAS,san,,,
 sa-Khar,sa-Khar-IN,Sanskrit,IN NP,,,,,,,,SAS,san,,,
 sa-Latn,sa-Latn-IN,Sanskrit,IN NP,,,,,,,,SAS,san,,,
+sa-Modi,sa-Modi-IN,Sanskrit,IN NP,,,,,,,,SAS,san,,,
 sa-Mong,sa-Mong-IN,Sanskrit,IN NP,,,,,,,,SAS,san,,,
 sa-Mymr,sa-Mymr-IN,Sanskrit,IN NP,bauddha itihasa laukika vaidika,,,,,,,SAS,san,,,Ancient
 sa-Nand,sa-Nand-IN,Sanskrit,IN NP,bauddha itihasa laukika vaidika,,,,,,,SAS,san,,,Ancient
@@ -8081,7 +8084,7 @@ tw,tw-Latn-GH,Twi,GH,akuapem asante,,,ak,,,,WAF,twi,LE CLDR,12-Jan-2018,"Ethnolo
 tw-Brai,tw-Brai-GH,Twi,GH,,,,ak,,,,WAF,twi,,,
 twa,twa-Latn-US,Twana,US,,,,,1,,,NAM,twa,LE,10-Jan-2018,Extinct
 twb,twb-Latn-PH,"Tawbuid, Western",PH,,,,,,,,SEA,twb,,,
-twc,twc-Zyyy-XX,Teshenawa,NG XX,,,,,1,,,WAF,twc,,,Extinct
+twc,twc-Latn-XX,Teshenawa,NG XX,,,,,1,,,WAF,twc,,,Extinct
 twd,twd-Latn-NL,Twents,NL,,,,,,,,WEU,twd,LE,12-Jan-2018,
 twe,twe-Latn-ID,Teiwa,ID,,,03810 05039,,1,,,SEA,twe,,,
 twf,twf-Latn-US,"Tiwa, Northern",US,,,,,,,,NAM,twf,LE,9-Jan-2018,
