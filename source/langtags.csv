@@ -4577,7 +4577,7 @@ lpx,lpx-Latn-SS,Lopit,SS,,,,,,,,EAF,lpx,LE,12-Jan-2018,
 lqr,lqr-Latn-SS,Logir,SS,,,,,1,,,EAF,lqr,,,
 lra,lra-Latn-MY,"Bakati', Rara",ID MY,,,,,,,,SEA,lra,,,
 lrc,lrc-Arab-IR,"Luri, Northern",IR,,,,,,,,SAS,lrc,CLDR,,
-lre,lre-Zyyy-US,Laurentian,CA,,,,,1,,,NAM,lre,LE,10-Jan-2018,Extinct
+lre,lre-Latn-CA,Laurentian,CA,,,,,1,,,NAM,lre,LE,10-Jan-2018,Extinct
 lrg,lrg-Latn-AU,Laragia,AU,,,,,,,,ANZ,lrg,LE,10-Jan-2018,Extinct
 lri,lri-Latn-KE,Olumarachi,KE,,,,,,,,EAF,lri,LE,12-Jan-2018,
 lrk,lrk-Arab-PK,Loarki,PK,,,,,1,,,SAS,lrk,,,
@@ -6084,8 +6084,8 @@ omt,omt-Latn-KE,Omotik,KE,,,,,1,,,EAF,omt,,,
 omu,omu-Latn-PE,Omurano,PE,,,,,1,,,SAM,omu,LE,10-Jan-2018,Extinct
 omw,omw-Latn-PG,"Tairora, South",PG,,,15296,,,,,MEL,omw,LE,10-Jan-2018,
 omx,omx-Mymr-MM,Old Mon,XX,,,,,,,,???,omx,,,Historical
-omy,omy-Zyyy-MY,Old Malay,XX,,,,,1,,,???,omy,,,
-omy-Kawi,omy-Kawi-MY,Old Malay,XX,,,,,,,,???,omy,,,
+omy,omy-Arab-MY,Old Malay,XX,,,,,,1,,???,omy,,,Pallava?
+omy-Kawi,omy-Kawi-MY,Old Malay,XX,,,,,,1,,???,omy,,,
 ona,ona-Latn-AR,Ona,AR,,,,,1,,,SAM,ona,LE,9-Jan-2018,
 onb,onb-Zyyy-CN,Lingao,CN,,,12973,,1,,,EAS,onb,,,
 one,one-Latn-CA,Oneida,CA US,,,,,,,,NAM,one,LE,9-Jan-2018,
@@ -6108,7 +6108,7 @@ ood-x-pima,ood-Latn-US-x-pima,Tohono O'odham,US,,237,,,,,,,ood,,,
 oog,oog-Zyyy-LA,Ong,LA,,,,,1,,,SEA,oog,NMC,4-Dec-2017,
 oon,oon-Deva-IN,Öñge,IN,,,,,1,,,SAS,oon,,,
 oor,oor-Latn-ZA,Oorlams,ZA,,,,,1,,,SAF,oor,LE,9-Jan-2018,
-oos,oos-Zyyy-XX,Old Ossetic,XX,,,,,1,,,???,oos,,,Ancient
+oos,oos-Grek-XX,Old Ossetic,XX,,,,,1,,,???,oos,,,Ancient
 opa,opa-Latn-NG,Okpamheri,NG,,,,,1,,,WAF,opa,,,
 opk,opk-Latn-ID,Kopkaka,ID,,,,,1,,,SEA,opk,,,
 opm,opm-Latn-PG,Oksapmin,PG,,,,,,,,MEL,opm,LE,10-Jan-2018,
@@ -6544,7 +6544,7 @@ ptr,ptr-Latn-VU,Piamatsina,VU,,,,,1,,,MEL,ptr,LE,10-Jan-2018,
 ptt,ptt-Latn-ID,Enrekang,ID,,,,,1,,,SEA,ptt,,,
 ptu,ptu-Latn-ID,Bambam,ID,,,07645 20049 20098,,,,,SEA,ptu,,20-Apr-2018,
 ptv,ptv-Latn-VU,Port Vato,VU,,,,,,1,,MEL,ptv,LE,10-Jan-2018,
-ptw,ptw-Zyyy-CA,Pentlatch,CA,,,,,1,,,NAM,ptw,LE,10-Jan-2018,Extinct
+ptw,ptw-Latn-CA,Pentlatch,CA,,,,,1,,,NAM,ptw,LE,10-Jan-2018,Extinct
 pty,pty-Zyyy-IN,Pathiya,IN,,,,,1,,,SAS,pty,,,
 pua,pua-Latn-MX,"Purepecha, Western Highland",MX US,,,,,,,,CAM NAM,pua,LE,9-Jan-2018,
 pub,pub-Latn-IN,Purum,IN,,,,,,,,SAS,pub,,,
@@ -8013,7 +8013,7 @@ tsz,tsz-Latn-MX,Purepecha,MX US,,,,,,,,CAM NAM,tsz,LE,9-Jan-2018,
 tt,tt-Cyrl-RU,Tatar,AZ BY CN EE GE KG KZ LV RO RU TJ TM TR UA US UZ,,,,,,,,CAS EAS EEU NAM NEU WAS,tat,CLDR,,
 tt-Latn,tt-Latn-RU,Tatar,AZ BY CN EE GE KG KZ LV RO RU TJ TM TR UA US UZ,baku1926,,,,,,,CAS EAS EEU NAM NEU WAS,tat,,,
 tt-Arab,tt-Arab-RU,Tatar,,,,,,,,,CAS EAS EEU NAM NEU WAS,tat,,,
-tta,tta-Zyyy-CA,Tutelo,CA,,,,,1,,,???,tta,,,Extinct
+tta,tta-Latn-CA,Tutelo,CA,,,,,1,,,NAM,tta,,,Extinct
 ttb,ttb-Latn-NG,Gaa,NG,,,,,1,,,WAF,ttb,,,
 ttc,ttc-Latn-GT,Tektiteko,GT MX US,,,,,,,,CAM NAM,ttc,LE,9-Jan-2018,
 ttd,ttd-Latn-PG,Tauade,PG,,,,,,,,MEL,ttd,LE,10-Jan-2018,
