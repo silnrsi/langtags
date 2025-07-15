@@ -22,7 +22,7 @@ aam,aam-Latn-TZ,Aasáx,TZ,,,,aas,1,,aas,EAF,aas,LE,9-Jan-2018,
 aan,aan-Latn-BR,Anambé,BR,,,,,1,,,SAM,aan,LE,9-Jan-2018,
 aao,aao-Arab-DZ,"Arabic, Algerian Saharan Spoken",DZ EG NE TN,,,,,,,,NAF WAF,aao,,,
 aap,aap-Latn-BR,"Arára, Pará",BR,,,,,,,,SAM,aap,LE,9-Jan-2018,
-aaq,aaq-Latn-US,"Abenaki, Eastern",US,,,,,1,,,NAM,aaq,LE,10-Jan-2018,Extinct
+aaq,aaq-Latn-US,"Abenaki, Eastern",US,,,,,,,,NAM,aaq,LE,10-Jan-2018,Extinct
 aas,aas-Latn-TZ,Aasáx,TZ,,,,,1,,,EAF,aas,LE,9-Jan-2018,
 aat,aat-Grek-GR,"Albanian, Arvanitika",GR,,,06865 06866 06867,,,,,SEU,aat,LE,12-Jan-2018,
 aau,aau-Latn-PG,Abau,PG,,,03752,,,,,MEL,aau,LE,10-Jan-2018,
@@ -41,7 +41,7 @@ abf,abf-Latn-MY,Abai Sungai,MY,,,,,1,,,SEA,abf,,,
 abg,abg-Latn-PG,Abaga,PG,,,,,1,,,MEL,abg,LE,10-Jan-2018,
 abh,abh-Arab-TJ,"Arabic, Tajiki Spoken",AF TJ UZ,,,,,,,,CAS SAS,abh,LE,12-Jan-2018,
 abi,abi-Latn-CI,Abidji,CI,,,06623 06624,,,,,WAF,abi,LE,12-Jan-2018,
-abj,abj-Zyyy-IN,Aka-Bea,IN,,,,,1,,,SAS,abj,,,Extinct
+abj,abj-Latn-IN,Aka-Bea,IN,,,,,1,,,SAS,abj,,,Extinct
 abl,abl-Rjng-ID,Lampung Nyo,ID,,,,,,,,SEA,abl,,,
 abl-Latn,abl-Latn-ID,Lampung Nyo,ID,,,,,,,,SEA,abl,,,
 abm,abm-Latn-NG,Abanyom,NG,,,,,,,,WAF,abm,,,
@@ -68,9 +68,9 @@ ace,ace-Latn-ID,Aceh,ID US,,,06651 06652 06653 06654 06655 06656 06657,,,,,NAM S
 ace-Arab,ace-Arab-ID,Aceh,ID,,,,,,,,SEA,ace,,,
 acf,acf-Latn-LC,Saint Lucian Creole French,DM FR GD GY LC MF MQ TT,,,,,,,,CAR SAM WEU,acf,LE,12-Jan-2018,
 ach,ach-Latn-UG,Acholi,SS UG,,,06665 06667,,,,,EAF,ach,CLDR,,
-aci,aci-Zyyy-IN,Aka-Cari,IN,,,,,1,,,SAS,aci,,,Extinct
-ack,ack-Zyyy-IN,Aka-Kora,IN,,,,,1,,,SAS,ack,,,Extinct
-acl,acl-Zyyy-IN,Akar-Bale,IN,,,,,1,,,SAS,acl,,,Extinct
+aci,aci-Latn-IN,Aka-Cari,IN,,,,,1,,,SAS,aci,,,Extinct
+ack,ack-Latn-IN,Aka-Kora,IN,,,,,1,,,SAS,ack,,,Extinct
+acl,acl-Latn-IN,Akar-Bale,IN,,,,,1,,,SAS,acl,,,Extinct
 acm,acm-Arab-IQ,"Arabic, Mesopotamian Spoken",IQ IR JO NL SY TR,,,,,,,,SAS WAS,acm,LE,12-Jan-2018,
 acn,acn-Latn-CN,Achang,CN MM,,,06294 06295 06658 06659 06660 18356,,,,,EAS SEA,acn,LE,12-Jan-2018,
 acp,acp-Latn-NG,"Acipa, Eastern",NG,,,,,1,,,WAF,acp,,,
@@ -250,10 +250,10 @@ akf,akf-Latn-NG,Akpa,NG,,,02132,,,,,WAF,akf,,,
 akg,akg-Latn-ID,Anakalangu,ID,,,05064,,1,,,SEA,akg,,,
 akh,akh-Latn-PG,Angal Heneng,PG,,,00468 03092 04007,,,,,MEL,akh,LE,10-Jan-2018,
 aki,aki-Latn-PG,Aiome,PG,,,,,1,,,MEL,aki,LE,10-Jan-2018,
-akj,akj-Zyyy-IN,Aka-Jeru,IN,,,,,1,,,SAS,akj,,,Extinct
+akj,akj-Latn-IN,Aka-Jeru,IN,,,,,1,,,SAS,akj,,,Extinct
 akk,akk-Xsux-IQ,Akkadian,IQ,,,,,,1,,WAS,akk,CLDR,,Ancient
 akl,akl-Latn-PH,Inakeanon,PH US,,,,,,,,NAM SEA,akl,,,
-akm,akm-Zyyy-IN,Aka-Bo,IN,,,,,1,,,SAS,akm,,,Extinct
+akm,akm-Latn-IN,Aka-Bo,IN,,,,,1,,,SAS,akm,,,Extinct
 ako,ako-Latn-SR,Akurio,SR,,,,,1,,,SAM,ako,LE,9-Jan-2018,
 akp,akp-Latn-GH,Siwu,GH,,,,,,,,WAF,akp,LE,12-Jan-2018,
 akq,akq-Latn-PG,Ak,PG,,,,,1,,,MEL,akq,LE,10-Jan-2018,
@@ -263,8 +263,8 @@ akt,akt-Latn-PG,Akolet,PG,,,,,1,,,MEL,akt,LE,10-Jan-2018,
 aku,aku-Latn-CM,Akum,CM NG,,,,,1,,,MAF,aku,,,
 akv,akv-Cyrl-RU,Akhvakh,AZ RU,,,,,,,,EEU WAS,akv,,,
 akw,akw-Latn-CG,Akwa,CG,,,,,1,,,MAF,akw,,,
-akx,akx-Zyyy-IN,Aka-Kede,IN,,,,,1,,,SAS,akx,,,Extinct
-aky,aky-Zyyy-IN,Aka-Kol,IN,,,,,1,,,SAS,aky,,,Extinct
+akx,akx-Latn-IN,Aka-Kede,IN,,,,,1,,,SAS,akx,,,Extinct
+aky,aky-Latn-IN,Aka-Kol,IN,,,,,1,,,SAS,aky,,,Extinct
 akz,akz-Latn-US,Alabama,US,,,,,1,,,NAM,akz,LE,9-Jan-2018,
 ala,ala-Latn-NG,Alago,NG,,,,,,,,WAF,ala,,,
 alc,alc-Latn-CL,Qawasqar,CL,,,,,1,,,SAM,alc,LE,9-Jan-2018,
@@ -404,7 +404,7 @@ apm,apm-Latn-US,"Apache, Mescalero-Chiricahua",US MX,,,20960,,,,,NAM,apm,LE,9-Ja
 apn,apn-Latn-BR,Apinayé,BR,,,,,,,,SAM,apn,LE,9-Jan-2018,
 apo,apo-Latn-PG,Ambul,PG,,,,,1,,,MEL,apo,LE,10-Jan-2018,
 app,app-Latn-VU,Apma,VU,,,,,,,,MEL,app,LE,10-Jan-2018,
-apq,apq-Zyyy-IN,A-Pucikwar,IN,,,,,1,,,SAS,apq,,,
+apq,apq-Latn-IN,A-Pucikwar,IN,,,,,1,,,SAS,apq,,,
 apr,apr-Latn-PG,Arop-Lokep,PG,,,00555 07252 13119,,,,,MEL,apr,LE,10-Jan-2018,
 aps,aps-Latn-PG,Arop-Sissano,PG,,,,,,,,MEL,aps,LE,10-Jan-2018,
 apt,apt-Latn-IN,Apatani,IN,,,,,,,,SAS,apt,,,
@@ -5623,7 +5623,7 @@ nig,nig-Latn-AU,Ngalakan,AU,,,,,1,,,ANZ,nig,LE,10-Jan-2018,Extinct
 nih,nih-Latn-TZ,"Nyiha, Tanzania",TZ ZM,,,01074,,,,,EAF,nih,LE,5-Apr-2018,
 nii,nii-Latn-PG,Nii,PG,,,03209 04404,,,,,MEL,nii,LE,10-Jan-2018,
 nij,nij-Latn-ID,Ngaju,ID,,,01081 01082 05032 05043 05048 05060 05073 05090 05100 21157,,,,,SEA,nij,CLDR,,
-nik,nik-Zyyy-IN,"Nicobarese, Southern",IN,,,,,1,,,SAS,nik,,,
+nik,nik-Latn-IN,"Nicobarese, Southern",IN,,,,,1,,,SAS,nik,,,
 nil,nil-Latn-ID,Nila,ID,,,,,1,,,SEA,nil,,,
 nim,nim-Latn-TZ,Nilamba,TZ,,,01049,,,,,EAF,nim,LE,5-Apr-2018,
 nin,nin-Latn-NG,Ninzo,NG,,,03731,,,,,WAF,nin,,,
@@ -7397,7 +7397,7 @@ st,st-Latn-ZA,"Sotho, Southern",BW LS SZ ZA,,,,,,,,SAF,sot,CLDR,,
 st-Brai,st-Brai-ZA,"Sotho, Southern",BW LS SZ ZA,,,,,,,,SAF,sot,,,
 sta,sta-Latn-ZM,Settla,ZM,,,,,1,,,EAF,sta,LE,30-Jan-2018,
 stb,stb-Latn-PH,"Subanen, Northern",PH,,,,,,,,SEA,stb,,,
-std,std-Zyyy-IN,Sentinel,IN,,,,,1,,,SAS,std,,,
+std,std-Latn-IN,Sentinel,IN,,,,,1,,,SAS,std,,,
 ste,ste-Latn-ID,Liana-Seti,ID,,,,,,,,SEA,ste,,20-Apr-2018,
 stf,stf-Latn-PG,Seta,PG,,,,,1,,,MEL,stf,LE,10-Jan-2018,
 stg,stg-Latn-VN,Trieng,VN,,,,,1,,,SEA,stg,NMC,4-Dec-2017,
@@ -7658,7 +7658,7 @@ teb,teb-Latn-EC,Tetete,EC,,,,,1,,,SAM,teb,LE,10-Jan-2018,Extinct
 tec,tec-Latn-KE,Terik,KE,,,,,1,,,EAF,tec,LE,12-Jan-2018,
 ted,ted-Latn-CI,"Krumen, Tepo",CI LR,,,12365,,,,,WAF,ted,,,
 tee,tee-Latn-MX,"Tepehua, Huehuetla",MX,,,,,,,,CAM,tee,LE,9-Jan-2018,
-tef,tef-Zyyy-IN,Teressa,IN,,,,,1,,,SAS,tef,,,
+tef,tef-Latn-IN,Teressa,IN,,,,,1,,,SAS,tef,,,
 teg,teg-Latn-GA,Teke-Tege,CG GA,,,,,,,,MAF,teg,LE,12-Jan-2018,
 teh,teh-Latn-AR,Tehuelche,AR,,,,,1,,,SAM,teh,LE,9-Jan-2018,
 tei,tei-Latn-PG,Torricelli,PG,,,00381,,1,,,MEL,tei,LE,10-Jan-2018,
@@ -8231,7 +8231,7 @@ ukv,ukv-Latn-SS,Kuku,SS UG,,,,,,,,,ukv,,,
 ukw,ukw-Latn-NG,Ukwuani-Aboh-Ndoni,NG,,,02389 04772,,,,,WAF,ukw,,,
 uky,uky-Latn-AU,Kuuk-Yak,AU,,,,,1,,,ANZ,uky,LE,10-Jan-2018,Extinct
 ula,ula-Latn-NG,Fungwa,NG,,,,,1,,,WAF,ula,,,
-ulb,ulb-Latn-NG,Ulukwumi,NG,,,,,1,,,WAF,ulb,,,
+ulb,ulb-Latn-NG,Ulukwumi,NG,,,,,,,,WAF,ulb,,,
 ulc,ulc-Cyrl-RU,Ulch,RU,,,,,1,,,EEU,ulc,,,
 ule,ule-Latn-AR,Lule,AR,,,,,1,,,SAM,ule,LE,10-Jan-2018,Extinct
 ulf,ulf-Latn-ID,Usku,ID,,,,,1,,,SEA,ulf,,,
