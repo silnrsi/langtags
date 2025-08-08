@@ -5176,7 +5176,7 @@ mr-Modi,mr-Modi-IN,Marathi,CA GB IL IN MU US,,,,,,,,EAF NAM NEU SAS WAS,mar,CLDR
 mr-Latn,mr-Latn-IN,Marathi,CA GB IL IN MU US,,,,,,1,,EAF NAM NEU SAS WAS,mar,,,
 mra,mra-Thai-TH,Mlabri,LA TH,,,,,,,,SEA,mra,NMC,4-Dec-2017,Mlabri in Thai has greater population than that of Mlabri in Laos
 mrb,mrb-Latn-VU,Marino,VU,,,,,1,,,MEL,mrb,LE,10-Jan-2018,
-mrc,mrc-Latn-US,Maricopa,US,,,,,1,,,NAM,mrc,LE,9-Jan-2018,
+mrc,mrc-Latn-US,Maricopa,US,,,,,,,,NAM,mrc,LE,9-Jan-2018,
 mrd,mrd-Deva-NP,"Magar, Western",NP,,,03221,,,,,SAS,mrd,CLDR,,
 mre,mre-Zxxx-US,Martha's Vineyard Sign Language,GB US,,,,,,,,NAM NEU,mre,,,Extinct
 mrf,mrf-Latn-ID,Elseng,ID,,,01146,,1,,,SEA,mrf,,,
