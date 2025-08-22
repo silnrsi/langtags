@@ -14,7 +14,7 @@ def nonascii(s):
 
 class Basic(unittest.TestCase):
 
-    extraScripts = ["Hntl", "Seal", "Berf"]
+    extraScripts = ["Berf", "Hntl", "Seal"]
     extraLangs = ("000", "oak", "vsn") 
 
     def setUp(self):
