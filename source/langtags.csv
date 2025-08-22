@@ -434,7 +434,7 @@ arb-Hebr,arb-Hebr-SY,"Arabic, Standard",SY,,,,ar,,,,EAF MAF NAF NEU SEA WAF WAS,
 arb-Syrc,arb-Syrc-SY,"Arabic, Standard",SY,,,,ar,,,,EAF MAF NAF NEU SEA WAF WAS,arb,,,
 arc,arc-Armi-IR,Official Aramaic (700-300 BCE),IR,,,,,,,,SAS,arc,CLDR,,Ancient
 arc-Nbat,arc-Nbat-JO,Aramaic,JO,,,,,,,,WAS,arc,CLDR,,
-arc-Palm,arc-Palm-SY,Aramaic,SY,,,,,,,,???,arc,CLDR,,
+arc-Palm,arc-Palm-SY,Aramaic,SY,,,,,,,,WAS,arc,CLDR,,
 arc-Hatr,arc-Hatr-XX,Aramaic,XX,,,,,,,,WAS,arc,,,
 arc-Syrc,arc-Syrc-XX,Aramaic,XX,,,,,,,,???,arc,LE,,keyboard purports to support this script
 ard,ard-Latn-AU,Arabana,AU,,,,,1,,,ANZ,ard,LE,10-Jan-2018,Extinct
@@ -5979,14 +5979,16 @@ nzk,nzk-Latn-CF,Nzakara,CD CF,,,,,,,,MAF,nzk,jb,,
 nzm,nzm-Latn-IN,"Naga, Zeme",IN,,,,,,,,SAS,nzm,,,
 nzr,nzr-Latn-NG,Nyamzak-Dir-Mbarimi,NG,,,,,,,,,nzr,,9-Mar-2023,
 nzs,nzs-Zxxx-NZ,New Zealand Sign Language,NZ,,,,,,,,ANZ,nzs,,,
-nzu,nzu-Latn-CG,Teke-Nzikou,CG,,,,,,,,MAF,nzu,LE,12-Jan-2018,
+nzu,nzu-Latn-CG,Teke-Nzikou,CG,,,,,,,,MAF,nzu,,12-Jan-2018,
 nzy,nzy-Latn-TD,Nzakambay,CM TD,,,02950 04984,,,,,MAF,nzy,,,JJB: 2018 no work in Chad
 nzz,nzz-Latn-ML,"Dogon, Nanga Dama",ML,,,,,1,,,WAF,nzz,,,
 oaa,oaa-Cyrl-RU,Orok,JP RU,,,,,1,,,EAS EEU,oaa,,,
 oac,oac-Cyrl-RU,Oroch,RU,,,,,1,,,EEU,oac,,,
-oar,oar-Syrc-SY,Old Aramaic (up to 700 BCE),SY,,,,,,,,???,oar,LE,,Ancient (keyboard purports to support this script)
+oak,oak-Beng-BD,Noakhali,BD IN,,,,,,,,SAS,oak,,,
+oak-Latn,oak-Latn-IN,Noakhali,BD IN,,,,,,,,SAS,oak,,,
+oar,oar-Syrc-SY,Old Aramaic (up to 700 BCE),SY,,,,,,,,WAS,oar,,,Ancient (keyboard purports to support this script)
 oav,oav-Geor-GE,Old Avar,GE RU,,,,,,,,???,oav,,,Historical
-obi,obi-Latn-US,Obispeño,US,,,,,1,,,NAM,obi,LE,10-Jan-2018,Extinct
+obi,obi-Latn-US,Obispeño,US,,,,,1,,,NAM,obi,,10-Jan-2018,Extinct
 obk,obk-Latn-PH,"Bontok, Southern",PH,,,,,1,,,SEA,obk,,,
 obl,obl-Latn-CM,Oblo,CM,,,,,1,,,MAF,obl,,,
 obm,obm-Phnx-JO,Moabite,JO,,,,,,,,WAS,obm,,,Ancient
@@ -9334,7 +9336,7 @@ zae,zae-Latn-MX,"Zapotec, Yareni",MX,,,,,,,,CAM,zae,LE,9-Jan-2018,
 zaf,zaf-Latn-MX,"Zapotec, Ayoquesco",MX,,,,,,,,CAM,zaf,LE,9-Jan-2018,
 zag,zag-Latn-SD,Zaghawa,LY SD TD,,,,,,,,MAF NAF,zag,CLDR,,
 zag-Arab,zag-Arab-SD,Zaghawa,LY SD TD,,,,,,,,MAF NAF,zag,,,
-zag-Zzzz-x-beria,zag-Zzzz-SD-x-beria,Zaghawa,LY SD TD,,,,,,,,MAF NAF,zag,,,
+zag-Berf,zag-Berf,Zaghawa,LY SD TD,,,,,,,,MAF NAF,zag,,,
 zah,zah-Latn-NG,Zangwal,NG,,,,,1,,,WAF,zah,,,
 zai,zai-Latn-MX,"Zapotec, Isthmus",MX,,,22889,zap,,,,CAM,zai,LE,9-Jan-2018,
 zaj,zaj-Latn-TZ,Zaramo,TZ,,,,,,,,EAF,zaj,LE,5-Apr-2018,
