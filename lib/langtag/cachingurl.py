@@ -27,7 +27,7 @@ def get_newurl(url, gmsec, target):
         return False
     ce = response.info().get('Content-Encoding')
     if ce == 'gzip':
-        data = GzipFile(response)
+        data = GzipFile(fileobj=response)
     elif ce == 'deflate' or ce is None:
         data = response
     else:
