@@ -35,6 +35,7 @@ Langtags.json consists of an array of objects. Each object corresponds to an equ
 - **tags** A list of other tags that are equivalent. Each conforms to BCP 47
 - **variants** A list of variant tag components that may occur with tags in this set. A tag with a variant is not equivalent to other tags in this set.
 - **iso639_3** The ISO639-3 code for the language of the **tag** in this set.
+- **iso639_3extra** A list of ISO639-3 codes for languages that are aliases of this tagset for whatever reason \[added 1.4\]
 - **region** Region code, from the full tag, for this set. Conforms to ISO 3166-1.
 - **regions** Other regions that may be used with these tags. See the following section on regions list. Each conforms to ISO 3166-1
 - **regionname** The English name for this region taken from the IANA registry.
@@ -47,7 +48,8 @@ Langtags.json consists of an array of objects. Each object corresponds to an equ
 - **script** Specifies the script component of the full tag, for this set. Conforms to ISO 15924. \[Added 1.0.1\]
 - **localnames** Specifies a list of local names (autonyms), coming from the Ethnologue. \[Added 1.1.0\]
 - **latnnames** Specifies a list of romanised autonyms in direct correspondance to the localnames list. \[Added 1.1.0\]
-- **rod** A Registry of Dialects numeric code \(as a string\) \[Added 1.1.1\]
+- **rod** A Registry of Language Variants numeric code for this dialect \(as a string\) \[Added 1.1.1\]
+- **rolv** An array of Registry of Language Variants codes \(string\) for dialects of this language \[Added 1.4\]
 - **suppress** If present and true indicates that the IANA language tag registry has the suppress script set for this language. \[Added 1.1.1\]
 - **windows** Windows requires a strict BCP-47 interpretation and requires a script tag unless the suppress script from the IANA registry is the same as the script. This field is always present and may be the same as the **tag** field or one of the values in the **tags** list. \[Added 1.1.1\]
 - **obsolete** If present and true indicates that the language is obsolete \[Added 1.2.1\]

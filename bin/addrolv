@@ -1,0 +1,70 @@
+#!/usr/bin/env python3
+
+import argparse, json, re
+
+def mergelines(m):
+    return "[" + " ".join(x.strip() for x in m.group(1).split("\n")) + "]"
+
+parser = argparse.ArgumentParser()
+parser.add_argument("infile",help="langtags.json")
+parser.add_argument("rolv",help="rolv.json")
+parser.add_argument("-o","--outfile",help="Output langtags.json")
+parser.add_argument("-v","--verbose",action="store_true",help="verbose output")
+args = parser.parse_args()
+
+with open(args.infile, encoding="utf-8") as inf:
+    ltags = json.load(inf)
+
+with open(args.rolv, encoding="utf-8") as inf:
+    rolv = json.load(inf)
+
+rods = {t['rod']: i for i, t in enumerate(ltags) if 'rod' in t}
+
+langs = {}
+for i, t in enumerate(ltags):
+    l = t.get('iso639_3', None)
+    if l is not None:
+        langs.setdefault(l, []).append(i)
+    for l in t.get('iso639_3extra', []):
+        langs.setdefault(l, []).append(i)
+
+missing = []
+count = 0
+for r in rolv['data']['ROLVCodes']:
+    count += 1
+    c = r['ROLVCode']
+    if str(c) in rods:
+        continue
+    l = r['LanguageCode']
+    region = r['CountryCode']
+    tset = None
+    for i in langs.get(l, []):
+        t = ltags[i]
+        if region is None and len(t['tag'].split("-")) == 1 or t.get('region', '') == region:
+            tset = t
+            break
+        elif region is not None and region in t.get('regions', []):
+            tset = t
+    if tset is None:
+        if l not in langs:
+            missing.append((c, l))
+            continue
+        else:
+            tset = ltags[langs[l][0]]
+    tset.setdefault('rolv', []).append(str(c))
+
+if args.outfile:
+    output = json.dumps(sorted(ltags, key=lambda x:x['tag']), ensure_ascii=False, indent=4, sort_keys=True)
+    output = "[" + re.sub(r'\[([^\]]+)\]', mergelines, output[1:-1]) + "]\n"
+    with open(args.outfile, "w", encoding="utf-8") as outf:
+        outf.write(output)
+
+if len(missing):
+    print("Codes with no matching tagset ({}/{}). Use --verbose to see them all.".format(len(missing), count))
+    if args.verbose:
+        # print(" ".join("{0}:{1}".format(*x) for x in sorted(missing)))
+        badlangs = {}
+        for m in missing:
+            badlangs.setdefault(m[1], []).append(m[0])
+        for k, v in sorted(badlangs.items()):
+            print(f"{k}: {v}")

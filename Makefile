@@ -2,6 +2,7 @@ SLDR = "../sldr/sldr"
 FLATDIR = "../sldr/flat"
 RESULTS = pub
 LTDB = bin/ltdb2alltags
+LTROLV = bin/addrolv
 NAME = langtags
 LTDBOPTS = -H 1
 
@@ -11,8 +12,10 @@ all : test
 
 build : ${RESULTS}/${NAME}.json ${RESULTS}/${NAME}.txt # ${RESULTS}/${NAME}_inherited.txt
 
-${RESULTS}/${NAME}.json : source/langtags.csv source/autonyms.csv source/langindex.tab ${LTDB} | ${RESULTS}
-	${LTDB} -i $(SLDR) -f $(FLATDIR) $(LTDBOPTS) -L source/langindex.tab -a source/autonyms.csv $< $@
+${RESULTS}/${NAME}.json : source/langtags.csv source/autonyms.csv source/langindex.tab source/rolv.json ${LTDB} ${LTROLV} | ${RESULTS}
+	${LTDB} -i $(SLDR) -f $(FLATDIR) $(LTDBOPTS) -L source/langindex.tab -a source/autonyms.csv $< temp.json
+	${LTROLV} -o $@ temp.json source/rolv.json
+	@- rm temp.json
 
 ${RESULTS}/${NAME}.txt : ${RESULTS}/${NAME}.json | ${RESULTS}
 	bin/jsonlangtagstotxt -r -s ${SLDR} $< $@

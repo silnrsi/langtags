@@ -37,6 +37,10 @@
         "iso639_3": {
           "$ref": "#/definitions/iso639_3"
         },
+        "iso639_3extra": {
+            "type": "array",
+            "items": { "type": "string"}
+        },
         "region": {
           "$ref": "#/definitions/iso3166_1"
         },
@@ -92,6 +96,10 @@
           "$ref": "#/definitions/bcp47"
         },
         "rod": { "type": "string"},
+        "rolv": {
+            "type": "array",
+            "items": { "type": "string" }
+        },
         "macrolang": {
           "$ref": "#/definitions/bcp47"
         }
@@ -188,7 +196,6 @@
       "type": "string",
       "pattern": "^[a-z]{3}$"
     },
-
     "iso3166_1": {
       "type": "string",
       "pattern": "^([A-Z]{2})|(\\d\\d\\d)$"
