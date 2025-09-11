@@ -34,6 +34,11 @@
           "items": { "$ref": "#/definitions/bcp47_variant" },
           "additionalItems": false
         },
+        "svariants": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/bcp47_variant" },
+          "additionalItems": false
+        },
         "iso639_3": {
           "$ref": "#/definitions/iso639_3"
         },

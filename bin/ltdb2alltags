@@ -255,6 +255,7 @@ with open(args.infile) as csvfile :
         d = row['deprecated']
         rod = row['ROD']
         variants = row['variants'].split()
+        svariants = row['svariants'].split()
         macro = row['Macro']
         t = lt.LangTag(ls)
         b = lt.LangTag(lid)
@@ -298,6 +299,7 @@ with open(args.infile) as csvfile :
         t.rod = rod
         t.obsolete = row['obsolete'] != ""
         t.unwritten = row['unwritten'] != ""
+        t.svariants = svariants
 
 if not args.quiet:
     print("Reading sldr")
@@ -329,9 +331,10 @@ for k, v in allmacros.items():
         macro.regions = []
     if hasattr(base, 'regions'):
         macro.regions.extend(base.regions)
-    ev = getattr(base, 'extra_variants', [])
-    if len(ev):
-        macro.extra_variants = sorted(set(getattr(macro, 'extra_variants', []) + ev))
+    for a in ('extra_variants', 'svariants'):
+        ev = getattr(base, a, [])
+        if len(ev):
+            setattr(macro, a, sorted(set(getattr(macro, a, []) + ev)))
     macro.base.append(base)
 
     
@@ -574,6 +577,8 @@ def make_record(t, args):
         n['nophonvars'] = True
     if getattr(t, 'extra_variants', ""):
         n['variants'] = t.extra_variants
+    if getattr(t, 'svariants', None):
+        n['svariants'] = t.svariants
     if getattr(t, 'rod', ""):
         n['rod'] = t.rod
     if getattr(t, 'obsolete', False):

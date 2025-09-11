@@ -34,6 +34,7 @@ Langtags.json consists of an array of objects. Each object corresponds to an equ
 - **full** The full tag for this set. Use this if you want to pull out the details. Conforms to BCP 47
 - **tags** A list of other tags that are equivalent. Each conforms to BCP 47
 - **variants** A list of variant tag components that may occur with tags in this set. A tag with a variant is not equivalent to other tags in this set.
+- **svariants** A list of script variant tags. \[added 1.4\]
 - **iso639_3** The ISO639-3 code for the language of the **tag** in this set.
 - **iso639_3extra** A list of ISO639-3 codes for languages that are aliases of this tagset for whatever reason \[added 1.4\]
 - **region** Region code, from the full tag, for this set. Conforms to ISO 3166-1.
@@ -134,6 +135,10 @@ Thus a complete list of equivalence sets for bg-Cyrl-GB (with only one of the va
 - bg-ivanchov-simple, bg-BG-ivanchov-simple, bg-Cyrl-ivanchov-simple, bg-Cyrl-BG-ivanchov-simple
 - bg-fonipa-simple, bg-BG-fonipa-simple, bg-Latn-fonipa-simple, bg-Latn-BG-fonipa-simple
 - bg-fonipa-ivanchov-simple, bg-BG-fonipa-ivanchov-simple, bg-Latn-fonipa-ivanchov-simple, bg-Latn-BG-fonipa-ivanchov-simple
+
+There is also a **svariants** field that contains a list of script variants. Script variants may chain with a variant from the variants list but not with other script variants, including those arising from the \_phonvar list.
+
+A variant list may therefore consist of zero or one from the variants list (whether local or \_globalvar) and zero or one from the scripts variants list (whether local or \_phonvar).
 
 ### Macro Languages
 
