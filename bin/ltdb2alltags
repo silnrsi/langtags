@@ -357,6 +357,7 @@ for r in reader:
 namef.close()
 
 macros = {}
+macrocontains = {}
 if args.macros:
     namef = open(args.macros, "rb")
 else:
@@ -368,6 +369,7 @@ for l in namef.readlines():
     b = l.decode("utf-8").strip().split("\t")
     r = {fields[i]: b[i] for i in range(len(fields))}
     macros[r['I_Id']] = r['M_Id']
+    macrocontains.setdefault(r['M_Id'], []).append(r['I_Id'])
 namef.close()
 
 
@@ -505,6 +507,9 @@ def make_record(t, args):
         macro = macros.get(n['iso639_3'], None)
         if macro is not None:
             n['macrolang'] = iso639map.get(macro, macro)
+        contains = macrocontains.get(n['iso639_3'], None)
+        if contains is not None:
+            n['contains'] = [iso639map.get(c, c) for c in contains]
     auto = set()
     for l in r:
         x = lt.LangTag(l)

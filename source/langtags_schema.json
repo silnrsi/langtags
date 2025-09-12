@@ -106,7 +106,11 @@
             "items": { "type": "string" }
         },
         "macrolang": {
-          "$ref": "#/definitions/bcp47"
+            "$ref": "#/definitions/bcp47"
+        },
+        "contains": {
+            "type": "array",
+            "items": { "$ref": "#/definitions/bcp47" }
         }
       },
       "required": ["full"],

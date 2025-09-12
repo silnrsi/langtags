@@ -35,7 +35,7 @@ Langtags.json consists of an array of objects. Each object corresponds to an equ
 - **tags** A list of other tags that are equivalent. Each conforms to BCP 47
 - **variants** A list of variant tag components that may occur with tags in this set. A tag with a variant is not equivalent to other tags in this set.
 - **svariants** A list of script variant tags. \[added 1.4\]
-- **iso639_3** The ISO639-3 code for the language of the **tag** in this set.
+- **iso639_3** The ISO639-3 code for the language of the **tag** in this set. Only tagsets for langtags with only a language component are included (\[constrained 1.4\])
 - **iso639_3extra** A list of ISO639-3 codes for languages that are aliases of this tagset for whatever reason \[added 1.4\]
 - **region** Region code, from the full tag, for this set. Conforms to ISO 3166-1.
 - **regions** Other regions that may be used with these tags. See the following section on regions list. Each conforms to ISO 3166-1
@@ -56,6 +56,7 @@ Langtags.json consists of an array of objects. Each object corresponds to an equ
 - **obsolete** If present and true indicates that the language is obsolete \[Added 1.2.1\]
 - **unwritten** If present and true indicates that the language is unwritten. It may still have a non Zyyy script due to regional inference. \[Added 1.2.1\]
 - **macrolang** If present another language tag which is a macro language containing this language. \[Added 1.3.1\]
+- **fallback** This gives tagset fallback information. See section on this \[added 1.4\] \[not yet implemented\]
 
 ### Special tags
 
@@ -166,3 +167,37 @@ language.
 Other languages that are part of a macro language are given a macrolang field
 identifying the macro language they are part of.
 
+### Fallback
+
+When locale information is unavailable for a tagset, for example the LDML file
+is unavailable or information in that file is missing, it would be good to know
+what other language/tagset to fall back to. This is often regionally based, so a
+language community in one national language region might fall back to that
+national language while another part of the same language community in another
+country may want to fall back to that country's national language. Thus the
+model is, within a tagset, to map from region to fallback langtag.
+
+This mapping involves many regions mapping to one langtag. JSON is not well
+suited to this, so we invert the relationship and list all the regions that fall
+back to the given langtag. The region "\*" is used to indicate what langtag
+should be used if no information is available for a given region. A region may
+only occur once in the mapping.
+
+For example, consider akh-Latn-MM which is also found in CN, LA, VN. It is
+unlikely that an Akha speaker from Laos is going to want to fall back to using
+Burmese for unknown locale information. To further complicate the issue, this is
+Akha in Latin script, so we don't want to fall back to a non-Latin script.
+
+```json
+"fallback": {
+    "en": ["*"],
+    "fr": ["LA"],
+    "zh-Latn-CN": ["CN"],
+    "vi": ["VI"]
+}
+```
+
+There is no correlation here between the primary region tag MM and the \* in the
+fallback list. In this case we could have made any of the languages the default.
+The primary consideration here is what would a user not from any of the other
+regions want to fall back to?
