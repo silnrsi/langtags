@@ -1,0 +1,63 @@
+#!/usr/bin/env python3
+
+import argparse, json, re
+from langtag import langtag
+
+def matchtag(tagset, tag):
+    regions = [tagset['region']] + tagset.get('regions', [])
+    rtest = tag.get('region', None)
+    if rtest:
+        res = list(set(regions) & set(rtest))
+    else:
+        res = ["*"]
+    rscript = tag.get('script', None)
+    if rscript and tag['script'] not in rscript:
+        res = []
+    rlang = tag.get('lang', None)
+    if rlang:
+        lt = langtag(tag.get('full', tag.get('tag', None)))
+        if lt.lang not in rlang:
+            res = []
+    return res if res else None
+
+def match(tagset, rule):
+    for t in rule['tags']:
+        res = matchtag(tagset, t)
+        if res:
+            return res
+    return None
+
+def mergelines(m):
+    return "[" + " ".join(x.strip() for x in m.group(1).split("\n")) + "]"
+
+parser = argparse.ArgumentParser()
+parser.add_argument("infile",help="langtags.json")
+parser.add_argument("fallback",help="fallback.json")
+parser.add_argument("-o","--outfile",help="Output langtags.json")
+parser.add_argument("-v","--verbose",action="store_true",help="verbose output")
+args = parser.parse_args()
+
+with open(args.infile, encoding="utf-8") as inf:
+    ltags = json.load(inf)
+
+with open(args.fallback, encoding="utf-8") as inf:
+    frules = json.load(inf)
+
+for t in ltags:
+    if t.get('tag', "_").startswith("_"):
+        continue
+    for r in frules['rules']:
+        if r.get('ignore', False) :
+            continue
+        regions = match(t, r)
+        if regions:
+            t.setdefault('fallback', {}).setdefault(r['fallback'], set()).update(regions)
+    for k, v in t.get('fallback', {}).items():
+        t['fallback'][k] = sorted(v)
+
+if args.outfile:
+    output = json.dumps(sorted(ltags, key=lambda x:x['tag']), ensure_ascii=False, indent=4, sort_keys=True)
+    output = "[" + re.sub(r'\[([^\]]+)\]', mergelines, output[1:-1]) + "]\n"
+    with open(args.outfile, "w", encoding="utf-8") as outf:
+        outf.write(output)
+

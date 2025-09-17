@@ -3,6 +3,7 @@ FLATDIR = "../sldr/flat"
 RESULTS = pub
 LTDB = bin/ltdb2alltags
 LTROLV = bin/addrolv
+LTRFBACK = bin/addfallbacks
 NAME = langtags
 LTDBOPTS = -H 1
 
@@ -12,9 +13,10 @@ all : test
 
 build : ${RESULTS}/${NAME}.json ${RESULTS}/${NAME}.txt # ${RESULTS}/${NAME}_inherited.txt
 
-${RESULTS}/${NAME}.json : source/langtags.csv source/autonyms.csv source/langindex.tab source/rolv.json ${LTDB} ${LTROLV} | ${RESULTS}
-	${LTDB} -i $(SLDR) -f $(FLATDIR) $(LTDBOPTS) -L source/langindex.tab -a source/autonyms.csv $< temp.json
-	${LTROLV} -o $@ temp.json source/rolv.json
+${RESULTS}/${NAME}.json : source/langtags.csv source/autonyms.csv source/langindex.tab source/rolv.json source/fallbacks.json ${LTDB} ${LTROLV} ${LTRFBACK} | ${RESULTS}
+	${LTDB} -i $(SLDR) -f $(FLATDIR) $(LTDBOPTS) -L source/langindex.tab -a source/autonyms.csv $< $@
+	${LTROLV} -o temp.json $@ source/rolv.json
+	${LTRFBACK} -o $@ temp.json source/fallbacks.json
 	@- rm temp.json
 
 ${RESULTS}/${NAME}.txt : ${RESULTS}/${NAME}.json | ${RESULTS}
