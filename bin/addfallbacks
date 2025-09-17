@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 
-import argparse, json, re
-from langtag import langtag
+import argparse, json, re, os
+from langtag import langtag, lookup
+import xml.etree.ElementTree as et
 
 def matchtag(tagset, tag):
     regions = [tagset['region']] + tagset.get('regions', [])
@@ -34,6 +35,7 @@ parser = argparse.ArgumentParser()
 parser.add_argument("infile",help="langtags.json")
 parser.add_argument("fallback",help="fallback.json")
 parser.add_argument("-o","--outfile",help="Output langtags.json")
+parser.add_argument("-l","--likely",help="likelySubtags.xml to get und_ defaults")
 parser.add_argument("-v","--verbose",action="store_true",help="verbose output")
 args = parser.parse_args()
 
@@ -43,15 +45,40 @@ with open(args.infile, encoding="utf-8") as inf:
 with open(args.fallback, encoding="utf-8") as inf:
     frules = json.load(inf)
 
+if args.likely is None:
+    try:
+        import sldr
+        args.likely = os.path.join(os.path.dirname(sldr.__file__), 'likelySubtags.xml')
+    except ImportError:
+        args.likely = None
+
+ldoc = None
+if args.likely is not None:
+    ldoc = et.parse(args.likely)
+
+
 for t in ltags:
     if t.get('tag', "_").startswith("_"):
         continue
+    used = set()
     for r in frules['rules']:
         if r.get('ignore', False) :
             continue
         regions = match(t, r)
         if regions:
             t.setdefault('fallback', {}).setdefault(r['fallback'], set()).update(regions)
+            used.update(regions)
+    s = t.get("script", "")
+    for r in [t['region']] + r.get('regions', []):
+        for a in ("{}_{}".format(s, r), r, s):
+            if not a or a.startswith("_") or a.endswith("_"):
+                continue
+            fb = ldoc.find('.//likelySubtag[@from="und_{}"]'.format(a))
+            if fb is not None:
+                lfb = lookup(fb.get("to"), False)
+                if lfb and r not in used:
+                    t.setdefault('fallback', {}).setdefault(str(lfb.tag), set()).add(r)
+                    used.add(r)
     for k, v in t.get('fallback', {}).items():
         t['fallback'][k] = sorted(v)
 
