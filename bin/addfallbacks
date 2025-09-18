@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 import argparse, json, re, os
-from langtag import langtag, lookup
+from langtag import langtag, LangTags
 import xml.etree.ElementTree as et
 
 def matchtag(tagset, tag):
@@ -31,6 +31,19 @@ def match(tagset, rule):
 def mergelines(m):
     return "[" + " ".join(x.strip() for x in m.group(1).split("\n")) + "]"
 
+def addfallback(tset, key, regions, used, lts):
+    l = lts.get(key, default=None)
+    if l is not None and str(l.tag) == tset['tag']:
+        return
+    elif l is not None:
+        key = str(l.tag)
+    for r in regions:
+        if r in used:
+            continue
+        t.setdefault('fallback', {}).setdefault(key, set()).add(r)
+        used.add(r)
+
+
 parser = argparse.ArgumentParser()
 parser.add_argument("infile",help="langtags.json")
 parser.add_argument("fallback",help="fallback.json")
@@ -56,6 +69,7 @@ ldoc = None
 if args.likely is not None:
     ldoc = et.parse(args.likely)
 
+lts = LangTags(fname=args.infile)
 
 for t in ltags:
     if t.get('tag', "_").startswith("_"):
@@ -66,8 +80,7 @@ for t in ltags:
             continue
         regions = match(t, r)
         if regions:
-            t.setdefault('fallback', {}).setdefault(r['fallback'], set()).update(regions)
-            used.update(regions)
+            addfallback(t, r['fallback'], regions, used, lts)
     s = t.get("script", "")
     for r in [t['region']] + r.get('regions', []):
         for a in ("{}_{}".format(s, r), r, s):
@@ -75,10 +88,9 @@ for t in ltags:
                 continue
             fb = ldoc.find('.//likelySubtag[@from="und_{}"]'.format(a))
             if fb is not None:
-                lfb = lookup(fb.get("to"), False)
+                lfb = lts.get(fb.get("to"), False)
                 if lfb and r not in used:
-                    t.setdefault('fallback', {}).setdefault(str(lfb.tag), set()).add(r)
-                    used.add(r)
+                    addfallback(t, str(lfb.tag), [r], used, lts)
     for k, v in t.get('fallback', {}).items():
         t['fallback'][k] = sorted(v)
 
