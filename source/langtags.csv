@@ -1645,7 +1645,7 @@ cok,cok-Latn-MX,"Cora, Santa Teresa",MX,,,,,,,,,CAM,cok,LE,9-Jan-2018,
 col,col-Latn-US,Columbia-Wenatchi,US,,,,,,1,,,NAM,col,LE,9-Jan-2018,
 com,com-Latn-US,Comanche,US,,,,,,,,,NAM,com,,,
 con,con-Latn-EC,Cofán,CO EC,,,,08998,,,,,SAM,con,LE,9-Jan-2018,
-coo,coo-Latn-CA,Comox,CA,,,,,,1,,,NAM,coo,LE,9-Jan-2018,
+coo,coo-Latn-CA,Comox,CA,,,,,,,,,NAM,coo,,,
 cop,cop-Copt-EG,Coptic,EG SD,,,,,,,,,NAF,cop,CLDR,,Extinct
 cop-Arab,cop-Arab-EG,Coptic,EG SD,,,,,,,,,NAF,cop,,,Extinct
 cop-Grek,cop-Grek-EG,Coptic,EG SD,,,,,,,,,NAF,cop,,,Extinct
@@ -7181,7 +7181,8 @@ sl-rozaj,sl-Latn-SI-rozaj,Slovene,AR AT CA DE HR HU IT RS RU SI US,metelko nedis
 sl-Brai,sl-Brai-SI,Slovene,AR AT CA DE HR HU IT RS RU SI US,,,,,,,,,EEU NAM NEU SAM SEU WEU,slv,,,
 slc,slc-Latn-CO,Sáliba,CO VE,,,,,,,,,SAM,slc,LE,9-Jan-2018,
 sld,sld-Latn-BF,Sissala,BF,,,,,,,,,WAF,sld,,,
-sle,sle-Zyyy-IN,Sholaga,IN,,,,04150,,1,,,SAS,sle,,,
+sle,sle-Knda-IN,Sholaga,IN,,,,04150,,,,,SAS,sle,,,
+sle-Taml,sle-Taml-IN,Sholaga,IN,,,,,,,,,SAS,sle,,,
 slf,slf-Zxxx-CH,Swiss-Italian Sign Language,CH,,,,,,,,,WEU,slf,,,
 slg,slg-Latn-ID,"Murut, Selungai",ID MY,,,,,,1,,,SEA,slg,,,
 slh,slh-Latn-US,Southern Lushootseed,US,,,,,,1,,,NAM,slh,LE,9-Jan-2018,
