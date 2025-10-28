@@ -3399,9 +3399,9 @@ jiy,jiy-Latn-CN,"Jinuo, Buyuan",CN,,,,,,,,,EAS,jiy,,,
 jje,jje-Hang-KR,Jejueo,JP KR,,,,,,,,,EAS,jje,,,
 jjr,jjr-Latn-NG,Bankal,NG,,,,01960,,1,,,WAF,jjr,,,
 jka,jka-Latn-ID,Kaera,ID,,,,,,1,,,SEA,jka,,,
-jkm,jkm-Mymr-MM,"Karen, Mobwa",MM,,,,,,1,,,SEA,jkm,NMC,4-Dec-2017,
-jkm-Latn,jkm-Latn-MM,"Karen, Mobwa",MM,,,,,,,,,SEA,jkm,,,
-jkm-Brai,jkm-Brai-MM,"Karen, Mobway",MM,,,,,,,,,SEA,jkm,,,
+jkm-Mymr,jkm-Mymr-MM,"Karen, Mobwa",MM,,,,,,1,,,SEA,jkm,NMC,4-Dec-2017,
+jkm,jkm-Latn-MM,"Karen, Mobwa",MM,,,,,,,,,SEA,jkm,,,
+jkm-Brai,jkm-Brai-MM,"Karen, Mobwa",MM,,,,,,,,,SEA,jkm,,,
 jko,jko-Latn-PG,Kubo,PG,,,,,,,,,MEL,jko,LE,10-Jan-2018,
 jkp,jkp-Zyyy-MM,"Karen, Paku",MM,,,,,,1,,,SEA,jkp,NMC,4-Dec-2017,
 jkr,jkr-Zyyy-IN,Koro,IN,,,,,,1,,,SAS,jkr,,,
@@ -5808,7 +5808,7 @@ nqn,nqn-Latn-PG,Nen,PG,,,,,,1,,,MEL,nqn,LE,10-Jan-2018,
 nqo,nqo-Nkoo-GN,N'ko,BF CI GM GN LR ML SL SN,,,,,,,,,WAF,nqo,CLDR,,
 nqq,nqq-Latn-MM,"Naga, Kyan-Karyaw",IN MM,,,,,,1,,,SEA,nqq,NMC,4-Dec-2017,
 nqt,nqt-Latn-NG,Nteng,NG,,,,,,1,,,WAF,nqt,,,
-nqy,nqy-Latn-MM,"Naga, Akyaung Ari",MM,,,,,,1,,,SEA,nqy,NMC,4-Dec-2017,
+nqy,nqy-Latn-MM,"Naga, Akyaung Ari",MM,,,,,,,,,SEA,nqy,NMC,4-Dec-2017,
 nr,nr-Latn-ZA,Ndebele,ZA,,,,,,,,,SAF,nbl,CLDR,,
 nr-Brai,nr-Brai-ZA,Ndebele,ZA,,,,,,,,,SAF,nbl,LE,9-Jan-2018,
 nra,nra-Latn-GA,Ngom,CG GA,,,,,,,1,,MAF,nra,LE,12-Jan-2018,
@@ -8824,8 +8824,8 @@ xia,xia-Latn-CN,Xiando,CN MM,,,,06294 06295 06658 06659 06660 18356,,,,acn,EAS S
 xib,xib-Zyyy-XX,Iberian,XX,,,,,,1,,,???,xib,,,Ancient
 xii,xii-Latn-ZA,Xiri,NA ZA,,,,,,1,,,SAF,xii,LE,9-Jan-2018,
 xil,xil-Zyyy-XX,Illyrian,XX,,,,,,1,,,???,xil,,,Ancient
-xin,xin-Latn-GT,Xinca,GT,,,,,,1,,,CAM,xin,LE,10-Jan-2018,Extinct
-xir,xir-Latn-BR,Xiriâna,BR,,,,,,,1,,SAM,xir,LE,10-Jan-2018,Extinct
+xin,xin-Latn-GT,Xinca,GT,,,,,,,,,CAM,xin,,,Extinct
+xir,xir-Latn-BR,Xiriâna,BR,,,,,,,1,,SAM,xir,,,Extinct
 xis,xis-Orya-IN,Kisan,IN,,,,,,,,,SAS,xis,,,
 xiv,xiv-Zyyy-XX,Indus Valley Language,XX,,,,,,1,,,???,xiv,,,Ancient
 xiy,xiy-Latn-BR,Xipaya,BR,,,,,,1,,,SAM,xiy,,,
