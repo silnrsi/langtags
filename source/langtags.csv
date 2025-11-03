@@ -6001,7 +6001,7 @@ obu,obu-Latn-NG,Obulom,NG,,,,,,1,,,WAF,obu,,,
 oc,oc-Latn-FR,Occitan,ES FR IT MC,aranes auvern cisaup creiss gascon lemosin lengadoc nicard provenc vivaraup,grclass grital grmistr,,,,,,,SEU WEU,oci,CLDR,,
 oca,oca-Latn-PE,Ocaina,CO PE,,,,,,,,,SAM,oca,LE,9-Jan-2018,
 och,och-Zyyy-CN,Old Chinese,CN,,,,,,1,,,???,och,,,"	Oracle bone script, Bronze script, Seal script"
-ocm,ocm-Zyyy-XX,Old Cham,XX,,,,,,1,,,???,ocm,,,
+ocm-Zzzz-x-pallava,ocm-Zzzz-XX-x-pallava,Old Cham,XX,,,,,,,,,???,ocm,,,
 oco,oco-Latn-GB,Old Cornish,GB,,,,,,,,,NEU,oco,St,,Historical
 ocu,ocu-Latn-MX,"Matlatzinca, Atzingo",MX,,,,,,1,,,CAM,ocu,LE,9-Jan-2018,
 oda,oda-Latn-NG,Odut,NG,,,,,,1,,,WAF,oda,,,
@@ -7313,7 +7313,7 @@ sps,sps-Latn-PG,Saposa,PG,,,,,,,,,MEL,sps,LE,10-Jan-2018,
 spt,spt-Tibt-IN,Spiti Bhoti,IN,,,,,,,,,SAS,spt,LE,8-Jan-2018,
 spu,spu-Zyyy-LA,Sapuan,LA,,,,,,1,,,SEA,spu,NMC,4-Dec-2017,
 spv,spv-Orya-IN,Sambalpuri,IN,,,,,,,,,SAS,spv,,,
-spx,spx-Zyyy-XX,South Picene,XX,,,,,,1,,,???,spx,,,
+spx-Zzzz-x-picene,spx-Zzzz-XX-x-picene,South Picene,XX,,,,,,,,,???,spx,,,
 spy,spy-Latn-KE,Sabaot,KE,,,,,kln,,,,EAF,spy,LE CLDR,12-Jan-2018,via macro mapping
 sq,sq-Latn-AL,Albanian,AL GR IT MK MN RS XK,,,,,,,,,SEU,sqi,CLDR,,also Kosovo
 sq-Brai,sq-Brai-AL,Albanian,AL,,,,,,,,,SEU,sqi,St,,
@@ -8116,8 +8116,8 @@ tww,tww-Latn-PG,Tuwari,PG,,,,,,1,,,MEL,tww,LE,10-Jan-2018,
 twx,twx-Latn-MZ,Tewe,MZ,,,,,,,,,EAF,twx,,,
 twy,twy-Latn-ID,Tawoyan,ID,,,,,,,,,SEA,twy,,20-Apr-2018,
 txa,txa-Latn-MY,Tombonuo,MY,,,,,,,,,SEA,txa,,,
-txb,txb-Zyyy-XX,Tokharian B,XX,,,,,,1,,,???,txb,,,Tocharian script (Brahmi?)
-txb-Mani,txb-Mani-XX,Tokharian B,XX,,,,,,,,,???,txb,,,
+txb,txb-Mani-XX,Tokharian B,XX,,,,,,,,,???,txb,,,Tocharian script (Brahmi?)
+txb-Zzzz-x-tochb,txb-Zzzz-XX-x-tochb,Tokharian B,XX,,,,,,,,,???,txb,,,
 txc,txc-Latn-XX,Tsetsaut,CA US XX,,,,,,1,,,NAM,txc,,,Extinct
 txe,txe-Latn-ID,Totoli,ID,,,,,,1,,,SEA,txe,,,
 txg,txg-Tang-CN,Tangut,CN,,,,,,,,,EAS,txg,CLDR,,Ancient
@@ -8130,7 +8130,7 @@ txo-Beng,txo-Beng-IN,Toto,IN,,,,,,,,,SAS,txo,,,
 txo-Deva,txo-Deva-IN,Toto,IN,,,,,,,,,SAS,txo,,,
 txo,txo-Toto-IN,Toto,IN,,,,,,,,,SAS,txo,CLDR,,
 txq,txq-Latn-ID,Tii,ID,,,,,,,,,SEA,txq,,20-Apr-2018,
-txr,txr-Zyyy-XX,Tartessian,XX,,,,,,1,,,???,txr,,,Southwest Paleohispanic script
+txr-Zzzz-x-swpaleh,txr-Zzzz-XX-x-swpaleh,Tartessian,XX,,,,,,,,,???,txr,,,Southwest Paleohispanic script
 txs,txs-Latn-ID,Tonsea,ID,,,,,,,,,SEA,txs,,20-Apr-2018,
 txt,txt-Latn-ID,Citak,ID,,,,,,,,,SEA,txt,,20-Apr-2018,
 txu,txu-Latn-BR,Kayapó,BR,,,,,,,,,SAM,txu,LE,9-Jan-2018,
@@ -8737,7 +8737,7 @@ xam,xam-Latn-ZA,|Xam,ZA,,,,,,1,,,SAF,xam,LE,10-Jan-2018,Extinct
 xan,xan-Ethi-ET,Xamtanga,ET,,,,,,,,,EAF,xan,,,
 xao,xao-Latn-VN,Khao,VN,,,,,,1,,,SEA,xao,NMC,20-Nov-2017,
 xap,xap-Latn-XX,Apalachee,US XX,,,,,,1,,,NAM,xap,,,Extinct
-xaq,xaq-Zyyy-XX,Aquitanian,XX,,,,,,1,,,???,xaq,,,Ancient
+xaq-Zzzz-x-iberian,xaq-Zzzz-XX-x-iberian,Aquitanian,XX,,,,,,,,,???,xaq,,,Iberian
 xar,xar-Latn-PG,Karami,PG,,,,,,1,,,MEL,xar,LE,10-Jan-2018,Extinct
 xas,xas-Cyrl-RU,Kamas,RU,,,,,,1,,,EEU,xas,,,Extinct
 xat,xat-Latn-BR,Katawixi,BR,,,,,,1,,,SAM,xat,LE,9-Jan-2018,
@@ -8766,8 +8766,8 @@ xbr,xbr-Latn-ID,Kambera,ID,,,,,,,,,SEA,xbr,,20-Apr-2018,
 xbw,xbw-Latn-BR,Kambiwá,BR,,,,,,1,,,SAM,xbw,LE,10-Jan-2018,Extinct
 xby,xby-Latn-AU,Batyala,AU,,,,,,1,,,ANZ,xby,LE,10-Jan-2018,
 xcb,xcb-Zyyy-XX,Cumbric,XX,,,,,,1,,,???,xcb,,,Extinct
-xcc,xcc-Zyyy-XX,Camunic,XX,,,,,,1,,,???,xcc,,,Ancient
-xce,xce-Zyyy-XX,Celtiberian,XX,,,,,,1,,,???,xce,,,Celtiberian script is a Paleohispanic script 
+xcc-Zzzz-x-camunic,xcc-Zzzz-XX-x-camunic,Camunic,XX,,,,,,,,,???,xcc,,,Camunic
+xce-Zzzz-x-celtibia,xce-Zzzz-XX-x-celtibia,Celtiberian,XX,,,,,,,,,???,xce,,,Celtiberian script is a Paleohispanic script 
 xcg,xcg-Zyyy-XX,Cisalpine Gaulish,XX,,,,,,1,,,???,xcg,,,Ancient
 xch,xch-Latn-US,Chemakum,US,,,,,,,,,NAM,xch,,,Extinct
 xcl,xcl-Armn-XX,Classical Armenian,XX,,,,,,,,,???,xcl,,,Historical
@@ -8789,7 +8789,7 @@ xdm,xdm-Zyyy-XX,Edomite,XX,,,,,,1,,,???,xdm,,,Ancient
 xdo,xdo-Latn-AO,Kwandu,AO,,,,,,,,,MAF,xdo,LE,12-Jan-2018,will be added to ISO 639-3 in 2/2017 (www-01.sil.org/iso639-3/cr_files/2016-037_xdo.pdf)
 xdq,xdq-Cyrl-RU,Kaitag,RU,,,,,,,,,EEU,xdq,,,auto: Хайдакьан
 xdy,xdy-Latn-ID,Malayic Dayak,ID,,,,00741 00742 03791 03802 04632 04872 05052 05063 05075 05081 05085 05086 05089 06362 21135,,,,,SEA,xdy,,,
-xeb,xeb-Zyyy-XX,Eblan,XX,,,,,,1,,,???,xeb,,,Ancient
+xeb,xeb-Xsux-XX,Eblan,XX,,,,,,,,,???,xeb,,,Ancient
 xed,xed-Latn-CM,Hdi,CM NG,,,,,,,,,MAF WAF,xed,,,
 xeg,xeg-Latn-ZA,||Xegwi,ZA,,,,,,1,,,SAF,xeg,LE,10-Jan-2018,Extinct
 xel,xel-Zyyy-SD,Kelo,SD,,,,,,1,,,NAF,xel,,,
@@ -8799,7 +8799,8 @@ xer,xer-Latn-BR,Xerénte,BR,,,,,,,,,SAM,xer,LE,9-Jan-2018,
 xes,xes-Latn-PG,Kesawai,PG,,,,,,,1,,MEL,xes,LE,10-Jan-2018,
 xet,xet-Latn-BR,Xetá,BR,,,,,,1,,,SAM,xet,LE,9-Jan-2018,
 xeu,xeu-Latn-PG,Keoru-Ahia,PG,,,,,,1,,,MEL,xeu,LE,10-Jan-2018,
-xfa,xfa-Zyyy-XX,Faliscan,XX,,,,,,1,,,???,xfa,,,Ancient
+xfa,xfa-Latn-XX,Faliscan,XX,,,,,,,,,???,xfa,,,Ancient
+xfa-Ital,xfa-Ital-XX,Faliscan,XX,,,,,,,,,???,xfa,,,
 xga,xga-Zyyy-XX,Galatian,XX,,,,,,1,,,???,xga,,,Ancient
 xgb,xgb-Latn-CI,Gbin,CI,,,,,,1,,,WAF,xgb,LE,10-Jan-2018,Extinct
 xgd,xgd-Latn-AU,Gudang,AU,,,,,,1,,,ANZ,xgd,LE,10-Jan-2018,Extinct
@@ -8813,17 +8814,18 @@ xgu,xgu-Latn-AU,Unggumi,AU,,,,,,1,,,ANZ,xgu,LE,10-Jan-2018,
 xgw,xgw-Latn-AU,Guwa,AU,,,,,,1,,,ANZ,xgw,LE,10-Jan-2018,Extinct
 xh,xh-Latn-ZA,Xhosa,BW LS ZA ZW,,,,,,,,,SAF,xho,CLDR,,
 xh-Brai,xh-Brai-ZA,Xhosa,BW LS ZA ZW,,,,,,,,,SAF,xho,LE,9-Jan-2018,
-xha,xha-Zyyy-XX,Harami,XX,,,,,,1,,,???,xha,,,Ancient
+xha,xha-Sarb-XX,Harami,XX,,,,,,,,,???,xha,,,Ancient
 xhc,xhc-Zyyy-XX,Hunnic,XX,,,,,,1,,,???,xhc,,,Extinct
 xhd,xhd-Sarb-XX,Hadrami,XX,,,,,,,,,???,xhd,,,Ancient
 xhe,xhe-Arab-PK,Khetrani,PK,,,,,,1,,,SAS,xhe,,,
 xhm,xhm-Khmr-KH,Middle Khmer,KH,,,,,,,,,SEA,xhm,,,
 xhr,xhr-Ital-XX,Hernican,XX,,,,,,,,,???,xhr,,,Ancient
 xht,xht-Zyyy-TR,Hattic,TR,,,,,,1,,,WAS,xht,,,Ancient
-xhu,xhu-Zyyy-XX,Hurrian,XX,,,,,,1,,,???,xhu,,,Ancient
+xhu,xhu-Hluw-XX,Hurrian,XX,,,,,,,,,???,xhu,,,Ancient
+xhu-Ugar,xhu-Ugar-XX,Hurrian,XX,,,,,,,,,???,xhu,,,
 xhv,xhv-Latn-VN,Khua,LA VN,,,,,,1,,,SEA,xhv,NMC,20-Nov-2017,
 xia,xia-Latn-CN,Xiando,CN MM,,,,06294 06295 06658 06659 06660 18356,,,,acn,EAS SEA,xia,,,
-xib,xib-Zyyy-XX,Iberian,XX,,,,,,1,,,???,xib,,,Ancient
+xib-Zzzz-x-iberian,xib-Zzzz-XX-x-iberian,Iberian,XX,,,,,,,,,???,xib,,,Ancient
 xii,xii-Latn-ZA,Xiri,NA ZA,,,,,,1,,,SAF,xii,LE,9-Jan-2018,
 xil,xil-Zyyy-XX,Illyrian,XX,,,,,,1,,,???,xil,,,Ancient
 xin,xin-Latn-GT,Xinca,GT,,,,,,,,,CAM,xin,,,Extinct
@@ -8866,9 +8868,9 @@ xld,xld-Lydi-TR,Lydian,TR,,,,,,,,,WAS,xld,CLDR,,Ancient
 xle,xle-Zyyy-XX,Lemnian,XX,,,,,,1,,,???,xle,,,Ancient
 xlg,xlg-Zyyy-XX,Ligurian (Ancient),XX,,,,,,1,,,???,xlg,,,Ancient
 xli,xli-Zyyy-XX,Liburnian,XX,,,,,,1,,,???,xli,,,Ancient
-xln,xln-Zyyy-XX,Alanic,XX,,,,,,1,,,???,xln,,,Ancient
+xln,xln-Grek-XX,Alanic,XX,,,,,,1,,,???,xln,,,Ancient
 xlo,xlo-Latn-XX,Loup A,US XX,,,,,,1,,,NAM,xlo,,,Extinct
-xlp,xlp-Zyyy-XX,Lepontic,XX,,,,,,1,,,???,xlp,,,Ancient
+xlp,xlp-Ital-XX,Lepontic,XX,,,,,,1,,,???,xlp,,,Ancient
 xls,xls-Latn-XX,Lusitanian,XX,,,,,,,,,???,xls,,,Ancient
 xlu,xlu-Hluw-XX,Cuneiform Luwian,XX,,,,,,,,,???,xlu,,,Ancient
 xly,xly-Elym-IR,Elymian,IR,,,,,,,,,SAS,xly,,,Ancient
@@ -8901,14 +8903,16 @@ xmy,xmy-Latn-AU,Mayaguduna,AU,,,,,,1,,,ANZ,xmy,LE,10-Jan-2018,
 xmz,xmz-Latn-ID,Mori Bawah,ID,,,,00708 21421,,,,,SEA,xmz,,20-Apr-2018,
 xna,xna-Narb-SA,Ancient North Arabian,SA,,,,,,,,,WAS,xna,CLDR,,Ancient
 xnb,xnb-Latn-TW,Kanakanabu,TW,,,,,,,,,EAS,xnb,,,
-xng,xng-Zyyy-XX,Middle Mongolian,XX,,,,,,1,,,???,xng,,,Historical
+xng,xng-Mong-XX,Middle Mongolian,XX,,,,,,,,,???,xng,,,Historical
+xng-Arab,xng-Arab-XX,Middle Mongolian,XX,,,,,,,,,???,xng,,,
+xng-Phag,xng-Phag-XX,Middle Mongolian,XX,,,,,,,,,???,xng,,,
 xnh,xnh-Zyyy-CN,Kuanhua,CN,,,,,,1,,,EAS,xnh,,,
 xni,xni-Latn-AU,Ngarigu,AU,,,,,,1,,,ANZ,xni,LE,10-Jan-2018,Extinct
 xnj,xnj-Latn-TZ,Chingoni,TZ,,,,,,,,,EAF,xnj,,,
 xnk,xnk-Latn-AU,Nganakarti,AU,,,,,,1,,,ANZ,xnk,LE,10-Jan-2018,Extinct
 xnm,xnm-Latn-AU,Ngumbarl,AU,,,,,,,,,ANZ,xnm,,,
 xnn,xnn-Latn-PH,"Kankanay, Northern",PH,,,,,,,,,SEA,xnn,,,
-xno,xno-Zyyy-XX,Anglo-Norman,XX,,,,,,1,,,???,xno,,,Historical
+xno,xno-Latn-XX,Anglo-Norman,XX,,,,,,1,,,???,xno,,,Historical
 xnq,xnq-Latn-MZ,Xingoni,MZ,,,,,,,,,EAF,xnq,,,
 xnr,xnr-Deva-IN,Kangri,IN,,,,,,,,,SAS,xnr,CLDR,,
 xnr-Takr,xnr-Takr-IN,Kangri,IN,,,,,,,1,,SAS,xnr,,,
@@ -9000,7 +9004,9 @@ xtb,xtb-Latn-MX,"Mixtec, Chazumba",MX,,,,,,1,,,CAM,xtb,LE,9-Jan-2018,
 xtc,xtc-Latn-SD,Katcha-Kadugli-Miri,SD,,,,01861 01913 01973 17774,,,,,NAF,xtc,LE,12-Jan-2018,
 xtd,xtd-Latn-MX,"Mixtec, Diuxi-Tilantongo",MX,,,,,,,,,CAM,xtd,LE,9-Jan-2018,
 xte,xte-Latn-ID,Ketengban,ID,,,,11891 11892,,,,,SEA,xte,,20-Apr-2018,
-xtg,xtg-Zyyy-XX,Transalpine Gaulish,BE FR XX,,,,,,1,,,???,xtg,,,Ancient
+xtg,xtg-Ital-XX,Transalpine Gaulish,BE FR XX,,,,,,,,,???,xtg,,,Ancient
+xtg-Grek,xtg-Grek-XX,Transalpine Gaulish,BE FR XX,,,,,,,,,???,xtg,,,
+xtg-Latn,xtg-Latn-XX,Transalpine Gaulish,BE FR XX,,,,,,,,,???,xtg,,,
 xth,xth-Latn-AU,Yitha Yitha,AU,,,,,,1,,,ANZ,xth,LE,10-Jan-2018,Extinct
 xti,xti-Latn-MX,"Mixtec, Sinicahua",MX,,,,,,,,,CAM,xti,LE,9-Jan-2018,
 xtj,xtj-Latn-MX,"Mixtec, San Juan Teita",MX,,,,,,,,,CAM,xtj,LE,9-Jan-2018,
