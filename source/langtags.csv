@@ -207,7 +207,7 @@ aif,aif-Latn-PG,Agi,PG,,,,,,1,,,MEL,aif,LE,10-Jan-2018,
 aig,aig-Latn-AG,Antigua and Barbuda Creole English,AG AI DM GB KN MF MS SX,,,,12828,,,,,CAR NEU,aig,,,
 aih,aih-Zyyy-CN,Ai-Cham,CN,,,,,,1,,,EAS,aih,,,
 aii-Cyrl,aii-Cyrl-RU,Assyrian Neo-Aramaic,RU,,,,,,,,,EEU,aii,CLDR Supplemental,,
-aii,aii-Syrc-IQ,Assyrian Neo-Aramaic,AM AT AU AZ BE BR CA CH CY DE GB GE GR IQ IR IT LB NL NZ RU SE SY TR UA US,,,,,,,,,ANZ EEU NAM NEU SAM SAS SEU WAS WEU,aii,CLDR Supplemental,11/15/2021,"LE: This one should be primary, but CLDR doesn't indicate it?"
+aii,aii-Syrc-IQ,Assyrian Neo-Aramaic,AM AT AU AZ BE BR CA CH CY DE GB GE GR IQ IR IT LB NL NZ RU SE SY TR UA US,,,,,,,,,ANZ EEU NAM NEU SAM SAS SEU WAS WEU,aii,CLDR Supplemental,,Syrn
 aii-Elym,aii-Elym-IQ,Assyrian Neo-Aramaic,AM AT AU AZ BE BR CA CH CY DE GB GE GR IQ IR IT LB NL NZ RU SE SY TR UA US,,,,,,,,,ANZ EEU NAM NEU SAM SAS SEU WAS WEU,aii,,,
 aij,aij-Hebr-IL,Lishanid Noshan,IL,,,,,,,,,WAS,aij,,,
 aik,aik-Latn-NG,Ake,NG,,,,,,1,,,WAF,aik,,,
@@ -328,7 +328,7 @@ amw-Arab,amw-Arab-SY,Western Neo-Aramaic,PS SY,,,,,,,,,WAS,amw,,,
 amw-Armi,amw-Armi-SY,Western Neo-Aramaic,SY,,,,,,,,,WAS,amw,,,
 amw-Latn,amw-Latn-SY,Western Neo-Aramaic,SY,,,,,,,,,WAS,amw,,,
 amw-Syrj,amw-Syrj-SY,Western Neo-Aramaic,SY,,,,,,,,,WAS,amw,,,
-amw,amw-Syrc-SY,Western Neo-Aramaic,SY,,,,,,,,,WAS,amw,,11/15/2021,I think Syrc is primary
+amw,amw-Syrc-SY,Western Neo-Aramaic,SY,,,,,,,,,WAS,amw,,,Syrn
 amx,amx-Latn-AU,Anmatyerre,AU,,,,,,,,,ANZ,amx,LE,10-Jan-2018,
 amy,amy-Latn-AU,Ami,AU,,,,,,1,,,ANZ,amy,LE,10-Jan-2018,
 amz,amz-Latn-AU,Atampaya,AU,,,,,,,,,ANZ,amz,LE,10-Jan-2018,Extinct
@@ -436,7 +436,8 @@ arc,arc-Armi-IR,Official Aramaic (700-300 BCE),IR,,,,,,,,,SAS,arc,CLDR,,Ancient
 arc-Nbat,arc-Nbat-JO,Aramaic,JO,,,,,,,,,WAS,arc,CLDR,,
 arc-Palm,arc-Palm-SY,Aramaic,SY,,,,,,,,,WAS,arc,CLDR,,
 arc-Hatr,arc-Hatr-XX,Aramaic,XX,,,,,,,,,WAS,arc,,,
-arc-Syrc,arc-Syrc-XX,Aramaic,XX,,,,,,,,,???,arc,LE,,keyboard purports to support this script
+arc-Syrc,arc-Syrc-XX,Aramaic,XX,,,,,,,,,WAS,arc,,,keyboard purports to support this script
+arc-Elym,arc-Elym-XX,Aramaic,XX,,,,,,,,,WAS,arc,,,
 ard,ard-Latn-AU,Arabana,AU,,,,,,1,,,ANZ,ard,LE,10-Jan-2018,Extinct
 are,are-Latn-AU,"Arrarnta, Western",AU,,,,,,,,,ANZ,are,LE,10-Jan-2018,
 arh,arh-Latn-CO,Arhuaco,CO,,,,,,,,,SAM,arh,LE,9-Jan-2018,
@@ -843,7 +844,7 @@ bhj,bhj-Deva-NP,Bahing,NP,,,,,,,,,SAS,bhj,,,
 bhk,bhk-Latn-PH,Albay Bicolano,PH,,,,,bik,,,bik,???,bhk,CLDR,,LE: retired
 bhl,bhl-Latn-PG,Bimin,PG,,,,,,,,,MEL,bhl,LE,10-Jan-2018,
 bhm,bhm-Arab-OM,Bathari,OM YE,,,,,,1,,,WAS,bhm,,,
-bhn,bhn-Syrc-GE,Bohtan Neo-Aramaic,GE RU,,,,,,,,,EEU WAS,bhn,LE,,keyboard purporst to support this.
+bhn,bhn-Syrc-GE,Bohtan Neo-Aramaic,GE RU,,,,,,,,,EEU WAS,bhn,,,keyboard purporst to support this.
 bho,bho-Deva-IN,Bhojpuri,IN MU NP,,,,00830 00880 02711 04812 08068 20539,,,,,EAF SAS,bho,CLDR,,
 bho-Kthi,bho-Kthi-IN,Bhojpuri,IN MU NP,,,,00830 00880 02711 04812 08068 20539,,,,,EAF SAS,bho,,,
 bhp,bhp-Latn-ID,Bima,ID,,,,,,,1,,SEA,bhp,LE,12-Dec-2017,
@@ -888,7 +889,7 @@ bjb,bjb-Latn-AU,Barngarla,AU,,,,,,1,,,ANZ,bjb,LE,10-Jan-2018,Extinct
 bjc,bjc-Latn-PG,Bariji,PG,,,,,,1,,,MEL,bjc,LE,10-Jan-2018,
 bjd,bjd-Latn-AU,Paakantyi,AU,,,,,drl,1,,drl,ANZ,bjd,LE,10-Jan-2018,
 bje,bje-Zyyy-CN,Biao-Jiao Mien,CN,,,,04975,,1,,,EAS,bje,,,
-bjf,bjf-Syrc-IL,Barzani Jewish Neo-Aramaic,IL,,,,,,,,,WAS,bjf,LE,,keyboard purports to support this language
+bjf,bjf-Syrc-IL,Barzani Jewish Neo-Aramaic,IL,,,,,,,,,WAS,bjf,,,keyboard purports to support this language
 bjg,bjg-Latn-GW,Bidyogo,GW,,,,01513 01703 01704 01707,,,,,WAF,bjg,,,
 bjh,bjh-Latn-PG,Bahinemo,PG,,,,00515,,,,,MEL,bjh,LE,10-Jan-2018,
 bji,bji-Latn-ET,Burji,ET KE,,,,,,,,,EAF,bji,,,
@@ -1576,7 +1577,7 @@ cla-x-daffo,cla-Latn-NG-x-daffo,Ron,NG,,,2470,,,,,,WAF,cla,,,
 cla-x-mangar,cla-Latn-NG-x-mangar,Ron,NG,,,2542,,,,,,WAF,cla,,,
 cla-x-monguna,cla-Latn-NG-x-monguna,Ron,NG,,,2471,,,,,,WAF,cla,,,
 clc,clc-Latn-CA,Chilcotin,CA,,,,,,,,,NAM,clc,LE,12-Jan-2018,
-cld,cld-Syrc-IQ,Chaldean Neo-Aramaic,BE CA DE IQ LB NL SY TR US,,,,08685 08686,syr,,,,NAM WAS WEU,cld,,23-Mar-2018,
+cld,cld-Syrc-IQ,Chaldean Neo-Aramaic,BE CA DE IQ LB NL SY TR US,,,,08685 08686,syr,,,,NAM WAS WEU,cld,,,Syrn
 cld-Hebr,cld-Hebr-IQ,Chaldean Neo-Aramaic,BE CA DE IQ LB NL SY TR US,,,,,syr,,,,NAM WAS WEU,cld,,,
 cle,cle-Latn-MX,"Chinantec, Lealao",MX,,,,,,,,,CAM,cle,LE,9-Jan-2018,
 clh,clh-Arab-PK,Chilisso,PK,,,,,,1,,,SAS,clh,,,
@@ -3045,7 +3046,7 @@ hrm-Hmng,hrm-Hmng-CN,"Miao, Horned",CN,,,,,,1,,,EAS,hrm,,,
 hro,hro-Latn-VN,Haroi,VN,,,,,,,,,SEA,hro,NMC,20-Nov-2017,
 hrp,hrp-Latn-AU,Nhirrpi,AU,,,,,,1,,,ANZ,hrp,,,Extinct
 hrr,hrr-Latn-ID,Horuru,ID,,,,,jal,,,jal,SEA,hrr,,,
-hrt,hrt-Syrc-TR,Hértevin,TR,,,,,,,,,WAS,hrt,,,
+hrt,hrt-Syrc-TR,Hértevin,TR,,,,,,,,,WAS,hrt,,,Syrn
 hru,hru-Latn-IN,Hruso,IN,,,,10700,,,,,SAS,hru,,,
 hrw,hrw-Latn-PG,Warwar Feni,PG,,,,,,,,,MEL,hrw,LE,10-Jan-2018,
 hrx,hrx-Latn-BR,Hunsrik,AR BR CL PY UY,,,,,,,,,SAM,hrx,LE,9-Jan-2018,
@@ -3969,7 +3970,7 @@ kpz,kpz-Latn-UG,Kupsapiiny,UG,,,,12519,,,,,EAF,kpz,LE,12-Jan-2018,
 kqa,kqa-Latn-PG,Mum,PG,,,,00427,,,,,MEL,kqa,LE,10-Jan-2018,
 kqb,kqb-Latn-PG,Kovai,PG,,,,21175,,,,,MEL,kqb,LE,10-Jan-2018,
 kqc,kqc-Latn-PG,Doromu-Koki,PG,,,,,,,,,MEL,kqc,LE,10-Jan-2018,
-kqd,kqd-Syrc-IQ,Koy Sanjaq Surat,IQ,,,,,,,,,WAS,kqd,,,
+kqd,kqd-Syrc-IQ,Koy Sanjaq Surat,IQ,,,,,,,,,WAS,kqd,,,Syrn
 kqe,kqe-Latn-PH,Kalagan,PH,,,,00284,,,,,SEA,kqe,,,
 kqe-x-east,kqe-Latn-PH-x-east,Kalagan,PH,,,,,,,,,SEA,kqe,,,look at ROD
 kqe-x-west,kqe-Latn-PH-x-west,Kalagan,PH,,,,,,,,,SEA,kqe,,,look at ROD
@@ -4419,7 +4420,7 @@ lhl,lhl-Zyyy-IN,"Lohar, Lahul",IN,,,,,,1,,,SAS,lhl,,,
 lhm,lhm-Deva-NP,Lhomi,CN IN NP,,,,,,,,,SAS,lhm,,,
 lhn,lhn-Latn-MY,Lahanan,MY,,,,,,1,,,SEA,lhn,,,
 lhp,lhp-Zyyy-BT,Lhokpu,BT,,,,,,1,,,SAS,lhp,,,
-lhs,lhs-Syrc-SY,Mlahsö,SY,,,,,,,,,WAS,lhs,LE,,Extinct (keyboard purports to support this script)
+lhs,lhs-Syrc-SY,Mlahsö,SY,,,,,,,,,WAS,lhs,,,Extinct (keyboard purports to support this script)
 lht,lht-Latn-VU,Lo-Toga,VU,,,,,,,,,MEL,lht,LE,10-Jan-2018,
 lhu,lhu-Latn-CN,Lahu,CN LA MM TH VN,,,,00085 12683,,,,,EAS SEA,lhu,,,
 li,li-Latn-NL,Limburgish,BE DE NL,,,,,,,,,WEU,lim,CLDR,,
@@ -5989,6 +5990,7 @@ oac,oac-Cyrl-RU,Oroch,RU,,,,,,1,,,EEU,oac,,,
 oak,oak-Beng-BD,Noakhali,BD IN,,,,,,,,,SAS,oak,,,
 oak-Latn,oak-Latn-IN,Noakhali,BD IN,,,,,,,,,SAS,oak,,,
 oar,oar-Syrc-SY,Old Aramaic (up to 700 BCE),SY,,,,,,,,,WAS,oar,,,Ancient (keyboard purports to support this script)
+oar-Elym,oar-Elym-SY,Old Aramaic (up to 700 BCE),SY,,,,,,,,,WAS,oar,,,
 oav,oav-Geor-GE,Old Avar,GE RU,,,,,,,,,???,oav,,,Historical
 obi,obi-Latn-US,Obispeño,US,,,,,,1,,,NAM,obi,,10-Jan-2018,Extinct
 obk,obk-Latn-PH,"Bontok, Southern",PH,,,,,,1,,,SEA,obk,,,
@@ -7517,16 +7519,16 @@ sxu,sxu-Runr-DE,"Saxon, Upper",DE 001,,,,,,,,,WEU,sxu,CLDR,,
 sxw,sxw-Latn-BJ,"Gbe, Saxwe",BJ,,,,,,,,,WAF,sxw,,,
 sya,sya-Latn-ID,Siang,ID,,,,04625 04627,,,,,SEA,sya,,,
 syb,syb-Latn-PH,"Subanen, Central",PH,,,,03449,,,,,SEA,syb,,,
-syc,syc-Syrc-TR,Syriac,TR,,,,17000 17001,,,,,WAS,syc,,,Historical
+syc,syc-Syrc-TR,Syriac,TR,,,,17000 17001,,,,,WAS,syc,,,Syrn
 syi,syi-Latn-GA,Seki,GA GQ,,,,,,1,,,MAF,syi,LE,30-Jan-2018,
 syk,syk-Latn-NG,Sukur,NG,,,,,,,,,WAF,syk,LE,15-Feb-2018,
 syl,syl-Beng-BD,Sylheti,BD CA  IN MY SG US,,,,,,,,,NAM NEU SAS SEA,syl,CLDR,,
 syl-Latn,syl-Latn-BD,Sylheti,BD CA IN MY SG US,,,,,,,,,NAM NEU SAS SEA,syl,,,
 syl-Sylo,syl-Sylo-BD,Sylheti,BD CA  IN MY SG US,,,,,,,1,,NAM NEU SAS SEA,syl,,,
 sym,sym-Latn-BF,"Samo, Maya",BF,,,,01743,,,,,WAF,sym,,,
-syn,syn-Syrc-IR,Senaya,IR US,,,,,,,,,NAM SAS,syn,,,
+syn,syn-Syrc-IR,Senaya,IR US,,,,,,,,,NAM SAS,syn,,,Syrn
 syo,syo-Latn-KH,Suoy,KH,,,,,,,,,SEA,syo,NMC,9-Jan-2018,
-syr,syr-Syrc-IQ,Syriac,BE CA DE IQ LB NL SY TR US,,,,,,,,,WAS,syr,CLDR,23-Mar-2018,
+syr,syr-Syrc-IQ,Syriac,BE CA DE IQ LB NL SY TR US,,,,,,,,,WAS,syr,CLDR,,Syrn
 sys,sys-Latn-TD,Sinyar,TD,,,,,,1,,,MAF,sys,,,
 syw,syw-Deva-NP,Kagate,NP,,,,,,,,,SAS,syw,,,
 syx,syx-Latn-GA,Samay,GA,,,,,,1,,,MAF,syx,LE,30-Jan-2018,
@@ -7866,7 +7868,8 @@ tmn,tmn-Latn-ID,Taman,ID,,,,,,1,,,SEA,tmn,,,
 tmo,tmo-Latn-MY,Temoq,MY,,,,,,1,,,SEA,tmo,,,
 tmp,tmp-Latn-VN,Tai Mene,LA VN,,,,,tyj,,,tyj,SEA,tmp,NMC,7-Dec-2017,
 tmq,tmq-Latn-PG,Tumleo,PG,,,,00516,,1,,,MEL,tmq,LE,10-Jan-2018,
-tmr,tmr-Syrc-IL,Jewish Babylonian Aramaic,IL,,,,,,,,,WAS,tmr,LE,,Extinct (Keyboard purports to support this script)
+tmr,tmr-Syrc-IL,Jewish Babylonian Aramaic,IL,,,,,,,,,WAS,tmr,,,Extinct (Keyboard purports to support this script)
+tmr-Elym,tmr-Elym-IL,Jewish Babylonian Aramaic,IL,,,,,,,,,WAS,tmr,,,
 tms,tms-Zyyy-SD,Tima,SD,,,,,,1,,,NAF,tms,,,
 tmt,tmt-Latn-VU,Tasmate,VU,,,,,,1,,,MEL,tmt,LE,10-Jan-2018,
 tmu,tmu-Latn-ID,Iau,ID,,,,,,,,,SEA,tmu,,20-Apr-2018,
