@@ -112,9 +112,9 @@ def process_cldrentry(s, lts, allentries, root='.'):
     if l.variants is not None and 'posix' in l.variants:
         return
     l.parentsame = False
+    n = None
     if l.region is not None:
         t = lt.LangTag(tag=None, lang=l.lang, script=l.script, variants=l.variants, extensions=l.extensions)
-        n = None
         if str(t) in lts:
             n = lts[str(t)]
         elif str(t) in allentries:
@@ -132,7 +132,7 @@ def process_cldrentry(s, lts, allentries, root='.'):
             l.parentsame = issimple(find_file(s, root))
     if not l.parentsame:
         lts.add(l)
-    elif l.region not in n.regions:
+    elif n is None or l.region not in n.regions:
         print(f"LDML region for {l} not in regions list")
     return l
 
@@ -158,6 +158,7 @@ def get_region_scriptnames():
     fname = os.path.join(os.path.dirname(lt.__file__), "language-subtag-registry.txt")
     with open(fname) as f :
         currlang = None
+        currname = None
         currscr = None
         mode = None
         deprecated = False
