@@ -10,8 +10,6 @@ from multiprocessing import Pool
 import sldr.langtags_full as lt
 from palaso.unicode.ucd import UCD
 
-# A useless comment
-
 silns = "urn://www.sil.org/ldml/0.1"
 apiversion = "1.4"
 
@@ -20,10 +18,6 @@ hacks = {
 #    "aeb-Hebr-IL": (lambda n:n['tags'].extend(("ar-aeb-Hebr", "ar-aeb-Hebr-IL")),),
 #    "aeb-Latn-TN": (lambda n:n.setdefault('tags', []).extend(("ar-aeb-Latn", "ar-aeb-Latn-TN")),)
 }
-
-try: unicode
-except NameError:
-    unicode = str
 
 Autonym = namedtuple('Autonym', ['langtag', 'name', 'roman'])
 ucds = UCD()
