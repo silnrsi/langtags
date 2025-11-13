@@ -123,6 +123,7 @@ def process_cldrentry(s, lts, allentries, root='.'):
         if n is not None:
             if l.script is None:
                 l.script = n.script
+            assert l.lang is not None
             if n.hidescript and l.lang+"-"+l.region not in lts:
                 l.hidescript = True
             l.extra_variants = n.extra_variants
