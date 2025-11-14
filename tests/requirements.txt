@@ -1,2 +1,0 @@
-sldr @ git+https://github.com/silnrsi/sldrtools@master
-jsonschema
