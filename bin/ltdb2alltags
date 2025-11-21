@@ -651,7 +651,7 @@ def main():
         print("Output results")
     output = json.dumps(sorted(res, key=lambda x:x['tag']), sort_keys=True, indent=4, ensure_ascii=False)
     output = "[" + re.sub(r'\[([^\]]+)\]', mergelines, output[1:-1]) + "]\n"
-    with codecs.open(args.outfile, "w", encoding="utf-8") as fh:
+    with open(args.outfile, "w", encoding="utf-8") as fh:
         # use encoding="utf8" (not "utf-8") as a hack around a bug in json: https://stackoverflow.com/a/40777484/10488020
         fh.write(output)
     missing = set(names.keys()) - alllangreg
