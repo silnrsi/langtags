@@ -71,10 +71,7 @@ jobs:
       with:
         python-version: '3.x'
     - name: Install langtags package and depedencies
-      run: >-
-        pip install six .
-        sldr@git+https://github.com/silnrsi/sldrtools
-        palaso@git+https://github.com/silnrsi/palaso-python
+      run: pip install .[tests]
     - uses: actions/download-artifact@v4
       with:
         name: langtags
