@@ -2547,7 +2547,7 @@ gdr,gdr-Latn-PG,Wipi,PG,,,,,,,,,MEL,gdr,LE,10-Jan-2018,
 gds,gds-Zxxx-NP,Ghandruk Sign Language,NP,,,,,,,,,SAS,gds,,,
 gdt,gdt-Latn-AU,Kungardutyi,AU,,,,,,1,,,ANZ,gdt,LE,10-Jan-2018,Extinct
 gdu,gdu-Latn-NG,Gudu,NG,,,,,,1,,,WAF,gdu,,,
-gdx,gdx-Deva-IN,Godwari,IN,,,,04802,,1,,,SAS,gdx,,,
+gdx,gdx-Deva-IN,Godwari,IN,,,,04802,,,,,SAS,gdx,,,
 gea,gea-Latn-NG,Geruma,NG,,,,,,1,,,WAF,gea,,,
 geb,geb-Latn-PG,Kire,PG,,,,03219,,,,,MEL,geb,LE,10-Jan-2018,
 gec,gec-Latn-LR,"Grebo, Gboloo",LR,,,,06151 06453,,1,,,WAF,gec,,,
