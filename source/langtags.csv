@@ -2043,7 +2043,7 @@ doi,doi-Deva-IN,Dogri,IN,,,,,,,,,SAS,doi,,23-Mar-2018,
 doi-Arab,doi-Arab-IN,Dogri (macrolanguage),IN,,,,,,,,,SAS,doi,CLDR,,
 doi-Dogr,doi-Dogr-IN,Dogri,IN,,,,,,,1,,SAS,doi,,,
 doi-Takr,doi-Takr-IN,Dogri,IN,,,,,,,1,,SAS,doi,,23-Mar-2018,
-dok,dok-Latn-ID,Dondo,ID,,,,,,1,,,SEA,dok,,,
+dok,dok-Latn-ID,Dondo,ID,,,,,,,,,SEA,dok,,,
 dol,dol-Latn-PG,Doso,PG,,,,,,1,,,MEL,dol,LE,10-Jan-2018,
 don,don-Latn-PG,Toura,PG,,,,,,1,,,MEL,don,LE,10-Jan-2018,
 doo,doo-Latn-CD,Dongo,CD,,,,,,,,,MAF,doo,LE,12-Jan-2018,
@@ -3120,7 +3120,7 @@ ibh,ibh-Latn-VN,Bih,VN,,,,,,1,,,SEA,ibh,NMC,,NC: new language in 2016 from iso 6
 ibi,ibi-Latn-NG,Ibilo,NG,,,,,opa,1,,opa,WAF,ibi,,,
 ibl,ibl-Latn-PH,Ibaloi,PH,,,,01104 02138,,,,,SEA,ibl,,,
 ibm,ibm-Latn-NG,Agoi,NG,,,,,,1,,,WAF,ibm,,,
-ibn,ibn-Latn-NG,Ibino,NG,,,,,,1,,,WAF,ibn,,,
+ibn,ibn-Latn-NG,Ibino,NG,,,,,,,,,WAF,ibn,,,
 ibr,ibr-Latn-NG,Ibuoro,NG,,,,,,1,,,WAF,ibr,,,
 ibu,ibu-Latn-ID,Ibu,ID,,,,,,1,,,SEA,ibu,,,
 iby,iby-Latn-NG,Ibani,NG,,,,,,,,,WAF,iby,,,
@@ -4243,7 +4243,7 @@ kyt,kyt-Latn-ID,Kayagar,ID,,,,,,1,,,SEA,kyt,,,
 kyu,kyu-Kali-MM,"Kayah, Western",MM,,,,,,,,,SEA,kyu,SVW,11-Sep-2017,"This one should be the default, according to the translators who worked on it. - SVW"
 kyu-Latn,kyu-Latn-MM,"Kayah, Western",MM,,,,,,,,,SEA,kyu,SVW,,Used mainly by Catholics. - SVW
 kyu-Mymr,kyu-Mymr-MM,"Kayah, Western",MM,,,,,,,,,SEA,kyu,SVW,,"not in much use anymore, at least by Christian community. SVW"
-kyv,kyv-Deva-NP,Kayort,NP,,,,,,1,,,SAS,kyv,,,
+kyv,kyv-Deva-NP,Kayort,NP,,,,,,,,,SAS,kyv,,,
 kyw-Beng,kyw-Beng-IN,Kudmali,IN,,,,,,,,,SAS,kyw,,,
 kyw,kyw-Deva-IN,Kudmali,IN,,,,,,,,,SAS,kyw,,11/15/2021,LE: made Deva primary based on relationship to tdb
 kyw-Orya,kyw-Orya-IN,Kudmali,IN,,,,,,,,,SAS,kyw,,,
@@ -6086,7 +6086,7 @@ omc,omc-Latn-PE,Mochica,PE,,,,,,1,,,SAM,omc,LE,10-Jan-2018,Extinct
 omg,omg-Latn-PE,Omagua,BR PE,,,,,,1,,,SAM,omg,LE,9-Jan-2018,
 omi,omi-Latn-CD,Omi,CD,,,,,,,,,MAF,omi,LE,12-Jan-2018,
 omk,omk-Cyrl-RU,Omok,RU,,,,,,1,,,EEU,omk,,,Extinct
-oml,oml-Latn-CD,Ombo,CD,,,,01390,,1,,,MAF,oml,,,
+oml,oml-Latn-CD,Ombo,CD,,,,01390,,,,,MAF,oml,,,
 omn,omn-Lina-XX,Minoan,XX,,,,,,,,,???,omn,,,Ancient
 omo,omo-Latn-PG,Utarmbung,PG,,,,,,1,,,MEL,omo,LE,10-Jan-2018,
 omp,omp-Mtei-IN,Old Manipuri,IN,,,,,,,,,???,omp,,,Historical
