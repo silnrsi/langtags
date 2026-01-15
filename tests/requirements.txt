@@ -1,2 +1,4 @@
+six
 sldr @ git+https://github.com/silnrsi/sldrtools@master
+palaso @ git+https://github.com/silnrsi/palaso-python
 jsonschema
