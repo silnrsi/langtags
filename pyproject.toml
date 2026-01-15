@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "langtag"
-version = "0.2"
+version = "0.2.1"
 authors = [{name = "WSTech SIL", email = "fonts@sil.org"}]
 readme = "pyreadme.md"
 license = {file = "LICENSE"}
