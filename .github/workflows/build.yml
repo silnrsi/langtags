@@ -1,6 +1,11 @@
 name: Build
 on:
   workflow_call:
+    inputs:
+      production:
+        description: 'Is this a production build or not (default: false).'
+        required: true
+        type: boolean
 jobs:
   build:
     runs-on: ubuntu-22.04
@@ -14,48 +19,16 @@ jobs:
         pip install six .
         sldr@git+https://github.com/silnrsi/sldrtools
         palaso@git+https://github.com/silnrsi/palaso-python
-    - name: Find latest SLDR dependency
-      uses: actions/github-script@v7
-      id: find-sldr
+
+    - name: Download latest SLDR dependency
+      uses: robinraju/release-downloader@v1
       with:
-        script: |
-          const result = await github.rest.actions
-            .listArtifactsForRepo({
-              owner: "silnrsi",
-              repo: "sldr"
-            })
-          const artifact = result.data.artifacts[0]
-          console.log(artifact)
-          return artifact
-    - uses: actions/cache@v4
-      id: cached-sldr
-      with:
-        path: |
-          unflat
-          flat
-        key: sldr-${{fromJSON(steps.find-sldr.outputs.result).id}}
-    - name: Download the SLDR dependency
-      if: steps.cached-sldr.outputs.cache-hit != 'true'
-      uses: actions/github-script@v7
-      env:
-        artifact_id: ${{fromJSON(steps.find-sldr.outputs.result).id}}
-      with:
-        script: |
-          const fs = require('fs')
-          const response = await github.rest.actions
-            .downloadArtifact({
-              owner: "silnrsi",
-              repo: "sldr",
-              artifact_id: process.env.artifact_id,
-              archive_format: "zip"
-            })
-          fs.writeFileSync('sldr.zip', Buffer.from(response.data))
-    - name: Extract SLDR dependency
-      if: steps.cached-sldr.outputs.cache-hit != 'true'
-      run: |
-        unzip -q sldr.zip
-        rm sldr.zip
-    # Build it
+        repository: silnrsi/sldr
+        latest: true
+        preRelease: ${{ inputs.production != true }}
+        extract: true
+        fileName: sldr.zip
+
     - name: Generate langtags
       run: |
         make SLDR=unflat FLATDIR=flat build
@@ -82,7 +55,7 @@ jobs:
       with:
         name: langtags
         path: pub
-    # Test it.
+
     - name: Test langtags
       id: langtags
       run: |
