@@ -435,7 +435,7 @@ arb-Syrc,arb-Syrc-SY,"Arabic, Standard",SY,,,,,ar,,,,EAF MAF NAF NEU SEA WAF WAS
 arc,arc-Armi-IR,Official Aramaic (700-300 BCE),IR,,,,,,,,,SAS,arc,CLDR,,Ancient
 arc-Nbat,arc-Nbat-JO,Aramaic,JO,,,,,,,,,WAS,arc,CLDR,,
 arc-Palm,arc-Palm-SY,Aramaic,SY,,,,,,,,,WAS,arc,CLDR,,
-arc-Hatr,arc-Hatr-XX,Aramaic,XX,,,,,,,,,WAS,arc,,,
+arc-Hatr,arc-Hatr-IQ,Aramaic,IQ,,,,,,,,,WAS,arc,,,
 arc-Syrc,arc-Syrc-XX,Aramaic,XX,,,,,,,,,WAS,arc,,,keyboard purports to support this script
 arc-Elym,arc-Elym-XX,Aramaic,XX,,,,,,,,,WAS,arc,,,
 ard,ard-Latn-AU,Arabana,AU,,,,,,1,,,ANZ,ard,LE,10-Jan-2018,Extinct
@@ -1107,7 +1107,7 @@ bqr,bqr-Latn-ID,Burusu,ID,,,,04114,,1,,,SEA,bqr,,,
 bqs,bqs-Latn-PG,Bosmun,PG,,,,,,,,,MEL,bqs,LE,10-Jan-2018,
 bqt,bqt-Latn-CM,Bamukumbit,CM,,,,,,,,,MAF,bqt,LE,12-Jan-2018,
 bqu,bqu-Latn-CD,Boguru,CD SS,,,,,,1,,,EAF MAF,bqu,,,
-bqv,bqv-Latn-NG,Koro Wachi,NG,,,,,,,,,WAF,bqv,CLDR,2025-02-06,Removed CI which now disagrees with CLDR
+bqv,bqv-Latn-NG,Koro Wachi,CI NG,,,,,,,,,WAF,bqv,CLDR,2025-02-06,Removed CI which now disagrees with CLDR
 bqw,bqw-Latn-NG,Buru,NG,,,,,,1,,,WAF,bqw,,,
 bqx,bqx-Latn-NG,Baangi,NG,,,,,,1,,,WAF,bqx,,,
 bqy,bqy-Zxxx-ID,Kata Kolok,ID,,,,,,,,,SEA,bqy,,,
@@ -1171,8 +1171,8 @@ bsm,bsm-Latn-ID,Busami,ID,,,,,,1,,,SEA,bsm,,,
 bsn,bsn-Latn-CO,Barasana-Eduria,CO,,,,07768 07771,,,,,SAM,bsn,LE,9-Jan-2018,
 bso,bso-Latn-TD,Buso,TD,,,,,,1,,,MAF,bso,,,
 bsp,bsp-Latn-GN,Baga Sitemu,GN,,,,,,,,,WAF,bsp,,,
-bsq,bsq-Bass-LR,Bassa,LR SL,,,,00214 06449 06451,,,,,WAF,bsq,CLDR,,
-bsq-Latn,bsq-Latn-LR,Bassa,LR SL,,,,00214 06449 06451,,,,,WAF,bsq,LE,12-Jan-2018,
+bsq-Bass,bsq-Bass-LR,Bassa,LR SL,,,,00214 06449 06451,,,,,WAF,bsq,CLDR,,
+bsq,bsq-Latn-LR,Bassa,LR SL,,,,00214 06449 06451,,,,,WAF,bsq,LE,12-Jan-2018,
 bsr,bsr-Latn-NG,Bassa-Kontagora,NG,,,,,,1,,,WAF,bsr,,,
 bss,bss-Latn-CM,Akoose,CM,,,,06825 06826 06827 06828 06829 06830,,,,,MAF,bss,CLDR,,
 bst,bst-Ethi-ET,Basketo,ET,,,,,,,,,EAF,bst,,,
@@ -2177,7 +2177,7 @@ ebu,ebu-Latn-KE,Kiembu,KE,,,,00701,,,,,EAF,ebu,CLDR,,
 ecr,ecr-Grek-GR,Eteocretan,GR,,,,,,,,,???,ecr,,,Ancient
 ecs,ecs-Zxxx-EC,Ecuadorian Sign Language,EC,,,,,,,,,SAM,ecs,,,
 ecy,ecy-Cprt-CY,Eteocypriot,CY,,,,,,,,,???,ecy,,,Ancient
-ee,ee-Latn-GH,Éwé,GH LR TG,,,,,,,,,WAF,ewe,CLDR,,
+ee,ee-Latn-GH,Éwé,CI GH LR TG,,,,,,,,,WAF,ewe,CLDR,,
 ee-Brai,ee-Brai-GH,Éwé,GH LR TG,,,,,,,,,WAF,ewe,LE,12-Jan-2018,
 ee-Zzzz-x-adinkra,ee-Zzzz-GH-x-adinkra,Éwé,GH LR TG,,,,,,,,,WAF,ewe,,,
 eee,eee-Zyyy-CN,E,CN,,,,,,1,,,EAS,eee,,,
@@ -2737,6 +2737,7 @@ gra-Gujr,gra-Gujr-IN,"Garasia, Rajput",IN,,,,,,,,,SAS,gra,,,
 grb,grb-Latn-LR,Grebo,LR,,,,,,,,,WAF,grb,LE,12-Jan-2018,
 grc,grc-Grek-GR,"Greek, Ancient",GR,,,,,,,,,SEU,grc,,,Historical
 grc-Latn,grc-Latn-GR,"Greek, Ancient",GR,,,,,,,,,SEU,grc,,,
+grc-Cprt,grc-Cprt-CY,"Greek, Ancient",CY,,,,,,,,,,grc,,,
 grd,grd-Latn-NG,Guruntum-Mbaaru,NG,,,,,,1,,,WAF,grd,,,
 grg,grg-Latn-PG,Madi,PG,,,,,,,,,MEL,grg,LE,10-Jan-2018,
 grh,grh-Latn-NG,Tugbiri-Niragu,NG,,,,02569,,,,,WAF,grh,,,
@@ -2923,8 +2924,8 @@ hi-Newa,hi-Newa-IN,Hindi,AE AU BD BT BZ CA DE DJ FI GB GQ GY IN KE KW LK MM MU N
 hia,hia-Latn-NG,Lamang,NG,,,,01767,,,,,WAF,hia,,,
 hib,hib-Latn-PE,Hibito,PE,,,,,,1,,,SAM,hib,LE,10-Jan-2018,Extinct
 hid,hid-Latn-US,Hidatsa,US,,,,,,1,,,NAM,hid,LE,9-Jan-2018,
-hif,hif-Latn-FJ,"Hindi, Fiji",FJ US,,,,,,,,,MEL NAM,hif,CLDR,,
-hif-Deva,hif-Deva-FJ,"Hindi, Fiji",FJ US,,,,,,,,,MEL NAM,hif,LE,10-Jan-2018,
+hif-Latn,hif-Latn-FJ,"Hindi, Fiji",FJ US,,,,,,,,,MEL NAM,hif,CLDR,,
+hif,hif-Deva-FJ,"Hindi, Fiji",FJ US,,,,,,,,,MEL NAM,hif,LE,10-Jan-2018,
 hig,hig-Latn-NG,Kamwe,NG,,,,01784 04438,,,,,WAF,hig,,,
 hih,hih-Latn-PG,Pamosu,PG,,,,,,,,,MEL,hih,LE,10-Jan-2018,
 hii,hii-Takr-IN,Hinduri,IN,,,,,,,,,SAS,hii,,,
@@ -4089,10 +4090,10 @@ ktw,ktw-Latn-US,Kato,US,,,,,,1,,,NAM,ktw,LE,10-Jan-2018,Extinct
 ktx,ktx-Latn-BR,Kaxararí,BR,,,,,,1,,,SAM,ktx,LE,9-Jan-2018,
 kty,kty-Latn-CD,Kango,CD,,,,,,1,,,MAF,kty,,,
 ktz,ktz-Latn-NA,Ju|'hoansi,BW NA,,,,01948 04001,,,,,SAF,ktz,LE,9-Jan-2018,
-ku,ku-Latn-TR,Kurdish,IQ IR TR,,,,,,,,,SAS WAS,kur,CLDR,,
+ku,ku-Latn-TR,Kurdish,TM TR,,,,,,,,,SAS WAS,kur,CLDR,,
 ku-Arab,ku-Arab-IQ,Kurdish,IQ IR TR,,,,,,,,,SAS WAS,kur,CLDR,,
 ku-Armn,ku-Armn-AZ,Kurdish,AZ,,,,,,,,,SAS WAS,kur,CLDR,,
-ku-Cyrl,ku-Cyrl-IQ,Kurdish,IQ IR TR,,,,,,,,,SAS WAS,kur,,,
+ku-AZ,ku-Cyrl-AZ,Kurdish,AM GE AZ,,,,,,,,,SAS WAS,kur,,,
 ku-LB,ku-Arab-LB,Kurdish,LB,,,,,,,,,SAS WAS,kur,CLDR,,
 kub,kub-Latn-NG,Kutep,CM NG,,,,,,,,,MAF WAF,kub,LE,12-Jan-2018,
 kuc,kuc-Latn-ID,Kwinsu,ID,,,,,,1,,,SEA,kuc,,,
@@ -4375,7 +4376,7 @@ lej,lej-Latn-CD,Lengola,CD,,,,,,1,,,MAF,lej,,,
 lek,lek-Latn-PG,Leipon,PG,,,,,,1,,,MEL,lek,LE,10-Jan-2018,
 lel,lel-Latn-CD,Lele,CD,,,,,,1,,,MAF,lel,,,
 lem,lem-Latn-CM,Nomaande,CM,,,,,,,,,MAF,lem,LE,12-Jan-2018,
-len,len-Latn-HN,Lenca,HN,,,,,,1,,,CAM,len,LE,10-Jan-2018,Extinct
+len,len-Latn-HN,Lenca,HN SV,,,,,,1,,,CAM,len,LE,10-Jan-2018,Extinct
 leo,leo-Latn-CM,Leti,CM,,,,,,1,,,MAF,leo,,,
 lep,lep-Lepc-IN,Lepcha,BT IN NP,,,,,,,,,SAS,lep,CLDR,,
 lep-Tibt,lep-Tibt-IN,Lepcha,BT IN NP,,,,,,,,,SAS,lep,,,
@@ -4678,13 +4679,12 @@ lxm,lxm-Latn-PG,Lakurumau,PG,,,,,,1,,,MEL,lxm,,,
 lya,lya-Tibt-BT,Layakha,BT,,,,,,1,,,SAS,lya,,,
 lyg,lyg-Zyyy-IN,Lyngngam,BD IN,,,,,,1,,,EAS SAS,lyg,,,
 lyn,lyn-Latn-ZM,Luyana,BW NA ZM,,,,04065,,,,,EAF SAF,lyn,LE,12-Jan-2018,
-lzh,lzh-Hans-CN,Literary Chinese,CN JP KR VN,,,,,,,,,EAS SEA,lzh,CLDR,,Historical
-lzh-Hant,lzh-Hant-CN,Literary Chinese,CN JP KR VN,,,,,,,,,EAS SEA,lzh,,,Historical
+lzh-Hans,lzh-Hans-CN,Literary Chinese,CN JP KR VN,,,,,,,,,EAS SEA,lzh,CLDR,,Historical
+lzh,lzh-Hant-CN,Literary Chinese,CN JP KR VN,,,,,,,,,EAS SEA,lzh,,,Historical
 lzl,lzl-Latn-VU,Litzlitz,VU,,,,,,1,,,MEL,lzl,LE,10-Jan-2018,
 lzn,lzn-Latn-MM,"Naga, Leinong",MM,,,,,,,,,SEA,lzn,NMC,4-Dec-2017,
-lzz,lzz-Latn-TR,Laz,BE DE TR US,,,,,,,,,WAS WEU,lzz,CLDR,,
+lzz,lzz-Latn-TR,Laz,BE DE GE TR US,,,,,,,,,WAS WEU,lzz,CLDR,,
 lzz-Geor,lzz-Geor-GE,Laz,GE,,,,,,,,,WAS WEU,lzz,,,
-lzz-GE,lzz-Latn-GE,Laz,GE,,,,,,,,,WAS WEU,lzz,,,different orthography in GE
 maa,maa-Latn-MX,"Mazatec, San Jerónimo Tecóatl",MX,,,,04675 19386,,,,,CAM,maa,LE,9-Jan-2018,Retire 2017
 mab,mab-Latn-MX,"Mixtec, Yutanduchi",MX,,,,,,,,,CAM,mab,LE,9-Jan-2018,
 mad,mad-Latn-ID,Madura,ID SG,,,,04623 13255 13259,,,,,SEA,mad,CLDR,,
@@ -5441,6 +5441,7 @@ nak,nak-Latn-PG,Nakanai,PG,,,,01498,,,,,MEL,nak,LE,10-Jan-2018,
 nal,nal-Latn-PG,Nalik,PG,,,,,,,,,MEL,nal,LE,10-Jan-2018,
 nam,nam-Latn-AU,Ngan'gityemerri,AU,,,,,,1,,,ANZ,nam,LE,10-Jan-2018,
 nan,nan-Hans-CN,"Chinese, Min Nan",AU BN CN HK ID KH MO MY PH SG TH TW,,,,00186 00366 06037 06091,,,,,EAS,nan,CLDR,,
+nan-Hant,nan-Hant-TW,"Chinese, Min Nan",MO TW,,,,00186 00366 06037 06091,,,,,EAS,nan,CLDR,,
 nan-Bopo,nan-Bopo-TW,"Chinese, Min Nan",AU BN CA CN HK ID KH MO MY PH SG TH TW US,,,,01997,,,,,ANZ EAS NAM SEA,nan,,,
 nan-Kana,nan-Kana-TW,"Chinese, Min Nan",AU BN CA CN HK ID KH MO MY PH SG TH TW US,,,,01997,,,1,,ANZ EAS NAM SEA,nan,,,
 nan-Latn,nan-Latn-TW,"Chinese, Min Nan",AU BN CA CN HK ID KH MO MY PH SG TH TW US,,pehoeji tailo,,00186 00366 06037 06091,,,,,ANZ EAS NAM SEA,nan,,,
@@ -6181,7 +6182,7 @@ otz,otz-Latn-MX,"Otomi, Ixtenco",MX,,,,,,1,,,CAM,otz,LE,9-Jan-2018,
 oua,oua-Zyyy-DZ,Tagargrent,DZ,,,,,,1,,,NAF,oua,,,
 oub,oub-Latn-LR,Glio-Oubi,CI LR,,,,01602,,,,,WAF,oub,LE,12-Jan-2018,
 oue,oue-Latn-PG,Oune,PG,,,,,,1,,,MEL,oue,LE,10-Jan-2018,
-oui,oui-Ougr-143,Old Uighur,XX,,,,,,,1,,???,oui,,,Historical
+oui,oui-Ougr-CN,Old Uighur,CN,,,,,,,1,,???,oui,,,Historical
 oui-Mong,oui-Mong-XX,Old Uighur,XX,,,,,,,,,???,oui,,,
 oum,oum-Latn-PG,Ouma,PG,,,,,,1,,,MEL,oum,,,Extinct
 oun,oun-Latn-NA,!O!ung,AO NA ZA,,,,,vaj,1,,vaj,MAF SAF,oun,,,
@@ -6331,12 +6332,14 @@ phu,phu-Thai-TH,Phuan,KH LA TH,,,,,,1,,,SEA,phu,NMC,,
 phv,phv-Arab-AF,Pahlavani,AF,,,,,,1,,,SAS,phv,,,
 phw,phw-Deva-NP,Phangduwali,NP,,,,,,1,,,SAS,phw,,,
 pi-Brah,pi-Brah-IN,Pali,IN MM,,,,,,,,,SAS SEA,pli,,,
-pi-Deva,pi-Deva-IN,Pali,IN MM,,,,,,,,,SAS SEA,pli,,,Ancient
+pi-Latn,pi-Latn-GB,Pali,GB,,,,,,,,,SAS SEA,pli,,,
+pi,pi-Deva-IN,Pali,IN,,,,,,,,,SAS SEA,pli,,,Ancient
 pi-Khar,pi-Khar-IN,Pali,IN MM,,,,,,,,,SAS SEA,pli,,,
-pi-Mymr,pi-Mymr-IN,Pali,IN MM,,,,,,,,,SAS SEA,pli,,,Ancient
-pi,pi-Sinh-IN,Pali,IN MM,,,,,,,,,SAS SEA,pli,,11/15/2021,LE: made primary
-pi-Thai,pi-Thai-IN,Pali,IN MM,,,,,,,,,SAS SEA,pli,,,Ancient
-pi-Khmr,pi-Khmr-IN,Pali,IN MM,,,,,,,,,SAS SEA,pli,,,
+pi-Mymr,pi-Mymr-MM,Pali,IN MM,,,,,,,,,SAS SEA,pli,,,Ancient
+pi-MM,pi-Mymr-IN,Pali,IN MM,,,,,,,,,SAS SEA,pli,,,Ancient
+pi-Sinh,pi-Sinh-IN,Pali,IN LK MM,,,,,,,,,SAS SEA,pli,,11/15/2021,LE: made primary
+pi-Thai,pi-Thai-IN,Pali,IN MM TH,,,,,,,,,SAS SEA,pli,,,Ancient
+pi-Khmr,pi-Khmr-IN,Pali,IN KH MM,,,,,,,,,SAS SEA,pli,,,
 pia,pia-Latn-MX,Pima Bajo,MX,,,,,,,,,CAM,pia,LE,9-Jan-2018,
 pib,pib-Latn-PE,Yine,PE,,,,,,,,,SAM,pib,LE,9-Jan-2018,
 pic,pic-Latn-GA,Pinji,GA,,,,,,1,,,MAF,pic,LE,30-Jan-2018,
@@ -6834,7 +6837,7 @@ rth,rth-Latn-ID,Ratahan,ID,,,,,,,,,SEA,rth,,,
 rtm,rtm-Latn-FJ,Rotuman,FJ,,,,,,,,,MEL,rtm,CLDR,,
 rts,rts-Zyyy-RU,Yurats,RU,,,,,,1,,,EEU,rts,,,Extinct
 rtw,rtw-Deva-IN,Rathawi,IN,,,,,,,,,SAS,rtw,,,
-ru,ru-Cyrl-RU,Russian,AM AU AZ BE BG BY CA CN CY CZ DE EE FI GE GR HR HU IL KG KZ LT LU LV MD ME MN MZ NO PL RO RS RU SE SJ SK TJ TM UA US UY UZ,,luna1918 petr1708,,,,,,,ANZ CAS EAF EAS EEU NAM NEU SAM SEU WAS WEU,rus,CLDR,,
+ru,ru-Cyrl-RU,Russian,AM AU AZ BE BG BO BY CA CN CY CZ DE EE FI GE GR HR HU IL KG KZ LT LU LV MD ME MN MZ NO PL RO RS RU SE SJ SK TJ TM UA US UY UZ,,luna1918 petr1708,,,,,,,ANZ CAS EAF EAS EEU NAM NEU SAM SEU WAS WEU,rus,CLDR,,
 ru-Brai,ru-Brai-RU,Russian,AM AU AZ BE BG BY CA CN CY CZ DE EE FI GE GR HR HU IL KG KZ LT LU LV MD ME MN MZ NO PL RO RS RU SE SK TJ TM UA US UY UZ,,,,,,,,,ANZ CAS EAF EAS EEU NAM NEU SAM SEU WAS WEU,rus,,,
 rub,rub-Latn-UG,Gungu,UG,,,,,,,,,EAF,rub,LE,12-Jan-2018,
 ruc,ruc-Latn-UG,Ruuli,UG,,,,,,,,,EAF,ruc,LE,12-Jan-2018,
@@ -7039,8 +7042,8 @@ sfm,sfm-Plrd-CN,"Miao, Small Flowery",CN,,,,04793 06187,,,1,,EAS,sfm,,,
 sfs,sfs-Zxxx-ZA,South African Sign Language,ZA,,,,,,,,,SAF,sfs,,,
 sfw,sfw-Latn-GH,Sehwi,GH,,,,,,,,,WAF,sfw,LE,12-Jan-2018,
 sg,sg-Latn-CF,Sango,CD CF CG TD,,,,,,,,,MAF,sag,CLDR,,
-sga,sga-Ogam-IE,Old Irish (to 900),GB IE 001,,,,,,,,,NEU,sga,CLDR,,Historical
-sga-Latn,sga-Latn-IE,Old Irish (to 900),GB IE,,,,,,,,,NEU,sga,St,,Historical
+sga-Ogam,sga-Ogam-IE,Old Irish (to 900),GB IE 001,,,,,,,,,NEU,sga,CLDR,,Historical
+sga,sga-Latn-IE,Old Irish (to 900),GB IE,,,,,,,,,NEU,sga,St,,Historical
 sgb,sgb-Latn-PH,"Ayta, Mag-antsi",PH,,,,,,,,,SEA,sgb,,,
 sgc,sgc-Latn-KE,Kipsigis,KE,,,,,,,,,EAF,sgc,LE,12-Jan-2018,
 sgd,sgd-Latn-PH,Surigaonon,PH,,,,00279,,,,,SEA,sgd,LE,8-Jan-2018,minimal usage
@@ -7427,8 +7430,8 @@ str,str-Latn-CA,"Salish, Straits",CA US,,,,,,1,,,NAM,str,LE,9-Jan-2018,
 str-x-lekwungn,str-Latn-CA-x-lekwungn,Lekwungen,CA,,,,,,,,,NAM,str,,,
 sts,sts-Arab-AF,Shumashti,AF,,,,,,1,,,SAS,sts,,,
 stt,stt-Latn-VN,"Stieng, Budeh",VN,,,,,,,,,SEA,stt,NMC,4-Dec-2017,
-stu,stu-Latn-MM,Samtao,CN LA MM,,,,,,,,,EAS SEA,stu,,,
-stu-Lana,stu-Lana-MM,Samtao,CN LA MM,,,,,,,,,EAS SEA,stu,NMC,10-Jan-2018,
+stu-Latn,stu-Latn-MM,Samtao,CN LA MM,,,,,,,,,EAS SEA,stu,,,
+stu,stu-Lana-MM,Samtao,CN LA MM,,,,,,,,,EAS SEA,stu,NMC,10-Jan-2018,
 stu-Tale,stu-Tale-CN,Samtao,CN LA MM,,,,,,,,,EAS SEA,stu,,,
 stv,stv-Ethi-ET,Silt'e,ET,,,,01452,,,,,EAF,stv,LE,30-Aug-2018,
 stv-Arab,stv-Arab-ET,Silt'e,ET,,,,,,,,,EAF,stv,,,
@@ -8732,7 +8735,7 @@ xab,xab-Latn-NG,Sambe,NG,,,,,,1,,,WAF,xab,,,
 xac,xac-Zyyy-IN,Kachari,IN,,,,00619,,1,,,SAS,xac,,,
 xad,xad-Latn-XX,Adai,US XX,,,,,,1,,,NAM,xad,,,Extinct
 xae,xae-Zyyy-XX,Aequian,XX,,,,,,1,,,???,xae,,,Ancient
-xag,xag-Aghb-XX,Aghwan,XX,,,,,,,,,???,xag,,,Extinct
+xag,xag-Aghb-AZ,Aghwan,AZ,,,,,,,,,???,xag,,,Extinct
 xai,xai-Latn-BR,Kaimbé,BR,,,,,,1,,,SAM,xai,LE,10-Jan-2018,Extinct
 xaj,xaj-Latn-BR,Ararandewára,BR,,,,,,1,,,SAM,xaj,LE,10-Jan-2018,Extinct
 xak,xak-Latn-VE,Máku,BR VE,,,,,,1,,,SAM,xak,LE,10-Jan-2018,Extinct
@@ -8986,7 +8989,7 @@ xrw,xrw-Latn-PG,Karawa,PG,,,,,,1,,,MEL,xrw,LE,10-Jan-2018,
 xsa,xsa-Sarb-YE,Sabaean,YE,,,,,,,,,???,xsa,CLDR,,Ancient
 xsb,xsb-Latn-PH,Sambal,PH,,,,01985,,,,,SEA,xsb,LE,20-Mar-2018,
 xsc,xsc-Zyyy-XX,Scythian,XX,,,,,,1,,,???,xsc,,,Ancient
-xsd,xsd-Zyyy-TR,Sidetic,TR,,,,,,1,,,WAS,xsd,,,Ancient
+xsd,xsd-Sidt-TR,Sidetic,TR,,,,,,1,,,WAS,xsd,,,Ancient
 xse,xse-Latn-ID,Sempan,ID,,,,,,1,,,SEA,xse,,,
 xsh,xsh-Latn-NG,Shamang,NG,,,,,,1,,,WAF,xsh,,,
 xsi,xsi-Latn-PG,Sio,PG,,,,,,,,,MEL,xsi,LE,10-Jan-2018,
