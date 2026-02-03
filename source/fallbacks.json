@@ -1,0 +1,22 @@
+{
+    "rules": [
+        {
+            "tags": [ {"region": ["LA"]} ],
+            "fallback": "lo"
+        },
+        {
+            "tags": [ {"region": ["VN"]} ],
+            "fallback": "vi"
+        },
+        {
+            "comment": "Francophone Africa regions, with French as the primary official language",
+            "tags": [ { "region": ["BJ", "BF", "CM", "CG", "CI", "DJ", "GA", "GN", "NE", "SC", "TG"] }],
+            "fallback": "fr"
+        },
+        {
+            "ignore": false,
+            "tags": [ { "region": [ "FR", "LU", "MC", "GF", "GP", "MQ", "BL", "MF", "PM", "VU", "PF", "NC", "WF", "RE", "YT", "TF"]}],
+            "fallback": "fr"
+        }
+    ]
+}

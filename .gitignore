@@ -2,11 +2,12 @@
 *.pyc
 
 # build intermediates
-*.egg-info/**
+**/*.egg-info
 dist/
 build/
 /flat/**
 /unflat/**
+/pub
 
 # dev environment
 .venv/

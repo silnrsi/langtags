@@ -14,8 +14,8 @@ def nonascii(s):
 
 class Basic(unittest.TestCase):
 
-    extraScripts = ["Tayo", "Vith"]
-    extraLangs = ("000", "cls", "rrm", "vsn") 
+    extraScripts = ["Berf", "Hntl", "Seal"]
+    extraLangs = ("000", "oak", "vsn") 
 
     def setUp(self):
         self.fname = os.path.join(os.path.dirname(__file__), '../source/langtags.csv')

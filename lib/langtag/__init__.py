@@ -223,6 +223,8 @@ class LangTags(metaclass=_Singleton):
             s = TagSet(**d)
             for l in s.allTags(use639=False):
                 self._tags[str(l).lower()] = s
+                if l.vars:
+                    self._allvariants.update(l.vars)
             for l in s.allTags(use639=False):
                 if l.lang not in self._tags:
                     self._extralangs.add(l.lang)

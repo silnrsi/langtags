@@ -6,13 +6,12 @@ import xml.etree.ElementTree as et
 import csv, codecs
 import urllib.request as urllib2
 from collections import namedtuple
-from multiprocessing import Pool
+from multiprocessing import Pool, set_start_method
 import sldr.langtags_full as lt
 from palaso.unicode.ucd import UCD
 
-# A useless comment
-
 silns = "urn://www.sil.org/ldml/0.1"
+apiversion = "1.4"
 
 hacks = {
     "aeb-Arab-TN": (lambda n:n['tags'].extend(("aeb-Arab-IL", "ar-aeb-Arab-IL")), lambda n:n['regions'].remove('IL')),
@@ -20,12 +19,19 @@ hacks = {
 #    "aeb-Latn-TN": (lambda n:n.setdefault('tags', []).extend(("ar-aeb-Latn", "ar-aeb-Latn-TN")),)
 }
 
-try: unicode
-except NameError:
-    unicode = str
-
 Autonym = namedtuple('Autonym', ['langtag', 'name', 'roman'])
 ucds = UCD()
+
+def reciter(base, fn, i=0):
+    n = fn(base)
+    if n is None:
+        return
+    if i > 10:      # poor man's loop detector
+
+        return
+    for a in n:
+        yield a
+        yield from reciter(a, fn, i+1)
 
 def read_autonyms(filename):
     def stripinvisibles(s):
@@ -106,9 +112,9 @@ def process_cldrentry(s, lts, allentries, root='.'):
     if l.variants is not None and 'posix' in l.variants:
         return
     l.parentsame = False
+    n = None
     if l.region is not None:
         t = lt.LangTag(tag=None, lang=l.lang, script=l.script, variants=l.variants, extensions=l.extensions)
-        n = None
         if str(t) in lts:
             n = lts[str(t)]
         elif str(t) in allentries:
@@ -117,6 +123,7 @@ def process_cldrentry(s, lts, allentries, root='.'):
         if n is not None:
             if l.script is None:
                 l.script = n.script
+            assert l.lang is not None
             if n.hidescript and l.lang+"-"+l.region not in lts:
                 l.hidescript = True
             l.extra_variants = n.extra_variants
@@ -126,7 +133,7 @@ def process_cldrentry(s, lts, allentries, root='.'):
             l.parentsame = issimple(find_file(s, root))
     if not l.parentsame:
         lts.add(l)
-    elif l.region not in n.regions:
+    elif n is None or l.region not in n.regions:
         print(f"LDML region for {l} not in regions list")
     return l
 
@@ -152,6 +159,7 @@ def get_region_scriptnames():
     fname = os.path.join(os.path.dirname(lt.__file__), "language-subtag-registry.txt")
     with open(fname) as f :
         currlang = None
+        currname = None
         currscr = None
         mode = None
         deprecated = False
@@ -186,202 +194,6 @@ def fromiso639(t, isomap):
     b = t.split("-")
     b[0] = isomap.get(b[0], b[0])
     return "-".join(b)
-
-parser = ArgumentParser()
-parser.add_argument('infile', help='Input CSV file from Google drive')
-parser.add_argument('outfile', help='alltags.txt output file')
-parser.add_argument('-f','--flatdir', default='.', help='Directory containing full sldr tree, for language names')
-parser.add_argument('-i','--indir', default='.', help='Directory containing sldr tree with inheritance')
-parser.add_argument('-p','--operators',action="store_true",default=False,help="Output complex operators")
-parser.add_argument('-L','--langindex',help="Use local LanguageInfo.tab")
-parser.add_argument('-M','--macros',help="Use ISO639-3 Macrolanguage mappings file")
-parser.add_argument('-a','--autonyms',help="CSV of Autonyms from Ethnologue")
-parser.add_argument('-q','--quiet',action='store_false',default=True,help='Be noisy')
-parser.add_argument('-j','--jobs',type=int,default=0,help='Number of parallel jobs to run, 0 = number of processors')
-parser.add_argument('-Z','--debug',help="Break inside for the given lang tag prefix")
-parser.add_argument('-H','--hack',type=int,default=0,help='bitmap of hacks 1 - strip XK from regions list')
-args = parser.parse_args()
-
-if args.debug is not None:
-    args.jobs = 1
-
-if args.flatdir and not os.path.exists(args.flatdir):
-    print(f"Can't find {args.flatdir}")
-
-lts = lt.LangTags(noalltags=True)
-deprecated = {}
-iananames = {}
-suppress = {}
-preferences = {}
-cldrs = {}
-for k,v in lts.items():
-    if getattr(v, 'deprecated', False):
-        deprecated[v.lang] = "1"
-    if hasattr(v, 'desc'):
-        iananames[k] = v.desc
-    if getattr(v, 'suppress', False):
-        suppress[k] = v.script
-    if getattr(v, 'isCldr', False):
-        cldrs[k] = True
-    pref = getattr(v, 'preferred', None)
-    if pref is not None and v.mode == "extlang":
-        preferences.setdefault(pref, []).append(k)
-regionnames, scriptnames = get_region_scriptnames()
-lts.clear()
-allentries = {}
-allmacros = {}
-iso639map = {}
-if not args.quiet:
-    print("Reading CSV")
-with open(args.infile) as csvfile :
-    reader = csv.DictReader(csvfile)
-    for row in reader :
-#        if 'CLDR' in row['confirmed'] : continue
-        lid = row['Lang_Id']
-        ls = row['likely_subtag']
-        i6 = row['ISO 639-3']
-        d = row['deprecated']
-        rod = row['ROD']
-        variants = row['variants'].split()
-        macro = row['Macro']
-        t = lt.LangTag(ls)
-        b = lt.LangTag(lid)
-        if b.lang == "000":
-            continue
-        if args.debug is not None and str(b).startswith(args.debug):
-            import pdb; pdb.set_trace()
-        if d != "":
-            deprecated[t.lang] = d
-            if (4 > len(d) > 1 or "-" in d) and macro == "":
-                macro = d
-        if b.script in [None, 'Zyyy', 'Qaax']:
-            t.hidescript = True
-        if b.region is None :
-            t.hideregion = True
-        t.hideboth |= (t.hideregion and t.hidescript)
-        if b.variants is None and t.variants is not None:
-            t.hidevariants = t.variants[:]
-        if b.extensions is None and t.extensions is not None:
-            t.hideextensions = {k: v[:] for k, v in t.extensions.items()}
-        if t.lang in deprecated:
-            t.deprecated = deprecated[t.lang]
-        t.regions = row['regions'].split()
-        t.name = [row['LangName']]
-        t = lts.add(t)
-        if repr(t) in lts:
-            lts[repr(t)].iso639 = i6
-        if i6 != t.lang:
-            iso639map[i6] = t.lang
-        allentries[lid] = (t, row['regions'].split(' '))
-        if macro != "":
-            s = str(t)
-            m = lt.LangTag(macro)
-            if macro in t.allforms():
-                t.primary = macro
-            else:
-                m.merge_equivalent(t)
-            allmacros[s] = repr(m)
-        t.nofonipa = not t.hidescript and t.script != 'Latn'
-        t.extra_variants = variants
-        t.rod = rod
-        t.obsolete = row['obsolete'] != ""
-        t.unwritten = row['unwritten'] != ""
-
-if not args.quiet:
-    print("Reading sldr")
-for l in os.listdir(args.indir) :
-    if l.endswith('.xml') :
-        if 1 < len(l.split('_', 1)[0]) < 4 :
-            process_cldrentry(l[:-4], lts, allentries, root=args.indir)
-    elif len(l) == 1 and os.path.isdir(os.path.join(args.indir, l)) :
-        for s in os.listdir(os.path.join(args.indir, l)) :
-            if s.endswith('.xml') :
-                if 1 < len(s.split('_', 1)[0]) < 4 :
-                    process_cldrentry(s[:-4], lts, allentries, root=args.indir)
-
-for k, v in allmacros.items():
-    try:
-        base = lts[k]
-        macro = lts[v]
-    except KeyError:
-        macro = lt.LangTag(v)
-        lts.add(macro)
-        macro.iso639 = base.iso639
-        if base.script is None:
-            macro.hidescript = True
-        if base.region is None:
-            macro.hideregion = True
-    if base != macro:
-        base.skip = True
-    if not hasattr(macro, 'regions'):
-        macro.regions = []
-    if hasattr(base, 'regions'):
-        macro.regions.extend(base.regions)
-    ev = getattr(base, 'extra_variants', [])
-    if len(ev):
-        macro.extra_variants = sorted(set(getattr(macro, 'extra_variants', []) + ev))
-    macro.base.append(base)
-
-    
-names = {}
-pejoratives = {}
-if args.langindex:
-    namef = open(args.langindex, "r")
-else:
-    req = urllib2.Request(url="https://www.ethnologue.com/codes/LanguageIndex.tab",
-                          headers = {"User-Agent": "Mozilla"})
-    namef = urllib2.urlopen(req)
-reader = csv.DictReader(namef, dialect=csv.excel_tab)
-for r in reader:
-    if r['CountryID'] == 'ET' and r['NameType'] == 'LA':     # hack fix for buggy Ethnologue data. To Be Reviewed 21/Feb/2019, 2020
-        pejoratives.setdefault(r['LangID']+"-"+r['CountryID'], []).append(r['Name'].lower())
-    elif r['NameType'].startswith("L") and r['CountryID'] and not r['NameType'].endswith("P"):
-        names.setdefault(r['LangID']+"-"+r['CountryID'], [[],[]])[0 if r['NameType'] == 'L' else 1].append(r['Name'])
-    elif r['NameType'] == 'LP' and r['CountryID']:
-        pejoratives.setdefault(r['LangID']+"-"+r['CountryID'], []).append(r['Name'].lower())
-namef.close()
-
-macros = {}
-if args.macros:
-    namef = open(args.macros, "rb")
-else:
-    req = urllib2.Request(url="https://iso639-3.sil.org/sites/iso639-3/files/downloads/iso-639-3-macrolanguages.tab",
-                            headers = {"User-Agent": "Mozilla"})
-    namef = urllib2.urlopen(req)
-fields = namef.readline().decode("utf-8").split("\t")
-for l in namef.readlines():
-    b = l.decode("utf-8").strip().split("\t")
-    r = {fields[i]: b[i] for i in range(len(fields))}
-    macros[r['I_Id']] = r['M_Id']
-namef.close()
-
-
-collisions = {}
-res = []
-alllangreg = set()
-allscripts = {}
-allregions = {}
-langregions = {}
-usedregions = set()
-usedscripts = set()
-
-for t in set(lts.values()):
-    x = lt.LangTag(lang=t.lang, region=t.region, variants=t.variants, extensions=t.extensions)
-    allregions.setdefault(str(x), set()).add(t)
-    usedregions.add(t.region)
-    usedscripts.add(t.script)
-    y = t.copy()
-    #y.hidescript = True
-    #y.hideboth = True
-    y.hideregion = True
-    langregions.setdefault(str(y), set()).add(t.region)
-    x = lt.LangTag(lang=t.lang, script=t.script, variants=t.variants, extensions=t.extensions)
-    allscripts.setdefault(str(x), set()).add(t)
-
-if args.autonyms:
-    autonyms = read_autonyms(args.autonyms)
-else:
-    autonyms = {}
 
 def make_record(t, args):
     if t.skip:
@@ -467,21 +279,32 @@ def make_record(t, args):
             tags.add(str(ntag))
     if len(tags):
         n['tags'] = sorted(tags)
-    if hasattr(t, 'iso639'):
+    if "-" in r[0]:
+        ismin = lts.get(t.lang, None) is None or t.lang in ("con", "prn")
+    else:
+        ismin = True
+    if hasattr(t, 'iso639') and ismin:
         n['iso639_3'] = t.iso639
-    elif t.base is not None and len(t.base):
-        for b in t.base:
-            if hasattr(n, 'iso639'):
-                n['iso639_3'] = b.iso639
-                break
-    elif t.lang in lts:
-        x = lts[t.lang]
-        if hasattr(x, 'iso639'):
-            n['iso639_3'] = x.iso639
+    if t.base is not None and len(t.base):
+        for b in reciter(t, lambda x:getattr(x, 'base', None)):
+            # we must have an iso639_3 or else the base must just be a language. emk has no simple language form
+            if n.get('iso639_3', None) is None and "-" in b.allforms()[0] and b.allforms()[0][:3] not in ("emk", ):
+                continue
+            bi = getattr(b, 'iso639', None)
+            if bi is None or bi == n.get('iso639_3', None):
+                continue
+            n.setdefault('iso639_3extra', set()).add(bi)
+    #elif not hasattr(t, 'iso639') and t.lang in lts:
+    #    x = lts[t.lang]
+    #    if hasattr(x, 'iso639'):
+    #        n['iso639_3'] = x.iso639
     if 'iso639_3' in n:
         macro = macros.get(n['iso639_3'], None)
         if macro is not None:
             n['macrolang'] = iso639map.get(macro, macro)
+        contains = macrocontains.get(n['iso639_3'], None)
+        if contains is not None:
+            n['contains'] = [iso639map.get(c, c) for c in contains]
     auto = set()
     for l in r:
         x = lt.LangTag(l)
@@ -554,6 +377,8 @@ def make_record(t, args):
         n['nophonvars'] = True
     if getattr(t, 'extra_variants', ""):
         n['variants'] = t.extra_variants
+    if getattr(t, 'svariants', None):
+        n['svariants'] = t.svariants
     if getattr(t, 'rod', ""):
         n['rod'] = t.rod
     if getattr(t, 'obsolete', False):
@@ -571,57 +396,269 @@ def make_record(t, args):
     for k, v in n.items():
         if v is None:
             print("Null entry for {} in {}".format(k, n['tag']))
+    if 'iso639_3extra' in n:
+        n['iso639_3extra'] = sorted(n['iso639_3extra'])
     return n, alllrefs
 
-if not args.quiet:
-    print("Making records")
-# special record for passing standard variants
-conformance = {'tag': "_conformance"}
-extrascripts = set((x for x in scriptnames.keys() if len(x) == 4))
-extrascripts.update(('Qaa'+chr(97+a) for a in range(26)))
-extrascripts.update(('Qab'+chr(97+a) for a in range(24)))
-conformance['scripts'] = sorted(extrascripts - usedscripts)
-res.append({'tag': '_globalvar', 'variants': ['simple']})
-res.append({'tag': "_phonvar", 'variants': ['alalc97', 'fonipa', 'fonkirsh', 'fonnapa', 'fonupa', 'fonxsamp']})
-res.append(conformance)
-res.append({'tag': "_version", 'api': '1.3.1', 'date': str(datetime.date.today())})
-if args.jobs == 1:
-    for t in sorted(set(lts.values())):
-        r = make_record(t, args)
-        if r is not None:
-            res.append(r[0])
-            alllangreg.update(r[1])
-else:
-    def proc_record(t):
-        return make_record(t, args)
-    pool = Pool(processes=args.jobs) if args.jobs else Pool()
-    tempres = pool.imap_unordered(proc_record, sorted(set(lts.values())))
-    pool.close()
-    pool.join()
-    for r in sorted(tempres, key=lambda t:t[0]['full'] if t is not None else ""):
-        if r is not None:
-            res.append(r[0])
-            alllangreg.update(r[1])
+def main():
+    parser = ArgumentParser()
+    parser.add_argument('infile', help='Input CSV file from Google drive')
+    parser.add_argument('outfile', help='alltags.txt output file')
+    parser.add_argument('-f','--flatdir', default='.', help='Directory containing full sldr tree, for language names')
+    parser.add_argument('-i','--indir', default='.', help='Directory containing sldr tree with inheritance')
+    parser.add_argument('-p','--operators',action="store_true",default=False,help="Output complex operators")
+    parser.add_argument('-L','--langindex',help="Use local LanguageInfo.tab")
+    parser.add_argument('-M','--macros',help="Use ISO639-3 Macrolanguage mappings file")
+    parser.add_argument('-a','--autonyms',help="CSV of Autonyms from Ethnologue")
+    parser.add_argument('-q','--quiet',action='store_false',default=True,help='Be noisy')
+    parser.add_argument('-j','--jobs',type=int,default=0,help='Number of parallel jobs to run, 0 = number of processors')
+    parser.add_argument('-Z','--debug',help="Break inside for the given lang tag prefix")
+    parser.add_argument('-H','--hack',type=int,default=0,help='bitmap of hacks 1 - strip XK from regions list')
+    args = parser.parse_args()
 
-for t in res:
-    usedregions.update(getattr(t, 'regions', []))
-possibleregions = set((x for x in regionnames.keys() if len(x) == 2))
-possibleregions.update(('Q' + chr(65+a) for a in range(12, 26)))
-possibleregions.update(('X' + chr(65+a) for a in range(26)))
-conformance['regions'] = sorted(possibleregions - usedregions)
+    if args.debug is not None:
+        args.jobs = 1
 
-def mergelines(m):
-    return "[" + " ".join(x.strip() for x in m.group(1).split("\n")) + "]"
+    if args.flatdir and not os.path.exists(args.flatdir):
+        print(f"Can't find {args.flatdir}")
 
-if not args.quiet:
-    print("Output results")
-output = json.dumps(sorted(res, key=lambda x:x['tag']), sort_keys=True, indent=4, ensure_ascii=False)
-output = "[" + re.sub(r'\[([^\]]+)\]', mergelines, output[1:-1]) + "]\n"
-with codecs.open(args.outfile, "w", encoding="utf-8") as fh:
-    # use encoding="utf8" (not "utf-8") as a hack around a bug in json: https://stackoverflow.com/a/40777484/10488020
-    fh.write(output)
-missing = set(names.keys()) - alllangreg
-missing = set(fromiso639(x, iso639map) for x in missing)
-if len(missing):
-    print("Missing language regions ({}): ".format(len(missing)) + " ".join(sorted(missing)))
+    global iananames, iso639map, lts, preferences, regionnames, suppress
+    cldrs = {}
+    deprecated = {}
+    iananames = {}
+    lts = lt.LangTags(noalltags=True)
+    preferences = {}
+    suppress = {}
+    for k,v in lts.items():
+        if getattr(v, 'deprecated', False):
+            deprecated[v.lang] = "1"
+        if hasattr(v, 'desc'):
+            iananames[k] = v.desc
+        if getattr(v, 'suppress', False):
+            suppress[k] = v.script
+        if getattr(v, 'isCldr', False):
+            cldrs[k] = True
+        pref = getattr(v, 'preferred', None)
+        if pref is not None and v.mode == "extlang":
+            preferences.setdefault(pref, []).append(k)
+    regionnames, scriptnames = get_region_scriptnames()
+    lts.clear()
+    allentries = {}
+    allmacros = {}
+    iso639map = {}
+    if not args.quiet:
+        print("Reading CSV")
+    with open(args.infile) as csvfile :
+        reader = csv.DictReader(csvfile)
+        for row in reader :
+    #        if 'CLDR' in row['confirmed'] : continue
+            lid = row['Lang_Id']
+            ls = row['likely_subtag']
+            i6 = row['ISO 639-3']
+            d = row['deprecated']
+            rod = row['ROD']
+            variants = row['variants'].split()
+            svariants = row['svariants'].split()
+            macro = row['Macro']
+            t = lt.LangTag(ls)
+            b = lt.LangTag(lid)
+            if b.lang == "000":
+                continue
+            if args.debug is not None and str(b).startswith(args.debug):
+                import pdb; pdb.set_trace()
+            if d != "":
+                deprecated[t.lang] = d
+                if (4 > len(d) > 1 or "-" in d) and macro == "":
+                    macro = d
+            if b.script in [None, 'Zyyy', 'Qaax']:
+                t.hidescript = True
+            if b.region is None :
+                t.hideregion = True
+            t.hideboth |= (t.hideregion and t.hidescript)
+            if b.variants is None and t.variants is not None:
+                t.hidevariants = t.variants[:]
+            if b.extensions is None and t.extensions is not None:
+                t.hideextensions = {k: v[:] for k, v in t.extensions.items()}
+            if t.lang in deprecated:
+                t.deprecated = deprecated[t.lang]
+            t.regions = row['regions'].split()
+            t.name = [row['LangName']]
+            t = lts.add(t)
+            if repr(t) in lts:
+                lts[repr(t)].iso639 = i6
+            if i6 != t.lang:
+                iso639map[i6] = t.lang
+            allentries[lid] = (t, row['regions'].split(' '))
+            if macro != "":
+                s = str(t)
+                m = lt.LangTag(macro)
+                if macro in t.allforms():
+                    t.primary = macro
+                else:
+                    m.merge_equivalent(t)
+                allmacros[s] = repr(m)
+            t.nofonipa = not t.hidescript and t.script != 'Latn'
+            t.extra_variants = variants
+            t.rod = rod
+            t.obsolete = row['obsolete'] != ""
+            t.unwritten = row['unwritten'] != ""
+            t.svariants = svariants
 
+    if not args.quiet:
+        print("Reading sldr")
+    for l in os.listdir(args.indir) :
+        if l.endswith('.xml') :
+            if 1 < len(l.split('_', 1)[0]) < 4 :
+                process_cldrentry(l[:-4], lts, allentries, root=args.indir)
+        elif len(l) == 1 and os.path.isdir(os.path.join(args.indir, l)) :
+            for s in os.listdir(os.path.join(args.indir, l)) :
+                if s.endswith('.xml') :
+                    if 1 < len(s.split('_', 1)[0]) < 4 :
+                        process_cldrentry(s[:-4], lts, allentries, root=args.indir)
+
+    for k, v in allmacros.items():
+        base = lts[k]
+        try:
+            macro = lts[v]
+        except KeyError:
+            macro = lt.LangTag(v)
+            lts.add(macro)
+            macro.iso639 = base.iso639
+            if base.script is None:
+                macro.hidescript = True
+            if base.region is None:
+                macro.hideregion = True
+        if base != macro:
+            base.skip = True
+        if not hasattr(macro, 'regions'):
+            macro.regions = []
+        if hasattr(base, 'regions'):
+            macro.regions.extend(base.regions)
+        for a in ('extra_variants', 'svariants'):
+            ev = getattr(base, a, [])
+            if len(ev):
+                setattr(macro, a, sorted(set(getattr(macro, a, []) + ev)))
+        assert macro.base is not None
+        macro.base.append(base)
+
+    global names, pejoratives
+    names = {}
+    pejoratives = {}
+    if args.langindex:
+        namef = open(args.langindex, "r")
+    else:
+        req = urllib2.Request(url="https://www.ethnologue.com/codes/LanguageIndex.tab",
+                            headers = {"User-Agent": "Mozilla"})
+        namef = urllib2.urlopen(req)
+    reader = csv.DictReader(namef, dialect=csv.excel_tab)
+    for r in reader:
+        if r['CountryID'] == 'ET' and r['NameType'] == 'LA':     # hack fix for buggy Ethnologue data. To Be Reviewed 21/Feb/2019, 2020
+            pejoratives.setdefault(r['LangID']+"-"+r['CountryID'], []).append(r['Name'].lower())
+        elif r['NameType'].startswith("L") and r['CountryID'] and not r['NameType'].endswith("P"):
+            names.setdefault(r['LangID']+"-"+r['CountryID'], [[],[]])[0 if r['NameType'] == 'L' else 1].append(r['Name'])
+        elif r['NameType'] == 'LP' and r['CountryID']:
+            pejoratives.setdefault(r['LangID']+"-"+r['CountryID'], []).append(r['Name'].lower())
+    namef.close()
+
+    global macrocontains, macros
+    macros = {}
+    macrocontains = {}
+    if args.macros:
+        namef = open(args.macros, "rb")
+    else:
+        req = urllib2.Request(url="https://iso639-3.sil.org/sites/iso639-3/files/downloads/iso-639-3-macrolanguages.tab",
+                                headers = {"User-Agent": "Mozilla"})
+        namef = urllib2.urlopen(req)
+    fields = namef.readline().decode("utf-8").split("\t")
+    for l in namef.readlines():
+        b = l.decode("utf-8").strip().split("\t")
+        r = {fields[i]: b[i] for i in range(len(fields))}
+        macros[r['I_Id']] = r['M_Id']
+        macrocontains.setdefault(r['M_Id'], []).append(r['I_Id'])
+    namef.close()
+
+    global allregions, allscripts, collisions, langregions
+    collisions = {}
+    res = []
+    alllangreg = set()
+    allscripts = {}
+    allregions = {}
+    langregions = {}
+    usedregions = set()
+    usedscripts = set()
+
+    for t in set(lts.values()):
+        x = lt.LangTag(lang=t.lang, region=t.region, variants=t.variants, extensions=t.extensions)
+        allregions.setdefault(str(x), set()).add(t)
+        usedregions.add(t.region)
+        usedscripts.add(t.script)
+        y = t.copy()
+        #y.hidescript = True
+        #y.hideboth = True
+        y.hideregion = True
+        langregions.setdefault(str(y), set()).add(t.region)
+        x = lt.LangTag(lang=t.lang, script=t.script, variants=t.variants, extensions=t.extensions)
+        allscripts.setdefault(str(x), set()).add(t)
+
+    global autonyms
+    if args.autonyms:
+        autonyms = read_autonyms(args.autonyms)
+    else:
+        autonyms = {}
+
+    if not args.quiet:
+        print("Making records")
+    # special record for passing standard variants
+    conformance: dict[str, str|list]= {'tag': "_conformance"}
+    extrascripts = set((x for x in scriptnames.keys() if len(x) == 4))
+    extrascripts.update(('Qaa'+chr(97+a) for a in range(26)))
+    extrascripts.update(('Qab'+chr(97+a) for a in range(24)))
+    conformance['scripts'] = sorted(extrascripts - usedscripts)
+    res.append({'tag': '_globalvar', 'variants': ['simple']})
+    res.append({'tag': "_phonvar", 'variants': ['alalc97', 'fonipa', 'fonkirsh', 'fonnapa', 'fonupa', 'fonxsamp']})
+    res.append(conformance)
+    res.append({'tag': "_version", 'api': apiversion, 'date': str(datetime.date.today())})
+    if args.jobs == 1:
+        for t in sorted(set(lts.values())):
+            r = make_record(t, args)
+            if r is not None:
+                res.append(r[0])
+                alllangreg.update(r[1])
+    else:
+        global proc_record # The func paramter passed of Pool functions must be global.
+        def proc_record(t):
+            return make_record(t, args)
+        pool = Pool(processes=args.jobs) if args.jobs else Pool()
+        tempres = pool.imap_unordered(proc_record, sorted(set(lts.values())))
+        pool.close()
+        pool.join()
+        for r in sorted(tempres, key=lambda t: t[0]['full'] if t is not None else ""):
+            if r is not None:
+                res.append(r[0])
+                alllangreg.update(r[1])
+
+    for t in res:
+        usedregions.update(getattr(t, 'regions', []))
+    possibleregions = set((x for x in regionnames.keys() if len(x) == 2))
+    possibleregions.update(('Q' + chr(65+a) for a in range(12, 26)))
+    possibleregions.update(('X' + chr(65+a) for a in range(26)))
+    conformance['regions'] = sorted(possibleregions - usedregions)
+
+    def mergelines(m):
+        return "[" + " ".join(x.strip() for x in m.group(1).split("\n")) + "]"
+
+    if not args.quiet:
+        print("Output results")
+    output = json.dumps(sorted(res, key=lambda x:x['tag']), sort_keys=True, indent=4, ensure_ascii=False)
+    output = "[" + re.sub(r'\[([^\]]+)\]', mergelines, output[1:-1]) + "]\n"
+    with open(args.outfile, "w", encoding="utf-8") as fh:
+        # use encoding="utf8" (not "utf-8") as a hack around a bug in json: https://stackoverflow.com/a/40777484/10488020
+        fh.write(output)
+    missing = set(names.keys()) - alllangreg
+    missing = set(fromiso639(x, iso639map) for x in missing)
+    if len(missing):
+        print("Missing language regions ({}): ".format(len(missing)) + " ".join(sorted(missing)))
+
+if __name__ == '__main__':
+    set_start_method('fork')
+    main()

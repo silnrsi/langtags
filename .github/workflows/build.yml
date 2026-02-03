@@ -15,10 +15,7 @@ jobs:
       with:
         python-version: '3.13'
     - name: Install langtags package and depedencies
-      run: >-
-        pip install six .
-        sldr@git+https://github.com/silnrsi/sldrtools
-        palaso@git+https://github.com/silnrsi/palaso-python
+      run: pip install .
 
     - name: Download latest SLDR dependency
       uses: robinraju/release-downloader@v1
@@ -30,9 +27,10 @@ jobs:
         fileName: sldr.zip
 
     - name: Generate langtags
-      run: |
-        make SLDR=unflat FLATDIR=flat build
+      run: make SLDR=unflat FLATDIR=flat build
+
     - uses: actions/upload-artifact@v4
+      id: upload
       with:
         name: langtags
         path: |
@@ -47,10 +45,8 @@ jobs:
       with:
         python-version: '3.x'
     - name: Install langtags package and depedencies
-      run: >-
-        pip install six .
-        sldr@git+https://github.com/silnrsi/sldrtools
-        palaso@git+https://github.com/silnrsi/palaso-python
+      run: pip install .[tests]
+      
     - uses: actions/download-artifact@v4
       with:
         name: langtags

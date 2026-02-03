@@ -34,8 +34,17 @@
           "items": { "$ref": "#/definitions/bcp47_variant" },
           "additionalItems": false
         },
+        "svariants": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/bcp47_variant" },
+          "additionalItems": false
+        },
         "iso639_3": {
           "$ref": "#/definitions/iso639_3"
+        },
+        "iso639_3extra": {
+            "type": "array",
+            "items": { "type": "string"}
         },
         "region": {
           "$ref": "#/definitions/iso3166_1"
@@ -92,8 +101,26 @@
           "$ref": "#/definitions/bcp47"
         },
         "rod": { "type": "string"},
+        "rolv": {
+            "type": "array",
+            "items": { "type": "string" }
+        },
         "macrolang": {
-          "$ref": "#/definitions/bcp47"
+            "$ref": "#/definitions/bcp47"
+        },
+        "contains": {
+            "type": "array",
+            "items": { "$ref": "#/definitions/bcp47" }
+        },
+        "fallback": {
+            "type": "object",
+            "patternProperties": {
+                "^[a-zA-Z0-9-]+$": {
+                    "type": "array",
+                    "items": { "type": "string" }
+                }
+            },
+             "additionalProperties": false
         }
       },
       "required": ["full"],
@@ -188,7 +215,6 @@
       "type": "string",
       "pattern": "^[a-z]{3}$"
     },
-
     "iso3166_1": {
       "type": "string",
       "pattern": "^([A-Z]{2})|(\\d\\d\\d)$"

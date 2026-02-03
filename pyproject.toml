@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=62.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "langtag"
+version = "0.2.1"
+authors = [{name = "WSTech SIL", email = "fonts@sil.org"}]
+readme = "pyreadme.md"
+license = {file = "LICENSE"}
+description = "BCP47 language tags and tag sets"
+classifiers = [
+   "Environment :: Console",
+   "Programming Language :: Python :: 3.8",
+   "Intended Audience :: Developers",
+   "License :: OSI Approved :: MIT License",
+   "Topic :: Software Development :: Internationalization"
+   ]
+requires-python = ">=3.8"
+dependencies = [
+   "six",
+   "sldr@git+https://github.com/silnrsi/sldrtools",
+   "palaso@git+https://github.com/silnrsi/palaso-python"
+]
+
+[project.optional-dependencies]
+tests = ["jsonschema"]
+
+[project.urls]
+Home-Page = "https://github.com/silnrsi/langtags"
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+where = ["lib"]
+exclude = ["tests*", "bin*", "pub*"]
+
+[tool.bdist_wheel]
+universal = true
+
+[tool.pyright]
+reportAttributeAccessIssue = false
