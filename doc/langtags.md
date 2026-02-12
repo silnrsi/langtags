@@ -56,7 +56,7 @@ Langtags.json consists of an array of objects. Each object corresponds to an equ
 - **obsolete** If present and true indicates that the language is obsolete \[Added 1.2.1\]
 - **unwritten** If present and true indicates that the language is unwritten. It may still have a non Zyyy script due to regional inference. \[Added 1.2.1\]
 - **macrolang** If present another language tag which is a macro language containing this language. \[Added 1.3.1\]
-- **fallback** This gives tagset fallback information. See section on this \[added 1.4\] \[not yet implemented\]
+- **fallback** This gives tagset fallback information. See section on this \[added 1.4\]
 
 ### Special tags
 

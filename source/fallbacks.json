@@ -1,7 +1,7 @@
 {
   "rules": [
-    { "fallback": "ar-Arab", "tags": [{ "region": ["AE","BH","DZ","EG","EH","IQ","JO","KM","KW","LB","LY","MA","MR","OM","PS","QA","SA","SD","SY","TN","YE"] }] },
-    { "fallback": "az-Latn", "tags": [{ "region": ["AZ"] }] },
+    { "fallback": "ar", "tags": [{ "region": ["AE","BH","DZ","EG","EH","IQ","JO","KM","KW","LB","LY","MA","MR","OM","PS","QA","SA","SD","SY","TN","YE"] }] },
+    { "fallback": "az", "tags": [{ "region": ["AZ"] }] },
     { "fallback": "be", "tags": [{ "region": ["BY"] }] },
     { "fallback": "bi", "tags": [{ "region": ["VU"] }] },
     { "fallback": "bn", "tags": [{ "region": ["BD"] }] },
@@ -13,7 +13,7 @@
     { "fallback": "dv", "tags": [{ "region": ["MV"] }] },
     { "fallback": "dz", "tags": [{ "region": ["BT"] }] },
     { "fallback": "el", "tags": [{ "region": ["CY","GR"] }] },
-    { "fallback": "en", "tags": [{ "region": ["AG","AI","AS","AU","BB","BM","BS","BW","BZ","CA","CC","CK","CX","DM","FJ","FK","FM","GB","GD","GG","GH","GI","GM","GU","GY","IE","IM","IO","JE","JM","KI","KN","KY","LC","LR","MH","MP","MS","MU","MW","NA","NF","NG","NR","NU","NZ","PG","PN","PW","SB","SG","SH","SL","SS","SZ","TC","TK","TT","TV","UG","UM","US","VC","VG","VI","ZA","ZM","ZW"] }] },
+    { "fallback": "en", "tags": [{ "region": ["AG","AI","AS","AU","BB","BM","BS","BW","BZ","CA","CC","CK","CX","DM","FJ","FK","FM","GB","GD","GG","GH","GI","GM","GU","GY","IE","IM","IO","JE","JM","KI","KN","KY","LC","LR","MH","MP","MS","MU","MW","NA","NF","NG","NR","NU","NZ","PN","PW","SB","SG","SH","SL","SS","SZ","TC","TK","TT","TV","UG","UM","US","VC","VG","VI","ZA","ZM","ZW"] }] },
     { "fallback": "es", "tags": [{ "region": ["AR","BO","CL","CO","CR","CU","DO","EC","ES","GQ","GT","HN","MX","NI","PA","PE","PR","PY","SV","UY","VE"] }] },
     { "fallback": "et", "tags": [{ "region": ["EE"] }] },
     { "fallback": "fa", "tags": [{ "region": ["AF","IR"] }] },
@@ -62,7 +62,7 @@
     { "fallback": "sm", "tags": [{ "region": ["WS"] }] },
     { "fallback": "so", "tags": [{ "region": ["SO"] }] },
     { "fallback": "sq", "tags": [{ "region": ["AL"] }] },
-    { "fallback": "sr-Cyrl", "tags": [{ "region": ["RS"] }] },
+    { "fallback": "sr", "tags": [{ "region": ["RS"] }] },
     { "fallback": "sr-Latn", "tags": [{ "region": ["ME"] }] },
     { "fallback": "st", "tags": [{ "region": ["LS"] }] },
     { "fallback": "sv", "tags": [{ "region": ["AX","SE"] }] },
@@ -72,13 +72,14 @@
     { "fallback": "tg", "tags": [{ "region": ["TJ"] }] },
     { "fallback": "tk", "tags": [{ "region": ["TM"] }] },
     { "fallback": "to", "tags": [{ "region": ["TO"] }] },
+    { "fallback": "tpi", "tags": [{ "region": ["PG"] }] },
     { "fallback": "tr", "tags": [{ "region": ["TR"] }] },
     { "fallback": "uk", "tags": [{ "region": ["UA"] }] },
     { "fallback": "und", "tags": [{ "region": ["AQ","BV","GS","HM"] }] },
     { "fallback": "ur", "tags": [{ "region": ["PK"] }] },
-    { "fallback": "uz-Latn", "tags": [{ "region": ["UZ"] }] },
+    { "fallback": "uz", "tags": [{ "region": ["UZ"] }] },
     { "fallback": "vi", "tags": [{ "region": ["VN"] }] },
-    { "fallback": "zh-Hans", "tags": [{ "region": ["CN"] }] },
-    { "fallback": "zh-Hant", "tags": [{ "region": ["HK","MO","TW"] }] }
+    { "fallback": "zh-CN", "tags": [{ "region": ["CN"] }] },
+    { "fallback": "zh-TW", "tags": [{ "region": ["HK","MO","TW"] }] }
   ]
 }

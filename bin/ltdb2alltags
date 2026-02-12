@@ -206,6 +206,12 @@ def make_record(t, args):
     if t.region is None:
         print("Missing Region for {}".format(str(t)))
         return None
+
+    def test_tag(l, t):
+        return lts.get(l) is None or lts.get(l) == t \
+                or getattr(lts.get(l), 'deprecated', '') == t.lang \
+                or macros.get(getattr(lts.get(l), 'iso639', ''), "") == getattr(t, 'iso639', None)
+
     if hasattr(t, 'primary'):
         r = [t.primary] + [x for x in r if x != t.primary]
     # Add an entry for the region (if region hidden and this is the only tagset for this region in this lang)
@@ -224,7 +230,8 @@ def make_record(t, args):
         if ts in r:
             r.remove(ts)
         r.insert(0, ts)
-    n = {'tag': r[0], 'full': r[-1], 'script': t.script, 'region': t.region}
+    r = [x for x in r if test_tag(x, t)]
+    n = {'tag': r[0] if len(r) else None, 'full': r[-1], 'script': t.script, 'region': t.region}
     wintag = t.copy()
     if suppress.get(str(t), '') == t.script:
         n['suppress'] = True
@@ -277,8 +284,11 @@ def make_record(t, args):
                 ntag.region = apt.region
             ntag.lang = apt.lang
             tags.add(str(ntag))
-    if len(tags):
-        n['tags'] = sorted(tags)
+    tags = [x for x in tags if test_tag(x, t)]
+    for x in tags:
+        if lts.get(x) is None:
+            lts[x] = t
+    n['tags'] = sorted(tags)
     if "-" in r[0]:
         ismin = lts.get(t.lang, None) is None or t.lang in ("con", "prn")
     else:
@@ -370,6 +380,9 @@ def make_record(t, args):
         regions.discard("XK")
     testtag = re.sub(r'-(?:[A-Z]{2}|\d{3})(?:-|$)', '-{}', n['full'])
     regions = [r for r in regions if testtag.format(r) not in lts]
+    for r in regions:
+        if lts.get(f"{t.lang}-{r}") == t:
+            n['tags'].append(f"{t.lang}-{r}")
     if len(regions):
         n['regions'] = sorted(regions)
 #            n['regions'] = " ".join(sorted(regions))
@@ -393,6 +406,8 @@ def make_record(t, args):
         print("Multiple entries for: {} = {}, {}".format(n['tag'], n['full'], collisions[n['tag']]))
     else:
         collisions[n['tag']] = n['full']
+    if not len(n['tags']):
+        del n['tags']
     for k, v in n.items():
         if v is None:
             print("Null entry for {} in {}".format(k, n['tag']))
@@ -465,7 +480,7 @@ def main():
             if b.lang == "000":
                 continue
             if args.debug is not None and str(b).startswith(args.debug):
-                import pdb; pdb.set_trace()
+                breakpoint()
             if d != "":
                 deprecated[t.lang] = d
                 if (4 > len(d) > 1 or "-" in d) and macro == "":
@@ -484,6 +499,8 @@ def main():
             t.regions = row['regions'].split()
             t.name = [row['LangName']]
             t = lts.add(t)
+            if lts.get(b) is None:
+                lts[str(b)] = t
             if repr(t) in lts:
                 lts[repr(t)].iso639 = i6
             if i6 != t.lang:
@@ -526,6 +543,7 @@ def main():
             macro.iso639 = base.iso639
             if base.script is None:
                 macro.hidescript = True
+                print(f"{k} setting hidescript for {macro}")
             if base.region is None:
                 macro.hideregion = True
         if base != macro:
@@ -614,10 +632,10 @@ def main():
     extrascripts.update(('Qaa'+chr(97+a) for a in range(26)))
     extrascripts.update(('Qab'+chr(97+a) for a in range(24)))
     conformance['scripts'] = sorted(extrascripts - usedscripts)
+    res.append({'tag': "_version", 'api': apiversion, 'date': str(datetime.date.today())})
     res.append({'tag': '_globalvar', 'variants': ['simple']})
     res.append({'tag': "_phonvar", 'variants': ['alalc97', 'fonipa', 'fonkirsh', 'fonnapa', 'fonupa', 'fonxsamp']})
     res.append(conformance)
-    res.append({'tag': "_version", 'api': apiversion, 'date': str(datetime.date.today())})
     if args.jobs == 1:
         for t in sorted(set(lts.values())):
             r = make_record(t, args)
@@ -632,8 +650,8 @@ def main():
         tempres = pool.imap_unordered(proc_record, sorted(set(lts.values())))
         pool.close()
         pool.join()
-        for r in sorted(tempres, key=lambda t: t[0]['full'] if t is not None else ""):
-            if r is not None:
+        for r in sorted(tempres, key=lambda t: t[0].get('full', None) or "" if t is not None else ""):
+            if r is not None and len(r) > 1:
                 res.append(r[0])
                 alllangreg.update(r[1])
 

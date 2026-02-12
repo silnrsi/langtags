@@ -20,7 +20,8 @@ requires-python = ">=3.8"
 dependencies = [
    "six",
    "sldr@git+https://github.com/silnrsi/sldrtools",
-   "palaso@git+https://github.com/silnrsi/palaso-python"
+   "palaso@git+https://github.com/silnrsi/palaso-python",
+    "prompt_toolkit"
 ]
 
 [project.optional-dependencies]

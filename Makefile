@@ -14,7 +14,7 @@ all : test
 build : ${RESULTS}/${NAME}.json ${RESULTS}/${NAME}.txt # ${RESULTS}/${NAME}_inherited.txt
 
 ${RESULTS}/${NAME}.json : source/langtags.csv source/autonyms.csv source/langindex.tab source/rolv.json source/fallbacks.json ${LTDB} ${LTROLV} ${LTRFBACK} | ${RESULTS}
-	${LTDB} -i $(SLDR) -f $(FLATDIR) $(LTDBOPTS) -L source/langindex.tab -a source/autonyms.csv $< $@
+	${LTDB} -i $(SLDR) -f $(FLATDIR) $(LTDBOPTS) -L source/langindex.tab -j 1 -a source/autonyms.csv $< $@
 	${LTROLV} -o temp.json $@ source/rolv.json
 	${LTRFBACK} -o $@ temp.json source/fallbacks.json
 	@- rm temp.json

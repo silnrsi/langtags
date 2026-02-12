@@ -93,6 +93,11 @@ class LangTag(namedtuple('LangTag', ['lang', 'script', 'region', 'vars', 'ns']))
         lts = LangTags(fname=fname, **kw)
         return lts.test(self)
 
+    def copy(self, **kw):
+        ''' Creates a new LangTag with the changed attributes given '''
+        parms = [kw.get(a, getattr(self, a, None)) for a in self._fields]
+        return self.__class__(*parms)
+
 
 def langtag(s):
     '''Parses string to make a LangTag named tuple with properties: lang, script,

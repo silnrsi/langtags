@@ -1,0 +1,543 @@
+#!/usr/bin/env python3
+
+import argparse, json, re, datetime, csv, sys, os
+from langtag import langtag
+from sldr.iana import Iana
+from dataclasses import dataclass
+from copy import deepcopy
+from difflib import SequenceMatcher
+from prompt_toolkit.application import Application
+from prompt_toolkit.layout.containers import VSplit, HSplit, Window, VerticalAlign, HorizontalAlign
+from prompt_toolkit.layout.layout import Layout
+from prompt_toolkit.layout.controls import FormattedTextControl
+from prompt_toolkit.layout.dimension import Dimension
+from prompt_toolkit.widgets import TextArea, Button, Frame, Box
+from prompt_toolkit.key_binding import KeyBindings
+from prompt_toolkit.completion import WordCompleter
+from prompt_toolkit.mouse_events import MouseEventType
+from prompt_toolkit.styles import Style
+from prompt_toolkit.enums import EditingMode
+import logging
+
+logger = logging.getLogger(__name__)
+
+special_regions = {"TW": "China-Taiwan", "XK": "Kosovo"}
+
+def parsecmd(l):
+    result = re.findall(r'((?:[^\s\'"]|([\'"]).*?\2)+)', l)
+    return [s[0].strip('\'" ') for s in result]
+
+def read_autonyms(filename):
+    def stripinvisibles(s):
+        return re.sub("[\u200E]", "", s)
+    res = {}
+    with open(filename) as inf:
+        rdr = csv.reader(inf)
+        next(rdr)
+        for row in rdr:
+            lang = row[0].strip()
+            name = row[2].strip()
+            if len(row) > 4:
+                roman = row[4].strip()
+            # handle missing comma after T
+            elif len(row) > 3 and row[3].startswith("T"):
+                roman = row[3][1:].strip()
+            else:
+                roman = ""
+            script = script_analyze(name)
+            lt = "{}-{}".format(lang, script)
+            a = Autonym(lt, stripinvisibles(name), stripinvisibles(roman))
+            res.setdefault(lt, []).append(a)
+    return res
+
+@dataclass
+class Autonym:
+    langtag: str
+    name: str
+    roman: str
+
+class Editor:
+
+    @classmethod
+    def _description(cls):
+        docs = []
+        for a in dir(cls):
+            v = getattr(cls, a)
+            if a.startswith("_") or not callable(v):
+                continue
+            d = getattr(v, '__doc__', None)
+            if d is not None:
+                docs.append(d)
+        return docs
+
+    def __init__(self, ltags, quiet=False, sldr=None, fname=None):
+        self.ltags = ltags
+        self.curri = None
+        self.iana = None
+        self.quiet = quiet
+        self.sldr = sldr
+        self.fname = fname
+        self.autonyms = None
+        self.ui = None
+        self.undos = []
+        self.history = []
+
+    def _iana(self):
+        if self.iana is None:
+            self.iana = Iana()
+        return self.iana
+
+    def _autonyms(self, path):
+        self.autonyms = read_autonyms(path)
+        return self.autonyms
+
+    def _run(self, cmd, undo=True):
+        b = parsecmd(cmd)
+        if not len(b):
+            return None
+        fnname = b.pop(0)
+        f = getattr(self, fnname.lower(), None)
+        isundo = fnname.lower() == "undo"
+        res = ""
+        if f is not None:
+            if undo and not isundo:
+                self.undos.append(deepcopy(self.ltags))
+            res = f(*b)
+            if undo and not isundo:
+                self.history.append((cmd, res))
+        return res
+
+    def _find(self, tag, insert=False, fields=[]):
+        tagre = re.compile(tag)
+        if not len(fields):
+            fields = ["tag", "full"]
+        res = []
+        for i, e in enumerate(self.ltags):
+            for f in fields:
+                t = e.get(f, "")
+                if tagre.match(t):
+                    res.append(i)
+                    break
+                elif insert and t and t > tag:
+                    return [-i]
+        if not len(res):
+            res = (None, f"Failed to find {tag} in {' '.join(fields)}")
+        return res
+
+    def _listtags(self, indices):
+        return [self.ltags[i]['full'] for i in indices]
+
+    def _region_name(self, r):
+            if r in special_regions:
+                name = special_regions[r]
+            else:
+                name = self._iana().region[r]['description']
+            return name
+
+    def _get_text(self):
+        if self.curri is None:
+            return ""
+        return json.dumps([self.ltags[i] for i in self.curri], sort_keys=True, indent=4, ensure_ascii=False)
+
+    def _edit_json(self, text):
+        sets = json.loads(text)
+        a = self._listtags(self.curri)
+        b  = [t['full'] for t in sets]
+        logging.debug(f"{a=}, {b=}")
+        for o in reversed(SequenceMatcher(a=a, b=b).get_opcodes()):
+            logging.debug(f"{o=}")
+            if o[0] == "equal" or o[0] == "replace":
+                for i in range(o[2]-o[1]):
+                    self.ltags[self.curri[o[1]+i]] = sets[o[3]+i]
+            elif o[0] == "delete":
+                for i in range(o[1], o[2]):
+                    self.ltags.pop(self.curri[i])
+            elif o[0] == "insert":
+                j = self.curri[o[1]]
+                for i in range(o[3]-1, o[4]-1, -1):
+                    self.ltags.insert(j, sets[i])
+
+
+#--- functions that set the current tag
+    def add(self, tag, *a):
+        ''' add tag\t\tadds a new tagset with the given tag field if not present '''
+        i = self._find(tag, insert=True)
+        if i[0] is None:
+            return i[1]
+        if len(i) == 1 and i[0] < 0:
+            ts = {"tag": tag}
+            self.ltags.insert(-i[0], ts)
+            self.curri = [-i[0]]
+        elif len(i):
+            self.curri = i
+        
+    def edit(self, tag, *a):
+        ''' edit tag\t\tStarts editing the given tag (as found in tag or full) '''
+        i = self._find(tag)
+        if i[0] is not None:
+            self.curri = i
+        else:
+            return i[1]
+
+    def remove(self, tag, *a):
+        ''' remove tag [-a]\t\tDeletes the tagset associated with tag, -a allows multiple'''
+        isall = len(a) and a[0] == "-a"
+        i = self._find(tag)
+        if i[0] is None:
+            return i[1]
+        if len(i) > 1 and not isall:
+            return "{tag} matches multiple tagsets: {', '.join(self._listtags(i))}"
+        for j in sorted(i, reverse=True):
+            self.ltags.pop(j)
+        self.curri = []
+
+    def deprecate(self, tag, other, *a):
+        ''' deprecate tag, other\tTakes all tags from tag and adds them to other and then deletes tag '''
+        i = self._find(other)
+        j = self._find(tag)
+        if i[0] is None:
+            return i[1]
+        elif j[0] is None:
+            return j[1]
+        elif len(i) != 1 or len(j) != 1:
+            return f"{other} matches: {', '.join(self._listtags(i))}. {tag} matches: {', '.join(self._listtags(j))}"
+        ei = self.ltags[i[0]]
+        ej = self.ltags[j[0]]
+        alltags = [ej.get('tag', None), ej.get('full', None)] + ej.get('tags', [])
+        alltags = [t for t in alltags if t is not None]
+        if 'tags' in ei:
+            ei['tags'] += alltags
+        else:
+            ei['tags'] = alltags
+        self.ltags.pop(j[0])
+        self.curri = i
+
+    def addfull(self, tag, *a):
+        ''' addfull tag\tAdds a new tagset given a full tag, tag is just lang, setting script, region, windows, etc. '''
+        i = self._find(tag, insert = True)
+        if i[0] is None:
+            return i[1]
+        if len(i) != 1 or i[0] > 0:
+            self.curri = i
+            return f"One or more tagsets for {tag} already exists"
+        l = langtag(tag)
+        ts = {'full': tag, 'tag': l.lang, 'script': l.script, 'region': l.region}
+        # if len(l.lang) == 3:
+        # ts['iso639_3'] = l.lang       # more commonly the tag is reset and we don't want to have to delete this each time
+        ts['regionname'] = self._region_name(l.region)
+        ts['nophonvars'] = l.script != "Latn"
+        ts['sldr'] = False
+        ts['windows'] = str(l.copy(region=None))
+        self.ltags.insert(-i[0], ts)
+        self.curri = [-i[0]]
+
+    def updateautonyms(self, path, *a):
+        ''' updatateautonyms path\tRead the ethnologue file and update records from it '''
+        auto = self._autonyms(path)
+        res = []
+        for i, e in enumerate(self.ltags):
+            if e['tag'].startswith("_"):
+                continue
+            v = set()
+            l = langtag(e.get('full', e.get('tag', None)))
+            s = "{}-{}".format(l.lang, l.script)
+            v.update(auto[s])       # FIXME!
+            i6 = e.get('iso639_3', v.lang)
+            if i6 != v.lang:
+                v.update(auto[i6])
+
+
+#--- functions that work on the current tag
+    def addto(self, field, *a):
+        ''' addto field, values\tadds the values to field if not already present '''
+        if not len(self.curri):
+            return f"Nothing to add to. Select a tagset"
+        for i in self.curri:
+            e = self.ltags[i]
+            if field not in e:
+                e[field] = a
+            elif isinstance(e[field], list):
+                e[field].extend([v for v in a if v not in e[field]])
+            elif isinstance(e[field], str):
+                e[field] = ([e[field]] + a) if e[field] not in a else a
+
+    def removefrom(self, field, *a):
+        ''' removefrom field, values?\tdeletes field if no values or removes values from field if present '''
+        if not len(self.curri):
+            return f"Nothing to remove from. Select a tagset"
+        res = []
+        for i in self.curri:
+            e = self.ltags[i]
+            if field not in e:
+                continue
+            if not len(a):
+                del e[field]
+            elif isinstance(e[field], list):
+                for v in a:
+                    try:
+                        e[field].remove(v)
+                        res.append("{e['full']} removed {v} from {field}")
+                    except ValueError:
+                        res.append(f"{e['full']} missing {field}")
+                if not len(e[field]):
+                    del e[field]
+            elif e[field] in a:
+                del e[field]
+        return "\n".join(res)
+
+    def set(self, field, *a):
+        ''' set field, values\tSets the field to the given value(s) '''
+        if not len(self.curri):
+            return f"Nothing to set a field in. Select a tagset"
+        for i in self.curri:
+            e = self.ltags[i]
+            old = e.get(field, None)
+            e[field] = a if len(a) > 1 else a[0]
+            if field == "region":
+                name = self._region_name(a[0])
+                e['regionname'] = name
+                ntags = [str(langtag(t).copy(region=a[0])) if langtag(t).region == old else t for t in e.get('tags', [])]
+                if len(ntags):
+                    e['tags'] = ntags
+                e['full'] = str(langtag(e['full']).copy(region=a[0]))
+                t = langtag(e['tag'])
+                if t.region == old:
+                    e['tag'] = str(t.copy(region=a[0]))
+                regs = set(e.get("regions", []))
+                if a[0] in regs:
+                    regs.remove(a[0])
+                regs.add(old)
+                if len(regs):
+                    e['regions'] = sorted(regs)
+                else:
+                    e.pop('regions', None)
+                    
+            elif field == "script":
+                ntags = [str(langtag(t).copy(script=a[0])) if langtag(t).script == old else t for t in e.get('tags', [])]
+                if len(ntags):
+                    e['tags'] = ntags
+                e['full'] = str(langtag(e['full']).copy(script=a[0]))
+                for b in ('tag', 'windows'):
+                    t = langtag(e[b])
+                    if t.script == old:
+                        e[b] = str(t.copy(script=a[0]))
+            elif field == 'name':
+                if 'iana' not in e:
+                    e['iana'] = a
+
+#--- Interactive editor commands
+    def undo(self, *a):
+        '''undo\tReverts to the state before the last command'''
+        num = 1 if not len(a) else int(a[0])
+        for i in range(num):
+            if len(self.undos):
+                self.ltags = self.undos.pop()
+                self.history.pop()
+            else:
+                break
+        return "--UNDO--"
+
+    def runfile(self, file, *a):
+        '''runfile file\tRead commands from a file and execute without undo'''
+        results = []
+        with open(file, encoding="utf-8") as inf:
+            cmds = [s for s in inf.readlines()]
+        for l in cmds:
+            l = re.sub(r"\s*#.*$", "", l.strip())
+            if not l:
+                continue
+            results.append(f"\n{l}\n")
+            results.append(self._run(l, undo=False))
+        return "\n".join(results)
+
+    def quit(self, *a):
+        '''quit\tQuit without saving'''
+        if self.ui is not None:
+            self.ui.exit(False)
+
+    def exit(self, *a):
+        '''exit\tQuit with saving'''
+        if self.ui is not None:
+            self.ui.exit(True)
+
+    def save(self, *a):
+        '''save [file]\tSaves data to a file or input file'''
+        fname = a[0] if len(a) else self.fname
+        if fname is None:
+            return f"No filename specified anywhere"
+        def mergelines(m):
+            return "[" + " ".join(x.strip() for x in m.group(1).split("\n")) + "]"
+
+        output = json.dumps(sorted(self.ltags, key=lambda x:x['tag']), sort_keys=True, indent=4, ensure_ascii=False)
+        output = "[" + re.sub(r'\[([^\]]+)\]', mergelines, output[1:-1]) + "]\n"
+        with open(fname, "w", encoding="utf-8") as outf:
+            outf.write(output)
+        return f"{len(self.ltags)} records written to {fname}"
+
+    def list(self, field, *a):
+        '''list field [tagmatch] [match]\tList all records giving the field, if it matches and tagset matches'''
+        res = []
+        testag = re.compile(a[0]) if len(a) else None
+        testre = re.compile(a[1]) if len(a) > 1 else None
+        for e in self.ltags:
+            if e['tag'].startswith("_"):
+                continue
+            if field not in e:
+                continue
+            if testre and not testre.match(e[field]):
+                continue
+            if testag and not testag.match(e.get('tag', "")) and not testag.match(e.get('full', "")):
+                continue
+            res.append(f"{e['full']:12s} {e[field]}")
+        return "\n".join(res)
+
+    def vimmode(self, *a):
+        '''vimmode 1|0\tEnable vim mode for crazy people'''
+        if self.ui is not None:
+            mode = len(a) and int(a[0])
+            self.ui.set_vimmode(mode)
+            return f"Vim mode set to {mode}"
+
+
+class TUI(Application):
+    stylemod = Style.from_dict({
+        "button": "bg:#333333 #ffffff",
+    })
+    def __init__(self, data_manager):
+        self.dm = data_manager
+        self.dm.ui = self
+        self._prev_focus = None
+        self.editor = TextArea(multiline=True, scrollbar=True, line_numbers=True,
+                read_only=False, focusable=True, focus_on_click=True)
+        self.editor.window.dont_extend_width = lambda: False
+        self.results_area = TextArea(read_only=True, scrollbar=True, text="System Ready.")
+        self.revert_btn = Button("Revert", handler=self._revert_changes)
+        self.history_display = TextArea(read_only=True, scrollbar=True, text="History...", height=10,
+                focus_on_click=True)
+        self.hdmh = self.history_display.control.mouse_handler
+        self.history_display.control.mouse_handler = self._on_history_click
+        self.cmd_completer = WordCompleter(['filter', 'reset', 'undo', 'exit'], ignore_case=True)
+        self.command_input = TextArea(height=2, multiline=False,
+                completer=self.cmd_completer, prompt="> ", accept_handler=self._accept_command,
+                focus_on_click=True)
+        self.mode_label = Window(content=FormattedTextControl(self._get_mode_text), align="right", 
+                dont_extend_width=True, style="class:status.label", height=3)
+
+        button_row = VSplit([self.revert_btn, Window(), self.mode_label], height=1, padding=1)
+
+        root_container = VSplit([
+            HSplit([
+                Frame(self.results_area, title="Results/Output"),
+                Frame(HSplit([self.history_display, self.command_input]), title="Command Console"),
+            ], width=50),
+            Frame(HSplit([self.editor, button_row], width=Dimension(weight=1)), title="Tagset Editor")
+        ])
+
+        kb = KeyBindings()
+
+        @kb.add("c-c")
+        def _(event):
+            event.app.exit(False)
+
+        @kb.add("tab")
+        def _(event):
+            event.app.layout.focus_next()
+
+        super().__init__(layout=Layout(root_container, focused_element=self.command_input),
+                key_bindings=kb, mouse_support=True, full_screen=True, style=self.stylemod)
+        logging.debug("Application initialised")
+        self.on_invalidate += self._on_invalidate
+
+    def _on_invalidate(self, value):
+        ew = self.editor.window
+        cw = self.layout.current_window
+        if self._prev_focus == ew and cw != ew:
+            self.dm._edit_json(self.editor.text)
+        self._prev_focus = self.layout.current_window
+
+    def _revert_changes(self):
+        """Restores the editor to the state stored in DataManager."""
+        self.editor.text = self.dm._get_text()
+
+    def _on_history_click(self, mouse_event):
+        output = f"{mouse_event.event_type} @ {mouse_event.position.y}"
+        if mouse_event.event_type == MouseEventType.MOUSE_UP:
+            line_num = mouse_event.position.y
+            if line_num < len(self.dm.history):
+                cmd, output = self.dm.history[line_num]
+                self.results_area.text = output or ""
+                if cmd:
+                    self.command_input.text = cmd
+                    self.command_input.buffer.cursor_position = len(cmd)
+                    self.layout.focus(self.command_input)
+                    return None
+        return self.hdmh(mouse_event)
+
+    def _accept_command(self, buffer):
+        cmd_text = self.command_input.text
+        output = self.dm._run(cmd_text)
+
+        if output != "--UNDO--":
+            self.results_area.text = output or ""
+        self.editor.text = self.dm._get_text()
+        self.history_display.text = "\n".join([c[0] for c in self.dm.history])
+        self.command_input.text = ""
+
+    def _get_mode_text(self):
+        """Returns a styled label based on the current editing state."""
+        # 1. Check for Vim vs Emacs
+        if self.editing_mode == EditingMode.VI:
+            mode = str(self.vi_state.input_mode)
+            if 'INSERT' in mode.upper():
+                return [("class:mode.vi.insert", " [VIM INSERT] ")]
+            return [("class:mode.vi.normal", " [VIM NORMAL] ")]
+        return [("class:mode.standard", " [STANDARD] ")]
+
+    def set_vimmode(self, mode):
+        self.editing_mode = EditingMode.VI if mode else EditingMode.EMACS
+
+desc = """Edit control file commands:
+""" + "\n".join(Editor._description())
+
+parser = argparse.ArgumentParser(description=desc, formatter_class=argparse.RawTextHelpFormatter)
+parser.add_argument("infile",nargs="?",default="langtags.json",help="json file to edit")
+parser.add_argument("-e","--editfile",help="Edit control file")
+parser.add_argument("-c","--command",action="store_true",help="control file becomes ; separate instructions")
+parser.add_argument("-o","--outfile",help="Output file else rewrite to input")
+parser.add_argument("-s","--sldr",help="SLDR directory for whatever reason")
+parser.add_argument("-V","--noversion",action="store_true",help="Don't update version info in the file")
+parser.add_argument("-q","--quiet",action="store_true",help="Don't complain about things")
+parser.add_argument("-l","--logfile",help="Log to file")
+args = parser.parse_args()
+
+if args.logfile:
+    if os.path.exists(args.logfile):
+        os.unlink(args.logfile)
+    logging.basicConfig(filename=args.logfile, level=logging.DEBUG, format="%(asctime)s - %(levelname)s - %(message)s",
+            force=True)
+
+with open(args.infile, encoding="utf-8") as inf:
+    ltags = json.load(inf)
+
+saveme = True
+edit = Editor(ltags, sldr=args.sldr, quiet=args.quiet, fname=args.infile or args.outfile)
+if args.command:
+    cmds = [s.strip() for s in args.editfile.split(";")]
+    for c in cmds:
+        res = edit._run(c, undo=False)
+        if not args.quiet:
+            print(f"{c}\n{res}\n")
+elif args.editfile:
+    res = edit.runfile(args.editfile)
+    if not args.quiet:
+        print(res)
+else:
+    ui = TUI(edit)
+    saveme = ui.run()
+
+edit.edit("_version")
+edit.set("date", str(datetime.date.today()))
+
+if saveme:
+    edit.save()
+
