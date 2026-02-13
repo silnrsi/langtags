@@ -70,13 +70,13 @@ class Editor:
                 docs.append(d)
         return docs
 
-    def __init__(self, ltags, quiet=False, sldr=None, fname=None):
+    def __init__(self, ltags, quiet=False, fname=None, validator=None):
         self.ltags = ltags
         self.curri = None
         self.iana = None
         self.quiet = quiet
-        self.sldr = sldr
         self.fname = fname
+        self.validator = validator
         self.autonyms = None
         self.ui = None
         self.undos = []
@@ -142,7 +142,12 @@ class Editor:
     def _edit_json(self, text):
         if text is None or not len(text):
             return
+        res = []
         sets = json.loads(text)
+        if self.validator is not None:
+            for t in sets:
+                for error in self.validator.iter_errors(t):
+                    res.append(error.message)
         a = self._listtags(self.curri)
         b  = [t['full'] for t in sets]
         logging.debug(f"{a=}, {b=}")
@@ -158,6 +163,7 @@ class Editor:
                 j = self.curri[o[1]]
                 for i in range(o[3]-1, o[4]-1, -1):
                     self.ltags.insert(j, sets[i])
+        return "\n".join(res)
 
 
 #--- functions that set the current tag
@@ -419,7 +425,8 @@ class TUI(Application):
         self.editor = TextArea(multiline=True, scrollbar=True, line_numbers=True,
                 read_only=False, focusable=True, focus_on_click=True)
         self.editor.window.dont_extend_width = lambda: False
-        self.results_area = TextArea(read_only=True, scrollbar=True, text="System Ready.", wrap_lines=True)
+        self.results_area = TextArea(read_only=True, scrollbar=True, text="System Ready.",
+                wrap_lines=True, focus_on_click=True)
         self.revert_btn = Button("Revert", handler=self._revert_changes)
         self.history_display = TextArea(read_only=True, scrollbar=True, text="History...", height=10,
                 focus_on_click=True)
@@ -462,7 +469,9 @@ class TUI(Application):
         ew = self.editor.window
         cw = self.layout.current_window
         if self._prev_focus == ew and cw != ew:
-            self.dm._edit_json(self.editor.text)
+            res = self.dm._edit_json(self.editor.text)
+            if res is not None and len(res):
+                self.results_area.text = res
         self._prev_focus = self.layout.current_window
 
     def _revert_changes(self):
@@ -514,7 +523,7 @@ parser.add_argument("infile",nargs="?",default="langtags.json",help="json file t
 parser.add_argument("-e","--editfile",help="Edit control file")
 parser.add_argument("-c","--command",action="store_true",help="control file becomes ; separate instructions")
 parser.add_argument("-o","--outfile",help="Output file else rewrite to input")
-parser.add_argument("-s","--sldr",help="SLDR directory for whatever reason")
+parser.add_argument("-s","--schema",help="Validate changes against schema")
 parser.add_argument("-V","--noversion",action="store_true",help="Don't update version info in the file")
 parser.add_argument("-q","--quiet",action="store_true",help="Don't complain about things")
 parser.add_argument("-l","--logfile",help="Log to file")
@@ -529,8 +538,27 @@ if args.logfile:
 with open(args.infile, encoding="utf-8") as inf:
     ltags = json.load(inf)
 
+if args.schema:
+    try:
+        from jsonschema.validators import validator_for
+        import warnings
+    except ImportError:
+        print("Python jsonschema module missing")
+        sys.exit(1)
+    with open(args.schema) as inf:
+        schema = json.load(inf)
+    with warnings.catch_warnings():
+        warnings.simplefilter("ignore")
+        factory = validator_for(schema)
+    full_validator = factory(schema=schema)
+    full_validator.check_schema(schema)
+    validator = full_validator.evolve(schema=full_validator.schema["definitions"]["langtags"]["items"])
+else:
+    validator = None
+
 saveme = True
-edit = Editor(ltags, sldr=args.sldr, quiet=args.quiet, fname=args.infile or args.outfile)
+edit = Editor(ltags, quiet=args.quiet, fname=args.infile or args.outfile,
+        validator=validator)
 if args.command:
     cmds = [s.strip() for s in args.editfile.split(";")]
     for c in cmds:
@@ -547,6 +575,13 @@ else:
 
 edit.edit("_version")
 edit.set("date", str(datetime.date.today()))
+
+if validator is not None:   # then full_validator is defined
+    res = []
+    print("Validating...")
+    for error in full_validator.iter_errors(edit.ltags):
+        res.append(error.message)
+    print("\n".join(res))
 
 if saveme:
     edit.save()
