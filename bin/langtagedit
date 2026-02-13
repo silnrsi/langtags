@@ -73,13 +73,14 @@ class Editor:
                 docs.append(d)
         return docs
 
-    def __init__(self, ltags, quiet=False, fname=None, validator=None):
+    def __init__(self, ltags, quiet=False, fname=None, validator=None, fullval=None):
         self.ltags = ltags
         self.curri = None
         self.iana = None
         self.quiet = quiet
         self.fname = fname
         self.validator = validator
+        self.fullval = fullval
         self.autonyms = None
         self.ui = None
         self.undos = []
@@ -371,11 +372,26 @@ class Editor:
         if self.ui is not None:
             self.ui.exit(True)
 
+    def validate(self, *a):
+        if self.fullval is not None:   # then full_validator is defined
+            res = []
+            for error in self.fullval.iter_errors(self.ltags):
+                res.append(error.message)
+            if not len(res):
+                res.append("Passed")
+            return "\n".join(res)
+        return "No validator specified"
+
     def save(self, *a):
         '''save [file]\tSaves data to a file or input file'''
         fname = a[0] if len(a) else self.fname
         if fname is None:
             return f"No filename specified anywhere"
+
+        res = []
+        if self.fullval is not None:
+            res = self.validate()
+
         def mergelines(m):
             return "[" + " ".join(x.strip() for x in m.group(1).split("\n")) + "]"
 
@@ -383,7 +399,8 @@ class Editor:
         output = "[" + re.sub(r'\[([^\]]+)\]', mergelines, output[1:-1]) + "]\n"
         with open(fname, "w", encoding="utf-8") as outf:
             outf.write(output)
-        return f"{len(self.ltags)} records written to {fname}"
+        res.append(f"{len(self.ltags)} records written to {fname}")
+        return "\n".join(res)
 
     def list(self, field, *a):
         '''list field [tagmatch] [match]\tList all records giving the field, if it matches and tagset matches'''
@@ -425,6 +442,8 @@ class TUI(Application):
         self.dm = data_manager
         self.dm.ui = self
         self._prev_focus = None
+        self.result = None
+
         self.editor = TextArea(multiline=True, scrollbar=True, line_numbers=True,
                 read_only=False, focusable=True, focus_on_click=True)
         self.editor.window.dont_extend_width = lambda: False
@@ -517,6 +536,10 @@ class TUI(Application):
 
     def set_vimmode(self, mode):
         self.editing_mode = EditingMode.VI if mode else EditingMode.EMACS
+
+    def exit(self, val):
+        self.result = val
+        super().exit(val)
 
 class TkUI(tk.Tk):
     def __init__(self, data_manager):
@@ -717,10 +740,11 @@ if args.schema:
     validator = full_validator.evolve(schema=full_validator.schema["definitions"]["langtags"]["items"])
 else:
     validator = None
+    full_validator = None
 
 saveme = True
 edit = Editor(ltags, quiet=args.quiet, fname=args.infile or args.outfile,
-        validator=validator)
+        validator=validator, fullval=full_validator)
 if args.command:
     cmds = [s.strip() for s in args.editfile.split(";")]
     for c in cmds:
@@ -741,13 +765,6 @@ else:
 
 edit.edit("_version")
 edit.set("date", str(datetime.date.today()))
-
-if validator is not None:   # then full_validator is defined
-    res = []
-    print("Validating...")
-    for error in full_validator.iter_errors(edit.ltags):
-        res.append(error.message)
-    print("\n".join(res))
 
 if saveme:
     edit.save()
