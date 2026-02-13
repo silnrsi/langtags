@@ -17,6 +17,9 @@ from prompt_toolkit.completion import WordCompleter
 from prompt_toolkit.mouse_events import MouseEventType
 from prompt_toolkit.styles import Style
 from prompt_toolkit.enums import EditingMode
+import tkinter as tk
+from tkinter import ttk
+
 import logging
 
 logger = logging.getLogger(__name__)
@@ -515,6 +518,164 @@ class TUI(Application):
     def set_vimmode(self, mode):
         self.editing_mode = EditingMode.VI if mode else EditingMode.EMACS
 
+class TkUI(tk.Tk):
+    def __init__(self, data_manager):
+        super().__init__()
+
+        self.dm = data_manager
+        self.dm.ui = self
+        self.result = None
+
+        self.title("Langtags Editor")
+        self.geometry("1200x800")
+
+        # --- Root Sliding Split ---
+        root_split = ttk.PanedWindow(self, orient="horizontal")
+        root_split.pack(fill="both", expand=True)
+
+        # =========================
+        # LEFT SIDE
+        # =========================
+        left_split = ttk.PanedWindow(root_split, orient="vertical")
+        root_split.add(left_split, weight=1)
+
+        # ---- Results ----
+        results_frame = ttk.LabelFrame(left_split, text="Results / Output")
+        results_frame.pack(fill="both", expand=True)
+        self.results_area = tk.Text(results_frame, wrap="word", height=10)
+        self.results_area.insert("1.0", "System Ready.")
+        self._add_scrollbar(results_frame, self.results_area)
+        left_split.add(results_frame, weight=1)
+
+        # ---- Console ----
+        console_frame = ttk.LabelFrame(left_split, text="Command Console")
+        console_split = ttk.PanedWindow(console_frame, orient="vertical")
+        console_split.pack(fill="both", expand=True)
+
+        # History
+        history_pane = tk.Frame(console_split, bd=0, highlightthickness=0)
+        self.history_display = tk.Text(history_pane, height=4)
+        #history_pane.pack(fill="both", expand=True)
+        self._add_scrollbar(history_pane, self.history_display)
+        console_split.add(history_pane, weight=1)
+
+        self.history_display.bind("<ButtonRelease-1>", self._on_history_click)
+
+        # Command input
+        command_pane = tk.Frame(console_split, bd=0, highlightthickness=0)
+        self.command_input = ttk.Entry(command_pane)
+        self.command_input.pack(fill="x", expand=False, padx=2, pady=2)
+        console_split.add(command_pane, weight=0)
+
+        self.command_input.bind("<Return>", self._accept_command)
+
+        left_split.add(console_frame, weight=1)
+
+        # =========================
+        # RIGHT SIDE
+        # =========================
+        editor_frame = ttk.LabelFrame(root_split, text="Tagset Editor")
+        root_split.add(editor_frame, weight=1)
+
+        editor_split = ttk.Frame(editor_frame)
+        editor_split.pack(fill="both", expand=True)
+
+        # Editor
+        self.editor = tk.Text(editor_split, undo=True)
+        self.editor.pack(fill="both", expand=True)
+        self._add_scrollbar(editor_split, self.editor)
+
+        self.editor.bind("<FocusOut>", self._on_editor_focus_out)
+
+        # ---- Button Row ----
+        button_row = ttk.Frame(editor_split)
+        button_row.grid(row=1, column=0)
+
+        self.revert_btn = ttk.Button(
+            button_row,
+            text="Revert",
+            command=self._revert_changes
+        )
+        self.revert_btn.pack(side="left")
+
+        # --- Keybinds ---
+        self.bind("<Control-c>", lambda e: self.quit())
+        self.bind("<Control-d>", lambda e: self.quit())
+        self.bind("<Tab>", self._focus_next)
+
+    # =========================
+    # BEHAVIOUR
+    # =========================
+
+    def _add_scrollbar(self, frame, text):
+        ys = ttk.Scrollbar(frame, orient="vertical", command=text.yview)
+        text.configure(yscrollcommand=ys.set)
+        text.grid(row=0, column=0, sticky="nsew")
+        ys.grid(row=0, column=1, sticky="ns")
+        frame.grid_rowconfigure(0, weight=1)
+        frame.grid_columnconfigure(0, weight=1)
+
+    def _focus_next(self, event):
+        event.widget.tk_focusNext().focus()
+        return "break"
+
+    def _on_editor_focus_out(self, event):
+        self.after_idle(self._maybe_commit_editor)
+
+    def _maybe_commit_editor(self):
+        new_focus = self.focus_get()
+        if new_focus is None or new_focus is self.revert_btn:
+            return
+        res = self.dm._edit_json(self.editor.get("1.0", "end"))
+        if res:
+            self.results_area.delete("1.0", "end")
+            self.results_area.insert("1.0", res)
+
+    def _revert_changes(self):
+        self.editor.delete("1.0", "end")
+        self.editor.insert("1.0", self.dm._get_text())
+
+    def _on_history_click(self, event):
+        index = self.history_display.index(f"@{event.x},{event.y}")
+        line = int(index.split(".")[0]) - 1
+
+        if line < len(self.dm.history):
+            cmd, output = self.dm.history[line]
+            self.results_area.delete("1.0", "end")
+            self.results_area.insert("1.0", output or "")
+
+            if cmd:
+                self.command_input.delete(0, "end")
+                self.command_input.insert(0, cmd)
+                self.command_input.focus()
+
+    def _accept_command(self, event):
+        cmd_text = self.command_input.get()
+        output = self.dm._run(cmd_text)
+
+        if output != "--UNDO--":
+            self.results_area.delete("1.0", "end")
+            self.results_area.insert("1.0", output or "")
+
+        self.editor.delete("1.0", "end")
+        self.editor.insert("1.0", self.dm._get_text())
+
+        self.history_display.delete("1.0", "end")
+        self.history_display.insert(
+            "1.0",
+            "\n".join([c[0] for c in self.dm.history])
+        )
+
+        self.command_input.delete(0, "end")
+
+    def exit(self, val):
+        self.result = val
+        self.quit()
+
+    def set_vimmode(self, mode):
+        return
+
+
 desc = """Edit control file commands:
 """ + "\n".join(Editor._description())
 
@@ -522,6 +683,7 @@ parser = argparse.ArgumentParser(description=desc, formatter_class=argparse.RawT
 parser.add_argument("infile",nargs="?",default="langtags.json",help="json file to edit")
 parser.add_argument("-e","--editfile",help="Edit control file")
 parser.add_argument("-c","--command",action="store_true",help="control file becomes ; separate instructions")
+parser.add_argument("-t","--textui",action="store_true",help="Use Tk GUI")
 parser.add_argument("-o","--outfile",help="Output file else rewrite to input")
 parser.add_argument("-s","--schema",help="Validate changes against schema")
 parser.add_argument("-V","--noversion",action="store_true",help="Don't update version info in the file")
@@ -569,9 +731,13 @@ elif args.editfile:
     res = edit.runfile(args.editfile)
     if not args.quiet:
         print(res)
-else:
+elif args.textui:
     ui = TUI(edit)
-    saveme = ui.run()
+    ui.run()
+    saveme = True if ui.result else False
+else:
+    ui = TkUI(edit)
+    saveme = ui.mainloop()
 
 edit.edit("_version")
 edit.set("date", str(datetime.date.today()))
