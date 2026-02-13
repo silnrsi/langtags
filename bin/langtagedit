@@ -140,6 +140,8 @@ class Editor:
         return json.dumps([self.ltags[i] for i in self.curri], sort_keys=True, indent=4, ensure_ascii=False)
 
     def _edit_json(self, text):
+        if text is None or not len(text):
+            return
         sets = json.loads(text)
         a = self._listtags(self.curri)
         b  = [t['full'] for t in sets]
@@ -398,6 +400,13 @@ class Editor:
             self.ui.set_vimmode(mode)
             return f"Vim mode set to {mode}"
 
+    def help(self):
+        '''help\tPrints out summary of all commands'''
+        res = self._description()
+        res = re.sub(r"[ ]{2,}|\t", ": - ", "\n\n".join(res))
+        logger.debug(f"HELP:\n{res}")
+        return res
+
 
 class TUI(Application):
     stylemod = Style.from_dict({
@@ -410,7 +419,7 @@ class TUI(Application):
         self.editor = TextArea(multiline=True, scrollbar=True, line_numbers=True,
                 read_only=False, focusable=True, focus_on_click=True)
         self.editor.window.dont_extend_width = lambda: False
-        self.results_area = TextArea(read_only=True, scrollbar=True, text="System Ready.")
+        self.results_area = TextArea(read_only=True, scrollbar=True, text="System Ready.", wrap_lines=True)
         self.revert_btn = Button("Revert", handler=self._revert_changes)
         self.history_display = TextArea(read_only=True, scrollbar=True, text="History...", height=10,
                 focus_on_click=True)
@@ -422,20 +431,21 @@ class TUI(Application):
                 focus_on_click=True)
         self.mode_label = Window(content=FormattedTextControl(self._get_mode_text), align="right", 
                 dont_extend_width=True, style="class:status.label", height=3)
+        self.sidebar_width=50
 
         button_row = VSplit([self.revert_btn, Window(), self.mode_label], height=1, padding=1)
-
         root_container = VSplit([
             HSplit([
                 Frame(self.results_area, title="Results/Output"),
                 Frame(HSplit([self.history_display, self.command_input]), title="Command Console"),
-            ], width=50),
+            ], width=lambda: Dimension(weight=1)),
             Frame(HSplit([self.editor, button_row], width=Dimension(weight=1)), title="Tagset Editor")
         ])
 
         kb = KeyBindings()
 
         @kb.add("c-c")
+        @kb.add("c-d")
         def _(event):
             event.app.exit(False)
 
