@@ -186,9 +186,10 @@ class LangTags(metaclass=_Singleton):
         self._extralangs = set()
         inf = None
 
-        envpath = os.getenv("LANGTAGSPATH", None)
-        if envpath is not None:
-            fname = envpath
+        if fname is None:
+            envpath = os.getenv("LANGTAGSPATH", None)
+            if envpath is not None:
+                fname = envpath
         if fname is not None:
             inf = open(fname)
         else:
