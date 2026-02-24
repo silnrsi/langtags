@@ -31,7 +31,7 @@ The preferred download location for the json data file is <https://ldml.api.sil.
 Langtags.json consists of an array of objects. Each object corresponds to an equivalence set. The fields in that object are defined as:
 
 - **tag** The canonical tag for this set. This is the normal tag to use for the set. Conforms to BCP 47
-- **full** The full tag for this set. Use this if you want to pull out the details. Conforms to BCP 47
+- **full** The full tag for this set. Use this if you want to pull out the details. Conforms to BCP 47 \[required\]
 - **tags** A list of other tags that are equivalent. Each conforms to BCP 47
 - **variants** A list of variant tag components that may occur with tags in this set. A tag with a variant is not equivalent to other tags in this set.
 - **svariants** A list of script variant tags. \[added 1.4\]
@@ -41,7 +41,7 @@ Langtags.json consists of an array of objects. Each object corresponds to an equ
 - **regions** Other regions that may be used with these tags. See the following section on regions list. Each conforms to ISO 3166-1
 - **regionname** The English name for this region taken from the IANA registry.
 - **iana** The IANA names for the language of the canonical tag. Is an array. \[Array added 1.1.1\] \[Always an array 1.2.0\]
-- **name** The name from the Ethnologue names list for the language and region of the full tag. If this does not exist, then any name from the list of names given for this language is used. If this fails to find anything, then the **iana** entry is used. Thus **name** is never empty.
+- **name** The name from the Ethnologue names list for the language and region of the full tag. If this does not exist, then any name from the list of names given for this language is used. If this fails to find anything, then the **iana** entry is used. Thus **name** is never empty. \[required\]
 - **names** Other alternative names for this language coming from the Ethnologue names list, including alternate names and names and alternate names from other regions.
 - **localname** If present, this gives the name of the language in the orthography specified by this set. Also known as the autonym. This comes from CLDR/SLDR data. If not present, use localnames[0].
 - **sldr** True if there is a file in the SLDR for at least one of the tags in this set.
@@ -52,7 +52,7 @@ Langtags.json consists of an array of objects. Each object corresponds to an equ
 - **rod** A Registry of Language Variants numeric code for this dialect \(as a string\) \[Added 1.1.1\]
 - **rolv** An array of Registry of Language Variants codes \(string\) for dialects of this language \[Added 1.4\]
 - **suppress** If present and true indicates that the IANA language tag registry has the suppress script set for this language. \[Added 1.1.1\]
-- **windows** Windows requires a strict BCP-47 interpretation and requires a script tag unless the suppress script from the IANA registry is the same as the script. This field is always present and may be the same as the **tag** field or one of the values in the **tags** list. \[Added 1.1.1\]
+- **windows** Windows requires a strict BCP-47 interpretation and requires a script tag unless the suppress script from the IANA registry is the same as the script. This field is always present and may be the same as the **tag** field or one of the values in the **tags** list. \[Added 1.1.1\] \[required\]
 - **obsolete** If present and true indicates that the language is obsolete \[Added 1.2.1\]
 - **unwritten** If present and true indicates that the language is unwritten. It may still have a non Zyyy script due to regional inference. \[Added 1.2.1\]
 - **macrolang** If present another language tag which is a macro language containing this language. \[Added 1.3.1\]

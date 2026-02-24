@@ -106,24 +106,32 @@ class Editor:
         if f is not None:
             if undo and not isundo:
                 self.undos.append(deepcopy(self.ltags))
+            self.output_clickable = False
             res = f(*b)
             if undo and not isundo:
-                self.history.append((cmd, res))
+                self.history.append((cmd, res, self.output_clickable))
         return res
 
-    def _find(self, tag, insert=False, fields=[]):
-        tagre = re.compile(tag)
+    def _find(self, tag, insert=False, fields=[], nore=False):
+        tagre = None if nore else re.compile(tag)
         if not len(fields):
-            fields = ["tag", "full"]
+            fields = ["tag", "full", "tags"]
         res = []
         for i, e in enumerate(self.ltags):
             for f in fields:
-                t = e.get(f, "")
-                if tagre.match(t):
-                    res.append(i)
-                    break
-                elif insert and t and t > tag:
-                    return [-i]
+                ts = e.get(f, [])
+                if isinstance(ts, str):
+                    ts = [ts]
+                for t in ts:
+                    if (tagre is not None and tagre.search(t)) \
+                                or t == tag:
+                        res.append(i)
+                        break
+                    elif insert and t and t > tag:
+                        return [-i]
+                else:
+                    continue
+                break
         if not len(res):
             res = (None, f"Failed to find {tag} in {' '.join(fields)}")
         return res
@@ -135,7 +143,7 @@ class Editor:
             if r in special_regions:
                 name = special_regions[r]
             else:
-                name = self._iana().region[r]['description']
+                name = self._iana().region.get(r, {}).get('description', "UNKNOWN")
             return name
 
     def _get_text(self):
@@ -147,7 +155,11 @@ class Editor:
         if text is None or not len(text):
             return
         res = []
-        sets = json.loads(text)
+        try:
+            sets = json.loads(text)
+        except json.decoder.JSONDecodeError as e:
+            res.append(f"{e.msg} at line {e.lineno} + {e.colno} chars")
+            return "\n".join(res)
         if self.validator is not None:
             for t in sets:
                 for error in self.validator.iter_errors(t):
@@ -183,9 +195,9 @@ class Editor:
         elif len(i):
             self.curri = i
         
-    def edit(self, tag, *a):
+    def edit(self, tag, *a, **kw):
         ''' edit tag\t\tStarts editing the given tag (as found in tag or full) '''
-        i = self._find(tag)
+        i = self._find(tag, **kw)
         if i[0] is not None:
             self.curri = i
         else:
@@ -205,8 +217,8 @@ class Editor:
 
     def deprecate(self, tag, other, *a):
         ''' deprecate tag, other\tTakes all tags from tag and adds them to other and then deletes tag '''
-        i = self._find(other)
-        j = self._find(tag)
+        i = self._find(other, nore=True)
+        j = self._find(tag, nore=True)
         if i[0] is None:
             return i[1]
         elif j[0] is None:
@@ -217,12 +229,19 @@ class Editor:
         ej = self.ltags[j[0]]
         alltags = [ej.get('tag', None), ej.get('full', None)] + ej.get('tags', [])
         alltags = [t for t in alltags if t is not None]
+        for a in ('regions', 'rolv'):
+            allvals = ej.get(a, [])
+            if a == "regions":
+                allvals += ej.get('region', None)
+            ei[a] = sorted(set(ei.get(a, [])) + set([x for x in allregions if x is not None]))
+            if not len(ei[a]):
+                del ei[a]
         if 'tags' in ei:
             ei['tags'] += alltags
         else:
             ei['tags'] = alltags
         self.ltags.pop(j[0])
-        self.curri = i
+        self.curri = i - (1 if tag < other else 0)
 
     def addfull(self, tag, *a):
         ''' addfull tag\tAdds a new tagset given a full tag, tag is just lang, setting script, region, windows, etc. '''
@@ -240,6 +259,7 @@ class Editor:
         ts['nophonvars'] = l.script != "Latn"
         ts['sldr'] = False
         ts['windows'] = str(l.copy(region=None))
+        ts['name'] = ""
         self.ltags.insert(-i[0], ts)
         self.curri = [-i[0]]
 
@@ -247,31 +267,91 @@ class Editor:
         ''' updatateautonyms path\tRead the ethnologue file and update records from it '''
         auto = self._autonyms(path)
         res = []
+        iso639s = {x['tag']: x['iso639_3'] for x in self.ltags.values() if x.get('iso639_3', x['lang']) != x['lang']}
         for i, e in enumerate(self.ltags):
             if e['tag'].startswith("_"):
                 continue
             v = set()
             l = langtag(e.get('full', e.get('tag', None)))
             s = "{}-{}".format(l.lang, l.script)
-            v.update(auto[s])       # FIXME!
-            i6 = e.get('iso639_3', v.lang)
-            if i6 != v.lang:
-                v.update(auto[i6])
+            v = sorted(set(auto[iso639s.get(l.lang, l.lang)+"-"+l.script]))
+            if len(v):
+                resl = e['full']
+                lnames = [x.name for x in v if getattr(x, 'name', '')]
+                if lnames != e.get('localnames', []):
+                    resl += " localnames"
+                e['localnames'] = lnames
+                rnames = [x.roman for x in v if getattr(x, 'roman', '')]
+                if rnames != e.get('latnnames', []):
+                    resl += " latin names"
+                e['latnnames'] = rnames
+                if " " in resl:
+                    res.append(resl)
+        self.output_clickable = True
+        return res
 
+    def updateethnologue(self, path, *a):
+        ''' updateethnologue path\tUpdate name and names from ethnologue, add new regions '''
+        iso639s = {x['iso639_3']: x['full'] for x in self.ltags.values() if x.get('iso639_3', x['lang']) != x['lang']}
+        res = []
+        allts = []
+        allname = {}
+        allnames = {}
+        allregions = set()
+        with open(path, encoding="utf-8") as inf:
+            rdr = csv.DictReader(inf)
+            for r in rdr:
+                if rdr['NameType'] not in ('L', 'LA'):
+                    continue
+                l = iso639s.get(rdr['LangID'], rdr['LangID'])
+                ts = self._find(f"{l}-{rdr['CountryID']}")
+                allts.extend(ts)
+                for t in [self.ltags[x] for x in ts]:
+                    if rdr['NameType'] == "L":
+                        allname[t['full']] = t['name']
+                        allnames[t['full']] = t.get('names', [])
+                        t['name'] = rdr['Name']
+                        t.pop('names', [])
+                    else:
+                        t.setdefault('names', []).append(rdr['Name'])
+                    r = rdr['CountryID']
+                    if r not in t.get('regions', []) and r != t.get('region', ''):
+                        t.setdefault('regions', []).append(r)
+                        allregions.add(t['full'])
+        for t in [self.ltags[x] for x in allts]:
+            f = t['full']
+            r = ""
+            if allname[f] != t['name']:
+                r += " name"
+            if allnames[f] != t['names']:
+                r += " names"
+            if f in allregions:
+                r += " regions"
+            if len(r):
+                res.append(f"{f} {r}")
+        self.output_clickable = True
+        return res
 
 #--- functions that work on the current tag
     def addto(self, field, *a):
         ''' addto field, values\tadds the values to field if not already present '''
         if not len(self.curri):
             return f"Nothing to add to. Select a tagset"
+        res = []
         for i in self.curri:
             e = self.ltags[i]
             if field not in e:
                 e[field] = a
+                v = ""
             elif isinstance(e[field], list):
+                v = e[field]
                 e[field].extend([v for v in a if v not in e[field]])
             elif isinstance(e[field], str):
+                v = e[field]
                 e[field] = ([e[field]] + a) if e[field] not in a else a
+            res.append(f"{e['full']} {v}")
+        self.output_clickable = True
+        return "\n".join(res)
 
     def removefrom(self, field, *a):
         ''' removefrom field, values?\tdeletes field if no values or removes values from field if present '''
@@ -301,10 +381,12 @@ class Editor:
         ''' set field, values\tSets the field to the given value(s) '''
         if not len(self.curri):
             return f"Nothing to set a field in. Select a tagset"
+        res = []
         for i in self.curri:
             e = self.ltags[i]
             old = e.get(field, None)
             e[field] = a if len(a) > 1 else a[0]
+            res.append(f"{e.get('full', 'unk')} {old} {a}")
             if field == "region":
                 name = self._region_name(a[0])
                 e['regionname'] = name
@@ -336,6 +418,8 @@ class Editor:
             elif field == 'name':
                 if 'iana' not in e:
                     e['iana'] = a
+        self.output_clickable = True
+        return "\n".join(res)
 
 #--- Interactive editor commands
     def undo(self, *a):
@@ -417,6 +501,7 @@ class Editor:
             if testag and not testag.match(e.get('tag', "")) and not testag.match(e.get('full', "")):
                 continue
             res.append(f"{e['full']:12s} {e[field]}")
+        self.output_clickable = True
         return "\n".join(res)
 
     def vimmode(self, *a):
@@ -449,6 +534,7 @@ class TUI(Application):
         self.editor.window.dont_extend_width = lambda: False
         self.results_area = TextArea(read_only=True, scrollbar=True, text="System Ready.",
                 wrap_lines=True, focus_on_click=True)
+        self.results_area.control.mouse_handler = self._on_output_click
         self.revert_btn = Button("Revert", handler=self._revert_changes)
         self.history_display = TextArea(read_only=True, scrollbar=True, text="History...", height=10,
                 focus_on_click=True)
@@ -466,7 +552,7 @@ class TUI(Application):
         root_container = VSplit([
             HSplit([
                 Frame(self.results_area, title="Results/Output"),
-                Frame(HSplit([self.history_display, self.command_input]), title="Command Console"),
+                Frame(HSplit([self.history_display, self.command_input]), title="Command History"),
             ], width=lambda: Dimension(weight=1)),
             Frame(HSplit([self.editor, button_row], width=Dimension(weight=1)), title="Tagset Editor")
         ])
@@ -500,12 +586,21 @@ class TUI(Application):
         """Restores the editor to the state stored in DataManager."""
         self.editor.text = self.dm._get_text()
 
+    def _on_output_click(self, mouse_event):
+        if self.output_clickable and mouse_event.event_type == MouseEventType.MOUSE_UP:
+            line_num = mouse_event.position.y
+            lines = self.history_display.txt.split("\n")
+            l = lines[line_num]
+            w, _ = l.split(" ", 1)
+            self.dm.edit(w, nore=True, fields=["full"])
+            self.dm._get_text()
+        return self.hdmh(mouse_event)
+
     def _on_history_click(self, mouse_event):
-        output = f"{mouse_event.event_type} @ {mouse_event.position.y}"
         if mouse_event.event_type == MouseEventType.MOUSE_UP:
             line_num = mouse_event.position.y
             if line_num < len(self.dm.history):
-                cmd, output = self.dm.history[line_num]
+                cmd, output, self.output_clickable = self.dm.history[line_num]
                 self.results_area.text = output or ""
                 if cmd:
                     self.command_input.text = cmd
@@ -523,6 +618,7 @@ class TUI(Application):
         self.editor.text = self.dm._get_text()
         self.history_display.text = "\n".join([c[0] for c in self.dm.history])
         self.command_input.text = ""
+        self.history_clickable = self.dm.history_clickable
 
     def _get_mode_text(self):
         """Returns a styled label based on the current editing state."""
@@ -548,6 +644,7 @@ class TkUI(tk.Tk):
         self.dm = data_manager
         self.dm.ui = self
         self.result = None
+        self.output_clickable = False
 
         self.title("Langtags Editor")
         self.geometry("1200x800")
@@ -569,6 +666,7 @@ class TkUI(tk.Tk):
         self.results_area.insert("1.0", "System Ready.")
         self._add_scrollbar(results_frame, self.results_area)
         left_split.add(results_frame, weight=1)
+        self.results_area.bind("<ButtonRelease-1>", self._on_output_click)
 
         # ---- Console ----
         console_frame = ttk.LabelFrame(left_split, text="Command Console")
@@ -658,12 +756,23 @@ class TkUI(tk.Tk):
         self.editor.delete("1.0", "end")
         self.editor.insert("1.0", self.dm._get_text())
 
+    def _on_output_click(self, event):
+        if not self.output_clickable:
+            return
+        index = self.results_area.index(f"@{event.x},{event.y}")
+        line = int(index.split(".")[0]) - 1
+        lines = self.results_area.get("1.0", tk.END).split("\n")
+        l = lines[line]
+        w, _ = l.split(" ", 1)
+        self.dm.edit(w, nore=True, fields=["full"])
+        self.editor.delete("1.0", "end")
+        self.editor.insert("1.0", self.dm._get_text())
+
     def _on_history_click(self, event):
         index = self.history_display.index(f"@{event.x},{event.y}")
         line = int(index.split(".")[0]) - 1
-
         if line < len(self.dm.history):
-            cmd, output = self.dm.history[line]
+            cmd, output, self.output_clickable = self.dm.history[line]
             self.results_area.delete("1.0", "end")
             self.results_area.insert("1.0", output or "")
 
@@ -688,6 +797,7 @@ class TkUI(tk.Tk):
             "1.0",
             "\n".join([c[0] for c in self.dm.history])
         )
+        self.output_clickable = self.dm.output_clickable
 
         self.command_input.delete(0, "end")
 
