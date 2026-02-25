@@ -3,7 +3,7 @@
 import os, unittest, json, warnings
 
 schemapath = os.path.join(os.path.dirname(__file__), '..', 'source', 'langtags_schema.json')
-testfile = os.path.join(os.path.dirname(__file__), '..', 'pub', 'langtags.json')
+testfile = os.path.join(os.path.dirname(__file__), '..', 'source', 'langtags.json')
 
 class JsonSchemaTest(unittest.TestCase):
     ''' Tests that generated JSON conforms to the schema '''

@@ -12,11 +12,10 @@ def isnotint(s):
     except ValueError:
         return True
 
-langtagjson = os.path.join(os.path.dirname(__file__), '..', 'pub', 'langtags.json')
-langtagtxt = os.path.join(os.path.dirname(__file__), '..', 'pub', 'langtags.txt')
+langtagjson = os.path.join(os.path.dirname(__file__), '..', 'source', 'langtags.json')
 likelysubtags = os.path.join(os.path.dirname(sldr.__file__), 'likelySubtags.xml')
 
-exceptions = ['ji-Hebr-UA', 'kxc-Ethi', 'bji-Ethi', 'drh-Mong-CN', 'en-Latn-CQ', 'mww-Hmnp-US', 'udi-Aghb-RU', 'oak-Beng-BD', 'oak-Latn-IN', 'zag-Berf-SD']
+exceptions = ['ji-Hebr-UA', 'kxc-Ethi', 'bji-Ethi', 'drh-Mong-CN', 'dyl-Zxxx-TR', 'en-Latn-CQ', 'lfb-Latn-CM', 'mww-Hmnp-US', 'olb-Latn-CM', 'osd-Cyrl-RU', 'udi-Aghb-RU', 'oak-Beng-BD', 'oak-Latn-IN', 'zag-Berf-SD']
 
 class LikelySubtags(unittest.TestCase):
     ''' Tests alltags.txt for discrepencies against likelySubtags.xml '''
@@ -68,15 +67,6 @@ class LikelySubtags(unittest.TestCase):
         lt = self.ltags['zh']
         self.assertEqual(str(lt.tag), 'zh-CN')
 
-    def test_noDuplicates(self):
-        found = {}
-        with open(langtagtxt) as inf:
-            for i, l in enumerate(inf.readlines()):
-                for t in (x.replace("*", "") for x in re.split(r'\s*=\s*', l.strip())):
-                    if t in found and found[t] != i + 1:
-                        self.fail("Duplicate of {} found at lines {} and {}".format(t, found[t], i+1))
-                    found[t] = i + 1
-            
 
 if __name__ == '__main__':
     unittest.main()

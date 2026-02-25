@@ -4,7 +4,7 @@ from langtag import lookup, langtag, LangTags
 from pathlib import Path
 import unittest
 
-langtagjson = Path(__file__).parent.parent.parent / 'pub' / 'langtags.json'
+langtagjson = Path(__file__).parent.parent.parent / 'source' / 'langtags.json'
 class Basic(unittest.TestCase):
 
     def setUp(self):
