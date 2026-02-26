@@ -283,7 +283,7 @@ def make_record(t, args):
         ismin = lts.get(t.lang, None) is None or t.lang in ("con", "prn")
     else:
         ismin = True
-    if hasattr(t, 'iso639') and ismin:
+    if hasattr(t, 'iso639'):    # and ismin:
         n['iso639_3'] = t.iso639
     if t.base is not None and len(t.base):
         for b in reciter(t, lambda x:getattr(x, 'base', None)):
