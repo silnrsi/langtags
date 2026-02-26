@@ -121,6 +121,17 @@ class Editor:
                 else:
                     continue
                 break
+        if not len(res) and nore and "-" in tag:
+            l = langtag(tag)
+            if l.region is not None:
+                r = l.region
+                lnew = l.copy(region=None)
+                tests = self._find(str(lnew), nore=True)
+                if len(tests) != 2 or tests[0] is not None:
+                    for i in tests:
+                        e = self.ltags[i]
+                        if r in e.get('regions', []):
+                            res.append(i)
         if not len(res):
             res = (None, f"Failed to find {tag} in {' '.join(fields)}")
         return res
@@ -268,7 +279,9 @@ class Editor:
         auto = self._autonyms(path)
         res = []
         iso639s = {x['tag']: x['iso639_3'] for x in self.ltags.values() if x.get('iso639_3', x['lang']) != x['lang']}
+        self.ui.start_progress(len(self.ltags))
         for i, e in enumerate(self.ltags):
+            self.ui.advance_progress()
             if e['tag'].startswith("_"):
                 continue
             v = set()
@@ -288,6 +301,7 @@ class Editor:
                 if " " in resl:
                     res.append(resl)
         self.output_clickable = True
+        self.ui.reset_progress()
         return res
 
     def _getIdentity(self, doc, key):
@@ -300,8 +314,11 @@ class Editor:
     def fillsldr(self, path, *a):
         ''' fillsldr path\tfills the sldr field based on a give sldr base directory '''
         import xml.etree.ElementTree as et
+        origcount = 0
         for t in self.ltags:
-            t.pop('sldr', None)
+            if t.pop('sldr', None):
+                origcount += 1
+        self.ui.start_progress(origcount * 1.1)
         count = 0
         res = []
         for dp, dn, fn in os.walk(path):
@@ -309,11 +326,11 @@ class Editor:
                 if not f.lower().endswith(".xml"):
                     continue
                 d = et.parse(os.path.join(dp, f))
-                l = self._getIdentity("language")
+                l = self._getIdentity(d, "language")
                 if l is None:
                     continue
-                s = self._getIdentity("script")
-                t = self._getIdentity("territory")
+                s = self._getIdentity(d, "script")
+                t = self._getIdentity(d, "territory")
                 tag = l
                 if s is not None:
                     tag += "-" + s
@@ -326,7 +343,9 @@ class Editor:
                 for ts in [self.ltags[j] for j in i]:
                     ts['sldr'] = True
                     count += 1
-        res.append(f"{count}/{len(self.ltags)} are in the sldr")
+                    self.ui.advance_progress()
+        res.append(f"{origcount} + {(count - origcount)} / {len(self.ltags)} are in the sldr")
+        self.ui.reset_progress()
         return res
 
     def updaterolv(self, path, *a):
@@ -340,8 +359,10 @@ class Editor:
         missing = []
         count = 0
         res = []
+        self.ui.start_progress(len(rdat['data']['ROLVCodes']))
         for r in rdat['data']['ROLVCodes']:
             c = r['ROLVCode']
+            self.ui.advance_progress()
             if str(c) in rods:
                 continue
             region = r['CountryCode']
@@ -373,6 +394,7 @@ class Editor:
         res.append(f"{count} codes added")
         for m in missing:
             res.append(f"Missing entry for {m[1]} with rolv {m[0]}")
+        self.ui.reset_progress()
         return res
 
     def updateethnologue(self, path, *a):
@@ -383,11 +405,13 @@ class Editor:
         allname = {}
         allnames = {}
         allregions = set()
+        self.ui.start_progress(3 * len(self.ltags))
         with open(path, encoding="utf-8") as inf:
             rdr = csv.DictReader(inf)
             for r in rdr:
                 if rdr['NameType'] not in ('L', 'LA'):
                     continue
+                self.ui.advance_progress()
                 l = iso639s.get(rdr['LangID'], rdr['LangID'])
                 ts = self._find(f"{l}-{rdr['CountryID']}")
                 allts.extend(ts)
@@ -415,6 +439,7 @@ class Editor:
             if len(r):
                 res.append(f"{f} {r}")
         self.output_clickable = True
+        self.ui.reset_progress()
         return res
 
 #--- functions that work on the current tag
@@ -650,7 +675,8 @@ def createTUI():
                     dont_extend_width=True, style="class:status.label", height=3)
             self.sidebar_width=50
 
-            button_row = VSplit([self.revert_btn, Window(), self.mode_label], height=1, padding=1)
+            button_row = VSplit([self.revert_btn, Window(), self.mode_label],
+                                height=1, padding=1)
             root_container = VSplit([
                 HSplit([
                     Frame(self.results_area, title="Results/Output"),
@@ -720,7 +746,7 @@ def createTUI():
             self.editor.text = self.dm._get_text()
             self.history_display.text = "\n".join([c[0] for c in self.dm.history])
             self.command_input.text = ""
-            self.history_clickable = self.dm.history_clickable
+            self.history_clickable = self.dm.output_clickable
 
         def _get_mode_text(self):
             """Returns a styled label based on the current editing state."""
@@ -731,6 +757,24 @@ def createTUI():
                     return [("class:mode.vi.insert", " [VIM INSERT] ")]
                 return [("class:mode.vi.normal", " [VIM NORMAL] ")]
             return [("class:mode.standard", " [STANDARD] ")]
+
+        def _get_progress_bar_text(self):
+            if self.progress_var == 0:
+                return ""
+            width = 20
+            length = int(width * self.progress_var / self.progress_max)
+            bar = "█" * length + "░" * (width - length)
+            label = f" {int(length/width * 100)}%"
+            return [("class:progress-bar", f"{bar}{label}")]
+
+        def start_progress(self, total: int):
+            pass
+
+        def advance_progress(self, amount: int = 1):
+            pass
+
+        def reset_progress(self):
+            pass
 
         def set_vimmode(self, mode):
             self.editing_mode = EditingMode.VI if mode else EditingMode.EMACS
@@ -820,15 +864,22 @@ def createTkUI():
             self.editor.bind("<FocusOut>", self._on_editor_focus_out)
 
             # ---- Button Row ----
-            button_row = ttk.Frame(editor_split)
-            button_row.grid(row=1, column=0)
+            self.button_row = ttk.Frame(editor_split)
+            self.button_row.grid(row=1, column=0)
 
             self.revert_btn = ttk.Button(
-                button_row,
+                self.button_row,
                 text="Revert",
                 command=self._revert_changes
             )
-            self.revert_btn.pack(side="left")
+            self.revert_btn.pack(side="left", padx=(0, 20))
+
+            self.progress_var = tk.DoubleVar(value=0)
+            self.progress_max = 0
+            # ---- Progress Bar ----
+            self.progress_bar = ttk.Progressbar(self.button_row, orient="horizontal",
+                    length=200, mode="determinate", variable=self.progress_var)
+            self.progress_bar.pack(side="right", padx=(20, 0))
 
             # --- Keybinds ---
             self.bind("<Control-c>", lambda e: self.quit())
@@ -911,6 +962,22 @@ def createTkUI():
             self.output_clickable = self.dm.output_clickable
 
             self.command_input.delete(0, "end")
+
+        def start_progress(self, steps: int):
+            self.progress_max = steps
+            self.progress_bar["maximum"] = self.progress_max
+            self.progress_var.set(0)
+            self.button_row.update_idletasks()
+
+        def advance_progress(self, amount: int = 1):
+            val = self.progress_var.get() + amount
+            self.progress_var.set(min(self.progress_max, val))
+            self.button_row.update_idletasks()
+
+        def reset_progress(self):
+            self.progress_max = 0
+            self.progress_var.set(0)
+            self.button_row.update_idletasks()
 
         def exit(self, val):
             self.result = val
