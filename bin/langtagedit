@@ -46,6 +46,10 @@ class Autonym:
     name: str
     roman: str
 
+def unparsed(func):
+    func.unparsed = True
+    return func
+
 class Editor:
 
     @classmethod
@@ -72,6 +76,7 @@ class Editor:
         self.ui = None
         self.undos = []
         self.history = []
+        self.output_clickable = False
 
     def _iana(self):
         if self.iana is None:
@@ -94,7 +99,7 @@ class Editor:
             if undo and not isundo:
                 self.undos.append(deepcopy(self.ltags))
             self.output_clickable = False
-            res = f(*b)
+            res = f(*b) if not getattr(f, 'unparsed', False) else f(cmd)
             if isinstance(res, (list, tuple)):
                 res = "\n".join(res)
             if undo and not isundo:
@@ -614,6 +619,28 @@ class Editor:
         self.output_clickable = True
         return res
 
+    @unparsed
+    def jp(self, l):
+        from jmespath import compile
+        if ' ' not in l:
+            return ""
+        l = re.sub(r"^\S+\s+", "", l)
+        try:
+            q = compile(l)
+        except Exception as e:
+            return [str(e)]
+        if q is None:
+            return [f"{l} failed to compile"]
+        res = []
+        for t in self.ltags:
+            r = q.search([t])
+            if r:
+                res.append(f"{t.get('full', '')} {' '.join(r)}")
+        self.output_clickable = True
+        return res
+        
+        
+
     def vimmode(self, *a):
         '''vimmode 1|0\tEnable vim mode for crazy people'''
         if self.ui is not None:
@@ -757,15 +784,6 @@ def createTUI():
                     return [("class:mode.vi.insert", " [VIM INSERT] ")]
                 return [("class:mode.vi.normal", " [VIM NORMAL] ")]
             return [("class:mode.standard", " [STANDARD] ")]
-
-        def _get_progress_bar_text(self):
-            if self.progress_var == 0:
-                return ""
-            width = 20
-            length = int(width * self.progress_var / self.progress_max)
-            bar = "█" * length + "░" * (width - length)
-            label = f" {int(length/width * 100)}%"
-            return [("class:progress-bar", f"{bar}{label}")]
 
         def start_progress(self, total: int):
             pass
@@ -960,7 +978,6 @@ def createTkUI():
                 "\n".join([c[0] for c in self.dm.history])
             )
             self.output_clickable = self.dm.output_clickable
-
             self.command_input.delete(0, "end")
 
         def start_progress(self, steps: int):
