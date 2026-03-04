@@ -168,7 +168,7 @@ class Editor:
         if self.validator is not None:
             for t in sets:
                 for error in self.validator.iter_errors(t):
-                    res.append(error.message)
+                    res.append(f"{error.message} at {error.json_path} in {error.context[0] if len(error.context) else ''}")
         a = self._listtags(self.curri)
         b  = [t['full'] for t in sets]
         logging.debug(f"{a=}, {b=}")
@@ -184,6 +184,8 @@ class Editor:
                 j = self.curri[o[1]]
                 for i in range(o[3]-1, o[4]-1, -1):
                     self.ltags.insert(j, sets[i])
+        if (msg := self._duplicate_check()) is not None:
+            res.append(msg)
         return "\n".join(res)
 
     def _iso639map(self):
@@ -196,6 +198,21 @@ class Editor:
                 for k in t['iso639_3extra']:
                     res[k] = t['tag']
         return res
+
+    def _duplicate_check(self):
+        res = []
+        s = set()
+        for e in self.ltags:
+            if 'full' not in e:
+                continue
+            if e['full'] in s:
+                res.append(e['full'])
+            else:
+                s.add(e['full'])
+        if len(res):
+            return f"Duplicates found of: {' '.join(sorted(res))}"
+        else:
+            return None
 
 
 #--- functions that set the current tag
@@ -210,6 +227,8 @@ class Editor:
             self.curri = [-i[0]]
         elif len(i):
             self.curri = i
+        if (msg := self._duplicate_check()) is not None:
+            return msg
         
     def edit(self, tag, *a, **kw):
         ''' edit tag\t\tStarts editing the given tag (as found in tag or full) '''
@@ -278,6 +297,8 @@ class Editor:
         ts['name'] = ""
         self.ltags.insert(-i[0], ts)
         self.curri = [-i[0]]
+        if (msg := self._duplicate_check()) is not None:
+            return msg
 
     def updateautonyms(self, path, *a):
         ''' updatateautonyms path\tRead the ethnologue file and update records from it '''
@@ -559,6 +580,8 @@ class Editor:
                 continue
             results.append(f"\n{l}\n")
             results.append(self._run(l, undo=False))
+        if (msg := self._duplicate_check()) is not None:
+            res.append(msg)
         return res
 
     def quit(self, *a):
@@ -575,7 +598,7 @@ class Editor:
         if self.fullval is not None:   # then full_validator is defined
             res = []
             for error in self.fullval.iter_errors(self.ltags):
-                res.append(error.message)
+                res.append(f"{error.message} at {error.json_path} in {error.context[0] if len(error.context) else ''}")
             if not len(res):
                 res.append("Passed")
             return res
@@ -601,6 +624,28 @@ class Editor:
         res.append(f"{len(self.ltags)} records written to {fname}")
         return res
 
+    def compareiana(self, fpath, *a):
+        '''compareiana file\tReports differences from given IANA file'''
+        missing = []
+        res = []
+        iana = Iana(path=fpath)
+        alllangs = set([t['tag'] for t in self.ltags if not re.match(r"^_|.*?-", t.get('tag', "-"))])
+        alllangs.update([t for e in self.ltags for t in e.get('tags', []) if "-" not in t])
+        alllangs.update([m.group(1) for t in self.ltags if (m := re.match(r"^(\S{3})-\S{4}$", t.get('tag', '')))])
+        for k, v in iana.language.items():
+            if '..' in k:
+                continue
+            if k not in alllangs:
+                if not v.get('deprecated', None) and v.get('scope', '') != "collection":
+                    missing.append(k)
+            else:
+                alllangs.remove(k)
+        if len(missing):
+            res.append(f"Added in IANA: {' '.join(missing)}")
+        if len(alllangs):
+            res.append(f"Remove in IANA: {' '.join(sorted(alllangs))}")
+        return res
+
     def list(self, field, *a):
         '''list field [tagmatch] [match]\tList all records giving the field, if it matches and tagset matches'''
         res = []
@@ -621,7 +666,11 @@ class Editor:
 
     @unparsed
     def jp(self, l):
-        from jmespath import compile
+        ''' jp query\tUse JMSEpath to find clickable records and results '''
+        try:
+            from jmespath import compile
+        except ImportError:
+            return ["Missing module: jmsepath. Please install"]
         if ' ' not in l:
             return ""
         l = re.sub(r"^\S+\s+", "", l)
@@ -638,9 +687,24 @@ class Editor:
                 res.append(f"{t.get('full', '')} {' '.join(r)}")
         self.output_clickable = True
         return res
-        
-        
 
+    @unparsed
+    def jq(self, l):
+        ''' jq query\tjsonata query '''
+        try:
+            from jsonata import Jsonata
+        except ImportError:
+            return ["Missing module: jsonata. Please install jsonata-python"]
+        if ' ' not in l:
+            l = re.sub(r"^\S+\s+", "", l)
+        try:
+            expr = Jsonata(l)
+        except Exception as e:
+            return [str(e)]
+        res = expr.evaluate(self.ltags)
+        print(res)
+        return res
+        
     def vimmode(self, *a):
         '''vimmode 1|0\tEnable vim mode for crazy people'''
         if self.ui is not None:
@@ -900,7 +964,6 @@ def createTkUI():
             self.progress_bar.pack(side="right", padx=(20, 0))
 
             # --- Keybinds ---
-            self.bind("<Control-c>", lambda e: self.quit())
             self.bind("<Control-d>", lambda e: self.quit())
             self.bind("<Tab>", self._focus_next)
 
@@ -1008,13 +1071,18 @@ def createTkUI():
 desc = """Edit control file commands:
 """ + "\n".join(Editor._description())
 
+defschema = os.path.join(os.path.dirname(__file__), '..', 'source', 'langtags_schema.json')
+if not os.path.exists(defschema):
+    defschema = None
+
 parser = argparse.ArgumentParser(description=desc, formatter_class=argparse.RawTextHelpFormatter)
 parser.add_argument("infile",nargs="?",default="langtags.json",help="json file to edit")
 parser.add_argument("-e","--editfile",help="Edit control file")
 parser.add_argument("-c","--command",action="store_true",help="control file becomes ; separate instructions")
 parser.add_argument("-t","--textui",action="store_true",help="Use Tk GUI")
 parser.add_argument("-o","--outfile",help="Output file else rewrite to input")
-parser.add_argument("-s","--schema",help="Validate changes against schema")
+parser.add_argument("-s","--schema",default=defschema,help="Validate changes against schema")
+parser.add_argument("-S","--noschema",action="store_true",help="Disable schema validation")
 parser.add_argument("-V","--noversion",action="store_true",help="Don't update version info in the file")
 parser.add_argument("-q","--quiet",action="store_true",help="Don't complain about things")
 parser.add_argument("-l","--logfile",help="Log to file")
@@ -1029,21 +1097,29 @@ if args.logfile:
 with open(args.infile, encoding="utf-8") as inf:
     ltags = json.load(inf)
 
-if args.schema:
+if not args.noschema and args.schema:
     try:
         from jsonschema.validators import validator_for
         import warnings
     except ImportError:
         print("Python jsonschema module missing")
         sys.exit(1)
-    with open(args.schema) as inf:
-        schema = json.load(inf)
-    with warnings.catch_warnings():
-        warnings.simplefilter("ignore")
-        factory = validator_for(schema)
-    full_validator = factory(schema=schema)
-    full_validator.check_schema(schema)
-    validator = full_validator.evolve(schema=full_validator.schema["definitions"]["langtags"]["items"])
+    try:
+        with open(args.schema) as inf:
+            schema = json.load(inf)
+    except FileNotFoundError:
+        print(f"Can't find schema file {args.schema}. Continuing with no schema check")
+        schema = None
+    if schema is not None:
+        with warnings.catch_warnings():
+            warnings.simplefilter("ignore")
+            factory = validator_for(schema)
+        full_validator = factory(schema=schema)
+        full_validator.check_schema(schema)
+        validator = full_validator.evolve(schema=full_validator.schema["definitions"]["langtags"]["items"])
+    else:
+        validator = None
+        full_validator = None
 else:
     validator = None
     full_validator = None
