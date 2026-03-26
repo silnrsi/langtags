@@ -533,13 +533,11 @@ class TagSet:
                             ns = newfull.ns) for t in d['tags']]
         if newfull.script is not None and self.script is not None and newfull.script != self.script:
             if newfull.script == "Latn" and 'latnnames' in d:
-                d['localnames'] = d['latnnames']
-                del d['latnnames']
+                d['localnames'] = d.pop('latnnames')
             elif 'localnames' in d:
                 del d['localnames']
-            del d['names']
-            del d['name']
-            del d['localname']
+            for a in ('names', 'name', 'localname'):
+                d.pop(a, None)
         return TagSet(**d)
         
 
