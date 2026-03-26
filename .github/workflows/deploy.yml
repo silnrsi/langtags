@@ -20,7 +20,7 @@ jobs:
       GH_TOKEN: ${{ github.token }}
     steps:
       # Checkout repo for gh cli to function
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       # Download the artefact
       - uses: actions/download-artifact@v4
         with:
