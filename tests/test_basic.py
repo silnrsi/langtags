@@ -41,6 +41,7 @@ class Basic(unittest.TestCase):
                 continue
             yield (r, t)
 
+    @development
     def test_lang(self):
         ''' Tests that all lang subtags are in iana '''
         fails = []

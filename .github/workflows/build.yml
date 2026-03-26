@@ -54,5 +54,7 @@ jobs:
 
     - name: Test langtags
       id: langtags
+      env:
+        TESTMODE: ${{ inputs.production && 'prod' || 'dev' }}
       run: |
         python3 -m unittest tests.test_json tests.python.test_python tests.test_basic
