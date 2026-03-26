@@ -42,7 +42,7 @@ def read_autonyms(filename):
         next(rdr)
         for row in rdr:
             lang = row[0].strip()
-            name = row[2].strip()
+            name = stripinvisibles(row[2].strip())
             if len(row) > 4:
                 roman = row[4].strip()
             # handle missing comma after T
@@ -50,9 +50,12 @@ def read_autonyms(filename):
                 roman = row[3][1:].strip()
             else:
                 roman = ""
+            roman = stripinvisibles(roman)
+            if not len(name):
+                continue
             script = script_analyze(name)
             lt = "{}-{}".format(lang, script)
-            a = Autonym(lt, stripinvisibles(name), stripinvisibles(roman))
+            a = Autonym(lt, name, roman)
             res.setdefault(lt, []).append(a)
     return res
 
