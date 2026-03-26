@@ -5,6 +5,7 @@ import unittest, os, re, json
 from xml.etree import ElementTree as et
 from itertools import product
 import sldr         # for the path
+from .marker import *
 
 langtagjson = os.path.join(os.path.dirname(__file__), '..', 'pub', 'langtags.json')
 
