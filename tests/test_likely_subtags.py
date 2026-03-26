@@ -4,7 +4,6 @@ import unittest, os, re
 from xml.etree import ElementTree as et
 from langtag import lookup, langtag, LangTags
 import sldr       # just to get the path
-from .marker import *
 
 def isnotint(s):
     try:

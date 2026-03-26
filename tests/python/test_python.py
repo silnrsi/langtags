@@ -3,7 +3,6 @@
 from langtag import lookup, langtag, LangTags
 from pathlib import Path
 import unittest
-from ..marker import *
 
 langtagjson = Path(__file__).parent.parent.parent / 'pub' / 'langtags.json'
 class Basic(unittest.TestCase):

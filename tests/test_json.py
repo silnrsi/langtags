@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 import os, unittest, json, warnings
-from .marker import *
 
 schemapath = os.path.join(os.path.dirname(__file__), '..', 'source', 'langtags_schema.json')
 testfile = os.path.join(os.path.dirname(__file__), '..', 'pub', 'langtags.json')
