@@ -22,7 +22,7 @@ jobs:
       # Checkout repo for gh cli to function
       - uses: actions/checkout@v6
       # Download the artefact
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v8
         with:
           name: langtags
           path: pub
@@ -54,11 +54,11 @@ jobs:
       RSYNC_OPTS: -aP --no-p --no-g --no-t --compress --del -e "ssh -o StrictHostKeyChecking=no"
     steps:
     # Install our private key for uploading deliverable
-    - uses: webfactory/ssh-agent@v0.9.0
+    - uses: webfactory/ssh-agent@v0.10.0
       with:
         ssh-private-key: ${{ secrets.uploader_key }}
     # Download the artefact
-    - uses: actions/download-artifact@v4
+    - uses: actions/download-artifact@v8
       with:
         name: langtags
     # Upload results
@@ -70,7 +70,7 @@ jobs:
     needs: deploy
     steps:
     - name: Trigger findafont rebuild
-      uses: peter-evans/repository-dispatch@v3
+      uses: peter-evans/repository-dispatch@v4
       with:
         token: ${{ secrets.repository_dispatch_pat }}
         repository: silnrsi/findafont
