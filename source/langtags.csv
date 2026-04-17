@@ -389,8 +389,8 @@ aoz,aoz-Latn-ID,Uab Meto,ID,,,,04653 07325 07326 07328,,,,,SEA,aoz,CLDR,,
 apb,apb-Latn-SB,Sa'a,SB,,,,03631 03671,,,,,MEL,apb,LE,10-Jan-2018,
 apc,apc-Arab-SY,"Arabic, Levantine Spoken",AE AG AR BR CY DE DO EG GF IL IQ JM JO LB LY ML MX PS QA SA SL SR SY TN TR TT,,,,06442 07137 20554,,,,,CAR NAF SAM WAF WAS,apc,,,
 apc-JO,apc-Arab-JO,"Arabic, Levantine Spoken",JO,,,,06442 07137 20554,,,,,CAR NAF SAM WAF WAS,apc,,,
-apd,apd-Arab-TG,"Arabic, Sudanese Spoken",AE EG ER ET LY QA SA SD SS YE,,,,,,,,,EAF NAF WAS,apd,CLDR,,"CLDR issue: should not be TG, should be SD"
-apd-Latn,apd-Latn-SD,"Arabic, Sudanese Spoken",EG ER ET LY QA SA SD SS,,,,00905 00906 06375 07150,,,,,EAF NAF WAS,apd,LE,12-Jan-2018,
+apd,apd-Arab-SD,"Arabic, Sudanese Spoken",AE EG ER ET LY QA SA SD SS YE,,,,,,,,,EAF NAF WAS,apd,CLDR,,"CLDR issue: should not be TG, should be SD"
+apd-Latn,apd-Latn-SD,"Arabic, Sudanese Spoken",AE EG ER ET LY QA SA SD SS YE,,,,00905 00906 06375 07150,,,,,EAF NAF WAS,apd,LE,12-Jan-2018,
 ape,ape-Latn-PG,Bukiyip,PG,,,,08441 27999 28000,,,,,MEL,ape,LE,10-Jan-2018,
 ape-x-coastal,ape-Latn-PG-x-coastal,Bukiyip - Coastal Arapesh,PG,,,08441,08441 27999 28000,,,,,MEL,ape,,,
 ape-x-mountain,ape-Latn-PG-x-mountain,Bukiyip - Mountain Arapesh,PG,,,,08441 27999 28000,,,,,MEL,ape,,,This ROD code wasn't in the official list
@@ -2191,7 +2191,7 @@ efe,efe-Latn-CD,Efe,CD,,,,,,1,,,MAF,efe,,,
 efi,efi-Latn-NG,Efik,NG US,,,,,,,,,WAF NAM,efi,CLDR,,
 ega,ega-Latn-CI,Ega,CI,,,,,,1,,,WAF,ega,,,
 egl,egl-Latn-IT,Emilian,IT,,,,,,,,,SEU,egl,CLDR,,
-egm,egm-Latn-TZ,Benemanga,TZ,,,,,,1,,,,egm,,,
+egm,egm-Latn-TZ,Benemanga,TZ,,,,,,,,,EAF,egm,,,
 ego,ego-Latn-NG,Eggon,NG,,,,02126,,,,,WAF,ego,,,
 egy,egy-Egyp-EG,Egyptian (Ancient),EG,mdcegyp,,,,,,1,,NAG,egy,CLDR,,Ancient
 egy-Latn,egy-Latn-EG,Egyptian (Ancient) transliteration,EG,mdctrans,leidentr,,,,,1,,NAG,egy,,,
@@ -3822,7 +3822,7 @@ kkz,kkz-Latn-CA,Kaska,CA,,,,,,,,,NAM,kkz,LE,9-Jan-2018,
 kl,kl-Latn-GL,Greenlandic,DK GL,tunumiit,kleinsch,,,,,,,NAM NEU,kal,CLDR,,
 kl-Brai,kl-Brai-GL,Greenlandic,DK GL,,,,,,,,,NAM NEU,kal,,,
 kla,kla-Latn-US,Klamath-Modoc,US,,,,,,1,,,NAM,kla,LE,10-Jan-2018,Extinct
-klb,klb-Latn-MX,Kiliwa,MX,,,,,,1,,,CAM,klb,LE,9-Jan-2018,
+klb,klb-Latn-MX,Kiliwa,MX,,,,,,,,,CAM,klb,LE,9-Jan-2018,
 klc,klc-Latn-CM,Kolbila,CM,,,,,,,,,MAF,klc,LE,12-Jan-2018,
 kld,kld-Latn-AU,Gamilaraay,AU,,,,,,1,,,ANZ,kld,LE,10-Jan-2018,
 kle,kle-Deva-NP,Kulung,IN NP,,,,,,,,,SAS,kle,,,
