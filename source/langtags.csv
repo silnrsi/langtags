@@ -6346,10 +6346,10 @@ pi-Latn,pi-Latn-GB,Pali,GB,,,,,,,,,SAS SEA,pli,,,
 pi,pi-Deva-IN,Pali,IN KH LA LK MM TH,,,,,,,,,SAS SEA,pli,,,Ancient
 pi-Khar,pi-Khar-IN,Pali,IN MM,,,,,,,,,SAS SEA,pli,,,
 pi-Mymr,pi-Mymr-MM,Pali,IN MM,,,,,,,,,SAS SEA,pli,,,Ancient
-pi-MM,pi-Mymr-IN,Pali,IN MM,,,,,,,,,SAS SEA,pli,,,Ancient
-pi-Sinh,pi-Sinh-IN,Pali,IN LK MM,,,,,,,,,SAS SEA,pli,,11/15/2021,LE: made primary
-pi-Thai,pi-Thai-IN,Pali,IN MM TH,,,,,,,,,SAS SEA,pli,,,Ancient
-pi-Khmr,pi-Khmr-IN,Pali,IN KH MM,,,,,,,,,SAS SEA,pli,,,
+pi-MM,pi-Mymr-MM,Pali,IN MM,,,,,,,,,SAS SEA,pli,,,Ancient
+pi-Sinh,pi-Sinh-LK,Pali,IN LK MM,,,,,,,,,SAS SEA,pli,,11/15/2021,LE: made primary
+pi-Thai,pi-Thai-TH,Pali,IN MM TH,,,,,,,,,SAS SEA,pli,,,Ancient
+pi-Khmr,pi-Khmr-KH,Pali,IN KH MM,,,,,,,,,SAS SEA,pli,,,
 pia,pia-Latn-MX,Pima Bajo,MX,,,,,,,,,CAM,pia,LE,9-Jan-2018,
 pib,pib-Latn-PE,Yine,PE,,,,,,,,,SAM,pib,LE,9-Jan-2018,
 pic,pic-Latn-GA,Pinji,GA,,,,,,1,,,MAF,pic,LE,30-Jan-2018,
