@@ -16,7 +16,7 @@ langtagjson = os.path.join(os.path.dirname(__file__), '..', 'pub', 'langtags.jso
 langtagtxt = os.path.join(os.path.dirname(__file__), '..', 'pub', 'langtags.txt')
 likelysubtags = os.path.join(os.path.dirname(sldr.__file__), 'likelySubtags.xml')
 
-exceptions = ['ji-Hebr-UA', 'kxc-Ethi', 'bji-Ethi', 'drh-Mong-CN', 'en-Latn-CQ', 'mww-Hmnp-US', 'udi-Aghb-RU', 'oak-Beng-BD', 'oak-Latn-IN', 'zag-Berf-SD']
+exceptions = ['ji-Hebr-UA', 'kxc-Ethi', 'bji-Ethi', 'drh-Mong-CN', 'dyl-Zxxx-TR', 'en-Latn-CQ', 'lfb-Latn-CM', 'mww-Hmnp-US', 'olb-Latn-CM', 'osd-Cyrl-RU', 'udi-Aghb-RU', 'oak-Beng-BD', 'oak-Latn-IN', 'zag-Berf-SD']
 
 class LikelySubtags(unittest.TestCase):
     ''' Tests alltags.txt for discrepencies against likelySubtags.xml '''

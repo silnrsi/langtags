@@ -10,8 +10,8 @@ jobs:
   build:
     runs-on: ubuntu-22.04
     steps:
-    - uses: actions/checkout@v4
-    - uses: actions/setup-python@v5
+    - uses: actions/checkout@v6
+    - uses: actions/setup-python@v6
       with:
         python-version: '3.13'
     - name: Install langtags package and depedencies
@@ -29,7 +29,7 @@ jobs:
     - name: Generate langtags
       run: make SLDR=unflat FLATDIR=flat build
 
-    - uses: actions/upload-artifact@v4
+    - uses: actions/upload-artifact@v7
       id: upload
       with:
         name: langtags
@@ -40,19 +40,21 @@ jobs:
     needs: build
     runs-on: ubuntu-22.04
     steps:
-    - uses: actions/checkout@v4
-    - uses: actions/setup-python@v5
+    - uses: actions/checkout@v6
+    - uses: actions/setup-python@v6
       with:
         python-version: '3.x'
     - name: Install langtags package and depedencies
       run: pip install .[tests]
       
-    - uses: actions/download-artifact@v4
+    - uses: actions/download-artifact@v8
       with:
         name: langtags
         path: pub
 
     - name: Test langtags
       id: langtags
+      env:
+        TESTMODE: ${{ inputs.production && 'prod' || 'dev' }}
       run: |
         python3 -m unittest tests.test_json tests.python.test_python tests.test_basic

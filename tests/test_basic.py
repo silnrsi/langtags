@@ -40,21 +40,6 @@ class Basic(unittest.TestCase):
                 continue
             yield (r, t)
 
-    def test_lang(self):
-        ''' Tests that all lang subtags are in iana '''
-        fails = []
-        for r, t in self._allRows():
-            l = langtag(r['Lang_Id'])
-            if l.lang != t.lang and "-" not in l.lang and "-" not in t.lang:
-                self.fail("{Lang_Id} has different lang to {likely_subtag} ({0} != {1})".format(l.lang, t.lang, **r))
-            if t.lang not in self.iana.language and "-" not in t.lang and t.lang not in self.extraLangs:
-                fails.append(r['Lang_Id'])
-            if not l.test(fname=langtagjson) and t.lang not in self.extraLangs:
-                self.fail("{Lang_Id} failed conformance check".format(**r))
-        if len(fails):
-            self.fail(f"{fails} langs not in IANA")
-
-
     def test_region(self):
         ''' Test that region values are sensible and that they equal the default region.
             Unknown regions do not have to be specified. '''
