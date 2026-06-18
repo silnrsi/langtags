@@ -1,24 +1,31 @@
 #!/usr/bin/env python3
 
 import argparse, json, re, os
-from langtag import langtag, LangTags
+from langtag import langtag, LangTags, LangTag
 import xml.etree.ElementTree as et
+from functools import reduce
 
 def matchtag(tagset, tag):
-    regions = [tagset['region']] + tagset.get('regions', [])
-    rtest = tag.get('region', None)
-    if rtest:
-        res = list(set(regions) & set(rtest))
+    if tagset is not None:
+        regions = [tagset['region']] + tagset.get('regions', [])
+        rtest = tag.get('region', None)
+        if rtest:
+            res = list(set(regions) & set(rtest))
+        else:
+            res = ["*"]
     else:
-        res = ["*"]
+        res = tag.get('region', [])
     rscript = tag.get('script', None)
-    if rscript and tag['script'] not in rscript:
+    if rscript and (tagset is None or tagset['script'] not in rscript):
         res = []
     rlang = tag.get('lang', None)
     if rlang:
-        lt = langtag(tag.get('full', tag.get('tag', None)))
-        if lt.lang not in rlang:
+        if tagset is None:
             res = []
+        else:
+            lt = langtag(tagset.get('full', tagset.get('tag', None)))
+            if lt.lang not in rlang:
+                res = []
     return res if res else None
 
 def match(tagset, rule):
@@ -31,14 +38,14 @@ def match(tagset, rule):
 def mergelines(m):
     return "[" + " ".join(x.strip() for x in m.group(1).split("\n")) + "]"
 
-def addfallback(tset, key, regions, used, lts):
+def addfallback(tset, key, regions, used, msater, lts):
     l = lts.get(key, default=None)
     if l is not None and str(l.tag) == tset['tag']:
         return
     elif l is not None:
         key = str(l.tag)
     for r in regions:
-        if r in used:
+        if r in used or r in master.get(key, set()):
             continue
         t.setdefault('fallback', {}).setdefault(key, set()).add(r)
         used.add(r)
@@ -70,6 +77,15 @@ if args.likely is not None:
     ldoc = et.parse(args.likely)
 
 lts = LangTags(fname=args.infile)
+master = {}
+for r in frules['rules']:
+    if len(r['tags']) > 1 or len(r['tags'][0]) > 1 or 'region' not in r['tags'][0]:
+        continue
+    master.setdefault(r['fallback'], set()).update(r['tags'][0]['region'])
+fback = {"tag": "_fallbacks", "rules": {}}
+for k, v in master.items():
+    fback['rules'][k] = sorted(v)
+ltags.insert(4, fback)
 
 for t in ltags:
     if t.get('tag', "_").startswith("_"):
@@ -80,7 +96,7 @@ for t in ltags:
             continue
         regions = match(t, r)
         if regions:
-            addfallback(t, r['fallback'], regions, used, lts)
+            addfallback(t, r['fallback'], regions, used, master, lts)
     s = t.get("script", "")
     for r in [t['region']] + r.get('regions', []):
         for a in ("{}_{}".format(s, r), r, s):

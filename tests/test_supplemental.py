@@ -6,7 +6,7 @@ from xml.etree import ElementTree as et
 from itertools import product
 import sldr         # for the path
 
-langtagjson = os.path.join(os.path.dirname(__file__), '..', 'pub', 'langtags.json')
+langtagjson = os.path.join(os.path.dirname(__file__), '..', 'source', 'langtags.json')
 
 exceptions = set(["aii-Cyrl", 
     "en-Latn-CQ"        # CQ crashes old FLex
