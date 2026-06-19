@@ -10,7 +10,7 @@ on:
       - source/**
       - tests/**
       - Makefile
-      - setup.py
+      - pyproject.toml
   repository_dispatch:
     types: [sldr-release-deployed]
 jobs:
