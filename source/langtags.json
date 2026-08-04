@@ -100361,11 +100361,11 @@
             "my": [ "MM" ]
         },
         "full": "mrh-Latn-IN",
-        "iana": [ "Mara Chin" ],
+        "iana": [ "Mara" ],
         "iso639_3": "mrh",
         "localnames": [ "Mara", "Mara Reih" ],
         "name": "Mara",
-        "names": [ "Hawthai", "Mara Reih", "Mira", "Sabeu", "Tlongsai", "Zao" ],
+        "names": [ "Tlosai", "Hawthai", "Mara Reih", "Mira", "Sabeu", "Shendu", "Zao" ],
         "region": "IN",
         "regionname": "India",
         "regions": [ "MM" ],
