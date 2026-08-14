@@ -107,6 +107,7 @@ class Editor:
         return res
 
     def _find(self, tag, insert=False, fields=[], nore=False):
+        """ Returns a list of tagset indices that match tag else (None, error)"""
         tagre = None if nore else re.compile(tag)
         if not len(fields):
             fields = ["tag", "full", "tags"]
@@ -260,23 +261,29 @@ class Editor:
             return j[1]
         elif len(i) != 1 or len(j) != 1:
             return f"{other} matches: {', '.join(self._listtags(i))}. {tag} matches: {', '.join(self._listtags(j))}"
-        ei = self.ltags[i[0]]
-        ej = self.ltags[j[0]]
-        alltags = [ej.get('tag', None), ej.get('full', None)] + ej.get('tags', [])
-        alltags = [t for t in alltags if t is not None]
-        for a in ('regions', 'rolv'):
-            allvals = ej.get(a, [])
-            if a == "regions":
-                allvals += ej.get('region', None)
-            ei[a] = sorted(set(ei.get(a, [])) + set([x for x in allregions if x is not None]))
-            if not len(ei[a]):
-                del ei[a]
-        if 'tags' in ei:
-            ei['tags'] += alltags
-        else:
-            ei['tags'] = alltags
-        self.ltags.pop(j[0])
-        self.curri = i - (1 if tag < other else 0)
+        o = langtag(other)
+        for jj in j:
+            ej = self.ltags[jj]
+            ef = langtag(ej['full']).copy(lang=o.lang)
+            # search for a corresponding tag
+            oi = self._find(str(ef), nore=True)
+            if oi[0] is None:
+                c = ef.copy(script=None)
+                oi = self._find(str(c), nore=True)
+                if oi[0] is None:
+                    c = ef.copy(region=None)
+                    oi = self._find(str(c), nore=True)
+                    if oi[0] is None:
+                        return f"Failed to find {ef} from {tag}"
+            ot = self.ltags[oi[0]]
+            ot.setdefault('tags', []).append(ej['tag'])
+            if len(ej.get('rolv', [])):
+                ot.setdefault('rolv', []).extend(ej['rolv'])
+        removed = []
+        for jj in sorted(j, reverse=True):
+            removed.append(self.ltags[jj].get('fulltag', ''))
+            self.ltags.pop(jj)
+        return f"Removed {' '.join(removed)}"
 
     def addfull(self, tag, *a):
         ''' addfull tag\tAdds a new tagset given a full tag, tag is just lang, setting script, region, windows, etc. '''
@@ -617,6 +624,8 @@ class Editor:
         def mergelines(m):
             return "[" + " ".join(x.strip() for x in m.group(1).split("\n")) + "]"
 
+        self.edit('_version')
+        self.set("date", str(datetime.date.today()))
         output = json.dumps(sorted(self.ltags, key=lambda x:x['tag']), sort_keys=True, indent=4, ensure_ascii=False)
         output = "[" + re.sub(r'\[([^\]]+)\]', mergelines, output[1:-1]) + "]\n"
         with open(fname, "w", encoding="utf-8") as outf:
