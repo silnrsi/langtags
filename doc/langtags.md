@@ -201,3 +201,10 @@ There is no correlation here between the primary region tag MM and the \* in the
 fallback list. In this case we could have made any of the languages the default.
 The primary consideration here is what would a user not from any of the other
 regions want to fall back to?
+
+Rather than having every tagset list all the fallbacks for all the regions
+covered by the tagset only to find they fallback in the same way as every other
+tagset, we include a central set of defaults. The "\_fallbacks" tag contains a
+"rules" field that is structured like a fallback field in a tagset. It is the
+default fallbacks covering all regions. So if a tagset lacks a fallback field or
+an entry for a given region, the main \_fallbacks list can be used.
