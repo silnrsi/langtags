@@ -34029,6 +34029,22 @@
         "windows": "el-Brai"
     },
     {
+        "full": "el-Arab-GR",
+        "iana": [ "Modern Greek (1453-)" ],
+        "iso639_3": "ell",
+        "name": "Greek",
+        "names": [ "Demotic Greek", "Dimotiki", "Greacă", "Greco", "Görög", "Hellenic", "Hretsʹkyy", "Modern Greek", "Modern Greek (1453-)", "Romaic", "Standard Modern Greek", "Urum", "Yunan" ],
+        "nophonvars": true,
+        "obsolete": true,
+        "region": "GR",
+        "regionname": "Greece",
+        "regions": [ "AE", "AL", "AM", "AU", "BA", "BE", "BG", "CA", "CD", "CY", "CZ", "DE", "DJ", "EG", "GB", "HU", "IL", "IT", "JO", "KG", "KZ", "LU", "LY", "MK", "MW", "MZ", "RO", "RU", "SE", "SL", "TR", "UA", "US" ],
+        "script": "Arab",
+        "sldr": false,
+        "tag": "el-Arab",
+        "windows": "el-Arab"
+    },
+    {
         "full": "el-Cyrl-UA",
         "iana": [ "Modern Greek (1453-)" ],
         "iso639_3": "ell",
@@ -36413,6 +36429,22 @@
         "sldr": false,
         "tag": "es-Brai",
         "windows": "es-Brai"
+    },
+    {
+        "full": "es-Arab-ES",
+        "iana": [ "Spanish", "Castilian" ],
+        "iso639_3": "spa",
+        "name": "Spanish",
+        "names": [ "Castellano", "Castilian", "Castillan", "Espagnol", "Español", "Spanska", "castellano", "español" ],
+        "nophonvars": true,
+        "obsolete": true,
+        "region": "ES",
+        "regionname": "Spain",
+        "regions": [ "AD", "AR", "AT", "AU", "AW", "BE", "BG", "BO", "BQ", "BR", "BZ", "CA", "CH", "CI", "CL", "CM", "CO", "CR", "CU", "CW", "CZ", "DE", "DK", "DO", "DZ", "EA", "EC", "EH", "FI", "FR", "GB", "GI", "GQ", "GT", "GU", "GW", "HN", "HR", "IC", "IE", "IL", "IS", "IT", "JM", "KR", "KY", "LU", "MA", "MT", "MX", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PR", "PT", "PY", "RO", "RU", "SE", "SR", "SV", "SX", "TR", "TT", "US", "UY", "VE", "VG", "VI" ],
+        "script": "Arab",
+        "sldr": false,
+        "tag": "es-Arab",
+        "windows": "es-Arab"
     },
     {
         "full": "es-Latn-CL",
