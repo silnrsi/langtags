@@ -1157,9 +1157,6 @@ else:
     print("There is no UI support package. Install either Tk or prompt_toolkit")
     sys.exit(1)
 
-edit.edit("_version")
-edit.set("date", str(datetime.date.today()))
-
 if saveme:
     edit.save()
 
