@@ -17158,7 +17158,6 @@
         "sldr": false,
         "tag": "bqm",
         "tags": [ "bqm-CM", "bqm-Latn" ],
-        "unwritten": true,
         "windows": "bqm-Latn"
     },
     {
@@ -33043,18 +33042,18 @@
         "windows": "dyi-Latn"
     },
     {
-        "full": "dyl-Zxxx-TR",
+        "full": "dyl-Zxxx-BT",
         "iana": [ "Bhutanese Sign Language" ],
         "iso639_3": "dyl",
         "name": "Bhutanese Sign Language",
         "names": [ "BhSL", "Drukgi Lagdai Khakay" ],
-        "region": "TR",
-        "regionname": "Turkey",
+        "region": "BT",
+        "regionname": "Bhutan",
         "regions": [ "BT" ],
         "script": "Zxxx",
         "sldr": false,
         "tag": "dyl",
-        "tags": [ "dyl-TR", "dyl-Zxxx", "sgn-dyl", "sgn-dyl-TR", "sgn-dyl-Zxxx", "sgn-dyl-Zxxx-TR" ],
+        "tags": [ "dyl-BT", "dyl-Zxxx", "sgn-dyl", "sgn-dyl-BT", "sgn-dyl-Zxxx", "sgn-dyl-Zxxx-BT" ],
         "windows": "dyl-Zxxx"
     },
     {
@@ -65244,7 +65243,6 @@
         "sldr": false,
         "tag": "kux",
         "tags": [ "kux-AU", "kux-Latn" ],
-        "unwritten": true,
         "windows": "kux-Latn"
     },
     {
@@ -73891,6 +73889,21 @@
         "windows": "lzn-Latn"
     },
     {
+        "full": "lzz-Geok-GE",
+        "iana": [ "Laz" ],
+        "iso639_3": "lzz",
+        "localnames": [ "Lazuri" ],
+        "name": "Laz",
+        "names": [ "Chan", "Chanuri", "Chanzan", "Laze", "Lazuri", "Zan" ],
+        "region": "GE",
+        "regionname": "Georgia",
+        "script": "Geok",
+        "sldr": false,
+        "tag": "lzz",
+        "tags": [ "lzz-Geok" ],
+        "windows": "lzz-Geok"
+    },
+    {
         "full": "lzz-Latn-TR",
         "iana": [ "Laz" ],
         "iso639_3": "lzz",
@@ -75931,19 +75944,19 @@
         "windows": "mee-Latn"
     },
     {
-        "full": "mef-Zyyy-BD",
+        "full": "mef-Beng-BD",
         "iana": [ "Megam" ],
         "iso639_3": "mef",
         "name": "Megam",
         "names": [ "Migam", "Negam" ],
         "region": "BD",
         "regionname": "Bangladesh",
-        "script": "Zyyy",
+        "script": "Beng",
         "sldr": false,
         "tag": "mef",
-        "tags": [ "mef-BD", "mef-Zyyy" ],
+        "tags": [ "mef-BD", "mef-Beng" ],
         "unwritten": true,
-        "windows": "mef-Zyyy"
+        "windows": "mef-Beng"
     },
     {
         "full": "meh-Latn-MX",
@@ -81869,6 +81882,20 @@
         "windows": "mrn-Latn"
     },
     {
+        "full": "mro-Beng-BD",
+        "iana": [ "Mru" ],
+        "iso639_3": "mro",
+        "name": "Mru",
+        "names": [ "Dak", "Launghu", "Maru", "Mro", "Mro-Mru", "Mrucha", "Mrung", "Mrusa", "Murung", "Niopheng", "Niopreng", "Taung Mru" ],
+        "region": "BD",
+        "regionname": "Bangladesh",
+        "script": "Beng",
+        "sldr": false,
+        "tag": "mro",
+        "tags": [ "mro-Beng" ],
+        "windows": "mro-Beng"
+    },
+    {
         "full": "mro-Mroo-BD",
         "iana": [ "Mru" ],
         "iso639_3": "mro",
@@ -84066,6 +84093,22 @@
         "tag": "mws",
         "tags": [ "mws-KE", "mws-Latn" ],
         "windows": "mws-Latn"
+    },
+    {
+        "full": "mwt-Latn-MM",
+        "iana": [ "Moken" ],
+        "iso639_3": "mwt",
+        "name": "Moken",
+        "names": [ "Basing", "Chau Ko’", "Lawta", "Mawken", "Orang Laut", "Salon", "Salong", "Selong", "Selung" ],
+        "region": "MM",
+        "regionname": "Myanmar",
+        "regions": [ "TH" ],
+        "rolv": [ "14206", "27182", "1112", "14207" ],
+        "script": "Latn",
+        "sldr": false,
+        "tag": "mwt",
+        "tags": [ "mwt-Latn" ],
+        "windows": "mwt-Latn"
     },
     {
         "full": "mwt-Mymr-MM",
@@ -93637,7 +93680,6 @@
         "sldr": false,
         "tag": "nyl",
         "tags": [ "nyl-TH", "nyl-Thai" ],
-        "unwritten": true,
         "windows": "nyl-Thai"
     },
     {
@@ -112046,7 +112088,6 @@
         "sldr": false,
         "tag": "skb",
         "tags": [ "skb-TH", "skb-Thai" ],
-        "unwritten": true,
         "windows": "skb-Thai"
     },
     {
@@ -121214,7 +121255,6 @@
         "sldr": false,
         "tag": "thm",
         "tags": [ "thm-TH", "thm-Thai" ],
-        "unwritten": true,
         "windows": "thm-Thai"
     },
     {
@@ -138356,6 +138396,21 @@
         "windows": "xme-Zyyy"
     },
     {
+        "full": "xmf-Geok-GE",
+        "iana": [ "Mingrelian" ],
+        "iso639_3": "xmf",
+        "name": "Mingrelian",
+        "names": [ "Iverian", "Margalepi", "Margali", "Margaluri", "Margaluri nina", "Megrel", "Megrelian", "Megruli" ],
+        "region": "GE",
+        "regionname": "Georgia",
+        "regions": [ "RU" ],
+        "rolv": [ "29207" ],
+        "script": "Geok",
+        "sldr": false,
+        "tag": "xmf",
+        "windows": "xmf-Geok"
+    },
+    {
         "full": "xmf-Geor-GE",
         "iana": [ "Mingrelian" ],
         "iso639_3": "xmf",
@@ -143495,19 +143550,18 @@
         "windows": "ynn-Latn"
     },
     {
-        "full": "yno-Zyyy-TH",
+        "full": "yno-Thai-TH",
         "iana": [ "Yong" ],
         "iso639_3": "yno",
         "name": "Yong",
         "names": [ "Nyong" ],
         "region": "TH",
         "regionname": "Thailand",
-        "script": "Zyyy",
+        "script": "Thai",
         "sldr": false,
         "tag": "yno",
-        "tags": [ "yno-TH", "yno-Zyyy" ],
-        "unwritten": true,
-        "windows": "yno-Zyyy"
+        "tags": [ "yno-TH", "yno-Thai" ],
+        "windows": "yno-Thai"
     },
     {
         "full": "ynq-Latn-NG",
