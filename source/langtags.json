@@ -100,7 +100,7 @@
     },
     {
         "api": "1.4",
-        "date": "2026-08-14",
+        "date": "2026-08-19",
         "tag": "_version"
     },
     {
@@ -23056,7 +23056,7 @@
     },
     {
         "full": "cey-Latn-MM",
-        "iana": [ "Ekai Chin" ],
+        "iana": [ "Laoktu Chin" ],
         "iso639_3": "cey",
         "localnames": [ "Läoktü" ],
         "name": "Chin, Läoktü",
@@ -34014,21 +34014,6 @@
         "windows": "el"
     },
     {
-        "full": "el-Brai-GR",
-        "iana": [ "Modern Greek (1453-)" ],
-        "iso639_3": "ell",
-        "name": "Greek",
-        "names": [ "Demotic Greek", "Dimotiki", "Greacă", "Greco", "Görög", "Hellenic", "Hretsʹkyy", "Modern Greek", "Modern Greek (1453-)", "Romaic", "Standard Modern Greek", "Urum", "Yunan" ],
-        "nophonvars": true,
-        "region": "GR",
-        "regionname": "Greece",
-        "regions": [ "AE", "AL", "AM", "AU", "BA", "BE", "BG", "CA", "CD", "CY", "CZ", "DE", "DJ", "EG", "GB", "HU", "IL", "IT", "JO", "KG", "KZ", "LU", "LY", "MK", "MW", "MZ", "RO", "RU", "SE", "SL", "TR", "UA", "US" ],
-        "script": "Brai",
-        "sldr": false,
-        "tag": "el-Brai",
-        "windows": "el-Brai"
-    },
-    {
         "full": "el-Arab-GR",
         "iana": [ "Modern Greek (1453-)" ],
         "iso639_3": "ell",
@@ -34043,6 +34028,21 @@
         "sldr": false,
         "tag": "el-Arab",
         "windows": "el-Arab"
+    },
+    {
+        "full": "el-Brai-GR",
+        "iana": [ "Modern Greek (1453-)" ],
+        "iso639_3": "ell",
+        "name": "Greek",
+        "names": [ "Demotic Greek", "Dimotiki", "Greacă", "Greco", "Görög", "Hellenic", "Hretsʹkyy", "Modern Greek", "Modern Greek (1453-)", "Romaic", "Standard Modern Greek", "Urum", "Yunan" ],
+        "nophonvars": true,
+        "region": "GR",
+        "regionname": "Greece",
+        "regions": [ "AE", "AL", "AM", "AU", "BA", "BE", "BG", "CA", "CD", "CY", "CZ", "DE", "DJ", "EG", "GB", "HU", "IL", "IT", "JO", "KG", "KZ", "LU", "LY", "MK", "MW", "MZ", "RO", "RU", "SE", "SL", "TR", "UA", "US" ],
+        "script": "Brai",
+        "sldr": false,
+        "tag": "el-Brai",
+        "windows": "el-Brai"
     },
     {
         "full": "el-Cyrl-UA",
@@ -36374,6 +36374,22 @@
         "windows": "es-Latn-AR"
     },
     {
+        "full": "es-Arab-ES",
+        "iana": [ "Spanish", "Castilian" ],
+        "iso639_3": "spa",
+        "name": "Spanish",
+        "names": [ "Castellano", "Castilian", "Castillan", "Espagnol", "Español", "Spanska", "castellano", "español" ],
+        "nophonvars": true,
+        "obsolete": true,
+        "region": "ES",
+        "regionname": "Spain",
+        "regions": [ "AD", "AR", "AT", "AU", "AW", "BE", "BG", "BO", "BQ", "BR", "BZ", "CA", "CH", "CI", "CL", "CM", "CO", "CR", "CU", "CW", "CZ", "DE", "DK", "DO", "DZ", "EA", "EC", "EH", "FI", "FR", "GB", "GI", "GQ", "GT", "GU", "GW", "HN", "HR", "IC", "IE", "IL", "IS", "IT", "JM", "KR", "KY", "LU", "MA", "MT", "MX", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PR", "PT", "PY", "RO", "RU", "SE", "SR", "SV", "SX", "TR", "TT", "US", "UY", "VE", "VG", "VI" ],
+        "script": "Arab",
+        "sldr": false,
+        "tag": "es-Arab",
+        "windows": "es-Arab"
+    },
+    {
         "full": "es-Latn-BO",
         "iana": [ "Spanish", "Castilian" ],
         "localname": "español",
@@ -36429,22 +36445,6 @@
         "sldr": false,
         "tag": "es-Brai",
         "windows": "es-Brai"
-    },
-    {
-        "full": "es-Arab-ES",
-        "iana": [ "Spanish", "Castilian" ],
-        "iso639_3": "spa",
-        "name": "Spanish",
-        "names": [ "Castellano", "Castilian", "Castillan", "Espagnol", "Español", "Spanska", "castellano", "español" ],
-        "nophonvars": true,
-        "obsolete": true,
-        "region": "ES",
-        "regionname": "Spain",
-        "regions": [ "AD", "AR", "AT", "AU", "AW", "BE", "BG", "BO", "BQ", "BR", "BZ", "CA", "CH", "CI", "CL", "CM", "CO", "CR", "CU", "CW", "CZ", "DE", "DK", "DO", "DZ", "EA", "EC", "EH", "FI", "FR", "GB", "GI", "GQ", "GT", "GU", "GW", "HN", "HR", "IC", "IE", "IL", "IS", "IT", "JM", "KR", "KY", "LU", "MA", "MT", "MX", "NI", "NL", "NO", "NZ", "PA", "PE", "PH", "PL", "PR", "PT", "PY", "RO", "RU", "SE", "SR", "SV", "SX", "TR", "TT", "US", "UY", "VE", "VG", "VI" ],
-        "script": "Arab",
-        "sldr": false,
-        "tag": "es-Arab",
-        "windows": "es-Arab"
     },
     {
         "full": "es-Latn-CL",
@@ -49908,7 +49908,7 @@
     },
     {
         "full": "ia-Latn-001",
-        "iana": [ "Interlingua (IALA)", "Interlingua (International Auxiliary Language" ],
+        "iana": [ "Interlingua (IALA)", "Interlingua (International Auxiliary Language Association)" ],
         "iso639_3": "ina",
         "localname": "interlingua",
         "name": "Interlingua (IALA)",
@@ -64807,7 +64807,7 @@
         "iso639_3": "kur",
         "iso639_3extra": [ "kmr" ],
         "name": "Kurdish",
-        "names": [ "Badinani", "Badînî", "Bahdini", "Behdînî", "Eastern Kurmanji", "Ezdiki", "Kermancî", "Khorasani", "Khorasani Kurmanji", "Kirmanciya Jori", "Kirmancî", "Kordi", "Kordi Kormanji", "Kurdi", "Kurdish Kurmanji", "Kurdish, Northern", "Kurdiya jorîn", "Kurdmancî", "Kurdî", "Kurdî-Kurmancî", "Kurmancî", "Kurmanji", "Kurmanji Kurdish", "Kurmanjî", "Red Kurmanji", "Shingali" ],
+        "names": [ "Badinani", "Badînî", "Bahdini", "Behdînî", "Eastern Kurmanji", "Ezdiki", "Kermancî", "Khorasani", "Khorasani Kurmanji", "Kirmanciya Jori", "Kirmancî", "Kordi", "Kordi Kormanji", "Kurdi", "Kurdish Kurmanji", "Kurdish, Northern", "Kurdiya jorîn", "Kurdmancî", "Kurdî", "Kurdî-Kurmancî", "Kurmancî", "Kurmanji", "Kurmanji Kurdish", "Kurmanjî", "Northern Kurdish", "Red Kurmanji", "Shingali" ],
         "region": "AZ",
         "regionname": "Azerbaijan",
         "regions": [ "AM", "BE", "BH", "CA", "CH", "DE", "DK", "FI", "GE", "GR", "IQ", "IR", "IT", "JP", "KG", "KW", "KZ", "LB", "NL", "NO", "RU", "SE", "SY", "TM", "TR", "US" ],
@@ -77165,7 +77165,7 @@
     },
     {
         "full": "mgp-Deva-NP",
-        "iana": [ "Eastern Magar" ],
+        "iana": [ "Magar", "Magar Dhut" ],
         "iso639_3": "mgp",
         "latnnames": [ "magar ḍhuṭ" ],
         "localname": "मगर ढुट",
@@ -77175,11 +77175,11 @@
         "region": "NP",
         "regionname": "Nepal",
         "regions": [ "BT", "IN" ],
-        "rolv": [ "27633", "26407", "26406", "27630", "26405", "20069" ],
+        "rolv": [ "27633", "26407", "26406", "27630", "26405", "20069", "3221", "26412" ],
         "script": "Deva",
         "sldr": true,
         "tag": "mgp",
-        "tags": [ "mgp-Deva", "mgp-NP" ],
+        "tags": [ "mgp-Deva", "mgp-NP", "mrd" ],
         "windows": "mgp-Deva"
     },
     {
@@ -78004,6 +78004,7 @@
         "name": "Minangkabau",
         "names": [ "Minang", "Padang" ],
         "nophonvars": true,
+        "obsolete": true,
         "region": "ID",
         "regionname": "Indonesia",
         "script": "Arab",
@@ -81725,23 +81726,6 @@
         "windows": "mrc-Latn"
     },
     {
-        "full": "mrd-Deva-NP",
-        "iana": [ "Western Magar" ],
-        "iso639_3": "mrd",
-        "latnnames": [ "magar ḍhuṭ" ],
-        "localnames": [ "मगर ढुट" ],
-        "name": "Magar, Western",
-        "names": [ "Magar", "Magari", "Magarī", "Mangar", "Mangari", "Manggar", "Mãgari", "Syangja Magar", "Western Magar" ],
-        "region": "NP",
-        "regionname": "Nepal",
-        "rolv": [ "3221", "26412" ],
-        "script": "Deva",
-        "sldr": false,
-        "tag": "mrd",
-        "tags": [ "mrd-Deva", "mrd-NP" ],
-        "windows": "mrd-Deva"
-    },
-    {
         "full": "mre-Zxxx-US",
         "iana": [ "Martha's Vineyard Sign Language" ],
         "iso639_3": "mre",
@@ -81818,7 +81802,7 @@
     },
     {
         "full": "mrh-Latn-IN",
-        "iana": [ "Mara Chin" ],
+        "iana": [ "Mara", "Shendu" ],
         "iso639_3": "mrh",
         "localnames": [ "Mara", "Mara Reih" ],
         "name": "Mara",
@@ -81826,11 +81810,11 @@
         "region": "IN",
         "regionname": "India",
         "regions": [ "MM" ],
-        "rolv": [ "5027", "8785", "8783" ],
+        "rolv": [ "5027", "8785", "8783", "8759", "8764" ],
         "script": "Latn",
         "sldr": false,
         "tag": "mrh",
-        "tags": [ "mrh-IN", "mrh-Latn" ],
+        "tags": [ "mrh-IN", "mrh-Latn", "sch" ],
         "windows": "mrh-Latn"
     },
     {
@@ -109023,21 +109007,6 @@
         "windows": "scg-Latn"
     },
     {
-        "full": "sch-Latn-IN",
-        "iana": [ "Sakachep" ],
-        "iso639_3": "sch",
-        "name": "Sakachep",
-        "names": [ "Khelma", "Sakechep" ],
-        "region": "IN",
-        "regionname": "India",
-        "rolv": [ "8759", "8764" ],
-        "script": "Latn",
-        "sldr": false,
-        "tag": "sch",
-        "tags": [ "sch-IN", "sch-Latn" ],
-        "windows": "sch-Latn"
-    },
-    {
         "full": "sci-Latn-LK",
         "iana": [ "Sri Lankan Creole Malay" ],
         "iso639_3": "sci",
@@ -109203,7 +109172,7 @@
     },
     {
         "full": "scs-Latn-CA",
-        "iana": [ "North Slavey" ],
+        "iana": [ "North Slavey", "Dene Kedé" ],
         "iso639_3": "scs",
         "localnames": [ "Dene Ke'de'", "Sahtúot’ı̨nę Yatı̨́" ],
         "macrolang": "den",
@@ -109308,6 +109277,20 @@
         "tag": "scx",
         "tags": [ "scx-Grek", "scx-IT" ],
         "windows": "scx-Grek"
+    },
+    {
+        "full": "scz-Latn-GB",
+        "iana": [ "Shaetlan" ],
+        "iso639_3": "scz",
+        "name": "Shaetlan",
+        "nophonvars": false,
+        "region": "GB",
+        "regionname": "United Kingdom",
+        "regions": [ "NZ", "AU", "CA" ],
+        "script": "Latn",
+        "sldr": false,
+        "tag": "scz",
+        "windows": "scz-Latn"
     },
     {
         "full": "sd-Arab-PK",
@@ -119375,7 +119358,7 @@
     },
     {
         "full": "tce-Latn-CA",
-        "iana": [ "Southern Tutchone" ],
+        "iana": [ "Southern Tutchone", "Dän K'è" ],
         "iso639_3": "tce",
         "localnames": [ "Dän Kʼe" ],
         "name": "Tutchone, Southern",
@@ -126553,6 +126536,19 @@
         "tags": [ "tve-ID", "tve-Latn" ],
         "unwritten": true,
         "windows": "tve-Latn"
+    },
+    {
+        "full": "tvg-Latn-ID",
+        "iana": [ "Tugunese", "Batavian Portuguese Creole", "Mardijker Creole" ],
+        "iso639_3": "tvg",
+        "name": "Tugunese",
+        "nophonvars": false,
+        "region": "ID",
+        "regionname": "Indonesia",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "tvg",
+        "windows": "tvg-Latn"
     },
     {
         "full": "tvi-Latn-NG",
@@ -146519,6 +146515,19 @@
         "tags": [ "zhi-Latn", "zhi-NG" ],
         "unwritten": true,
         "windows": "zhi-Latn"
+    },
+    {
+        "full": "zhk-Zxxx-IQ",
+        "iana": [ "Kurdish Sign Language" ],
+        "iso639_3": "zhk",
+        "name": "Kurdish Sign Language",
+        "nophonvars": true,
+        "region": "IQ",
+        "regionname": "Iraq",
+        "script": "Zxxx",
+        "sldr": false,
+        "tag": "zhk",
+        "windows": "zhk-Zxxx"
     },
     {
         "full": "zhn-Latn-CN",
