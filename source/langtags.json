@@ -100,7 +100,7 @@
     },
     {
         "api": "1.4",
-        "date": "2026-08-19",
+        "date": "2026-08-31",
         "tag": "_version"
     },
     {
@@ -72391,6 +72391,17 @@
         "windows": "lrc-Arab-IQ"
     },
     {
+        "full": "lrc-Latn-IR",
+        "name": "Luri, Northern",
+        "nophonvars": false,
+        "region": "IR",
+        "regionname": "Islamic Republic of Iran",
+        "script": "Latn",
+        "sldr": false,
+        "tag": "lrc-Latn",
+        "windows": "lrc-Latn"
+    },
+    {
         "full": "lre-Latn-CA",
         "iana": [ "Laurentian" ],
         "iso639_3": "lre",
@@ -109381,7 +109392,7 @@
     },
     {
         "full": "scs-Cans-CA",
-        "iana": [ "North Slavey" ],
+        "iana": [ "North Slavey", "Dene Kedé" ],
         "iso639_3": "scs",
         "macrolang": "den",
         "name": "Slavey, North",
@@ -111097,19 +111108,19 @@
         "windows": "shk-Arab"
     },
     {
-        "full": "shl-Zyyy-IN",
+        "full": "shl-Latn-IN",
         "iana": [ "Shendu" ],
         "iso639_3": "shl",
         "name": "Shendu",
         "names": [ "Khieng", "Khyen", "Sandu", "Shandu" ],
         "region": "IN",
         "regionname": "India",
-        "script": "Zyyy",
+        "script": "Latn",
         "sldr": false,
         "tag": "shl",
-        "tags": [ "shl-IN", "shl-Zyyy" ],
+        "tags": [ "shl-IN", "shl-Latn" ],
         "unwritten": true,
-        "windows": "shl-Zyyy"
+        "windows": "shl-Latn"
     },
     {
         "full": "shm-Arab-IR",
@@ -114851,9 +114862,25 @@
     },
     {
         "contains": [ "aae", "aat", "aln", "als" ],
+        "full": "sq-Arab-AL",
+        "iana": [ "Albanian" ],
+        "iso639_3": "sqi",
+        "iso639_3extra": [ "als" ],
+        "name": "Albanian",
+        "nophonvars": true,
+        "region": "AL",
+        "regionname": "Albania",
+        "script": "Arab",
+        "sldr": false,
+        "tag": "sq-Arab",
+        "windows": "sq-Arab"
+    },
+    {
+        "contains": [ "aae", "aat", "aln", "als" ],
         "full": "sq-Brai-AL",
         "iana": [ "Albanian" ],
         "iso639_3": "sqi",
+        "iso639_3extra": [ "als" ],
         "name": "Albanian",
         "nophonvars": true,
         "region": "AL",
