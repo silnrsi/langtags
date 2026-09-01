@@ -6,12 +6,24 @@ from sldr.iana import Iana
 from dataclasses import dataclass
 from copy import deepcopy
 from difflib import SequenceMatcher
+from palaso.unicode.ucd import get_ucd
 
 import logging
 
 logger = logging.getLogger(__name__)
 
 special_regions = {"TW": "China-Taiwan", "XK": "Kosovo"}
+
+def script_analyze(s):
+    res = {}
+    for c in s:
+        script = get_ucd(ord(c), 'sc')
+        if script.startswith("Z"):
+            continue
+        res[script] = res.get(script, 0) + 1
+    if not len(res):
+        return None
+    return max(res.keys(), key=lambda k:res[k])
 
 def parsecmd(l):
     result = re.findall(r'((?:[^\s\'"]|([\'"]).*?\2)+)', l)
@@ -21,7 +33,7 @@ def read_autonyms(filename):
     def stripinvisibles(s):
         return re.sub("[\u200E]", "", s)
     res = {}
-    with open(filename) as inf:
+    with open(filename, encoding="utf-8") as inf:
         rdr = csv.reader(inf)
         next(rdr)
         for row in rdr:
@@ -35,16 +47,19 @@ def read_autonyms(filename):
             else:
                 roman = ""
             script = script_analyze(name)
-            lt = "{}-{}".format(lang, script)
+            lt = lang if script is None else "{}-{}".format(lang, script)
             a = Autonym(lt, stripinvisibles(name), stripinvisibles(roman))
             res.setdefault(lt, []).append(a)
     return res
 
-@dataclass
+@dataclass(frozen=True)
 class Autonym:
     langtag: str
     name: str
     roman: str
+
+    def __lt__(self, other):
+        return self.langtag < other.langtag
 
 def unparsed(func):
     func.unparsed = True
@@ -302,6 +317,7 @@ class Editor:
         ts['sldr'] = False
         ts['windows'] = str(l.copy(region=None))
         ts['name'] = ""
+        ts['iso639_3'] = l.lang
         self.ltags.insert(-i[0], ts)
         self.curri = [-i[0]]
         if (msg := self._duplicate_check()) is not None:
@@ -311,7 +327,7 @@ class Editor:
         ''' updatateautonyms path\tRead the ethnologue file and update records from it '''
         auto = self._autonyms(path)
         res = []
-        iso639s = {x['tag']: x['iso639_3'] for x in self.ltags.values() if x.get('iso639_3', x['lang']) != x['lang']}
+        iso639s = {x['tag']: x['iso639_3'] for x in self.ltags if 'lang' in x and x.get('iso639_3', x['lang']) != x['lang']}
         self.ui.start_progress(len(self.ltags))
         for i, e in enumerate(self.ltags):
             self.ui.advance_progress()
@@ -320,7 +336,8 @@ class Editor:
             v = set()
             l = langtag(e.get('full', e.get('tag', None)))
             s = "{}-{}".format(l.lang, l.script)
-            v = sorted(set(auto[iso639s.get(l.lang, l.lang)+"-"+l.script]))
+            lang = iso639s.get(l.lang, l.lang)
+            v = sorted(set(auto.get(lang +"-"+l.script, lang)))
             if len(v):
                 resl = e['full']
                 lnames = [x.name for x in v if getattr(x, 'name', '')]
@@ -1114,7 +1131,7 @@ if not args.noschema and args.schema:
         print("Python jsonschema module missing")
         sys.exit(1)
     try:
-        with open(args.schema) as inf:
+        with open(args.schema, encoding="utf-8") as inf:
             schema = json.load(inf)
     except FileNotFoundError:
         print(f"Can't find schema file {args.schema}. Continuing with no schema check")
