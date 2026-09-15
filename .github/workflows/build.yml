@@ -34,8 +34,7 @@ jobs:
       with:
         name: langtags
         path: |
-          pub/langtags.txt
-          source/langtags.json
+          pub/langtags.*
 
   test:
     needs: build
