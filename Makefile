@@ -12,7 +12,7 @@ LTDBOPTS = -H 1
 
 all : test
 
-build : ${SOURCE}/${NAME}.json ${RESULTS}/${NAME}.txt # ${RESULTS}/${NAME}_inherited.txt
+build : ${RESULTS}/${NAME}.json ${RESULTS}/${NAME}.txt # ${RESULTS}/${NAME}_inherited.txt
 
 ${RESULTS}/${NAME}.json : ${SOURCE}/${NAME}.json | ${RESULTS}
 	cp -a ${SOURCE}/${NAME}.json ${RESULTS}/${NAME}.json
