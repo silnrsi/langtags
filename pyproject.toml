@@ -25,7 +25,7 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-tests = []
+tests = ["pytest"]
 
 [project.urls]
 Home-Page = "https://github.com/silnrsi/langtags"
