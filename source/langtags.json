@@ -100,7 +100,7 @@
     },
     {
         "api": "1.4",
-        "date": "2026-08-31",
+        "date": "2026-09-16",
         "tag": "_version"
     },
     {
@@ -21410,7 +21410,6 @@
         "sldr": false,
         "tag": "ca-valencia",
         "tags": [ "ca-ES-valencia", "ca-Latn-valencia" ],
-        "variants": [ "valencia" ],
         "windows": "ca-Latn-valencia"
     },
     {
@@ -33049,7 +33048,6 @@
         "names": [ "BhSL", "Drukgi Lagdai Khakay" ],
         "region": "BT",
         "regionname": "Bhutan",
-        "regions": [ "BT" ],
         "script": "Zxxx",
         "sldr": false,
         "tag": "dyl",

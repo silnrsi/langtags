@@ -1,3 +1,4 @@
+*.json  text
 *.csv   text
 bin/*   text
 doc/*   text
