@@ -1,4 +1,4 @@
-ISO_639,Language_Name,Print_Name,In_Script,Romanization
+﻿ISO_639,Language_Name,Print_Name,In_Script,Romanization
 aaa,Ghotuo,Ghotuọ,,
 aae,"Albanian, Arbëreshë",Tarbrisht,,
 aai,Miniafia Oyan,Miniafia,,
@@ -16,8 +16,8 @@ abi,Abidji,Enyembe lɛɛ Ogbru,,
 abk,Abkhaz,аҧсуа бызшәа,T,Aṗsua byzšwa
 abk,Abkhaz,аҧсшәа,T,Aṗsšwa
 abn,Abua,Abuan,,
-abp,"Ayta, Abellen",Ayta Abellen,,
 abp,"Ayta, Abellen",Abellen,,
+abp,"Ayta, Abellen",Ayta Abellen,,
 abq,Abaza,абаза,T,Abaza
 abq,Abaza,абаза бызшва,T,Abaza byzšva
 abr,Abron,Bono-Twi,,
@@ -50,11 +50,12 @@ adl,"Adi, Galo",Galo,,
 ady,Adyghe,Адыгабзэ,T,Adəgăbză
 ady,Adyghe,Кӏах Адыгабзэ,T,Kiakh Adəgăbză
 adz,Adzera,Adzera,,
-aeb,"Arabic, Tunisian",تونسي,T,Tounsi
 aeb,"Arabic, Tunisian",Derja,,
+aeb,"Arabic, Tunisian",تونسي,T,Tounsi
 aer,"Arrernte, Eastern",Arrernte,,
 aeu,Akeu,Gaolkheel,,
 aey,Amele,Amele,,
+afb,"Arabic, Gulf",اللهجة الخليجية,T,el-lahja el-Khalijiyya
 afb,"Arabic, Gulf",خليجي,T,Khaliji
 afo,Ajiri,Ajiri,,
 afr,Afrikaans,Afrikaans,,
@@ -65,8 +66,8 @@ age,Angal,Angal Heneng,,
 agj,Argobba,ዓርጎባ,T,Argoba
 agm,Angaataha,Aŋaataha,,
 agn,Agutaynen,Agutaynen,,
-ago,Tainae,Tainae,,
 ago,Tainae,Anka Panide,,
+ago,Tainae,Tainae,,
 agq,Aghem,Aghə̀m,,
 agr,Awajún,Awajún,,
 ags,Esimbi,Eshimbi,,
@@ -85,8 +86,8 @@ aia,Arosi,Arosi,,
 aig,Leeward Caribbean English Creole,Aawitaak,,
 aii,Assyrian Neo-Aramaic,ܐܬܘܪܝܐ,T,Ātūrāyā
 aii,Assyrian Neo-Aramaic,ܣܘܪܬ,T,Sūrët
-aij,Inter-Zab Jewish Neo-Aramaic,לשניד נשן,T,Lišānîd Nošān
 aij,Inter-Zab Jewish Neo-Aramaic,לשנא דידן,T,Lišānā Dîdān
+aij,Inter-Zab Jewish Neo-Aramaic,לשניד נשן,T,Lišānîd Nošān
 aim,Aimol,Aimol,,
 ain,Ainu,アイヌ イタㇰ,T,Aynu itak
 aio,Aiton,ဢႝတွꩫ်,T,Aiton
@@ -150,8 +151,8 @@ aon,Weri,Weri,,
 aoz,Uab Meto,Uab Meto,,
 apb,Saꞌa,Saꞌa,,
 apc,"Arabic, Levantine",شامي,T,Shami
-apd,"Arabic, Sudanese",سوداني,T,sūdānī
 apd,"Arabic, Sudanese",Dārijīya,,
+apd,"Arabic, Sudanese",سوداني,T,sūdānī
 apf,"Agta, Pahanan",Pahanan,,
 aph,Athpariya,आठपहरिया,T,Āṭhapahariyā
 apj,"Apache, Jicarilla",Abáachi mizaa,,
@@ -171,13 +172,13 @@ ari,Arikara,Sáhniš,,
 arl,Arabela,Tapueyocuaca,,
 arn,Mapudungun,Mapudungun,,
 arp,Arapaho,Hinónoʼeitíít,,
-arq,"Arabic, Algerian",اللهجة الجزائرية,T,Lahja Djazairia
 arq,"Arabic, Algerian", العامية,T,El'aamia
+arq,"Arabic, Algerian",اللهجة الجزائرية,T,Lahja Djazairia
 ars,"Arabic, Najdi",نجدي,T,Najdi
 arw,Lokono,Lokono,,
 ary,"Arabic, Moroccan",الدارجة,T,Darija
-arz,"Arabic, Egyptian",مصري,T,Masri
 arz,"Arabic, Egyptian",عامي,T,Ammi
+arz,"Arabic, Egyptian",مصري,T,Masri
 asb,Assiniboine,Nakón iyábi,,
 asg,Cishingini,Cishingini,,
 asj,Sari,Sari,,
@@ -219,8 +220,8 @@ ayl,"Arabic, Libyan",ليبي,T,Lībi
 ayn,"Arabic, Sanaani",يمني,T,Yamani
 ayp,"Arabic, North Mesopotamian",مصلاوي,T,Maslawi
 ayq,Ayi,Ayi,,
-ayr,"Aymara, Central",Aymar aru,,
 ayr,"Aymara, Central",Aymar,,
+ayr,"Aymara, Central",Aymar aru,,
 ayt,"Ayta, Magbukun",Magbukun,,
 ayz,Mai Brat,Mai Brat,,
 azb,"Azerbaijani, South",آذربایجان دیلی,T,Azərbaycan dili
@@ -257,15 +258,15 @@ bbq,Chopechop,Chɔpəchɔp,,
 bbv,Karnai,Karnai,,
 bbw,Supapya,Supapyag,,
 bca,"Bai, Central",Baip‧ngvp‧zix,,
-bcc,"Balochi, Southern",بلوچی,T,Balochi
 bcc,"Balochi, Southern",Balóchi,,
+bcc,"Balochi, Southern",بلوچی,T,Balochi
 bcf,Bamu,Bamu Owera,,
 bch,Bariai,Bariai,,
 bci,Baoulé,Wawle,,
 bcl,"Bikol, Central",Bikol,,
 bcm,Bannoni,Tsunari,,
-bcn,Bali,Maya,,
 bcn,Bali,Abaali,,
+bcn,Bali,Maya,,
 bco,Kaluli,Kaluli,,
 bcp,Bali,Dhibalí,,
 bcq,Bench,Benc’non,T,
@@ -287,14 +288,14 @@ bds,Burunge,Burungaisoo,,
 bdt,Bhogoto,Bhogoto,,
 bdu,Oroko,Oroko,,
 bdv,Bodo Parja,ବଡ଼ ପରଜା,T,Bodo Parja
-bea,Beaver,Danezaa ZaageɁ,T,Danezaa Zaage
 bea,Beaver,Dane-Ẕaa,,
+bea,Beaver,Danezaa ZaageɁ,T,Danezaa Zaage
 beb,Bebele,,,
 bec,Iceve-Maci,Iceve,,
 beh,Biali,byali,,
-bej,Bedawiyet,بجاوية,T,Bidhaawyeet
 bej,Bedawiyet,Bidhaawyeet,,
 bej,Bedawiyet,Tubdhaawi,,
+bej,Bedawiyet,بجاوية,T,Bidhaawyeet
 bej,Bedawiyet,تُبڈاوِ,T,Tubdhaawi
 bel,Belarusian,беларуская мова,T,Biełaruskaja mova
 bem,Bemba,IciBemba,,
@@ -366,8 +367,8 @@ bjh,Bahinemo,Bahinemo,,
 bji,Burji,Dhaashate,,
 bjj,Kanauji,देहाती,T,Dehati
 bjk,Barok,Barok,,
-bjn,Banjar,بنجر,T,Banjar
 bjn,Banjar,Bahasa Banjar,,
+bjn,Banjar,بنجر,T,Banjar
 bjp,Fanamaket,Fanamaket,,
 bjr,Binumarien,Afaqinna ufa,,
 bjv,Bedjond,Bedjond,,
@@ -393,13 +394,13 @@ blc,Bella Coola,ItNuxalkmc,,
 ble,Balanta,Fraase,,
 blf,Buol,Apadu Vuolo,,
 bli,Bolia,Lolia,,
-blk,Pa'o,ပအိုဝ်ႏခမ်းသား,T,Pa-O Kham Thar
 blk,Pa'o,ပအိုဝ်,T,Pa-O
+blk,Pa'o,ပအိုဝ်ႏခမ်းသား,T,Pa-O Kham Thar
 blm,Beli,'Bëlї,,
 blo,Anii,Anii,,
 blr,Blang,Plang,,
-blt,Tai Dam,ꞌTáy Ðăm,,
 blt,Tai Dam,ꞌTáy,,
+blt,Tai Dam,ꞌTáy Ðăm,,
 blw,Balangao,Finarangaw,,
 blx,"Ayta, Mag-Indi",Ayta Mag-Indi,,
 blz,Balantak,Wurung Balantak,,
@@ -418,15 +419,15 @@ bng,Benga,Benga,,
 bni,Bangi,Bobangi,,
 bnm,Batanga,Batanga,,
 bnn,Bunun,Bunun,,
-bno,Bantoanon,Bantoanon,,
 bno,Bantoanon,Asi,,
+bno,Bantoanon,Bantoanon,,
 bnp,Bola,Bola-Bakovi,,
 bns,Bundeli,बुन्देली,T,Bundeli
 bnw,Bisis,Bises,,
 boa,Bora,Miamunaa,,
 bob,Aweer,Af Aweera,,
-bod,"Tibetan, Central",བོད་སྐད།,T,bod.skad
 bod,"Tibetan, Central",བོད་ཡིག།,T,bod.yig
+bod,"Tibetan, Central",བོད་སྐད།,T,bod.skad
 boj,Anjam,Anjam,,
 bom,Berom,Cèn Bèrom,,
 bon,Bine,Bine,,
@@ -482,14 +483,14 @@ bth,"Bidayuh, Biatah",Menyu dayak,,
 bts,Batak Simalungun,Sahap Simalungun,,
 btx,Batak Karo,cakap Karo,,
 buc,Bushi,Kibushi,,
-bud,Ntcham,Ncam,,
 bud,Ntcham,Baasaar sooŋyi,,
+bud,Ntcham,Ncam,,
 bug,Bugis,Basa Ugi,,
 buk,Bugawac,Bugawac,,
 bul,Bulgarian,български език,T,bălgarski ezik
 bum,Bulu,Bulu,,
-buo,Terei,Terei,,
 buo,Terei,Puuiŋ,,
+buo,Terei,Terei,,
 bus,Bokobaru,Zogben,,
 buu,Budu,Ɨbʉdhʉ,,
 bva,Barein,Barayin,,
@@ -515,8 +516,8 @@ bxr,"Buriat, Russia",буряад хэлэн,T,buryaad xelen
 bya,Batak,Batak,,
 bye,Pouye,Pouye,,
 byh,Bhujel,भुजेल,T,bhujel
-byn,Bilen,ብሊን,T,Blin
 byn,Bilen,Blin,,
+byn,Bilen,ብሊን,T,Blin
 byr,Yipma,Yɨꞌmayagaala,,
 bys,Burak,nyuwa Ɓuurak,,
 bys,Burak,Ɓuurak,,
@@ -528,8 +529,8 @@ bzb,Andio,Andio,,
 bzd,Bribri,Bribri,,
 bze,"Bozo, Jenaama",Jɛnaama,,
 bzf,Boikin,Yangoru,,
-bzh,"Buang, Central",Veriinġ Ayej,,
-bzh,"Buang, Central",Veriinġ,,
+bzh,Veriinġ,Veriinġ,,
+bzh,Veriinġ,Veriinġ Ayej,,
 bzi,Bisu,บี่ซู่,T,Bisu
 bzj,Belize English Creole,Bileez Kriol,,
 bzk,Nicaragua English Creole,Creole,,
@@ -569,13 +570,13 @@ cdf,Chiru,चीरू,T,Cīrū
 cdj,Churahi,चुराही,T,Kuraahi
 cdm,Chepang,चेपाङ,T,chepang
 cdm,Chepang,च्योःबाङ् भासा,T,cepaang bhaasaahaang
-cdo,"Chinese, Min Dong",闽东话,T,Mindongyu
 cdo,"Chinese, Min Dong",平話,T,Bàng-uâ
+cdo,"Chinese, Min Dong",闽东话,T,Mindongyu
 ceb,Cebuano,Binisaya,,
 ceg,Chamacoco,Ɨshɨr ahwoso,,
 cen,Ibaas,Ibaas,,
-ces,Czech,čeština,,
 ces,Czech,Český jazyk,,
+ces,Czech,čeština,,
 cey,"Chin, Läoktü",Läoktü,,
 cey,"Chin, Läoktü",ေလာက်တူ,T,
 cfa,Cham,Cham,,
@@ -586,8 +587,8 @@ cha,Chamorro,Chamorru,,
 chd,"Chontal, Highland Oaxaca",Tsome,,
 che,Chechen,Нохчийн мотт,T,Noxchiin mott
 chf,"Chontal, Tabasco",Yocot'an,,
-chj,"Chinantec, Ojitlán",Jujmi,,
 chj,"Chinantec, Ojitlán",Jmiih kia’ dzä ‘vï ï,,
+chj,"Chinantec, Ojitlán",Jujmi,,
 chk,Chuukese,Chuuk,,
 chn,Chinook Wawa,Chinuk Wawa,,
 cho,Choctaw,Chahta,,
@@ -597,13 +598,13 @@ chq,"Chinantec, Quiotepec",juu jmiih,,
 chr,Cherokee,Tsalagi,,
 chr,Cherokee,ᏣᎳᎩ ᎦᏬᏂᎯᏍᏗ,T,Tsalagi Gawonihisdi
 chu,"Slavonic, Church",Словѣньскъ,T,Slovyensk
-chv,Chuvash,Чӑвашла,T,Čăvašla
 chv,Chuvash,Чӑваш чӗлхи,T,Čăvaš čĕlȟi
+chv,Chuvash,Чӑвашла,T,Čăvašla
 chw,Chuwabu,Echuwabo,,
 chx,Chantyal,छन्त्याल खाम,T,Chantyal Kham
 chy,Cheyenne,Tsėhesenėstsestȯtse,,
-chz,"Chinantec, Ozumacín",Juujmii,,
 chz,"Chinantec, Ozumacín",Jumi dsa mojai,,
+chz,"Chinantec, Ozumacín",Juujmii,,
 cia,Cia-Cia,Cia-Cia,,
 cib,"Gbe, Ci",Cigbe,,
 ciw,Chippewa,Anishinaabemowin,,
@@ -615,11 +616,11 @@ cjo,"Ashéninka, Pajonal",Ashaninka,,
 cjp,Cabécar,Cabécar,,
 cjs,Shor,Тадар тили,T,Tadar tili
 cjs,Shor,Шор тили,T,Šor tili
-cjy,"Chinese, Jinyu",晋语,T,Jìn yǔ
 cjy,"Chinese, Jinyu",晉語,T,Jìn yǔ
+cjy,"Chinese, Jinyu",晋语,T,Jìn yǔ
 ckb,"Kurdish, Central",کرمانجیی خواروو,T,Kurmancîy Xwarû
-ckb,"Kurdish, Central",کوردیی ناوەندی,T,Kurdîy Nawendî
 ckb,"Kurdish, Central",کوردیی سۆرانی,T,Kwrdîî soranî
+ckb,"Kurdish, Central",کوردیی ناوەندی,T,Kurdîy Nawendî
 ckm,Chakavian,Čakavski,,
 ckn,"Chin, Kaang",Kaang Chin,,
 cko,Anufo,anufɔ,,
@@ -652,10 +653,10 @@ cnk,"Chin, Khumi",Khumi,,
 cnk,"Chin, Khumi",Khumi Chin,,
 cnl,"Chinantec, Lalana",ju²³jmii²³²,,
 cnq,Chung,Chuŋ,,
-cnr,Montenegrin,црногорски,T,Crnogorski
 cnr,Montenegrin,Crnogorski,,
-cnt,"Chinantec, Tepetotutla",Jejmi,,
+cnr,Montenegrin,црногорски,T,Crnogorski
 cnt,"Chinantec, Tepetotutla",Jajmi dzä kï ï’,,
+cnt,"Chinantec, Tepetotutla",Jejmi,,
 cnw,"Chin, Ngawn",Ngawn,,
 coc,Cocopa,Kuapá,,
 cod,Kukama-Kukamiria,Kokama-Kokamilla,,
@@ -666,8 +667,8 @@ coh,Chichonyi-Chidzihana-Chikauma,Chichonyi-Chidzihana-Chikauma,,
 cok,"Cora, Santa Teresa",Cuéimarusaꞌna,,
 com,Comanche,Nʉmʉ Tekwapʉ,,
 con,Cofán,A'ingae,,
-coo,Comox-Sliammon,ʔayʔaǰuθəm,,
 coo,Comox-Sliammon,Éy7á7juuthem,,
+coo,Comox-Sliammon,ʔayʔaǰuθəm,,
 cop,Coptic,ϯⲙⲉⲧⲣⲉⲙⲛ̀ⲭⲏⲙⲓ,T,timetremənkʰēmi
 cor,Cornish,Kernewek,,
 cos,Corsican,Corsu,,
@@ -684,20 +685,20 @@ crh,Crimean Tatar,Къырымтатар тили,T,Qırımtatar tili
 crh,Crimean Tatar,Къырымтатарджа,T,Qırımtatarca
 crh,Crimean Tatar,къырым тили,T,Qırım tili
 cri,Sãotomense,Sãotomense,,
-crj,"Cree, Southern East",ᐄᓅ ᐊᔨᒧᐎᓐ,T,Înû ayimuwin
 crj,"Cree, Southern East",Īnū Ayimūn,,
+crj,"Cree, Southern East",ᐄᓅ ᐊᔨᒧᐎᓐ,T,Înû ayimuwin
 crk,"Cree, Plains",Nēhiyawēwin,,
 crk,"Cree, Plains",ᓀᐦᐃᔭᐍᐏᐣ,T,Nêhiyawêwin
-crl,"Cree, Northern East",ᐄᔨᔫ ᐊᔨᒧᐎᓐ,T,Îyiyû ayimuwin
 crl,"Cree, Northern East",Iyiyiw-Ayimiwin,,
+crl,"Cree, Northern East",ᐄᔨᔫ ᐊᔨᒧᐎᓐ,T,Îyiyû ayimuwin
 crm,"Cree, Moose",ᐃᓕᓖᒧᐎᓐ,T,Ililîmowin
 crn,"Cora, El Nayar",Naáyeri Nyuuca,,
 cro,Crow,Apsáalooke,,
 crq,"Chorote, Iyo'wujwa",Yojwaja,,
 crs,Seychelles French Creole,Seselwa,,
 crw,Chrau,Chrau,,
-crx,Carrier,Dakelhne,,
 crx,Carrier,Dakelh,,
+crx,Carrier,Dakelhne,,
 csb,Kashubian,Kaszëbsczi jãzëk,,
 csh,"Chin, Asho",Asho Chin,,
 csk,Jola-Kasa,Jóola Kaasa,,
@@ -707,10 +708,10 @@ csv,"Chin, Sumtu",Cumtu,,
 csv,"Chin, Sumtu",Sumtu Chin,,
 csw,"Cree, Swampy",ᐃᓂᓂᐎ ᐃᔑᑭᔗᐎᐣ,T,Ininiwi Išikišwêwin
 csw,"Cree, Swampy",ᐃᓂᓃᒧᐏᐣ,T,Ininīmowin
-csy,"Chin, Siyin",Sizang,,
 csy,"Chin, Siyin",Eima kam,,
-ctd,"Chin, Tedim",Tedim,,
+csy,"Chin, Siyin",Sizang,,
 ctd,"Chin, Tedim",Ei pau,,
+ctd,"Chin, Tedim",Tedim,,
 cte,"Chinantec, Tepinapa",Jujmi,,
 ctg,Chittagonian,চাঁটগাঁইয়া বুলি,T,Caṭgãia Buli
 cth,"Chin, Thaiphum",Thaiphum,,
@@ -718,8 +719,8 @@ ctl,"Chinantec, Tlacoatzintepec",Jau jmai,,
 ctn,Chhintang,छिन्ताङ्,T,Chhintang
 cto,Embera Catío,Ẽ́bẽra Katío,,
 ctp,"Chatino, Western Highland",Chaꞌtñan,,
-ctu,Chol,Lakty’añ,,
 ctu,Chol,Ch'ol,,
+ctu,Chol,Lakty’añ,,
 cub,Cubeo,Pãmié,,
 cuc,"Chinantec, Usila",Jau² jm⁴³,,
 cuh,Gichuka,Gĩchuka,,
@@ -729,8 +730,8 @@ cuv,Cuvok,Cuvakw,,
 cux,"Cuicatec, Tepeuxila",Cuicateco yeⁿꞌe Tepeuxila,,
 cvg,Chug,Duhumbi,,
 cwa,Kabwa,Ekikabhwa,,
-cwd,"Cree, Woods",ᓀᐦᐃᖬᐍᐏᐣ,T,Nīhithawīwin
 cwd,"Cree, Woods",Nīhithawīwin,,
+cwd,"Cree, Woods",ᓀᐦᐃᖬᐍᐏᐣ,T,Nīhithawīwin
 cwe,Kwere,Nghwele,,
 cwt,Kuwaataay,Kuwaataay,,
 cya,"Chatino, Nopala",Chaꞌtñan,,
@@ -784,16 +785,16 @@ dhn,Dangi,ડાંગી,T,Dangi
 dho,Dhodia,ધોડીઆ,T,Dhodeeā
 dhv,Drehu,Drehu,,
 dhw,Danuwar,दनुवार,T,danuvāra
-dib,"Dinka, South Central",Thuɔŋjäŋ,,
 dib,"Dinka, South Central",Jiëëŋ,,
+dib,"Dinka, South Central",Thuɔŋjäŋ,,
 did,Didinga,Dĩdĩnga,,
 dif,Diyari,Dieri,,
 dig,Chidigo,Chidigo,,
-dik,"Dinka, Southwestern",Thuɔŋjäŋ,,
 dik,"Dinka, Southwestern",Thoŋ ë Muɔnyjäŋ,,
+dik,"Dinka, Southwestern",Thuɔŋjäŋ,,
 dil,Dilling,Warki,,
-dip,"Dinka, Northeastern",Thoŋ ë Jiëëŋ,,
 dip,"Dinka, Northeastern",Jiëëŋ,,
+dip,"Dinka, Northeastern",Thoŋ ë Jiëëŋ,,
 diq,"Zazaki, Southern",Dimlî,,
 diq,"Zazaki, Southern",Zazakî,,
 dis,Dimasa,Grao Dima,,
@@ -803,20 +804,20 @@ div,Dhivehi,ދިވެހިބަސް,T,Divehi-bas
 diw,"Dinka, Northwestern",Thuɔŋjäŋ,,
 diz,Ding,Kiding,,
 djc,"Daju, Dar Daju",Dajiŋge,,
-dje,Zarma,Zarmaciine,,
 dje,Zarma,Zarma sanni,,
+dje,Zarma,Zarmaciine,,
 djk,Aukan,Okanisi Tongo,,
 djr,Djambarrpuyngu,Djambarrpuyngu,,
-dks,"Dinka, Southeastern",Thuɔŋjäŋ,,
 dks,"Dinka, Southeastern",Jiɛ̈ɛ̈ŋ Ciɛɛm,,
+dks,"Dinka, Southeastern",Thuɔŋjäŋ,,
 dkx,Mazagway-Hidi,Mazagway-Hidi,,
 dlg,Dolgan,Долган,T,Dolgan
 dlg,Dolgan,Һака,T,Ḫaka
-dlm,Dalmatian,Langa Dalmata,,
 dlm,Dalmatian,Dalmato,,
+dlm,Dalmatian,Langa Dalmata,,
 dln,Darlong,Darlong,,
-dmo,Kemedzung,Kɨmədzuŋ,,
 dmo,Kemedzung,Díɛ yi Bədzumbu lə,,
+dmo,Kemedzung,Kɨmədzuŋ,,
 dne,Ndendeule,Kindendeule,,
 dng,Dungan,Хуэйзў йүян,T,Huejzw jyjan
 dnj,Dan,Dã̀ã̀,,
@@ -836,13 +837,13 @@ dri,C'Lela,C'Lela,,
 drs,Gedeo,ጌዴኡፈ,T,gedeʾufä
 drt,Drents,Drèents,,
 dry,Darai,दरइ,T,darai
-dsb,"Sorbian, Lower",Dolnoserbski,,
 dsb,"Sorbian, Lower",Dolnoserbšćina,,
+dsb,"Sorbian, Lower",Dolnoserbski,,
 dsh,Daasanach,Af Daasanach,,
 dso,Desiya,ଦେଶିଆ,T,Desia
 dsq,Tadaksahak,Tadaksahak,,
-dtb,"Kadazan, Labuk-Kinabatangan",Tinangaran Kadajan,,
 dtb,"Kadazan, Labuk-Kinabatangan",Kadazan Labuk-Kinabatangan,,
+dtb,"Kadazan, Labuk-Kinabatangan",Tinangaran Kadajan,,
 dtp,Kadazan Dusun,Kadazan Dusun,,
 dtr,Lotud,Suang Lotud,,
 dts,"Dogon, Toro So",Tɔrɔ-sɔɔ,T,Toro So
@@ -879,12 +880,12 @@ ekg,Ekari,Me,,
 ekk,"Estonian, Standard",Eesti Keel,,
 ekm,Nulibie,Nulíbíe,,
 eko,Koti,Ekoti,,
-ell,Greek,ελληνικά,T,Elliniká
-ell,Greek,Νέα Ελληνικά,T,Néa Ellīniká
 ell,Greek,Δημοτική Γλώσσα,T,Dimotikí Glóssa
+ell,Greek,Νέα Ελληνικά,T,Néa Ellīniká
+ell,Greek,ελληνικά,T,Elliniká
 elm,Eleme,Eleme,,
-emi,Mussau-Emira,Mussau,,
 emi,Mussau-Emira,Emira,,
+emi,Mussau-Emira,Mussau,,
 emk,"Maninkakan, Eastern",Maninka,,
 emk,"Maninkakan, Eastern",Maninkakan,,
 emp,"Emberá, Northern",Dadyi Ẽ́berã Bed̶ea,,
@@ -922,8 +923,8 @@ eus,Basque,Euskera,,
 eve,Even,эвэды торэн,T,eved'i toren
 ewe,Éwé,Eʋegbe,,
 ewo,Ewondo,Ewondo,,
-ext,Extremaduran,Ehtremeñu,,
 ext,Extremaduran,Barranquênhu,,
+ext,Extremaduran,Ehtremeñu,,
 eya,Eyak,dAxhunhyuuga’,,
 eza,Ezaa,Ezaa,,
 faa,Fasu,Namo Me,,
@@ -939,8 +940,8 @@ far,Fataleka,Fataleka,,
 fax,Fala,Fala,,
 fax,Fala,Nosa Fala,,
 ffi,Foia Foia,Foia Foia,,
-ffm,"Fulfulde, Maasina",Maasinankoore,,
 ffm,"Fulfulde, Maasina",Fulfulde,,
+ffm,"Fulfulde, Maasina",Maasinankoore,,
 fij,Fijian,Na Vosa Vakaviti,,
 fil,Filipino,Filipino,,
 fin,Finnish,Suomi,,
@@ -948,8 +949,8 @@ fip,Fipa,Ichifipa,,
 fit,Meänkieli,Meänkieli,,
 fkk,Kirya-Konzel,myá Kákíryà,,
 fkk,Kirya-Konzel,myá Kónzə̀l,,
-fkv,"Finnish, Kven",Kväänin kieli,,
 fkv,"Finnish, Kven",Kvääni,,
+fkv,"Finnish, Kven",Kväänin kieli,,
 fla,Kalispel-Pend d'Oreille,Nqlispélišcn,,
 fla,Kalispel-Pend d'Oreille,Séliš,,
 flr,Fuliiru,Kifuliiru,,
@@ -969,8 +970,8 @@ frd,Fordata,Vaidida,,
 frp,Arpitan,Arpitan,,
 frq,Forak,Forak,,
 frr,"Frisian, Northern",Friisk,,
-frs,"Saxon, East Frisian Low",Plattdüütsk,,
 frs,"Saxon, East Frisian Low",Oostfräisk,,
+frs,"Saxon, East Frisian Low",Plattdüütsk,,
 fry,Frisian,Frysk,,
 fub,"Fulfulde, Adamawa",Fulfulde,,
 fub,"Fulfulde, Adamawa",ڢُلْڢُلْدٜ,T,Fulfulde
@@ -1092,8 +1093,8 @@ gul,Sea Island English Creole,Gullah,,
 gum,Misak,Namdrik,,
 gun,"Guaraní, Mbyá",Nhandeayvu,,
 guo,Guayabero,Jiwjame,,
-gup,Gunwinggu,Kunwinjku,,
 gup,Gunwinggu,Bininj Kunwok,,
+gup,Gunwinggu,Kunwinjku,,
 gur,Farefare,Fãrfãre,,
 guu,Yanomamö,Yanomamɨ,,
 guw,Gun,Gungbe,,
@@ -1119,14 +1120,14 @@ gyn,Guyanese Creole,Gaiyniiz,,
 gyn,Guyanese Creole,Kriiyliiz,,
 gyr,Guarayu,Gwarayu,,
 gyz,Gyaazi,Ka̱ biGyazi,,
-haa,Hän,Tr’ondëk Hwëch’in,,
 haa,Hän,Häł Gołan,,
+haa,Hän,Tr’ondëk Hwëch’in,,
 hae,"Oromo, Eastern",Afaan Oromoo,,
 hag,Hanga,Haŋatiri,,
-hah,Hahon,Rautsuiiri,,
 hah,Hahon,Bantsia,,
-haj,Hajong,হৃজং ভাশা,T,Hajong Bhasa
+hah,Hahon,Rautsuiiri,,
 haj,Hajong,Hajong Bhasa,,
+haj,Hajong,হৃজং ভাশা,T,Hajong Bhasa
 hak,"Chinese, Hakka",客家話,T,Hakkafa
 han,Hangaza,Igihangaza,,
 hao,Hakö,Hakö,,
@@ -1141,14 +1142,14 @@ hay,Haya,Luhaya,,
 hay,Haya,Oruhaya,,
 haz,Hazaragi,آزرگی‎,T,Āzaragi
 hbb,Nya Huba,Huba,,
-hbo,"Hebrew, Ancient",עִבְרִית מִקְרָאִית,T,Ivrit Miqra'it
 hbo,"Hebrew, Ancient",לְשׁוֹן הַמִּקְרָא,T,Leshon ha-Miqra
+hbo,"Hebrew, Ancient",עִבְרִית מִקְרָאִית,T,Ivrit Miqra'it
 hch,Huichol,Wixárika,,
 hch,Huichol,Wixárika Niukiyari,,
 hdn,"Haida, Northern",X̱aat Kíl,,
 hdy,Hadiyya,Hadiyyisa,,
-heb,Hebrew,עברית,T,Ivrit
 heb,Hebrew,עִבְרִית חֲדָשָׁה,T,ivrít ḥadašá[h]
+heb,Hebrew,עברית,T,Ivrit
 hed,Herdé,Zime Pala,,
 heg,Helong,Helong,,
 heh,Hehe,Kihehe,,
@@ -1158,8 +1159,8 @@ hig,Kamwe,Kamwe,,
 hih,Pamosu,Pamosu,,
 hil,Hiligaynon,Hiligaynon,,
 hil,Hiligaynon,Ilonggo,,
-hin,Hindi,हिन्दी,T, Hindī
 hin,Hindi,मानक हिन्दी,T,Mānak Hindī
+hin,Hindi,हिन्दी,T, Hindī
 hix,Hixkaryána,Hixkaryána,,
 hkh,Khah,Khah,,
 hla,Halia,Halia,,
@@ -1176,16 +1177,16 @@ hne,Chhattisgarhi,छत्तीसगढ़ी,T,Chhattisgarhi
 hni,Hani,Ha Nhi,,
 hnj,Hmong Njua,Hmongb Nzhuab,,
 hnj,Hmong Njua,Moob Leeg,,
-hnm,Hainanese,海南话,T,Hái-nâm-oe
 hnm,Hainanese,Hái-nâm,,
+hnm,Hainanese,海南话,T,Hái-nâm-oe
 hnn,Hanunoo,Hanunó'o,,
 hnn,Hanunoo,ᜱᜨᜳᜨᜳᜢ,T,Hanunó'o
 hno,"Hindko, Northern",ہندکو,T,Hindko
 hns,"Hindustani, Sarnami",Sarnaanie Hiendoestaanie,,
 hoc,Ho,Ho jagar,,
 hoc,Ho,हो जगर,T,Ho jagar
-hoc,Ho,𑢹𑣉𑣉 𑣎𑣋𑣜,T,Ho jagar
 hoc,Ho,ହୋ ଜାଗାର,T,Ho jagaara
+hoc,Ho,𑢹𑣉𑣉 𑣎𑣋𑣜,T,Ho jagar
 hoj,Haroti,हाड़ौती,T,Haroti
 hol,Holu,Holo,,
 hop,Hopi,Hopílavayi,,
@@ -1196,8 +1197,8 @@ hrt,Hértevin,ܣܘܪܬ,T,Sôreth
 hrv,Croatian,Hrvatski,,
 hrw,Warwar Feni,Warwar Feni,,
 hrx,Hunsrik,Hunsrik,,
-hrx,Hunsrik,Riograndenser Hunsrickisch,,
 hrx,Hunsrik,Plat Taytx,,
+hrx,Hunsrik,Riograndenser Hunsrickisch,,
 hsb,"Sorbian, Upper",Hornjoserbšćina,,
 hsb,"Sorbian, Upper",Hornjoserbsce,,
 hsn,"Chinese, Xiang",湘语,T,Xiang
@@ -1218,8 +1219,8 @@ hvn,Hawu,Lii Hawu,,
 hwc,Hawaii Pidgin,Hawaii Pidgin,,
 hwc,Hawaii Pidgin,Pidgin,,
 hwo,Hwana,Tuftera,,
-hye,Armenian,հայերեն,T,Hayeren
 hye,Armenian,արևելահայերեն,T,Arevelahayeren
+hye,Armenian,հայերեն,T,Hayeren
 hyw,"Armenian, Western",արեւմտահայերէն,T,arevmdahayerên
 ian,Iatmul,Gepmakudi,,
 iar,Purari,Koriki,,
@@ -1233,15 +1234,15 @@ ibo,Igbo,Asụsụ Igbo,,
 iby,Ibani,Ịḅanị,,
 icr,Islander English Creole,San Andres Ailanda Kriol,,
 ida,Luidakho-Luisukha-Lutirichi,Luidakho-Luisukha-Lutirichi,,
-idd,Ede Idaca,Ìdàáshà,,
 idd,Ede Idaca,Èdè Ìdàáshà,,
+idd,Ede Idaca,Ìdàáshà,,
 idu,Idoma,Idɔma,,
 ifa,"Ifugao, Amganad",Ipugaw,,
-ifb,"Ifugao, Batad",Ipugaw,,
 ifb,"Ifugao, Batad",Ayangan,,
+ifb,"Ifugao, Batad",Ipugaw,,
 ife,Ifè,Ifɛ̀,,
-ifk,"Ifugao, Tuwali",Tuwali,,
 ifk,"Ifugao, Tuwali",Ipugaw,,
+ifk,"Ifugao, Tuwali",Tuwali,,
 ifm,Teke-Wuumu,Ifumu,,
 ifu,"Ifugao, Mayoyao",Ipugaw,,
 igb,Ebira,Ebira,,
@@ -1266,12 +1267,12 @@ ilp,Iranun,Iranun,,
 inb,Inga,Inga,,
 ind,Indonesian,Bahasa Indonesia,,
 ing,Deg Xinag,Deg Xinag,,
-inh,Ingush,гӏалгӏай мотт,T,Ğalğaj mott
-inh,Ingush,Гӏалгӏай,T,Ğalğaj
 inh,Ingush,Ghalghaj,,
+inh,Ingush,Гӏалгӏай,T,Ğalğaj
+inh,Ingush,гӏалгӏай мотт,T,Ğalğaj mott
 inn,Isinay,Isinay,,
-ino,Inoke-Yate,Inoke-Yate,,
 ino,Inoke-Yate,Inoke,,
+ino,Inoke-Yate,Inoke-Yate,,
 ior,Inor,ኢኖር,T,Inori
 iou,Tuma-Irumu,Tuma Man,,
 ipi,Ipili,Ipili,,
@@ -1302,8 +1303,8 @@ izr,Izere,Izere,,
 izz,Izii,Izii,,
 jaa,Jamamadí,Jamamadí,,
 jab,Hyam,Jaba,,
-jac,Jakalteko,Abꞌxubꞌal Poptiꞌ,,
 jac,Jakalteko,Abxubal,,
+jac,Jakalteko,Abꞌxubꞌal Poptiꞌ,,
 jae,Yabem,Jabêm,,
 jam,Jamaican English Creole,Jamiekan,,
 jao,Yanyuwa,Yanyuwa,,
@@ -1315,8 +1316,8 @@ jeb,Jebero,Shiwilu la’la’,,
 jeh,Jeh,Jeh,,
 jen,Dza,nnwa’ Dzâ,,
 jgk,Gwak,Gwak,,
-jgo,Ngomba,Cú-Mbɔ́ndaa,,
 jgo,Ngomba,Cú-Ŋgɔmbaa,,
+jgo,Ngomba,Cú-Mbɔ́ndaa,,
 jib,Jibu,Jibu,,
 jic,Tol,Tol,,
 jim,Jimjimen,Jimjimən,,
@@ -1325,8 +1326,8 @@ jiv,Shuar,Shuar chicham,,
 jje,Jejueo,제주어,T,Jejueo
 jje,Jejueo,제주말,T,Jejumal
 jmc,Machame,Kimashami,,
-jmd,Yamdena,Tanempar Liriny,,
 jmd,Yamdena,Tanempar,,
+jmd,Yamdena,Tanempar Liriny,,
 jml,Jumli,खस जुम्ली,T,Khas Jumli
 jml,Jumli,जुम्‍ली,T,Jumli
 jmn,"Naga, Makuri",Makuri,,
@@ -1344,10 +1345,10 @@ jum,Jumjum,Tüŋ Mäbaan,,
 jun,Juang,ଜୁଆଙ୍‌,T,Juang
 jup,Hupdë,Hup,,
 jvn,"Javanese, Suriname",Jawa Suriname,,
-kaa,Karakalpak,Қарақалпақ тили,T,Qaraqalpaq tili
 kaa,Karakalpak,Qaraqalpaq tili,,
-kab,Kabyle,ⵜⴰⵇⴱⴰⵢⵍⵉⵜ,T,Taqbaylit
+kaa,Karakalpak,Қарақалпақ тили,T,Qaraqalpaq tili
 kab,Kabyle,Tazwawt,,
+kab,Kabyle,ⵜⴰⵇⴱⴰⵢⵍⵉⵜ,T,Taqbaylit
 kac,Jingpho,Jinghpaw ga,,
 kad,Adara,Ànda,,
 kai,Karekare,Bo Karaikarai,,
@@ -1393,8 +1394,8 @@ kdn,Kunda,Mu Chikunda,,
 kdq,Koch,কচ',T,Kaca'
 kdq,Koch,কচ' কৰ',T,Kaca' kara'
 kdr,Karaim,Karaj Tili,,
-kdt,Kuay,กูย,T,Kuuy
 kdt,Kuay,กวย,T,Kuay
+kdt,Kuay,กูย,T,Kuuy
 kea,Kabuverdianu,Kabuverdianu,,
 kea,Kabuverdianu,Kriol,,
 keh,Mevembet,Mevembet,,
@@ -1451,18 +1452,18 @@ kim,Karagas,тоъфа дыл,T,tofa dyl
 kin,Kinyarwanda,Ikinyarwanda,,
 kio,Kiowa,Cáuijògà,,
 kip,"Kham, Sheshi",शेषी पाङ,T,Sheshi Paang
-kir,Kyrgyz,кыргызча,T,Kyrgyzcha
 kir,Kyrgyz,кыргыз тили,T,Kyrgyz tili
+kir,Kyrgyz,кыргызча,T,Kyrgyzcha
+kiu,"Zazaki, Northern",Kırmancki,,
 kiu,"Zazaki, Northern",So-Bê,,
 kiu,"Zazaki, Northern",Zonê Ma,,
-kiu,"Zazaki, Northern",Kırmancki,,
 kix,"Naga, Khiamniungan",Khiamniungan,,
 kiz,Kisi,Kikɨsi,,
 kjb,Q'anjob'al,Q'anjob'al,,
 kjc,"Konjo, Coastal",Konjo,,
 kje,Kisar,Yotowawa,,
-kjg,Khmu,ກຶມຫມຸ,T,Kmhmu'
 kjg,Khmu,Kmhmu',,
+kjg,Khmu,ກຶມຫມຸ,T,Kmhmu'
 kjh,Khakas,Хакас тілі,T,Xakas tili
 kji,Zabana,Zabana,,
 kjj,Khinalugh,Kətşi Miż,,
@@ -1508,12 +1509,12 @@ kmv,Karipuna French Creole,Lanc-Patuá,,
 kmv,Karipuna French Creole,Patua,,
 kmw,Komo,Kikomo,,
 kmz,Khorasani Turkish,خراسان تركچىسى,T,Xorasan Türkçesi
-knb,"Kalinga, Lubuagan",Lubuagan,,
 knb,"Kalinga, Lubuagan",Lilubuagen,,
-knc,"Kanuri, Yerwa",Yerwa Kanuri,,
+knb,"Kalinga, Lubuagan",Lubuagan,,
 knc,"Kanuri, Yerwa",Kanuri,,
-kne,Kankanaey,Kankanaey,,
+knc,"Kanuri, Yerwa",Yerwa Kanuri,,
 kne,Kankanaey,Aplay,,
+kne,Kankanaey,Kankanaey,,
 knf,Mankanya,Uhula,,
 kng,Koongo,Kikongo,,
 knj,Akateko,Akateko,,
@@ -1527,8 +1528,8 @@ knz,Kalamsé,Sàmó,,
 koe,"Suri, Kacipo-Bale",Suri,,
 kog,Kogi,Kaugiañ,,
 koo,Konzo,Lhukonzo,,
-kor,Korean,한국말,T,Hanguk-mal
 kor,Korean,한국어,T,Hanguk-eo
+kor,Korean,한국말,T,Hanguk-mal
 kos,Kosraean,Kosrae,,
 kot,Lagwan,Lagwan,,
 koy,Koyukon,Denaakk'e,,
@@ -1541,17 +1542,17 @@ kpj,Karajá,Iny Rybe,,
 kpm,Koho,Kơho,,
 kpo,Ikposo,Ɩkpɔsɔ,,
 kpr,Korafe-Yegha,Korafe-Yegha,,
-kps,Tehit,Salo Tkoin,,
 kps,Tehit,Salo Tehit,,
+kps,Tehit,Salo Tkoin,,
 kpv,Komi-Zyrian,Коми кыв,T,Komi kyv
 kpw,Kobon,Kobon,,
 kpy,Koryak,Нымылг’ын,T,Nymylg’yn
 kpz,Kupsapiiny,Kupsapiiny,,
 kqb,Kovai,Alngubin,,
-kqc,Doromu-Koki,Doromu-Koki,,
 kqc,Doromu-Koki,Doromu ago,,
-kqe,Kalagan,Kalagan,,
+kqc,Doromu-Koki,Doromu-Koki,,
 kqe,Kalagan,Kagan,,
+kqe,Kalagan,Kalagan,,
 kqf,Kakabai,Kakabai,,
 kqi,Koita,Koita,,
 kqk,"Gbe, Kotafon",Kogbe,,
@@ -1588,11 +1589,11 @@ ktj,"Krumen, Plapo",Plaawin,,
 ktm,Kurti,Kurti,,
 ktm,Kurti,Nolou Kurti,,
 kto,Kuot,Kuot,,
-ktu,Kituba,Kituba,,
 ktu,Kituba,Kikongo ya leta,,
+ktu,Kituba,Kituba,,
 ktz,Juǀ'hoansi,Juǀ'hoansi,,
-kua,Oshiwambo,Oshiwambo,,
 kua,Oshiwambo,Oshikwanyama,,
+kua,Oshiwambo,Oshiwambo,,
 kub,Kutep,Kuteb,,
 kud,'Auhelawa,'Auhelawa,,
 kue,Kuman,Kuman,,
@@ -1678,15 +1679,15 @@ lbb,Label,Label,,
 lbe,Lak,лакку маз,T,Lakku maz
 lbj,Ladakhi,ལ་དྭགས་ཀྱི་སྐད།,T,Ladaks skat
 lbn,Rmeet,Rmeet,,
-lbq,Wampar,Wampar,,
 lbq,Wampar,Dzob Wampar,,
+lbq,Wampar,Wampar,,
 lbr,Lohorung,लोहोरुङ्,T,Lōhōruṅ
 lbw,Tolaki,Tolaki,,
 lch,Luchazi,Chiluchazi,,
 lcm,Tungag,Tungag,,
 lcp,"Lawa, Western",ละเวือะ,T,Lawa
-ldb,Duya,Idṹ,,
 ldb,Duya,Dũya,,
+ldb,Duya,Idṹ,,
 leb,Lala-Bisa,Chilala,,
 led,Lendu,Bbaledha,,
 lee,Lyélé,Lyélé,,
@@ -1696,8 +1697,8 @@ lem,Nomaande,Nɔmaándɛ́,,
 lep,Lepcha,Róng-ríng,,
 lew,"Kaili, Ledo",Kaili-Ledo,,
 lex,Luang,Lteri Lgona,,
-lez,Lezgi,лезги чӏал,T,Lezgi ҫ̇al
 lez,Lezgi,лезги,T,Lezgi
+lez,Lezgi,лезги чӏал,T,Lezgi ҫ̇al
 lfa,Lefa,Lɨfa’,,
 lga,Lungga,Luqa,,
 lgg,Lugbara,Lʉgbara tɨ,,
@@ -1735,8 +1736,8 @@ lkn,Lakon,Lakon,,
 lko,Olukhayo,Olukhayo,,
 lkr,Päri,Dhi-Pari,,
 lks,Olushisa,Olushisa,,
-lkt,Lakota,Lakhótiya,,
 lkt,Lakota,Lakȟótiyapi,,
+lkt,Lakota,Lakhótiya,,
 llb,Lolo,iLolo,,
 llg,Lole,Rote Lole,,
 lln,Lele,Lele,,
@@ -1744,9 +1745,9 @@ llp,"Efate, North",Nakanamanga,,
 llu,Lau,Lau,,
 lmd,Lumun,Lumun,,
 lmk,Lamkang,Lamkaang,,
+lml,Hano,Buatvenua,,
 lml,Hano,Hano,,
 lml,Hano,Nonda,,
-lml,Hano,Buatvenua,,
 lmn,Lambadi,బంజార,T,Banjara
 lmo,Lombard,Lombard,,
 lmp,Limbum,Limbùm,,
@@ -1762,8 +1763,8 @@ log,Logo,Lògòti,,
 loh,Laarim,Laarim,,
 lok,Loko,Landogo,,
 lol,Mongo-Nkundu,Lɔmɔ́ngɔ,,
-lom,Loma,Löömàgòòi,,
 lom,Loma,Löghömàgòòi,,
+lom,Loma,Löömàgòòi,,
 loq,Lobala,Loɓala,,
 lor,Téén,Téén,,
 lot,Otuho,Otuho,,
@@ -1778,20 +1779,20 @@ lri,Olumarachi,Olumarachi,,
 lrm,Olumarama,Olumarama,,
 lro,Laro,Laru,,
 lsi,Lacid,Lacid,,
-lsm,Saamya-Gwe,Ólusaamya,,
 lsm,Saamya-Gwe,Lusaamya-Lugwe,,
+lsm,Saamya-Gwe,Ólusaamya,,
 ltg,Latgalian,Latgališu,,
 lth,Thur,Lëb Thur,,
 lto,Olutsotso,Olutsotso,,
 lts,Lutachoni,Lutachoni,,
 ltz,Luxembourgish,Lëtzebuergesch,,
-lua,Luba-Kasai,Tshiluba,,
 lua,Luba-Kasai,Ciluba,,
+lua,Luba-Kasai,Tshiluba,,
 lub,Luba-Katanga,Kiluba,,
 luc,Aringa,Ãrị̃ngã tị,,
 lud,Ludian,Lüüdikiel,,
-lue,Luvale,Luvale,,
 lue,Luvale,Chiluvale,,
+lue,Luvale,Luvale,,
 lug,Ganda,Luganda,,
 luh,"Chinese, Leizhou",雷州话,T,Léizhōuhuà
 lui,Luiseño,Cham'teela,,
@@ -1803,8 +1804,8 @@ lus,Mizo,Mizo,,
 lut,Lushootseed,dxʷləšucid,,
 luz,"Luri, Southern",لری بزرگ,T,Lorī-a bozorg
 lvk,Lavukaleve,Lavukaleve,,
-lvs,"Latvian, Standard",Latviski,,
 lvs,"Latvian, Standard",Latviešu valoda,,
+lvs,"Latvian, Standard",Latviski,,
 lwg,Oluwanga,Oluwanga,,
 lwl,"Lawa, Eastern",ละเวือะ,T,Lawa
 lwo,Luwo,dhe Luuo,,
@@ -1820,14 +1821,14 @@ maf,Mafa,Mafa,,
 mag,Magahi,मगही,T,magahī
 mah,Marshallese,M̧ajeļ,T,Majel
 mai,Maithili,मैथिली,T,Maithilī
-maj,"Mazatec, Jalapa de Díaz",Ntaxjo̱,,
 maj,"Mazatec, Jalapa de Díaz",Kinꞌekꞌatiya,,
+maj,"Mazatec, Jalapa de Díaz",Ntaxjo̱,,
 mak,Makasar,Basa Mangkasara',,
 mal,Malayalam,മലയാളം,T,Malayāḷam
 mam,Mam,Qyol Mam,,
 mam,Mam,Yol Mam,,
-maq,"Mazatec, Chiquihuitlán",Nne nangui ngaxni,,
 maq,"Mazatec, Chiquihuitlán",Hne naja,,
+maq,"Mazatec, Chiquihuitlán",Nne nangui ngaxni,,
 mar,Marathi,मराठी,T,Marāṭhī
 mas,Maasai,ɔl Maa,,
 mau,"Mazatec, Huautla",Én‑ná,,
@@ -1870,8 +1871,8 @@ mcx,Mpyemo,Mpyemɔ,,
 mcz,Mawan,Mawan,,
 mda,Mada,Mada,,
 mde,Maba,Bura mabaŋ,,
-mde,Maba,لغة المبا,T,llughat almuba
 mde,Maba,بُرَا مَبَݝْنُ,T,Buraa mabaŋnu
+mde,Maba,لغة المبا,T,llughat almuba
 mdf,Moksha,Мокшень кяль,T,Mokšenj kälj
 mdh,Maguindanaon,Magindanawn,,
 mdi,Mamvu,Tengo,,
@@ -1880,16 +1881,17 @@ mdm,Mayogo,Madyɵgɵ,,
 mdp,Mbala,Gimbala,,
 mdv,"Mixtec, Santa Lucía Monteverde",Sasau,,
 mdw,Mbosi,Embɔ́sí,,
-mdx,Dizin,Diizin,,
 mdx,Dizin,Diizi-nuog,,
-mdy,Maale,ማኣሎ ሙቺ,T,Maalo Muchi
+mdx,Dizin,Diizin,,
+mdy,Maale,ማኣሌ,T,Maalle
+mdy,Maale,ማኣሌሦ,T,Maalles’o
 med,Melpa,Melpa,,
 meh,"Mixtec, Southwestern Tlaxiaco",Tu̱ꞌun káꞌánꞌ kájí,,
 mej,Meyah,Meyah,,
 men,Mende,Mɛnde,,
 men,Mende,Mɛnde yia,,
-meo,"Malay, Kedah",ملايو قدح,T,Melayu Kedah
 meo,"Malay, Kedah",Pelat Utagha,,
+meo,"Malay, Kedah",ملايو قدح,T,Melayu Kedah
 meq,Merey,Mere,,
 mer,Kimîîru,Kimîîru,,
 met,Mato,Mato,,
@@ -1898,9 +1900,9 @@ mev,Maan,Mã́ã́,,
 mey,Hassaniyya,Hassaniyya,,
 mey,Hassaniyya,حسانية‎‎,T,Ḥassānīya
 mez,Menominee,Mamaceqtaw,,
-mfa,"Malay, Pattani",มลายู 'ตานิง,T,
 mfa,"Malay, Pattani",'นายู 'ตานิง,T,
 mfa,"Malay, Pattani",Klate-Ttaning,,
+mfa,"Malay, Pattani",มลายู 'ตานิง,T,
 mfc,Mba,Mbanɨ,,
 mfe,Morisyen,Kreol Morisien,,
 mfg,Mogofin,Mɔgɔfin,,
@@ -1929,14 +1931,14 @@ mhi,Ma'di,Mãꞌdí,,
 mhk,Mungaka,Mɨ̀ŋgâkà,,
 mhl,Mauwake,Mauwake,,
 mho,Mashi,Thsikwamashi,,
-mhr,"Mari, Meadow",олык марий йылме,T,Olyk Marij jylme
 mhr,"Mari, Meadow",олык марий,T,Olyk Marij
+mhr,"Mari, Meadow",олык марий йылме,T,Olyk Marij jylme
 mhs,Buru,Buru,,
 mhw,Mbukushu,Thimbukushu,,
 mhx,Lhao Vo,Laungwaw,,
 mhx,Lhao Vo,Lhaovo,,
-mic,Mi'kmaq,Míkmawísimk,,
 mic,Mi'kmaq,L'nui'simk,,
+mic,Mi'kmaq,Míkmawísimk,,
 mid,Neo-Mandaic,ࡋࡉࡔࡀࡍࡀ ࡖ ࡌࡀࡍࡃࡀࡉࡉࡀ,T,lishāna’d mandāyì
 mie,"Mixtec, Ocotepec",Tūhun sāsávī,,
 mif,Mofu-Gudur,Mey Mafaw,,
@@ -1957,8 +1959,8 @@ mix,"Mixtec, Mixtepec",Sa'an savi,,
 miy,"Mixtec, Ayutla",Tu̱n savi̱ꞌ Tu̱tyoo̱ꞌ,,
 miz,"Mixtec, Coatzospan",Tuꞌun davi,,
 mjc,"Mixtec, San Juan Colorado",Tu'un sav,,
-mji,Kim Mun,Kim Mun,,
 mji,Kim Mun,Kem di mun,,
+mji,Kim Mun,Kim Mun,,
 mjl,Mandeali,मंडियाली,T,Mandiali
 mjt,Sauria Paharia,सौरिया पहाड़िया,T,sauriya pahaadiya
 mjw,Karbi,Arleng Alam,,
@@ -1974,8 +1976,8 @@ mkl,Mokole,Ede-Mɔkɔle,,
 mkn,"Malay, Kupang",Kupang,,
 mks,"Mixtec, Silacayoapan",Tu̱hun ndáhví,,
 mkw,Kituba,Kituba,,
-mlf,Mal,Mal,,
 mlf,Mal,Ma'di,,
+mlf,Mal,Mal,,
 mlk,Kiwilwana,Kiwilwana,,
 mln,Malango,Teha,,
 mlr,Vame,Vamé,,
@@ -1983,8 +1985,8 @@ mls,Masalit,Kanaa Masaraka,,
 mls,Masalit,Masarak,,
 mlt,Maltese,Malti,,
 mlu,To'abaita,Toqabaqita,,
-mlv,Mwotlap,No-hohole to-M̄otlap,,
 mlv,Mwotlap,Na-gatgat to-M̄otlap,,
+mlv,Mwotlap,No-hohole to-M̄otlap,,
 mlw,Moloko,Ma Mǝloko,,
 mmc,"Mazahua, Michoacán",Jñatjo,,
 mmg,"Ambrym, North",Rral,,
@@ -2005,8 +2007,8 @@ mni,Meitei,মৈতৈলোন্,T,Meiteilon
 mnj,Munji,منجانی,T,Munjani
 mnk,Mandinka,Mandi'nka kango,,
 mnk,Mandinka,مَانْدِينْكَا كَانْجَوْ,T,Mandi'nka kango
-mnp,"Chinese, Min Bei",闽北话,T,Minbeihua
 mnp,"Chinese, Min Bei",閩北語,T,Mâing-bă̤-ngṳ̌
+mnp,"Chinese, Min Bei",闽北话,T,Minbeihua
 mns,Mansi,Ма̄ньси ла̄тыӈ,T,Māńsi łātyŋ
 mns,Mansi,Маньси,T,Man'si
 mnv,Rennell-Bellona,Te hegeunga a Mugaba ma Mugiki,,
@@ -2036,8 +2038,8 @@ mpp,Migabac,Migabac,,
 mps,Dadibi,Dadibi,,
 mpt,Mian,Mian weng,,
 mpx,Misima-Panaeati,Pana Misima,,
-mpz,Mpi,มปี้,T,Mpi
 mpz,Mpi,ก้อ,T,Kaw
+mpz,Mpi,มปี้,T,Mpi
 mqb,Mbuko,Mbuko,,
 mqj,Mamasa,Mamasa,,
 mql,Mbelime,Mbɛlímɛ̀,,
@@ -2047,8 +2049,8 @@ mqt,Mok,mòok,T,
 mqu,Mandari,Mundari,,
 mqx,Mamuju,Mamuju,,
 mra,Mlabri,มละบริ,T,Mlabri
-mrc,Maricopa,Piipayk,,
 mrc,Maricopa,Piipaash Chuukwer,,
+mrc,Maricopa,Piipayk,,
 mrg,Mising,Mising,,
 mrh,Mara,Mara,,
 mrh,Mara,Mara Reih,,
@@ -2081,8 +2083,8 @@ mtg,Una,Una,,
 mti,Maiwa,Maiwa,,
 mtj,Moskona,Moskona,,
 mto,"Mixe, Totontepec",Ayöök,,
-mtp,Weenhayek,'weenhayeklhàmet,,
 mtp,Weenhayek,'weenhayeklhayhi',,
+mtp,Weenhayek,'weenhayeklhàmet,,
 mtq,Muong,Thiểng Mõl,T,Thieng Mol
 mtr,Mewari,मेवाड़ी,T,Mewadi
 mts,Yura,Yura,,
@@ -2126,17 +2128,17 @@ mxv,"Mixtec, Metlatónoc",Tuꞌun Savi de Metlatónoc y Cochoapa el Grande,,
 mxv,"Mixtec, Metlatónoc",Tuꞌun savi,,
 mxw,Namo,Namo,,
 mxy,"Mixtec, Southeastern Nochixtlán",Tu'un davi,,
-mya,Burmese,မြန်မာစကား,T,Mranmar sakar
 mya,Burmese,မြန်မာ,T,Mranmar
+mya,Burmese,မြန်မာစကား,T,Mranmar sakar
 mya,Burmese,မြန်မာဘာသာ,T,Mranma bhasa
 myb,Mbay,Mbaï,,
 myf,Mawes Aasse,Mawes Aasse,,
 myh,Makah,Qʷi·qʷi·diččaq,,
+myk,"Sénoufo, Mamara",Bàmáágà,,
 myk,"Sénoufo, Mamara",Mamaara,,
 myk,"Sénoufo, Mamara",Miyɛngaa,,
-myk,"Sénoufo, Mamara",Bàmáágà,,
-myl,Moma,Moma,,
 myl,Moma,Baha Moma-Kulawi,,
+myl,Moma,Moma,,
 mym,Me'en,Mɛʼɛnɛn,,
 myp,Pirahã,Xapaitíiso,,
 myu,Mundurukú,Mõnjoroko,,
@@ -2199,8 +2201,9 @@ ndh,Ndali,Chindali,,
 ndi,Samba Leko,Sama,,
 ndo,Ndonga,Oshindonga,,
 ndo,Ndonga,Oshiwambo,,
-nds,"Saxon, Low",Plattdüütsch,,
+ndp,Kebhu,Kebhu-tu,,
 nds,"Saxon, Low",Nedderdüütsch,,
+nds,"Saxon, Low",Plattdüütsch,,
 ndv,Ndut,Ndút,,
 ndy,Luto,Luto,,
 ndz,Ndogo,Có Ndógó,,
@@ -2218,8 +2221,8 @@ nga,Ngbaka,Ngbaka,,
 ngb,"Ngbandi, Northern",Ngbandi,,
 ngj,Ngie,Ungie,,
 ngl,Lomwe,Elomwe,,
-ngn,Ngwo,Engwo,,
 ngn,Ngwo,Atsó’ Ngwo,,
+ngn,Ngwo,Engwo,,
 ngq,Ngoreme,Kengoreme,,
 ngu,"Nahuatl, Guerrero",Nauatlajtojli,,
 ngz,Ngungwel,Engnungwel,,
@@ -2229,8 +2232,8 @@ nhg,"Nahuatl, Tetelcingo",Mösiehuali̱,,
 nhi,"Nahuatl, Zacatlán-Ahuacatlán-Tepetzintla",Mehcanohtlahtol,,
 nhi,"Nahuatl, Zacatlán-Ahuacatlán-Tepetzintla",Mehcanohtlahtol de Zacatlán-Ahuacatlán uan Tepetzintla,,
 nhi,"Nahuatl, Zacatlán-Ahuacatlán-Tepetzintla",Náhuatl,,
-nhm,"Nahuatl, Morelos",Ika nauatl,,
 nhm,"Nahuatl, Morelos",Ika mejikano,,
+nhm,"Nahuatl, Morelos",Ika nauatl,,
 nhn,"Nahuatl, Central",Mexicano,,
 nho,Takuu,Takuu,,
 nhr,Naro,Naro,,
@@ -2246,19 +2249,19 @@ nii,Nii,Ek Nii,,
 nij,Ngaju,Ngaju,,
 nim,Nilamba,Kĩnilyamba,,
 nin,Ninzo,Ninzo,,
-nio,Nganasan,Ӈана”са,T,Ŋanaʿsa
 nio,Nganasan,Ня”,T,Nja’
+nio,Nganasan,Ӈана”са,T,Ŋanaʿsa
 nir,Nimboran,Nmblong nmbuo,,
 nit,"Kolami, Southeastern",కొలామి,T,Kolāmi
 niu,Niue,Vagahau Niuē,,
-niv,Nivkh,Нивхгу диф,T,Nivxgu dif
 niv,Nivkh,Nivxgu,,
+niv,Nivkh,Нивхгу диф,T,Nivxgu dif
 niy,Ngiti,Ndrǔna,,
 nja,Nzanyi,Wur Nzanyi,,
 njb,"Naga, Nocte",Nokte,,
 njm,"Naga, Angami",Tenyidie,,
-njn,"Naga, Liangmai",Lianglad,,
 njn,"Naga, Liangmai",Liangkhon,,
+njn,"Naga, Liangmai",Lianglad,,
 njo,"Naga, Ao",Ao Naga,,
 njy,Njyem,Njyem,,
 njz,Nyishi,Nyishi,,
@@ -2274,8 +2277,8 @@ nkr,Nukuoro,Nukuoro,,
 nku,"Kulango, Bouna",Bouna Kulango,,
 nkw,Nkutu,Lonkfukfutu,,
 nla,Ngombale,Ngombale,,
-nlc,Nalca,Nalca,,
 nlc,Nalca,Mek,,
+nlc,Nalca,Nalca,,
 nld,Dutch,Nederlands,,
 nle,Nyala,Lunyala,,
 nlg,Gela,Gela,,
@@ -2314,8 +2317,8 @@ noi,Noiri,नोइरि,T,Noiri
 nop,Numanggang,Numaŋgaŋ,,
 nor,Norwegian,Norsk,,
 not,Nomatsigenga,Nomatsigenga,,
-npg,"Naga, Ponyo-Gongwang",Ponyo Naga,,
 npg,"Naga, Ponyo-Gongwang",Gongwang Naga,,
+npg,"Naga, Ponyo-Gongwang",Ponyo Naga,,
 nph,"Naga, Phom",Phom,,
 nph,"Naga, Phom",Phom Naga,,
 npi,Nepali,नेपाली,T,Nepālī
@@ -2337,10 +2340,10 @@ nsm,"Naga, Sumi",Sümi,,
 nsn,Nehan,Nehan,,
 nso,"Sotho, Northern",Sesotho sa Leboa,,
 nss,Nali,Nali,,
-nst,"Naga, Tangshang",Tangshang hixvez,,
 nst,"Naga, Tangshang",Tangshang,,
-nsu,"Nahuatl, Sierra Negra",Nahuatlajtoli,,
+nst,"Naga, Tangshang",Tangshang hixvez,,
 nsu,"Nahuatl, Sierra Negra",Nahuatl,,
+nsu,"Nahuatl, Sierra Negra",Nahuatlajtoli,,
 ntj,Ngaanyatjarra,Ngaanyatjarra,,
 ntk,Ikoma-Nata-Isenye,Eghiikoma,,
 ntm,Nateni,Naàteǹni,,
@@ -2366,8 +2369,8 @@ nwi,"Tanna, Southwest",Nɨvhaar,,
 nxq,Naxi,Naqxi geezheeq,,
 nya,Chichewa,Chicheŵa,,
 nyb,Nyagbo,Tutrugbu,,
-nyd,Olunyole,Olunyole,,
 nyd,Olunyole,Lunyole,,
+nyd,Olunyole,Olunyole,,
 nyf,Kigiryama,Kigiryama,,
 nyg,Nyindu,Kinyindu,,
 nyi,Ama,Ámá,,
@@ -2384,15 +2387,15 @@ nzk,Nzakara,Nzakala,,
 nzm,"Naga, Zeme",Zeme,,
 nzy,Nzakambay,Nzakambay,,
 oak,Noakhali,নোয়াখাইল্লা,T,Noakhailla
-obo,"Manobo, Obo",Monuvu',,
 obo,"Manobo, Obo",Minonuvu,,
+obo,"Manobo, Obo",Monuvu',,
 oca,Ocaina,Dyo'xaiya-o-lvo'tsa,,
 odu,Odual,Ọḍual,,
 ogc,Ogbah,Ọgba,,
 ojb,"Ojibwa, Northwestern",Nakawēmowin,,
 ojb,"Ojibwa, Northwestern",ᐊᓂᔑᓈᐯᒧᐎᓐ,T,Anishinaabemowin
-ojg,"Ojibwa, Eastern",Nishnaabemwin,,
 ojg,"Ojibwa, Eastern",Jibwemwin,,
+ojg,"Ojibwa, Eastern",Nishnaabemwin,,
 ojs,Oji-Cree,ᐊᓂᐦᔑᓂᓃᒧᐏᐣ,T,Anishininiimowin
 ojv,Luangiua,Luangiua,,
 ojw,"Ojibwa, Western",Nakawēmowin,,
@@ -2432,8 +2435,8 @@ otq,"Otomi, Querétaro",Ñhöñhö,,
 otr,Otoro,Ḏuṯuɽu,,
 ots,"Otomí, Estado de México",Jña̱tjo,,
 ott,"Otomi, Temoaya",Jña̱a̱tjo,,
-otw,Ottawa,Nishnaabemwin,,
 otw,Ottawa,Daawaamwin,,
+otw,Ottawa,Nishnaabemwin,,
 otx,"Otomi, Texcatepec",Ñųhų,,
 ovd,Övdalian,Övkallmå̢leð,,
 oyb,Oy,ໂອຍ,T,Oy
@@ -2446,8 +2449,8 @@ pae,Pagibete,Pagabete,,
 pag,Pangasinan,Pangasinan,,
 pah,Tenharim,Kagwahiva,,
 pam,Kapampangan,Kapampangan,,
-pan,"Punjabi, Eastern",ਪੰਜਾਬੀ ਭਾਸ਼ਾ,T,Panjabi bhasa
 pan,"Punjabi, Eastern",ਪੰਜਾਬੀ,T,Panjabi
+pan,"Punjabi, Eastern",ਪੰਜਾਬੀ ਭਾਸ਼ਾ,T,Panjabi bhasa
 pao,"Paiute, Northern",Numu,,
 pap,Papiamentu,Papiamentu,,
 pau,Palauan,Tekoi ra Belau,,
@@ -2469,8 +2472,8 @@ pcg,Paniya,പാണിയ,T,Paniya
 pci,Duruwa,दुरवा,T,Durvaa
 pck,"Chin, Paite",Paite Chin,,
 pcm,"Pidgin, Nigerian",Naijá,,
-pdc,"German, Pennsylvania",Pennsilfaanisch Deitsch,,
 pdc,"German, Pennsylvania",Deitsch,,
+pdc,"German, Pennsylvania",Pennsilfaanisch Deitsch,,
 pdt,Plautdietsch,Plautdietsch,,
 pdu,Kayan,Kayǎn,,
 pdu,Kayan,Kayǎn tamangaò̌,,
@@ -2480,8 +2483,8 @@ pep,Kanja,Kanja,,
 pes,"Persian, Iranian",فارسی,T,Fārsi
 pfe,Pere,Pɛrɛ,,
 pfl,Palatinate Franconian,Pälzisch,,
-pga,"Arabic, Juba",Arabi Juba,,
 pga,"Arabic, Juba",Arabi,,
+pga,"Arabic, Juba",Arabi Juba,,
 phk,Phake,ၸႃကေ,T,Phaek
 phl,Palula,پالولا,T,Palola
 pht,Phu Thai,ผู้ไท,T,Phu Thai or Phuu Thai
@@ -2524,19 +2527,19 @@ pnt,Pontic,Ποντιακά,T,Pontiaká
 pnt,Pontic,Ποντιακόν λαλίαν,T,Pontiakón lalían
 pny,Pinyin,Àshwəŋnə̀ Pìnyinə,,
 pnz,Pana,Pa̧na,,
-poc,Poqomam,Qaq'oral,,
 poc,Poqomam,Poqom,,
+poc,Poqomam,Qaq'oral,,
 poe,"Popoloca, San Juan Atzingo",Ngiva,,
 poh,Poqomchi',Poqomchi',,
 poi,"Popoluca, Highland",Nuntajɨ̱yi,,
-pol,Polish,język polski,T,
+pol,Polish,język polski,,
 pon,Pohnpeian,Pohnpei,,
 por,Portuguese,Português,,
 pot,Potawatomi,Bode'wadmi,,
 pov,Guinea-Bissau Creole,Kiriol,,
 pow,"Popoloca, San Felipe Otlaltepec",Nguiva,,
-ppk,Uma,Uma,,
 ppk,Uma,Basa Uma,,
+ppk,Uma,Uma,,
 ppl,Nahuat,Nahuat,,
 ppo,Folopa,Folopa,,
 pps,"Popoloca, San Luís Temalacayuca",Ngigua,,
@@ -2555,8 +2558,8 @@ pst,"Pashto, Central",پښتو,T,Pashto
 pta,Pai Tavytera,Pai Tavyterã,,
 ptu,Bambam,Basa Bambam,,
 ptv,Port Vato,Daakie,,
-pua,"Purepecha, Western Highland",P’urhépecha,,
 pua,"Purepecha, Western Highland",P’urhe,,
+pua,"Purepecha, Western Highland",P’urhépecha,,
 pub,Purum,Purum,,
 pug,Phuie,Phuieŋ,,
 pum,Puma,पुमा,T,Pumā
@@ -2566,8 +2569,8 @@ pwm,Molbog,Molbog,,
 pwn,Paiwan,Pinayuanan,,
 pwo,"Karen, Pwo Western",,,
 pww,"Karen, Pwo Northern",พล้อง,T,Phlong
-pxm,"Mixe, Quetzaltepec",Kuna'tsmʉdʉ Ayuk,,
 pxm,"Mixe, Quetzaltepec",Ayuk,,
+pxm,"Mixe, Quetzaltepec",Kuna'tsmʉdʉ Ayuk,,
 pye,"Krumen, Pye",‑Pɩɛwin,,
 pym,Pyam,Pyam,,
 pyu,Puyuma,Pinuyumayan,,
@@ -2583,17 +2586,17 @@ qug,"Quichua, Chimborazo Highland",Chaupi Urcucuna Kichwa,,
 quh,"Quechua, South Bolivian",Qhichwa,,
 quk,"Quechua, Chachapoyas",Llakwash,,
 qul,"Quechua, North Bolivian",Quechua,,
-qum,Sipakapense,Sipakapense,,
 qum,Sipakapense,Ri Cholb'al,,
+qum,Sipakapense,Sipakapense,,
 qun,Quinault,kwinaył,,
 qup,"Quechua, Southern Pastaza",Inka,,
 qus,"Quichua, Santiago del Estero",Quichua,,
 quv,Sakapulteko,Tujaal tziij,,
 quw,"Quichua, Tena Lowland",Runa Shimi,,
-quy,"Quechua, Ayacucho",Runasimi,,
 quy,"Quechua, Ayacucho",Ayakuchu Chanka Qichwa,,
-quz,"Quechua, Cusco",Runasimi Qusqu Qullaw,,
+quy,"Quechua, Ayacucho",Runasimi,,
 quz,"Quechua, Cusco",Runasimi,,
+quz,"Quechua, Cusco",Runasimi Qusqu Qullaw,,
 qva,"Quechua, Ambo-Pasco",Quechua,,
 qvc,"Quechua, Cajamarca",Kichwa,,
 qve,"Quechua, Eastern Apurímac",Quechua,,
@@ -2602,26 +2605,26 @@ qvi,"Quichua, Imbabura Highland",Kichwa Shimi,,
 qvm,"Quechua, Margos-Yarowilca-Lauricocha",Quechua,,
 qvn,"Quechua, North Junín",Quechua,,
 qvo,"Quichua, Napo",Napo Kichwa shimi,,
-qvs,"Quechua, San Martín",San Martin Kechwa,,
 qvs,"Quechua, San Martín",Kechwa,,
-qvw,"Quechua, Huaylla Wanca",Wanca,,
+qvs,"Quechua, San Martín",San Martin Kechwa,,
 qvw,"Quechua, Huaylla Wanca",Kichwa,,
+qvw,"Quechua, Huaylla Wanca",Wanca,,
 qwa,"Quechua, Corongo Ancash",Llaqwash,,
-qwh,"Quechua, Huaylas Ancash",Qichwa,,
 qwh,"Quechua, Huaylas Ancash",Anqas Qichwa,,
+qwh,"Quechua, Huaylas Ancash",Qichwa,,
 qws,"Quechua, Sihuas Ancash",Quechua,,
-qxh,"Quechua, Panao",Runa shimi,,
 qxh,"Quechua, Panao",Panao Quechua,,
-qxl,"Quichua, Salasaca Highland",Salasaka shimibi,,
+qxh,"Quechua, Panao",Runa shimi,,
 qxl,"Quichua, Salasaca Highland",Runa shimi,,
+qxl,"Quichua, Salasaca Highland",Salasaka shimibi,,
 qxn,"Quechua, Northern Conchucos",Quechua,,
 qxo,"Quechua, Southern Conchucos",Quechua,,
 qxp,"Quechua, Puno",Qhichwa simi,,
-qxq,Kashkay,قشقاى ديلى,T,Qaşqay dili
 qxq,Kashkay,قاشقایجا,T,Qaşqayca
+qxq,Kashkay,قشقاى ديلى,T,Qaşqay dili
 qxr,"Quichua, Cañar Highland",Kichwa Shimi,,
-qxu,"Quechua, Arequipa-La Unión",Runasimi,,
 qxu,"Quechua, Arequipa-La Unión",Qhichwa,,
+qxu,"Quechua, Arequipa-La Unión",Runasimi,,
 rab,Chamling,चाम्लिङ,T,Caamliṅa
 rad,Rade,klei Êđê,,
 rag,Lulogooli,Lulogooli,,
@@ -2639,12 +2642,12 @@ ren,Rengao,Rơngao,,
 res,Reshe,Tsureshe,,
 rgn,Romagnol,Rumagnol,,
 rgu,Rikou,Rikou,,
-rhg,Rohingya,𐴌𐴗𐴥𐴝𐴙𐴚𐴒𐴙𐴝,T,Ruwainggya
 rhg,Rohingya,رُحَ࣪ڠۡگَ࣪ࢬ,T,Ruáingga
+rhg,Rohingya,𐴌𐴗𐴥𐴝𐴙𐴚𐴒𐴙𐴝,T,Ruwainggya
 ria,Riang,Kau Bru,,
 rif,Tarifit,Tarifit,,
-rif,Tarifit,ⵜⴰⵔⵉⴼⵉⵜ,T,Tarifit
 rif,Tarifit,تاريفيت,T,Tarifit
+rif,Tarifit,ⵜⴰⵔⵉⴼⵉⵜ,T,Tarifit
 ril,Riang Lang,Reu Yaang,,
 rim,Nyaturu,Kinyaturu,,
 rjs,Rajbanshi,राजबंशी,T,Rājbanshi
@@ -2655,8 +2658,8 @@ rki,Rakhine,ရခိုင်,T,Rakhine
 rkt,Rangpuri,রংপুরী,T,Rangpuri
 rmc,"Romani, Carpathian",Romanes,,
 rmc,"Romani, Carpathian",Romani cib,,
-rme,Angloromani,Romani,,
 rme,Angloromani,Romanes,,
+rme,Angloromani,Romani,,
 rmf,"Romani, Kalo Finnish",Kaalengo tšibbaha,,
 rml,"Romani, Baltic",Romani,,
 rmn,"Romani, Balkan",Romani,,
@@ -2691,8 +2694,8 @@ run,Rundi,Ikirundi,,
 ruo,"Romanian, Istro",Rumârește,,
 rup,Aromanian,Armani,,
 rus,Russian,русский язык,T,russkij jazyk
-rut,Rutul,мыхӏабишды чӏел,T,Myḥabišdy č̣el
 rut,Rutul,мыхӏабишды,T,Myḥabišdy
+rut,Rutul,мыхӏабишды чӏел,T,Myḥabišdy č̣el
 ruu,"Lobu, Lanas",Lobu,,
 rwm,Amba,Kwamba,,
 rwo,Rawa,Rawa,,
@@ -2714,8 +2717,8 @@ saq,Samburu,Sampur,,
 sas,Sasak,ᬪᬵᬲᬵᬲᬓ᭄ᬱᬓ᭄,T,Base Sasak
 sat,Santhali,Har Rar,,
 sav,Saafi-Saafi,Saafi-Saafi,,
-sax,Sa,Sa,,
 sax,Sa,Dlo Kêt,,
+sax,Sa,Sa,,
 say,Saya,Vigzar,,
 say,Saya,Vìk Zaar,,
 saz,Sourashtra,சௌராட்டிர மொழி,T,Caurāṭṭira moḻi
@@ -2732,8 +2735,8 @@ scl,Shina,شینا,T,Shina
 scn,Sicilian,Sicilianu,,
 sco,Scots,Scots,,
 scp,Hyolmo,ह्योल्मो,T,Hyolmo
-scs,"Slavey, North",Sahtúot’ı̨nę Yatı̨́,,
 scs,"Slavey, North",Dene Kǝdǝ́,,
+scs,"Slavey, North",Sahtúot’ı̨nę Yatı̨́,,
 sda,Toraja-Sa'dan,Basa Tora'a,,
 sdh,"Kurdish, Southern",کوردی خوارگ,T,Kurdî xwarg
 sdh,"Kurdish, Southern",کوردیی باشووری,T,Kurdîyi başûrî
@@ -2757,8 +2760,8 @@ sez,"Chin, Senthang",Senthang Chin,,
 sfw,Esahie,Esahie,,
 sgb,"Ayta, Mag-antsi",Ayta Mag-Antsi,,
 sgd,Surigaonon,Surigaonon,,
-sgh,Shughni,хуг̌ну̊н зив,T,Khughnön ziv
 sgh,Shughni,Xuǧnůn ziv,,
+sgh,Shughni,хуг̌ну̊н зив,T,Khughnön ziv
 sgi,Nizaa,Nízαὰ,T,
 sgj,Surgujia,सरगुजिया,T,Surgujia
 sgp,Singpho,Singpho,,
@@ -2771,15 +2774,15 @@ shg,Shua,Shua,,
 shh,Shoshoni,Neme ta̲i̲kwappe,,
 shh,Shoshoni,Sosoni' ta̲i̲kwappe,,
 shi,Tachelhit,Tašlḥiyt,,
-shi,Tachelhit,ⵜⴰⵛⵍⵃⵉⵢⵜ,T,taclhiyt
 shi,Tachelhit,تشلحيت,T,tšlḥyt
+shi,Tachelhit,ⵜⴰⵛⵍⵃⵉⵢⵜ,T,taclhiyt
 shj,Shatt,Ikä Caning,,
 shk,Shilluk,Dhøg Cøllø,,
 shn,Shan,လိၵ်ႈတႆး,T,Lik Tai
 shr,Shi,Mashi,,
+shu,"Arabic, Chadian",Al-arabi al-Tachaadi,,
 shu,"Arabic, Chadian",العربية,T,al-arabiiya
 shu,"Arabic, Chadian",العربية التشادية,T,al-arabiiya al-tashaadiya
-shu,"Arabic, Chadian",Al-arabi al-Tachaadi,,
 shw,Shwai,Cwaya,,
 sid,Sidaama,Sidaamu Afoo,,
 sig,Paasaal,Pasaal,,
@@ -2809,24 +2812,24 @@ skt,Sakata,Kisakata,,
 sku,N'kep,N'kep,,
 skx,Seko Padang,sua: tu Padang,,
 sld,Sissala,Sɩ́ssalɩ́,,
-slk,Slovak,Slovenský Jazyk,,
 slk,Slovak,Slovenčina,,
+slk,Slovak,Slovenský Jazyk,,
 sll,Yui,Yui,,
 slm,"Sama, Pangutaran",Siyama Pangutaran,,
 slu,Selaru,Tel Maslyarkwe,,
 slv,Slovene,Slovenščina,,
 slv,Slovene,Slovenski jezik,,
-sma,"Saami, South",Åarjelsaemien gïele,,
 sma,"Saami, South",Saemien gïele,,
+sma,"Saami, South",Åarjelsaemien gïele,,
 smb,Simbari,Simbari,,
-sme,"Saami, North",Sámegiella,,
 sme,"Saami, North",Davvisámegiella,,
+sme,"Saami, North",Sámegiella,,
 smj,"Saami, Lule",Julevusámegiella,,
-smk,Bolinao,Bolinao,,
 smk,Bolinao,Binubolinao,,
+smk,Bolinao,Bolinao,,
 sml,"Sama, Central",Sinama,,
-smn,"Saami, Inari",Anarâškielâ,,
 smn,"Saami, Inari",Aanaar Saami,,
+smn,"Saami, Inari",Anarâškielâ,,
 smo,Samoan,Gagana Samoa,,
 smp,Samaritan Hebrew,ࠏࠨࠁࠬࠓࠪࠉࠕ,T,Îbrit
 smq,Samo,Samon,,
@@ -2890,12 +2893,12 @@ ssb,"Sama, Southern",Sinama,,
 ssb,"Sama, Southern",Sinama Tawi-Tawi,,
 ssc,Suba-Simbiti,Ikisimbëtë,,
 ssd,Siroi,Siroi,,
-sse,"Sama, Balangingih",Sama Bangingih,,
 sse,"Sama, Balangingih",Bangingih,,
+sse,"Sama, Balangingih",Sama Bangingih,,
 ssf,Thao,Thaw a lalawa,,
 ssg,Seimat,Kakai Seimat,,
-ssj,Wia,Witi,,
 ssj,Wia,Wia,,
+ssj,Wia,Witi,,
 ssn,Waata,Waata,,
 sso,Essono,Essono,,
 ssw,Swati,siSwati,,
@@ -2913,15 +2916,15 @@ stq,Saterfriesisch,Seeltersk,,
 stv,Silt'e,የስልጤ,T,Yesiltʼe
 stw,Satawalese,Satawal,,
 sty,Siberian Tatar,Себер тел,T,Seber tel
-sty,Siberian Tatar,Сыбыр тел,T,Sybyr tel
 sty,Siberian Tatar,Себертатарца,T,Sebertatartsa
+sty,Siberian Tatar,Сыбыр тел,T,Sybyr tel
 sty,Siberian Tatar,Сыбырца,T,Sybyrtsa
 sua,Sulka,Sulka,,
 sub,Suku,Kisuku,,
 suc,"Subanon, Western",Sinubanon,,
 sue,Suena,Suena,,
-sui,Suki,Suki,,
 sui,Suki,Abane gi,,
+sui,Suki,Suki,,
 suk,Sukuma,Kisukuma,,
 sun,Sunda,Basa Sunda,,
 suq,"Suri, Tirmaga-Chai",Surichɛn,,
@@ -2952,16 +2955,16 @@ syl,Sylheti,Sileti,,
 syl,Sylheti,ছিলটী,T,Silôṭi
 sym,"Samo, Maya",San,,
 sym,"Samo, Maya",San Mayaa,,
-syn,Senaya,ܣܢܝܐ,T,Senāya
 syn,Senaya,ܣܘܪ,T,Soray
+syn,Senaya,ܣܢܝܐ,T,Senāya
 syw,Syuba,स्युबा,T,Syuba
 szg,Sengele,Kisengele,,
 szl,Silesian,ślůnsko godka,,
 szv,Isubu,Isubu,,
 szw,Sawai,Sawai,,
 szy,Sakizaya,Sakizaya,,
-taa,"Tanana, Lower",Menhti Kenaga,,
 taa,"Tanana, Lower",Benhti Kokhwt’ana Kenaga’,,
+taa,"Tanana, Lower",Menhti Kenaga,,
 tab,Tabasaran,табасаран чIал,T,tabasaran ҫ̇al
 tac,"Tarahumara, Western",Rarómari raicha,,
 taf,Tapirapé,Apyãwa,,
@@ -2971,8 +2974,8 @@ taj,"Tamang, Eastern",རྟ་དམག,T,tāmāng
 tal,Tal,Tal,,
 tam,Tamil,தமிழ்,T,Tamiḻ
 tan,Tangale,Táŋlɛ,,
-tao,Yami,Pongso no Tao,,
 tao,Yami,Ciriciring no tao,,
+tao,Yami,Pongso no Tao,,
 taq,Tamasheq,Təmajəq,,
 tar,"Tarahumara, Central",Ralámuli raꞌíchala,,
 tat,Tatar,татар теле,T,tatar tele
@@ -2996,8 +2999,8 @@ tbw,Tagbanwa,Tagbanwa,,
 tbx,Kapin,Nambei nyon,,
 tby,Tabaru,Tabaru,,
 tca,Ticuna,Ticunaga,,
-tcb,Tanacross,Nee'anděg',,
 tcb,Tanacross,Dihthaad Xt’een Iin Aanděeg’,,
+tcb,Tanacross,Nee'anděg',,
 tcd,Tafi,Tɛgbɔ,,
 tce,"Tutchone, Southern",Dän Kʼe,,
 tcf,"Me'phaa, Malinaltepec",Mè'phàà Mañuwìín,,
@@ -3005,15 +3008,15 @@ tcs,Torres Strait Creole,Yumplatok,,
 tcw,"Totonac, Tecpatlán",Tachiwiin,,
 tcw,"Totonac, Tecpatlán",Tutunakuj,,
 tcx,Toda,தோதா,T,Tōtā
-tcy,Tulu,ತುಳು ಭಾಷೆ,T,Tuḷu bhāṣe
 tcy,Tulu,ತುಳು,T,Tulu
+tcy,Tulu,ತುಳು ಭಾಷೆ,T,Tuḷu bhāṣe
 tcz,"Chin, Thado",Thadou Kuki,,
 tcz,"Chin, Thado",Thadou pao,,
 tdb,Panchpargania,पंचपरगानिया,T,Panchpargania
 tdc,Embera Tadó,Ẽpẽra Pedea,,
-tdd,Tai Nüa,ᥖᥭᥰᥖᥬᥳᥑᥨᥒᥰ,T,tai taɯ xoŋ
-tdd,Tai Nüa,ᥖᥭᥰ ᥢᥫᥴ,T,
 tdd,Tai Nüa,ᥖᥭᥰ ᥘᥫᥴ,T,
+tdd,Tai Nüa,ᥖᥭᥰ ᥢᥫᥴ,T,
+tdd,Tai Nüa,ᥖᥭᥰᥖᥬᥳᥑᥨᥒᥰ,T,tai taɯ xoŋ
 tdg,"Tamang, Western",पक्ष्चिमी तामाङ्ग,T,Pakṣcimī tāmāṅga
 tdh,Thulung,थुलुङ,T,Thuluŋ
 tdn,Tondano,Toundano,,
@@ -3064,8 +3067,8 @@ tkg,"Malagasy, Tesaka",Tesaka Malagasy,,
 tkp,Tikopia,Fakatikopia,,
 tkr,Tsakhur,Ts`əxna miz,,
 tkt,"Tharu, Kathariya",थारु,T,thaaru
-tku,"Totonac, Upper Necaxa",Totonaco xalac Patla,,
 tku,"Totonac, Upper Necaxa",Totonaco,,
+tku,"Totonac, Upper Necaxa",Totonaco xalac Patla,,
 tlb,Tobelo,Tobelo,,
 tlf,Telefol,Telefol,,
 tli,Tlingit,Lingít,,
@@ -3079,8 +3082,8 @@ tmu,Iau,Yav ba,,
 tna,Tacana,Tacana,,
 tnc,Tanimuca-Letuama,Wejeñememaja oka,,
 tnh,Maiani,Maiani,,
-tnk,Kwamera,Nɨninɨfe,,
 tnk,Kwamera,Nɨfe,,
+tnk,Kwamera,Nɨninɨfe,,
 tnl,Netvaar,Netvaar,,
 tnl,Netvaar,Netwaar,,
 tnm,Tabla,Tepera,,
@@ -3098,8 +3101,8 @@ toi,Tonga,Chitonga,,
 toj,Tojolabal,Tojol-ab'al,,
 ton,Tongan,Faka Tonga,,
 too,"Totonac, Xicotepec de Juárez",Tachihuin,,
-top,"Totonac, Papantla",Tutunakú,,
 top,"Totonac, Papantla",Lichiwin Tutunaku,,
+top,"Totonac, Papantla",Tutunakú,,
 toq,Toposa,ŋatoposa,,
 tos,"Totonac, Highland",Totonaco,,
 tox,Tobian,Hatohobei,,
@@ -3127,25 +3130,25 @@ trv,Sediq,Seediq,,
 trw,Torwali,توروالی,T,Torwali
 tsb,Tsamai,Bago Ts'amakkilo,,
 tsc,Tswa,Xitswa,,
-tsg,Tausug,بَهَسَ سُوگ,T,Bahasa Sūg
 tsg,Tausug,Bahasa Sūg,,
 tsg,Tausug,Sinūg,,
+tsg,Tausug,بَهَسَ سُوگ,T,Bahasa Sūg
 tsi,Tsimshian,Sm'algyax,,
 tsj,Tshangla,ཆང་ལོ་,T,Tshanglo
 tsn,Setswana,Setswana,,
 tso,Tsonga,Xitsonga,,
 tsr,Akei,Akei,,
 tsw,Tsishingini,Tsishingini,,
-tsz,Purepecha,P’urhépecha,,
 tsz,Purepecha,P’urhe,,
+tsz,Purepecha,P’urhépecha,,
 ttc,Tektiteko,B'a'aj,,
 tte,Bwanabwana,Bwanabwana,,
 tte,Bwanabwana,Tubetube,,
 tth,"Ta'oih, Upper",ຕາໂອ້ຍອ໌,T,Ta'oiq
 ttj,Tooro,Rutooro,,
 ttq,"Tamajaq, Tawallammat",Təmajəq,,
-ttq,"Tamajaq, Tawallammat",ⵜⵎⵌⵆ,T,Tamajaq
 ttq,"Tamajaq, Tawallammat",تَمَاجِقْ,T,tamāğiq
+ttq,"Tamajaq, Tawallammat",ⵜⵎⵌⵆ,T,Tamajaq
 tts,"Thai, Northeastern",อีสาน,T,Isan
 ttv,Titan,Titan,,
 tua,Wiarumus,Wiarumus,,
@@ -3192,8 +3195,8 @@ tyv,Tuvan,тыва дыл,T,tyva dyl
 tyy,Tiyaa,Tiyaa,,
 tzh,Tzeltal,Bats'il k'op,,
 tzj,Tz'utujil,Tz'utujil,,
-tzm,"Tamazight, Central Atlas",ⵜⴰⵎⴰⵣⵉⵖⵜ,T,Tamazight
 tzm,"Tamazight, Central Atlas",Tmaziɣt,,
+tzm,"Tamazight, Central Atlas",ⵜⴰⵎⴰⵣⵉⵖⵜ,T,Tamazight
 tzo,Tzotzil,Bats'i k'op,,
 uar,Tairuma,Tairuma,,
 ubi,Ubi,Ubu,,
@@ -3202,9 +3205,9 @@ ubl,"Bikol, Buhi'non",Boînën,,
 ubu,Umbu-Ungu,Umbu-Ungu,,
 ude,Udihe,Удиэ кэйэвэни,T,Udi Keiwani
 udg,Muduga,മുഡുഗ,T,Muduga
+udi,Udi,Udi muz,,
 udi,Udi,Udin,,
 udi,Udi,удин муз,T,udin muz
-udi,Udi,Udi muz,,
 udl,Wuzlam,Ma Wuzlam,,
 udm,Udmurt,Удмурт кыл,T,Udmurt kyl
 udu,Uduk,Twampa,,
@@ -3222,8 +3225,8 @@ umn,"Naga, Paungnyuan",Paungnyuan Naga,,
 umu,Munsee,Huluníixsuwaakan,,
 uni,Uni,Uni,,
 unr,Mundari,Muṇḍari,,
-unr,Mundari,মুণ্ডরি,T,Muṇḍari
 unr,Mundari,मुण्डरि,T,Muṇḍari
+unr,Mundari,মুণ্ডরি,T,Muṇḍari
 unr,Mundari,ମୁଣ୍ଡରି,T,Muṇḍari
 unx,Munda,মুন্ডা,T,Muɳɖa
 upv,Uripiv-Wala-Rano-Atchin,Tirax,,
@@ -3262,8 +3265,8 @@ vau,Vanuma,Lɨvanʉma,,
 vav,Varli,वारली,T,Warli
 vec,Venetian,Veneto,,
 ven,Venda,Tshivenḓa,T,Tshivenda
-vep,Veps,Vepsän kelʹ,,
 vep,Veps,Vepsä,,
+vep,Veps,Vepsän kelʹ,,
 vid,Vidunda,Chividunda,,
 vie,Vietnamese,Tiếng Việt,,
 vif,Vili,Civili,,
@@ -3284,20 +3287,20 @@ vmp,"Mazatec, Soyaltepec",En naxijen,,
 vmw,Makhuwa,Emakhuwa,,
 vmy,"Mazatec, Ayautla",Enre naxinanda nguifi,,
 vmz,"Mazatec, Mazatlán",Ienra naxinandana nnandia,,
-vot,Vod,Vad́d́a tšeeli,,
 vot,Vod,Maatšeeli,,
+vot,Vod,Vad́d́a tšeeli,,
 vro,Võro,Võro kiil,,
 vun,Vunjo,Kivunjo,,
 wab,Yote,Yote,,
-wad,Wamesa,Wondama,,
 wad,Wamesa,Wamesa,,
+wad,Wamesa,Wondama,,
 wal,Wolaytta,Wolaytta,,
 wal,Wolaytta,Wolayttatto Doonaa,,
 wam,Wampanoag,Wôpanâak,,
 wap,Wapichan,Wapichan,,
 wap,Wapichan,Wapichan paradan,,
-war,Waray-Waray,Waray-Waray,,
 war,Waray-Waray,Waray,,
+war,Waray-Waray,Waray-Waray,,
 was,Washo,wá:šiw ʔítlu,,
 wat,Kaninuwa,Kaninuwa,,
 waw,Waiwai,Wai Wai,,
@@ -3307,14 +3310,14 @@ wbf,Wara,Samue,,
 wbf,Wara,Sàmóe,,
 wbi,Vwanji,Kɨvwanji,,
 wbj,Alagwa,Alagwaisa,,
-wbl,Wakhi,ښیکوار,T,Khikwar
 wbl,Wakhi, ښیک,T,Khik
+wbl,Wakhi,ښیکوار,T,Khikwar
 wbm,"Wa, Vo",Vax,,
 wbp,Warlpiri,Warlpiri,,
 wbr,Wagdi,वाग्दी,T,Vāgdī
 wed,Wedau,Pona Wedau,,
-weh,Weh,Kə́wí,,
 weh,Weh,Ghɔ̂mə̀ kə́wí,,
+weh,Weh,Kə́wí,,
 wep,Westphalien,Westfäölsk,,
 wer,Amam,Amam,,
 wes,"Pidgin, Cameroon",Pidgin,,
@@ -3328,8 +3331,8 @@ wiu,Wiru,Witu,,
 wiv,Vitu,Pole Vitu,,
 wiy,Wiyot,Soulátluk,,
 wja,Waja,Nyan Wịyáù,,
-wji,Warji,Warji,,
 wji,Warji,Sirzakwai,,
+wji,Warji,Warji,,
 wln,Walloon,Walon,,
 wls,Wallisian,Fakaʻuvea,,
 wlv,Bermejo Wichí,wichi,,
@@ -3373,7 +3376,7 @@ xbi,Kombio,Akwun,,
 xbr,Kambera,Hilu Humba,,
 xdo,Kwandu,Kwandu,,
 xdo,Kwandu,Olukwandu,,
-xdq,Kaitag,Хайдаҡьла,T,Xaydaqhla
+xdq,Kaitag,Хайдаҡӏла,T,Xaydaqhla
 xed,Hdi,Hdi,,
 xer,Xerénte,Akwẽ,,
 xho,Xhosa,isiXhosa,,
@@ -3421,8 +3424,8 @@ yae,Pumé,Pumé,,
 yaf,Yaka,Iyaka,,
 yaf,Yaka,Kiyaka,,
 yag,Yámana,Háusi Kúta,,
-yah,Yazghulami,Зѓамиѓай,T,Zǵamiǵai
 yah,Yazghulami,Zǵamiǵai,,
+yah,Yazghulami,Зѓамиѓай,T,Zǵamiǵai
 yai,Yagnobi,Яғнобӣ зивок,T,Yaɣnobī́ zivók
 yal,Yalunka,Jalunga xuwiina',,
 yam,Yamba,Yamba,,
@@ -3457,8 +3460,8 @@ yka,Yakan,Yakan,,
 ykg,"Yukaghir, Northern",вадуул ару,T,wadul aruu
 yko,Iyasa,Iyasa,,
 yle,Yélî Dnye,Yélî Dnye,,
-yml,Ubuvala,Vona Ubuvala,,
 yml,Ubuvala,Ubuvala,,
+yml,Ubuvala,Vona Ubuvala,,
 ymm,Maay,Af-maay,,
 ymn,Sunum,Sunum,,
 ymp,Yamap,Ômbê,,
@@ -3472,8 +3475,8 @@ yoy,Yoy,โย้ย,T,Yoy
 yrb,Yareba,Yareba,,
 yre,Yaouré,Yɔwlɛ,,
 yrk,Nenets,ненэцяʼ вада,T,nyenetsya’ wada
-yrl,Nheengatu,Ñe’engatú,,
 yrl,Nheengatu,Yẽgatu,,
+yrl,Nheengatu,Ñe’engatú,,
 yss,Yessan-Mayo,Yamano,,
 yua,"Maya, Yucatec",Maaya t'aan,,
 yue,"Chinese, Yue",粵語,T,Yueyu
@@ -3511,18 +3514,18 @@ zdj,"Comorian, Ngazidja",Shingazidja,,
 zea,Zeeuws,Zeêuws,,
 zen,Zenaga,ⵜⵓⵥⵥⵓⵏⴳⵉⵢⵢⴰ,T,Tuẓẓungiyya
 zga,Kinga,Kɨkɨnga,,
-zgh,"Tamazight, Standard Moroccan",ⵜⴰⵎⴰⵣⵉⵖⵜ ⵜⴰⵏⴰⵡⴰⵢⵜ,T,tamaziɣt tanawayt
 zgh,"Tamazight, Standard Moroccan",ⵜⴰⵎⴰⵣⵉⵖⵜ,T,tamaziɣt
+zgh,"Tamazight, Standard Moroccan",ⵜⴰⵎⴰⵣⵉⵖⵜ ⵜⴰⵏⴰⵡⴰⵢⵜ,T,tamaziɣt tanawayt
 zgn,"Zhuang, Guibian",壮语,T,Zhuàngyǔ
-zhn,"Zhuang, Nong",kauq Noangz,,
 zhn,"Zhuang, Nong",kauq Daez,,
-zin,Zinza,Zinza,,
+zhn,"Zhuang, Nong",kauq Noangz,,
 zin,Zinza,Echiziinza,,
+zin,Zinza,Zinza,,
 zkd,Kadu,Asak,,
 zlm,Malay,Bahasa Melayu,,
 zlm,Malay,ملايو,T,Melayu
-zlu,Zul,Zul,,
 zlu,Zul,Bi Zule,,
+zlu,Zul,Zul,,
 zmb,Zimba,Kibinja,,
 zmp,Mbuun,Mbuun,,
 zmz,Mbandja,Mbandja,,
@@ -3555,8 +3558,8 @@ zrs,Mairasi,Mairasi,,
 zsm,"Malay, Standard",Bahasa Malaysia,,
 zsm,"Malay, Standard",بهاس مليسيا,T,Bahasa Malaysia
 zsr,"Zapotec, Southern Rincon",Didzaꞌ,,
-ztg,"Zapotec, Xanaguía",Diꞌtsë,,
 ztg,"Zapotec, Xanaguía",Di'tsë gu'n xne' minn,,
+ztg,"Zapotec, Xanaguía",Diꞌtsë,,
 ztp,"Zapotec, Loxicha",Diste,,
 ztq,"Zapotec, Quioquitani-Quierí",Tiitssë,,
 zts,"Zapotec, Tilquiapan",Diza,,
@@ -3564,6 +3567,6 @@ ztu,"Zapotec, Güilá",Diza,,
 zuh,Tokano,Gamoze,,
 zun,Zuni,Shiwi'ma,,
 zwa,Zay,ዛይኛ,T,Zayinya
-zyg,"Zhuang, Yang",壮语徳靖,T,Deijing Zhuang
 zyg,"Zhuang, Yang",佒壯,T,Yang zhuàng
+zyg,"Zhuang, Yang",壮语徳靖,T,Deijing Zhuang
 zyp,"Chin, Zyphe",Zyphe,,
