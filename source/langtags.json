@@ -29230,7 +29230,7 @@
     {
         "contains": [ "scs", "xsl" ],
         "full": "den-Latn-CA",
-        "iana": [ "Slavey" ],
+        "iana": [ "South Slavey", "Dene Zhatié" ],
         "iso639_3": "den",
         "iso639_3extra": [ "xsl" ],
         "localnames": [ "Dene Zhatie" ],
@@ -77185,7 +77185,7 @@
     },
     {
         "full": "mgp-Brah-NP-x-akkha",
-        "iana": [ "Magar, Eastern" ],
+        "iana": [ "Magar", "Magar Dhut" ],
         "iso639_3": "mgp",
         "name": "Magar, Eastern",
         "names": [ "Magar", "Magari", "Magarkura", "Magarí", "Magarī", "Mangar", "Mangari", "Manggar" ],
@@ -81815,7 +81815,7 @@
         "script": "Latn",
         "sldr": false,
         "tag": "mrh",
-        "tags": [ "mrh-IN", "mrh-Latn", "sch" ],
+        "tags": [ "mrh-IN", "mrh-Latn", "sch", "shl" ],
         "windows": "mrh-Latn"
     },
     {
@@ -111092,21 +111092,6 @@
         "sldr": false,
         "tag": "shk-Arab",
         "windows": "shk-Arab"
-    },
-    {
-        "full": "shl-Latn-IN",
-        "iana": [ "Shendu" ],
-        "iso639_3": "shl",
-        "name": "Shendu",
-        "names": [ "Khieng", "Khyen", "Sandu", "Shandu" ],
-        "region": "IN",
-        "regionname": "India",
-        "script": "Latn",
-        "sldr": false,
-        "tag": "shl",
-        "tags": [ "shl-IN", "shl-Latn" ],
-        "unwritten": true,
-        "windows": "shl-Latn"
     },
     {
         "full": "shm-Arab-IR",
