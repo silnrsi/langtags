@@ -100,7 +100,7 @@
     },
     {
         "api": "1.4",
-        "date": "2026-09-16",
+        "date": "2026-10-20",
         "tag": "_version"
     },
     {
@@ -1811,7 +1811,6 @@
         "sldr": false,
         "tag": "adt",
         "tags": [ "adt-AU", "adt-Latn" ],
-        "unwritten": true,
         "windows": "adt-Latn"
     },
     {
@@ -7085,7 +7084,6 @@
         "sldr": false,
         "tag": "ard",
         "tags": [ "ard-AU", "ard-Latn" ],
-        "unwritten": true,
         "windows": "ard-Latn"
     },
     {
@@ -9151,7 +9149,6 @@
         "sldr": false,
         "tag": "axl",
         "tags": [ "axl-AU", "axl-Latn" ],
-        "unwritten": true,
         "windows": "axl-Latn"
     },
     {
@@ -40764,7 +40761,6 @@
         "sldr": false,
         "tag": "gbq",
         "tags": [ "gbq-CF", "gbq-Latn" ],
-        "unwritten": true,
         "windows": "gbq-Latn"
     },
     {
@@ -42315,7 +42311,6 @@
         "sldr": false,
         "tag": "gin",
         "tags": [ "gin-Cyrl", "gin-RU" ],
-        "unwritten": true,
         "windows": "gin-Cyrl"
     },
     {
@@ -45400,7 +45395,6 @@
         "sldr": false,
         "tag": "gvy",
         "tags": [ "gvy-AU", "gvy-Latn" ],
-        "unwritten": true,
         "windows": "gvy-Latn"
     },
     {
@@ -56876,7 +56870,6 @@
         "sldr": false,
         "tag": "kdd",
         "tags": [ "kdd-AU", "kdd-Latn" ],
-        "unwritten": true,
         "windows": "kdd-Latn"
     },
     {
@@ -85945,7 +85938,6 @@
         "localnames": [ "Ngarrindjeri" ],
         "name": "Ngarrindjeri",
         "names": [ "Alkaiyana", "Koiyana", "Kokkaiya", "Korariga", "Kororega", "Kowrarega", "Meintangk", "Narinjari", "Narinyerrie", "Narrinjeri", "Narrinyeri", "Narrinyerree", "Narrin’yerree", "Ngarinyeri", "Piccanini Murray", "Wathai yunu" ],
-        "obsolete": true,
         "region": "AU",
         "regionname": "Australia",
         "rolv": [ "26487", "26485", "26486", "26489", "26484", "26488" ],
@@ -90098,7 +90090,6 @@
         "sldr": false,
         "tag": "nmj",
         "tags": [ "nmj-CF", "nmj-Latn" ],
-        "unwritten": true,
         "windows": "nmj-Latn"
     },
     {
@@ -90313,7 +90304,6 @@
         "sldr": false,
         "tag": "nmv",
         "tags": [ "nmv-AU", "nmv-Latn" ],
-        "unwritten": true,
         "windows": "nmv-Latn"
     },
     {
@@ -90756,7 +90746,6 @@
         "sldr": false,
         "tag": "nnv",
         "tags": [ "nnv-AU", "nnv-Latn" ],
-        "unwritten": true,
         "windows": "nnv-Latn"
     },
     {
@@ -125132,7 +125121,6 @@
         "sldr": false,
         "tag": "trf",
         "tags": [ "trf-Latn", "trf-TT" ],
-        "unwritten": true,
         "windows": "trf-Latn"
     },
     {
@@ -133765,7 +133753,6 @@
         "sldr": false,
         "tag": "wgg",
         "tags": [ "wgg-AU", "wgg-Latn" ],
-        "unwritten": true,
         "windows": "wgg-Latn"
     },
     {
@@ -144385,7 +144372,6 @@
         "sldr": false,
         "tag": "yry",
         "tags": [ "yry-AU", "yry-Latn" ],
-        "unwritten": true,
         "windows": "yry-Latn"
     },
     {
