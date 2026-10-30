@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-import argparse, json, re, datetime, csv, sys, os
+import argparse, json, re, datetime, csv, sys, os, requests
 from langtag import langtag
 from sldr.iana import Iana
 from dataclasses import dataclass
@@ -213,6 +213,8 @@ class Editor:
             elif 'iso639_3extra' in t:
                 for k in t['iso639_3extra']:
                     res[k] = t['tag']
+        if 'twi' not in res:
+            res['twi'] = "ak"       # for ROLV
         return res
 
     def _duplicate_check(self):
@@ -400,14 +402,25 @@ class Editor:
         self.ui.reset_progress()
         return res
 
-    def updaterolv(self, path, *a):
-        ''' updaterolv path\tUpdate ROLV codes from rolv.json '''
-        i6map = self._iso639map()
-        rods = set([t['rod'] for t in self.ltags if 'rod' in t])
-        if not os.path.exists(path):
+    def updaterolv(self, path=None, *a):
+        ''' updaterolv [path]\tUpdate ROLV codes from rolv.json '''
+        if path is None:
+            url = "https://gql.globalrecordings.net/graphql/"
+            headers = {"Content-Type": "application/json"}
+            query = "{ROLVCodes{LanguageCode,LanguageName,ROLVCode,LanguageTag,VarietyName,CountryCode,LocationName}}"
+            try:
+                response = requests.post(url, json={"query": query}, headers=headers)
+                response.raise_for_status()
+                rdat = response.json()
+            except requests.exceptions.RequestException as e:
+                return [f"HTTP request failed: {e}"]
+        elif not os.path.exists(path):
             return [f"Can't open {path}"]
-        with open(path, encoding="utf-8") as inf:
-            rdat = json.load(inf)
+        else:
+            with open(path, encoding="utf-8") as inf:
+                rdat = json.load(inf)
+        i6map = self._iso639map()
+        rods = {t['rod']: t for t in self.ltags if 'rod' in t}
         missing = []
         count = 0
         res = []
@@ -415,19 +428,15 @@ class Editor:
         for r in rdat['data']['ROLVCodes']:
             c = r['ROLVCode']
             self.ui.advance_progress()
-            if str(c) in rods:
-                continue
             region = r['CountryCode']
             l = r['LanguageCode']
             lang = i6map.get(l, l)
             tset = None
             ts = self._find(lang, nore=True)
             if len(ts) == 2 and ts[0] is None:
-                res.append(ts[1])
+                res.append(f"Can't find {lang} for rolv={c}")
                 continue
             for i in ts:
-                if i is None:
-                    continue
                 t = self.ltags[i]
                 if region is None and t['tag'] == lang:
                     tset = t
@@ -443,6 +452,17 @@ class Editor:
             if str(c) not in rolv:
                 rolv.append(str(c))
                 count += 1
+            if str(c) in rods:
+                t = rods[str(c)]
+                v = r['VarietyName']
+                if t.get('name', None) == tset.get('name', None) or t.get('name', None) != v:
+                    n = t.get('name', None)
+                    if n and n not in t.get('names', []):
+                        t['names'] = sorted(t.get('names', []) + [n])
+                    t['name'] = v
+                    res.append(f"{t['full']}: {v}")
+            elif len(ts) == 2 and ts[0] is None:
+                res.append(ts[1])
         res.append(f"{count} codes added")
         for m in missing:
             res.append(f"Missing entry for {m[1]} with rolv {m[0]}")
