@@ -343,11 +343,13 @@ class Editor:
                 lnames = [x.name for x in v if getattr(x, 'name', '')]
                 if lnames != e.get('localnames', []):
                     resl += " localnames"
-                e['localnames'] = lnames
+                if len(lnames):
+                    e['localnames'] = lnames
                 rnames = [x.roman for x in v if getattr(x, 'roman', '')]
                 if rnames != e.get('latnnames', []):
                     resl += " latin names"
-                e['latnnames'] = rnames
+                if len(rnames):
+                    e['latnnames'] = rnames
                 if " " in resl:
                     res.append(resl)
         self.output_clickable = True
