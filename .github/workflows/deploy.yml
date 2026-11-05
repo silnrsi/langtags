@@ -70,7 +70,7 @@ jobs:
     needs: deploy
     steps:
     - name: Trigger findafont rebuild
-      uses: peter-evans/repository-dispatch@v4
+      uses: peter-evans/repository-dispatch@v3
       with:
         token: ${{ secrets.repository_dispatch_pat }}
         repository: silnrsi/findafont
