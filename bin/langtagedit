@@ -510,6 +510,8 @@ class Editor:
                 ts = self._find(f"{l}-{rdr['CountryID']}")
                 allts.extend(ts)
                 for t in [self.ltags[x] for x in ts]:
+                    if 'rod' in t and len(ts) > 1:          # skip if the name came from ROLV
+                        continue
                     if rdr['NameType'] == "L":
                         allname[t['full']] = t['name']
                         allnames[t['full']] = t.get('names', [])
