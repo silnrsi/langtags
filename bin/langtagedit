@@ -113,10 +113,13 @@ class Editor:
         if f is not None:
             if undo and not isundo:
                 self.undos.append(deepcopy(self.ltags))
+            last_clickable = self.output_clickable
             self.output_clickable = False
             res = f(*b) if not getattr(f, 'unparsed', False) else f(cmd)
             if isinstance(res, (list, tuple)):
                 res = "\n".join(res)
+            elif res is None:
+                self.output_clickable = last_clickable
             if undo and not isundo:
                 self.history.append((cmd, res, self.output_clickable))
         return res
@@ -204,15 +207,18 @@ class Editor:
             res.append(msg)
         return "\n".join(res)
 
-    def _iso639map(self):
+    def _iso639map(self, primary=True):
         ''' returns map of iso639 to tag '''
         res = {}
+        def _add(l, v):
+            if l not in res or len(res[l]) > len(v):
+                res[l] = v
         for t in self.ltags:
             if 'iso639_3' in t:
-                res[t['iso639_3']] = t['tag']
+                _add(t['iso639_3'], t['tag'])
             elif 'iso639_3extra' in t:
                 for k in t['iso639_3extra']:
-                    res[k] = t['tag']
+                    _add(k, t['tag'])
         if 'twi' not in res:
             res['twi'] = "ak"       # for ROLV
         return res
@@ -431,18 +437,33 @@ class Editor:
             region = r['CountryCode']
             l = r['LanguageCode']
             lang = i6map.get(l, l)
+            lt = langtag(lang)
+            if region is not None:
+                lt = lt.copy(region=region)
             tset = None
-            ts = self._find(lang, nore=True)
+            ts = self._find(str(lt), nore=True)
+            failed = False
             if len(ts) == 2 and ts[0] is None:
-                res.append(f"Can't find {lang} for rolv={c}")
+                failed = True
+            if failed and region is not None:
+                failed = False
+                lt1 = lt.copy(region=None)
+                ts = self._find(str(lt1), nore=True)
+                if len(ts) == 2 and ts[0] is None:
+                    failed = True
+                elif len(ts):
+                    tset = self.ltags[ts[0]]
+                    for i in ts:
+                        t = self.ltags[i]
+                        if region is not None and region in t.get('regions', []):
+                            tset = t
+                            break
+                else:
+                    failed = True
+                    lt = lt1
+            if failed:
+                res.append(f"{lt} Not found for rolv={c}")
                 continue
-            for i in ts:
-                t = self.ltags[i]
-                if region is None and t['tag'] == lang:
-                    tset = t
-                    break
-                elif region is not None and region in t.get('regions', []):
-                    tset = t
             if tset is None:
                 if not len(ts):
                     missing.append((c, l))
@@ -455,17 +476,18 @@ class Editor:
             if str(c) in rods:
                 t = rods[str(c)]
                 v = r['VarietyName']
+                if 'rolv' in t:
+                    del t['rolv']
                 if t.get('name', None) == tset.get('name', None) or t.get('name', None) != v:
                     n = t.get('name', None)
                     if n and n not in t.get('names', []):
                         t['names'] = sorted(t.get('names', []) + [n])
                     t['name'] = v
-                    res.append(f"{t['full']}: {v}")
-            elif len(ts) == 2 and ts[0] is None:
-                res.append(ts[1])
+                    res.append(f"{t['full']} {v}")
         res.append(f"{count} codes added")
         for m in missing:
             res.append(f"Missing entry for {m[1]} with rolv {m[0]}")
+        self.output_clickable = True
         self.ui.reset_progress()
         return res
 
@@ -880,7 +902,7 @@ def createTUI():
             cmd_text = self.command_input.text
             output = self.dm._run(cmd_text)
 
-            if output != "--UNDO--":
+            if output is not None and output != "--UNDO--":
                 self.results_area.text = output or ""
             self.editor.text = self.dm._get_text()
             self.history_display.text = "\n".join([c[0] for c in self.dm.history])
@@ -1015,6 +1037,8 @@ def createTkUI():
             self.bind("<Control-d>", lambda e: self.quit())
             self.bind("<Tab>", self._focus_next)
 
+            self.after_idle(self.command_input.focus_set)
+
         # =========================
         # BEHAVIOUR
         # =========================
@@ -1076,7 +1100,7 @@ def createTkUI():
             cmd_text = self.command_input.get()
             output = self.dm._run(cmd_text)
 
-            if output != "--UNDO--":
+            if output is not None and output != "--UNDO--":
                 self.results_area.delete("1.0", "end")
                 self.results_area.insert("1.0", output or "")
 
