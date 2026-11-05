@@ -2,6 +2,7 @@
     {
         "regions": [ "AA", "AC", "AD", "AN", "AQ", "AS", "AX", "BL", "BU", "BV", "CP", "CQ", "CS", "DD", "EA", "EU", "EZ", "FX", "GS", "HM", "IC", "MC", "MF", "MQ", "NT", "PM", "QM", "QN", "QO", "QP", "QQ", "QR", "QS", "QT", "QU", "QV", "QW", "QX", "QY", "QZ", "SM", "SU", "TA", "TF", "TP", "UM", "UN", "VG", "XA", "XB", "XC", "XD", "XE", "XF", "XG", "XH", "XI", "XJ", "XL", "XM", "XN", "XO", "XP", "XQ", "XR", "XS", "XT", "XU", "XV", "XW", "XY", "XZ", "YD", "YU", "ZR", "ZZ" ],
         "scripts": [ "Aran", "Cpmn", "Egyd", "Egyh", "Hira", "Hntl", "Hrkt", "Mero", "Moon", "Pcun", "Phlv", "Psin", "Qaaa", "Qaab", "Qaac", "Qaad", "Qaae", "Qaaf", "Qaag", "Qaah", "Qaai", "Qaaj", "Qaak", "Qaal", "Qaam", "Qaan", "Qaao", "Qaap", "Qaaq", "Qaar", "Qaas", "Qaat", "Qaau", "Qaav", "Qaaw", "Qaax", "Qaay", "Qaaz", "Qaba", "Qabb", "Qabc", "Qabd", "Qabe", "Qabf", "Qabg", "Qabh", "Qabi", "Qabj", "Qabk", "Qabl", "Qabm", "Qabn", "Qabo", "Qabp", "Qabq", "Qabr", "Qabs", "Qabt", "Qabu", "Qabv", "Qabw", "Qabx", "Roro", "Seal", "Shui", "Syre", "Syrn", "Visp", "Zinh", "Zsye" ],
+        "languages": [ "bh", "aav", "afa", "alg", "alv", "apa", "aqa", "aql", "art", "ath", "auf", "aus", "awd", "azc", "bad", "bai", "bat", "ber", "bih", "bnt", "btk", "cai", "cau", "cba", "ccn", "ccs", "cdc", "cdd", "cel", "cmc", "cpe", "cpf", "cpp", "crp", "csu", "cus", "day", "dmn", "dra", "egx", "esx", "euq", "fiu", "fox", "gem", "gme", "gmq", "gmw", "grk", "him", "hmx", "hok", "hyx", "iir", "ijo", "inc", "ine", "ira", "iro", "itc", "jpx", "kar", "kdo", "khi", "kro", "map", "mkh", "mno", "mun", "myn", "nah", "nai", "ngf", "nic", "nub", "omq", "omv", "oto", "paa", "phi", "plf", "poz", "pqe", "pqw", "pra", "qwe", "roa", "sai", "sal", "sdv", "sem", "sgn", "sio", "sit", "sla", "smi", "son", "sqj", "ssa", "syd", "tai", "tbq", "trk", "tup", "tut", "tuw", "urj", "wak", "wen", "xgn", "xnd", "ypk", "zhx", "zle", "zls", "zlw", "znd" ],
         "tag": "_conformance"
     },
     {
@@ -46348,7 +46349,7 @@
         "script": "Hant",
         "sldr": false,
         "tag": "hak-Hant",
-        "tags": [ "zh-hak-Hant", "zh-hak-Hant-CN" ],
+        "tags": [ "hak-TW", "zh-hak-Hant", "zh-hak-Hant-CN" ],
         "windows": "hak-Hant"
     },
     {
@@ -64902,7 +64903,7 @@
         "script": "Cyrl",
         "sldr": false,
         "tag": "ku-AZ",
-        "tags": [ "kmr-Cyrl", "kmr-Cyrl-AZ", "ku-Cyrl" ],
+        "tags": [ "kmr-Cyrl", "kmr-Cyrl-AZ", "ku-AM", "ku-Cyrl", "ku-GE", "ku-TM" ],
         "windows": "ku-Cyrl-AZ"
     },
     {
@@ -64919,7 +64920,7 @@
         "script": "Arab",
         "sldr": true,
         "tag": "ku-Arab",
-        "tags": [ "ku-IQ" ],
+        "tags": [ "ku-IQ", "ku-IR" ],
         "windows": "ku-Arab"
     },
     {
@@ -74026,21 +74027,6 @@
         "windows": "lzn-Latn"
     },
     {
-        "full": "lzz-Geok-GE",
-        "iana": [ "Laz" ],
-        "iso639_3": "lzz",
-        "localnames": [ "Lazuri" ],
-        "name": "Laz",
-        "names": [ "Chan", "Chanuri", "Chanzan", "Laze", "Lazuri", "Zan" ],
-        "region": "GE",
-        "regionname": "Georgia",
-        "script": "Geok",
-        "sldr": false,
-        "tag": "lzz",
-        "tags": [ "lzz-Geok" ],
-        "windows": "lzz-Geok"
-    },
-    {
         "full": "lzz-Latn-TR",
         "iana": [ "Laz" ],
         "iso639_3": "lzz",
@@ -74055,6 +74041,20 @@
         "tag": "lzz",
         "tags": [ "lzz-Latn", "lzz-TR" ],
         "windows": "lzz-Latn"
+    },
+    {
+        "full": "lzz-Geok-GE",
+        "iana": [ "Laz" ],
+        "iso639_3": "lzz",
+        "localnames": [ "Lazuri" ],
+        "name": "Laz",
+        "names": [ "Chan", "Chanuri", "Chanzan", "Laze", "Lazuri", "Zan" ],
+        "region": "GE",
+        "regionname": "Georgia",
+        "script": "Geok",
+        "sldr": false,
+        "tag": "lzz-Geok",
+        "windows": "lzz-Geok"
     },
     {
         "full": "lzz-Geor-GE",
@@ -76397,23 +76397,6 @@
         "windows": "mew-Latn"
     },
     {
-        "full": "mey-Latn-MR",
-        "iana": [ "Hassaniyya" ],
-        "iso639_3": "mey",
-        "localnames": [ "Hassaniyya" ],
-        "name": "Hassaniyya",
-        "names": [ "Arabic, Hasanya", "Arabic, Hassaniyya", "Hasaniya", "Hasanya", "Hasanya Arabic", "Hassani", "Hassania", "Hassaniya", "Hassaniyya Arabic", "Klem El Bithan", "Maure", "Mauri", "Moor", "Sahrawi", "Sulaka", "Suraka", "Suraxxé" ],
-        "region": "MR",
-        "regionname": "Mauritania",
-        "regions": [ "DZ", "EH", "LY", "MA", "ML", "NE", "SN" ],
-        "rolv": [ "6424" ],
-        "script": "Latn",
-        "sldr": false,
-        "tag": "mey",
-        "tags": [ "mey-Latn", "mey-MR" ],
-        "windows": "mey-Latn"
-    },
-    {
         "full": "mey-Arab-MR",
         "iana": [ "Hassaniyya" ],
         "iso639_3": "mey",
@@ -76427,8 +76410,26 @@
         "regions": [ "DZ", "EH", "LY", "MA", "ML", "NE", "SN" ],
         "script": "Arab",
         "sldr": false,
-        "tag": "mey-Arab",
+        "tag": "mey",
+        "tags": [ "mey-Arab" ],
         "windows": "mey-Arab"
+    },
+    {
+        "full": "mey-Latn-MR",
+        "iana": [ "Hassaniyya" ],
+        "iso639_3": "mey",
+        "localnames": [ "Hassaniyya" ],
+        "name": "Hassaniyya",
+        "names": [ "Arabic, Hasanya", "Arabic, Hassaniyya", "Hasaniya", "Hasanya", "Hasanya Arabic", "Hassani", "Hassania", "Hassaniya", "Hassaniyya Arabic", "Klem El Bithan", "Maure", "Mauri", "Moor", "Sahrawi", "Sulaka", "Suraka", "Suraxxé" ],
+        "region": "MR",
+        "regionname": "Mauritania",
+        "regions": [ "DZ", "EH", "LY", "MA", "ML", "NE", "SN" ],
+        "rolv": [ "6424" ],
+        "script": "Latn",
+        "sldr": false,
+        "tag": "mey-Latn",
+        "tags": [ "mey-MR", "mey-SN" ],
+        "windows": "mey-Latn"
     },
     {
         "full": "mez-Latn-US",
@@ -77293,7 +77294,7 @@
         "script": "Deva",
         "sldr": true,
         "tag": "mgp",
-        "tags": [ "mgp-Deva", "mgp-NP", "mrd" ],
+        "tags": [ "mgp-Deva", "mgp-NP", "mrd", "mrd-Deva", "mrd-Deva-NP", "mrd-NP" ],
         "windows": "mgp-Deva"
     },
     {
@@ -82018,20 +82019,6 @@
         "windows": "mrn-Latn"
     },
     {
-        "full": "mro-Beng-BD",
-        "iana": [ "Mru" ],
-        "iso639_3": "mro",
-        "name": "Mru",
-        "names": [ "Dak", "Launghu", "Maru", "Mro", "Mro-Mru", "Mrucha", "Mrung", "Mrusa", "Murung", "Niopheng", "Niopreng", "Taung Mru" ],
-        "region": "BD",
-        "regionname": "Bangladesh",
-        "script": "Beng",
-        "sldr": false,
-        "tag": "mro",
-        "tags": [ "mro-Beng" ],
-        "windows": "mro-Beng"
-    },
-    {
         "full": "mro-Mroo-BD",
         "iana": [ "Mru" ],
         "iso639_3": "mro",
@@ -82046,6 +82033,19 @@
         "tag": "mro",
         "tags": [ "mro-BD", "mro-Mroo" ],
         "windows": "mro-Mroo"
+    },
+    {
+        "full": "mro-Beng-BD",
+        "iana": [ "Mru" ],
+        "iso639_3": "mro",
+        "name": "Mru",
+        "names": [ "Dak", "Launghu", "Maru", "Mro", "Mro-Mru", "Mrucha", "Mrung", "Mrusa", "Murung", "Niopheng", "Niopreng", "Taung Mru" ],
+        "region": "BD",
+        "regionname": "Bangladesh",
+        "script": "Beng",
+        "sldr": false,
+        "tag": "mro-Beng",
+        "windows": "mro-Beng"
     },
     {
         "full": "mro-Latn-BD",
@@ -84234,22 +84234,6 @@
         "windows": "mws-Latn"
     },
     {
-        "full": "mwt-Latn-MM",
-        "iana": [ "Moken" ],
-        "iso639_3": "mwt",
-        "name": "Moken",
-        "names": [ "Basing", "Chau Ko’", "Lawta", "Mawken", "Orang Laut", "Salon", "Salong", "Selong", "Selung" ],
-        "region": "MM",
-        "regionname": "Myanmar",
-        "regions": [ "TH" ],
-        "rolv": [ "14206", "27182", "1112", "14207" ],
-        "script": "Latn",
-        "sldr": false,
-        "tag": "mwt",
-        "tags": [ "mwt-Latn" ],
-        "windows": "mwt-Latn"
-    },
-    {
         "full": "mwt-Mymr-MM",
         "iana": [ "Moken" ],
         "iso639_3": "mwt",
@@ -84264,6 +84248,21 @@
         "tag": "mwt",
         "tags": [ "mwt-MM", "mwt-Mymr" ],
         "windows": "mwt-Mymr"
+    },
+    {
+        "full": "mwt-Latn-MM",
+        "iana": [ "Moken" ],
+        "iso639_3": "mwt",
+        "name": "Moken",
+        "names": [ "Basing", "Chau Ko’", "Lawta", "Mawken", "Orang Laut", "Salon", "Salong", "Selong", "Selung" ],
+        "region": "MM",
+        "regionname": "Myanmar",
+        "regions": [ "TH" ],
+        "rolv": [ "14206", "27182", "1112", "14207" ],
+        "script": "Latn",
+        "sldr": false,
+        "tag": "mwt-Latn",
+        "windows": "mwt-Latn"
     },
     {
         "full": "mwt-Thai-TH",
@@ -85873,7 +85872,7 @@
         "script": "Hant",
         "sldr": false,
         "tag": "nan-Hant",
-        "tags": [ "zh-nan-Hant", "zh-nan-Hant-TW" ],
+        "tags": [ "nan-MO", "nan-TW", "zh-nan-Hant", "zh-nan-Hant-TW" ],
         "windows": "nan-Hant"
     },
     {
@@ -101058,6 +101057,7 @@
         "script": "Cyrl",
         "sldr": false,
         "tag": "pnt-Cyrl",
+        "tags": [ "pnt-RU" ],
         "windows": "pnt-Cyrl"
     },
     {
@@ -138809,21 +138809,6 @@
         "windows": "xme-Zyyy"
     },
     {
-        "full": "xmf-Geok-GE",
-        "iana": [ "Mingrelian" ],
-        "iso639_3": "xmf",
-        "name": "Mingrelian",
-        "names": [ "Iverian", "Margalepi", "Margali", "Margaluri", "Margaluri nina", "Megrel", "Megrelian", "Megruli" ],
-        "region": "GE",
-        "regionname": "Georgia",
-        "regions": [ "RU" ],
-        "rolv": [ "29207" ],
-        "script": "Geok",
-        "sldr": false,
-        "tag": "xmf",
-        "windows": "xmf-Geok"
-    },
-    {
         "full": "xmf-Geor-GE",
         "iana": [ "Mingrelian" ],
         "iso639_3": "xmf",
@@ -138838,6 +138823,21 @@
         "tag": "xmf",
         "tags": [ "xmf-GE", "xmf-Geor" ],
         "windows": "xmf-Geor"
+    },
+    {
+        "full": "xmf-Geok-GE",
+        "iana": [ "Mingrelian" ],
+        "iso639_3": "xmf",
+        "name": "Mingrelian",
+        "names": [ "Iverian", "Margalepi", "Margali", "Margaluri", "Margaluri nina", "Megrel", "Megrelian", "Megruli" ],
+        "region": "GE",
+        "regionname": "Georgia",
+        "regions": [ "RU" ],
+        "rolv": [ "29207" ],
+        "script": "Geok",
+        "sldr": false,
+        "tag": "xmf-Geok",
+        "windows": "xmf-Geok"
     },
     {
         "full": "xmf-Latn-GE",

@@ -196,6 +196,10 @@
         "scripts": {
           "type": "array",
           "items": { "$ref": "#/definitions/iso15924"}
+        },
+        "languages": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/language"}
         }
       },
       "required": ["regions", "scripts"],
@@ -231,6 +235,10 @@
       "pattern": "^([0-9][a-zA-Z0-9]{3,8})|([a-zA-Z][a-zA-Z0-9]{4,8})$"
     },
 
+    "language": {
+      "type": "string",
+      "pattern": "^[a-z]{2,3}$"
+    },
     "iso639_3": {
       "type": "string",
       "pattern": "^[a-z]{3}$"

@@ -9,7 +9,8 @@ import sldr         # for the path
 langtagjson = os.path.join(os.path.dirname(__file__), '..', 'source', 'langtags.json')
 
 exceptions = set(["aii-Cyrl", 
-    "en-Latn-CQ"        # CQ crashes old FLex
+    "en-Latn-CQ",        # CQ crashes old FLex
+    "gon-Orya"           # CLDR is wrong
 ])
 
 class Supplemental(unittest.TestCase):
@@ -18,8 +19,11 @@ class Supplemental(unittest.TestCase):
         with open(langtagjson, "r") as inf:
             self.data = json.load(inf)
         self.ltags = {}
+        self.collections = []
         for j in self.data:
             if j['tag'].startswith("_"):
+                if j['tag'] == "_conformance":
+                    self.collections = j['languages']
                 continue
             self.ltags.setdefault(j['tag'], []).append(j)
             if j['tag'] != j['full']:
@@ -43,7 +47,8 @@ class Supplemental(unittest.TestCase):
                 if str(tag) in exceptions:
                     continue
                 if tag not in self.ltags:
-                    failures.append(tag)
+                    if lang not in self.collections:
+                        failures.append(tag)
                     continue
                 for r in regions:
                     if not len(r):
