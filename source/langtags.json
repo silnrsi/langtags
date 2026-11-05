@@ -1,8 +1,8 @@
 [
     {
+        "languages": [ "bh", "aav", "afa", "alg", "alv", "apa", "aqa", "aql", "art", "ath", "auf", "aus", "awd", "azc", "bad", "bai", "bat", "ber", "bih", "bnt", "btk", "cai", "cau", "cba", "ccn", "ccs", "cdc", "cdd", "cel", "cmc", "cpe", "cpf", "cpp", "crp", "csu", "cus", "day", "dmn", "dra", "egx", "esx", "euq", "fiu", "fox", "gem", "gme", "gmq", "gmw", "grk", "him", "hmx", "hok", "hyx", "iir", "ijo", "inc", "ine", "ira", "iro", "itc", "jpx", "kar", "kdo", "khi", "kro", "map", "mkh", "mno", "mun", "myn", "nah", "nai", "ngf", "nic", "nub", "omq", "omv", "oto", "paa", "phi", "plf", "poz", "pqe", "pqw", "pra", "qwe", "roa", "sai", "sal", "sdv", "sem", "sgn", "sio", "sit", "sla", "smi", "son", "sqj", "ssa", "syd", "tai", "tbq", "trk", "tup", "tut", "tuw", "urj", "wak", "wen", "xgn", "xnd", "ypk", "zhx", "zle", "zls", "zlw", "znd" ],
         "regions": [ "AA", "AC", "AD", "AN", "AQ", "AS", "AX", "BL", "BU", "BV", "CP", "CQ", "CS", "DD", "EA", "EU", "EZ", "FX", "GS", "HM", "IC", "MC", "MF", "MQ", "NT", "PM", "QM", "QN", "QO", "QP", "QQ", "QR", "QS", "QT", "QU", "QV", "QW", "QX", "QY", "QZ", "SM", "SU", "TA", "TF", "TP", "UM", "UN", "VG", "XA", "XB", "XC", "XD", "XE", "XF", "XG", "XH", "XI", "XJ", "XL", "XM", "XN", "XO", "XP", "XQ", "XR", "XS", "XT", "XU", "XV", "XW", "XY", "XZ", "YD", "YU", "ZR", "ZZ" ],
         "scripts": [ "Aran", "Cpmn", "Egyd", "Egyh", "Hira", "Hntl", "Hrkt", "Mero", "Moon", "Pcun", "Phlv", "Psin", "Qaaa", "Qaab", "Qaac", "Qaad", "Qaae", "Qaaf", "Qaag", "Qaah", "Qaai", "Qaaj", "Qaak", "Qaal", "Qaam", "Qaan", "Qaao", "Qaap", "Qaaq", "Qaar", "Qaas", "Qaat", "Qaau", "Qaav", "Qaaw", "Qaax", "Qaay", "Qaaz", "Qaba", "Qabb", "Qabc", "Qabd", "Qabe", "Qabf", "Qabg", "Qabh", "Qabi", "Qabj", "Qabk", "Qabl", "Qabm", "Qabn", "Qabo", "Qabp", "Qabq", "Qabr", "Qabs", "Qabt", "Qabu", "Qabv", "Qabw", "Qabx", "Roro", "Seal", "Shui", "Syre", "Syrn", "Visp", "Zinh", "Zsye" ],
-        "languages": [ "bh", "aav", "afa", "alg", "alv", "apa", "aqa", "aql", "art", "ath", "auf", "aus", "awd", "azc", "bad", "bai", "bat", "ber", "bih", "bnt", "btk", "cai", "cau", "cba", "ccn", "ccs", "cdc", "cdd", "cel", "cmc", "cpe", "cpf", "cpp", "crp", "csu", "cus", "day", "dmn", "dra", "egx", "esx", "euq", "fiu", "fox", "gem", "gme", "gmq", "gmw", "grk", "him", "hmx", "hok", "hyx", "iir", "ijo", "inc", "ine", "ira", "iro", "itc", "jpx", "kar", "kdo", "khi", "kro", "map", "mkh", "mno", "mun", "myn", "nah", "nai", "ngf", "nic", "nub", "omq", "omv", "oto", "paa", "phi", "plf", "poz", "pqe", "pqw", "pra", "qwe", "roa", "sai", "sal", "sdv", "sem", "sgn", "sio", "sit", "sla", "smi", "son", "sqj", "ssa", "syd", "tai", "tbq", "trk", "tup", "tut", "tuw", "urj", "wak", "wen", "xgn", "xnd", "ypk", "zhx", "zle", "zls", "zlw", "znd" ],
         "tag": "_conformance"
     },
     {
@@ -64886,7 +64886,7 @@
         "script": "Latn",
         "sldr": true,
         "tag": "ku",
-        "tags": [ "kmr-Latn", "kmr-Latn-TR", "ku-Latn", "ku-TR" ],
+        "tags": [ "kmr", "kmr-Latn", "kmr-Latn-TR", "ku-Latn", "ku-TR" ],
         "windows": "ku-Latn"
     },
     {
@@ -74549,7 +74549,7 @@
         "script": "Latn",
         "sldr": true,
         "tag": "man-Latn-GN",
-        "tags": [ "emk-Latn", "emk-Latn-GN" ],
+        "tags": [ "emk", "emk-Latn", "emk-Latn-GN" ],
         "windows": "man-Latn-GN"
     },
     {
@@ -94533,7 +94533,7 @@
         "script": "Zzzz",
         "sldr": false,
         "tag": "ocm-Zzzz-x-pallava",
-        "tags": [ "ocm-XX-x-pallava" ],
+        "tags": [ "ocm", "ocm-XX-x-pallava" ],
         "windows": "ocm-Zzzz-x-pallava"
     },
     {
@@ -106575,19 +106575,18 @@
         "windows": "rnn-Latn"
     },
     {
-        "full": "rnp-Zyyy-IN",
+        "full": "rnp-Deva-IN",
         "iana": [ "Rongpo" ],
         "iso639_3": "rnp",
         "name": "Rongpo",
         "names": [ "Rang Po Bhasa", "Rangkas", "Rangpa" ],
         "region": "IN",
         "regionname": "India",
-        "script": "Zyyy",
+        "script": "Deva",
         "sldr": false,
         "tag": "rnp",
-        "tags": [ "rnp-IN", "rnp-Zyyy" ],
-        "unwritten": true,
-        "windows": "rnp-Zyyy"
+        "tags": [ "rnp-IN", "rnp-Deva" ],
+        "windows": "rnp-Deva"
     },
     {
         "full": "rnr-Latn-AU",
@@ -114972,7 +114971,7 @@
         "script": "Zzzz",
         "sldr": false,
         "tag": "spx-Zzzz-x-picene",
-        "tags": [ "spx-XX-x-picene" ],
+        "tags": [ "spx", "spx-XX-x-picene" ],
         "windows": "spx-Zzzz-x-picene"
     },
     {
@@ -124804,7 +124803,7 @@
         "script": "Zzzz",
         "sldr": false,
         "tag": "tpo-Zzzz-x-laipao",
-        "tags": [ "thc-Zzzz-LA-x-laipao", "thc-Zzzz-x-laipao", "tpo-LA-x-laipao" ],
+        "tags": [ "thc-Zzzz-LA-x-laipao", "thc-Zzzz-x-laipao", "tpo", "tpo-LA-x-laipao" ],
         "windows": "tpo-Zzzz-x-laipao"
     },
     {
@@ -127677,7 +127676,7 @@
         "script": "Zzzz",
         "sldr": false,
         "tag": "txr-Zzzz-x-swpaleh",
-        "tags": [ "txr-XX-x-swpaleh" ],
+        "tags": [ "txr", "txr-XX-x-swpaleh" ],
         "windows": "txr-Zzzz-x-swpaleh"
     },
     {
@@ -136821,7 +136820,7 @@
         "script": "Zzzz",
         "sldr": false,
         "tag": "xaq-Zzzz-x-iberian",
-        "tags": [ "xaq-XX-x-iberian" ],
+        "tags": [ "xaq", "xaq-XX-x-iberian" ],
         "windows": "xaq-Zzzz-x-iberian"
     },
     {
@@ -137235,7 +137234,7 @@
         "script": "Zzzz",
         "sldr": false,
         "tag": "xcc-Zzzz-x-camunic",
-        "tags": [ "xcc-XX-x-camunic" ],
+        "tags": [ "xcc", "xcc-XX-x-camunic" ],
         "windows": "xcc-Zzzz-x-camunic"
     },
     {
@@ -137248,7 +137247,7 @@
         "script": "Zzzz",
         "sldr": false,
         "tag": "xce-Zzzz-x-celtibia",
-        "tags": [ "xce-XX-x-celtibia" ],
+        "tags": [ "xce", "xce-XX-x-celtibia" ],
         "windows": "xce-Zzzz-x-celtibia"
     },
     {
@@ -138055,7 +138054,7 @@
         "script": "Zzzz",
         "sldr": false,
         "tag": "xib-Zzzz-x-iberian",
-        "tags": [ "xib-XX-x-iberian" ],
+        "tags": [ "xib", "xib-XX-x-iberian" ],
         "windows": "xib-Zzzz-x-iberian"
     },
     {
