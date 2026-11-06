@@ -45,11 +45,28 @@ try:
 except NameError:
     FileNotFoundError = IOError
 
-# 10 means infinity
-variantorders = {"1994": 3, "alalc97": 10, "biske": 2, "fonipa": 10, "fonkirsh": 10,
-    "fonnapa": 10, "fonupa": 10, "fonxsamp": 10, "grclass": 2, "grital": 2,
-    "grmistr": 2, "heploc": 2, "lipaw": 2, "njiva": 2, "osojs": 2, "simple": 10,
-    "solba": 2}
+_dirlists = {}
+def _dirlist(d):
+    '''Returns a cached {lowercase name: name} of the files in directory d.
+        LDML file names differ in case (be_TARASK.xml).'''
+    if d not in _dirlists:
+        try:
+            _dirlists[d] = {f.lower(): f for f in os.listdir(d)}
+        except OSError:
+            _dirlists[d] = {}
+    return _dirlists[d]
+
+def _ldmlname(t):
+    '''Returns the LDML file name for LangTag t, in CLDR case: en_Latn_GB,
+        be_TARASK, eka_Latn_NG_x_ekajuk.'''
+    parts = str(t).split("-")
+    vs = set(t.vars or [])
+    for i, p in enumerate(parts):
+        if len(p) == 1:
+            break           # extensions and private use keep their case
+        if i > 0 and p in vs:
+            parts[i] = p.upper()
+    return "_".join(parts) + ".xml"
 
 class _Singleton(type):
     '''Manage singletons by fname parameter'''
@@ -177,11 +194,11 @@ class LangTags(metaclass=_Singleton):
     ''' Collection of TagSets searchable from a language tag string.
 
         Attributes:
-            matchRegions: if True, matches a tag against all the regions
+            matchRegions: if True (default), matches a tag against all the regions
                           in the tagset. Otherwise only match against the
                           explicit tags in the tagset.'''
 
-    matchRegions = False
+    matchRegions = True
 
     def __init__(self, fname=None, useurl=None, cachedprefix=None, **kw):
         '''fname is an optional langtags.json file'''
@@ -193,6 +210,10 @@ class LangTags(metaclass=_Singleton):
         self._allregions = set()
         self._allvariants = set()
         self._extralangs = set()
+        self._xvals = set()        # (lang, x- subtags) used by some tagset
+        self._bylang = {}       # lang -> list of tagsets, for region resolution
+        self._phoncache = {}    # (base, variants) -> phonetic tagset
+        self._langalias = {}    # language subtag -> language of the tagset using it
         self._varcache = {}     # (tag, use639, matchRegions) -> derived tagset or None
         inf = None
 
@@ -236,11 +257,18 @@ class LangTags(metaclass=_Singleton):
     def addSet(self, d):
         '''Adds a TagSet to this collection'''
         t = d.get('tag', '')
-        self._allvariants.update(d.get('variants', []))
+        for k in ('variants', 'svariants'):
+            self._allvariants.update(s for v in d.get(k, []) for s in v.split('-'))
         if t.startswith("_"):
             self._info[t[1:]] = d
         elif t != "":
             s = TagSet(**d)
+            for l in s.allTags():
+                if l.ns and 'x' in l.ns:
+                    self._xvals.add((l.lang, tuple(l.ns['x'])))
+            self._bylang.setdefault(s.full.lang, []).append(s)
+            for l in s.allTags(use639=False):
+                self._langalias.setdefault(l.lang, s.full.lang)
             for l in s.allTags(use639=False):
                 self._tags[str(l).lower()] = s
                 if l.vars:
@@ -277,20 +305,33 @@ class LangTags(metaclass=_Singleton):
         '''Return the name of a region code'''
         return self._regions.get(reg, "")
 
-    def _getwithvars(self, l, vs, use639=False):
-        '''Given a langtag and list of variants, create a new tagset corresponding
-            to the variant list if not already covered by this tagset'''
-        removed = [v for v in l.vars if v in vs]
-        if not removed:
+    def _varslots(self, base, vs):
+        '''Checks the variants vs against the base tagset and returns them in
+            canonical order: language variant, then script or phonetic variant,
+            then general purpose (global) variant. The order of vs does not matter.
+            Also returns the set of slots used (0 variant, 1 svariant, 2 phonetic).
+            Returns None if a variant is not allowed for base, there is more than one
+            (s)variant or phonetic variant, or an svariant is used with a phonetic
+            variant (a phonetic variant is its own script and orthography).
+            A hyphenated entry, such as hepburn-heploc, is a compound variant whose
+            subtags count as one variant.'''
+        gvar = self._info.get('globalvar', {}).get('variants', [])
+        pvar = self._info.get('phonvar', {}).get('variants', [])
+        # (subtags, slot, order) where order places global variants last
+        entries = [(e.split('-'), slot, slot) for slot, k in ((0, 'variants'), (1, 'svariants'))
+                        for e in (getattr(base, k, None) or [])]
+        entries += [([v], 0, 3) for v in gvar] + [([v], 2, 2) for v in pvar]
+        entries.sort(key=lambda x: -len(x[0]))      # longest compound first
+        rest = list(vs)
+        slots = ([], [], [])
+        for e, slot, order in entries:
+            if all(s in rest for s in e):
+                slots[slot].append((order, e))
+                for s in e:
+                    rest.remove(s)
+        if rest or any(len(x) > 1 for x in slots) or (slots[1] and slots[2]):
             return None
-        lv = l._replace(vars=[v for v in l.vars if v not in vs] or None)
-        key = str(lv).lower()
-        res = self._tags.get(key, None)
-        if res is None and use639:
-            res = self._iso639s.get(key, None)
-        if res is None:
-            return None
-        return res._make_variant(removed)
+        return [s for o, e in sorted(sum(slots, [])) for s in e], {i for i, x in enumerate(slots) if x}
 
     def get(self, ltname, default=None, use639=False, matchRegions=None, **kw):
         '''Looks up a langtag string returning a TagSet or returns default [None].
@@ -308,8 +349,37 @@ class LangTags(metaclass=_Singleton):
             res = self._derive(s, use639, matchRegions)
             if res is None:
                 return default
-            self._varcache[ckey] = res      # only cache hits, so junk queries don't grow it
+            # only cache hits, so junk queries don't grow it. Cache every tag of the
+            # result so that each tag in a returned set looks up to the same object.
+            self._varcache[ckey] = res
+            for t in res.allTags(use639=False):
+                self._varcache.setdefault((str(t).lower(), ckey[1], ckey[2]), res)
         return res
+
+    def _lookupbase(self, l, use639, matchRegions):
+        '''Finds a stored tagset for LangTag l. When matchRegions is set, a tag
+            with a region R that is not stored resolves to: the tagset for l
+            without its region, if that lists R; else, if l has no script, the
+            only tagset of the language (any script) with the same variants and
+            x- that lists R. Several such tagsets is a data error: None.'''
+        s = str(l).lower()
+        res = self._tags.get(s, None)
+        if res is None and use639:
+            res = self._iso639s.get(s, None)
+        if res is not None or not matchRegions or l.region is None:
+            return res
+        r = l.region
+        res = self._lookupbase(l._replace(region=None), use639, False)
+        if res is not None and (r == res.region or r in res.regions):
+            return res
+        if l.script is not None:
+            return None
+        x = (l.ns or {}).get('x')
+        cands = [t for t in self._bylang.get(l.lang, [])
+                    if (r == t.region or r in t.regions)
+                        and (t.full.vars or None) == (l.vars or None)
+                        and (t.full.ns or {}).get('x') == x]
+        return cands[0] if len(cands) == 1 else None
 
     def _derive(self, s, use639, matchRegions):
         '''Finds a tagset for a tag not directly in the database, by removing
@@ -320,31 +390,80 @@ class LangTags(metaclass=_Singleton):
             return None
         if l.lang is None:
             return None
-        if l.vars is not None:
-            gvar = self._info.get('globalvar', {}).get('variants', [])
-            res = self._getwithvars(l, gvar, use639=use639)
-            if res is not None:
-                return res
-            if l.script is None or l.script == "Latn":
-                pvar = self._info.get('phonvar', {}).get('variants', [])
-                for a in (pvar, pvar + gvar):
-                    if l.script != "Latn":
-                        res = self._getwithvars(l._replace(script="Latn"), a, use639=use639)
-                        if res is not None:
-                            return res
-                    res = self._getwithvars(l, a, use639=use639)
-                    if res is not None:
-                        if l.script != "Latn":
-                            return res.newFull(res.full._replace(script="Latn"))
-                        else:
-                            return res
-        if matchRegions and l.region is not None:
-            lr = l._replace(region = None)
-            res = self.get(str(lr), None, use639=use639, matchRegions=False)
-            if res is not None:
-                if l.region in res.regions or l.region == res.region:
+        if l.ns:
+            # Extensions and unrecognised private use do not select a tagset
+            # (RFC 4647 4.1). Keep the longest recognised x- prefix, if any.
+            x = l.ns.get('x', [])
+            while x and (l.lang, tuple(x)) not in self._xvals:
+                x = x[:-1]
+            ns = {'x': list(x)} if x else None
+            if ns != l.ns:
+                return self.get(str(l._replace(ns=ns)), None, use639=use639, matchRegions=matchRegions)
+        if l.vars is None:
+            return self._lookupbase(l, use639, matchRegions)
+        pvar = self._info.get('phonvar', {}).get('variants', [])
+        isphon = any(v in pvar for v in l.vars)
+        if isphon and l.script not in (None, "Latn"):
+            return None         # a phonetic variant implies Latn
+        res = self._lookupbase(l, use639, matchRegions)     # e.g. ca-AD-valencia by region
+        if res is not None:
+            return res
+        # Check the variants against the base tagset. Only ca-valencia and sl-rozaj
+        # are stored variant tagsets, so at most one variant is kept in the base.
+        for keep in [None] + [[v] for v in l.vars]:
+            rest = [v for v in l.vars if keep is None or v not in keep]
+            lk = l._replace(vars=keep)
+            if isphon:
+                res = self._phonetic(lk, rest, use639)
+                if res is not None:
                     return res
+                continue
+            base = self._lookupbase(lk, use639, matchRegions)
+            vs = None if base is None else self._varslots(base, rest)
+            if vs is not None:
+                return base._make_variant(*vs)
         return None
+
+    def _phongroup(self, l, use639):
+        '''Returns the tagsets of the language and dialect of l (its language,
+            stored variants and x-), whatever their script and region. The bare tag
+            may be stored in a tagset with a dialect (onw is onw-Copt-SD-x-olnubian)
+            and the language may be an alias used in another tagset (emk in man).'''
+        b = str(l._replace(script=None, region=None)).lower()
+        ts = self._tags.get(b, None) or (self._iso639s.get(b, None) if use639 else None)
+        if ts is not None:
+            lang, vs, x = ts.full.lang, ts.full.vars, (ts.full.ns or {}).get('x')
+        else:
+            lang, vs, x = self._langalias.get(l.lang, l.lang), l.vars, (l.ns or {}).get('x')
+        return [t for t in self._bylang.get(lang, [])
+                    if (t.full.vars or None) == (vs or None) and (t.full.ns or {}).get('x') == x]
+
+    def _phonetic(self, l, vs, use639):
+        '''Returns the phonetic tagset for l (without its phonetic variant) with
+            the variants vs. Its base is the one tagset of the language and dialect
+            without nophonvars, in Latin script. The set covers every region of the
+            language and dialect, since a phonetic variant is about the language,
+            not the locale.'''
+        group = self._phongroup(l, use639)
+        free = [t for t in group if not getattr(t, 'nophonvars', False)]
+        if len(free) != 1:
+            return None         # data error if more than one
+        base = free[0]
+        vs = self._varslots(base, vs)
+        if vs is None:
+            return None
+        vs, used = vs
+        regions = set()
+        for t in group:
+            regions.update(t.regions)
+            regions.add(t.region)
+        key = (id(base), tuple(vs))     # one object per phonetic set
+        res = self._phoncache.get(key, None)
+        if res is None:
+            res = self._phoncache[key] = base._make_phonetic(vs, used, regions)
+        if l.region is not None and l.region != res.region and l.region not in res.regions:
+            return None
+        return res
 
     def __getitem__(self, s):
         '''Implements aTag[s] using get(). Raises KeyError if the tag is missing.'''
@@ -461,6 +580,48 @@ class TagSet:
             res += "_" + self.full.script.title()
         return res + ".xml"
 
+    def sldrFile(self, ltag=None, path=None, exists=None):
+        ''' Returns the LDML file for a locale of this tagset. ltag is the tag that
+            was looked up (e.g. en-BM, which gives the en-GB tagset); its region
+            selects the locale. Without a way to test which files exist, only the
+            tagset's base locale file name can be known (en_GB.xml), or None if it
+            has no SLDR data. Otherwise returns the first existing file for: the
+            requested locale, then the tagset's base locale, then (for a
+            synthesised variant set) its base tagset's.
+                path    the root of an SLDR tree (files under initial letter
+                        directories) or a CLDR main directory. Returns a path.
+                exists  a function called with a candidate file name, such as
+                        en_BM.xml or be_TARASK.xml (CLDR case), returning True if
+                        it exists. Returns that name. '''
+        base = getattr(self, '_base', None)
+        if path is not None:
+            def found(n):
+                for d in (os.path.join(path, n[0].lower()), path):
+                    f = _dirlist(d).get(n.lower(), None)
+                    if f is not None:
+                        return os.path.join(d, f)
+        elif exists is not None:
+            def found(n):
+                return n if exists(n) else None
+        elif base is not None:
+            return base.sldrFile(ltag)
+        else:
+            return self.asSldr() if getattr(self, 'sldr', False) else None
+        if isinstance(ltag, str):
+            ltag = langtag(ltag)
+        forms = sorted(set([self.tag, self.full] + self.tags), key=lambda t: (len(str(t)), str(t)))
+        names = []
+        if ltag is not None and ltag.region is not None:
+            names += [t._replace(region=ltag.region) for t in forms]
+        names += forms
+        for n in names:
+            f = found(_ldmlname(n))
+            if f is not None:
+                return f
+        if base is not None:
+            return base.sldrFile(ltag, path, exists)
+        return None
+
     def __lt__(self, other):
         return str(self) < str(other)
 
@@ -521,17 +682,60 @@ class TagSet:
                 res.extend([l._replace(lang=i639) for l in res])
         return res
 
-    def _make_variant(self, vs):
-        '''Return a copy tagset changing all tags to add the variants vs.'''
-        def varsort(v):
-            return variantorders.get(v, 0)
+    def _synthesised(self, d, vs, used, script=None):
+        '''Adjusts the fields of a set synthesised from this one with variants vs
+            using the given slots: windows gains the variants (and script),
+            sldr is unknown so False, and a used slot no longer offers variants.
+            A set with an svariant or phonetic variant cannot take a phonetic variant.'''
+        w = langtag(self.windows)
+        d['windows'] = str(w._replace(script=script or w.script, vars=(w.vars or []) + list(vs)))
+        d['sldr'] = False
+        if 0 in used:
+            d.pop('variants', None)
+        if 1 in used or 2 in used:
+            d.pop('svariants', None)
+            d['nophonvars'] = True
+        res = TagSet(**d)
+        if not 2 in used:
+            res._base = self    # a variant's locale data falls back to its base
+        return res
+
+    def _make_variant(self, vs, used):
+        '''Return a copy tagset changing all tags to add the variants vs, which
+            use the given slots.'''
         d = dict([(k, getattr(self, k, None)) for k in self._allkeys])
         for k in ('tag', 'full'):
             if k in d:
-                l = d[k]._replace(vars=sorted((d[k].vars or []) + vs, key=varsort))
-                d[k] = l
-        d['tags'] = [t._replace(vars=sorted((t.vars or []) + vs, key=varsort)) for t in self.tags]
-        return TagSet(**d)
+                d[k] = d[k]._replace(vars=(d[k].vars or []) + list(vs))
+        d['tags'] = [t._replace(vars=(t.vars or []) + list(vs)) for t in self.tags]
+        return self._synthesised(d, vs, used)
+
+    def _make_phonetic(self, vs, used, regions):
+        '''Return a phonetic tagset based on this one: Latin script, with the
+            variants vs (in canonical order, using the given slots) and the given
+            regions. Each tag gives a form without a script and one with Latn.'''
+        d = dict([(k, getattr(self, k, None)) for k in self._allkeys])
+        def phon(t, script):
+            return t._replace(script=script, vars=(t.vars or []) + list(vs))
+        tags = []
+        for t in [self.tag, self.full] + self.tags:
+            for s in (None, "Latn"):
+                p = phon(t, s)
+                if p not in tags:
+                    tags.append(p)
+        d['tag'] = min(tags, key=lambda t: len(str(t)))     # shortest form
+        d['full'] = phon(self.full, "Latn")
+        d['tags'] = [t for t in tags if t != d['tag'] and t != d['full']]
+        d['_script'] = "Latn"
+        d['regions'] = sorted(r for r in regions if r and r != self.region)
+        if self.script != "Latn":
+            # names are about the language; local names and the suppressed
+            # script are about the native script
+            for k in ('localname', 'localnames', 'suppress'):
+                d.pop(k, None)
+            if 'latnnames' in d:
+                d['localnames'] = d.pop('latnnames')
+        return self._synthesised(d, vs, used, script=None if self.script == "Latn" else "Latn")
 
     def newFull(self, newfull):
         '''Returns a new tagset but with a different fulltag'''
