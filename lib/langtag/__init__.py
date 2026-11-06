@@ -214,6 +214,9 @@ class LangTags(metaclass=_Singleton):
         self._bylang = {}       # lang -> list of tagsets, for region resolution
         self._phoncache = {}    # (base, variants) -> phonetic tagset
         self._langalias = {}    # language subtag -> language of the tagset using it
+        self._rods = {}         # ROLV code -> tagsets with that rod (dialect tagsets)
+        self._rolvs = {}        # ROLV code -> tagsets listing it in rolv (parents)
+        self._hiscache = {}     # (parent, ROLV code) -> synthesised dialect tagset
         self._varcache = {}     # (tag, use639, matchRegions) -> derived tagset or None
         inf = None
 
@@ -267,6 +270,12 @@ class LangTags(metaclass=_Singleton):
                 if l.ns and 'x' in l.ns:
                     self._xvals.add((l.lang, tuple(l.ns['x'])))
             self._bylang.setdefault(s.full.lang, []).append(s)
+            for c in str(d.get('rod', '')).split():
+                if c.isdigit():
+                    self._rods.setdefault(int(c), []).append(s)
+            for c in d.get('rolv', []):
+                if c.isdigit():
+                    self._rolvs.setdefault(int(c), []).append(s)
             for l in s.allTags(use639=False):
                 self._langalias.setdefault(l.lang, s.full.lang)
             for l in s.allTags(use639=False):
@@ -333,9 +342,13 @@ class LangTags(metaclass=_Singleton):
             return None
         return [s for o, e in sorted(sum(slots, [])) for s in e], {i for i, x in enumerate(slots) if x}
 
-    def get(self, ltname, default=None, use639=False, matchRegions=None, **kw):
+    def get(self, ltname, default=None, use639=False, matchRegions=None, strict=False, **kw):
         '''Looks up a langtag string returning a TagSet or returns default [None].
-            matchRegions overrides the matchRegions attribute for this lookup.'''
+            matchRegions overrides the matchRegions attribute for this lookup.
+            Private use that is not recognised (an unknown x- value, or an x-HIS
+            dialect code unknown for the language or ambiguous) is ignored, as
+            RFC 4647 advises, unless strict is set, when the lookup fails.
+            Extensions such as -t- and -u- are always ignored.'''
         if matchRegions is None:
             matchRegions = self.matchRegions
         s = str(ltname).lower()
@@ -343,17 +356,17 @@ class LangTags(metaclass=_Singleton):
             return self._tags[s]
         if use639 and s in self._iso639s:
             return self._iso639s[s]
-        ckey = (s, bool(use639), bool(matchRegions))
+        ckey = (s, bool(use639), bool(matchRegions), bool(strict))
         res = self._varcache.get(ckey, None)
         if res is None:
-            res = self._derive(s, use639, matchRegions)
+            res = self._derive(s, use639, matchRegions, strict)
             if res is None:
                 return default
             # only cache hits, so junk queries don't grow it. Cache every tag of the
             # result so that each tag in a returned set looks up to the same object.
             self._varcache[ckey] = res
             for t in res.allTags(use639=False):
-                self._varcache.setdefault((str(t).lower(), ckey[1], ckey[2]), res)
+                self._varcache.setdefault((str(t).lower(),) + ckey[1:], res)
         return res
 
     def _lookupbase(self, l, use639, matchRegions):
@@ -381,7 +394,43 @@ class LangTags(metaclass=_Singleton):
                         and (t.full.ns or {}).get('x') == x]
         return cands[0] if len(cands) == 1 else None
 
-    def _derive(self, s, use639, matchRegions):
+    def _rolvlookup(self, l, n, use639, matchRegions, strict):
+        '''Finds the tagset for l whose private use is x-HIS<n>, a Registry of
+            Language Variants code: the dialect tagset with that rod, else the
+            tagset listing n in its rolv (a dialect using its parent's
+            orthography), from which a dialect tagset with x-HIS<n> is synthesised.
+            The script, region and variants of l are kept. Returns None if n is
+            unknown for the language or ambiguous.'''
+        lang = self._langalias.get(l.lang, l.lang)
+        for idx in (self._rods, self._rolvs):
+            cands = [t for t in idx.get(n, []) if t.full.lang == lang]
+            if l.script is not None:
+                cands = [t for t in cands if t.script == l.script]
+            if l.region is not None:
+                cands = [t for t in cands if l.region == t.region or l.region in t.regions]
+            if len(cands) > 1:
+                # prefer the language's default tagset, else its default script
+                d = self._lookupbase(l._replace(script=None, region=None, vars=None, ns=None), use639, False)
+                if d in cands:
+                    cands = [d]
+                elif d is not None:
+                    cands = [t for t in cands if t.script == d.script] or cands
+            if len(cands) > 1:
+                return None         # ambiguous
+            if cands:
+                t = cands[0]
+                vs = (t.full.vars or []) + [v for v in (l.vars or []) if v not in (t.full.vars or [])]
+                q = t.full._replace(region=l.region or t.full.region, vars=vs or None)
+                res = self.get(str(q), None, use639=use639, matchRegions=matchRegions, strict=strict)
+                if res is None or idx is self._rods:
+                    return res
+                key = (id(res), n)      # one object per dialect
+                if key not in self._hiscache:
+                    self._hiscache[key] = res._make_dialect(n)
+                return self._hiscache[key]
+        return None
+
+    def _derive(self, s, use639, matchRegions, strict=False):
         '''Finds a tagset for a tag not directly in the database, by removing
             variants or regions. Returns None if not found.'''
         try:
@@ -391,14 +440,25 @@ class LangTags(metaclass=_Singleton):
         if l.lang is None:
             return None
         if l.ns:
+            x = l.ns.get('x', [])
+            m = re.fullmatch(r"his(\d{1,5})", x[0]) if x else None
+            if m is not None:       # x-HIS<n>: a Registry of Language Variants dialect code
+                res = None if strict and len(x) > 1 else \
+                        self._rolvlookup(l._replace(ns=None), int(m.group(1)), use639, matchRegions, strict)
+                if res is not None or strict:
+                    return res
+                n = int(m.group(1))
+                if n in self._rods or n in self._rolvs:
+                    return None     # another language's (or an ambiguous) code is always an error
             # Extensions and unrecognised private use do not select a tagset
             # (RFC 4647 4.1). Keep the longest recognised x- prefix, if any.
-            x = l.ns.get('x', [])
             while x and (l.lang, tuple(x)) not in self._xvals:
                 x = x[:-1]
+            if strict and x != l.ns.get('x', []):
+                return None
             ns = {'x': list(x)} if x else None
             if ns != l.ns:
-                return self.get(str(l._replace(ns=ns)), None, use639=use639, matchRegions=matchRegions)
+                return self.get(str(l._replace(ns=ns)), None, use639=use639, matchRegions=matchRegions, strict=strict)
         if l.vars is None:
             return self._lookupbase(l, use639, matchRegions)
         pvar = self._info.get('phonvar', {}).get('variants', [])
@@ -698,6 +758,27 @@ class TagSet:
         res = TagSet(**d)
         if not 2 in used:
             res._base = self    # a variant's locale data falls back to its base
+        return res
+
+    def _make_dialect(self, n):
+        '''Return a dialect tagset based on this one for the ROLV code n, with
+            x-HIS<n> (five digits) added to its tags. The dialect uses this
+            tagset's orthography, so its locale data falls back to this one.'''
+        d = dict([(k, getattr(self, k, None)) for k in self._allkeys])
+        code = "{:05d}".format(n)
+        def dial(t):
+            ns = dict(t.ns or {})
+            ns['x'] = list(ns.get('x', [])) + ['his' + code]
+            return t._replace(ns=ns)
+        for k in ('tag', 'full'):
+            d[k] = dial(d[k])
+        d['tags'] = [dial(t) for t in self.tags]
+        d['windows'] = str(dial(langtag(self.windows)))
+        d['sldr'] = False
+        d['rod'] = code
+        d.pop('rolv', None)
+        res = TagSet(**d)
+        res._base = self
         return res
 
     def _make_variant(self, vs, used):

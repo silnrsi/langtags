@@ -148,6 +148,29 @@ class Basic(unittest.TestCase):
             _dirlists.clear()
             self.assertEqual(tk.sldrFile("be-tarask", sldr), os.path.join(sldr, "b", "be.xml"))
 
+    def test_his_codes(self):
+        # x-HIS<n>: the dialect tagset with that rod, else a dialect synthesised
+        # from the tagset listing n in its rolv
+        for t, full in (("aae-x-his06861", "aae-Latn-IT-x-sub84"), ("aae-x-HIS6861", "aae-Latn-IT-x-sub84"),
+                        ("aae-simple-x-his06861", "aae-Latn-IT-simple-x-sub84"),
+                        ("aae-x-his06862", "aae-Latn-IT-x-his06862"),
+                        ("ar-x-his04501", "ar-Arab-SA-x-his04501"),
+                        ("ar-Brai-x-his04501", "ar-Brai-SA-x-his04501")):
+            self.assertEqual(str(self.lt.get(t, strict=True).full), full, t)
+        lt = self.lt.get("aae-x-his06862")
+        self.assertEqual((lt.rod, lt.sldr), ("06862", False))
+        for t in lt.allTags(use639=False):
+            self.assertIs(self.lt.get(str(t)), lt, str(t))
+        # an unknown code is ignored unless strict; another language's code is an error
+        self.assertEqual(str(self.lt.get("aae-x-his99999").full), "aae-Latn-IT")
+        self.assertIsNone(self.lt.get("aae-x-his99999", strict=True))
+        self.assertIsNone(self.lt.get("en-x-his06861"))
+
+    def test_strict(self):
+        self.assertIsNone(self.lt.get("en-x-foo", strict=True))
+        self.assertEqual(str(self.lt.get("en-u-nu-thai", strict=True).full), "en-Latn-US")
+        self.assertEqual(str(self.lt.get("vi-x-central", strict=True).full), "vi-Latn-VN-x-central")
+
     def test_variant_lockouts(self):
         # at most one from variants+globalvar, one from svariants+phonvar,
         # and no svariant with a phonetic variant
@@ -251,6 +274,34 @@ class Data(unittest.TestCase):
         bad = [" / ".join(v) for k, v in sorted(groups.items()) if len(v) > 1]
         msg = report("Languages with more than one tagset without \"nophonvars\" in source/langtags.json.", [
             ("Set \"nophonvars\": true on all but the one tagset that phonetic variants (fonipa etc.) should be based on (each group is separated by a comma):", bad)])
+        if msg:
+            self.fail(msg)
+
+
+    def test_rolv_codes(self):
+        ''' rod is one ROLV code, of five digits, listed in the rolv of a tagset of
+            the same language (the dialect's parent); rolv codes are five digits '''
+        badrod, orphan, badrolv = [], [], []
+        parents = {}
+        with open(langtagjson, encoding="utf-8") as inf:
+            data = [t for t in json.load(inf) if not t["tag"].startswith("_")]
+        for t in data:
+            for c in t.get("rolv", []):
+                parents.setdefault(c, set()).add(langtag(t["full"]).lang)
+                if not (c.isdigit() and len(c) == 5):
+                    badrolv.append("{} ({})".format(t["full"], c))
+        for t in data:
+            if "rod" not in t:
+                continue
+            c = t["rod"]
+            if not (c.isdigit() and len(c) == 5):
+                badrod.append("{} ({})".format(t["full"], c))
+            elif langtag(t["full"]).lang not in parents.get(c, ()):
+                orphan.append("{} ({})".format(t["full"], c))
+        msg = report("ROLV codes in source/langtags.json.", [
+            ("\"rod\" must be a single five digit code (zero padded): fix these tagsets:", badrod),
+            ("\"rolv\" codes must be five digits (zero padded): fix these tagsets:", badrolv),
+            ("These tagsets' \"rod\" is not in the \"rolv\" of any tagset of the same language: add it to the parent's \"rolv\" (or correct the \"rod\"):", orphan)])
         if msg:
             self.fail(msg)
 
