@@ -19,7 +19,7 @@ classifiers = [
 requires-python = ">=3.8"
 dependencies = [
     "sldr@git+https://github.com/silnrsi/sldrtools",
-    "palaso@git+https://github.com/silnrsi/palaso-python",
+    "ucdinfo",
     "prompt_toolkit",
     "jsonschema"
 ]
