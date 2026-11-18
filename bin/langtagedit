@@ -2,11 +2,10 @@
 
 import argparse, json, re, datetime, csv, sys, os, requests
 from langtag import langtag
-from sldr.iana import Iana
 from dataclasses import dataclass
 from copy import deepcopy
 from difflib import SequenceMatcher
-from palaso.unicode.ucd import get_ucd
+from ucdinfo import get_ucd
 
 import logging
 
@@ -51,6 +50,41 @@ def read_autonyms(filename):
             a = Autonym(lt, stripinvisibles(name), stripinvisibles(roman))
             res.setdefault(lt, []).append(a)
     return res
+
+class Iana(object):
+    def __init__(self, path=None):
+        if path is None:
+            path = os.path.join(os.path.dirname(__file__), "language-subtag-registry.txt")
+        self.path = path
+        self.parse(path)
+
+    def parse(self, path):
+        currtag = {}
+        with open(path, "r", encoding='utf-8') as fh:
+            for l in fh.readlines():
+                if l.startswith(" "):
+                    currtag[currfield] += " " + l.strip()
+                try:
+                    f, v = l.strip().split(":", 1)
+                except ValueError:
+                    continue
+                v = v.strip()
+                f = f.lower()
+                if f == "type":
+                    currtype = v
+                elif f == "subtag":
+                    currtag = {}
+                    if not hasattr(self, currtype):
+                        setattr(self, currtype, {})
+                    getattr(self, currtype)[v] = currtag
+                elif f in currtag:
+                    if not isinstance(currtag[f], list):
+                        currtag[f] = [currtag[f]]
+                    currtag[f].append(v)
+                else:
+                    currtag[f] = v
+                currfield = f
+
 
 @dataclass(frozen=True)
 class Autonym:
